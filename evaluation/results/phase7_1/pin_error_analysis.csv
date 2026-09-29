@@ -1,0 +1,12 @@
+case_id,category,expected_pin,extracted_pin,error_type,remediation
+NOISE_08,ocr_noise_substitutions,700091,,OMISSION,Run fuzzy regex scan with confusable digit substitution table
+NOISE_09,ocr_noise_substitutions,600040,,OMISSION,Run fuzzy regex scan with confusable digit substitution table
+NOISE_10,ocr_noise_substitutions,500033,,OMISSION,Run fuzzy regex scan with confusable digit substitution table
+MULTI_01,complex_multi_address,411014,411057,WRONG_PIN,Calibrate PIN candidate bounding box scoring
+MULTI_02,complex_multi_address,560100,411057,WRONG_PIN,Calibrate PIN candidate bounding box scoring
+MULTI_03,complex_multi_address,411038,560066,WRONG_PIN,Calibrate PIN candidate bounding box scoring
+MULTI_05,complex_multi_address,400050,201301,WRONG_PIN,Calibrate PIN candidate bounding box scoring
+MULTI_06,complex_multi_address,110001,700091,WRONG_PIN,Calibrate PIN candidate bounding box scoring
+MULTI_07,complex_multi_address,560038,560017,WRONG_PIN,Calibrate PIN candidate bounding box scoring
+MULTI_10,complex_multi_address,380009,400051,WRONG_PIN,Calibrate PIN candidate bounding box scoring
+MULTI_11,complex_multi_address,302021,400701,WRONG_PIN,Calibrate PIN candidate bounding box scoring

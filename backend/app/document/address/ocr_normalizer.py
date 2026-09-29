@@ -92,13 +92,12 @@ class OCRNormalizer:
 
         text = pin_prefix_regex.sub(fix_prefix_match, text)
 
-        # Also search for standalone 6-character tokens with standard Indian PIN leading digit (1-9)
-        # e.g. "411O14", "560OO1"
-        standalone_regex = re.compile(r"\b([1-9][A-Za-z0-9]{5})\b")
+        # Also search for standalone 6-character tokens e.g. "411O14", "560OO1", "S60066"
+        standalone_regex = re.compile(r"\b([1-9A-Za-z][A-Za-z0-9]{5})\b")
 
         def fix_standalone(match: re.Match) -> str:
             candidate = match.group(1)
-            # Only attempt if it has letters
+            # Only attempt if it has letters and at least 3 digits/confusable characters
             if any(c.isalpha() for c in candidate):
                 repaired = self.repair_pincode_candidate(candidate)
                 if repaired:
@@ -115,24 +114,28 @@ class OCRNormalizer:
         if len(clean_token) != 6:
             return None
 
-        # First char in Indian PIN code is 1-9
-        first_char = clean_token[0]
-        if first_char in PIN_CONFUSION_MAP:
-            first_char = PIN_CONFUSION_MAP[first_char]
-        if not (first_char.isdigit() and "1" <= first_char <= "9"):
-            return None
-
-        repaired_digits = [first_char]
-        for c in clean_token[1:]:
+        # Check that the token consists entirely of digits or known PIN confusions
+        repaired_digits = []
+        digit_count = 0
+        for c in clean_token:
             if c.isdigit():
                 repaired_digits.append(c)
+                digit_count += 1
             elif c in PIN_CONFUSION_MAP:
                 repaired_digits.append(PIN_CONFUSION_MAP[c])
             else:
-                return None  # Unrepairable character
+                return None  # Contains invalid letter
+
+        # Require at least 3 native digits to prevent false positive word matches
+        if digit_count < 3:
+            return None
+
+        # First char in Indian PIN code must be 1-9
+        first_char = repaired_digits[0]
+        if not (first_char.isdigit() and "1" <= first_char <= "9"):
+            return None
 
         repaired_pin = "".join(repaired_digits)
-        # Check standard 6 digit validity
         if len(repaired_pin) == 6 and repaired_pin.isdigit() and repaired_pin[0] != "0":
             return repaired_pin
         return None

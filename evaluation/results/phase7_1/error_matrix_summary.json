@@ -1,0 +1,27 @@
+{
+  "total_evaluated": 105,
+  "total_failures": 49,
+  "failure_rate_pct": 46.67,
+  "root_cause_distribution": {
+    "NONE": 0,
+    "OCR_CHARACTER_ERROR": 0,
+    "REGION_DETECTION_ERROR": 0,
+    "DISTRICT_EXTRACTION_ERROR": 4,
+    "LOCALITY_EXTRACTION_ERROR": 18,
+    "PIN_EXTRACTION_ERROR": 11,
+    "ENTITY_RESOLUTION_ERROR": 0,
+    "DECISION_ENGINE_ERROR": 13,
+    "NEGATIVE_FALSE_POSITIVE": 3
+  },
+  "earliest_failure_stage_distribution": {
+    "NONE": 0,
+    "IMAGE_PREPROCESSING": 0,
+    "OCR_ENGINE": 0,
+    "REGION_DETECTOR": 3,
+    "FIELD_EXTRACTOR": 33,
+    "PIN_RECOVERY": 0,
+    "CANDIDATE_GENERATOR": 0,
+    "ENTITY_RANKER": 0,
+    "DECISION_ENGINE": 13
+  }
+}

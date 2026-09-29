@@ -40,9 +40,13 @@ KNOWN_LOCALITIES = [
     "Aundh", "Wakad", "Bavdhan", "Magarpatta", "Kalyani Nagar", "Koregaon Park",
     "Whitefield", "Indiranagar", "Koramangala", "HSR Layout", "Electronic City",
     "Bandra West", "Bandra East", "Andheri East", "Andheri West", "Powai", "Juhu",
-    "Connaught Place", "Hauz Khas", "Saket", "Karol Bagh", "Dwarka", "Rohini",
+    "Connaught Place", "Hauz Khas", "Saket", "Karol Bagh", "Dwarka", "Rohini", "Dilshad Garden",
     "Rajarhat", "Salt Lake", "New Town", "Rampur",
-    "खराडी", "हिंजवडी", "कोथरूड", "बाणेर"
+    "DLF Cyber City", "DLF Phase 3", "Jubilee Hills", "Anna Nagar", "Navrangpura", "Vaishali Nagar",
+    "Gomti Nagar", "Sector 35B", "Sector 62", "Sector 132", "Vijay Nagar", "Naupada",
+    "MP Nagar", "Sitabuldi", "Pandri", "Navi Peth", "Sanjay Place", "Samarth Nagar", "Hinoo",
+    "Panampilly Nagar", "Kankarbagh", "Rajarampuri",
+    "खराडी", "हिंजवडी", "कोथरूड", "बाणेर", "हडपसर", "राजारामपुरी", "नौपाडा"
 ]
 
 

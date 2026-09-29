@@ -16,6 +16,7 @@ from app.document.models import (
     AddressRegion,
     ExtractedAddressField,
     BoundingBox,
+    ExtractionMethod,
 )
 from app.services.address_parser import AddressParser
 from app.services.normalizer import AddressNormalizer
@@ -142,14 +143,17 @@ class AddressFieldExtractor:
         pin_matches = re.findall(r"\b([1-9][0-9]{5})\b", normalized_text)
         if pin_matches:
             pin = pin_matches[-1]
+            is_repaired = pin not in raw_text
             return ExtractedAddressField(
                 field_name="pincode",
                 raw_value=pin,
                 normalized_value=pin,
-                confidence=0.98,
+                confidence=0.98 if not is_repaired else 0.88,
+                extraction_method=ExtractionMethod.EXPLICIT if not is_repaired else ExtractionMethod.OCR_REPAIRED,
                 page_num=page_num,
                 bbox=bbox,
                 source_text=raw_text,
+                correction_reason=None if not is_repaired else "Repaired OCR character substitution in text",
             )
 
         pin_repaired = self.ocr_normalizer.repair_pincodes_in_text(raw_text)
@@ -161,6 +165,7 @@ class AddressFieldExtractor:
                 raw_value=pin,
                 normalized_value=pin,
                 confidence=0.85,
+                extraction_method=ExtractionMethod.OCR_REPAIRED,
                 page_num=page_num,
                 bbox=bbox,
                 source_text=raw_text,

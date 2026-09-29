@@ -1,0 +1,38 @@
+{
+  "total_compared_cases": 105,
+  "recall_at_1_delta": {
+    "metric_name": "Recall@1",
+    "clean_text_score": 100.0,
+    "ocr_extracted_score": 61.9,
+    "degradation_delta": -38.1,
+    "percentage_retention": 61.9
+  },
+  "recall_at_5_delta": {
+    "metric_name": "Recall@5",
+    "clean_text_score": 100.0,
+    "ocr_extracted_score": 100.0,
+    "degradation_delta": 0.0,
+    "percentage_retention": 100.0
+  },
+  "district_accuracy_delta": {
+    "metric_name": "District Accuracy",
+    "clean_text_score": 90.48,
+    "ocr_extracted_score": 83.81,
+    "degradation_delta": -6.67,
+    "percentage_retention": 92.63
+  },
+  "locality_accuracy_delta": {
+    "metric_name": "Locality Accuracy",
+    "clean_text_score": 90.48,
+    "ocr_extracted_score": 73.33,
+    "degradation_delta": -17.15,
+    "percentage_retention": 81.05
+  },
+  "verification_status_delta": {
+    "metric_name": "Verification Status Accuracy",
+    "clean_text_score": 100.0,
+    "ocr_extracted_score": 61.9,
+    "degradation_delta": -38.1,
+    "percentage_retention": 61.9
+  }
+}

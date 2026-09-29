@@ -370,6 +370,7 @@ export interface ExtractedAddressField {
   raw_value: string;
   normalized_value?: string;
   confidence: number;
+  extraction_method?: 'EXPLICIT' | 'PIN_RECOVERY' | 'ADMIN_CONTEXT_RECOVERY' | 'OCR_REPAIRED' | 'INFERRED';
   line_num?: number;
   page_num?: number;
   bbox?: BoundingBox;

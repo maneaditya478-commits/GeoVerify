@@ -1,0 +1,62 @@
+{
+  "eng_Latin": {
+    "language": "eng",
+    "script": "Latin",
+    "total_cases": 83,
+    "mean_cer": 0.0,
+    "mean_wer": 0.0,
+    "region_precision": 100.0,
+    "region_recall": 100.0,
+    "region_f1": 100.0,
+    "pincode_accuracy": 74.7,
+    "state_accuracy": 79.52,
+    "district_accuracy": 81.93,
+    "locality_accuracy": 77.11,
+    "verification_status_accuracy": 69.88
+  },
+  "mar_Devanagari": {
+    "language": "mar",
+    "script": "Devanagari",
+    "total_cases": 11,
+    "mean_cer": 0.0,
+    "mean_wer": 0.0,
+    "region_precision": 100.0,
+    "region_recall": 100.0,
+    "region_f1": 100.0,
+    "pincode_accuracy": 100.0,
+    "state_accuracy": 100.0,
+    "district_accuracy": 90.91,
+    "locality_accuracy": 72.73,
+    "verification_status_accuracy": 54.55
+  },
+  "hin_Devanagari": {
+    "language": "hin",
+    "script": "Devanagari",
+    "total_cases": 9,
+    "mean_cer": 0.0,
+    "mean_wer": 0.0,
+    "region_precision": 100.0,
+    "region_recall": 100.0,
+    "region_f1": 100.0,
+    "pincode_accuracy": 100.0,
+    "state_accuracy": 77.78,
+    "district_accuracy": 88.89,
+    "locality_accuracy": 33.33,
+    "verification_status_accuracy": 11.11
+  },
+  "mixed_Mixed": {
+    "language": "mixed",
+    "script": "Mixed",
+    "total_cases": 2,
+    "mean_cer": 0.0,
+    "mean_wer": 0.0,
+    "region_precision": 100.0,
+    "region_recall": 100.0,
+    "region_f1": 100.0,
+    "pincode_accuracy": 100.0,
+    "state_accuracy": 100.0,
+    "district_accuracy": 100.0,
+    "locality_accuracy": 100.0,
+    "verification_status_accuracy": 0.0
+  }
+}

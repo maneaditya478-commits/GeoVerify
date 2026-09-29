@@ -8,7 +8,7 @@ can reliably recover the ground-truth geographic entity without hallucinatory dr
 from typing import Dict, Any, Optional, List, Tuple
 from rapidfuzz import fuzz
 
-from app.document.models import ExtractedAddressCandidate, ExtractedAddressField
+from app.document.models import ExtractedAddressCandidate, ExtractedAddressField, ExtractionMethod
 from app.entity_resolution.candidates import MultiStageCandidateGenerator
 from app.services.pin_validator import PinValidator
 
@@ -45,6 +45,7 @@ class PINFirstRecoveryService:
                 raw_value=pin_state,
                 normalized_value=pin_state,
                 confidence=0.92,
+                extraction_method=ExtractionMethod.PIN_RECOVERY,
                 page_num=candidate.page_num,
                 bbox=candidate.region_bbox,
                 source_text=f"PIN {pincode} postal mapping",
@@ -60,6 +61,7 @@ class PINFirstRecoveryService:
                 raw_value=pin_dist,
                 normalized_value=pin_dist,
                 confidence=0.90,
+                extraction_method=ExtractionMethod.PIN_RECOVERY,
                 page_num=candidate.page_num,
                 bbox=candidate.region_bbox,
                 source_text=f"PIN {pincode} postal mapping",
@@ -91,6 +93,7 @@ class PINFirstRecoveryService:
                         raw_value=current_loc_field.raw_value if current_loc_field else best_match_loc,
                         normalized_value=best_match_loc,
                         confidence=round(best_score / 100.0, 2),
+                        extraction_method=ExtractionMethod.PIN_RECOVERY,
                         page_num=candidate.page_num,
                         bbox=candidate.region_bbox,
                         source_text=raw_text,

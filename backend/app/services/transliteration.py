@@ -83,6 +83,20 @@ INDIC_TO_LATIN_MAPPINGS: Dict[str, str] = {
     "रामपुर": "Rampur",
     "रामपूर": "Rampur",
     "शिमला": "Shimla",
+    "वाराणसी": "Varanasi",
+    "इंदौर": "Indore",
+    "इन्दौर": "Indore",
+    "पटना": "Patna",
+    "रायपुर": "Raipur",
+    "आगरा": "Agra",
+    "रांची": "Ranchi",
+    "राँची": "Ranchi",
+    "भोपाल": "Bhopal",
+    "गुरुग्राम": "Gurugram",
+    "गुड़गांव": "Gurugram",
+    "गुड़गांव": "Gurugram",
+    "एर्नाकुलम": "Ernakulam",
+    "कोच्चि": "Ernakulam",
 
     # Sub-districts / Talukas
     "हवेली": "Haveli",
@@ -179,15 +193,15 @@ DEV_CHAR_MAP = {
 # Common Indic address prefix patterns
 INDIC_PREFIX_PATTERNS = {
     "locality": [
-        r"(?:गाव|गाँव|ग्राम|वस्ती|मोहल्ला|परिसर|इलाका)\s*[:\-]?\s*([^,\n;]+)",
+        r"(?:गा\.\s*|गाव|गाँव|ग्राम|वस्ती|मोहल्ला|परिसर|इलाका)\s*[:\-]?\s*([^,\n;]+)",
         r"\b(?:area|locality|village)\s*[:\-]\s*([^,\n;]+)",
     ],
     "subdistrict": [
-        r"(?:तालुका|तहसील|तहसिल|मंडळ)\s*[:\-]?\s*([^,\n;]+)",
+        r"(?:ता\.\s*|तालुका|तहसील|तहसिल|मंडळ)\s*[:\-]?\s*([^,\n;]+)",
         r"\b(?:mandal|taluka|tehsil|subdivision)\s*[:\-]\s*([^,\n;]+)",
     ],
     "district": [
-        r"(?:जिल्हा|जिला|शहर)\s*[:\-]?\s*([^,\n;]+)",
+        r"(?:जि\.\s*|जिल्हा|जिला|शहर)\s*[:\-]?\s*([^,\n;]+)",
         r"\b(?:district|dist|city)\s*[:\-]\s*([^,\n;]+)",
     ],
     "state": [

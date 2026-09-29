@@ -96,13 +96,28 @@ export const ExtractedFieldsTable: React.FC<ExtractedFieldsTableProps> = ({ cand
                     </div>
                   </td>
                   <td className="py-2.5 px-3 text-slate-500 text-[11px]">
-                    {field.correction_reason ? (
-                      <span className="text-amber-700 bg-amber-50 px-2 py-0.5 rounded border border-amber-200">
-                        {field.correction_reason}
-                      </span>
-                    ) : (
-                      <span className="text-slate-400">Direct extract</span>
-                    )}
+                    <div className="flex flex-col gap-1">
+                      {field.extraction_method && field.extraction_method !== 'EXPLICIT' && (
+                        <span
+                          className={`inline-block px-1.5 py-0.5 rounded text-[10px] font-semibold w-fit border ${
+                            field.extraction_method === 'PIN_RECOVERY'
+                              ? 'bg-amber-50 text-amber-700 border-amber-200'
+                              : field.extraction_method === 'OCR_REPAIRED'
+                              ? 'bg-blue-50 text-blue-700 border-blue-200'
+                              : 'bg-purple-50 text-purple-700 border-purple-200'
+                          }`}
+                        >
+                          {field.extraction_method.replace('_', ' ')}
+                        </span>
+                      )}
+                      {field.correction_reason ? (
+                        <span className="text-amber-700 bg-amber-50/50 px-1.5 py-0.5 rounded text-[10px]">
+                          {field.correction_reason}
+                        </span>
+                      ) : !field.extraction_method || field.extraction_method === 'EXPLICIT' ? (
+                        <span className="text-slate-400">Direct extract</span>
+                      ) : null}
+                    </div>
                   </td>
                 </tr>
               );

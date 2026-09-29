@@ -1,0 +1,21 @@
+case_id,category,expected_locality,extracted_locality,error_type,remediation
+CLEAN_10,clean_documents,Noida,Sector 132,LOCALITY_MISIDENTIFICATION,Refine premise vs locality indicator boundary rules
+DEVA_02,multilingual_devanagari,Varanasi,Kbir Ngr,LOCALITY_MISIDENTIFICATION,Refine premise vs locality indicator boundary rules
+DEVA_04,multilingual_devanagari,Vijay Nagar,Nyu Loha Mndi,LOCALITY_MISIDENTIFICATION,Refine premise vs locality indicator boundary rules
+DEVA_10,multilingual_devanagari,Nashik,Sai Apartment,LOCALITY_MISIDENTIFICATION,Refine premise vs locality indicator boundary rules
+DEVA_11,multilingual_devanagari,Kankarbagh,Knkdbag,LOCALITY_MISIDENTIFICATION,Refine premise vs locality indicator boundary rules
+DEVA_13,multilingual_devanagari,MP Nagar,,OMISSION,Add PIN-locality dictionary matching during segmentation
+DEVA_14,multilingual_devanagari,Sitabuldi,,OMISSION,Add PIN-locality dictionary matching during segmentation
+DEVA_15,multilingual_devanagari,Pandri,Pndri,LOCALITY_MISIDENTIFICATION,Refine premise vs locality indicator boundary rules
+DEVA_17,multilingual_devanagari,Navi Peth,Nvi Peth,LOCALITY_MISIDENTIFICATION,Refine premise vs locality indicator boundary rules
+DEVA_18,multilingual_devanagari,Sanjay Place,Snjy Ples,LOCALITY_MISIDENTIFICATION,Refine premise vs locality indicator boundary rules
+DEVA_19,multilingual_devanagari,Samarth Nagar,Smrthngr,MULTI_TOKEN_TRUNCATION,Support multi-token phrase matching across whitespace-separated tokens
+DEVA_20,multilingual_devanagari,Hinoo,Men Rod,LOCALITY_MISIDENTIFICATION,Refine premise vs locality indicator boundary rules
+DEG_15,scan_degradations,Noida,Sector 132,LOCALITY_MISIDENTIFICATION,Refine premise vs locality indicator boundary rules
+MULTI_02,complex_multi_address,Electronic City,Hinjewadi,MULTI_TOKEN_TRUNCATION,Support multi-token phrase matching across whitespace-separated tokens
+MULTI_03,complex_multi_address,Kothrud,Whitefield,LOCALITY_MISIDENTIFICATION,Refine premise vs locality indicator boundary rules
+MULTI_07,complex_multi_address,Indiranagar,,OMISSION,Add PIN-locality dictionary matching during segmentation
+MULTI_09,complex_multi_address,DLF Cyber City,DLF Phase 3,LOCALITY_MISIDENTIFICATION,Refine premise vs locality indicator boundary rules
+MULTI_12,complex_multi_address,Noida,Sector 132,LOCALITY_MISIDENTIFICATION,Refine premise vs locality indicator boundary rules
+MULTI_14,complex_multi_address,DLF Cyber City,Connaught Place,LOCALITY_MISIDENTIFICATION,Refine premise vs locality indicator boundary rules
+MTL_14,multi_token_localities,Noida,Sector 62,LOCALITY_MISIDENTIFICATION,Refine premise vs locality indicator boundary rules

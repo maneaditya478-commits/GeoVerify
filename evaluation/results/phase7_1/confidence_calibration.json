@@ -1,0 +1,53 @@
+{
+  "total_samples": 105,
+  "expected_calibration_error_pct": 37.47,
+  "max_calibration_error_pct": 58.0,
+  "brier_score": 1.9097,
+  "buckets": [
+    {
+      "bin_range": "0-20%",
+      "bin_lower": 0.0,
+      "bin_upper": 0.2,
+      "count": 0,
+      "mean_confidence": 10.0,
+      "empirical_accuracy": 0.0,
+      "calibration_gap": 0.0
+    },
+    {
+      "bin_range": "21-40%",
+      "bin_lower": 0.2,
+      "bin_upper": 0.4,
+      "count": 0,
+      "mean_confidence": 30.0,
+      "empirical_accuracy": 0.0,
+      "calibration_gap": 0.0
+    },
+    {
+      "bin_range": "41-60%",
+      "bin_lower": 0.4,
+      "bin_upper": 0.6,
+      "count": 1,
+      "mean_confidence": 58.0,
+      "empirical_accuracy": 0.0,
+      "calibration_gap": 58.0
+    },
+    {
+      "bin_range": "61-80%",
+      "bin_lower": 0.6,
+      "bin_upper": 0.8,
+      "count": 0,
+      "mean_confidence": 70.0,
+      "empirical_accuracy": 0.0,
+      "calibration_gap": 0.0
+    },
+    {
+      "bin_range": "81-100%",
+      "bin_lower": 0.8,
+      "bin_upper": 1.0,
+      "count": 104,
+      "mean_confidence": 96.88,
+      "empirical_accuracy": 59.62,
+      "calibration_gap": 37.27
+    }
+  ]
+}

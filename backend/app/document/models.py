@@ -29,6 +29,14 @@ class AddressExtractionStatus(str, Enum):
     FAILED = "FAILED"
 
 
+class ExtractionMethod(str, Enum):
+    EXPLICIT = "EXPLICIT"
+    PIN_RECOVERY = "PIN_RECOVERY"
+    ADMIN_CONTEXT_RECOVERY = "ADMIN_CONTEXT_RECOVERY"
+    OCR_REPAIRED = "OCR_REPAIRED"
+    INFERRED = "INFERRED"
+
+
 class DocumentAddressType(str, Enum):
     PRIMARY = "PRIMARY"
     RESIDENTIAL = "RESIDENTIAL"
@@ -153,6 +161,7 @@ class ExtractedAddressField(BaseModel):
     raw_value: str
     normalized_value: Optional[str] = None
     confidence: float = Field(1.0, ge=0.0, le=1.0)
+    extraction_method: ExtractionMethod = ExtractionMethod.EXPLICIT
     line_num: Optional[int] = None
     page_num: Optional[int] = 1
     bbox: Optional[BoundingBox] = None

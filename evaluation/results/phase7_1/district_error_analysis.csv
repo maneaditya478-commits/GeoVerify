@@ -1,0 +1,8 @@
+case_id,category,expected_district,extracted_district,error_type,remediation
+DEVA_07,multilingual_devanagari,North West Delhi,New Delhi,DISTRICT_MISIDENTIFICATION,Enhance administrative alias dictionary and boundary hierarchy resolution
+MULTI_03,complex_multi_address,Pune,Bengaluru Urban,DISTRICT_MISIDENTIFICATION,Enhance administrative alias dictionary and boundary hierarchy resolution
+MULTI_04,complex_multi_address,Pune,Thane,DISTRICT_MISIDENTIFICATION,Enhance administrative alias dictionary and boundary hierarchy resolution
+MULTI_05,complex_multi_address,Mumbai,Gautam Buddha Nagar,DISTRICT_MISIDENTIFICATION,Enhance administrative alias dictionary and boundary hierarchy resolution
+MULTI_08,complex_multi_address,Pune,Mumbai Suburban,DISTRICT_MISIDENTIFICATION,Enhance administrative alias dictionary and boundary hierarchy resolution
+MULTI_11,complex_multi_address,Jaipur,Mumbai Suburban,DISTRICT_MISIDENTIFICATION,Enhance administrative alias dictionary and boundary hierarchy resolution
+MULTI_14,complex_multi_address,Gurugram,New Delhi,DISTRICT_MISIDENTIFICATION,Enhance administrative alias dictionary and boundary hierarchy resolution
