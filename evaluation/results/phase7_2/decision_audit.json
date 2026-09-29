@@ -1,0 +1,237 @@
+{
+  "total_evaluated": 260,
+  "accuracy_pct": 74.23,
+  "macro_precision": 100.0,
+  "macro_recall": 80.62,
+  "macro_f1": 89.27,
+  "weighted_f1": 77.82,
+  "per_class_metrics": {
+    "VERIFIED": {
+      "status": "VERIFIED",
+      "precision": 100.0,
+      "recall": 61.25,
+      "f1_score": 75.97,
+      "support": 240
+    },
+    "CONSISTENT": {
+      "status": "CONSISTENT",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "support": 0
+    },
+    "NEEDS_REVIEW": {
+      "status": "NEEDS_REVIEW",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "support": 0
+    },
+    "INCONSISTENT": {
+      "status": "INCONSISTENT",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "support": 0
+    },
+    "AMBIGUOUS": {
+      "status": "AMBIGUOUS",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "support": 0
+    },
+    "UNABLE_TO_VERIFY": {
+      "status": "UNABLE_TO_VERIFY",
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1_score": 100.0,
+      "support": 20
+    }
+  },
+  "rule_audits": {
+    "STATE_VERIFIED": {
+      "rule_name": "STATE_VERIFIED",
+      "trigger_count": 229,
+      "correct_count": 171,
+      "incorrect_count": 58,
+      "precision": 74.67
+    },
+    "DISTRICT_HIERARCHY_VERIFIED": {
+      "rule_name": "DISTRICT_HIERARCHY_VERIFIED",
+      "trigger_count": 179,
+      "correct_count": 173,
+      "incorrect_count": 6,
+      "precision": 96.65
+    },
+    "BOUNDARY_STATE_CONTAINMENT": {
+      "rule_name": "BOUNDARY_STATE_CONTAINMENT",
+      "trigger_count": 202,
+      "correct_count": 163,
+      "incorrect_count": 39,
+      "precision": 80.69
+    },
+    "BOUNDARY_DISTRICT_CONTAINMENT": {
+      "rule_name": "BOUNDARY_DISTRICT_CONTAINMENT",
+      "trigger_count": 188,
+      "correct_count": 173,
+      "incorrect_count": 15,
+      "precision": 92.02
+    },
+    "LOCALITY_VERIFIED": {
+      "rule_name": "LOCALITY_VERIFIED",
+      "trigger_count": 210,
+      "correct_count": 155,
+      "incorrect_count": 55,
+      "precision": 73.81
+    },
+    "PINCODE_CONSISTENT": {
+      "rule_name": "PINCODE_CONSISTENT",
+      "trigger_count": 213,
+      "correct_count": 172,
+      "incorrect_count": 41,
+      "precision": 80.75
+    },
+    "GEOCODING_RESOLVED": {
+      "rule_name": "GEOCODING_RESOLVED",
+      "trigger_count": 238,
+      "correct_count": 173,
+      "incorrect_count": 65,
+      "precision": 72.69
+    },
+    "NEARBY_CONFIRMATION": {
+      "rule_name": "NEARBY_CONFIRMATION",
+      "trigger_count": 41,
+      "correct_count": 30,
+      "incorrect_count": 11,
+      "precision": 73.17
+    },
+    "NEARBY_NONE": {
+      "rule_name": "NEARBY_NONE",
+      "trigger_count": 199,
+      "correct_count": 143,
+      "incorrect_count": 56,
+      "precision": 71.86
+    },
+    "DISTRICT_HIERARCHY_MISMATCH": {
+      "rule_name": "DISTRICT_HIERARCHY_MISMATCH",
+      "trigger_count": 51,
+      "correct_count": 0,
+      "incorrect_count": 51,
+      "precision": 0.0
+    },
+    "BOUNDARY_STATE_ESCAPE": {
+      "rule_name": "BOUNDARY_STATE_ESCAPE",
+      "trigger_count": 36,
+      "correct_count": 10,
+      "incorrect_count": 26,
+      "precision": 27.78
+    },
+    "BOUNDARY_DISTRICT_ESCAPE": {
+      "rule_name": "BOUNDARY_DISTRICT_ESCAPE",
+      "trigger_count": 50,
+      "correct_count": 0,
+      "incorrect_count": 50,
+      "precision": 0.0
+    },
+    "LOCALITY_MISSING": {
+      "rule_name": "LOCALITY_MISSING",
+      "trigger_count": 23,
+      "correct_count": 18,
+      "incorrect_count": 5,
+      "precision": 78.26
+    },
+    "STATE_MISMATCH": {
+      "rule_name": "STATE_MISMATCH",
+      "trigger_count": 4,
+      "correct_count": 0,
+      "incorrect_count": 4,
+      "precision": 0.0
+    },
+    "PINCODE_DISCREPANCY": {
+      "rule_name": "PINCODE_DISCREPANCY",
+      "trigger_count": 26,
+      "correct_count": 0,
+      "incorrect_count": 26,
+      "precision": 0.0
+    },
+    "NO_COORDINATES": {
+      "rule_name": "NO_COORDINATES",
+      "trigger_count": 2,
+      "correct_count": 0,
+      "incorrect_count": 2,
+      "precision": 0.0
+    },
+    "GEOCODING_UNRESOLVED": {
+      "rule_name": "GEOCODING_UNRESOLVED",
+      "trigger_count": 2,
+      "correct_count": 0,
+      "incorrect_count": 2,
+      "precision": 0.0
+    },
+    "PINCODE_NOT_PROVIDED": {
+      "rule_name": "PINCODE_NOT_PROVIDED",
+      "trigger_count": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "precision": 100.0
+    },
+    "LOCALITY_CONFLICT": {
+      "rule_name": "LOCALITY_CONFLICT",
+      "trigger_count": 7,
+      "correct_count": 0,
+      "incorrect_count": 7,
+      "precision": 0.0
+    }
+  },
+  "score_band_audits": [
+    {
+      "band_name": "0-20",
+      "lower": 0,
+      "upper": 20,
+      "total_count": 22,
+      "correct_count": 0,
+      "accuracy": 0.0
+    },
+    {
+      "band_name": "21-40",
+      "lower": 21,
+      "upper": 40,
+      "total_count": 1,
+      "correct_count": 0,
+      "accuracy": 0.0
+    },
+    {
+      "band_name": "41-60",
+      "lower": 41,
+      "upper": 60,
+      "total_count": 26,
+      "correct_count": 0,
+      "accuracy": 0.0
+    },
+    {
+      "band_name": "61-70",
+      "lower": 61,
+      "upper": 70,
+      "total_count": 36,
+      "correct_count": 2,
+      "accuracy": 5.56
+    },
+    {
+      "band_name": "71-84",
+      "lower": 71,
+      "upper": 84,
+      "total_count": 28,
+      "correct_count": 24,
+      "accuracy": 85.71
+    },
+    {
+      "band_name": "85-100",
+      "lower": 85,
+      "upper": 100,
+      "total_count": 147,
+      "correct_count": 147,
+      "accuracy": 100.0
+    }
+  ]
+}

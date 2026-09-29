@@ -1,12 +1,23 @@
-# GeoVerify India Architecture (Phase 6)
+# GeoVerify India Architecture (Phase 7.2)
 
 ## 1. System Overview
 
-GeoVerify India is an open-source, multi-signal geospatial and administrative consistency verification platform designed specifically for the complexities of Indian addresses.
+GeoVerify India is an open-source, multi-signal geospatial, OCR document processing, and administrative consistency verification platform designed specifically for the complexities of Indian addresses.
 
 ```mermaid
 flowchart TD
-    User([User / API Client]) -->|Submit Address| API[FastAPI Gateway]
+    User([User / API Client / Mobile App]) -->|Submit Address or Document| API[FastAPI Gateway]
+    
+    subgraph DocumentProcessing [Document & OCR Ingestion Layer (Phase 7.2)]
+        API --> DocVal["Document Validator (MIME, Size, Magic Bytes)"]
+        DocVal --> Preproc["Image Preprocessor (Deskew, Contrast, Binarization)"]
+        Preproc --> OCR["OCR Engine (Tesseract / Cloud Engine)"]
+        OCR --> RegionDet["Address Region Detector & Token Bounding"]
+        RegionDet --> FieldExt["Field Extractor (PIN, Locality, District, State)"]
+        FieldExt --> Provenance["Provenance Attribution (EXPLICIT, REPAIRED, RECOVERED)"]
+        Provenance --> PINRec["PIN-First Recovery Service"]
+        PINRec --> Assembly["Address Assembler & Structured Formatter"]
+    end
     
     subgraph IndicLayer [Multilingual & Transliteration Layer]
         API --> Script["Script Detector (Latin / Devanagari / Mixed)"]

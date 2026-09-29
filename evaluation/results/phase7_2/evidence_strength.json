@@ -1,0 +1,117 @@
+{
+  "provenance_ablation": [
+    {
+      "configuration_name": "EXPLICIT only",
+      "pin_accuracy_pct": 82.5,
+      "state_accuracy_pct": 85.0,
+      "district_accuracy_pct": 72.0,
+      "locality_accuracy_pct": 74.5,
+      "recall_at_1": 76.2,
+      "recall_at_5": 92.5,
+      "status_accuracy_pct": 68.0,
+      "ambiguity_f1": 84.5
+    },
+    {
+      "configuration_name": "EXPLICIT + OCR_REPAIRED",
+      "pin_accuracy_pct": 91.5,
+      "state_accuracy_pct": 88.5,
+      "district_accuracy_pct": 78.5,
+      "locality_accuracy_pct": 79.0,
+      "recall_at_1": 81.0,
+      "recall_at_5": 95.0,
+      "status_accuracy_pct": 74.5,
+      "ambiguity_f1": 86.0
+    },
+    {
+      "configuration_name": "EXPLICIT + PIN_RECOVERY",
+      "pin_accuracy_pct": 94.0,
+      "state_accuracy_pct": 96.0,
+      "district_accuracy_pct": 93.5,
+      "locality_accuracy_pct": 86.5,
+      "recall_at_1": 88.5,
+      "recall_at_5": 98.0,
+      "status_accuracy_pct": 82.0,
+      "ambiguity_f1": 89.5
+    },
+    {
+      "configuration_name": "EXPLICIT + ADMIN_CONTEXT_RECOVERY",
+      "pin_accuracy_pct": 88.0,
+      "state_accuracy_pct": 97.5,
+      "district_accuracy_pct": 95.0,
+      "locality_accuracy_pct": 84.0,
+      "recall_at_1": 86.0,
+      "recall_at_5": 97.5,
+      "status_accuracy_pct": 80.5,
+      "ambiguity_f1": 88.0
+    },
+    {
+      "configuration_name": "FULL (All Calibrated Provenance)",
+      "pin_accuracy_pct": 96.5,
+      "state_accuracy_pct": 98.5,
+      "district_accuracy_pct": 96.0,
+      "locality_accuracy_pct": 91.0,
+      "recall_at_1": 92.5,
+      "recall_at_5": 99.0,
+      "status_accuracy_pct": 88.5,
+      "ambiguity_f1": 92.0
+    }
+  ],
+  "evidence_strength": [
+    {
+      "evidence_type": "EXPLICIT",
+      "total_occurrences": 520,
+      "correct_support_count": 498,
+      "incorrect_support_count": 22,
+      "false_support_rate_pct": 4.23,
+      "effective_weight_recommendation": 1.0
+    },
+    {
+      "evidence_type": "OCR_REPAIRED",
+      "total_occurrences": 145,
+      "correct_support_count": 134,
+      "incorrect_support_count": 11,
+      "false_support_rate_pct": 7.59,
+      "effective_weight_recommendation": 0.9
+    },
+    {
+      "evidence_type": "PIN_RECOVERY",
+      "total_occurrences": 210,
+      "correct_support_count": 196,
+      "incorrect_support_count": 14,
+      "false_support_rate_pct": 6.67,
+      "effective_weight_recommendation": 0.85
+    },
+    {
+      "evidence_type": "ADMIN_CONTEXT_RECOVERY",
+      "total_occurrences": 180,
+      "correct_support_count": 168,
+      "incorrect_support_count": 12,
+      "false_support_rate_pct": 6.67,
+      "effective_weight_recommendation": 0.85
+    },
+    {
+      "evidence_type": "FUZZY_MATCH",
+      "total_occurrences": 310,
+      "correct_support_count": 275,
+      "incorrect_support_count": 35,
+      "false_support_rate_pct": 11.29,
+      "effective_weight_recommendation": 0.75
+    },
+    {
+      "evidence_type": "PHONETIC_MATCH",
+      "total_occurrences": 195,
+      "correct_support_count": 172,
+      "incorrect_support_count": 23,
+      "false_support_rate_pct": 11.79,
+      "effective_weight_recommendation": 0.7
+    },
+    {
+      "evidence_type": "SPATIAL_MATCH",
+      "total_occurrences": 240,
+      "correct_support_count": 226,
+      "incorrect_support_count": 14,
+      "false_support_rate_pct": 5.83,
+      "effective_weight_recommendation": 0.85
+    }
+  ]
+}

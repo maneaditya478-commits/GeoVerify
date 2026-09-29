@@ -1,0 +1,1101 @@
+case_id,category,split,ground_truth_address,clean_top_candidate,clean_score,clean_status,clean_ambiguous,clean_district_match,clean_locality_match,clean_status_match,ocr_raw_text,ocr_assembled_address,ocr_top_candidate,ocr_score,ocr_status,ocr_ambiguous,ocr_district_match,ocr_locality_match,ocr_status_match,score_difference,ranking_classification,decision_classification
+CLEAN_01,clean_documents,DEV,"Flat 101, Building A, Phase 1, Near Central Garden, Kharadi, Pune, Maharashtra 411014",Kharadi,100.0,VERIFIED,False,True,True,True,"UTILITY & SERVICE BILLING AUTHORITY - RECORD #1000
+Consumer ID: IND-202600
+Billing Name: TEST CUSTOMER 1
+Billing Address: Flat 101, Building A, Phase 1, Near Central Garden, Kharadi, Pune, Maharashtra 411014
+Due Date: 15/10/2026 | Amount: Rs. 1250","Billing Address: Flat 101, Kharadi, Pune, Maharashtra, 411014",Kharadi,100.0,VERIFIED,False,True,True,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+CLEAN_02,clean_documents,DEV,"Flat 106, Building B, Phase 2, Near Central Garden, Viman Nagar, Pune, Maharashtra 411014",Viman Nagar,100.0,VERIFIED,False,True,True,True,"UTILITY & SERVICE BILLING AUTHORITY - RECORD #1001
+Consumer ID: IND-202601
+Billing Name: TEST CUSTOMER 2
+Billing Address: Flat 106, Building B, Phase 2, Near Central Garden, Viman Nagar, Pune, Maharashtra 411014
+Due Date: 15/10/2026 | Amount: Rs. 1295","Billing Address: Flat 106, Viman Nagar, Pune, Maharashtra, 411014",Viman Nagar,100.0,VERIFIED,False,True,True,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+CLEAN_03,clean_documents,VAL,"Flat 111, Building C, Phase 3, Near Central Garden, Hinjewadi, Pune, Maharashtra 411057",Hinjewadi,96.0,VERIFIED,False,True,True,True,"UTILITY & SERVICE BILLING AUTHORITY - RECORD #1002
+Consumer ID: IND-202602
+Billing Name: TEST CUSTOMER 3
+Billing Address: Flat 111, Building C, Phase 3, Near Central Garden, Hinjewadi, Pune, Maharashtra 411057
+Due Date: 15/10/2026 | Amount: Rs. 1340","Billing Address: Flat 111, Hinjewadi, Pune, Maharashtra, 411057",Hinjewadi,96.0,VERIFIED,False,True,True,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+CLEAN_04,clean_documents,HELD_OUT,"Flat 116, Building D, Phase 1, Near Central Garden, Kothrud, Pune, Maharashtra 411038",411038,96.0,VERIFIED,False,True,False,True,"UTILITY & SERVICE BILLING AUTHORITY - RECORD #1003
+Consumer ID: IND-202603
+Billing Name: TEST CUSTOMER 4
+Billing Address: Flat 116, Building D, Phase 1, Near Central Garden, Kothrud, Pune, Maharashtra 411038
+Due Date: 15/10/2026 | Amount: Rs. 1385","Billing Address: Flat 116, Kothrud, Pune, Maharashtra, 411038",Kothrud,96.0,VERIFIED,False,True,True,True,0.0,OCR_IMPROVED_RANKING,DIFFERENT_RESOLUTION_DIFFERENT_STATUS
+CLEAN_05,clean_documents,DEV,"Flat 121, Building E, Phase 2, Near Central Garden, Baner, Pune, Maharashtra 411045",Baner,96.0,VERIFIED,False,True,True,True,"UTILITY & SERVICE BILLING AUTHORITY - RECORD #1004
+Consumer ID: IND-202604
+Billing Name: TEST CUSTOMER 5
+Billing Address: Flat 121, Building E, Phase 2, Near Central Garden, Baner, Pune, Maharashtra 411045
+Due Date: 15/10/2026 | Amount: Rs. 1430","Billing Address: Flat 121, Baner, Pune, Maharashtra, 411045",Baner,96.0,VERIFIED,False,True,True,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+CLEAN_06,clean_documents,DEV,"Flat 126, Building F, Phase 3, Near Central Garden, Hadapsar, Pune, Maharashtra 411028",Hadapsar,100.0,VERIFIED,False,True,True,True,"UTILITY & SERVICE BILLING AUTHORITY - RECORD #1005
+Consumer ID: IND-202605
+Billing Name: TEST CUSTOMER 6
+Billing Address: Flat 126, Building F, Phase 3, Near Central Garden, Hadapsar, Pune, Maharashtra 411028
+Due Date: 15/10/2026 | Amount: Rs. 1475","Billing Address: Flat 126, Hadapsar, Pune, Maharashtra, 411028",Hadapsar,100.0,VERIFIED,False,True,True,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+CLEAN_07,clean_documents,DEV,"Flat 131, Building A, Phase 1, Near Central Garden, Bandra West, Mumbai, Maharashtra 400050",Bandra West,96.0,VERIFIED,False,True,True,True,"UTILITY & SERVICE BILLING AUTHORITY - RECORD #1006
+Consumer ID: IND-202606
+Billing Name: TEST CUSTOMER 7
+Billing Address: Flat 131, Building A, Phase 1, Near Central Garden, Bandra West, Mumbai, Maharashtra 400050
+Due Date: 15/10/2026 | Amount: Rs. 1520","Billing Address: Flat 131, Bandra West, Mumbai Suburban, Maharashtra, 400050",Bandra West,96.0,VERIFIED,False,True,True,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+CLEAN_08,clean_documents,VAL,"Flat 136, Building B, Phase 2, Near Central Garden, Andheri East, Mumbai, Maharashtra 400093",Andheri East,96.0,VERIFIED,False,True,True,True,"UTILITY & SERVICE BILLING AUTHORITY - RECORD #1007
+Consumer ID: IND-202607
+Billing Name: TEST CUSTOMER 8
+Billing Address: Flat 136, Building B, Phase 2, Near Central Garden, Andheri East, Mumbai, Maharashtra 400093
+Due Date: 15/10/2026 | Amount: Rs. 1565","Billing Address: Flat 136, East, Andheri, Mumbai Suburban, Maharashtra, 400093",Maharashtra,94.0,VERIFIED,False,False,False,True,-2.0,OCR_CAUSED_RANKING_CHANGE,DIFFERENT_RESOLUTION_DIFFERENT_STATUS
+CLEAN_09,clean_documents,HELD_OUT,"Flat 141, Building C, Phase 3, Near Central Garden, Powai, Mumbai, Maharashtra 400076",400076,96.0,VERIFIED,False,True,False,True,"UTILITY & SERVICE BILLING AUTHORITY - RECORD #1008
+Consumer ID: IND-202608
+Billing Name: TEST CUSTOMER 9
+Billing Address: Flat 141, Building C, Phase 3, Near Central Garden, Powai, Mumbai, Maharashtra 400076
+Due Date: 15/10/2026 | Amount: Rs. 1610","Billing Address: Flat 141, Powai, Mumbai Suburban, Maharashtra, 400076",Powai,96.0,VERIFIED,False,True,True,True,0.0,OCR_IMPROVED_RANKING,DIFFERENT_RESOLUTION_DIFFERENT_STATUS
+CLEAN_10,clean_documents,DEV,"Flat 146, Building D, Phase 1, Near Central Garden, Indiranagar, Bengaluru, Karnataka 560038",Indiranagar,96.0,VERIFIED,False,True,True,True,"UTILITY & SERVICE BILLING AUTHORITY - RECORD #1009
+Consumer ID: IND-202609
+Billing Name: TEST CUSTOMER 10
+Billing Address: Flat 146, Building D, Phase 1, Near Central Garden, Indiranagar, Bengaluru, Karnataka 560038
+Due Date: 15/10/2026 | Amount: Rs. 1655","Billing Address: Flat 146, Indiranagar, Bengaluru Urban, Karnataka, 560038",Indiranagar,96.0,VERIFIED,False,True,True,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+CLEAN_11,clean_documents,DEV,"Flat 151, Building E, Phase 2, Near Central Garden, Whitefield, Bengaluru, Karnataka 560066",Whitefield,96.0,VERIFIED,False,True,True,True,"UTILITY & SERVICE BILLING AUTHORITY - RECORD #1010
+Consumer ID: IND-202610
+Billing Name: TEST CUSTOMER 11
+Billing Address: Flat 151, Building E, Phase 2, Near Central Garden, Whitefield, Bengaluru, Karnataka 560066
+Due Date: 15/10/2026 | Amount: Rs. 1700","Billing Address: Flat 151, Whitefield, Bengaluru Urban, Karnataka, 560066",Whitefield,96.0,VERIFIED,False,True,True,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+CLEAN_12,clean_documents,DEV,"Flat 156, Building F, Phase 3, Near Central Garden, Koramangala, Bengaluru, Karnataka 560034",Koramangala,96.0,VERIFIED,False,True,True,True,"UTILITY & SERVICE BILLING AUTHORITY - RECORD #1011
+Consumer ID: IND-202611
+Billing Name: TEST CUSTOMER 12
+Billing Address: Flat 156, Building F, Phase 3, Near Central Garden, Koramangala, Bengaluru, Karnataka 560034
+Due Date: 15/10/2026 | Amount: Rs. 1745","Billing Address: Flat 156, Koramangala, Bengaluru Urban, Karnataka, 560034",Koramangala,96.0,VERIFIED,False,True,True,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+CLEAN_13,clean_documents,VAL,"Flat 161, Building A, Phase 1, Near Central Garden, Electronic City, Bengaluru, Karnataka 560100",Electronic City,96.0,VERIFIED,False,True,True,True,"UTILITY & SERVICE BILLING AUTHORITY - RECORD #1012
+Consumer ID: IND-202612
+Billing Name: TEST CUSTOMER 13
+Billing Address: Flat 161, Building A, Phase 1, Near Central Garden, Electronic City, Bengaluru, Karnataka 560100
+Due Date: 15/10/2026 | Amount: Rs. 1790","Billing Address: Flat 161, Electronic City, Bengaluru Urban, Karnataka, 560100",Electronic City,96.0,VERIFIED,False,True,True,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+CLEAN_14,clean_documents,HELD_OUT,"Flat 166, Building B, Phase 2, Near Central Garden, Connaught Place, New Delhi, Delhi 110001",Connaught Place,96.0,VERIFIED,False,True,True,True,"UTILITY & SERVICE BILLING AUTHORITY - RECORD #1013
+Consumer ID: IND-202613
+Billing Name: TEST CUSTOMER 14
+Billing Address: Flat 166, Building B, Phase 2, Near Central Garden, Connaught Place, New Delhi, Delhi 110001
+Due Date: 15/10/2026 | Amount: Rs. 1835","Billing Address: Flat 166, Connaught Place, New Delhi, Delhi, 110001",Connaught Place,96.0,VERIFIED,False,True,True,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+CLEAN_15,clean_documents,DEV,"Flat 171, Building C, Phase 3, Near Central Garden, Karol Bagh, Central Delhi, Delhi 110005",Karol Bagh,96.0,VERIFIED,False,True,True,True,"UTILITY & SERVICE BILLING AUTHORITY - RECORD #1014
+Consumer ID: IND-202614
+Billing Name: TEST CUSTOMER 15
+Billing Address: Flat 171, Building C, Phase 3, Near Central Garden, Karol Bagh, Central Delhi, Delhi 110005
+Due Date: 15/10/2026 | Amount: Rs. 1880","Billing Address: Flat 171, Karol Bagh, Central Delhi, Delhi, 110005",Karol Bagh,96.0,VERIFIED,False,True,True,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+CLEAN_16,clean_documents,DEV,"Flat 176, Building D, Phase 1, Near Central Garden, Rohini, North West Delhi, Delhi 110085",Rohini,96.0,VERIFIED,False,True,True,True,"UTILITY & SERVICE BILLING AUTHORITY - RECORD #1015
+Consumer ID: IND-202615
+Billing Name: TEST CUSTOMER 16
+Billing Address: Flat 176, Building D, Phase 1, Near Central Garden, Rohini, North West Delhi, Delhi 110085
+Due Date: 15/10/2026 | Amount: Rs. 1925","Billing Address: Flat 176, Rohini, North West Delhi, Delhi, 110085",Rohini,96.0,VERIFIED,False,True,True,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+CLEAN_17,clean_documents,DEV,"Flat 181, Building E, Phase 2, Near Central Garden, Salt Lake, Kolkata, West Bengal 700091",700091,96.0,VERIFIED,False,True,False,True,"UTILITY & SERVICE BILLING AUTHORITY - RECORD #1016
+Consumer ID: IND-202616
+Billing Name: TEST CUSTOMER 17
+Billing Address: Flat 181, Building E, Phase 2, Near Central Garden, Salt Lake, Kolkata, West Bengal 700091
+Due Date: 15/10/2026 | Amount: Rs. 1970","Billing Address: Flat 181, Salt Lake, Kolkata, West Bengal, 700091",Salt Lake,96.0,VERIFIED,False,True,True,True,0.0,OCR_IMPROVED_RANKING,DIFFERENT_RESOLUTION_DIFFERENT_STATUS
+CLEAN_18,clean_documents,VAL,"Flat 186, Building F, Phase 3, Near Central Garden, Rajarhat, North 24 Parganas, West Bengal 700135",700135,96.0,VERIFIED,False,True,False,True,"UTILITY & SERVICE BILLING AUTHORITY - RECORD #1017
+Consumer ID: IND-202617
+Billing Name: TEST CUSTOMER 18
+Billing Address: Flat 186, Building F, Phase 3, Near Central Garden, Rajarhat, North 24 Parganas, West Bengal 700135
+Due Date: 15/10/2026 | Amount: Rs. 2015","Billing Address: Flat 186, Rajarhat, North 24 Parganas, West Bengal, 700135",Rajarhat,96.0,VERIFIED,False,True,True,True,0.0,OCR_IMPROVED_RANKING,DIFFERENT_RESOLUTION_DIFFERENT_STATUS
+CLEAN_19,clean_documents,HELD_OUT,"Flat 191, Building A, Phase 1, Near Central Garden, DLF Cyber City, Gurugram, Haryana 122002",Haryana,60.0,INCONSISTENT,False,False,False,False,"UTILITY & SERVICE BILLING AUTHORITY - RECORD #1018
+Consumer ID: IND-202618
+Billing Name: TEST CUSTOMER 19
+Billing Address: Flat 191, Building A, Phase 1, Near Central Garden, DLF Cyber City, Gurugram, Haryana 122002
+Due Date: 15/10/2026 | Amount: Rs. 2060","Billing Address: Flat 191, DLF Cyber City, Gurugram, Haryana, 122002",Haryana,60.0,INCONSISTENT,False,False,False,False,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+CLEAN_20,clean_documents,DEV,"Flat 196, Building B, Phase 2, Near Central Garden, Jubilee Hills, Hyderabad, Telangana 500033",Telangana,84.0,CONSISTENT,False,False,False,True,"UTILITY & SERVICE BILLING AUTHORITY - RECORD #1019
+Consumer ID: IND-202619
+Billing Name: TEST CUSTOMER 20
+Billing Address: Flat 196, Building B, Phase 2, Near Central Garden, Jubilee Hills, Hyderabad, Telangana 500033
+Due Date: 15/10/2026 | Amount: Rs. 2105","Billing Address: Flat 196, Jubilee Hills, Hyderabad, Telangana, 500033",Telangana,84.0,CONSISTENT,False,False,False,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+CLEAN_21,clean_documents,DEV,"Flat 201, Building C, Phase 3, Near Central Garden, Anna Nagar, Chennai, Tamil Nadu 600040",Tamil Nadu,94.0,VERIFIED,False,False,False,True,"UTILITY & SERVICE BILLING AUTHORITY - RECORD #1020
+Consumer ID: IND-202620
+Billing Name: TEST CUSTOMER 21
+Billing Address: Flat 201, Building C, Phase 3, Near Central Garden, Anna Nagar, Chennai, Tamil Nadu 600040
+Due Date: 15/10/2026 | Amount: Rs. 2150","Billing Address: Flat 201, Anna Nagar, Chennai, Tamil Nadu, 600040",T Nagar,94.0,VERIFIED,False,True,False,True,0.0,OCR_CAUSED_RANKING_CHANGE,DIFFERENT_RESOLUTION_DIFFERENT_STATUS
+CLEAN_22,clean_documents,DEV,"Flat 206, Building D, Phase 1, Near Central Garden, Navrangpura, Ahmedabad, Gujarat 380009",380009,96.0,VERIFIED,False,True,False,True,"UTILITY & SERVICE BILLING AUTHORITY - RECORD #1021
+Consumer ID: IND-202621
+Billing Name: TEST CUSTOMER 22
+Billing Address: Flat 206, Building D, Phase 1, Near Central Garden, Navrangpura, Ahmedabad, Gujarat 380009
+Due Date: 15/10/2026 | Amount: Rs. 2195","Billing Address: Flat 206, Navrangpura, Ahmedabad, Gujarat, 380009",Navrangpura,96.0,VERIFIED,False,True,True,True,0.0,OCR_IMPROVED_RANKING,DIFFERENT_RESOLUTION_DIFFERENT_STATUS
+CLEAN_23,clean_documents,VAL,"Flat 211, Building E, Phase 2, Near Central Garden, Vaishali Nagar, Jaipur, Rajasthan 302021",Vaishali Nagar,96.0,VERIFIED,False,True,True,True,"UTILITY & SERVICE BILLING AUTHORITY - RECORD #1022
+Consumer ID: IND-202622
+Billing Name: TEST CUSTOMER 23
+Billing Address: Flat 211, Building E, Phase 2, Near Central Garden, Vaishali Nagar, Jaipur, Rajasthan 302021
+Due Date: 15/10/2026 | Amount: Rs. 2240","Billing Address: Flat 211, Vaishali Nagar, Jaipur, Rajasthan, 302021",Vaishali Nagar,96.0,VERIFIED,False,True,True,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+CLEAN_24,clean_documents,HELD_OUT,"Flat 216, Building F, Phase 3, Near Central Garden, Gomti Nagar, Lucknow, Uttar Pradesh 226010",Gomti Nagar,96.0,VERIFIED,False,True,True,True,"UTILITY & SERVICE BILLING AUTHORITY - RECORD #1023
+Consumer ID: IND-202623
+Billing Name: TEST CUSTOMER 24
+Billing Address: Flat 216, Building F, Phase 3, Near Central Garden, Gomti Nagar, Lucknow, Uttar Pradesh 226010
+Due Date: 15/10/2026 | Amount: Rs. 2285","Billing Address: Flat 216, Gomti Nagar, Lucknow, Uttar Pradesh, 226010",Gomti Nagar,96.0,VERIFIED,False,True,True,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+CLEAN_25,clean_documents,DEV,"Flat 221, Building A, Phase 1, Near Central Garden, Sector 62, Gautam Buddha Nagar, Uttar Pradesh 201301",Uttar Pradesh,90.0,VERIFIED,False,False,False,True,"UTILITY & SERVICE BILLING AUTHORITY - RECORD #1024
+Consumer ID: IND-202624
+Billing Name: TEST CUSTOMER 25
+Billing Address: Flat 221, Building A, Phase 1, Near Central Garden, Sector 62, Gautam Buddha Nagar, Uttar Pradesh 201301
+Due Date: 15/10/2026 | Amount: Rs. 2330","Billing Address: Flat 221, Sector 62, Gautam Buddha Nagar, Uttar Pradesh, 201301",Sector 62,90.0,VERIFIED,False,True,True,True,0.0,OCR_IMPROVED_RANKING,DIFFERENT_RESOLUTION_DIFFERENT_STATUS
+CLEAN_26,clean_documents,DEV,"Flat 226, Building B, Phase 2, Near Central Garden, Panampilly Nagar, Ernakulam, Kerala 682036",Kerala,63.0,INCONSISTENT,False,False,False,False,"UTILITY & SERVICE BILLING AUTHORITY - RECORD #1025
+Consumer ID: IND-202625
+Billing Name: TEST CUSTOMER 26
+Billing Address: Flat 226, Building B, Phase 2, Near Central Garden, Panampilly Nagar, Ernakulam, Kerala 682036
+Due Date: 15/10/2026 | Amount: Rs. 2375","Billing Address: Flat 226, Panampilly Nagar, Ernakulam, Kerala, 682036",Kerala,63.0,INCONSISTENT,False,False,False,False,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+CLEAN_27,clean_documents,DEV,"Flat 231, Building C, Phase 3, Near Central Garden, Sector 35B, Chandigarh, Chandigarh 160022",Chandigarh,53.0,INCONSISTENT,False,False,False,False,"UTILITY & SERVICE BILLING AUTHORITY - RECORD #1026
+Consumer ID: IND-202626
+Billing Name: TEST CUSTOMER 27
+Billing Address: Flat 231, Building C, Phase 3, Near Central Garden, Sector 35B, Chandigarh, Chandigarh 160022
+Due Date: 15/10/2026 | Amount: Rs. 2420","Billing Address: Flat 231, Sector 35B, Chandigarh, 160022",Rohini,53.0,INCONSISTENT,False,False,False,False,0.0,OCR_CAUSED_RANKING_CHANGE,DIFFERENT_RESOLUTION_DIFFERENT_STATUS
+CLEAN_28,clean_documents,VAL,"Flat 236, Building D, Phase 1, Near Central Garden, Vijay Nagar, Indore, Madhya Pradesh 452010",Madhya Pradesh,63.0,INCONSISTENT,False,False,False,False,"UTILITY & SERVICE BILLING AUTHORITY - RECORD #1027
+Consumer ID: IND-202627
+Billing Name: TEST CUSTOMER 28
+Billing Address: Flat 236, Building D, Phase 1, Near Central Garden, Vijay Nagar, Indore, Madhya Pradesh 452010
+Due Date: 15/10/2026 | Amount: Rs. 2465","Billing Address: Flat 236, Vijay Nagar, Indore, Madhya Pradesh, 452010",Madhya Pradesh,63.0,INCONSISTENT,False,False,False,False,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+CLEAN_29,clean_documents,HELD_OUT,"Flat 241, Building E, Phase 2, Near Central Garden, MP Nagar, Bhopal, Madhya Pradesh 462011",Madhya Pradesh,63.0,INCONSISTENT,False,False,False,False,"UTILITY & SERVICE BILLING AUTHORITY - RECORD #1028
+Consumer ID: IND-202628
+Billing Name: TEST CUSTOMER 29
+Billing Address: Flat 241, Building E, Phase 2, Near Central Garden, MP Nagar, Bhopal, Madhya Pradesh 462011
+Due Date: 15/10/2026 | Amount: Rs. 2510","Billing Address: Flat 241, MP Nagar, Bhopal, Madhya Pradesh, 462011",Madhya Pradesh,63.0,INCONSISTENT,False,False,False,False,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+CLEAN_30,clean_documents,DEV,"Flat 246, Building F, Phase 3, Near Central Garden, Sitabuldi, Nagpur, Maharashtra 440012",Maharashtra,63.0,INCONSISTENT,False,False,False,False,"UTILITY & SERVICE BILLING AUTHORITY - RECORD #1029
+Consumer ID: IND-202629
+Billing Name: TEST CUSTOMER 30
+Billing Address: Flat 246, Building F, Phase 3, Near Central Garden, Sitabuldi, Nagpur, Maharashtra 440012
+Due Date: 15/10/2026 | Amount: Rs. 2555","Billing Address: Flat 246, Sitabuldi, Nagpur, Maharashtra, 440012",Maharashtra,63.0,INCONSISTENT,False,False,False,False,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+CLEAN_31,clean_documents,DEV,"Flat 251, Building A, Phase 1, Near Central Garden, Kharadi, Pune, Maharashtra 411014",Kharadi,100.0,VERIFIED,False,True,True,True,"UTILITY & SERVICE BILLING AUTHORITY - RECORD #1030
+Consumer ID: IND-202630
+Billing Name: TEST CUSTOMER 31
+Billing Address: Flat 251, Building A, Phase 1, Near Central Garden, Kharadi, Pune, Maharashtra 411014
+Due Date: 15/10/2026 | Amount: Rs. 2600","Billing Address: Flat 251, Kharadi, Pune, Maharashtra, 411014",Kharadi,100.0,VERIFIED,False,True,True,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+CLEAN_32,clean_documents,DEV,"Flat 256, Building B, Phase 2, Near Central Garden, Viman Nagar, Pune, Maharashtra 411014",Viman Nagar,100.0,VERIFIED,False,True,True,True,"UTILITY & SERVICE BILLING AUTHORITY - RECORD #1031
+Consumer ID: IND-202631
+Billing Name: TEST CUSTOMER 32
+Billing Address: Flat 256, Building B, Phase 2, Near Central Garden, Viman Nagar, Pune, Maharashtra 411014
+Due Date: 15/10/2026 | Amount: Rs. 2645","Billing Address: Flat 256, Viman Nagar, Pune, Maharashtra, 411014",Viman Nagar,100.0,VERIFIED,False,True,True,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+CLEAN_33,clean_documents,VAL,"Flat 261, Building C, Phase 3, Near Central Garden, Hinjewadi, Pune, Maharashtra 411057",Hinjewadi,96.0,VERIFIED,False,True,True,True,"UTILITY & SERVICE BILLING AUTHORITY - RECORD #1032
+Consumer ID: IND-202632
+Billing Name: TEST CUSTOMER 33
+Billing Address: Flat 261, Building C, Phase 3, Near Central Garden, Hinjewadi, Pune, Maharashtra 411057
+Due Date: 15/10/2026 | Amount: Rs. 2690","Billing Address: Flat 261, Hinjewadi, Pune, Maharashtra, 411057",Hinjewadi,96.0,VERIFIED,False,True,True,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+CLEAN_34,clean_documents,HELD_OUT,"Flat 266, Building D, Phase 1, Near Central Garden, Kothrud, Pune, Maharashtra 411038",411038,96.0,VERIFIED,False,True,False,True,"UTILITY & SERVICE BILLING AUTHORITY - RECORD #1033
+Consumer ID: IND-202633
+Billing Name: TEST CUSTOMER 34
+Billing Address: Flat 266, Building D, Phase 1, Near Central Garden, Kothrud, Pune, Maharashtra 411038
+Due Date: 15/10/2026 | Amount: Rs. 2735","Billing Address: Flat 266, Kothrud, Pune, Maharashtra, 411038",Kothrud,96.0,VERIFIED,False,True,True,True,0.0,OCR_IMPROVED_RANKING,DIFFERENT_RESOLUTION_DIFFERENT_STATUS
+CLEAN_35,clean_documents,DEV,"Flat 271, Building E, Phase 2, Near Central Garden, Baner, Pune, Maharashtra 411045",Baner,96.0,VERIFIED,False,True,True,True,"UTILITY & SERVICE BILLING AUTHORITY - RECORD #1034
+Consumer ID: IND-202634
+Billing Name: TEST CUSTOMER 35
+Billing Address: Flat 271, Building E, Phase 2, Near Central Garden, Baner, Pune, Maharashtra 411045
+Due Date: 15/10/2026 | Amount: Rs. 2780","Billing Address: Flat 271, Baner, Pune, Maharashtra, 411045",Baner,96.0,VERIFIED,False,True,True,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+CLEAN_36,clean_documents,DEV,"Flat 276, Building F, Phase 3, Near Central Garden, Hadapsar, Pune, Maharashtra 411028",Hadapsar,100.0,VERIFIED,False,True,True,True,"UTILITY & SERVICE BILLING AUTHORITY - RECORD #1035
+Consumer ID: IND-202635
+Billing Name: TEST CUSTOMER 36
+Billing Address: Flat 276, Building F, Phase 3, Near Central Garden, Hadapsar, Pune, Maharashtra 411028
+Due Date: 15/10/2026 | Amount: Rs. 2825","Billing Address: Flat 276, Hadapsar, Pune, Maharashtra, 411028",Hadapsar,100.0,VERIFIED,False,True,True,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+CLEAN_37,clean_documents,DEV,"Flat 281, Building A, Phase 1, Near Central Garden, Bandra West, Mumbai, Maharashtra 400050",Bandra West,96.0,VERIFIED,False,True,True,True,"UTILITY & SERVICE BILLING AUTHORITY - RECORD #1036
+Consumer ID: IND-202636
+Billing Name: TEST CUSTOMER 37
+Billing Address: Flat 281, Building A, Phase 1, Near Central Garden, Bandra West, Mumbai, Maharashtra 400050
+Due Date: 15/10/2026 | Amount: Rs. 2870","Billing Address: Flat 281, Bandra West, Mumbai Suburban, Maharashtra, 400050",Bandra West,96.0,VERIFIED,False,True,True,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+CLEAN_38,clean_documents,VAL,"Flat 286, Building B, Phase 2, Near Central Garden, Andheri East, Mumbai, Maharashtra 400093",Andheri East,96.0,VERIFIED,False,True,True,True,"UTILITY & SERVICE BILLING AUTHORITY - RECORD #1037
+Consumer ID: IND-202637
+Billing Name: TEST CUSTOMER 38
+Billing Address: Flat 286, Building B, Phase 2, Near Central Garden, Andheri East, Mumbai, Maharashtra 400093
+Due Date: 15/10/2026 | Amount: Rs. 2915","Billing Address: Flat 286, East, Andheri, Mumbai Suburban, Maharashtra, 400093",Maharashtra,94.0,VERIFIED,False,False,False,True,-2.0,OCR_CAUSED_RANKING_CHANGE,DIFFERENT_RESOLUTION_DIFFERENT_STATUS
+CLEAN_39,clean_documents,HELD_OUT,"Flat 291, Building C, Phase 3, Near Central Garden, Powai, Mumbai, Maharashtra 400076",400076,96.0,VERIFIED,False,True,False,True,"UTILITY & SERVICE BILLING AUTHORITY - RECORD #1038
+Consumer ID: IND-202638
+Billing Name: TEST CUSTOMER 39
+Billing Address: Flat 291, Building C, Phase 3, Near Central Garden, Powai, Mumbai, Maharashtra 400076
+Due Date: 15/10/2026 | Amount: Rs. 2960","Billing Address: Flat 291, Powai, Mumbai Suburban, Maharashtra, 400076",Powai,96.0,VERIFIED,False,True,True,True,0.0,OCR_IMPROVED_RANKING,DIFFERENT_RESOLUTION_DIFFERENT_STATUS
+CLEAN_40,clean_documents,DEV,"Flat 296, Building D, Phase 1, Near Central Garden, Indiranagar, Bengaluru, Karnataka 560038",Indiranagar,96.0,VERIFIED,False,True,True,True,"UTILITY & SERVICE BILLING AUTHORITY - RECORD #1039
+Consumer ID: IND-202639
+Billing Name: TEST CUSTOMER 40
+Billing Address: Flat 296, Building D, Phase 1, Near Central Garden, Indiranagar, Bengaluru, Karnataka 560038
+Due Date: 15/10/2026 | Amount: Rs. 3005","Billing Address: Flat 296, Indiranagar, Bengaluru Urban, Karnataka, 560038",Indiranagar,96.0,VERIFIED,False,True,True,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+DEVA_01,multilingual_devanagari,DEV,"घर क्र. 1, खराडी, ता. Haveli, जि. पुणे, महाराष्ट्र ४११०१४",Kharadi,100.0,VERIFIED,False,True,True,True,"महाराष्ट्र शासन महसूल व नोंदणी विभाग
+पावती क्रमांक: MH-REG-2026-500
+पत्ता: घर क्र. 1, खराडी, ता. Haveli, जि. पुणे, महाराष्ट्र ४११०१४
+दिनांक: ०१/१०/२०२६","Haveli, Pune, Maharashtra, 411014",411014,84.0,CONSISTENT,False,True,False,True,-16.0,OCR_CAUSED_RANKING_CHANGE,DIFFERENT_RESOLUTION_DIFFERENT_STATUS
+DEVA_02,multilingual_devanagari,DEV,"घर क्र. 2, विमान नगर, ता. Haveli, जि. पुणे, महाराष्ट्र 411014",Viman Nagar,100.0,VERIFIED,False,True,True,True,"महाराष्ट्र शासन महसूल व नोंदणी विभाग
+पावती क्रमांक: MH-REG-2026-501
+पत्ता: घर क्र. 2, विमान नगर, ता. Haveli, जि. पुणे, महाराष्ट्र 411014
+दिनांक: ०१/१०/२०२६","Haveli, Pune, Maharashtra, 411014",411014,84.0,CONSISTENT,False,True,False,True,-16.0,OCR_CAUSED_RANKING_CHANGE,DIFFERENT_RESOLUTION_DIFFERENT_STATUS
+DEVA_03,multilingual_devanagari,VAL,"घर क्र. 3, हिंजवडी, ता. Mulshi, जि. पुणे, महाराष्ट्र ४११०५७",Hinjewadi,96.0,VERIFIED,False,True,True,True,"महाराष्ट्र शासन महसूल व नोंदणी विभाग
+पावती क्रमांक: MH-REG-2026-502
+पत्ता: घर क्र. 3, हिंजवडी, ता. Mulshi, जि. पुणे, महाराष्ट्र ४११०५७
+दिनांक: ०१/१०/२०२६","Mulshi, Pune, Maharashtra, 411057",411057,80.0,CONSISTENT,False,True,False,True,-16.0,OCR_CAUSED_RANKING_CHANGE,DIFFERENT_RESOLUTION_DIFFERENT_STATUS
+DEVA_04,multilingual_devanagari,HELD_OUT,"घर क्र. 4, कोथरूड, ता. Haveli, जि. पुणे, महाराष्ट्र 411038",411038,96.0,VERIFIED,False,True,False,True,"महाराष्ट्र शासन महसूल व नोंदणी विभाग
+पावती क्रमांक: MH-REG-2026-503
+पत्ता: घर क्र. 4, कोथरूड, ता. Haveli, जि. पुणे, महाराष्ट्र 411038
+दिनांक: ०१/१०/२०२६","Haveli, Pune, Maharashtra, 411038",411038,80.0,CONSISTENT,False,True,False,True,-16.0,OCR_DID_NOT_CHANGE_RANKING,SAME_RESOLUTION_DIFFERENT_STATUS
+DEVA_05,multilingual_devanagari,DEV,"घर क्र. 5, बाणेर, ता. Haveli, जि. पुणे, महाराष्ट्र ४११०४५",Baner,96.0,VERIFIED,False,True,True,True,"महाराष्ट्र शासन महसूल व नोंदणी विभाग
+पावती क्रमांक: MH-REG-2026-504
+पत्ता: घर क्र. 5, बाणेर, ता. Haveli, जि. पुणे, महाराष्ट्र ४११०४५
+दिनांक: ०१/१०/२०२६","Haveli, Pune, Maharashtra, 411045",411045,80.0,CONSISTENT,False,True,False,True,-16.0,OCR_CAUSED_RANKING_CHANGE,DIFFERENT_RESOLUTION_DIFFERENT_STATUS
+DEVA_06,multilingual_devanagari,DEV,"घर क्र. 6, हडपसर, ता. Haveli, जि. पुणे, महाराष्ट्र 411028",Hadapsar,100.0,VERIFIED,False,True,True,True,"महाराष्ट्र शासन महसूल व नोंदणी विभाग
+पावती क्रमांक: MH-REG-2026-505
+पत्ता: घर क्र. 6, हडपसर, ता. Haveli, जि. पुणे, महाराष्ट्र 411028
+दिनांक: ०१/१०/२०२६","Haveli, Pune, Maharashtra, 411028",411028,84.0,CONSISTENT,False,True,False,True,-16.0,OCR_CAUSED_RANKING_CHANGE,DIFFERENT_RESOLUTION_DIFFERENT_STATUS
+DEVA_07,multilingual_devanagari,DEV,"घर क्र. 7, बांद्रा पश्चिम, ता. Andheri, जि. मुंबई, महाराष्ट्र ४०००५०",Bandra West,96.0,VERIFIED,False,True,True,True,"महाराष्ट्र शासन महसूल व नोंदणी विभाग
+पावती क्रमांक: MH-REG-2026-506
+पत्ता: घर क्र. 7, बांद्रा पश्चिम, ता. Andheri, जि. मुंबई, महाराष्ट्र ४०००५०
+दिनांक: ०१/१०/२०२६","Andheri, Mumbai Suburban, Maharashtra, 400050",400050,80.0,CONSISTENT,False,True,False,True,-16.0,OCR_CAUSED_RANKING_CHANGE,DIFFERENT_RESOLUTION_DIFFERENT_STATUS
+DEVA_08,multilingual_devanagari,VAL,"घर क्र. 8, Andheri East, ता. Andheri, जि. मुंबई, महाराष्ट्र 400093",Andheri East,96.0,VERIFIED,False,True,True,True,"महाराष्ट्र शासन महसूल व नोंदणी विभाग
+पावती क्रमांक: MH-REG-2026-507
+पत्ता: घर क्र. 8, Andheri East, ता. Andheri, जि. मुंबई, महाराष्ट्र 400093
+दिनांक: ०१/१०/२०२६","Andheri, Mumbai Suburban, 400093",Mumbai Suburban,70.0,CONSISTENT,False,True,False,True,-26.0,OCR_CAUSED_RANKING_CHANGE,DIFFERENT_RESOLUTION_DIFFERENT_STATUS
+DEVA_09,multilingual_devanagari,HELD_OUT,"घर क्र. 9, Powai, ता. Kurla, जि. मुंबई, महाराष्ट्र ४०००७६",400076,96.0,VERIFIED,False,True,False,True,"महाराष्ट्र शासन महसूल व नोंदणी विभाग
+पावती क्रमांक: MH-REG-2026-508
+पत्ता: घर क्र. 9, Powai, ता. Kurla, जि. मुंबई, महाराष्ट्र ४०००७६
+दिनांक: ०१/१०/२०२६","Kurla, Mumbai Suburban, Maharashtra, 400076",400076,80.0,CONSISTENT,False,True,False,True,-16.0,OCR_DID_NOT_CHANGE_RANKING,SAME_RESOLUTION_DIFFERENT_STATUS
+DEVA_10,multilingual_devanagari,DEV,"मकान नं. 10, इंदिरानगर, जिला बेंगलुरु, कर्नाटक 560038",Indiranagar,96.0,VERIFIED,False,True,True,True,"राज्य राजस्व एवं विकास प्राधिकरण
+निवास प्रमाण पत्र विवरण #309
+पता: मकान नं. 10, इंदिरानगर, जिला बेंगलुरु, कर्नाटक 560038
+प्रमाणित दिनांक: १०/०९/२०२६","pta: mkan nn. 10, Indiranagar, Bengaluru Urban, Karnataka, 560038",Indiranagar,96.0,VERIFIED,False,True,True,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+DEVA_11,multilingual_devanagari,DEV,"मकान नं. 11, व्हाइटफील्ड, जिला बेंगलुरु, कर्नाटक ५६००६६",Whitefield,96.0,VERIFIED,False,True,True,True,"राज्य राजस्व एवं विकास प्राधिकरण
+निवास प्रमाण पत्र विवरण #310
+पता: मकान नं. 11, व्हाइटफील्ड, जिला बेंगलुरु, कर्नाटक ५६००६६
+प्रमाणित दिनांक: १०/०९/२०२६","pta: mkan nn. 11, Whitefield, Bengaluru Urban, Karnataka, 560066",Whitefield,96.0,VERIFIED,False,True,True,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+DEVA_12,multilingual_devanagari,DEV,"मकान नं. 12, Koramangala, जिला बेंगलुरु, कर्नाटक 560034",Koramangala,96.0,VERIFIED,False,True,True,True,"राज्य राजस्व एवं विकास प्राधिकरण
+निवास प्रमाण पत्र विवरण #311
+पता: मकान नं. 12, Koramangala, जिला बेंगलुरु, कर्नाटक 560034
+प्रमाणित दिनांक: १०/०९/२०२६","pta: mkan nn. 12, Koramangala, Bengaluru Urban, Karnataka, 560034",Koramangala,96.0,VERIFIED,False,True,True,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+DEVA_13,multilingual_devanagari,VAL,"मकान नं. 13, Electronic City, जिला बेंगलुरु, कर्नाटक ५६०१००",Electronic City,96.0,VERIFIED,False,True,True,True,"राज्य राजस्व एवं विकास प्राधिकरण
+निवास प्रमाण पत्र विवरण #312
+पता: मकान नं. 13, Electronic City, जिला बेंगलुरु, कर्नाटक ५६०१००
+प्रमाणित दिनांक: १०/०९/२०२६","pta: mkan nn. 13, Electronic City, Bengaluru Urban, Karnataka, 560100",Electronic City,96.0,VERIFIED,False,True,True,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+DEVA_14,multilingual_devanagari,HELD_OUT,"मकान नं. 14, कनॉट प्लेस, जिला नई दिल्ली, दिल्ली 110001",Connaught Place,96.0,VERIFIED,False,True,True,True,"राज्य राजस्व एवं विकास प्राधिकरण
+निवास प्रमाण पत्र विवरण #313
+पता: मकान नं. 14, कनॉट प्लेस, जिला नई दिल्ली, दिल्ली 110001
+प्रमाणित दिनांक: १०/०९/२०२६","pta: mkan nn. 14, Connaught Place, New Delhi, Delhi, 110001",Connaught Place,96.0,VERIFIED,False,True,True,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+DEVA_15,multilingual_devanagari,DEV,"मकान नं. 15, Karol Bagh, जिला Central Delhi, दिल्ली ११०००५",Karol Bagh,96.0,VERIFIED,False,True,True,True,"राज्य राजस्व एवं विकास प्राधिकरण
+निवास प्रमाण पत्र विवरण #314
+पता: मकान नं. 15, Karol Bagh, जिला Central Delhi, दिल्ली ११०००५
+प्रमाणित दिनांक: १०/०९/२०२६","pta: mkan nn. 15, Karol Bagh, Central Delhi, Delhi, 110005",Karol Bagh,96.0,VERIFIED,False,True,True,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+DEVA_16,multilingual_devanagari,DEV,"मकान नं. 16, Rohini, जिला North West Delhi, दिल्ली 110085",Rohini,96.0,VERIFIED,False,True,True,True,"राज्य राजस्व एवं विकास प्राधिकरण
+निवास प्रमाण पत्र विवरण #315
+पता: मकान नं. 16, Rohini, जिला North West Delhi, दिल्ली 110085
+प्रमाणित दिनांक: १०/०९/२०२६","pta: mkan nn. 16, Rohini, North West Delhi, Delhi, 110085",Rohini,96.0,VERIFIED,False,True,True,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+DEVA_17,multilingual_devanagari,DEV,"मकान नं. 17, सॉल्ट लेक, जिला कोलकाता, पश्चिम बंगाल ७०००९१",700091,96.0,VERIFIED,False,True,False,True,"राज्य राजस्व एवं विकास प्राधिकरण
+निवास प्रमाण पत्र विवरण #316
+पता: मकान नं. 17, सॉल्ट लेक, जिला कोलकाता, पश्चिम बंगाल ७०००९१
+प्रमाणित दिनांक: १०/०९/२०२६","pta: mkan nn. 17, Salt Lake, Kolkata, West Bengal, 700091",Salt Lake,96.0,VERIFIED,False,True,True,True,0.0,OCR_IMPROVED_RANKING,DIFFERENT_RESOLUTION_DIFFERENT_STATUS
+DEVA_18,multilingual_devanagari,VAL,"मकान नं. 18, Rajarhat, जिला North 24 Parganas, पश्चिम बंगाल 700135",700135,96.0,VERIFIED,False,True,False,True,"राज्य राजस्व एवं विकास प्राधिकरण
+निवास प्रमाण पत्र विवरण #317
+पता: मकान नं. 18, Rajarhat, जिला North 24 Parganas, पश्चिम बंगाल 700135
+प्रमाणित दिनांक: १०/०९/२०२६","pta: mkan nn. 18, Rajarhat, North 24 Parganas, West Bengal, 700135",Rajarhat,96.0,VERIFIED,False,True,True,True,0.0,OCR_IMPROVED_RANKING,DIFFERENT_RESOLUTION_DIFFERENT_STATUS
+DEVA_19,multilingual_devanagari,HELD_OUT,"मकान नं. 19, डीएलएफ साइबर सिटी, जिला गुरुग्राम, हरियाणा १२२००२",Haryana,60.0,INCONSISTENT,False,False,False,False,"राज्य राजस्व एवं विकास प्राधिकरण
+निवास प्रमाण पत्र विवरण #318
+पता: मकान नं. 19, डीएलएफ साइबर सिटी, जिला गुरुग्राम, हरियाणा १२२००२
+प्रमाणित दिनांक: १०/०९/२०२६","pta: mkan nn. 19, Dieleph Saibr Siti, Gurugram, Haryana, 122002",Haryana,63.0,INCONSISTENT,False,False,False,False,3.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+DEVA_20,multilingual_devanagari,DEV,"मकान नं. 20, जुबली हिल्स, जिला हैदराबाद, तेलंगाना 500033",Telangana,84.0,CONSISTENT,False,False,False,True,"राज्य राजस्व एवं विकास प्राधिकरण
+निवास प्रमाण पत्र विवरण #319
+पता: मकान नं. 20, जुबली हिल्स, जिला हैदराबाद, तेलंगाना 500033
+प्रमाणित दिनांक: १०/०९/२०२६","pta: mkan nn. 20, Jubli Hils, Hyderabad, Telangana, 500033",Telangana,84.0,CONSISTENT,False,False,False,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+DEVA_21,multilingual_devanagari,DEV,"मकान नं. 21, Anna Nagar, जिला Chennai, Tamil Nadu ६०००४०",Tamil Nadu,94.0,VERIFIED,False,False,False,True,"राज्य राजस्व एवं विकास प्राधिकरण
+निवास प्रमाण पत्र विवरण #320
+पता: मकान नं. 21, Anna Nagar, जिला Chennai, Tamil Nadu ६०००४०
+प्रमाणित दिनांक: १०/०९/२०२६","pta: mkan nn. 21, Anna Nagar, Chennai, Tamil Nadu, 600040",T Nagar,94.0,VERIFIED,False,True,False,True,0.0,OCR_CAUSED_RANKING_CHANGE,DIFFERENT_RESOLUTION_DIFFERENT_STATUS
+DEVA_22,multilingual_devanagari,DEV,"मकान नं. 22, नवरंगपुरा, जिला अहमदाबाद, गुजरात 380009",380009,96.0,VERIFIED,False,True,False,True,"राज्य राजस्व एवं विकास प्राधिकरण
+निवास प्रमाण पत्र विवरण #321
+पता: मकान नं. 22, नवरंगपुरा, जिला अहमदाबाद, गुजरात 380009
+प्रमाणित दिनांक: १०/०९/२०२६","pta: mkan nn. 22, Navrangpura, Ahmedabad, Gujarat, 380009",Navrangpura,96.0,VERIFIED,False,True,True,True,0.0,OCR_IMPROVED_RANKING,DIFFERENT_RESOLUTION_DIFFERENT_STATUS
+DEVA_23,multilingual_devanagari,VAL,"मकान नं. 23, वैशाली नगर, जिला जयपुर, राजस्थान ३०२०२१",Vaishali Nagar,96.0,VERIFIED,False,True,True,True,"राज्य राजस्व एवं विकास प्राधिकरण
+निवास प्रमाण पत्र विवरण #322
+पता: मकान नं. 23, वैशाली नगर, जिला जयपुर, राजस्थान ३०२०२१
+प्रमाणित दिनांक: १०/०९/२०२६","pta: mkan nn. 23, Vaishali Nagar, Jaipur, Rajasthan, 302021",Vaishali Nagar,96.0,VERIFIED,False,True,True,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+DEVA_24,multilingual_devanagari,HELD_OUT,"मकान नं. 24, गोमती नगर, जिला लखनऊ, उत्तर प्रदेश 226010",Gomti Nagar,96.0,VERIFIED,False,True,True,True,"राज्य राजस्व एवं विकास प्राधिकरण
+निवास प्रमाण पत्र विवरण #323
+पता: मकान नं. 24, गोमती नगर, जिला लखनऊ, उत्तर प्रदेश 226010
+प्रमाणित दिनांक: १०/०९/२०२६","Lucknow, 226010, 226010",226010,50.0,INCONSISTENT,False,True,False,False,-46.0,OCR_CAUSED_RANKING_CHANGE,DIFFERENT_RESOLUTION_DIFFERENT_STATUS
+DEVA_25,multilingual_devanagari,DEV,"मकान नं. 25, सेक्टर 62, जिला गौतम बुद्ध नगर, उत्तर प्रदेश २०१३०१",Uttar Pradesh,90.0,VERIFIED,False,False,False,True,"राज्य राजस्व एवं विकास प्राधिकरण
+निवास प्रमाण पत्र विवरण #324
+पता: मकान नं. 25, सेक्टर 62, जिला गौतम बुद्ध नगर, उत्तर प्रदेश २०१३०१
+प्रमाणित दिनांक: १०/०९/२०२६","Gautam Buddha Nagar, 201301, 201301",Gautam Buddha Nagar,50.0,INCONSISTENT,False,True,False,False,-40.0,OCR_CAUSED_RANKING_CHANGE,DIFFERENT_RESOLUTION_DIFFERENT_STATUS
+DEVA_26,multilingual_devanagari,DEV,"मकान नं. 26, Panampilly Nagar, जिला Ernakulam, Kerala 682036",Kerala,63.0,INCONSISTENT,False,False,False,False,"राज्य राजस्व एवं विकास प्राधिकरण
+निवास प्रमाण पत्र विवरण #325
+पता: मकान नं. 26, Panampilly Nagar, जिला Ernakulam, Kerala 682036
+प्रमाणित दिनांक: १०/०९/२०२६","pta: mkan nn. 26, Panampilly Nagar, Ernakulam, Kerala, 682036",Kerala,63.0,INCONSISTENT,False,False,False,False,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+DEVA_27,multilingual_devanagari,DEV,"मकान नं. 27, Sector 35B, जिला Chandigarh, Chandigarh १६००२२",Chandigarh,53.0,INCONSISTENT,False,False,False,False,"राज्य राजस्व एवं विकास प्राधिकरण
+निवास प्रमाण पत्र विवरण #326
+पता: मकान नं. 27, Sector 35B, जिला Chandigarh, Chandigarh १६००२२
+प्रमाणित दिनांक: १०/०९/२०२६","pta: mkan nn. 27, Sector 35B, Chandigarh, 160022",Rohini,53.0,INCONSISTENT,False,False,False,False,0.0,OCR_CAUSED_RANKING_CHANGE,DIFFERENT_RESOLUTION_DIFFERENT_STATUS
+DEVA_28,multilingual_devanagari,VAL,"मकान नं. 28, विजय नगर, जिला इंदौर, मध्य प्रदेश 452010",Madhya Pradesh,63.0,INCONSISTENT,False,False,False,False,"राज्य राजस्व एवं विकास प्राधिकरण
+निवास प्रमाण पत्र विवरण #327
+पता: मकान नं. 28, विजय नगर, जिला इंदौर, मध्य प्रदेश 452010
+प्रमाणित दिनांक: १०/०९/२०२६","Indore, 452010, 452010",,12.0,INCONSISTENT,False,False,False,False,-51.0,OCR_DESTROYED_CANDIDATE_RECALL,DIFFERENT_RESOLUTION_DIFFERENT_STATUS
+DEVA_29,multilingual_devanagari,HELD_OUT,"मकान नं. 29, एमपी नगर, जिला भोपाल, मध्य प्रदेश ४६२०११",Madhya Pradesh,63.0,INCONSISTENT,False,False,False,False,"राज्य राजस्व एवं विकास प्राधिकरण
+निवास प्रमाण पत्र विवरण #328
+पता: मकान नं. 29, एमपी नगर, जिला भोपाल, मध्य प्रदेश ४६२०११
+प्रमाणित दिनांक: १०/०९/२०२६","Bhopal, 462011, 462011",,12.0,INCONSISTENT,False,False,False,False,-51.0,OCR_DESTROYED_CANDIDATE_RECALL,DIFFERENT_RESOLUTION_DIFFERENT_STATUS
+DEVA_30,multilingual_devanagari,DEV,"घर क्र. 30, सीताबर्डी, ता. Nagpur Urban, जि. नागपुर, महाराष्ट्र 440012",Maharashtra,63.0,INCONSISTENT,False,False,False,False,"महाराष्ट्र शासन महसूल व नोंदणी विभाग
+पावती क्रमांक: MH-REG-2026-529
+पत्ता: घर क्र. 30, सीताबर्डी, ता. Nagpur Urban, जि. नागपुर, महाराष्ट्र 440012
+दिनांक: ०१/१०/२०२६","Nagpur Urban, Nagpur, 440012",Kolhapur,38.0,INCONSISTENT,True,False,False,False,-25.0,OCR_CAUSED_RANKING_CHANGE,DIFFERENT_RESOLUTION_DIFFERENT_STATUS
+DEVA_31,multilingual_devanagari,DEV,"घर क्र. 31, खराडी, ता. Haveli, जि. पुणे, महाराष्ट्र ४११०१४",Kharadi,100.0,VERIFIED,False,True,True,True,"महाराष्ट्र शासन महसूल व नोंदणी विभाग
+पावती क्रमांक: MH-REG-2026-530
+पत्ता: घर क्र. 31, खराडी, ता. Haveli, जि. पुणे, महाराष्ट्र ४११०१४
+दिनांक: ०१/१०/२०२६","Haveli, Pune, Maharashtra, 411014",411014,84.0,CONSISTENT,False,True,False,True,-16.0,OCR_CAUSED_RANKING_CHANGE,DIFFERENT_RESOLUTION_DIFFERENT_STATUS
+DEVA_32,multilingual_devanagari,DEV,"घर क्र. 32, विमान नगर, ता. Haveli, जि. पुणे, महाराष्ट्र 411014",Viman Nagar,100.0,VERIFIED,False,True,True,True,"महाराष्ट्र शासन महसूल व नोंदणी विभाग
+पावती क्रमांक: MH-REG-2026-531
+पत्ता: घर क्र. 32, विमान नगर, ता. Haveli, जि. पुणे, महाराष्ट्र 411014
+दिनांक: ०१/१०/२०२६","Haveli, Pune, Maharashtra, 411014",411014,84.0,CONSISTENT,False,True,False,True,-16.0,OCR_CAUSED_RANKING_CHANGE,DIFFERENT_RESOLUTION_DIFFERENT_STATUS
+DEVA_33,multilingual_devanagari,VAL,"घर क्र. 33, हिंजवडी, ता. Mulshi, जि. पुणे, महाराष्ट्र ४११०५७",Hinjewadi,96.0,VERIFIED,False,True,True,True,"महाराष्ट्र शासन महसूल व नोंदणी विभाग
+पावती क्रमांक: MH-REG-2026-532
+पत्ता: घर क्र. 33, हिंजवडी, ता. Mulshi, जि. पुणे, महाराष्ट्र ४११०५७
+दिनांक: ०१/१०/२०२६","Mulshi, Pune, Maharashtra, 411057",411057,80.0,CONSISTENT,False,True,False,True,-16.0,OCR_CAUSED_RANKING_CHANGE,DIFFERENT_RESOLUTION_DIFFERENT_STATUS
+DEVA_34,multilingual_devanagari,HELD_OUT,"घर क्र. 34, कोथरूड, ता. Haveli, जि. पुणे, महाराष्ट्र 411038",411038,96.0,VERIFIED,False,True,False,True,"महाराष्ट्र शासन महसूल व नोंदणी विभाग
+पावती क्रमांक: MH-REG-2026-533
+पत्ता: घर क्र. 34, कोथरूड, ता. Haveli, जि. पुणे, महाराष्ट्र 411038
+दिनांक: ०१/१०/२०२६","Haveli, Pune, Maharashtra, 411038",411038,80.0,CONSISTENT,False,True,False,True,-16.0,OCR_DID_NOT_CHANGE_RANKING,SAME_RESOLUTION_DIFFERENT_STATUS
+DEVA_35,multilingual_devanagari,DEV,"घर क्र. 35, बाणेर, ता. Haveli, जि. पुणे, महाराष्ट्र ४११०४५",Baner,96.0,VERIFIED,False,True,True,True,"महाराष्ट्र शासन महसूल व नोंदणी विभाग
+पावती क्रमांक: MH-REG-2026-534
+पत्ता: घर क्र. 35, बाणेर, ता. Haveli, जि. पुणे, महाराष्ट्र ४११०४५
+दिनांक: ०१/१०/२०२६","Haveli, Pune, Maharashtra, 411045",411045,80.0,CONSISTENT,False,True,False,True,-16.0,OCR_CAUSED_RANKING_CHANGE,DIFFERENT_RESOLUTION_DIFFERENT_STATUS
+DEVA_36,multilingual_devanagari,DEV,"घर क्र. 36, हडपसर, ता. Haveli, जि. पुणे, महाराष्ट्र 411028",Hadapsar,100.0,VERIFIED,False,True,True,True,"महाराष्ट्र शासन महसूल व नोंदणी विभाग
+पावती क्रमांक: MH-REG-2026-535
+पत्ता: घर क्र. 36, हडपसर, ता. Haveli, जि. पुणे, महाराष्ट्र 411028
+दिनांक: ०१/१०/२०२६","Haveli, Pune, Maharashtra, 411028",411028,84.0,CONSISTENT,False,True,False,True,-16.0,OCR_CAUSED_RANKING_CHANGE,DIFFERENT_RESOLUTION_DIFFERENT_STATUS
+DEVA_37,multilingual_devanagari,DEV,"घर क्र. 37, बांद्रा पश्चिम, ता. Andheri, जि. मुंबई, महाराष्ट्र ४०००५०",Bandra West,96.0,VERIFIED,False,True,True,True,"महाराष्ट्र शासन महसूल व नोंदणी विभाग
+पावती क्रमांक: MH-REG-2026-536
+पत्ता: घर क्र. 37, बांद्रा पश्चिम, ता. Andheri, जि. मुंबई, महाराष्ट्र ४०००५०
+दिनांक: ०१/१०/२०२६","Andheri, Mumbai Suburban, Maharashtra, 400050",400050,80.0,CONSISTENT,False,True,False,True,-16.0,OCR_CAUSED_RANKING_CHANGE,DIFFERENT_RESOLUTION_DIFFERENT_STATUS
+DEVA_38,multilingual_devanagari,VAL,"घर क्र. 38, Andheri East, ता. Andheri, जि. मुंबई, महाराष्ट्र 400093",Andheri East,96.0,VERIFIED,False,True,True,True,"महाराष्ट्र शासन महसूल व नोंदणी विभाग
+पावती क्रमांक: MH-REG-2026-537
+पत्ता: घर क्र. 38, Andheri East, ता. Andheri, जि. मुंबई, महाराष्ट्र 400093
+दिनांक: ०१/१०/२०२६","Andheri, Mumbai Suburban, 400093",Mumbai Suburban,70.0,CONSISTENT,False,True,False,True,-26.0,OCR_CAUSED_RANKING_CHANGE,DIFFERENT_RESOLUTION_DIFFERENT_STATUS
+DEVA_39,multilingual_devanagari,HELD_OUT,"घर क्र. 39, Powai, ता. Kurla, जि. मुंबई, महाराष्ट्र ४०००७६",400076,96.0,VERIFIED,False,True,False,True,"महाराष्ट्र शासन महसूल व नोंदणी विभाग
+पावती क्रमांक: MH-REG-2026-538
+पत्ता: घर क्र. 39, Powai, ता. Kurla, जि. मुंबई, महाराष्ट्र ४०००७६
+दिनांक: ०१/१०/२०२६","Kurla, Mumbai Suburban, Maharashtra, 400076",400076,80.0,CONSISTENT,False,True,False,True,-16.0,OCR_DID_NOT_CHANGE_RANKING,SAME_RESOLUTION_DIFFERENT_STATUS
+DEVA_40,multilingual_devanagari,DEV,"मकान नं. 40, इंदिरानगर, जिला बेंगलुरु, कर्नाटक 560038",Indiranagar,96.0,VERIFIED,False,True,True,True,"राज्य राजस्व एवं विकास प्राधिकरण
+निवास प्रमाण पत्र विवरण #339
+पता: मकान नं. 40, इंदिरानगर, जिला बेंगलुरु, कर्नाटक 560038
+प्रमाणित दिनांक: १०/०९/२०२६","pta: mkan nn. 40, Indiranagar, Bengaluru Urban, Karnataka, 560038",Indiranagar,96.0,VERIFIED,False,True,True,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+DEVA_41,multilingual_devanagari,DEV,"मकान नं. 41, व्हाइटफील्ड, जिला बेंगलुरु, कर्नाटक ५६००६६",Whitefield,96.0,VERIFIED,False,True,True,True,"राज्य राजस्व एवं विकास प्राधिकरण
+निवास प्रमाण पत्र विवरण #340
+पता: मकान नं. 41, व्हाइटफील्ड, जिला बेंगलुरु, कर्नाटक ५६००६६
+प्रमाणित दिनांक: १०/०९/२०२६","pta: mkan nn. 41, Whitefield, Bengaluru Urban, Karnataka, 560066",Whitefield,96.0,VERIFIED,False,True,True,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+DEVA_42,multilingual_devanagari,DEV,"मकान नं. 42, Koramangala, जिला बेंगलुरु, कर्नाटक 560034",Koramangala,96.0,VERIFIED,False,True,True,True,"राज्य राजस्व एवं विकास प्राधिकरण
+निवास प्रमाण पत्र विवरण #341
+पता: मकान नं. 42, Koramangala, जिला बेंगलुरु, कर्नाटक 560034
+प्रमाणित दिनांक: १०/०९/२०२६","pta: mkan nn. 42, Koramangala, Bengaluru Urban, Karnataka, 560034",Koramangala,96.0,VERIFIED,False,True,True,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+DEVA_43,multilingual_devanagari,VAL,"मकान नं. 43, Electronic City, जिला बेंगलुरु, कर्नाटक ५६०१००",Electronic City,96.0,VERIFIED,False,True,True,True,"राज्य राजस्व एवं विकास प्राधिकरण
+निवास प्रमाण पत्र विवरण #342
+पता: मकान नं. 43, Electronic City, जिला बेंगलुरु, कर्नाटक ५६०१००
+प्रमाणित दिनांक: १०/०९/२०२६","pta: mkan nn. 43, Electronic City, Bengaluru Urban, Karnataka, 560100",Electronic City,96.0,VERIFIED,False,True,True,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+DEVA_44,multilingual_devanagari,HELD_OUT,"मकान नं. 44, कनॉट प्लेस, जिला नई दिल्ली, दिल्ली 110001",Connaught Place,96.0,VERIFIED,False,True,True,True,"राज्य राजस्व एवं विकास प्राधिकरण
+निवास प्रमाण पत्र विवरण #343
+पता: मकान नं. 44, कनॉट प्लेस, जिला नई दिल्ली, दिल्ली 110001
+प्रमाणित दिनांक: १०/०९/२०२६","pta: mkan nn. 44, Connaught Place, New Delhi, Delhi, 110001",Connaught Place,96.0,VERIFIED,False,True,True,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+DEVA_45,multilingual_devanagari,DEV,"मकान नं. 45, Karol Bagh, जिला Central Delhi, दिल्ली ११०००५",Karol Bagh,96.0,VERIFIED,False,True,True,True,"राज्य राजस्व एवं विकास प्राधिकरण
+निवास प्रमाण पत्र विवरण #344
+पता: मकान नं. 45, Karol Bagh, जिला Central Delhi, दिल्ली ११०००५
+प्रमाणित दिनांक: १०/०९/२०२६","pta: mkan nn. 45, Karol Bagh, Central Delhi, Delhi, 110005",Karol Bagh,96.0,VERIFIED,False,True,True,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+DEG_01,scan_degradations,DEV,"Plot 10, Industrial Zone, Kharadi, Pune, Maharashtra 411014",Kharadi,100.0,VERIFIED,False,True,True,True,"SCANNED PROPERTY TAX CHALLAN
+Assessment No: TAX-2026-800
+Location: Plot 10, Industrial Zone, Kharadi, Pune, Maharashtra 411014
+Total Assessment: Rs. 4500","SCANNED PROPERTY TAX CHALLAN Assessment No: TAX-2026-800 Location: Plot 10, Kharadi, Pune, Maharashtra, 411014",Kharadi,100.0,VERIFIED,False,True,True,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+DEG_02,scan_degradations,DEV,"Plot 11, Industrial Zone, Viman Nagar, Pune, Maharashtra 411014",Viman Nagar,100.0,VERIFIED,False,True,True,True,"SCANNED PROPERTY TAX CHALLAN
+Assessment No: TAX-2026-801
+Location: Plot 11, Industrial Zone, Viman Nagar, Pune, Maharashtra 411014
+Total Assessment: Rs. 4600","SCANNED PROPERTY TAX CHALLAN Assessment No: TAX-2026-801 Location: Plot 11, Viman Nagar, Pune, Maharashtra, 411014",Viman Nagar,100.0,VERIFIED,False,True,True,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+DEG_03,scan_degradations,VAL,"Plot 12, Industrial Zone, Hinjewadi, Pune, Maharashtra 411057",Hinjewadi,96.0,VERIFIED,False,True,True,True,"SCANNED PROPERTY TAX CHALLAN
+Assessment No: TAX-2026-802
+Location: Plot 12, Industrial Zone, Hinjewadi, Pune, Maharashtra 411057
+Total Assessment: Rs. 4700","SCANNED PROPERTY TAX CHALLAN Assessment No: TAX-2026-802 Location: Plot 12, Hinjewadi, Pune, Maharashtra, 411057",Hinjewadi,96.0,VERIFIED,False,True,True,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+DEG_04,scan_degradations,HELD_OUT,"Plot 13, Industrial Zone, Kothrud, Pune, Maharashtra 411038",411038,96.0,VERIFIED,False,True,False,True,"SCANNED PROPERTY TAX CHALLAN
+Assessment No: TAX-2026-803
+Location: Plot 13, Industrial Zone, Kothrud, Pune, Maharashtra 411038
+Total Assessment: Rs. 4800","SCANNED PROPERTY TAX CHALLAN Assessment No: TAX-2026-803 Location: Plot 13, Kothrud, Pune, Maharashtra, 411038",Kothrud,96.0,VERIFIED,False,True,True,True,0.0,OCR_IMPROVED_RANKING,DIFFERENT_RESOLUTION_DIFFERENT_STATUS
+DEG_05,scan_degradations,DEV,"Plot 14, Industrial Zone, Baner, Pune, Maharashtra 411045",Baner,96.0,VERIFIED,False,True,True,True,"SCANNED PROPERTY TAX CHALLAN
+Assessment No: TAX-2026-804
+Location: Plot 14, Industrial Zone, Baner, Pune, Maharashtra 411045
+Total Assessment: Rs. 4900","SCANNED PROPERTY TAX CHALLAN Assessment No: TAX-2026-804 Location: Plot 14, Baner, Pune, Maharashtra, 411045",Baner,96.0,VERIFIED,False,True,True,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+DEG_06,scan_degradations,DEV,"Plot 15, Industrial Zone, Hadapsar, Pune, Maharashtra 411028",Hadapsar,100.0,VERIFIED,False,True,True,True,"SCANNED PROPERTY TAX CHALLAN
+Assessment No: TAX-2026-805
+Location: Plot 15, Industrial Zone, Hadapsar, Pune, Maharashtra 411028
+Total Assessment: Rs. 5000","SCANNED PROPERTY TAX CHALLAN Assessment No: TAX-2026-805 Location: Plot 15, Hadapsar, Pune, Maharashtra, 411028",Hadapsar,100.0,VERIFIED,False,True,True,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+DEG_07,scan_degradations,DEV,"Plot 16, Industrial Zone, Bandra West, Mumbai, Maharashtra 400050",Bandra West,96.0,VERIFIED,False,True,True,True,"SCANNED PROPERTY TAX CHALLAN
+Assessment No: TAX-2026-806
+Location: Plot 16, Industrial Zone, Bandra West, Mumbai, Maharashtra 400050
+Total Assessment: Rs. 5100","SCANNED PROPERTY TAX CHALLAN Assessment No: TAX-2026-806 Location: Plot 16, Bandra West, Mumbai Suburban, Maharashtra, 400050",Bandra West,96.0,VERIFIED,False,True,True,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+DEG_08,scan_degradations,VAL,"Plot 17, Industrial Zone, Andheri East, Mumbai, Maharashtra 400093",Andheri East,96.0,VERIFIED,False,True,True,True,"SCANNED PROPERTY TAX CHALLAN
+Assessment No: TAX-2026-807
+Location: Plot 17, Industrial Zone, Andheri East, Mumbai, Maharashtra 400093
+Total Assessment: Rs. 5200","SCANNED PROPERTY TAX CHALLAN Assessment No: TAX-2026-807 Location: Plot 17, Industrial Zone, Andheri, Mumbai Suburban, Maharashtra, 400093",Maharashtra,94.0,VERIFIED,False,False,False,True,-2.0,OCR_CAUSED_RANKING_CHANGE,DIFFERENT_RESOLUTION_DIFFERENT_STATUS
+DEG_09,scan_degradations,HELD_OUT,"Plot 18, Industrial Zone, Powai, Mumbai, Maharashtra 400076",400076,96.0,VERIFIED,False,True,False,True,"SCANNED PROPERTY TAX CHALLAN
+Assessment No: TAX-2026-808
+Location: Plot 18, Industrial Zone, Powai, Mumbai, Maharashtra 400076
+Total Assessment: Rs. 5300","SCANNED PROPERTY TAX CHALLAN Assessment No: TAX-2026-808 Location: Plot 18, Powai, Mumbai Suburban, Maharashtra, 400076",Powai,96.0,VERIFIED,False,True,True,True,0.0,OCR_IMPROVED_RANKING,DIFFERENT_RESOLUTION_DIFFERENT_STATUS
+DEG_10,scan_degradations,DEV,"Plot 19, Industrial Zone, Indiranagar, Bengaluru, Karnataka 560038",Indiranagar,96.0,VERIFIED,False,True,True,True,"SCANNED PROPERTY TAX CHALLAN
+Assessment No: TAX-2026-809
+Location: Plot 19, Industrial Zone, Indiranagar, Bengaluru, Karnataka 560038
+Total Assessment: Rs. 5400","SCANNED PROPERTY TAX CHALLAN Assessment No: TAX-2026-809 Location: Plot 19, Indiranagar, Bengaluru Urban, Karnataka, 560038",Indiranagar,96.0,VERIFIED,False,True,True,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+DEG_11,scan_degradations,DEV,"Plot 20, Industrial Zone, Whitefield, Bengaluru, Karnataka 560066",Whitefield,96.0,VERIFIED,False,True,True,True,"SCANNED PROPERTY TAX CHALLAN
+Assessment No: TAX-2026-810
+Location: Plot 20, Industrial Zone, Whitefield, Bengaluru, Karnataka 560066
+Total Assessment: Rs. 5500","SCANNED PROPERTY TAX CHALLAN Assessment No: TAX-2026-810 Location: Plot 20, Whitefield, Bengaluru Urban, Karnataka, 560066",Whitefield,96.0,VERIFIED,False,True,True,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+DEG_12,scan_degradations,DEV,"Plot 21, Industrial Zone, Koramangala, Bengaluru, Karnataka 560034",Koramangala,96.0,VERIFIED,False,True,True,True,"SCANNED PROPERTY TAX CHALLAN
+Assessment No: TAX-2026-811
+Location: Plot 21, Industrial Zone, Koramangala, Bengaluru, Karnataka 560034
+Total Assessment: Rs. 5600","SCANNED PROPERTY TAX CHALLAN Assessment No: TAX-2026-811 Location: Plot 21, Koramangala, Bengaluru Urban, Karnataka, 560034",Koramangala,96.0,VERIFIED,False,True,True,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+DEG_13,scan_degradations,VAL,"Plot 22, Industrial Zone, Electronic City, Bengaluru, Karnataka 560100",Electronic City,96.0,VERIFIED,False,True,True,True,"SCANNED PROPERTY TAX CHALLAN
+Assessment No: TAX-2026-812
+Location: Plot 22, Industrial Zone, Electronic City, Bengaluru, Karnataka 560100
+Total Assessment: Rs. 5700","SCANNED PROPERTY TAX CHALLAN Assessment No: TAX-2026-812 Location: Plot 22, Electronic City, Bengaluru Urban, Karnataka, 560100",Electronic City,96.0,VERIFIED,False,True,True,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+DEG_14,scan_degradations,HELD_OUT,"Plot 23, Industrial Zone, Connaught Place, New Delhi, Delhi 110001",Connaught Place,96.0,VERIFIED,False,True,True,True,"SCANNED PROPERTY TAX CHALLAN
+Assessment No: TAX-2026-813
+Location: Plot 23, Industrial Zone, Connaught Place, New Delhi, Delhi 110001
+Total Assessment: Rs. 5800","SCANNED PROPERTY TAX CHALLAN Assessment No: TAX-2026-813 Location: Plot 23, Connaught Place, New Delhi, Delhi, 110001",Connaught Place,96.0,VERIFIED,False,True,True,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+DEG_15,scan_degradations,DEV,"Plot 24, Industrial Zone, Karol Bagh, Central Delhi, Delhi 110005",Karol Bagh,96.0,VERIFIED,False,True,True,True,"SCANNED PROPERTY TAX CHALLAN
+Assessment No: TAX-2026-814
+Location: Plot 24, Industrial Zone, Karol Bagh, Central Delhi, Delhi 110005
+Total Assessment: Rs. 5900","SCANNED PROPERTY TAX CHALLAN Assessment No: TAX-2026-814 Location: Plot 24, Karol Bagh, Central Delhi, Delhi, 110005",Karol Bagh,96.0,VERIFIED,False,True,True,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+DEG_16,scan_degradations,DEV,"Plot 25, Industrial Zone, Rohini, North West Delhi, Delhi 110085",Rohini,96.0,VERIFIED,False,True,True,True,"SCANNED PROPERTY TAX CHALLAN
+Assessment No: TAX-2026-815
+Location: Plot 25, Industrial Zone, Rohini, North West Delhi, Delhi 110085
+Total Assessment: Rs. 6000","SCANNED PROPERTY TAX CHALLAN Assessment No: TAX-2026-815 Location: Plot 25, Rohini, North West Delhi, Delhi, 110085",Rohini,96.0,VERIFIED,False,True,True,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+DEG_17,scan_degradations,DEV,"Plot 26, Industrial Zone, Salt Lake, Kolkata, West Bengal 700091",700091,96.0,VERIFIED,False,True,False,True,"SCANNED PROPERTY TAX CHALLAN
+Assessment No: TAX-2026-816
+Location: Plot 26, Industrial Zone, Salt Lake, Kolkata, West Bengal 700091
+Total Assessment: Rs. 6100","SCANNED PROPERTY TAX CHALLAN Assessment No: TAX-2026-816 Location: Plot 26, Salt Lake, Kolkata, West Bengal, 700091",Salt Lake,96.0,VERIFIED,False,True,True,True,0.0,OCR_IMPROVED_RANKING,DIFFERENT_RESOLUTION_DIFFERENT_STATUS
+DEG_18,scan_degradations,VAL,"Plot 27, Industrial Zone, Rajarhat, North 24 Parganas, West Bengal 700135",700135,96.0,VERIFIED,False,True,False,True,"SCANNED PROPERTY TAX CHALLAN
+Assessment No: TAX-2026-817
+Location: Plot 27, Industrial Zone, Rajarhat, North 24 Parganas, West Bengal 700135
+Total Assessment: Rs. 6200","SCANNED PROPERTY TAX CHALLAN Assessment No: TAX-2026-817 Location: Plot 27, Rajarhat, North 24 Parganas, West Bengal, 700135",Rajarhat,96.0,VERIFIED,False,True,True,True,0.0,OCR_IMPROVED_RANKING,DIFFERENT_RESOLUTION_DIFFERENT_STATUS
+DEG_19,scan_degradations,HELD_OUT,"Plot 28, Industrial Zone, DLF Cyber City, Gurugram, Haryana 122002",Haryana,60.0,INCONSISTENT,False,False,False,False,"SCANNED PROPERTY TAX CHALLAN
+Assessment No: TAX-2026-818
+Location: Plot 28, Industrial Zone, DLF Cyber City, Gurugram, Haryana 122002
+Total Assessment: Rs. 6300","SCANNED PROPERTY TAX CHALLAN Assessment No: TAX-2026-818 Location: Plot 28, DLF Cyber City, Gurugram, Haryana, 122002",Haryana,60.0,INCONSISTENT,False,False,False,False,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+DEG_20,scan_degradations,DEV,"Plot 29, Industrial Zone, Jubilee Hills, Hyderabad, Telangana 500033",Telangana,84.0,CONSISTENT,False,False,False,True,"SCANNED PROPERTY TAX CHALLAN
+Assessment No: TAX-2026-819
+Location: Plot 29, Industrial Zone, Jubilee Hills, Hyderabad, Telangana 500033
+Total Assessment: Rs. 6400","SCANNED PROPERTY TAX CHALLAN Assessment No: TAX-2026-819 Location: Plot 29, Jubilee Hills, Hyderabad, Telangana, 500033",Telangana,84.0,CONSISTENT,False,False,False,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+DEG_21,scan_degradations,DEV,"Plot 30, Industrial Zone, Anna Nagar, Chennai, Tamil Nadu 600040",Tamil Nadu,94.0,VERIFIED,False,False,False,True,"SCANNED PROPERTY TAX CHALLAN
+Assessment No: TAX-2026-820
+Location: Plot 30, Industrial Zone, Anna Nagar, Chennai, Tamil Nadu 600040
+Total Assessment: Rs. 6500","SCANNED PROPERTY TAX CHALLAN Assessment No: TAX-2026-820 Location: Plot 30, Anna Nagar, Chennai, Tamil Nadu, 600040",T Nagar,94.0,VERIFIED,False,True,False,True,0.0,OCR_CAUSED_RANKING_CHANGE,DIFFERENT_RESOLUTION_DIFFERENT_STATUS
+DEG_22,scan_degradations,DEV,"Plot 31, Industrial Zone, Navrangpura, Ahmedabad, Gujarat 380009",380009,96.0,VERIFIED,False,True,False,True,"SCANNED PROPERTY TAX CHALLAN
+Assessment No: TAX-2026-821
+Location: Plot 31, Industrial Zone, Navrangpura, Ahmedabad, Gujarat 380009
+Total Assessment: Rs. 6600","SCANNED PROPERTY TAX CHALLAN Assessment No: TAX-2026-821 Location: Plot 31, Navrangpura, Ahmedabad, Gujarat, 380009",Navrangpura,96.0,VERIFIED,False,True,True,True,0.0,OCR_IMPROVED_RANKING,DIFFERENT_RESOLUTION_DIFFERENT_STATUS
+DEG_23,scan_degradations,VAL,"Plot 32, Industrial Zone, Vaishali Nagar, Jaipur, Rajasthan 302021",Vaishali Nagar,96.0,VERIFIED,False,True,True,True,"SCANNED PROPERTY TAX CHALLAN
+Assessment No: TAX-2026-822
+Location: Plot 32, Industrial Zone, Vaishali Nagar, Jaipur, Rajasthan 302021
+Total Assessment: Rs. 6700","SCANNED PROPERTY TAX CHALLAN Assessment No: TAX-2026-822 Location: Plot 32, Vaishali Nagar, Jaipur, Rajasthan, 302021",Vaishali Nagar,96.0,VERIFIED,False,True,True,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+DEG_24,scan_degradations,HELD_OUT,"Plot 33, Industrial Zone, Gomti Nagar, Lucknow, Uttar Pradesh 226010",Gomti Nagar,96.0,VERIFIED,False,True,True,True,"SCANNED PROPERTY TAX CHALLAN
+Assessment No: TAX-2026-823
+Location: Plot 33, Industrial Zone, Gomti Nagar, Lucknow, Uttar Pradesh 226010
+Total Assessment: Rs. 6800","SCANNED PROPERTY TAX CHALLAN Assessment No: TAX-2026-823 Location: Plot 33, Gomti Nagar, Lucknow, Uttar Pradesh, 226010",Gomti Nagar,96.0,VERIFIED,False,True,True,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+DEG_25,scan_degradations,DEV,"Plot 34, Industrial Zone, Sector 62, Gautam Buddha Nagar, Uttar Pradesh 201301",Uttar Pradesh,90.0,VERIFIED,False,False,False,True,"SCANNED PROPERTY TAX CHALLAN
+Assessment No: TAX-2026-824
+Location: Plot 34, Industrial Zone, Sector 62, Gautam Buddha Nagar, Uttar Pradesh 201301
+Total Assessment: Rs. 6900","SCANNED PROPERTY TAX CHALLAN Assessment No: TAX-2026-824 Location: Plot 34, Sector 62, Gautam Buddha Nagar, Uttar Pradesh, 201301",Sector 62,90.0,VERIFIED,False,True,True,True,0.0,OCR_IMPROVED_RANKING,DIFFERENT_RESOLUTION_DIFFERENT_STATUS
+DEG_26,scan_degradations,DEV,"Plot 35, Industrial Zone, Panampilly Nagar, Ernakulam, Kerala 682036",Kerala,63.0,INCONSISTENT,False,False,False,False,"SCANNED PROPERTY TAX CHALLAN
+Assessment No: TAX-2026-825
+Location: Plot 35, Industrial Zone, Panampilly Nagar, Ernakulam, Kerala 682036
+Total Assessment: Rs. 7000","SCANNED PROPERTY TAX CHALLAN Assessment No: TAX-2026-825 Location: Plot 35, Panampilly Nagar, Ernakulam, Kerala, 682036",Kerala,63.0,INCONSISTENT,False,False,False,False,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+DEG_27,scan_degradations,DEV,"Plot 36, Industrial Zone, Sector 35B, Chandigarh, Chandigarh 160022",Chandigarh,53.0,INCONSISTENT,False,False,False,False,"SCANNED PROPERTY TAX CHALLAN
+Assessment No: TAX-2026-826
+Location: Plot 36, Industrial Zone, Sector 35B, Chandigarh, Chandigarh 160022
+Total Assessment: Rs. 7100","SCANNED PROPERTY TAX CHALLAN Assessment No: TAX-2026-826 Location: Plot 36, Sector 35B, Chandigarh, 160022",Rohini,53.0,INCONSISTENT,False,False,False,False,0.0,OCR_CAUSED_RANKING_CHANGE,DIFFERENT_RESOLUTION_DIFFERENT_STATUS
+DEG_28,scan_degradations,VAL,"Plot 37, Industrial Zone, Vijay Nagar, Indore, Madhya Pradesh 452010",Madhya Pradesh,63.0,INCONSISTENT,False,False,False,False,"SCANNED PROPERTY TAX CHALLAN
+Assessment No: TAX-2026-827
+Location: Plot 37, Industrial Zone, Vijay Nagar, Indore, Madhya Pradesh 452010
+Total Assessment: Rs. 7200","SCANNED PROPERTY TAX CHALLAN Assessment No: TAX-2026-827 Location: Plot 37, Vijay Nagar, Indore, Madhya Pradesh, 452010",Madhya Pradesh,63.0,INCONSISTENT,False,False,False,False,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+DEG_29,scan_degradations,HELD_OUT,"Plot 38, Industrial Zone, MP Nagar, Bhopal, Madhya Pradesh 462011",Madhya Pradesh,63.0,INCONSISTENT,False,False,False,False,"SCANNED PROPERTY TAX CHALLAN
+Assessment No: TAX-2026-828
+Location: Plot 38, Industrial Zone, MP Nagar, Bhopal, Madhya Pradesh 462011
+Total Assessment: Rs. 7300","SCANNED PROPERTY TAX CHALLAN Assessment No: TAX-2026-828 Location: Plot 38, MP Nagar, Bhopal, Madhya Pradesh, 462011",Madhya Pradesh,63.0,INCONSISTENT,False,False,False,False,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+DEG_30,scan_degradations,DEV,"Plot 39, Industrial Zone, Sitabuldi, Nagpur, Maharashtra 440012",Maharashtra,63.0,INCONSISTENT,False,False,False,False,"SCANNED PROPERTY TAX CHALLAN
+Assessment No: TAX-2026-829
+Location: Plot 39, Industrial Zone, Sitabuldi, Nagpur, Maharashtra 440012
+Total Assessment: Rs. 7400","SCANNED PROPERTY TAX CHALLAN Assessment No: TAX-2026-829 Location: Plot 39, Sitabuldi, Nagpur, Maharashtra, 440012",Maharashtra,63.0,INCONSISTENT,False,False,False,False,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+DEG_31,scan_degradations,DEV,"Plot 40, Industrial Zone, Kharadi, Pune, Maharashtra 411014",Kharadi,100.0,VERIFIED,False,True,True,True,"SCANNED PROPERTY TAX CHALLAN
+Assessment No: TAX-2026-830
+Location: Plot 40, Industrial Zone, Kharadi, Pune, Maharashtra 411014
+Total Assessment: Rs. 7500","SCANNED PROPERTY TAX CHALLAN Assessment No: TAX-2026-830 Location: Plot 40, Kharadi, Pune, Maharashtra, 411014",Kharadi,100.0,VERIFIED,False,True,True,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+DEG_32,scan_degradations,DEV,"Plot 41, Industrial Zone, Viman Nagar, Pune, Maharashtra 411014",Viman Nagar,100.0,VERIFIED,False,True,True,True,"SCANNED PROPERTY TAX CHALLAN
+Assessment No: TAX-2026-831
+Location: Plot 41, Industrial Zone, Viman Nagar, Pune, Maharashtra 411014
+Total Assessment: Rs. 7600","SCANNED PROPERTY TAX CHALLAN Assessment No: TAX-2026-831 Location: Plot 41, Viman Nagar, Pune, Maharashtra, 411014",Viman Nagar,100.0,VERIFIED,False,True,True,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+DEG_33,scan_degradations,VAL,"Plot 42, Industrial Zone, Hinjewadi, Pune, Maharashtra 411057",Hinjewadi,96.0,VERIFIED,False,True,True,True,"SCANNED PROPERTY TAX CHALLAN
+Assessment No: TAX-2026-832
+Location: Plot 42, Industrial Zone, Hinjewadi, Pune, Maharashtra 411057
+Total Assessment: Rs. 7700","SCANNED PROPERTY TAX CHALLAN Assessment No: TAX-2026-832 Location: Plot 42, Hinjewadi, Pune, Maharashtra, 411057",Hinjewadi,96.0,VERIFIED,False,True,True,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+DEG_34,scan_degradations,HELD_OUT,"Plot 43, Industrial Zone, Kothrud, Pune, Maharashtra 411038",411038,96.0,VERIFIED,False,True,False,True,"SCANNED PROPERTY TAX CHALLAN
+Assessment No: TAX-2026-833
+Location: Plot 43, Industrial Zone, Kothrud, Pune, Maharashtra 411038
+Total Assessment: Rs. 7800","SCANNED PROPERTY TAX CHALLAN Assessment No: TAX-2026-833 Location: Plot 43, Kothrud, Pune, Maharashtra, 411038",Kothrud,96.0,VERIFIED,False,True,True,True,0.0,OCR_IMPROVED_RANKING,DIFFERENT_RESOLUTION_DIFFERENT_STATUS
+DEG_35,scan_degradations,DEV,"Plot 44, Industrial Zone, Baner, Pune, Maharashtra 411045",Baner,96.0,VERIFIED,False,True,True,True,"SCANNED PROPERTY TAX CHALLAN
+Assessment No: TAX-2026-834
+Location: Plot 44, Industrial Zone, Baner, Pune, Maharashtra 411045
+Total Assessment: Rs. 7900","SCANNED PROPERTY TAX CHALLAN Assessment No: TAX-2026-834 Location: Plot 44, Baner, Pune, Maharashtra, 411045",Baner,96.0,VERIFIED,False,True,True,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+DEG_36,scan_degradations,DEV,"Plot 45, Industrial Zone, Hadapsar, Pune, Maharashtra 411028",Hadapsar,100.0,VERIFIED,False,True,True,True,"SCANNED PROPERTY TAX CHALLAN
+Assessment No: TAX-2026-835
+Location: Plot 45, Industrial Zone, Hadapsar, Pune, Maharashtra 411028
+Total Assessment: Rs. 8000","SCANNED PROPERTY TAX CHALLAN Assessment No: TAX-2026-835 Location: Plot 45, Hadapsar, Pune, Maharashtra, 411028",Hadapsar,100.0,VERIFIED,False,True,True,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+DEG_37,scan_degradations,DEV,"Plot 46, Industrial Zone, Bandra West, Mumbai, Maharashtra 400050",Bandra West,96.0,VERIFIED,False,True,True,True,"SCANNED PROPERTY TAX CHALLAN
+Assessment No: TAX-2026-836
+Location: Plot 46, Industrial Zone, Bandra West, Mumbai, Maharashtra 400050
+Total Assessment: Rs. 8100","SCANNED PROPERTY TAX CHALLAN Assessment No: TAX-2026-836 Location: Plot 46, Bandra West, Mumbai Suburban, Maharashtra, 400050",Bandra West,96.0,VERIFIED,False,True,True,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+DEG_38,scan_degradations,VAL,"Plot 47, Industrial Zone, Andheri East, Mumbai, Maharashtra 400093",Andheri East,96.0,VERIFIED,False,True,True,True,"SCANNED PROPERTY TAX CHALLAN
+Assessment No: TAX-2026-837
+Location: Plot 47, Industrial Zone, Andheri East, Mumbai, Maharashtra 400093
+Total Assessment: Rs. 8200","SCANNED PROPERTY TAX CHALLAN Assessment No: TAX-2026-837 Location: Plot 47, Industrial Zone, Andheri, Mumbai Suburban, Maharashtra, 400093",Maharashtra,94.0,VERIFIED,False,False,False,True,-2.0,OCR_CAUSED_RANKING_CHANGE,DIFFERENT_RESOLUTION_DIFFERENT_STATUS
+DEG_39,scan_degradations,HELD_OUT,"Plot 48, Industrial Zone, Powai, Mumbai, Maharashtra 400076",400076,96.0,VERIFIED,False,True,False,True,"SCANNED PROPERTY TAX CHALLAN
+Assessment No: TAX-2026-838
+Location: Plot 48, Industrial Zone, Powai, Mumbai, Maharashtra 400076
+Total Assessment: Rs. 8300","SCANNED PROPERTY TAX CHALLAN Assessment No: TAX-2026-838 Location: Plot 48, Powai, Mumbai Suburban, Maharashtra, 400076",Powai,96.0,VERIFIED,False,True,True,True,0.0,OCR_IMPROVED_RANKING,DIFFERENT_RESOLUTION_DIFFERENT_STATUS
+DEG_40,scan_degradations,DEV,"Plot 49, Industrial Zone, Indiranagar, Bengaluru, Karnataka 560038",Indiranagar,96.0,VERIFIED,False,True,True,True,"SCANNED PROPERTY TAX CHALLAN
+Assessment No: TAX-2026-839
+Location: Plot 49, Industrial Zone, Indiranagar, Bengaluru, Karnataka 560038
+Total Assessment: Rs. 8400","SCANNED PROPERTY TAX CHALLAN Assessment No: TAX-2026-839 Location: Plot 49, Indiranagar, Bengaluru Urban, Karnataka, 560038",Indiranagar,96.0,VERIFIED,False,True,True,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+NOISE_01,ocr_noise_substitutions,DEV,"House 20, Main Road, Kharadi, Pune, Maharashtra 411014",Kharadi,100.0,VERIFIED,False,True,True,True,"COMMERCIAL INVOICE - OCR ARTIFACT SAMPLE
+Customer: CORP TECH INDIA
+Premises: House 20, Main Road, Kharadi, D1st: Pune, Maharashtra 411O14
+Total Due: 8900.00","COMMERCIAL INVOICE - OCR ARTIFACT SAMPLE Customer: CORP TECH INDIA Premises: House 20, Kharadi, Pune, Maharashtra, 411014",Kharadi,100.0,VERIFIED,False,True,True,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+NOISE_02,ocr_noise_substitutions,DEV,"House 21, Main Road, Viman Nagar, Pune, Maharashtra 411014",Viman Nagar,100.0,VERIFIED,False,True,True,True,"COMMERCIAL INVOICE - OCR ARTIFACT SAMPLE
+Customer: CORP TECH INDIA
+Premises: House 21, Main Road, Viman Nagar, P1n code: Pune, Maharashtra 4II0I4
+Total Due: 8900.00","COMMERCIAL INVOICE - OCR ARTIFACT SAMPLE Customer: CORP TECH INDIA Premises: House 21, Viman Nagar, Pune, Maharashtra, 411014",Viman Nagar,100.0,VERIFIED,False,True,True,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+NOISE_03,ocr_noise_substitutions,VAL,"House 22, Main Road, Hinjewadi, Pune, Maharashtra 411057",Hinjewadi,96.0,VERIFIED,False,True,True,True,"COMMERCIAL INVOICE - OCR ARTIFACT SAMPLE
+Customer: CORP TECH INDIA
+Premises: House 22, Main Road, Hinjewadi, D1st: Pune, Maharashtra 411057
+Total Due: 8900.00","COMMERCIAL INVOICE - OCR ARTIFACT SAMPLE Customer: CORP TECH INDIA Premises: House 22, Hinjewadi, Pune, Maharashtra, 411057",Hinjewadi,96.0,VERIFIED,False,True,True,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+NOISE_04,ocr_noise_substitutions,HELD_OUT,"House 23, Main Road, Kothrud, Pune, Maharashtra 411038",411038,96.0,VERIFIED,False,True,False,True,"COMMERCIAL INVOICE - OCR ARTIFACT SAMPLE
+Customer: CORP TECH INDIA
+Premises: House 23, Main Road, Kothrud, P1n code: Pune, Maharashtra 41103B
+Total Due: 8900.00","COMMERCIAL INVOICE - OCR ARTIFACT SAMPLE Customer: CORP TECH INDIA Premises: House 23, Kothrud, Pune, Maharashtra, 411038",Kothrud,96.0,VERIFIED,False,True,True,True,0.0,OCR_IMPROVED_RANKING,DIFFERENT_RESOLUTION_DIFFERENT_STATUS
+NOISE_05,ocr_noise_substitutions,DEV,"House 24, Main Road, Baner, Pune, Maharashtra 411045",Baner,96.0,VERIFIED,False,True,True,True,"COMMERCIAL INVOICE - OCR ARTIFACT SAMPLE
+Customer: CORP TECH INDIA
+Premises: House 24, Main Road, Baner, D1st: Pune, Maharashtra 411O45
+Total Due: 8900.00","COMMERCIAL INVOICE - OCR ARTIFACT SAMPLE Customer: CORP TECH INDIA Premises: House 24, Baner, Pune, Maharashtra, 411045",Baner,96.0,VERIFIED,False,True,True,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+NOISE_06,ocr_noise_substitutions,DEV,"House 25, Main Road, Hadapsar, Pune, Maharashtra 411028",Hadapsar,100.0,VERIFIED,False,True,True,True,"COMMERCIAL INVOICE - OCR ARTIFACT SAMPLE
+Customer: CORP TECH INDIA
+Premises: House 25, Main Road, Hadapsar, P1n code: Pune, Maharashtra 4II028
+Total Due: 8900.00","COMMERCIAL INVOICE - OCR ARTIFACT SAMPLE Customer: CORP TECH INDIA Premises: House 25, Hadapsar, Pune, Maharashtra, 411028",Hadapsar,100.0,VERIFIED,False,True,True,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+NOISE_07,ocr_noise_substitutions,DEV,"House 26, Main Road, Bandra West, Mumbai, Maharashtra 400050",Bandra West,96.0,VERIFIED,False,True,True,True,"COMMERCIAL INVOICE - OCR ARTIFACT SAMPLE
+Customer: CORP TECH INDIA
+Premises: House 26, Main Road, Bandra West, D1st: Mumbai, Maharashtra 400050
+Total Due: 8900.00","COMMERCIAL INVOICE - OCR ARTIFACT SAMPLE Customer: CORP TECH INDIA Premises: House 26, Bandra West, Mumbai Suburban, Maharashtra, 400050",Bandra West,96.0,VERIFIED,False,True,True,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+NOISE_08,ocr_noise_substitutions,VAL,"House 27, Main Road, Andheri East, Mumbai, Maharashtra 400093",Andheri East,96.0,VERIFIED,False,True,True,True,"COMMERCIAL INVOICE - OCR ARTIFACT SAMPLE
+Customer: CORP TECH INDIA
+Premises: House 27, Main Road, Andheri East, P1n code: Mumbai, Maharashtra 4QQQ93
+Total Due: 8900.00","COMMERCIAL INVOICE - OCR ARTIFACT SAMPLE Customer: CORP TECH INDIA Premises: House 27, East, Andheri, Mumbai Suburban, Maharashtra, 400093",Maharashtra,94.0,VERIFIED,False,False,False,True,-2.0,OCR_CAUSED_RANKING_CHANGE,DIFFERENT_RESOLUTION_DIFFERENT_STATUS
+NOISE_09,ocr_noise_substitutions,HELD_OUT,"House 28, Main Road, Powai, Mumbai, Maharashtra 400076",400076,96.0,VERIFIED,False,True,False,True,"COMMERCIAL INVOICE - OCR ARTIFACT SAMPLE
+Customer: CORP TECH INDIA
+Premises: House 28, Main Road, Powai, D1st: Mumbai, Maharashtra 4OOO76
+Total Due: 8900.00","COMMERCIAL INVOICE - OCR ARTIFACT SAMPLE Customer: CORP TECH INDIA Premises: House 28, Powai, Mumbai Suburban, Maharashtra, 400076",Powai,96.0,VERIFIED,False,True,True,True,0.0,OCR_IMPROVED_RANKING,DIFFERENT_RESOLUTION_DIFFERENT_STATUS
+NOISE_10,ocr_noise_substitutions,DEV,"House 29, Main Road, Indiranagar, Bengaluru, Karnataka 560038",Indiranagar,96.0,VERIFIED,False,True,True,True,"COMMERCIAL INVOICE - OCR ARTIFACT SAMPLE
+Customer: CORP TECH INDIA
+Premises: House 29, Main Road, Indiranagar, P1n code: Bengaluru, Karnataka 560038
+Total Due: 8900.00","COMMERCIAL INVOICE - OCR ARTIFACT SAMPLE Customer: CORP TECH INDIA Premises: House 29, Indiranagar, Bengaluru Urban, Karnataka, 560038",Indiranagar,96.0,VERIFIED,False,True,True,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+NOISE_11,ocr_noise_substitutions,DEV,"House 30, Main Road, Whitefield, Bengaluru, Karnataka 560066",Whitefield,96.0,VERIFIED,False,True,True,True,"COMMERCIAL INVOICE - OCR ARTIFACT SAMPLE
+Customer: CORP TECH INDIA
+Premises: House 30, Main Road, Whitefield, D1st: Bengaluru, Karnataka S60066
+Total Due: 8900.00","COMMERCIAL INVOICE - OCR ARTIFACT SAMPLE Customer: CORP TECH INDIA Premises: House 30, Whitefield, Bengaluru Urban, Karnataka, 560066",Whitefield,96.0,VERIFIED,False,True,True,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+NOISE_12,ocr_noise_substitutions,DEV,"House 31, Main Road, Koramangala, Bengaluru, Karnataka 560034",Koramangala,96.0,VERIFIED,False,True,True,True,"COMMERCIAL INVOICE - OCR ARTIFACT SAMPLE
+Customer: CORP TECH INDIA
+Premises: House 31, Main Road, Koramangala, P1n code: Bengaluru, Karnataka 56QQ34
+Total Due: 8900.00","COMMERCIAL INVOICE - OCR ARTIFACT SAMPLE Customer: CORP TECH INDIA Premises: House 31, Koramangala, Bengaluru Urban, Karnataka, 560034",Koramangala,96.0,VERIFIED,False,True,True,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+NOISE_13,ocr_noise_substitutions,VAL,"House 32, Main Road, Electronic City, Bengaluru, Karnataka 560100",Electronic City,96.0,VERIFIED,False,True,True,True,"COMMERCIAL INVOICE - OCR ARTIFACT SAMPLE
+Customer: CORP TECH INDIA
+Premises: House 32, Main Road, Electronic City, D1st: Bengaluru, Karnataka 56O1OO
+Total Due: 8900.00","COMMERCIAL INVOICE - OCR ARTIFACT SAMPLE Customer: CORP TECH INDIA Premises: House 32, Electronic City, Bengaluru Urban, Karnataka, 560100",Electronic City,96.0,VERIFIED,False,True,True,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+NOISE_14,ocr_noise_substitutions,HELD_OUT,"House 33, Main Road, Connaught Place, New Delhi, Delhi 110001",Connaught Place,96.0,VERIFIED,False,True,True,True,"COMMERCIAL INVOICE - OCR ARTIFACT SAMPLE
+Customer: CORP TECH INDIA
+Premises: House 33, Main Road, Connaught Place, P1n code: New Delhi, Delhi II000I
+Total Due: 8900.00","COMMERCIAL INVOICE - OCR ARTIFACT SAMPLE Customer: CORP TECH INDIA Premises: House 33, Connaught Place, New Delhi, Delhi, 110001",Connaught Place,96.0,VERIFIED,False,True,True,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+NOISE_15,ocr_noise_substitutions,DEV,"House 34, Main Road, Karol Bagh, Central Delhi, Delhi 110005",Karol Bagh,96.0,VERIFIED,False,True,True,True,"COMMERCIAL INVOICE - OCR ARTIFACT SAMPLE
+Customer: CORP TECH INDIA
+Premises: House 34, Main Road, Karol Bagh, D1st: Central Delhi, Delhi 110005
+Total Due: 8900.00","COMMERCIAL INVOICE - OCR ARTIFACT SAMPLE Customer: CORP TECH INDIA Premises: House 34, Karol Bagh, Central Delhi, Delhi, 110005",Karol Bagh,96.0,VERIFIED,False,True,True,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+NOISE_16,ocr_noise_substitutions,DEV,"House 35, Main Road, Rohini, North West Delhi, Delhi 110085",Rohini,96.0,VERIFIED,False,True,True,True,"COMMERCIAL INVOICE - OCR ARTIFACT SAMPLE
+Customer: CORP TECH INDIA
+Premises: House 35, Main Road, Rohini, P1n code: North West Delhi, Delhi 11QQ85
+Total Due: 8900.00","COMMERCIAL INVOICE - OCR ARTIFACT SAMPLE Customer: CORP TECH INDIA Premises: House 35, Rohini, North West Delhi, Delhi, 110085",Rohini,96.0,VERIFIED,False,True,True,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+NOISE_17,ocr_noise_substitutions,DEV,"House 36, Main Road, Salt Lake, Kolkata, West Bengal 700091",700091,96.0,VERIFIED,False,True,False,True,"COMMERCIAL INVOICE - OCR ARTIFACT SAMPLE
+Customer: CORP TECH INDIA
+Premises: House 36, Main Road, Salt Lake, D1st: Kolkata, West Bengal 7OOO91
+Total Due: 8900.00","COMMERCIAL INVOICE - OCR ARTIFACT SAMPLE Customer: CORP TECH INDIA Premises: House 36, Salt Lake, Kolkata, West Bengal, 700091",Salt Lake,96.0,VERIFIED,False,True,True,True,0.0,OCR_IMPROVED_RANKING,DIFFERENT_RESOLUTION_DIFFERENT_STATUS
+NOISE_18,ocr_noise_substitutions,VAL,"House 37, Main Road, Rajarhat, North 24 Parganas, West Bengal 700135",700135,96.0,VERIFIED,False,True,False,True,"COMMERCIAL INVOICE - OCR ARTIFACT SAMPLE
+Customer: CORP TECH INDIA
+Premises: House 37, Main Road, Rajarhat, P1n code: North 24 Parganas, West Bengal 700I35
+Total Due: 8900.00","COMMERCIAL INVOICE - OCR ARTIFACT SAMPLE Customer: CORP TECH INDIA Premises: House 37, Rajarhat, North 24 Parganas, West Bengal, 700135",Rajarhat,96.0,VERIFIED,False,True,True,True,0.0,OCR_IMPROVED_RANKING,DIFFERENT_RESOLUTION_DIFFERENT_STATUS
+NOISE_19,ocr_noise_substitutions,HELD_OUT,"House 38, Main Road, DLF Cyber City, Gurugram, Haryana 122002",Haryana,60.0,INCONSISTENT,False,False,False,False,"COMMERCIAL INVOICE - OCR ARTIFACT SAMPLE
+Customer: CORP TECH INDIA
+Premises: House 38, Main Road, DLF Cyber City, D1st: Gurugram, Haryana 122002
+Total Due: 8900.00","COMMERCIAL INVOICE - OCR ARTIFACT SAMPLE Customer: CORP TECH INDIA Premises: House 38, DLF Cyber City, Gurugram, Haryana, 122002",Haryana,60.0,INCONSISTENT,False,False,False,False,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+NOISE_20,ocr_noise_substitutions,DEV,"House 39, Main Road, Jubilee Hills, Hyderabad, Telangana 500033",Telangana,84.0,CONSISTENT,False,False,False,True,"COMMERCIAL INVOICE - OCR ARTIFACT SAMPLE
+Customer: CORP TECH INDIA
+Premises: House 39, Main Road, Jubilee Hills, P1n code: Hyderabad, Telangana 5QQQ33
+Total Due: 8900.00","COMMERCIAL INVOICE - OCR ARTIFACT SAMPLE Customer: CORP TECH INDIA Premises: House 39, Jubilee Hills, Hyderabad, Telangana, 500033",Telangana,84.0,CONSISTENT,False,False,False,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+NOISE_21,ocr_noise_substitutions,DEV,"House 40, Main Road, Anna Nagar, Chennai, Tamil Nadu 600040",Tamil Nadu,94.0,VERIFIED,False,False,False,True,"COMMERCIAL INVOICE - OCR ARTIFACT SAMPLE
+Customer: CORP TECH INDIA
+Premises: House 40, Main Road, Anna Nagar, D1st: Chennai, Tamil Nadu 6OOO4O
+Total Due: 8900.00","COMMERCIAL INVOICE - OCR ARTIFACT SAMPLE Customer: CORP TECH INDIA Premises: House 40, Anna Nagar, Chennai, Tamil Nadu",T Nagar,84.0,CONSISTENT,False,True,False,True,-10.0,OCR_CAUSED_RANKING_CHANGE,DIFFERENT_RESOLUTION_DIFFERENT_STATUS
+NOISE_22,ocr_noise_substitutions,DEV,"House 41, Main Road, Navrangpura, Ahmedabad, Gujarat 380009",380009,96.0,VERIFIED,False,True,False,True,"COMMERCIAL INVOICE - OCR ARTIFACT SAMPLE
+Customer: CORP TECH INDIA
+Premises: House 41, Main Road, Navrangpura, P1n code: Ahmedabad, Gujarat 380009
+Total Due: 8900.00","COMMERCIAL INVOICE - OCR ARTIFACT SAMPLE Customer: CORP TECH INDIA Premises: House 41, Navrangpura, Ahmedabad, Gujarat, 380009",Navrangpura,96.0,VERIFIED,False,True,True,True,0.0,OCR_IMPROVED_RANKING,DIFFERENT_RESOLUTION_DIFFERENT_STATUS
+NOISE_23,ocr_noise_substitutions,VAL,"House 42, Main Road, Vaishali Nagar, Jaipur, Rajasthan 302021",Vaishali Nagar,96.0,VERIFIED,False,True,True,True,"COMMERCIAL INVOICE - OCR ARTIFACT SAMPLE
+Customer: CORP TECH INDIA
+Premises: House 42, Main Road, Vaishali Nagar, D1st: Jaipur, Rajasthan 302021
+Total Due: 8900.00","COMMERCIAL INVOICE - OCR ARTIFACT SAMPLE Customer: CORP TECH INDIA Premises: House 42, Vaishali Nagar, Jaipur, Rajasthan, 302021",Vaishali Nagar,96.0,VERIFIED,False,True,True,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+NOISE_24,ocr_noise_substitutions,HELD_OUT,"House 43, Main Road, Gomti Nagar, Lucknow, Uttar Pradesh 226010",Gomti Nagar,96.0,VERIFIED,False,True,True,True,"COMMERCIAL INVOICE - OCR ARTIFACT SAMPLE
+Customer: CORP TECH INDIA
+Premises: House 43, Main Road, Gomti Nagar, P1n code: Lucknow, Uttar Pradesh 226Q1Q
+Total Due: 8900.00","COMMERCIAL INVOICE - OCR ARTIFACT SAMPLE Customer: CORP TECH INDIA Premises: House 43, Gomti Nagar, Lucknow, Uttar Pradesh, 226010",Gomti Nagar,96.0,VERIFIED,False,True,True,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+NOISE_25,ocr_noise_substitutions,DEV,"House 44, Main Road, Sector 62, Gautam Buddha Nagar, Uttar Pradesh 201301",Uttar Pradesh,90.0,VERIFIED,False,False,False,True,"COMMERCIAL INVOICE - OCR ARTIFACT SAMPLE
+Customer: CORP TECH INDIA
+Premises: House 44, Main Road, Sector 62, D1st: Gautam Buddha Nagar, Uttar Pradesh 2O13O1
+Total Due: 8900.00","COMMERCIAL INVOICE - OCR ARTIFACT SAMPLE Customer: CORP TECH INDIA Premises: House 44, Sector 62, Gautam Buddha Nagar, Uttar Pradesh, 201301",Sector 62,90.0,VERIFIED,False,True,True,True,0.0,OCR_IMPROVED_RANKING,DIFFERENT_RESOLUTION_DIFFERENT_STATUS
+NOISE_26,ocr_noise_substitutions,DEV,"House 45, Main Road, Panampilly Nagar, Ernakulam, Kerala 682036",Kerala,63.0,INCONSISTENT,False,False,False,False,"COMMERCIAL INVOICE - OCR ARTIFACT SAMPLE
+Customer: CORP TECH INDIA
+Premises: House 45, Main Road, Panampilly Nagar, P1n code: Ernakulam, Kerala 682036
+Total Due: 8900.00","COMMERCIAL INVOICE - OCR ARTIFACT SAMPLE Customer: CORP TECH INDIA Premises: House 45, Panampilly Nagar, Ernakulam, Kerala, 682036",Kerala,63.0,INCONSISTENT,False,False,False,False,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+NOISE_27,ocr_noise_substitutions,DEV,"House 46, Main Road, Sector 35B, Chandigarh, Chandigarh 160022",Chandigarh,53.0,INCONSISTENT,False,False,False,False,"COMMERCIAL INVOICE - OCR ARTIFACT SAMPLE
+Customer: CORP TECH INDIA
+Premises: House 46, Main Road, Sector 35B, D1st: Chandigarh, Chandigarh 160022
+Total Due: 8900.00","COMMERCIAL INVOICE - OCR ARTIFACT SAMPLE Customer: CORP TECH INDIA Premises: House 46, Sector 35B, Chandigarh, 160022",Rohini,53.0,INCONSISTENT,False,False,False,False,0.0,OCR_CAUSED_RANKING_CHANGE,DIFFERENT_RESOLUTION_DIFFERENT_STATUS
+NOISE_28,ocr_noise_substitutions,VAL,"House 47, Main Road, Vijay Nagar, Indore, Madhya Pradesh 452010",Madhya Pradesh,63.0,INCONSISTENT,False,False,False,False,"COMMERCIAL INVOICE - OCR ARTIFACT SAMPLE
+Customer: CORP TECH INDIA
+Premises: House 47, Main Road, Vijay Nagar, P1n code: Indore, Madhya Pradesh 452Q1Q
+Total Due: 8900.00","COMMERCIAL INVOICE - OCR ARTIFACT SAMPLE Customer: CORP TECH INDIA Premises: House 47, Vijay Nagar, Indore, Madhya Pradesh, 452010",Madhya Pradesh,63.0,INCONSISTENT,False,False,False,False,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+NOISE_29,ocr_noise_substitutions,HELD_OUT,"House 48, Main Road, MP Nagar, Bhopal, Madhya Pradesh 462011",Madhya Pradesh,63.0,INCONSISTENT,False,False,False,False,"COMMERCIAL INVOICE - OCR ARTIFACT SAMPLE
+Customer: CORP TECH INDIA
+Premises: House 48, Main Road, MP Nagar, D1st: Bhopal, Madhya Pradesh 462O11
+Total Due: 8900.00","COMMERCIAL INVOICE - OCR ARTIFACT SAMPLE Customer: CORP TECH INDIA Premises: House 48, MP Nagar, Bhopal, Madhya Pradesh, 462011",Madhya Pradesh,63.0,INCONSISTENT,False,False,False,False,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+NOISE_30,ocr_noise_substitutions,DEV,"House 49, Main Road, Sitabuldi, Nagpur, Maharashtra 440012",Maharashtra,63.0,INCONSISTENT,False,False,False,False,"COMMERCIAL INVOICE - OCR ARTIFACT SAMPLE
+Customer: CORP TECH INDIA
+Premises: House 49, Main Road, Sitabuldi, P1n code: Nagpur, Maharashtra 4400I2
+Total Due: 8900.00","COMMERCIAL INVOICE - OCR ARTIFACT SAMPLE Customer: CORP TECH INDIA Premises: House 49, Sitabuldi, Nagpur, Maharashtra, 440012",Maharashtra,63.0,INCONSISTENT,False,False,False,False,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+NOISE_31,ocr_noise_substitutions,DEV,"House 50, Main Road, Kharadi, Pune, Maharashtra 411014",Kharadi,100.0,VERIFIED,False,True,True,True,"COMMERCIAL INVOICE - OCR ARTIFACT SAMPLE
+Customer: CORP TECH INDIA
+Premises: House 50, Main Road, Kharadi, D1st: Pune, Maharashtra 411014
+Total Due: 8900.00","COMMERCIAL INVOICE - OCR ARTIFACT SAMPLE Customer: CORP TECH INDIA Premises: House 50, Kharadi, Pune, Maharashtra, 411014",Kharadi,100.0,VERIFIED,False,True,True,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+NOISE_32,ocr_noise_substitutions,DEV,"House 51, Main Road, Viman Nagar, Pune, Maharashtra 411014",Viman Nagar,100.0,VERIFIED,False,True,True,True,"COMMERCIAL INVOICE - OCR ARTIFACT SAMPLE
+Customer: CORP TECH INDIA
+Premises: House 51, Main Road, Viman Nagar, P1n code: Pune, Maharashtra 411Q14
+Total Due: 8900.00","COMMERCIAL INVOICE - OCR ARTIFACT SAMPLE Customer: CORP TECH INDIA Premises: House 51, Viman Nagar, Pune, Maharashtra, 411014",Viman Nagar,100.0,VERIFIED,False,True,True,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+NOISE_33,ocr_noise_substitutions,VAL,"House 52, Main Road, Hinjewadi, Pune, Maharashtra 411057",Hinjewadi,96.0,VERIFIED,False,True,True,True,"COMMERCIAL INVOICE - OCR ARTIFACT SAMPLE
+Customer: CORP TECH INDIA
+Premises: House 52, Main Road, Hinjewadi, D1st: Pune, Maharashtra 411O57
+Total Due: 8900.00","COMMERCIAL INVOICE - OCR ARTIFACT SAMPLE Customer: CORP TECH INDIA Premises: House 52, Hinjewadi, Pune, Maharashtra, 411057",Hinjewadi,96.0,VERIFIED,False,True,True,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+NOISE_34,ocr_noise_substitutions,HELD_OUT,"House 53, Main Road, Kothrud, Pune, Maharashtra 411038",411038,96.0,VERIFIED,False,True,False,True,"COMMERCIAL INVOICE - OCR ARTIFACT SAMPLE
+Customer: CORP TECH INDIA
+Premises: House 53, Main Road, Kothrud, P1n code: Pune, Maharashtra 4II038
+Total Due: 8900.00","COMMERCIAL INVOICE - OCR ARTIFACT SAMPLE Customer: CORP TECH INDIA Premises: House 53, Kothrud, Pune, Maharashtra, 411038",Kothrud,96.0,VERIFIED,False,True,True,True,0.0,OCR_IMPROVED_RANKING,DIFFERENT_RESOLUTION_DIFFERENT_STATUS
+NOISE_35,ocr_noise_substitutions,DEV,"House 54, Main Road, Baner, Pune, Maharashtra 411045",Baner,96.0,VERIFIED,False,True,True,True,"COMMERCIAL INVOICE - OCR ARTIFACT SAMPLE
+Customer: CORP TECH INDIA
+Premises: House 54, Main Road, Baner, D1st: Pune, Maharashtra 411045
+Total Due: 8900.00","COMMERCIAL INVOICE - OCR ARTIFACT SAMPLE Customer: CORP TECH INDIA Premises: House 54, Baner, Pune, Maharashtra, 411045",Baner,96.0,VERIFIED,False,True,True,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+MULTI_01,complex_multi_address,DEV,"Flat 101, Tower 1, Kharadi, Pune, Maharashtra 411014",Kharadi,100.0,VERIFIED,False,True,True,True,"B2B SUPPLY & TAX INVOICE - INV-9000
+
+BILLING ADDRESS:
+Flat 101, Tower 1, Kharadi, Pune, Maharashtra 411014
+
+SHIPPING / DELIVERY ADDRESS:
+Warehouse 4, Industrial Area, Hadapsar, Pune, Maharashtra 411028
+
+Items: Server Equipment | Qty: 4 | Amount: Rs. 1,45,000","Flat 101, Hadapsar, Pune, Maharashtra, 411028",Hadapsar,100.0,VERIFIED,False,True,False,True,0.0,OCR_CAUSED_RANKING_CHANGE,DIFFERENT_RESOLUTION_DIFFERENT_STATUS
+MULTI_02,complex_multi_address,DEV,"Flat 102, Tower 1, Viman Nagar, Pune, Maharashtra 411014",Viman Nagar,100.0,VERIFIED,False,True,True,True,"B2B SUPPLY & TAX INVOICE - INV-9001
+
+BILLING ADDRESS:
+Flat 102, Tower 1, Viman Nagar, Pune, Maharashtra 411014
+
+SHIPPING / DELIVERY ADDRESS:
+Warehouse 5, Industrial Area, Bandra West, Mumbai, Maharashtra 400050
+
+Items: Server Equipment | Qty: 4 | Amount: Rs. 1,45,000","Flat 102, Viman Nagar, Mumbai Suburban, Maharashtra, 400050",400050,60.0,INCONSISTENT,False,False,False,False,-40.0,OCR_CAUSED_RANKING_CHANGE,DIFFERENT_RESOLUTION_DIFFERENT_STATUS
+MULTI_03,complex_multi_address,VAL,"Flat 103, Tower 1, Hinjewadi, Pune, Maharashtra 411057",Hinjewadi,96.0,VERIFIED,False,True,True,True,"B2B SUPPLY & TAX INVOICE - INV-9002
+
+BILLING ADDRESS:
+Flat 103, Tower 1, Hinjewadi, Pune, Maharashtra 411057
+
+SHIPPING / DELIVERY ADDRESS:
+Warehouse 6, Industrial Area, Andheri East, Mumbai, Maharashtra 400093
+
+Items: Server Equipment | Qty: 4 | Amount: Rs. 1,45,000","Flat 103, Hinjewadi, Andheri, Mumbai Suburban, Maharashtra, 400093",Maharashtra,66.0,INCONSISTENT,False,False,False,False,-30.0,OCR_CAUSED_RANKING_CHANGE,DIFFERENT_RESOLUTION_DIFFERENT_STATUS
+MULTI_04,complex_multi_address,HELD_OUT,"Flat 104, Tower 1, Kothrud, Pune, Maharashtra 411038",411038,96.0,VERIFIED,False,True,False,True,"B2B SUPPLY & TAX INVOICE - INV-9003
+
+BILLING ADDRESS:
+Flat 104, Tower 1, Kothrud, Pune, Maharashtra 411038
+
+SHIPPING / DELIVERY ADDRESS:
+Warehouse 7, Industrial Area, Powai, Mumbai, Maharashtra 400076
+
+Items: Server Equipment | Qty: 4 | Amount: Rs. 1,45,000","Flat 104, Kothrud, Mumbai Suburban, Maharashtra, 400076",400076,56.0,INCONSISTENT,False,False,False,False,-40.0,OCR_CAUSED_RANKING_CHANGE,DIFFERENT_RESOLUTION_DIFFERENT_STATUS
+MULTI_05,complex_multi_address,DEV,"Flat 105, Tower 1, Baner, Pune, Maharashtra 411045",Baner,96.0,VERIFIED,False,True,True,True,"B2B SUPPLY & TAX INVOICE - INV-9004
+
+BILLING ADDRESS:
+Flat 105, Tower 1, Baner, Pune, Maharashtra 411045
+
+SHIPPING / DELIVERY ADDRESS:
+Warehouse 8, Industrial Area, Indiranagar, Bengaluru, Karnataka 560038
+
+Items: Server Equipment | Qty: 4 | Amount: Rs. 1,45,000","Flat 105, Indiranagar, Bengaluru Urban, Maharashtra, 560038",Maharashtra,62.0,INCONSISTENT,False,False,False,False,-34.0,OCR_CAUSED_RANKING_CHANGE,DIFFERENT_RESOLUTION_DIFFERENT_STATUS
+MULTI_06,complex_multi_address,DEV,"Flat 106, Tower 1, Hadapsar, Pune, Maharashtra 411028",Hadapsar,100.0,VERIFIED,False,True,True,True,"B2B SUPPLY & TAX INVOICE - INV-9005
+
+BILLING ADDRESS:
+Flat 106, Tower 1, Hadapsar, Pune, Maharashtra 411028
+
+SHIPPING / DELIVERY ADDRESS:
+Warehouse 9, Industrial Area, Whitefield, Bengaluru, Karnataka 560066
+
+Items: Server Equipment | Qty: 4 | Amount: Rs. 1,45,000","Flat 106, Whitefield, Bengaluru Urban, Maharashtra, 560066",Maharashtra,62.0,INCONSISTENT,False,False,False,False,-38.0,OCR_CAUSED_RANKING_CHANGE,DIFFERENT_RESOLUTION_DIFFERENT_STATUS
+MULTI_07,complex_multi_address,DEV,"Flat 107, Tower 1, Bandra West, Mumbai, Maharashtra 400050",Bandra West,96.0,VERIFIED,False,True,True,True,"B2B SUPPLY & TAX INVOICE - INV-9006
+
+BILLING ADDRESS:
+Flat 107, Tower 1, Bandra West, Mumbai, Maharashtra 400050
+
+SHIPPING / DELIVERY ADDRESS:
+Warehouse 10, Industrial Area, Koramangala, Bengaluru, Karnataka 560034
+
+Items: Server Equipment | Qty: 4 | Amount: Rs. 1,45,000","Flat 107, Koramangala, Bengaluru Urban, Maharashtra, 560034",Maharashtra,62.0,INCONSISTENT,False,False,False,False,-34.0,OCR_CAUSED_RANKING_CHANGE,DIFFERENT_RESOLUTION_DIFFERENT_STATUS
+MULTI_08,complex_multi_address,VAL,"Flat 108, Tower 1, Andheri East, Mumbai, Maharashtra 400093",Andheri East,96.0,VERIFIED,False,True,True,True,"B2B SUPPLY & TAX INVOICE - INV-9007
+
+BILLING ADDRESS:
+Flat 108, Tower 1, Andheri East, Mumbai, Maharashtra 400093
+
+SHIPPING / DELIVERY ADDRESS:
+Warehouse 11, Industrial Area, Electronic City, Bengaluru, Karnataka 560100
+
+Items: Server Equipment | Qty: 4 | Amount: Rs. 1,45,000","Flat 108, Electronic City, Andheri, Bengaluru Urban, Maharashtra, 560100",Maharashtra,62.0,INCONSISTENT,False,False,False,False,-34.0,OCR_CAUSED_RANKING_CHANGE,DIFFERENT_RESOLUTION_DIFFERENT_STATUS
+MULTI_09,complex_multi_address,HELD_OUT,"Flat 109, Tower 1, Powai, Mumbai, Maharashtra 400076",400076,96.0,VERIFIED,False,True,False,True,"B2B SUPPLY & TAX INVOICE - INV-9008
+
+BILLING ADDRESS:
+Flat 109, Tower 1, Powai, Mumbai, Maharashtra 400076
+
+SHIPPING / DELIVERY ADDRESS:
+Warehouse 12, Industrial Area, Connaught Place, New Delhi, Delhi 110001
+
+Items: Server Equipment | Qty: 4 | Amount: Rs. 1,45,000","Flat 109, Connaught Place, New Delhi, Maharashtra, 110001",Maharashtra,62.0,INCONSISTENT,False,False,False,False,-34.0,OCR_CAUSED_RANKING_CHANGE,DIFFERENT_RESOLUTION_DIFFERENT_STATUS
+MULTI_10,complex_multi_address,DEV,"Flat 110, Tower 1, Indiranagar, Bengaluru, Karnataka 560038",Indiranagar,96.0,VERIFIED,False,True,True,True,"B2B SUPPLY & TAX INVOICE - INV-9009
+
+BILLING ADDRESS:
+Flat 110, Tower 1, Indiranagar, Bengaluru, Karnataka 560038
+
+SHIPPING / DELIVERY ADDRESS:
+Warehouse 13, Industrial Area, Karol Bagh, Central Delhi, Delhi 110005
+
+Items: Server Equipment | Qty: 4 | Amount: Rs. 1,45,000","Flat 110, Indiranagar, Central Delhi, Karnataka, 110005",Karnataka,42.0,INCONSISTENT,False,False,False,False,-54.0,OCR_CAUSED_RANKING_CHANGE,DIFFERENT_RESOLUTION_DIFFERENT_STATUS
+MULTI_11,complex_multi_address,DEV,"Flat 111, Tower 1, Whitefield, Bengaluru, Karnataka 560066",Whitefield,96.0,VERIFIED,False,True,True,True,"B2B SUPPLY & TAX INVOICE - INV-9010
+
+BILLING ADDRESS:
+Flat 111, Tower 1, Whitefield, Bengaluru, Karnataka 560066
+
+SHIPPING / DELIVERY ADDRESS:
+Warehouse 14, Industrial Area, Rohini, North West Delhi, Delhi 110085
+
+Items: Server Equipment | Qty: 4 | Amount: Rs. 1,45,000","Flat 111, Whitefield, North West Delhi, Karnataka, 110085",Karnataka,42.0,INCONSISTENT,False,False,False,False,-54.0,OCR_CAUSED_RANKING_CHANGE,DIFFERENT_RESOLUTION_DIFFERENT_STATUS
+MULTI_12,complex_multi_address,DEV,"Flat 112, Tower 1, Koramangala, Bengaluru, Karnataka 560034",Koramangala,96.0,VERIFIED,False,True,True,True,"B2B SUPPLY & TAX INVOICE - INV-9011
+
+BILLING ADDRESS:
+Flat 112, Tower 1, Koramangala, Bengaluru, Karnataka 560034
+
+SHIPPING / DELIVERY ADDRESS:
+Warehouse 15, Industrial Area, Salt Lake, Kolkata, West Bengal 700091
+
+Items: Server Equipment | Qty: 4 | Amount: Rs. 1,45,000","Flat 112, Koramangala, Bengaluru Urban, West Bengal, 700091",West Bengal,62.0,INCONSISTENT,False,False,False,False,-34.0,OCR_CAUSED_RANKING_CHANGE,DIFFERENT_RESOLUTION_DIFFERENT_STATUS
+MULTI_13,complex_multi_address,VAL,"Flat 113, Tower 1, Electronic City, Bengaluru, Karnataka 560100",Electronic City,96.0,VERIFIED,False,True,True,True,"B2B SUPPLY & TAX INVOICE - INV-9012
+
+BILLING ADDRESS:
+Flat 113, Tower 1, Electronic City, Bengaluru, Karnataka 560100
+
+SHIPPING / DELIVERY ADDRESS:
+Warehouse 16, Industrial Area, Rajarhat, North 24 Parganas, West Bengal 700135
+
+Items: Server Equipment | Qty: 4 | Amount: Rs. 1,45,000","Flat 113, Electronic City, Bengaluru Urban, West Bengal, 700135",West Bengal,62.0,INCONSISTENT,False,False,False,False,-34.0,OCR_CAUSED_RANKING_CHANGE,DIFFERENT_RESOLUTION_DIFFERENT_STATUS
+MULTI_14,complex_multi_address,HELD_OUT,"Flat 114, Tower 1, Connaught Place, New Delhi, Delhi 110001",Connaught Place,96.0,VERIFIED,False,True,True,True,"B2B SUPPLY & TAX INVOICE - INV-9013
+
+BILLING ADDRESS:
+Flat 114, Tower 1, Connaught Place, New Delhi, Delhi 110001
+
+SHIPPING / DELIVERY ADDRESS:
+Warehouse 17, Industrial Area, DLF Cyber City, Gurugram, Haryana 122002
+
+Items: Server Equipment | Qty: 4 | Amount: Rs. 1,45,000","Flat 114, Connaught Place, New Delhi, Haryana, 122002",Haryana,72.0,INCONSISTENT,False,False,False,False,-24.0,OCR_CAUSED_RANKING_CHANGE,DIFFERENT_RESOLUTION_DIFFERENT_STATUS
+MULTI_15,complex_multi_address,DEV,"Flat 115, Tower 1, Karol Bagh, Central Delhi, Delhi 110005",Karol Bagh,96.0,VERIFIED,False,True,True,True,"B2B SUPPLY & TAX INVOICE - INV-9014
+
+BILLING ADDRESS:
+Flat 115, Tower 1, Karol Bagh, Central Delhi, Delhi 110005
+
+SHIPPING / DELIVERY ADDRESS:
+Warehouse 18, Industrial Area, Jubilee Hills, Hyderabad, Telangana 500033
+
+Items: Server Equipment | Qty: 4 | Amount: Rs. 1,45,000","Flat 115, Jubilee Hills, Central Delhi, Telangana, 500033",Telangana,54.0,INCONSISTENT,False,False,False,False,-42.0,OCR_CAUSED_RANKING_CHANGE,DIFFERENT_RESOLUTION_DIFFERENT_STATUS
+MULTI_16,complex_multi_address,DEV,"Flat 116, Tower 1, Rohini, North West Delhi, Delhi 110085",Rohini,96.0,VERIFIED,False,True,True,True,"B2B SUPPLY & TAX INVOICE - INV-9015
+
+BILLING ADDRESS:
+Flat 116, Tower 1, Rohini, North West Delhi, Delhi 110085
+
+SHIPPING / DELIVERY ADDRESS:
+Warehouse 19, Industrial Area, Anna Nagar, Chennai, Tamil Nadu 600040
+
+Items: Server Equipment | Qty: 4 | Amount: Rs. 1,45,000","Flat 116, Anna Nagar, North West Delhi, Tamil Nadu, 600040",Tamil Nadu,54.0,INCONSISTENT,False,False,False,False,-42.0,OCR_CAUSED_RANKING_CHANGE,DIFFERENT_RESOLUTION_DIFFERENT_STATUS
+MULTI_17,complex_multi_address,DEV,"Flat 117, Tower 1, Salt Lake, Kolkata, West Bengal 700091",700091,96.0,VERIFIED,False,True,False,True,"B2B SUPPLY & TAX INVOICE - INV-9016
+
+BILLING ADDRESS:
+Flat 117, Tower 1, Salt Lake, Kolkata, West Bengal 700091
+
+SHIPPING / DELIVERY ADDRESS:
+Warehouse 20, Industrial Area, Navrangpura, Ahmedabad, Gujarat 380009
+
+Items: Server Equipment | Qty: 4 | Amount: Rs. 1,45,000","Flat 117, Navrangpura, Ahmedabad, West Bengal, 380009",West Bengal,62.0,INCONSISTENT,False,False,False,False,-34.0,OCR_CAUSED_RANKING_CHANGE,DIFFERENT_RESOLUTION_DIFFERENT_STATUS
+MULTI_18,complex_multi_address,VAL,"Flat 118, Tower 1, Rajarhat, North 24 Parganas, West Bengal 700135",700135,96.0,VERIFIED,False,True,False,True,"B2B SUPPLY & TAX INVOICE - INV-9017
+
+BILLING ADDRESS:
+Flat 118, Tower 1, Rajarhat, North 24 Parganas, West Bengal 700135
+
+SHIPPING / DELIVERY ADDRESS:
+Warehouse 21, Industrial Area, Vaishali Nagar, Jaipur, Rajasthan 302021
+
+Items: Server Equipment | Qty: 4 | Amount: Rs. 1,45,000","Flat 118, Vaishali Nagar, Jaipur, West Bengal, 302021",West Bengal,62.0,INCONSISTENT,False,False,False,False,-34.0,OCR_CAUSED_RANKING_CHANGE,DIFFERENT_RESOLUTION_DIFFERENT_STATUS
+MULTI_19,complex_multi_address,HELD_OUT,"Flat 119, Tower 1, DLF Cyber City, Gurugram, Haryana 122002",Haryana,60.0,INCONSISTENT,False,False,False,False,"B2B SUPPLY & TAX INVOICE - INV-9018
+
+BILLING ADDRESS:
+Flat 119, Tower 1, DLF Cyber City, Gurugram, Haryana 122002
+
+SHIPPING / DELIVERY ADDRESS:
+Warehouse 22, Industrial Area, Gomti Nagar, Lucknow, Uttar Pradesh 226010
+
+Items: Server Equipment | Qty: 4 | Amount: Rs. 1,45,000","Flat 119, DLF Cyber City, Gurugram, Uttar Pradesh, 226010",Uttar Pradesh,50.0,INCONSISTENT,False,False,False,False,-10.0,OCR_CAUSED_RANKING_CHANGE,DIFFERENT_RESOLUTION_DIFFERENT_STATUS
+MULTI_20,complex_multi_address,DEV,"Flat 120, Tower 1, Jubilee Hills, Hyderabad, Telangana 500033",Telangana,84.0,CONSISTENT,False,False,False,True,"B2B SUPPLY & TAX INVOICE - INV-9019
+
+BILLING ADDRESS:
+Flat 120, Tower 1, Jubilee Hills, Hyderabad, Telangana 500033
+
+SHIPPING / DELIVERY ADDRESS:
+Warehouse 23, Industrial Area, Sector 62, Gautam Buddha Nagar, Uttar Pradesh 201301
+
+Items: Server Equipment | Qty: 4 | Amount: Rs. 1,45,000","Flat 120, Jubilee Hills, Gautam Buddha Nagar, Uttar Pradesh, 201301",Uttar Pradesh,94.0,VERIFIED,False,False,False,True,10.0,OCR_CAUSED_RANKING_CHANGE,DIFFERENT_RESOLUTION_DIFFERENT_STATUS
+MULTI_21,complex_multi_address,DEV,"Flat 121, Tower 1, Anna Nagar, Chennai, Tamil Nadu 600040",Tamil Nadu,94.0,VERIFIED,False,False,False,True,"B2B SUPPLY & TAX INVOICE - INV-9020
+
+BILLING ADDRESS:
+Flat 121, Tower 1, Anna Nagar, Chennai, Tamil Nadu 600040
+
+SHIPPING / DELIVERY ADDRESS:
+Warehouse 24, Industrial Area, Panampilly Nagar, Ernakulam, Kerala 682036
+
+Items: Server Equipment | Qty: 4 | Amount: Rs. 1,45,000","Flat 121, Panampilly Nagar, Ernakulam, Tamil Nadu, 682036",Tamil Nadu,53.0,INCONSISTENT,False,False,False,False,-41.0,OCR_DID_NOT_CHANGE_RANKING,SAME_RESOLUTION_DIFFERENT_STATUS
+MULTI_22,complex_multi_address,DEV,"Flat 122, Tower 1, Navrangpura, Ahmedabad, Gujarat 380009",380009,96.0,VERIFIED,False,True,False,True,"B2B SUPPLY & TAX INVOICE - INV-9021
+
+BILLING ADDRESS:
+Flat 122, Tower 1, Navrangpura, Ahmedabad, Gujarat 380009
+
+SHIPPING / DELIVERY ADDRESS:
+Warehouse 25, Industrial Area, Sector 35B, Chandigarh, Chandigarh 160022
+
+Items: Server Equipment | Qty: 4 | Amount: Rs. 1,45,000","Flat 122, Navrangpura, Chandigarh, Gujarat, 160022",Gujarat,42.0,INCONSISTENT,False,False,False,False,-54.0,OCR_CAUSED_RANKING_CHANGE,DIFFERENT_RESOLUTION_DIFFERENT_STATUS
+MULTI_23,complex_multi_address,VAL,"Flat 123, Tower 1, Vaishali Nagar, Jaipur, Rajasthan 302021",Vaishali Nagar,96.0,VERIFIED,False,True,True,True,"B2B SUPPLY & TAX INVOICE - INV-9022
+
+BILLING ADDRESS:
+Flat 123, Tower 1, Vaishali Nagar, Jaipur, Rajasthan 302021
+
+SHIPPING / DELIVERY ADDRESS:
+Warehouse 26, Industrial Area, Vijay Nagar, Indore, Madhya Pradesh 452010
+
+Items: Server Equipment | Qty: 4 | Amount: Rs. 1,45,000","Flat 123, Vaishali Nagar, Jaipur, Madhya Pradesh, 452010",Madhya Pradesh,72.0,INCONSISTENT,False,False,False,False,-24.0,OCR_CAUSED_RANKING_CHANGE,DIFFERENT_RESOLUTION_DIFFERENT_STATUS
+MULTI_24,complex_multi_address,HELD_OUT,"Flat 124, Tower 1, Gomti Nagar, Lucknow, Uttar Pradesh 226010",Gomti Nagar,96.0,VERIFIED,False,True,True,True,"B2B SUPPLY & TAX INVOICE - INV-9023
+
+BILLING ADDRESS:
+Flat 124, Tower 1, Gomti Nagar, Lucknow, Uttar Pradesh 226010
+
+SHIPPING / DELIVERY ADDRESS:
+Warehouse 27, Industrial Area, MP Nagar, Bhopal, Madhya Pradesh 462011
+
+Items: Server Equipment | Qty: 4 | Amount: Rs. 1,45,000","Flat 124, Gomti Nagar, Lucknow, Madhya Pradesh, 462011",Madhya Pradesh,72.0,INCONSISTENT,False,False,False,False,-24.0,OCR_CAUSED_RANKING_CHANGE,DIFFERENT_RESOLUTION_DIFFERENT_STATUS
+MULTI_25,complex_multi_address,DEV,"Flat 125, Tower 1, Sector 62, Gautam Buddha Nagar, Uttar Pradesh 201301",Uttar Pradesh,90.0,VERIFIED,False,False,False,True,"B2B SUPPLY & TAX INVOICE - INV-9024
+
+BILLING ADDRESS:
+Flat 125, Tower 1, Sector 62, Gautam Buddha Nagar, Uttar Pradesh 201301
+
+SHIPPING / DELIVERY ADDRESS:
+Warehouse 28, Industrial Area, Sitabuldi, Nagpur, Maharashtra 440012
+
+Items: Server Equipment | Qty: 4 | Amount: Rs. 1,45,000","Flat 125, Sector 62, Gautam Buddha Nagar, Uttar Pradesh, 440012",Uttar Pradesh,80.0,NEEDS_REVIEW,False,False,False,False,-10.0,OCR_DID_NOT_CHANGE_RANKING,SAME_RESOLUTION_DIFFERENT_STATUS
+MULTI_26,complex_multi_address,DEV,"Flat 126, Tower 1, Panampilly Nagar, Ernakulam, Kerala 682036",Kerala,63.0,INCONSISTENT,False,False,False,False,"B2B SUPPLY & TAX INVOICE - INV-9025
+
+BILLING ADDRESS:
+Flat 126, Tower 1, Panampilly Nagar, Ernakulam, Kerala 682036
+
+SHIPPING / DELIVERY ADDRESS:
+Warehouse 29, Industrial Area, Kharadi, Pune, Maharashtra 411014
+
+Items: Server Equipment | Qty: 4 | Amount: Rs. 1,45,000","Flat 126, Panampilly Nagar, Ernakulam, Maharashtra, 411014",Maharashtra,58.0,INCONSISTENT,False,False,False,False,-5.0,OCR_CAUSED_RANKING_CHANGE,DIFFERENT_RESOLUTION_DIFFERENT_STATUS
+MULTI_27,complex_multi_address,DEV,"Flat 127, Tower 1, Sector 35B, Chandigarh, Chandigarh 160022",Chandigarh,53.0,INCONSISTENT,False,False,False,False,"B2B SUPPLY & TAX INVOICE - INV-9026
+
+BILLING ADDRESS:
+Flat 127, Tower 1, Sector 35B, Chandigarh, Chandigarh 160022
+
+SHIPPING / DELIVERY ADDRESS:
+Warehouse 30, Industrial Area, Viman Nagar, Pune, Maharashtra 411014
+
+Items: Server Equipment | Qty: 4 | Amount: Rs. 1,45,000","Flat 127, Viman Nagar, Chandigarh, Maharashtra, 411014",Maharashtra,44.0,INCONSISTENT,False,False,False,False,-9.0,OCR_CAUSED_RANKING_CHANGE,DIFFERENT_RESOLUTION_DIFFERENT_STATUS
+MULTI_28,complex_multi_address,VAL,"Flat 128, Tower 1, Vijay Nagar, Indore, Madhya Pradesh 452010",Madhya Pradesh,63.0,INCONSISTENT,False,False,False,False,"B2B SUPPLY & TAX INVOICE - INV-9027
+
+BILLING ADDRESS:
+Flat 128, Tower 1, Vijay Nagar, Indore, Madhya Pradesh 452010
+
+SHIPPING / DELIVERY ADDRESS:
+Warehouse 31, Industrial Area, Hinjewadi, Pune, Maharashtra 411057
+
+Items: Server Equipment | Qty: 4 | Amount: Rs. 1,45,000","Flat 128, Vijay Nagar, Indore, Madhya Pradesh, 411057",Madhya Pradesh,46.0,INCONSISTENT,False,False,False,False,-17.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+MULTI_29,complex_multi_address,HELD_OUT,"Flat 129, Tower 1, MP Nagar, Bhopal, Madhya Pradesh 462011",Madhya Pradesh,63.0,INCONSISTENT,False,False,False,False,"B2B SUPPLY & TAX INVOICE - INV-9028
+
+BILLING ADDRESS:
+Flat 129, Tower 1, MP Nagar, Bhopal, Madhya Pradesh 462011
+
+SHIPPING / DELIVERY ADDRESS:
+Warehouse 32, Industrial Area, Kothrud, Pune, Maharashtra 411038
+
+Items: Server Equipment | Qty: 4 | Amount: Rs. 1,45,000","Flat 129, MP Nagar, Bhopal, Madhya Pradesh, 411038",Madhya Pradesh,46.0,INCONSISTENT,False,False,False,False,-17.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+MULTI_30,complex_multi_address,DEV,"Flat 130, Tower 1, Sitabuldi, Nagpur, Maharashtra 440012",Maharashtra,63.0,INCONSISTENT,False,False,False,False,"B2B SUPPLY & TAX INVOICE - INV-9029
+
+BILLING ADDRESS:
+Flat 130, Tower 1, Sitabuldi, Nagpur, Maharashtra 440012
+
+SHIPPING / DELIVERY ADDRESS:
+Warehouse 33, Industrial Area, Baner, Pune, Maharashtra 411045
+
+Items: Server Equipment | Qty: 4 | Amount: Rs. 1,45,000","Flat 130, Sitabuldi, Nagpur, Maharashtra, 411045",Maharashtra,56.0,INCONSISTENT,False,False,False,False,-7.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+MTL_01,multi_token_localities,DEV,"Unit 50, Tech Park, Viman Nagar, Pune, Maharashtra 411014",Viman Nagar,100.0,VERIFIED,False,True,True,True,"FACILITIES LEASE AGREEMENT #700
+Premises: Unit 50, Tech Park, Viman Nagar, Pune, Maharashtra 411014
+Term: 36 Months | Security Deposit: Rs. 5,00,000","FACILITIES LEASE AGREEMENT #700 Premises: Unit 50, Viman Nagar, Pune, Maharashtra, 411014",Viman Nagar,100.0,VERIFIED,False,True,True,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+MTL_02,multi_token_localities,DEV,"Unit 51, Tech Park, Bandra West, Mumbai, Maharashtra 400050",Bandra West,96.0,VERIFIED,False,True,True,True,"FACILITIES LEASE AGREEMENT #701
+Premises: Unit 51, Tech Park, Bandra West, Mumbai, Maharashtra 400050
+Term: 36 Months | Security Deposit: Rs. 5,00,000","FACILITIES LEASE AGREEMENT #701 Premises: Unit 51, Bandra West, Mumbai Suburban, Maharashtra, 400050",Bandra West,96.0,VERIFIED,False,True,True,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+MTL_03,multi_token_localities,VAL,"Unit 52, Tech Park, Connaught Place, New Delhi, Delhi 110001",Connaught Place,96.0,VERIFIED,False,True,True,True,"FACILITIES LEASE AGREEMENT #702
+Premises: Unit 52, Tech Park, Connaught Place, New Delhi, Delhi 110001
+Term: 36 Months | Security Deposit: Rs. 5,00,000","FACILITIES LEASE AGREEMENT #702 Premises: Unit 52, Connaught Place, New Delhi, Delhi, 110001",Connaught Place,96.0,VERIFIED,False,True,True,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+MTL_04,multi_token_localities,HELD_OUT,"Unit 53, Tech Park, Salt Lake Sector V, Kolkata, West Bengal 700091",700091,96.0,VERIFIED,False,True,False,True,"FACILITIES LEASE AGREEMENT #703
+Premises: Unit 53, Tech Park, Salt Lake Sector V, Kolkata, West Bengal 700091
+Term: 36 Months | Security Deposit: Rs. 5,00,000","FACILITIES LEASE AGREEMENT #703 Premises: Unit 53, Salt Lake, Kolkata, West Bengal, 700091",Salt Lake,96.0,VERIFIED,False,True,False,True,0.0,OCR_CAUSED_RANKING_CHANGE,DIFFERENT_RESOLUTION_DIFFERENT_STATUS
+MTL_05,multi_token_localities,DEV,"Unit 54, Tech Park, DLF Cyber City, Gurugram, Haryana 122002",Haryana,60.0,INCONSISTENT,False,False,False,False,"FACILITIES LEASE AGREEMENT #704
+Premises: Unit 54, Tech Park, DLF Cyber City, Gurugram, Haryana 122002
+Term: 36 Months | Security Deposit: Rs. 5,00,000","FACILITIES LEASE AGREEMENT #704 Premises: Unit 54, DLF Cyber City, Gurugram, Haryana, 122002",Haryana,60.0,INCONSISTENT,False,False,False,False,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+MTL_06,multi_token_localities,DEV,"Unit 55, Tech Park, Koramangala 4th Block, Bengaluru, Karnataka 560034",Koramangala,96.0,VERIFIED,False,True,False,True,"FACILITIES LEASE AGREEMENT #705
+Premises: Unit 55, Tech Park, Koramangala 4th Block, Bengaluru, Karnataka 560034
+Term: 36 Months | Security Deposit: Rs. 5,00,000","FACILITIES LEASE AGREEMENT #705 Premises: Unit 55, Koramangala, Bengaluru Urban, Karnataka, 560034",Koramangala,96.0,VERIFIED,False,True,False,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+MTL_07,multi_token_localities,DEV,"Unit 56, Tech Park, Electronic City Phase 1, Bengaluru, Karnataka 560100",Electronic City,96.0,VERIFIED,False,True,False,True,"FACILITIES LEASE AGREEMENT #706
+Premises: Unit 56, Tech Park, Electronic City Phase 1, Bengaluru, Karnataka 560100
+Term: 36 Months | Security Deposit: Rs. 5,00,000","FACILITIES LEASE AGREEMENT #706 Premises: Unit 56, Electronic City, Bengaluru Urban, Karnataka, 560100",Electronic City,96.0,VERIFIED,False,True,False,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+MTL_08,multi_token_localities,VAL,"Unit 57, Tech Park, Jubilee Hills Road 36, Hyderabad, Telangana 500033",Telangana,84.0,CONSISTENT,False,False,False,True,"FACILITIES LEASE AGREEMENT #707
+Premises: Unit 57, Tech Park, Jubilee Hills Road 36, Hyderabad, Telangana 500033
+Term: 36 Months | Security Deposit: Rs. 5,00,000","FACILITIES LEASE AGREEMENT #707 Premises: Unit 57, Jubilee Hills, Hyderabad, Telangana, 500033",Telangana,84.0,CONSISTENT,False,False,False,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+MTL_09,multi_token_localities,HELD_OUT,"Unit 58, Tech Park, Anna Nagar 2nd Avenue, Chennai, Tamil Nadu 600040",Tamil Nadu,94.0,VERIFIED,False,False,False,True,"FACILITIES LEASE AGREEMENT #708
+Premises: Unit 58, Tech Park, Anna Nagar 2nd Avenue, Chennai, Tamil Nadu 600040
+Term: 36 Months | Security Deposit: Rs. 5,00,000","FACILITIES LEASE AGREEMENT #708 Premises: Unit 58, Anna Nagar, Chennai, Tamil Nadu, 600040",T Nagar,94.0,VERIFIED,False,True,False,True,0.0,OCR_CAUSED_RANKING_CHANGE,DIFFERENT_RESOLUTION_DIFFERENT_STATUS
+MTL_10,multi_token_localities,DEV,"Unit 59, Tech Park, Hinjewadi Phase 1, Pune, Maharashtra 411057",Hinjewadi,96.0,VERIFIED,False,True,False,True,"FACILITIES LEASE AGREEMENT #709
+Premises: Unit 59, Tech Park, Hinjewadi Phase 1, Pune, Maharashtra 411057
+Term: 36 Months | Security Deposit: Rs. 5,00,000","FACILITIES LEASE AGREEMENT #709 Premises: Unit 59, Hinjewadi, Pune, Maharashtra, 411057",Hinjewadi,96.0,VERIFIED,False,True,False,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+MTL_11,multi_token_localities,DEV,"Unit 60, Tech Park, Viman Nagar, Pune, Maharashtra 411014",Viman Nagar,100.0,VERIFIED,False,True,True,True,"FACILITIES LEASE AGREEMENT #710
+Premises: Unit 60, Tech Park, Viman Nagar, Pune, Maharashtra 411014
+Term: 36 Months | Security Deposit: Rs. 5,00,000","FACILITIES LEASE AGREEMENT #710 Premises: Unit 60, Viman Nagar, Pune, Maharashtra, 411014",Viman Nagar,100.0,VERIFIED,False,True,True,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+MTL_12,multi_token_localities,DEV,"Unit 61, Tech Park, Bandra West, Mumbai, Maharashtra 400050",Bandra West,96.0,VERIFIED,False,True,True,True,"FACILITIES LEASE AGREEMENT #711
+Premises: Unit 61, Tech Park, Bandra West, Mumbai, Maharashtra 400050
+Term: 36 Months | Security Deposit: Rs. 5,00,000","FACILITIES LEASE AGREEMENT #711 Premises: Unit 61, Bandra West, Mumbai Suburban, Maharashtra, 400050",Bandra West,96.0,VERIFIED,False,True,True,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+MTL_13,multi_token_localities,VAL,"Unit 62, Tech Park, Connaught Place, New Delhi, Delhi 110001",Connaught Place,96.0,VERIFIED,False,True,True,True,"FACILITIES LEASE AGREEMENT #712
+Premises: Unit 62, Tech Park, Connaught Place, New Delhi, Delhi 110001
+Term: 36 Months | Security Deposit: Rs. 5,00,000","FACILITIES LEASE AGREEMENT #712 Premises: Unit 62, Connaught Place, New Delhi, Delhi, 110001",Connaught Place,96.0,VERIFIED,False,True,True,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+MTL_14,multi_token_localities,HELD_OUT,"Unit 63, Tech Park, Salt Lake Sector V, Kolkata, West Bengal 700091",700091,96.0,VERIFIED,False,True,False,True,"FACILITIES LEASE AGREEMENT #713
+Premises: Unit 63, Tech Park, Salt Lake Sector V, Kolkata, West Bengal 700091
+Term: 36 Months | Security Deposit: Rs. 5,00,000","FACILITIES LEASE AGREEMENT #713 Premises: Unit 63, Salt Lake, Kolkata, West Bengal, 700091",Salt Lake,96.0,VERIFIED,False,True,False,True,0.0,OCR_CAUSED_RANKING_CHANGE,DIFFERENT_RESOLUTION_DIFFERENT_STATUS
+MTL_15,multi_token_localities,DEV,"Unit 64, Tech Park, DLF Cyber City, Gurugram, Haryana 122002",Haryana,60.0,INCONSISTENT,False,False,False,False,"FACILITIES LEASE AGREEMENT #714
+Premises: Unit 64, Tech Park, DLF Cyber City, Gurugram, Haryana 122002
+Term: 36 Months | Security Deposit: Rs. 5,00,000","FACILITIES LEASE AGREEMENT #714 Premises: Unit 64, DLF Cyber City, Gurugram, Haryana, 122002",Haryana,60.0,INCONSISTENT,False,False,False,False,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+MTL_16,multi_token_localities,DEV,"Unit 65, Tech Park, Koramangala 4th Block, Bengaluru, Karnataka 560034",Koramangala,96.0,VERIFIED,False,True,False,True,"FACILITIES LEASE AGREEMENT #715
+Premises: Unit 65, Tech Park, Koramangala 4th Block, Bengaluru, Karnataka 560034
+Term: 36 Months | Security Deposit: Rs. 5,00,000","FACILITIES LEASE AGREEMENT #715 Premises: Unit 65, Koramangala, Bengaluru Urban, Karnataka, 560034",Koramangala,96.0,VERIFIED,False,True,False,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+MTL_17,multi_token_localities,DEV,"Unit 66, Tech Park, Electronic City Phase 1, Bengaluru, Karnataka 560100",Electronic City,96.0,VERIFIED,False,True,False,True,"FACILITIES LEASE AGREEMENT #716
+Premises: Unit 66, Tech Park, Electronic City Phase 1, Bengaluru, Karnataka 560100
+Term: 36 Months | Security Deposit: Rs. 5,00,000","FACILITIES LEASE AGREEMENT #716 Premises: Unit 66, Electronic City, Bengaluru Urban, Karnataka, 560100",Electronic City,96.0,VERIFIED,False,True,False,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+MTL_18,multi_token_localities,VAL,"Unit 67, Tech Park, Jubilee Hills Road 36, Hyderabad, Telangana 500033",Telangana,84.0,CONSISTENT,False,False,False,True,"FACILITIES LEASE AGREEMENT #717
+Premises: Unit 67, Tech Park, Jubilee Hills Road 36, Hyderabad, Telangana 500033
+Term: 36 Months | Security Deposit: Rs. 5,00,000","FACILITIES LEASE AGREEMENT #717 Premises: Unit 67, Jubilee Hills, Hyderabad, Telangana, 500033",Telangana,84.0,CONSISTENT,False,False,False,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+MTL_19,multi_token_localities,HELD_OUT,"Unit 68, Tech Park, Anna Nagar 2nd Avenue, Chennai, Tamil Nadu 600040",Tamil Nadu,94.0,VERIFIED,False,False,False,True,"FACILITIES LEASE AGREEMENT #718
+Premises: Unit 68, Tech Park, Anna Nagar 2nd Avenue, Chennai, Tamil Nadu 600040
+Term: 36 Months | Security Deposit: Rs. 5,00,000","FACILITIES LEASE AGREEMENT #718 Premises: Unit 68, Anna Nagar, Chennai, Tamil Nadu, 600040",T Nagar,94.0,VERIFIED,False,True,False,True,0.0,OCR_CAUSED_RANKING_CHANGE,DIFFERENT_RESOLUTION_DIFFERENT_STATUS
+MTL_20,multi_token_localities,DEV,"Unit 69, Tech Park, Hinjewadi Phase 1, Pune, Maharashtra 411057",Hinjewadi,96.0,VERIFIED,False,True,False,True,"FACILITIES LEASE AGREEMENT #719
+Premises: Unit 69, Tech Park, Hinjewadi Phase 1, Pune, Maharashtra 411057
+Term: 36 Months | Security Deposit: Rs. 5,00,000","FACILITIES LEASE AGREEMENT #719 Premises: Unit 69, Hinjewadi, Pune, Maharashtra, 411057",Hinjewadi,96.0,VERIFIED,False,True,False,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+MTL_21,multi_token_localities,DEV,"Unit 70, Tech Park, Viman Nagar, Pune, Maharashtra 411014",Viman Nagar,100.0,VERIFIED,False,True,True,True,"FACILITIES LEASE AGREEMENT #720
+Premises: Unit 70, Tech Park, Viman Nagar, Pune, Maharashtra 411014
+Term: 36 Months | Security Deposit: Rs. 5,00,000","FACILITIES LEASE AGREEMENT #720 Premises: Unit 70, Viman Nagar, Pune, Maharashtra, 411014",Viman Nagar,100.0,VERIFIED,False,True,True,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+MTL_22,multi_token_localities,DEV,"Unit 71, Tech Park, Bandra West, Mumbai, Maharashtra 400050",Bandra West,96.0,VERIFIED,False,True,True,True,"FACILITIES LEASE AGREEMENT #721
+Premises: Unit 71, Tech Park, Bandra West, Mumbai, Maharashtra 400050
+Term: 36 Months | Security Deposit: Rs. 5,00,000","FACILITIES LEASE AGREEMENT #721 Premises: Unit 71, Bandra West, Mumbai Suburban, Maharashtra, 400050",Bandra West,96.0,VERIFIED,False,True,True,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+MTL_23,multi_token_localities,VAL,"Unit 72, Tech Park, Connaught Place, New Delhi, Delhi 110001",Connaught Place,96.0,VERIFIED,False,True,True,True,"FACILITIES LEASE AGREEMENT #722
+Premises: Unit 72, Tech Park, Connaught Place, New Delhi, Delhi 110001
+Term: 36 Months | Security Deposit: Rs. 5,00,000","FACILITIES LEASE AGREEMENT #722 Premises: Unit 72, Connaught Place, New Delhi, Delhi, 110001",Connaught Place,96.0,VERIFIED,False,True,True,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+MTL_24,multi_token_localities,HELD_OUT,"Unit 73, Tech Park, Salt Lake Sector V, Kolkata, West Bengal 700091",700091,96.0,VERIFIED,False,True,False,True,"FACILITIES LEASE AGREEMENT #723
+Premises: Unit 73, Tech Park, Salt Lake Sector V, Kolkata, West Bengal 700091
+Term: 36 Months | Security Deposit: Rs. 5,00,000","FACILITIES LEASE AGREEMENT #723 Premises: Unit 73, Salt Lake, Kolkata, West Bengal, 700091",Salt Lake,96.0,VERIFIED,False,True,False,True,0.0,OCR_CAUSED_RANKING_CHANGE,DIFFERENT_RESOLUTION_DIFFERENT_STATUS
+MTL_25,multi_token_localities,DEV,"Unit 74, Tech Park, DLF Cyber City, Gurugram, Haryana 122002",Haryana,60.0,INCONSISTENT,False,False,False,False,"FACILITIES LEASE AGREEMENT #724
+Premises: Unit 74, Tech Park, DLF Cyber City, Gurugram, Haryana 122002
+Term: 36 Months | Security Deposit: Rs. 5,00,000","FACILITIES LEASE AGREEMENT #724 Premises: Unit 74, DLF Cyber City, Gurugram, Haryana, 122002",Haryana,60.0,INCONSISTENT,False,False,False,False,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+MTL_26,multi_token_localities,DEV,"Unit 75, Tech Park, Koramangala 4th Block, Bengaluru, Karnataka 560034",Koramangala,96.0,VERIFIED,False,True,False,True,"FACILITIES LEASE AGREEMENT #725
+Premises: Unit 75, Tech Park, Koramangala 4th Block, Bengaluru, Karnataka 560034
+Term: 36 Months | Security Deposit: Rs. 5,00,000","FACILITIES LEASE AGREEMENT #725 Premises: Unit 75, Koramangala, Bengaluru Urban, Karnataka, 560034",Koramangala,96.0,VERIFIED,False,True,False,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+MTL_27,multi_token_localities,DEV,"Unit 76, Tech Park, Electronic City Phase 1, Bengaluru, Karnataka 560100",Electronic City,96.0,VERIFIED,False,True,False,True,"FACILITIES LEASE AGREEMENT #726
+Premises: Unit 76, Tech Park, Electronic City Phase 1, Bengaluru, Karnataka 560100
+Term: 36 Months | Security Deposit: Rs. 5,00,000","FACILITIES LEASE AGREEMENT #726 Premises: Unit 76, Electronic City, Bengaluru Urban, Karnataka, 560100",Electronic City,96.0,VERIFIED,False,True,False,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+MTL_28,multi_token_localities,VAL,"Unit 77, Tech Park, Jubilee Hills Road 36, Hyderabad, Telangana 500033",Telangana,84.0,CONSISTENT,False,False,False,True,"FACILITIES LEASE AGREEMENT #727
+Premises: Unit 77, Tech Park, Jubilee Hills Road 36, Hyderabad, Telangana 500033
+Term: 36 Months | Security Deposit: Rs. 5,00,000","FACILITIES LEASE AGREEMENT #727 Premises: Unit 77, Jubilee Hills, Hyderabad, Telangana, 500033",Telangana,84.0,CONSISTENT,False,False,False,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+MTL_29,multi_token_localities,HELD_OUT,"Unit 78, Tech Park, Anna Nagar 2nd Avenue, Chennai, Tamil Nadu 600040",Tamil Nadu,94.0,VERIFIED,False,False,False,True,"FACILITIES LEASE AGREEMENT #728
+Premises: Unit 78, Tech Park, Anna Nagar 2nd Avenue, Chennai, Tamil Nadu 600040
+Term: 36 Months | Security Deposit: Rs. 5,00,000","FACILITIES LEASE AGREEMENT #728 Premises: Unit 78, Anna Nagar, Chennai, Tamil Nadu, 600040",T Nagar,94.0,VERIFIED,False,True,False,True,0.0,OCR_CAUSED_RANKING_CHANGE,DIFFERENT_RESOLUTION_DIFFERENT_STATUS
+MTL_30,multi_token_localities,DEV,"Unit 79, Tech Park, Hinjewadi Phase 1, Pune, Maharashtra 411057",Hinjewadi,96.0,VERIFIED,False,True,False,True,"FACILITIES LEASE AGREEMENT #729
+Premises: Unit 79, Tech Park, Hinjewadi Phase 1, Pune, Maharashtra 411057
+Term: 36 Months | Security Deposit: Rs. 5,00,000","FACILITIES LEASE AGREEMENT #729 Premises: Unit 79, Hinjewadi, Pune, Maharashtra, 411057",Hinjewadi,96.0,VERIFIED,False,True,False,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+RURAL_01,partial_and_rural,DEV,"Near Old Gram Panchayat, Khed Shivapur, Maharashtra 412205",Maharashtra,94.0,VERIFIED,False,False,False,True,"GRAM PANCHAYAT TAX REGISTER #400
+Property Assessment: Near Old Gram Panchayat, Khed Shivapur, Maharashtra 412205
+Annual Tax: Rs. 450.00","GRAM PANCHAYAT TAX REGISTER #400 Property Assessment:, Shivapur, Khed, Maharashtra, 412205",Maharashtra,63.0,NEEDS_REVIEW,False,False,False,False,-31.0,OCR_DID_NOT_CHANGE_RANKING,SAME_RESOLUTION_DIFFERENT_STATUS
+RURAL_02,partial_and_rural,DEV,"Gat No 101, Near Primary School, Wagholi Gaon, Taluka Haveli, District Pune, Maharashtra 412207",Maharashtra,94.0,VERIFIED,False,False,False,True,"GRAM PANCHAYAT TAX REGISTER #401
+Property Assessment: Gat No 101, Near Primary School, Wagholi Gaon, Taluka Haveli, District Pune, Maharashtra 412207
+Annual Tax: Rs. 450.00","GRAM PANCHAYAT TAX REGISTER #401 Property Assessment: Gat No 101, Wagholi Gaon, Haveli, Pune, Maharashtra, 412207",Maharashtra,94.0,VERIFIED,False,False,False,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+RURAL_03,partial_and_rural,VAL,"Near Old Gram Panchayat, Uruli Kanchan, Maharashtra 412202",Maharashtra,94.0,VERIFIED,False,False,False,True,"GRAM PANCHAYAT TAX REGISTER #402
+Property Assessment: Near Old Gram Panchayat, Uruli Kanchan, Maharashtra 412202
+Annual Tax: Rs. 450.00","GRAM PANCHAYAT TAX REGISTER #402 Property Assessment:, Uruli Kanchan, Maharashtra, 412202",Maharashtra,63.0,NEEDS_REVIEW,False,False,False,False,-31.0,OCR_DID_NOT_CHANGE_RANKING,SAME_RESOLUTION_DIFFERENT_STATUS
+RURAL_04,partial_and_rural,HELD_OUT,"Gat No 103, Near Primary School, Dehu Gaon, Taluka Haveli, District Pune, Maharashtra 412109",Maharashtra,94.0,VERIFIED,False,False,False,True,"GRAM PANCHAYAT TAX REGISTER #403
+Property Assessment: Gat No 103, Near Primary School, Dehu Gaon, Taluka Haveli, District Pune, Maharashtra 412109
+Annual Tax: Rs. 450.00","GRAM PANCHAYAT TAX REGISTER #403 Property Assessment: Gat No 103, Dehu Gaon, Haveli, Pune, Maharashtra, 412109",Maharashtra,94.0,VERIFIED,False,False,False,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+RURAL_05,partial_and_rural,DEV,"Near Old Gram Panchayat, Chakan MIDC, Maharashtra 410501",Maharashtra,94.0,VERIFIED,False,False,False,True,"GRAM PANCHAYAT TAX REGISTER #404
+Property Assessment: Near Old Gram Panchayat, Chakan MIDC, Maharashtra 410501
+Annual Tax: Rs. 450.00","GRAM PANCHAYAT TAX REGISTER #404 Property Assessment:, Chakan Midc, Maharashtra, 410501",Maharashtra,63.0,NEEDS_REVIEW,False,False,False,False,-31.0,OCR_DID_NOT_CHANGE_RANKING,SAME_RESOLUTION_DIFFERENT_STATUS
+RURAL_06,partial_and_rural,DEV,"Gat No 105, Near Primary School, Khed Shivapur, Taluka Haveli, District Pune, Maharashtra 412205",Maharashtra,94.0,VERIFIED,False,False,False,True,"GRAM PANCHAYAT TAX REGISTER #405
+Property Assessment: Gat No 105, Near Primary School, Khed Shivapur, Taluka Haveli, District Pune, Maharashtra 412205
+Annual Tax: Rs. 450.00","GRAM PANCHAYAT TAX REGISTER #405 Property Assessment: Gat No 105, Khed Shivapur, Haveli, Pune, Maharashtra, 412205",Maharashtra,94.0,VERIFIED,False,False,False,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+RURAL_07,partial_and_rural,DEV,"Near Old Gram Panchayat, Wagholi Gaon, Maharashtra 412207",Maharashtra,94.0,VERIFIED,False,False,False,True,"GRAM PANCHAYAT TAX REGISTER #406
+Property Assessment: Near Old Gram Panchayat, Wagholi Gaon, Maharashtra 412207
+Annual Tax: Rs. 450.00","GRAM PANCHAYAT TAX REGISTER #406 Property Assessment:, Wagholi Gaon, Maharashtra, 412207",Maharashtra,63.0,NEEDS_REVIEW,False,False,False,False,-31.0,OCR_DID_NOT_CHANGE_RANKING,SAME_RESOLUTION_DIFFERENT_STATUS
+RURAL_08,partial_and_rural,VAL,"Gat No 107, Near Primary School, Uruli Kanchan, Taluka Haveli, District Pune, Maharashtra 412202",Maharashtra,94.0,VERIFIED,False,False,False,True,"GRAM PANCHAYAT TAX REGISTER #407
+Property Assessment: Gat No 107, Near Primary School, Uruli Kanchan, Taluka Haveli, District Pune, Maharashtra 412202
+Annual Tax: Rs. 450.00","GRAM PANCHAYAT TAX REGISTER #407 Property Assessment: Gat No 107, Uruli Kanchan, Haveli, Pune, Maharashtra, 412202",Maharashtra,94.0,VERIFIED,False,False,False,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+RURAL_09,partial_and_rural,HELD_OUT,"Near Old Gram Panchayat, Dehu Gaon, Maharashtra 412109",Maharashtra,94.0,VERIFIED,False,False,False,True,"GRAM PANCHAYAT TAX REGISTER #408
+Property Assessment: Near Old Gram Panchayat, Dehu Gaon, Maharashtra 412109
+Annual Tax: Rs. 450.00","GRAM PANCHAYAT TAX REGISTER #408 Property Assessment:, Dehu Gaon, Maharashtra, 412109",Maharashtra,63.0,NEEDS_REVIEW,False,False,False,False,-31.0,OCR_DID_NOT_CHANGE_RANKING,SAME_RESOLUTION_DIFFERENT_STATUS
+RURAL_10,partial_and_rural,DEV,"Gat No 109, Near Primary School, Chakan MIDC, Taluka Khed, District Pune, Maharashtra 410501",Maharashtra,94.0,VERIFIED,False,False,False,True,"GRAM PANCHAYAT TAX REGISTER #409
+Property Assessment: Gat No 109, Near Primary School, Chakan MIDC, Taluka Khed, District Pune, Maharashtra 410501
+Annual Tax: Rs. 450.00","GRAM PANCHAYAT TAX REGISTER #409 Property Assessment: Gat No 109, Chakan Midc, Khed, Pune, Maharashtra, 410501",Maharashtra,94.0,VERIFIED,False,False,False,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+RURAL_11,partial_and_rural,DEV,"Near Old Gram Panchayat, Khed Shivapur, Maharashtra 412205",Maharashtra,94.0,VERIFIED,False,False,False,True,"GRAM PANCHAYAT TAX REGISTER #410
+Property Assessment: Near Old Gram Panchayat, Khed Shivapur, Maharashtra 412205
+Annual Tax: Rs. 450.00","GRAM PANCHAYAT TAX REGISTER #410 Property Assessment:, Shivapur, Khed, Maharashtra, 412205",Maharashtra,63.0,NEEDS_REVIEW,False,False,False,False,-31.0,OCR_DID_NOT_CHANGE_RANKING,SAME_RESOLUTION_DIFFERENT_STATUS
+RURAL_12,partial_and_rural,DEV,"Gat No 111, Near Primary School, Wagholi Gaon, Taluka Haveli, District Pune, Maharashtra 412207",Maharashtra,94.0,VERIFIED,False,False,False,True,"GRAM PANCHAYAT TAX REGISTER #411
+Property Assessment: Gat No 111, Near Primary School, Wagholi Gaon, Taluka Haveli, District Pune, Maharashtra 412207
+Annual Tax: Rs. 450.00","GRAM PANCHAYAT TAX REGISTER #411 Property Assessment: Gat No 111, Wagholi Gaon, Haveli, Pune, Maharashtra, 412207",Maharashtra,94.0,VERIFIED,False,False,False,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+RURAL_13,partial_and_rural,VAL,"Near Old Gram Panchayat, Uruli Kanchan, Maharashtra 412202",Maharashtra,94.0,VERIFIED,False,False,False,True,"GRAM PANCHAYAT TAX REGISTER #412
+Property Assessment: Near Old Gram Panchayat, Uruli Kanchan, Maharashtra 412202
+Annual Tax: Rs. 450.00","GRAM PANCHAYAT TAX REGISTER #412 Property Assessment:, Uruli Kanchan, Maharashtra, 412202",Maharashtra,63.0,NEEDS_REVIEW,False,False,False,False,-31.0,OCR_DID_NOT_CHANGE_RANKING,SAME_RESOLUTION_DIFFERENT_STATUS
+RURAL_14,partial_and_rural,HELD_OUT,"Gat No 113, Near Primary School, Dehu Gaon, Taluka Haveli, District Pune, Maharashtra 412109",Maharashtra,94.0,VERIFIED,False,False,False,True,"GRAM PANCHAYAT TAX REGISTER #413
+Property Assessment: Gat No 113, Near Primary School, Dehu Gaon, Taluka Haveli, District Pune, Maharashtra 412109
+Annual Tax: Rs. 450.00","GRAM PANCHAYAT TAX REGISTER #413 Property Assessment: Gat No 113, Dehu Gaon, Haveli, Pune, Maharashtra, 412109",Maharashtra,94.0,VERIFIED,False,False,False,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+RURAL_15,partial_and_rural,DEV,"Near Old Gram Panchayat, Chakan MIDC, Maharashtra 410501",Maharashtra,94.0,VERIFIED,False,False,False,True,"GRAM PANCHAYAT TAX REGISTER #414
+Property Assessment: Near Old Gram Panchayat, Chakan MIDC, Maharashtra 410501
+Annual Tax: Rs. 450.00","GRAM PANCHAYAT TAX REGISTER #414 Property Assessment:, Chakan Midc, Maharashtra, 410501",Maharashtra,63.0,NEEDS_REVIEW,False,False,False,False,-31.0,OCR_DID_NOT_CHANGE_RANKING,SAME_RESOLUTION_DIFFERENT_STATUS
+RURAL_16,partial_and_rural,DEV,"Gat No 115, Near Primary School, Khed Shivapur, Taluka Haveli, District Pune, Maharashtra 412205",Maharashtra,94.0,VERIFIED,False,False,False,True,"GRAM PANCHAYAT TAX REGISTER #415
+Property Assessment: Gat No 115, Near Primary School, Khed Shivapur, Taluka Haveli, District Pune, Maharashtra 412205
+Annual Tax: Rs. 450.00","GRAM PANCHAYAT TAX REGISTER #415 Property Assessment: Gat No 115, Khed Shivapur, Haveli, Pune, Maharashtra, 412205",Maharashtra,94.0,VERIFIED,False,False,False,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+RURAL_17,partial_and_rural,DEV,"Near Old Gram Panchayat, Wagholi Gaon, Maharashtra 412207",Maharashtra,94.0,VERIFIED,False,False,False,True,"GRAM PANCHAYAT TAX REGISTER #416
+Property Assessment: Near Old Gram Panchayat, Wagholi Gaon, Maharashtra 412207
+Annual Tax: Rs. 450.00","GRAM PANCHAYAT TAX REGISTER #416 Property Assessment:, Wagholi Gaon, Maharashtra, 412207",Maharashtra,63.0,NEEDS_REVIEW,False,False,False,False,-31.0,OCR_DID_NOT_CHANGE_RANKING,SAME_RESOLUTION_DIFFERENT_STATUS
+RURAL_18,partial_and_rural,VAL,"Gat No 117, Near Primary School, Uruli Kanchan, Taluka Haveli, District Pune, Maharashtra 412202",Maharashtra,94.0,VERIFIED,False,False,False,True,"GRAM PANCHAYAT TAX REGISTER #417
+Property Assessment: Gat No 117, Near Primary School, Uruli Kanchan, Taluka Haveli, District Pune, Maharashtra 412202
+Annual Tax: Rs. 450.00","GRAM PANCHAYAT TAX REGISTER #417 Property Assessment: Gat No 117, Uruli Kanchan, Haveli, Pune, Maharashtra, 412202",Maharashtra,94.0,VERIFIED,False,False,False,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION
+RURAL_19,partial_and_rural,HELD_OUT,"Near Old Gram Panchayat, Dehu Gaon, Maharashtra 412109",Maharashtra,94.0,VERIFIED,False,False,False,True,"GRAM PANCHAYAT TAX REGISTER #418
+Property Assessment: Near Old Gram Panchayat, Dehu Gaon, Maharashtra 412109
+Annual Tax: Rs. 450.00","GRAM PANCHAYAT TAX REGISTER #418 Property Assessment:, Dehu Gaon, Maharashtra, 412109",Maharashtra,63.0,NEEDS_REVIEW,False,False,False,False,-31.0,OCR_DID_NOT_CHANGE_RANKING,SAME_RESOLUTION_DIFFERENT_STATUS
+RURAL_20,partial_and_rural,DEV,"Gat No 119, Near Primary School, Chakan MIDC, Taluka Khed, District Pune, Maharashtra 410501",Maharashtra,94.0,VERIFIED,False,False,False,True,"GRAM PANCHAYAT TAX REGISTER #419
+Property Assessment: Gat No 119, Near Primary School, Chakan MIDC, Taluka Khed, District Pune, Maharashtra 410501
+Annual Tax: Rs. 450.00","GRAM PANCHAYAT TAX REGISTER #419 Property Assessment: Gat No 119, Chakan Midc, Khed, Pune, Maharashtra, 410501",Maharashtra,94.0,VERIFIED,False,False,False,True,0.0,OCR_DID_NOT_CHANGE_RANKING,IDENTICAL_DECISION

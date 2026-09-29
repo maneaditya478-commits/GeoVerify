@@ -1,0 +1,5 @@
+stratum,language,script,sample_count,clean_locality_acc,ocr_locality_acc,locality_degradation,clean_district_acc,ocr_district_acc,district_degradation,clean_status_acc,ocr_status_acc,status_degradation,entity_resolution_retention_pct
+eng_Latin,eng,Latin,195,47.69,48.72,1.03,66.67,58.46,-8.21,86.15,69.74,-16.41,66.67
+mixed_Mixed,mixed,Mixed,15,60.0,40.0,-20.0,80.0,86.67,6.67,86.67,80.0,-6.67,53.33
+mar_Devanagari,mar,Devanagari,13,76.92,0.0,-76.92,92.31,92.31,0.0,92.31,92.31,0.0,15.38
+hin_Devanagari,hin,Devanagari,17,58.82,64.71,5.88,70.59,76.47,5.88,82.35,76.47,-5.88,64.71

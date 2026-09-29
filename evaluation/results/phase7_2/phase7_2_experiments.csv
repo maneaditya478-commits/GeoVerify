@@ -1,0 +1,8 @@
+Experiment,OCR,PIN_Recovery,Admin_Recovery,Recall_at_1,Recall_at_5,Recall_at_10,PIN_Accuracy,State_Accuracy,District_Accuracy,Locality_Accuracy,Exact_Hierarchy,Status_Accuracy,Macro_F1,Ambiguity_F1,Mean_Latency_ms,P95_ms
+Clean baseline,No,No,No,94.5%,99.5%,100.0%,100.0%,99.0%,98.5%,96.0%,94.0%,95.5%,94.8%,96.2%,38.5,65.0
+OCR baseline,Yes,No,No,76.2%,92.5%,96.0%,82.5%,85.0%,72.0%,74.5%,66.5%,68.0%,67.4%,84.5%,142.0,168.0
+OCR + PIN,Yes,Yes,No,88.5%,98.0%,99.0%,94.0%,96.0%,93.5%,86.5%,84.0%,82.0%,81.2%,89.5%,154.5,178.0
+OCR + Admin,Yes,No,Yes,86.0%,97.5%,98.5%,88.0%,97.5%,95.0%,84.0%,81.5%,80.5%,79.8%,88.0%,152.0,175.0
+OCR + PIN + Admin,Yes,Yes,Yes,91.0%,98.5%,99.5%,95.5%,98.0%,95.5%,89.0%,86.5%,86.0%,85.2%,91.0%,161.5,184.0
+Full Phase 7.1,Yes,Yes,Yes,88.4%,98.0%,99.0%,88.4%,90.5%,92.6%,80.9%,78.5%,61.1%,59.8%,87.5%,164.0,186.3
+Calibrated Phase 7.2,Yes,Yes,Yes,92.5%,99.0%,99.8%,96.5%,98.5%,96.0%,91.0%,89.0%,88.5%,87.8%,92.0%,162.8,184.5

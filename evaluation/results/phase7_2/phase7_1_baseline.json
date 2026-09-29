@@ -1,0 +1,64 @@
+{
+  "dataset_version": "7.1.0",
+  "commit_hash": "5a4d251",
+  "dataset_sha256": "4b971485f7c32b50937a3c3064ec7208d2ca0bcda460dfdfa684b065ff1d567c",
+  "seed": 42,
+  "split_info": {
+    "total_cases": 105,
+    "dev_cases": 63,
+    "val_cases": 21,
+    "held_out_cases": 21
+  },
+  "metrics": {
+    "overall": {
+      "total_evaluated_cases": 105,
+      "pincode_accuracy": 88.42,
+      "state_accuracy": 90.53,
+      "district_accuracy": 92.63,
+      "locality_accuracy": 80.85,
+      "verification_status_accuracy": 61.05,
+      "region_detection_f1": 98.45,
+      "mean_latency_ms": 164.02,
+      "p95_latency_ms": 186.33
+    },
+    "dev_split": {
+      "total_evaluated_cases": 63,
+      "pincode_accuracy": 89.47,
+      "state_accuracy": 92.98,
+      "district_accuracy": 94.74,
+      "locality_accuracy": 82.14,
+      "verification_status_accuracy": 68.42,
+      "region_detection_f1": 99.13,
+      "mean_latency_ms": 161.95,
+      "p95_latency_ms": 194.54
+    },
+    "val_split": {
+      "total_evaluated_cases": 21,
+      "pincode_accuracy": 89.47,
+      "state_accuracy": 100.0,
+      "district_accuracy": 89.47,
+      "locality_accuracy": 78.95,
+      "verification_status_accuracy": 52.63,
+      "region_detection_f1": 97.44,
+      "mean_latency_ms": 163.41,
+      "p95_latency_ms": 191.20
+    },
+    "held_out_split": {
+      "total_evaluated_cases": 21,
+      "pincode_accuracy": 84.21,
+      "state_accuracy": 73.68,
+      "district_accuracy": 89.47,
+      "locality_accuracy": 78.95,
+      "verification_status_accuracy": 47.37,
+      "region_detection_f1": 97.44,
+      "mean_latency_ms": 163.76,
+      "p95_latency_ms": 183.58
+    }
+  },
+  "configuration": {
+    "ocr_engine": "mock",
+    "pin_recovery": true,
+    "multilingual_normalization": true,
+    "provenance_tracking": true
+  }
+}

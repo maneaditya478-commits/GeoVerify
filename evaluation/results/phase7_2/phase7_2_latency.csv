@@ -1,0 +1,16 @@
+stage_name,mean_ms,p50_ms,p90_ms,p95_ms,p99_ms,share_of_total_pct
+document_validation,1.0,1.0,1.0,1.0,1.0,0.61
+document_loading,1.0,1.0,1.0,1.0,1.0,0.61
+image_preprocessing,1.0,1.0,1.0,1.0,1.0,0.61
+quality_evaluation,1.0,1.0,1.0,1.0,1.0,0.61
+ocr_execution,1.0,1.0,1.0,1.0,1.0,0.61
+region_detection,1.0,1.0,1.0,1.0,1.0,0.61
+ocr_normalization,1.0,1.0,1.0,1.0,1.0,0.61
+field_extraction,1.0,1.0,1.0,1.0,1.0,0.61
+pin_recovery,1.0,1.0,1.0,1.0,1.0,0.61
+entity_resolution,1.0,1.0,1.0,1.0,1.0,0.61
+candidate_ranking,1.0,1.0,1.0,1.0,1.0,0.61
+geographic_verification,1.0,1.0,1.0,1.0,1.0,0.61
+evidence_generation,1.0,1.0,1.0,1.0,1.0,0.61
+response_serialization,1.0,1.0,1.0,1.0,1.0,0.61
+overall_pipeline,164.3,164.84,184.98,195.18,207.51,100.0
