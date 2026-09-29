@@ -1,0 +1,1066 @@
+id,address,source_type,category,language,script,expected_status,expected_state,expected_district,expected_subdistrict,expected_locality,expected_pincode,completeness,ambiguity,perturbation_type
+GV-000734,"Bandra West, Mulshi, Mumbai Suburban, Maharashtra 400050",SYNTHETIC,SUBDISTRICT_MISMATCH,en,latin,CONSISTENT,Maharashtra,Mumbai Suburban,Andheri,Bandra West,400050,COMPLETE,False,subdistrict_mismatch
+GV-000218,"राजारामपुरी, कोल्हापूर, महाराष्ट्र 416008",SYNTHETIC,DEVANAGARI_HINDI,hi,devanagari,VERIFIED,Maharashtra,Kolhapur,,Rajarampuri,416008,ADEQUATE,False,
+GV-001015,"Near EON IT Park, Viman Nagar, Pune, Maharashtra 411014",SYNTHETIC,NEARBY_BUT_WRONG_LOCALITY,en,latin,CONSISTENT,Maharashtra,Pune,,Viman Nagar,411014,ADEQUATE,False,
+GV-000487,"Bandra West, Bombay, Maharashtra 400050",SYNTHETIC,HISTORICAL_ALIAS,en,latin,VERIFIED,Maharashtra,Mumbai Suburban,,Bandra West,400050,ADEQUATE,False,historical_alias
+GV-000151,"adjacent Koramangala chowk, Bengaluru Urban, Karnataka",SYNTHETIC,INFORMAL_SLANG,en,latin,CONSISTENT,Karnataka,Bengaluru Urban,,Koramangala,,ADEQUATE,False,
+GV-000433,"Viman Nagar, Poone, Maharastra 411014",SYNTHETIC,MISSPELLING,en,latin,VERIFIED,Maharashtra,Pune,,Viman Nagar,411014,ADEQUATE,False,phonetic_misspelling
+GV-000186,"विमान नगर, पुणे, महाराष्ट्र 411014",SYNTHETIC,DEVANAGARI_HINDI,hi,devanagari,VERIFIED,Maharashtra,Pune,,Viman Nagar,411014,ADEQUATE,False,
+GV-000495,"HSR Layout, Bangalore, Karnataka 560102",SYNTHETIC,HISTORICAL_ALIAS,en,latin,VERIFIED,Karnataka,Bengaluru Urban,,HSR Layout,560102,ADEQUATE,False,historical_alias
+GV-000304,"Dwarka, दक्षिण पश्चिम दिल्ली, Delhi 110075",SYNTHETIC,MIXED_LANGUAGE,mixed_hi_en,mixed,VERIFIED,Delhi,South West Delhi,,Dwarka,110075,ADEQUATE,False,
+GV-000409,"Vaishali Nagar, Jaipur, Rajasthan 302021",SYNTHETIC,MISSPELLING,en,latin,VERIFIED,Rajasthan,Jaipur,,Vaishali Nagar,302021,ADEQUATE,False,phonetic_misspelling
+GV-000806,"Malviya Nagar, Jaipur, Rajasthan 411014",SYNTHETIC,PIN_MISMATCH,en,latin,NEEDS_REVIEW,Rajasthan,Jaipur,,Malviya Nagar,411014,ADEQUATE,False,pin_circle_mismatch
+GV-000388,"Thane Westi, Thane, Maharashtra 400601",SYNTHETIC,TYPO,en,latin,VERIFIED,Maharashtra,Thane,,Thane West,400601,ADEQUATE,False,char_typo
+GV-000724,"Viman Nagar, Mulshi, Pune, Maharashtra 411014",SYNTHETIC,SUBDISTRICT_MISMATCH,en,latin,CONSISTENT,Maharashtra,Pune,Haveli,Viman Nagar,411014,COMPLETE,False,subdistrict_mismatch
+GV-001035,"Near EON IT Park, Viman Nagar, Pune, Maharashtra 411014",SYNTHETIC,NEARBY_BUT_WRONG_LOCALITY,en,latin,CONSISTENT,Maharashtra,Pune,,Viman Nagar,411014,ADEQUATE,False,
+GV-000100,"HITEC City, Hyderabad, Telangana",SYNTHETIC,PARTIAL_VALID,en,latin,CONSISTENT,Telangana,Hyderabad,,HITEC City,,ADEQUATE,False,
+GV-000013,"Tower T2, Cyber City, Behind HP Petrol Pump, Powai, Andheri, Mumbai Suburban, Maharashtra 400076",SYNTHETIC,COMPLETE_VALID,en,latin,VERIFIED,Maharashtra,Mumbai Suburban,Andheri,Powai,400076,COMPLETE,False,
+GV-000768,"Baner, Bengaluru Urban, Karnataka 560102",SYNTHETIC,LOCALITY_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Pune,,Baner,,ADEQUATE,False,cross_state_locality_mismatch
+GV-000634,"Pune, Karnataka 411028",SYNTHETIC,STATE_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Pune,,,411028,PARTIAL,False,state_mismatch
+GV-001018,"Near EON IT Park, Kharadi, Mumbai Suburban, Maharashtra 400076",SYNTHETIC,NEARBY_BUT_WRONG_LOCALITY,en,latin,CONSISTENT,Maharashtra,Mumbai Suburban,,Kharadi,400076,ADEQUATE,False,
+GV-000307,"Kothrud, पुणे, Maharashtra 411038",SYNTHETIC,MIXED_LANGUAGE,mixed_mr_en,mixed,VERIFIED,Maharashtra,Pune,,Kothrud,411038,ADEQUATE,False,
+GV-000502,"Electronic City, Bangalore, Karnataka 560100",SYNTHETIC,HISTORICAL_ALIAS,en,latin,VERIFIED,Karnataka,Bengaluru Urban,,Electronic City,560100,ADEQUATE,False,historical_alias
+GV-000002,"Flat 196, Pheonix Marketcity, Behind HP Petrol Pump, Baner, Haveli, Pune, Maharashtra 411045",SYNTHETIC,COMPLETE_VALID,en,latin,VERIFIED,Maharashtra,Pune,Haveli,Baner,411045,COMPLETE,False,
+GV-000540,Fatehpur,SYNTHETIC,AMBIGUOUS_LOCALITY,en,latin,AMBIGUOUS,,,,Fatehpur,,MINIMAL,True,
+GV-000704,"Powai, Mulshi, Mumbai Suburban, Maharashtra 400076",SYNTHETIC,SUBDISTRICT_MISMATCH,en,latin,CONSISTENT,Maharashtra,Mumbai Suburban,Andheri,Powai,400076,COMPLETE,False,subdistrict_mismatch
+GV-000011,"House No. 242, Kumar Primavera, Opposite Railway Station, Salt Lake, Alipore, Kolkata, West Bengal 700091",SYNTHETIC,COMPLETE_VALID,en,latin,VERIFIED,West Bengal,Kolkata,Alipore,Salt Lake,700091,COMPLETE,False,
+GV-000219,"व्हाइटफील्ड, बंगळुरू, कर्नाटक 560066",SYNTHETIC,DEVANAGARI_HINDI,hi,devanagari,VERIFIED,Karnataka,Bengaluru Urban,,Whitefield,560066,ADEQUATE,False,
+GV-000505,"Kharadi, Poona, Maharashtra 411014",SYNTHETIC,HISTORICAL_ALIAS,en,latin,VERIFIED,Maharashtra,Pune,,Kharadi,411014,ADEQUATE,False,historical_alias
+GV-000455,"Dwarka, South West Delhi, Delhi 110075",SYNTHETIC,MISSPELLING,en,latin,VERIFIED,Delhi,South West Delhi,,Dwarka,110075,ADEQUATE,False,phonetic_misspelling
+GV-000454,"T Nagar, Chennai, Tamil Nadu 600017",SYNTHETIC,MISSPELLING,en,latin,VERIFIED,Tamil Nadu,Chennai,,T Nagar,600017,ADEQUATE,False,phonetic_misspelling
+GV-000744,"Kharadi, Bengaluru Urban, Karnataka 560102",SYNTHETIC,LOCALITY_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Pune,,Kharadi,,ADEQUATE,False,cross_state_locality_mismatch
+GV-000215,"वैशाली नगर, जयपुर, राजस्थान 302021",SYNTHETIC,DEVANAGARI_HINDI,hi,devanagari,VERIFIED,Rajasthan,Jaipur,,Vaishali Nagar,302021,ADEQUATE,False,
+GV-000473,"Salt Lake, Calcutta, West Bengal 700091",SYNTHETIC,HISTORICAL_ALIAS,en,latin,VERIFIED,West Bengal,Kolkata,,Salt Lake,700091,ADEQUATE,False,historical_alias
+GV-000813,"Hauz Khas, South Delhi, Delhi 411014",SYNTHETIC,PIN_MISMATCH,en,latin,NEEDS_REVIEW,Delhi,South Delhi,,Hauz Khas,411014,ADEQUATE,False,pin_circle_mismatch
+GV-000856,"Electronic City, Bengaluru Urban, Karnataka 41101A",SYNTHETIC,INVALID_PIN,en,latin,NEEDS_REVIEW,Karnataka,Bengaluru Urban,,Electronic City,,PARTIAL,False,invalid_pin_format
+GV-001033,"Near EON IT Park, Viman Nagar, Pune, Maharashtra 411014",SYNTHETIC,NEARBY_BUT_WRONG_LOCALITY,en,latin,CONSISTENT,Maharashtra,Pune,,Viman Nagar,411014,ADEQUATE,False,
+GV-000712,"Andheri East, Mulshi, Mumbai Suburban, Maharashtra 400069",SYNTHETIC,SUBDISTRICT_MISMATCH,en,latin,CONSISTENT,Maharashtra,Mumbai Suburban,Andheri,Andheri East,400069,COMPLETE,False,subdistrict_mismatch
+GV-000188,"सेक्टर 62, गौतम बुद्ध नगर, उत्तर प्रदेश 201309",SYNTHETIC,DEVANAGARI_HINDI,hi,devanagari,VERIFIED,Uttar Pradesh,Gautam Buddha Nagar,,Sector 62,201309,ADEQUATE,False,
+GV-000260,"गाव: राजारामपुरी, तालुका: करवीर, जिल्हा: कोल्हापूर, राज्य: महाराष्ट्र, पिन: 416008",SYNTHETIC,DEVANAGARI_MARATHI,mr,devanagari,VERIFIED,Maharashtra,Kolhapur,Karvir,Rajarampuri,416008,COMPLETE,False,
+GV-000241,"गाव: पवई, तालुका: अंधेरी, जिल्हा: मुंबई उपनगर, राज्य: महाराष्ट्र, पिन: 400076",SYNTHETIC,DEVANAGARI_MARATHI,mr,devanagari,VERIFIED,Maharashtra,Mumbai Suburban,Andheri,Powai,400076,COMPLETE,False,
+GV-000834,"Adyar, Chennai, Tamil Nadu 411014",SYNTHETIC,PIN_MISMATCH,en,latin,NEEDS_REVIEW,Tamil Nadu,Chennai,,Adyar,411014,ADEQUATE,False,pin_circle_mismatch
+GV-000314,"New Town, उत्तर 24 परगना, West Bengal 700156",SYNTHETIC,MIXED_LANGUAGE,mixed_hi_en,mixed,VERIFIED,West Bengal,North 24 Parganas,,New Town,700156,ADEQUATE,False,
+GV-000687,"Baner, Mulshi, Pune, Maharashtra 411045",SYNTHETIC,SUBDISTRICT_MISMATCH,en,latin,CONSISTENT,Maharashtra,Pune,Haveli,Baner,411045,COMPLETE,False,subdistrict_mismatch
+GV-000206,"बाणेर, पुणे, महाराष्ट्र 411045",SYNTHETIC,DEVANAGARI_HINDI,hi,devanagari,VERIFIED,Maharashtra,Pune,,Baner,411045,ADEQUATE,False,
+GV-000114,"Sector 62, Gautam Buddha Nagar, Uttar Pradesh",SYNTHETIC,PARTIAL_VALID,en,latin,CONSISTENT,Uttar Pradesh,Gautam Buddha Nagar,,Sector 62,,ADEQUATE,False,
+GV-000671,"Mumbai Suburban, Karnataka 400050",SYNTHETIC,STATE_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Mumbai Suburban,,,400050,PARTIAL,False,state_mismatch
+GV-000644,"South West Delhi, Karnataka 110075",SYNTHETIC,STATE_MISMATCH,en,latin,INCONSISTENT,Delhi,South West Delhi,,,110075,PARTIAL,False,state_mismatch
+GV-000356,"Connaught Placei, New Delhi, Delhi 110001",SYNTHETIC,TYPO,en,latin,VERIFIED,Delhi,New Delhi,,Connaught Place,110001,ADEQUATE,False,char_typo
+GV-000008,"Plot 574, Sector 41, Near Bus Stand, Electronic City, Bengaluru South, Bengaluru Urban, Karnataka 560100",SYNTHETIC,COMPLETE_VALID,en,latin,VERIFIED,Karnataka,Bengaluru Urban,Bengaluru South,Electronic City,560100,COMPLETE,False,
+GV-000509,"Andheri East, Bombay, Maharashtra 400069",SYNTHETIC,HISTORICAL_ALIAS,en,latin,VERIFIED,Maharashtra,Mumbai Suburban,,Andheri East,400069,ADEQUATE,False,historical_alias
+GV-000345,"Bandra West, मुंबई उपनगर, Maharashtra 400050",SYNTHETIC,MIXED_LANGUAGE,mixed_mr_en,mixed,VERIFIED,Maharashtra,Mumbai Suburban,,Bandra West,400050,ADEQUATE,False,
+GV-000132,"adjacent Viman Nagar side, Pune, Maharashtra",SYNTHETIC,INFORMAL_SLANG,en,latin,CONSISTENT,Maharashtra,Pune,,Viman Nagar,,ADEQUATE,False,
+GV-000661,"Kolkata, Karnataka 700091",SYNTHETIC,STATE_MISMATCH,en,latin,INCONSISTENT,West Bengal,Kolkata,,,700091,PARTIAL,False,state_mismatch
+GV-000761,"Andheri East, Mysuru, Karnataka 570002",SYNTHETIC,LOCALITY_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Mumbai Suburban,,Andheri East,,ADEQUATE,False,cross_state_locality_mismatch
+GV-000524,Bilaspur,SYNTHETIC,AMBIGUOUS_LOCALITY,en,latin,AMBIGUOUS,,,,Bilaspur,,MINIMAL,True,
+GV-000020,"House No. 653, Brigade Gateway, Opposite City Mall, Vesu, Chorasi, Surat, Gujarat 395007",SYNTHETIC,COMPLETE_VALID,en,latin,VERIFIED,Gujarat,Surat,Chorasi,Vesu,395007,COMPLETE,False,
+GV-000945,"Near Bus Stand, Main Market",SYNTHETIC,INCOMPLETE,en,latin,UNABLE_TO_VERIFY,,,,,,MINIMAL,False,
+GV-000179,"near Vesu area, Surat, Gujarat",SYNTHETIC,INFORMAL_SLANG,en,latin,CONSISTENT,Gujarat,Surat,,Vesu,,ADEQUATE,False,
+GV-000923,"Near Metro Station, Ring Road",SYNTHETIC,INCOMPLETE,en,latin,UNABLE_TO_VERIFY,,,,,,MINIMAL,False,
+GV-000135,"just after Indiranagar post, Bengaluru Urban, Karnataka",SYNTHETIC,INFORMAL_SLANG,en,latin,CONSISTENT,Karnataka,Bengaluru Urban,,Indiranagar,,ADEQUATE,False,
+GV-000585,"Adyar, Kolhapur, Tamil Nadu 600020",SYNTHETIC,DISTRICT_MISMATCH,en,latin,INCONSISTENT,Tamil Nadu,Chennai,,Adyar,600020,ADEQUATE,False,district_mismatch
+GV-000237,"रोहिणी, उत्तर पश्चिम दिल्ली, दिल्ली 110085",SYNTHETIC,DEVANAGARI_HINDI,hi,devanagari,VERIFIED,Delhi,North West Delhi,,Rohini,110085,ADEQUATE,False,
+GV-000352,"T Nagari, Chennai, Tamil Nadu 600017",SYNTHETIC,TYPO,en,latin,VERIFIED,Tamil Nadu,Chennai,,T Nagar,600017,ADEQUATE,False,char_typo
+GV-000442,"Vaishali Nagar, Jaipur, Rajasthan 302021",SYNTHETIC,MISSPELLING,en,latin,VERIFIED,Rajasthan,Jaipur,,Vaishali Nagar,302021,ADEQUATE,False,phonetic_misspelling
+GV-000802,"Koramangala, Bengaluru Urban, Karnataka 411014",SYNTHETIC,PIN_MISMATCH,en,latin,NEEDS_REVIEW,Karnataka,Bengaluru Urban,,Koramangala,411014,ADEQUATE,False,pin_circle_mismatch
+GV-000780,"Kharadi, Mysuru, Karnataka 570002",SYNTHETIC,LOCALITY_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Pune,,Kharadi,,ADEQUATE,False,cross_state_locality_mismatch
+GV-000073,"Tower T2, Shanti Niketan, Near Central Bank, Gomti Nagar, Lucknow, Lucknow, Uttar Pradesh 226010",SYNTHETIC,COMPLETE_VALID,en,latin,VERIFIED,Uttar Pradesh,Lucknow,Lucknow,Gomti Nagar,226010,COMPLETE,False,
+GV-000838,"Karol Bagh, Central Delhi, Delhi 411014",SYNTHETIC,PIN_MISMATCH,en,latin,NEEDS_REVIEW,Delhi,Central Delhi,,Karol Bagh,411014,ADEQUATE,False,pin_circle_mismatch
+GV-000577,"New Town, Kolkata, West Bengal 700156",SYNTHETIC,DISTRICT_MISMATCH,en,latin,INCONSISTENT,West Bengal,North 24 Parganas,,New Town,700156,ADEQUATE,False,district_mismatch
+GV-001036,"Near EON IT Park, Kharadi, Thane, Maharashtra 400601",SYNTHETIC,NEARBY_BUT_WRONG_LOCALITY,en,latin,CONSISTENT,Maharashtra,Thane,,Kharadi,400601,ADEQUATE,False,
+GV-000320,"Salt Lake, कोलकाता, West Bengal 700091",SYNTHETIC,MIXED_LANGUAGE,mixed_hi_en,mixed,VERIFIED,West Bengal,Kolkata,,Salt Lake,700091,ADEQUATE,False,
+GV-000987,"Karnataka, Electronic City, Bengaluru Urban",SYNTHETIC,WRONG_ADMIN_HIERARCHY,en,latin,CONSISTENT,Karnataka,Bengaluru Urban,,Electronic City,,PARTIAL,False,inverted_hierarchy
+GV-000034,"Plot 753, Sector 29, Opposite City Mall, Dwarka, Dwarka, South West Delhi, Delhi 110075",SYNTHETIC,COMPLETE_VALID,en,latin,VERIFIED,Delhi,South West Delhi,Dwarka,Dwarka,110075,COMPLETE,False,
+GV-000562,Rajapur,SYNTHETIC,AMBIGUOUS_LOCALITY,en,latin,AMBIGUOUS,,,,Rajapur,,MINIMAL,True,
+GV-000059,"Flat 868, EON Free Zone, Near Bus Stand, Navrangpura, Daskroi, Ahmedabad, Gujarat 380009",SYNTHETIC,COMPLETE_VALID,en,latin,VERIFIED,Gujarat,Ahmedabad,Daskroi,Navrangpura,380009,COMPLETE,False,
+GV-000160,"near Indiranagar circle, Bengaluru Urban, Karnataka",SYNTHETIC,INFORMAL_SLANG,en,latin,CONSISTENT,Karnataka,Bengaluru Urban,,Indiranagar,,ADEQUATE,False,
+GV-000498,"Indiranagar, Bangalore, Karnataka 560038",SYNTHETIC,HISTORICAL_ALIAS,en,latin,VERIFIED,Karnataka,Bengaluru Urban,,Indiranagar,560038,ADEQUATE,False,historical_alias
+GV-000674,"South Delhi, Karnataka 110016",SYNTHETIC,STATE_MISMATCH,en,latin,INCONSISTENT,Delhi,South Delhi,,,110016,PARTIAL,False,state_mismatch
+GV-000814,"Rohini, North West Delhi, Delhi 411014",SYNTHETIC,PIN_MISMATCH,en,latin,NEEDS_REVIEW,Delhi,North West Delhi,,Rohini,411014,ADEQUATE,False,pin_circle_mismatch
+GV-000651,"Pune, Karnataka 411014",SYNTHETIC,STATE_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Pune,,,411014,PARTIAL,False,state_mismatch
+GV-000312,"Salt Lake, कोलकाता, West Bengal 700091",SYNTHETIC,MIXED_LANGUAGE,mixed_hi_en,mixed,VERIFIED,West Bengal,Kolkata,,Salt Lake,700091,ADEQUATE,False,
+GV-000959,"West Bengal, New Town, North 24 Parganas",SYNTHETIC,WRONG_ADMIN_HIERARCHY,en,latin,CONSISTENT,West Bengal,North 24 Parganas,,New Town,,PARTIAL,False,inverted_hierarchy
+GV-000245,"गाव: पवई, तालुका: अंधेरी, जिल्हा: मुंबई उपनगर, राज्य: महाराष्ट्र, पिन: 400076",SYNTHETIC,DEVANAGARI_MARATHI,mr,devanagari,VERIFIED,Maharashtra,Mumbai Suburban,Andheri,Powai,400076,COMPLETE,False,
+GV-000964,"Maharashtra, Rajarampuri, Kolhapur",SYNTHETIC,WRONG_ADMIN_HIERARCHY,en,latin,CONSISTENT,Maharashtra,Kolhapur,,Rajarampuri,,PARTIAL,False,inverted_hierarchy
+GV-000177,"opposite to Baner circle, Pune, Maharashtra",SYNTHETIC,INFORMAL_SLANG,en,latin,CONSISTENT,Maharashtra,Pune,,Baner,,ADEQUATE,False,
+GV-000464,"Salt Lake, Calcutta, West Bengal 700091",SYNTHETIC,HISTORICAL_ALIAS,en,latin,VERIFIED,West Bengal,Kolkata,,Salt Lake,700091,ADEQUATE,False,historical_alias
+GV-000001,"Flat 860, Gokul Dham, Opposite Railway Station, Powai, Andheri, Mumbai Suburban, Maharashtra 400076",SYNTHETIC,COMPLETE_VALID,en,latin,VERIFIED,Maharashtra,Mumbai Suburban,Andheri,Powai,400076,COMPLETE,False,
+GV-000456,"Banjara Hills, Hyderabad, Telangana 500034",SYNTHETIC,MISSPELLING,en,latin,VERIFIED,Telangana,Hyderabad,,Banjara Hills,500034,ADEQUATE,False,phonetic_misspelling
+GV-000265,"गाव: हडपसर, तालुका: हवेली, जिल्हा: पुणे, राज्य: महाराष्ट्र, पिन: 411028",SYNTHETIC,DEVANAGARI_MARATHI,mr,devanagari,VERIFIED,Maharashtra,Pune,Haveli,Hadapsar,411028,COMPLETE,False,
+GV-000397,"Hinjewadia, Pune, Maharashtra 411057",SYNTHETIC,TYPO,en,latin,VERIFIED,Maharashtra,Pune,,Hinjewadi,411057,ADEQUATE,False,char_typo
+GV-000637,"South West Delhi, Karnataka 110075",SYNTHETIC,STATE_MISMATCH,en,latin,INCONSISTENT,Delhi,South West Delhi,,,110075,PARTIAL,False,state_mismatch
+GV-000928,Near City Hospital,SYNTHETIC,INCOMPLETE,en,latin,UNABLE_TO_VERIFY,,,,,,MINIMAL,False,
+GV-000830,"Connaught Place, New Delhi, Delhi 411014",SYNTHETIC,PIN_MISMATCH,en,latin,NEEDS_REVIEW,Delhi,New Delhi,,Connaught Place,411014,ADEQUATE,False,pin_circle_mismatch
+GV-000835,"Whitefield, Bengaluru Urban, Karnataka 411014",SYNTHETIC,PIN_MISMATCH,en,latin,NEEDS_REVIEW,Karnataka,Bengaluru Urban,,Whitefield,411014,ADEQUATE,False,pin_circle_mismatch
+GV-000366,"Sector 62i, Gautam Buddha Nagar, Uttar Pradesh 201309",SYNTHETIC,TYPO,en,latin,VERIFIED,Uttar Pradesh,Gautam Buddha Nagar,,Sector 62,201309,ADEQUATE,False,char_typo
+GV-000056,"Building Marvel Cerise, Opposite Railway Station, Rajarhat, Barasat, North 24 Parganas, West Bengal 700135",SYNTHETIC,COMPLETE_VALID,en,latin,VERIFIED,West Bengal,North 24 Parganas,Barasat,Rajarhat,700135,COMPLETE,False,
+GV-000359,"HSR Layouti, Bengaluru Urban, Karnataka 560102",SYNTHETIC,TYPO,en,latin,VERIFIED,Karnataka,Bengaluru Urban,,HSR Layout,560102,ADEQUATE,False,char_typo
+GV-000891,"Navrangpura, Ahmedabad, Gujarat PIN-CODE",SYNTHETIC,INVALID_PIN,en,latin,NEEDS_REVIEW,Gujarat,Ahmedabad,,Navrangpura,,PARTIAL,False,invalid_pin_format
+GV-000452,"HITEC City, Hyderabad, Telangana 500081",SYNTHETIC,MISSPELLING,en,latin,VERIFIED,Telangana,Hyderabad,,HITEC City,500081,ADEQUATE,False,phonetic_misspelling
+GV-000400,"Rohinia, North West Delhi, Delhi 110085",SYNTHETIC,TYPO,en,latin,VERIFIED,Delhi,North West Delhi,,Rohini,110085,ADEQUATE,False,char_typo
+GV-000809,"Navrangpura, Ahmedabad, Gujarat 411014",SYNTHETIC,PIN_MISMATCH,en,latin,NEEDS_REVIEW,Gujarat,Ahmedabad,,Navrangpura,411014,ADEQUATE,False,pin_circle_mismatch
+GV-000911,"Shop 12, MG Road",SYNTHETIC,INCOMPLETE,en,latin,UNABLE_TO_VERIFY,,,,,,MINIMAL,False,
+GV-000313,"Viman Nagar, पुणे, Maharashtra 411014",SYNTHETIC,MIXED_LANGUAGE,mixed_mr_en,mixed,VERIFIED,Maharashtra,Pune,,Viman Nagar,411014,ADEQUATE,False,
+GV-000594,"Andheri East, Pune, Maharashtra 400069",SYNTHETIC,DISTRICT_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Mumbai Suburban,,Andheri East,400069,ADEQUATE,False,district_mismatch
+GV-000445,"Malviya Nagar, Jaipur, Rajasthan 302017",SYNTHETIC,MISSPELLING,en,latin,VERIFIED,Rajasthan,Jaipur,,Malviya Nagar,302017,ADEQUATE,False,phonetic_misspelling
+GV-000909,"Shop 12, MG Road",SYNTHETIC,INCOMPLETE,en,latin,UNABLE_TO_VERIFY,,,,,,MINIMAL,False,
+GV-000324,"Andheri East, मुंबई उपनगर, Maharashtra 400069",SYNTHETIC,MIXED_LANGUAGE,mixed_mr_en,mixed,VERIFIED,Maharashtra,Mumbai Suburban,,Andheri East,400069,ADEQUATE,False,
+GV-000021,"Suite 463, Godrej Woods, Opposite Railway Station, Andheri East, Andheri, Mumbai Suburban, Maharashtra 400069",SYNTHETIC,COMPLETE_VALID,en,latin,VERIFIED,Maharashtra,Mumbai Suburban,Andheri,Andheri East,400069,COMPLETE,False,
+GV-000499,"Kharadi, Poona, Maharashtra 411014",SYNTHETIC,HISTORICAL_ALIAS,en,latin,VERIFIED,Maharashtra,Pune,,Kharadi,411014,ADEQUATE,False,historical_alias
+GV-000714,"Bandra West, Mulshi, Mumbai Suburban, Maharashtra 400050",SYNTHETIC,SUBDISTRICT_MISMATCH,en,latin,CONSISTENT,Maharashtra,Mumbai Suburban,Andheri,Bandra West,400050,COMPLETE,False,subdistrict_mismatch
+GV-000610,"Baner, Mumbai Suburban, Maharashtra 411045",SYNTHETIC,DISTRICT_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Pune,,Baner,411045,ADEQUATE,False,district_mismatch
+GV-000032,"Shop 861, Gokul Dham, Beside Apollo Hospital, Powai, Andheri, Mumbai Suburban, Maharashtra 400076",SYNTHETIC,COMPLETE_VALID,en,latin,VERIFIED,Maharashtra,Mumbai Suburban,Andheri,Powai,400076,COMPLETE,False,
+GV-000579,"New Town, Kolkata, West Bengal 700156",SYNTHETIC,DISTRICT_MISMATCH,en,latin,INCONSISTENT,West Bengal,North 24 Parganas,,New Town,700156,ADEQUATE,False,district_mismatch
+GV-000620,"Andheri East, Pune, Maharashtra 400069",SYNTHETIC,DISTRICT_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Mumbai Suburban,,Andheri East,400069,ADEQUATE,False,district_mismatch
+GV-000437,"Bandra West, Mumbai Suburban, Maharastra 400050",SYNTHETIC,MISSPELLING,en,latin,VERIFIED,Maharashtra,Mumbai Suburban,,Bandra West,400050,ADEQUATE,False,phonetic_misspelling
+GV-001041,"Near EON IT Park, Kharadi, Pune, Maharashtra 411038",SYNTHETIC,NEARBY_BUT_WRONG_LOCALITY,en,latin,CONSISTENT,Maharashtra,Pune,,Kharadi,411038,ADEQUATE,False,
+GV-000847,"Rohini, North West Delhi, Delhi 9999999",SYNTHETIC,INVALID_PIN,en,latin,NEEDS_REVIEW,Delhi,North West Delhi,,Rohini,,PARTIAL,False,invalid_pin_format
+GV-000956,"Delhi, Saket, South Delhi",SYNTHETIC,WRONG_ADMIN_HIERARCHY,en,latin,CONSISTENT,Delhi,South Delhi,,Saket,,PARTIAL,False,inverted_hierarchy
+GV-000299,"Connaught Place, नई दिल्ली, Delhi 110001",SYNTHETIC,MIXED_LANGUAGE,mixed_hi_en,mixed,VERIFIED,Delhi,New Delhi,,Connaught Place,110001,ADEQUATE,False,
+GV-000459,"Andheri East, Mumbai Suburban, Maharastra 400069",SYNTHETIC,MISSPELLING,en,latin,VERIFIED,Maharashtra,Mumbai Suburban,,Andheri East,400069,ADEQUATE,False,phonetic_misspelling
+GV-000376,"Hinjewadia, Pune, Maharashtra 411057",SYNTHETIC,TYPO,en,latin,VERIFIED,Maharashtra,Pune,,Hinjewadi,411057,ADEQUATE,False,char_typo
+GV-000833,"Viman Nagar, Pune, Maharashtra 560066",SYNTHETIC,PIN_MISMATCH,en,latin,NEEDS_REVIEW,Maharashtra,Pune,,Viman Nagar,560066,ADEQUATE,False,pin_circle_mismatch
+GV-000176,"opp Rajarhat circle, North 24 Parganas, West Bengal",SYNTHETIC,INFORMAL_SLANG,en,latin,CONSISTENT,West Bengal,North 24 Parganas,,Rajarhat,,ADEQUATE,False,
+GV-000650,"Mumbai Suburban, Karnataka 400050",SYNTHETIC,STATE_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Mumbai Suburban,,,400050,PARTIAL,False,state_mismatch
+GV-000898,"Whitefield, Bengaluru Urban, Karnataka 011014",SYNTHETIC,INVALID_PIN,en,latin,NEEDS_REVIEW,Karnataka,Bengaluru Urban,,Whitefield,,PARTIAL,False,invalid_pin_format
+GV-000568,Rampur,SYNTHETIC,AMBIGUOUS_LOCALITY,en,latin,AMBIGUOUS,,,,Rampur,,MINIMAL,True,
+GV-000554,Bilaspur,SYNTHETIC,AMBIGUOUS_LOCALITY,en,latin,AMBIGUOUS,,,,Bilaspur,,MINIMAL,True,
+GV-000469,"Andheri East, Bombay, Maharashtra 400069",SYNTHETIC,HISTORICAL_ALIAS,en,latin,VERIFIED,Maharashtra,Mumbai Suburban,,Andheri East,400069,ADEQUATE,False,historical_alias
+GV-000436,"Kothrud, Poone, Maharastra 411038",SYNTHETIC,MISSPELLING,en,latin,VERIFIED,Maharashtra,Pune,,Kothrud,411038,ADEQUATE,False,phonetic_misspelling
+GV-000929,"Near Bus Stand, Main Market",SYNTHETIC,INCOMPLETE,en,latin,UNABLE_TO_VERIFY,,,,,,MINIMAL,False,
+GV-000520,Rajapur,SYNTHETIC,AMBIGUOUS_LOCALITY,en,latin,AMBIGUOUS,,,,Rajapur,,MINIMAL,True,
+GV-000680,"South West Delhi, Karnataka 110075",SYNTHETIC,STATE_MISMATCH,en,latin,INCONSISTENT,Delhi,South West Delhi,,,110075,PARTIAL,False,state_mismatch
+GV-000997,"Delhi, Karol Bagh, Central Delhi",SYNTHETIC,WRONG_ADMIN_HIERARCHY,en,latin,CONSISTENT,Delhi,Central Delhi,,Karol Bagh,,PARTIAL,False,inverted_hierarchy
+GV-000146,"near Gomti Nagar circle, Lucknow, Uttar Pradesh",SYNTHETIC,INFORMAL_SLANG,en,latin,CONSISTENT,Uttar Pradesh,Lucknow,,Gomti Nagar,,ADEQUATE,False,
+GV-000134,"near Gokulam side, Mysuru, Karnataka",SYNTHETIC,INFORMAL_SLANG,en,latin,CONSISTENT,Karnataka,Mysuru,,Gokulam,,ADEQUATE,False,
+GV-000566,Aurangabad,SYNTHETIC,AMBIGUOUS_LOCALITY,en,latin,AMBIGUOUS,,,,Aurangabad,,MINIMAL,True,
+GV-000798,"Baner, Pune, Maharashtra 560066",SYNTHETIC,PIN_MISMATCH,en,latin,NEEDS_REVIEW,Maharashtra,Pune,,Baner,560066,ADEQUATE,False,pin_circle_mismatch
+GV-000463,"Indiranagar, Bangalore, Karnataka 560038",SYNTHETIC,HISTORICAL_ALIAS,en,latin,VERIFIED,Karnataka,Bengaluru Urban,,Indiranagar,560038,ADEQUATE,False,historical_alias
+GV-000748,"Kharadi, Bengaluru Urban, Karnataka 560102",SYNTHETIC,LOCALITY_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Pune,,Kharadi,,ADEQUATE,False,cross_state_locality_mismatch
+GV-000090,"Gokulam, Mysuru, Karnataka",SYNTHETIC,PARTIAL_VALID,en,latin,CONSISTENT,Karnataka,Mysuru,,Gokulam,,ADEQUATE,False,
+GV-000037,"Plot 343, Sector 27, Opposite Railway Station, T Nagar, Mylapore, Chennai, Tamil Nadu 600017",SYNTHETIC,COMPLETE_VALID,en,latin,VERIFIED,Tamil Nadu,Chennai,Mylapore,T Nagar,600017,COMPLETE,False,
+GV-000811,"Baner, Pune, Maharashtra 560066",SYNTHETIC,PIN_MISMATCH,en,latin,NEEDS_REVIEW,Maharashtra,Pune,,Baner,560066,ADEQUATE,False,pin_circle_mismatch
+GV-000870,"Gokulam, Mysuru, Karnataka 9999999",SYNTHETIC,INVALID_PIN,en,latin,NEEDS_REVIEW,Karnataka,Mysuru,,Gokulam,,PARTIAL,False,invalid_pin_format
+GV-001023,"Near EON IT Park, Kharadi, Pune, Maharashtra 411038",SYNTHETIC,NEARBY_BUT_WRONG_LOCALITY,en,latin,CONSISTENT,Maharashtra,Pune,,Kharadi,411038,ADEQUATE,False,
+GV-000076,"Gomti Nagar, Lucknow, Uttar Pradesh",SYNTHETIC,PARTIAL_VALID,en,latin,CONSISTENT,Uttar Pradesh,Lucknow,,Gomti Nagar,,ADEQUATE,False,
+GV-000027,"Plot 159, Sector 5, Opposite City Mall, Vaishali Nagar, Jaipur, Jaipur, Rajasthan 302021",SYNTHETIC,COMPLETE_VALID,en,latin,VERIFIED,Rajasthan,Jaipur,Jaipur,Vaishali Nagar,302021,COMPLETE,False,
+GV-000379,"Electronic Cityi, Bengaluru Urban, Karnataka 560100",SYNTHETIC,TYPO,en,latin,VERIFIED,Karnataka,Bengaluru Urban,,Electronic City,560100,ADEQUATE,False,char_typo
+GV-000803,"Baner, Pune, Maharashtra 560066",SYNTHETIC,PIN_MISMATCH,en,latin,NEEDS_REVIEW,Maharashtra,Pune,,Baner,560066,ADEQUATE,False,pin_circle_mismatch
+GV-000817,"Connaught Place, New Delhi, Delhi 411014",SYNTHETIC,PIN_MISMATCH,en,latin,NEEDS_REVIEW,Delhi,New Delhi,,Connaught Place,411014,ADEQUATE,False,pin_circle_mismatch
+GV-000494,"Indiranagar, Bangalore, Karnataka 560038",SYNTHETIC,HISTORICAL_ALIAS,en,latin,VERIFIED,Karnataka,Bengaluru Urban,,Indiranagar,560038,ADEQUATE,False,historical_alias
+GV-000276,"गाव: बाणेर, तालुका: हवेली, जिल्हा: पुणे, राज्य: महाराष्ट्र, पिन: 411045",SYNTHETIC,DEVANAGARI_MARATHI,mr,devanagari,VERIFIED,Maharashtra,Pune,Haveli,Baner,411045,COMPLETE,False,
+GV-000777,"Bandra West, Bengaluru Urban, Karnataka 560100",SYNTHETIC,LOCALITY_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Mumbai Suburban,,Bandra West,,ADEQUATE,False,cross_state_locality_mismatch
+GV-000440,"Karol Bagh, Central Delhi, Delhi 110005",SYNTHETIC,MISSPELLING,en,latin,VERIFIED,Delhi,Central Delhi,,Karol Bagh,110005,ADEQUATE,False,phonetic_misspelling
+GV-000451,"Adyar, Chennai, Tamil Nadu 600020",SYNTHETIC,MISSPELLING,en,latin,VERIFIED,Tamil Nadu,Chennai,,Adyar,600020,ADEQUATE,False,phonetic_misspelling
+GV-000536,Aurangabad,SYNTHETIC,AMBIGUOUS_LOCALITY,en,latin,AMBIGUOUS,,,,Aurangabad,,MINIMAL,True,
+GV-000161,"just after Powai area, Mumbai Suburban, Maharashtra",SYNTHETIC,INFORMAL_SLANG,en,latin,CONSISTENT,Maharashtra,Mumbai Suburban,,Powai,,ADEQUATE,False,
+GV-000642,"Mysuru, Maharashtra 570002",SYNTHETIC,STATE_MISMATCH,en,latin,INCONSISTENT,Karnataka,Mysuru,,,570002,PARTIAL,False,state_mismatch
+GV-000149,"near Malviya Nagar post, Jaipur, Rajasthan",SYNTHETIC,INFORMAL_SLANG,en,latin,CONSISTENT,Rajasthan,Jaipur,,Malviya Nagar,,ADEQUATE,False,
+GV-000143,"opp Andheri East chowk, Mumbai Suburban, Maharashtra",SYNTHETIC,INFORMAL_SLANG,en,latin,CONSISTENT,Maharashtra,Mumbai Suburban,,Andheri East,,ADEQUATE,False,
+GV-000133,"just after Adyar chowk, Chennai, Tamil Nadu",SYNTHETIC,INFORMAL_SLANG,en,latin,CONSISTENT,Tamil Nadu,Chennai,,Adyar,,ADEQUATE,False,
+GV-000675,"Mumbai Suburban, Karnataka 400069",SYNTHETIC,STATE_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Mumbai Suburban,,,400069,PARTIAL,False,state_mismatch
+GV-000726,"Hinjewadi, Haveli, Pune, Maharashtra 411057",SYNTHETIC,SUBDISTRICT_MISMATCH,en,latin,CONSISTENT,Maharashtra,Pune,Mulshi,Hinjewadi,411057,COMPLETE,False,subdistrict_mismatch
+GV-000067,"Building Gokul Dham, Opposite Railway Station, Gokulam, Mysuru, Mysuru, Karnataka 570002",SYNTHETIC,COMPLETE_VALID,en,latin,VERIFIED,Karnataka,Mysuru,Mysuru,Gokulam,570002,COMPLETE,False,
+GV-000026,"Flat 694, EON Free Zone, Behind HP Petrol Pump, HSR Layout, Bengaluru South, Bengaluru Urban, Karnataka 560102",SYNTHETIC,COMPLETE_VALID,en,latin,VERIFIED,Karnataka,Bengaluru Urban,Bengaluru South,HSR Layout,560102,COMPLETE,False,
+GV-000326,"Navrangpura, अहमदाबाद, Gujarat 380009",SYNTHETIC,MIXED_LANGUAGE,mixed_hi_en,mixed,VERIFIED,Gujarat,Ahmedabad,,Navrangpura,380009,ADEQUATE,False,
+GV-000375,"HSR Layouti, Bengaluru Urban, Karnataka 560102",SYNTHETIC,TYPO,en,latin,VERIFIED,Karnataka,Bengaluru Urban,,HSR Layout,560102,ADEQUATE,False,char_typo
+GV-000111,"Koramangala, Bengaluru Urban, Karnataka",SYNTHETIC,PARTIAL_VALID,en,latin,CONSISTENT,Karnataka,Bengaluru Urban,,Koramangala,,ADEQUATE,False,
+GV-000085,"Saket, South Delhi, Delhi",SYNTHETIC,PARTIAL_VALID,en,latin,CONSISTENT,Delhi,South Delhi,,Saket,,ADEQUATE,False,
+GV-000348,"Salt Lake, कोलकाता, West Bengal 700091",SYNTHETIC,MIXED_LANGUAGE,mixed_hi_en,mixed,VERIFIED,West Bengal,Kolkata,,Salt Lake,700091,ADEQUATE,False,
+GV-000374,"Viman Nagari, Pune, Maharashtra 411014",SYNTHETIC,TYPO,en,latin,VERIFIED,Maharashtra,Pune,,Viman Nagar,411014,ADEQUATE,False,char_typo
+GV-000635,"South West Delhi, Karnataka 110075",SYNTHETIC,STATE_MISMATCH,en,latin,INCONSISTENT,Delhi,South West Delhi,,,110075,PARTIAL,False,state_mismatch
+GV-000233,"सेक्टर 62, गौतम बुद्ध नगर, उत्तर प्रदेश 201309",SYNTHETIC,DEVANAGARI_HINDI,hi,devanagari,VERIFIED,Uttar Pradesh,Gautam Buddha Nagar,,Sector 62,201309,ADEQUATE,False,
+GV-000796,"Kothrud, Pune, Maharashtra 560066",SYNTHETIC,PIN_MISMATCH,en,latin,NEEDS_REVIEW,Maharashtra,Pune,,Kothrud,560066,ADEQUATE,False,pin_circle_mismatch
+GV-000530,Bilaspur,SYNTHETIC,AMBIGUOUS_LOCALITY,en,latin,AMBIGUOUS,,,,Bilaspur,,MINIMAL,True,
+GV-000166,"behind Thane West area, Thane, Maharashtra",SYNTHETIC,INFORMAL_SLANG,en,latin,CONSISTENT,Maharashtra,Thane,,Thane West,,ADEQUATE,False,
+GV-000394,"Gokulami, Mysuru, Karnataka 570002",SYNTHETIC,TYPO,en,latin,VERIFIED,Karnataka,Mysuru,,Gokulam,570002,ADEQUATE,False,char_typo
+GV-000091,"Viman Nagar, Pune, Maharashtra",SYNTHETIC,PARTIAL_VALID,en,latin,CONSISTENT,Maharashtra,Pune,,Viman Nagar,,ADEQUATE,False,
+GV-000266,"गाव: ठाणे पश्चिम, तालुका: ठाणे, जिल्हा: ठाणे, राज्य: महाराष्ट्र, पिन: 400601",SYNTHETIC,DEVANAGARI_MARATHI,mr,devanagari,VERIFIED,Maharashtra,Thane,Thane,Thane West,400601,COMPLETE,False,
+GV-000888,"Gomti Nagar, Lucknow, Uttar Pradesh 011014",SYNTHETIC,INVALID_PIN,en,latin,NEEDS_REVIEW,Uttar Pradesh,Lucknow,,Gomti Nagar,,PARTIAL,False,invalid_pin_format
+GV-001009,"Rajasthan, Malviya Nagar, Jaipur",SYNTHETIC,WRONG_ADMIN_HIERARCHY,en,latin,CONSISTENT,Rajasthan,Jaipur,,Malviya Nagar,,PARTIAL,False,inverted_hierarchy
+GV-000367,"Rohinia, North West Delhi, Delhi 110085",SYNTHETIC,TYPO,en,latin,VERIFIED,Delhi,North West Delhi,,Rohini,110085,ADEQUATE,False,char_typo
+GV-001012,"Near EON IT Park, Kharadi, Pune, Maharashtra 411028",SYNTHETIC,NEARBY_BUT_WRONG_LOCALITY,en,latin,CONSISTENT,Maharashtra,Pune,,Kharadi,411028,ADEQUATE,False,
+GV-000785,"Hadapsar, Mysuru, Karnataka 570002",SYNTHETIC,LOCALITY_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Pune,,Hadapsar,,ADEQUATE,False,cross_state_locality_mismatch
+GV-000605,"Hadapsar, Mumbai Suburban, Maharashtra 411028",SYNTHETIC,DISTRICT_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Pune,,Hadapsar,411028,ADEQUATE,False,district_mismatch
+GV-000288,"गाव: हिंजवडी, तालुका: मुळशी, जिल्हा: पुणे, राज्य: महाराष्ट्र, पिन: 411057",SYNTHETIC,DEVANAGARI_MARATHI,mr,devanagari,VERIFIED,Maharashtra,Pune,Mulshi,Hinjewadi,411057,COMPLETE,False,
+GV-000616,"HITEC City, Kolhapur, Telangana 500081",SYNTHETIC,DISTRICT_MISMATCH,en,latin,INCONSISTENT,Telangana,Hyderabad,,HITEC City,500081,ADEQUATE,False,district_mismatch
+GV-001065,"Near EON IT Park, Viman Nagar, Pune, Maharashtra 411014",SYNTHETIC,NEARBY_BUT_WRONG_LOCALITY,en,latin,CONSISTENT,Maharashtra,Pune,,Viman Nagar,411014,ADEQUATE,False,
+GV-000860,"Salt Lake, Kolkata, West Bengal 41101A",SYNTHETIC,INVALID_PIN,en,latin,NEEDS_REVIEW,West Bengal,Kolkata,,Salt Lake,,PARTIAL,False,invalid_pin_format
+GV-000482,"Electronic City, Bangalore, Karnataka 560100",SYNTHETIC,HISTORICAL_ALIAS,en,latin,VERIFIED,Karnataka,Bengaluru Urban,,Electronic City,560100,ADEQUATE,False,historical_alias
+GV-000108,"Kothrud, Pune, Maharashtra",SYNTHETIC,PARTIAL_VALID,en,latin,CONSISTENT,Maharashtra,Pune,,Kothrud,,ADEQUATE,False,
+GV-000954,"Shop 12, MG Road",SYNTHETIC,INCOMPLETE,en,latin,UNABLE_TO_VERIFY,,,,,,MINIMAL,False,
+GV-000449,"Gomti Nagar, Lucknow, Uttar Pradesh 226010",SYNTHETIC,MISSPELLING,en,latin,VERIFIED,Uttar Pradesh,Lucknow,,Gomti Nagar,226010,ADEQUATE,False,phonetic_misspelling
+GV-000446,"Adyar, Chennai, Tamil Nadu 600020",SYNTHETIC,MISSPELLING,en,latin,VERIFIED,Tamil Nadu,Chennai,,Adyar,600020,ADEQUATE,False,phonetic_misspelling
+GV-000878,"Kothrud, Pune, Maharashtra PIN-CODE",SYNTHETIC,INVALID_PIN,en,latin,NEEDS_REVIEW,Maharashtra,Pune,,Kothrud,,PARTIAL,False,invalid_pin_format
+GV-000302,"Navrangpura, अहमदाबाद, Gujarat 380009",SYNTHETIC,MIXED_LANGUAGE,mixed_hi_en,mixed,VERIFIED,Gujarat,Ahmedabad,,Navrangpura,380009,ADEQUATE,False,
+GV-000123,"Hauz Khas, South Delhi, Delhi",SYNTHETIC,PARTIAL_VALID,en,latin,CONSISTENT,Delhi,South Delhi,,Hauz Khas,,ADEQUATE,False,
+GV-000770,"Thane West, Bengaluru Urban, Karnataka 560102",SYNTHETIC,LOCALITY_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Thane,,Thane West,,ADEQUATE,False,cross_state_locality_mismatch
+GV-000746,"Rajarampuri, Bengaluru Urban, Karnataka 560102",SYNTHETIC,LOCALITY_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Kolhapur,,Rajarampuri,,ADEQUATE,False,cross_state_locality_mismatch
+GV-000019,"Flat 335, World Trade Center, Beside Apollo Hospital, Kothrud, Pune City, Pune, Maharashtra 411038",SYNTHETIC,COMPLETE_VALID,en,latin,VERIFIED,Maharashtra,Pune,Pune City,Kothrud,411038,COMPLETE,False,
+GV-000633,"South West Delhi, Karnataka 110075",SYNTHETIC,STATE_MISMATCH,en,latin,INCONSISTENT,Delhi,South West Delhi,,,110075,PARTIAL,False,state_mismatch
+GV-000946,Near City Hospital,SYNTHETIC,INCOMPLETE,en,latin,UNABLE_TO_VERIFY,,,,,,MINIMAL,False,
+GV-000184,"behind Kothrud chowk, Pune, Maharashtra",SYNTHETIC,INFORMAL_SLANG,en,latin,CONSISTENT,Maharashtra,Pune,,Kothrud,,ADEQUATE,False,
+GV-000925,Maharashtra,SYNTHETIC,INCOMPLETE,en,latin,NEEDS_REVIEW,Maharashtra,,,,,MINIMAL,False,
+GV-000522,Fatehpur,SYNTHETIC,AMBIGUOUS_LOCALITY,en,latin,AMBIGUOUS,,,,Fatehpur,,MINIMAL,True,
+GV-001029,"Near EON IT Park, Kharadi, Pune, Maharashtra 411038",SYNTHETIC,NEARBY_BUT_WRONG_LOCALITY,en,latin,CONSISTENT,Maharashtra,Pune,,Kharadi,411038,ADEQUATE,False,
+GV-000702,"Hadapsar, Mulshi, Pune, Maharashtra 411028",SYNTHETIC,SUBDISTRICT_MISMATCH,en,latin,CONSISTENT,Maharashtra,Pune,Haveli,Hadapsar,411028,COMPLETE,False,subdistrict_mismatch
+GV-000493,"Powai, Bombay, Maharashtra 400076",SYNTHETIC,HISTORICAL_ALIAS,en,latin,VERIFIED,Maharashtra,Mumbai Suburban,,Powai,400076,ADEQUATE,False,historical_alias
+GV-000415,"Malviya Nagar, Jaipur, Rajasthan 302017",SYNTHETIC,MISSPELLING,en,latin,VERIFIED,Rajasthan,Jaipur,,Malviya Nagar,302017,ADEQUATE,False,phonetic_misspelling
+GV-000036,"Building Surya Enclave, Behind HP Petrol Pump, Saket, Saket, South Delhi, Delhi 110017",SYNTHETIC,COMPLETE_VALID,en,latin,VERIFIED,Delhi,South Delhi,Saket,Saket,110017,COMPLETE,False,
+GV-000128,"New Town, North 24 Parganas, West Bengal",SYNTHETIC,PARTIAL_VALID,en,latin,CONSISTENT,West Bengal,North 24 Parganas,,New Town,,ADEQUATE,False,
+GV-000743,"Viman Nagar, Bengaluru Urban, Karnataka 560034",SYNTHETIC,LOCALITY_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Pune,,Viman Nagar,,ADEQUATE,False,cross_state_locality_mismatch
+GV-000105,"Hauz Khas, South Delhi, Delhi",SYNTHETIC,PARTIAL_VALID,en,latin,CONSISTENT,Delhi,South Delhi,,Hauz Khas,,ADEQUATE,False,
+GV-000897,"Bandra West, Mumbai Suburban, Maharashtra PIN-CODE",SYNTHETIC,INVALID_PIN,en,latin,NEEDS_REVIEW,Maharashtra,Mumbai Suburban,,Bandra West,,PARTIAL,False,invalid_pin_format
+GV-000462,"Gokulam, Mysore, Karnataka 570002",SYNTHETIC,HISTORICAL_ALIAS,en,latin,VERIFIED,Karnataka,Mysuru,,Gokulam,570002,ADEQUATE,False,historical_alias
+GV-000879,"Sector 62, Gautam Buddha Nagar, Uttar Pradesh 41101A",SYNTHETIC,INVALID_PIN,en,latin,NEEDS_REVIEW,Uttar Pradesh,Gautam Buddha Nagar,,Sector 62,,PARTIAL,False,invalid_pin_format
+GV-000992,"West Bengal, Rajarhat, North 24 Parganas",SYNTHETIC,WRONG_ADMIN_HIERARCHY,en,latin,CONSISTENT,West Bengal,North 24 Parganas,,Rajarhat,,PARTIAL,False,inverted_hierarchy
+GV-000940,"Near Metro Station, Ring Road",SYNTHETIC,INCOMPLETE,en,latin,UNABLE_TO_VERIFY,,,,,,MINIMAL,False,
+GV-000966,"Tamil Nadu, T Nagar, Chennai",SYNTHETIC,WRONG_ADMIN_HIERARCHY,en,latin,CONSISTENT,Tamil Nadu,Chennai,,T Nagar,,PARTIAL,False,inverted_hierarchy
+GV-000990,"Maharashtra, Hadapsar, Pune",SYNTHETIC,WRONG_ADMIN_HIERARCHY,en,latin,CONSISTENT,Maharashtra,Pune,,Hadapsar,,PARTIAL,False,inverted_hierarchy
+GV-000890,"Saket, South Delhi, Delhi 9999999",SYNTHETIC,INVALID_PIN,en,latin,NEEDS_REVIEW,Delhi,South Delhi,,Saket,,PARTIAL,False,invalid_pin_format
+GV-000113,"Powai, Mumbai Suburban, Maharashtra",SYNTHETIC,PARTIAL_VALID,en,latin,CONSISTENT,Maharashtra,Mumbai Suburban,,Powai,,ADEQUATE,False,
+GV-000908,"Near Bus Stand, Main Market",SYNTHETIC,INCOMPLETE,en,latin,UNABLE_TO_VERIFY,,,,,,MINIMAL,False,
+GV-000799,"Hauz Khas, South Delhi, Delhi 411014",SYNTHETIC,PIN_MISMATCH,en,latin,NEEDS_REVIEW,Delhi,South Delhi,,Hauz Khas,411014,ADEQUATE,False,pin_circle_mismatch
+GV-000364,"Andheri Easti, Mumbai Suburban, Maharashtra 400069",SYNTHETIC,TYPO,en,latin,VERIFIED,Maharashtra,Mumbai Suburban,,Andheri East,400069,ADEQUATE,False,char_typo
+GV-000187,"द्वारका, दक्षिण पश्चिम दिल्ली, दिल्ली 110075",SYNTHETIC,DEVANAGARI_HINDI,hi,devanagari,VERIFIED,Delhi,South West Delhi,,Dwarka,110075,ADEQUATE,False,
+GV-000531,Rajapur,SYNTHETIC,AMBIGUOUS_LOCALITY,en,latin,AMBIGUOUS,,,,Rajapur,,MINIMAL,True,
+GV-000589,"Dwarka, South Delhi, Delhi 110075",SYNTHETIC,DISTRICT_MISMATCH,en,latin,INCONSISTENT,Delhi,South West Delhi,,Dwarka,110075,ADEQUATE,False,district_mismatch
+GV-000373,"Banjara Hillsi, Hyderabad, Telangana 500034",SYNTHETIC,TYPO,en,latin,VERIFIED,Telangana,Hyderabad,,Banjara Hills,500034,ADEQUATE,False,char_typo
+GV-000362,"Electronic Cityi, Bengaluru Urban, Karnataka 560100",SYNTHETIC,TYPO,en,latin,VERIFIED,Karnataka,Bengaluru Urban,,Electronic City,560100,ADEQUATE,False,char_typo
+GV-000420,"Baner, Poone, Maharastra 411045",SYNTHETIC,MISSPELLING,en,latin,VERIFIED,Maharashtra,Pune,,Baner,411045,ADEQUATE,False,phonetic_misspelling
+GV-000944,Maharashtra,SYNTHETIC,INCOMPLETE,en,latin,NEEDS_REVIEW,Maharashtra,,,,,MINIMAL,False,
+GV-000340,"Vesu, सुरत, Gujarat 395007",SYNTHETIC,MIXED_LANGUAGE,mixed_hi_en,mixed,VERIFIED,Gujarat,Surat,,Vesu,395007,ADEQUATE,False,
+GV-000914,"Near Bus Stand, Main Market",SYNTHETIC,INCOMPLETE,en,latin,UNABLE_TO_VERIFY,,,,,,MINIMAL,False,
+GV-000145,"just after Hauz Khas circle, South Delhi, Delhi",SYNTHETIC,INFORMAL_SLANG,en,latin,CONSISTENT,Delhi,South Delhi,,Hauz Khas,,ADEQUATE,False,
+GV-000030,"Shop 651, Gokul Dham, Near Tech Park, Andheri East, Andheri, Mumbai Suburban, Maharashtra 400069",SYNTHETIC,COMPLETE_VALID,en,latin,VERIFIED,Maharashtra,Mumbai Suburban,Andheri,Andheri East,400069,COMPLETE,False,
+GV-000729,"Kothrud, Mulshi, Pune, Maharashtra 411038",SYNTHETIC,SUBDISTRICT_MISMATCH,en,latin,CONSISTENT,Maharashtra,Pune,Pune City,Kothrud,411038,COMPLETE,False,subdistrict_mismatch
+GV-000595,"Gokulam, Bengaluru Urban, Karnataka 570002",SYNTHETIC,DISTRICT_MISMATCH,en,latin,INCONSISTENT,Karnataka,Mysuru,,Gokulam,570002,ADEQUATE,False,district_mismatch
+GV-000202,"हायटेक सिटी, हैदराबाद, तेलंगणा 500081",SYNTHETIC,DEVANAGARI_HINDI,hi,devanagari,VERIFIED,Telangana,Hyderabad,,HITEC City,500081,ADEQUATE,False,
+GV-000559,Rampur,SYNTHETIC,AMBIGUOUS_LOCALITY,en,latin,AMBIGUOUS,,,,Rampur,,MINIMAL,True,
+GV-000378,"Dwarkai, South West Delhi, Delhi 110075",SYNTHETIC,TYPO,en,latin,VERIFIED,Delhi,South West Delhi,,Dwarka,110075,ADEQUATE,False,char_typo
+GV-000097,"Rajarampuri, Kolhapur, Maharashtra",SYNTHETIC,PARTIAL_VALID,en,latin,CONSISTENT,Maharashtra,Kolhapur,,Rajarampuri,,ADEQUATE,False,
+GV-000381,"HSR Layouti, Bengaluru Urban, Karnataka 560102",SYNTHETIC,TYPO,en,latin,VERIFIED,Karnataka,Bengaluru Urban,,HSR Layout,560102,ADEQUATE,False,char_typo
+GV-000619,"Hadapsar, Thane, Maharashtra 411028",SYNTHETIC,DISTRICT_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Pune,,Hadapsar,411028,ADEQUATE,False,district_mismatch
+GV-000529,Bilaspur,SYNTHETIC,AMBIGUOUS_LOCALITY,en,latin,AMBIGUOUS,,,,Bilaspur,,MINIMAL,True,
+GV-000596,"Whitefield, Mysuru, Karnataka 560066",SYNTHETIC,DISTRICT_MISMATCH,en,latin,INCONSISTENT,Karnataka,Bengaluru Urban,,Whitefield,560066,ADEQUATE,False,district_mismatch
+GV-000126,"Banjara Hills, Hyderabad, Telangana",SYNTHETIC,PARTIAL_VALID,en,latin,CONSISTENT,Telangana,Hyderabad,,Banjara Hills,,ADEQUATE,False,
+GV-000556,Rampur,SYNTHETIC,AMBIGUOUS_LOCALITY,en,latin,AMBIGUOUS,,,,Rampur,,MINIMAL,True,
+GV-000917,"Shop 12, MG Road",SYNTHETIC,INCOMPLETE,en,latin,UNABLE_TO_VERIFY,,,,,,MINIMAL,False,
+GV-000513,"Koramangala, Bangalore, Karnataka 560034",SYNTHETIC,HISTORICAL_ALIAS,en,latin,VERIFIED,Karnataka,Bengaluru Urban,,Koramangala,560034,ADEQUATE,False,historical_alias
+GV-000448,"Powai, Mumbai Suburban, Maharastra 400076",SYNTHETIC,MISSPELLING,en,latin,VERIFIED,Maharashtra,Mumbai Suburban,,Powai,400076,ADEQUATE,False,phonetic_misspelling
+GV-000082,"HITEC City, Hyderabad, Telangana",SYNTHETIC,PARTIAL_VALID,en,latin,CONSISTENT,Telangana,Hyderabad,,HITEC City,,ADEQUATE,False,
+GV-000396,"Powaia, Mumbai Suburban, Maharashtra 400076",SYNTHETIC,TYPO,en,latin,VERIFIED,Maharashtra,Mumbai Suburban,,Powai,400076,ADEQUATE,False,char_typo
+GV-000102,"Hauz Khas, South Delhi, Delhi",SYNTHETIC,PARTIAL_VALID,en,latin,CONSISTENT,Delhi,South Delhi,,Hauz Khas,,ADEQUATE,False,
+GV-000599,"HITEC City, Kolhapur, Telangana 500081",SYNTHETIC,DISTRICT_MISMATCH,en,latin,INCONSISTENT,Telangana,Hyderabad,,HITEC City,500081,ADEQUATE,False,district_mismatch
+GV-000309,"Indiranagar, बंगळुरू, Karnataka 560038",SYNTHETIC,MIXED_LANGUAGE,mixed_hi_en,mixed,VERIFIED,Karnataka,Bengaluru Urban,,Indiranagar,560038,ADEQUATE,False,
+GV-000828,"Salt Lake, Kolkata, West Bengal 411014",SYNTHETIC,PIN_MISMATCH,en,latin,NEEDS_REVIEW,West Bengal,Kolkata,,Salt Lake,411014,ADEQUATE,False,pin_circle_mismatch
+GV-000851,"New Town, North 24 Parganas, West Bengal 41101A",SYNTHETIC,INVALID_PIN,en,latin,NEEDS_REVIEW,West Bengal,North 24 Parganas,,New Town,,PARTIAL,False,invalid_pin_format
+GV-000902,"Near Bus Stand, Main Market",SYNTHETIC,INCOMPLETE,en,latin,UNABLE_TO_VERIFY,,,,,,MINIMAL,False,
+GV-000165,"behind Electronic City post, Bengaluru Urban, Karnataka",SYNTHETIC,INFORMAL_SLANG,en,latin,CONSISTENT,Karnataka,Bengaluru Urban,,Electronic City,,ADEQUATE,False,
+GV-000845,"Adyar, Chennai, Tamil Nadu 411014",SYNTHETIC,PIN_MISMATCH,en,latin,NEEDS_REVIEW,Tamil Nadu,Chennai,,Adyar,411014,ADEQUATE,False,pin_circle_mismatch
+GV-000641,"South Delhi, Karnataka 110016",SYNTHETIC,STATE_MISMATCH,en,latin,INCONSISTENT,Delhi,South Delhi,,,110016,PARTIAL,False,state_mismatch
+GV-000567,Rampur,SYNTHETIC,AMBIGUOUS_LOCALITY,en,latin,AMBIGUOUS,,,,Rampur,,MINIMAL,True,
+GV-000172,"behind Sector 62 chowk, Gautam Buddha Nagar, Uttar Pradesh",SYNTHETIC,INFORMAL_SLANG,en,latin,CONSISTENT,Uttar Pradesh,Gautam Buddha Nagar,,Sector 62,,ADEQUATE,False,
+GV-001028,"Near EON IT Park, Kharadi, Pune, Maharashtra 411045",SYNTHETIC,NEARBY_BUT_WRONG_LOCALITY,en,latin,CONSISTENT,Maharashtra,Pune,,Kharadi,411045,ADEQUATE,False,
+GV-000738,"Viman Nagar, Bengaluru Urban, Karnataka 560066",SYNTHETIC,LOCALITY_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Pune,,Viman Nagar,,ADEQUATE,False,cross_state_locality_mismatch
+GV-000968,"Telangana, Banjara Hills, Hyderabad",SYNTHETIC,WRONG_ADMIN_HIERARCHY,en,latin,CONSISTENT,Telangana,Hyderabad,,Banjara Hills,,PARTIAL,False,inverted_hierarchy
+GV-000171,"opp Vesu circle, Surat, Gujarat",SYNTHETIC,INFORMAL_SLANG,en,latin,CONSISTENT,Gujarat,Surat,,Vesu,,ADEQUATE,False,
+GV-000203,"राजारामपुरी, कोल्हापूर, महाराष्ट्र 416008",SYNTHETIC,DEVANAGARI_HINDI,hi,devanagari,VERIFIED,Maharashtra,Kolhapur,,Rajarampuri,416008,ADEQUATE,False,
+GV-000476,"Gokulam, Mysore, Karnataka 570002",SYNTHETIC,HISTORICAL_ALIAS,en,latin,VERIFIED,Karnataka,Mysuru,,Gokulam,570002,ADEQUATE,False,historical_alias
+GV-001022,"Near EON IT Park, Kharadi, Mumbai Suburban, Maharashtra 400076",SYNTHETIC,NEARBY_BUT_WRONG_LOCALITY,en,latin,CONSISTENT,Maharashtra,Mumbai Suburban,,Kharadi,400076,ADEQUATE,False,
+GV-000070,"Tower C, Kumar Primavera, Behind HP Petrol Pump, Banjara Hills, Ameerpet, Hyderabad, Telangana 500034",SYNTHETIC,COMPLETE_VALID,en,latin,VERIFIED,Telangana,Hyderabad,Ameerpet,Banjara Hills,500034,COMPLETE,False,
+GV-000676,"Jaipur, Karnataka 302017",SYNTHETIC,STATE_MISMATCH,en,latin,INCONSISTENT,Rajasthan,Jaipur,,,302017,PARTIAL,False,state_mismatch
+GV-000235,"कोथरूड, पुणे, महाराष्ट्र 411038",SYNTHETIC,DEVANAGARI_HINDI,hi,devanagari,VERIFIED,Maharashtra,Pune,,Kothrud,411038,ADEQUATE,False,
+GV-000912,"Near Metro Station, Ring Road",SYNTHETIC,INCOMPLETE,en,latin,UNABLE_TO_VERIFY,,,,,,MINIMAL,False,
+GV-000837,"Hauz Khas, South Delhi, Delhi 411014",SYNTHETIC,PIN_MISMATCH,en,latin,NEEDS_REVIEW,Delhi,South Delhi,,Hauz Khas,411014,ADEQUATE,False,pin_circle_mismatch
+GV-000855,"Bandra West, Mumbai Suburban, Maharashtra 12345",SYNTHETIC,INVALID_PIN,en,latin,NEEDS_REVIEW,Maharashtra,Mumbai Suburban,,Bandra West,,PARTIAL,False,invalid_pin_format
+GV-000129,"Connaught Place, New Delhi, Delhi",SYNTHETIC,PARTIAL_VALID,en,latin,CONSISTENT,Delhi,New Delhi,,Connaught Place,,ADEQUATE,False,
+GV-001030,"Near EON IT Park, Kharadi, Pune, Maharashtra 411014",SYNTHETIC,NEARBY_BUT_WRONG_LOCALITY,en,latin,CONSISTENT,Maharashtra,Pune,,Kharadi,411014,ADEQUATE,False,
+GV-000765,"Bandra West, Bengaluru Urban, Karnataka 560066",SYNTHETIC,LOCALITY_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Mumbai Suburban,,Bandra West,,ADEQUATE,False,cross_state_locality_mismatch
+GV-000846,"Rajarampuri, Kolhapur, Maharashtra 9999999",SYNTHETIC,INVALID_PIN,en,latin,NEEDS_REVIEW,Maharashtra,Kolhapur,,Rajarampuri,,PARTIAL,False,invalid_pin_format
+GV-000382,"Kothrudi, Pune, Maharashtra 411038",SYNTHETIC,TYPO,en,latin,VERIFIED,Maharashtra,Pune,,Kothrud,411038,ADEQUATE,False,char_typo
+GV-000216,"टी नगर, चेन्नई, तमिळनाडू 600017",SYNTHETIC,DEVANAGARI_HINDI,hi,devanagari,VERIFIED,Tamil Nadu,Chennai,,T Nagar,600017,ADEQUATE,False,
+GV-001006,"Maharashtra, Hinjewadi, Pune",SYNTHETIC,WRONG_ADMIN_HIERARCHY,en,latin,CONSISTENT,Maharashtra,Pune,,Hinjewadi,,PARTIAL,False,inverted_hierarchy
+GV-000414,"Salt Lake, Kolkatta, West Bengal 700091",SYNTHETIC,MISSPELLING,en,latin,VERIFIED,West Bengal,Kolkata,,Salt Lake,700091,ADEQUATE,False,phonetic_misspelling
+GV-000086,"Hadapsar, Pune, Maharashtra",SYNTHETIC,PARTIAL_VALID,en,latin,CONSISTENT,Maharashtra,Pune,,Hadapsar,,ADEQUATE,False,
+GV-000694,"Rajarampuri, Mulshi, Kolhapur, Maharashtra 416008",SYNTHETIC,SUBDISTRICT_MISMATCH,en,latin,CONSISTENT,Maharashtra,Kolhapur,Karvir,Rajarampuri,416008,COMPLETE,False,subdistrict_mismatch
+GV-000974,"Delhi, Rohini, North West Delhi",SYNTHETIC,WRONG_ADMIN_HIERARCHY,en,latin,CONSISTENT,Delhi,North West Delhi,,Rohini,,PARTIAL,False,inverted_hierarchy
+GV-000976,"Maharashtra, Bandra West, Mumbai Suburban",SYNTHETIC,WRONG_ADMIN_HIERARCHY,en,latin,CONSISTENT,Maharashtra,Mumbai Suburban,,Bandra West,,PARTIAL,False,inverted_hierarchy
+GV-000410,"Powai, Mumbai Suburban, Maharastra 400076",SYNTHETIC,MISSPELLING,en,latin,VERIFIED,Maharashtra,Mumbai Suburban,,Powai,400076,ADEQUATE,False,phonetic_misspelling
+GV-000155,"just after HITEC City circle, Hyderabad, Telangana",SYNTHETIC,INFORMAL_SLANG,en,latin,CONSISTENT,Telangana,Hyderabad,,HITEC City,,ADEQUATE,False,
+GV-000737,"Hadapsar, Bengaluru Urban, Karnataka 560038",SYNTHETIC,LOCALITY_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Pune,,Hadapsar,,ADEQUATE,False,cross_state_locality_mismatch
+GV-000372,"Powaia, Mumbai Suburban, Maharashtra 400076",SYNTHETIC,TYPO,en,latin,VERIFIED,Maharashtra,Mumbai Suburban,,Powai,400076,ADEQUATE,False,char_typo
+GV-000901,Near City Hospital,SYNTHETIC,INCOMPLETE,en,latin,UNABLE_TO_VERIFY,,,,,,MINIMAL,False,
+GV-000334,"T Nagar, चेन्नई, Tamil Nadu 600017",SYNTHETIC,MIXED_LANGUAGE,mixed_hi_en,mixed,VERIFIED,Tamil Nadu,Chennai,,T Nagar,600017,ADEQUATE,False,
+GV-000087,"Andheri East, Mumbai Suburban, Maharashtra",SYNTHETIC,PARTIAL_VALID,en,latin,CONSISTENT,Maharashtra,Mumbai Suburban,,Andheri East,,ADEQUATE,False,
+GV-000267,"गाव: विमान नगर, तालुका: हवेली, जिल्हा: पुणे, राज्य: महाराष्ट्र, पिन: 411014",SYNTHETIC,DEVANAGARI_MARATHI,mr,devanagari,VERIFIED,Maharashtra,Pune,Haveli,Viman Nagar,411014,COMPLETE,False,
+GV-000886,"Salt Lake, Kolkata, West Bengal PIN-CODE",SYNTHETIC,INVALID_PIN,en,latin,NEEDS_REVIEW,West Bengal,Kolkata,,Salt Lake,,PARTIAL,False,invalid_pin_format
+GV-000615,"Gomti Nagar, Gautam Buddha Nagar, Uttar Pradesh 226010",SYNTHETIC,DISTRICT_MISMATCH,en,latin,INCONSISTENT,Uttar Pradesh,Lucknow,,Gomti Nagar,226010,ADEQUATE,False,district_mismatch
+GV-001057,"Near EON IT Park, Kharadi, Mumbai Suburban, Maharashtra 400050",SYNTHETIC,NEARBY_BUT_WRONG_LOCALITY,en,latin,CONSISTENT,Maharashtra,Mumbai Suburban,,Kharadi,400050,ADEQUATE,False,
+GV-000849,"Adyar, Chennai, Tamil Nadu 41101A",SYNTHETIC,INVALID_PIN,en,latin,NEEDS_REVIEW,Tamil Nadu,Chennai,,Adyar,,PARTIAL,False,invalid_pin_format
+GV-000199,"अडयार, चेन्नई, तमिळनाडू 600020",SYNTHETIC,DEVANAGARI_HINDI,hi,devanagari,VERIFIED,Tamil Nadu,Chennai,,Adyar,600020,ADEQUATE,False,
+GV-000500,"Whitefield, Bangalore, Karnataka 560066",SYNTHETIC,HISTORICAL_ALIAS,en,latin,VERIFIED,Karnataka,Bengaluru Urban,,Whitefield,560066,ADEQUATE,False,historical_alias
+GV-000535,Fatehpur,SYNTHETIC,AMBIGUOUS_LOCALITY,en,latin,AMBIGUOUS,,,,Fatehpur,,MINIMAL,True,
+GV-000519,Rajapur,SYNTHETIC,AMBIGUOUS_LOCALITY,en,latin,AMBIGUOUS,,,,Rajapur,,MINIMAL,True,
+GV-000825,"Whitefield, Bengaluru Urban, Karnataka 411014",SYNTHETIC,PIN_MISMATCH,en,latin,NEEDS_REVIEW,Karnataka,Bengaluru Urban,,Whitefield,411014,ADEQUATE,False,pin_circle_mismatch
+GV-000840,"Viman Nagar, Pune, Maharashtra 560066",SYNTHETIC,PIN_MISMATCH,en,latin,NEEDS_REVIEW,Maharashtra,Pune,,Viman Nagar,560066,ADEQUATE,False,pin_circle_mismatch
+GV-000591,"Powai, Pune, Maharashtra 400076",SYNTHETIC,DISTRICT_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Mumbai Suburban,,Powai,400076,ADEQUATE,False,district_mismatch
+GV-000349,"Sector 62, गौतम बुद्ध नगर, Uttar Pradesh 201309",SYNTHETIC,MIXED_LANGUAGE,mixed_hi_en,mixed,VERIFIED,Uttar Pradesh,Gautam Buddha Nagar,,Sector 62,201309,ADEQUATE,False,
+GV-000447,"Andheri East, Mumbai Suburban, Maharastra 400069",SYNTHETIC,MISSPELLING,en,latin,VERIFIED,Maharashtra,Mumbai Suburban,,Andheri East,400069,ADEQUATE,False,phonetic_misspelling
+GV-001024,"Near EON IT Park, Kharadi, Mumbai Suburban, Maharashtra 400050",SYNTHETIC,NEARBY_BUT_WRONG_LOCALITY,en,latin,CONSISTENT,Maharashtra,Mumbai Suburban,,Kharadi,400050,ADEQUATE,False,
+GV-000014,"Tower T2, Ganga Carnation, Near Tech Park, Andheri East, Andheri, Mumbai Suburban, Maharashtra 400069",SYNTHETIC,COMPLETE_VALID,en,latin,VERIFIED,Maharashtra,Mumbai Suburban,Andheri,Andheri East,400069,COMPLETE,False,
+GV-000753,"Hinjewadi, Bengaluru Urban, Karnataka 560066",SYNTHETIC,LOCALITY_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Pune,,Hinjewadi,,ADEQUATE,False,cross_state_locality_mismatch
+GV-000751,"Powai, Bengaluru Urban, Karnataka 560038",SYNTHETIC,LOCALITY_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Mumbai Suburban,,Powai,,ADEQUATE,False,cross_state_locality_mismatch
+GV-000932,Near City Hospital,SYNTHETIC,INCOMPLETE,en,latin,UNABLE_TO_VERIFY,,,,,,MINIMAL,False,
+GV-000285,"गाव: ठाणे पश्चिम, तालुका: ठाणे, जिल्हा: ठाणे, राज्य: महाराष्ट्र, पिन: 400601",SYNTHETIC,DEVANAGARI_MARATHI,mr,devanagari,VERIFIED,Maharashtra,Thane,Thane,Thane West,400601,COMPLETE,False,
+GV-000975,"West Bengal, New Town, North 24 Parganas",SYNTHETIC,WRONG_ADMIN_HIERARCHY,en,latin,CONSISTENT,West Bengal,North 24 Parganas,,New Town,,PARTIAL,False,inverted_hierarchy
+GV-000230,"खराडी, पुणे, महाराष्ट्र 411014",SYNTHETIC,DEVANAGARI_HINDI,hi,devanagari,VERIFIED,Maharashtra,Pune,,Kharadi,411014,ADEQUATE,False,
+GV-000716,"Baner, Mulshi, Pune, Maharashtra 411045",SYNTHETIC,SUBDISTRICT_MISMATCH,en,latin,CONSISTENT,Maharashtra,Pune,Haveli,Baner,411045,COMPLETE,False,subdistrict_mismatch
+GV-000581,"Banjara Hills, Kolhapur, Telangana 500034",SYNTHETIC,DISTRICT_MISMATCH,en,latin,INCONSISTENT,Telangana,Hyderabad,,Banjara Hills,500034,ADEQUATE,False,district_mismatch
+GV-000045,"Flat 412, Shanti Niketan, Near Central Bank, Gomti Nagar, Lucknow, Lucknow, Uttar Pradesh 226010",SYNTHETIC,COMPLETE_VALID,en,latin,VERIFIED,Uttar Pradesh,Lucknow,Lucknow,Gomti Nagar,226010,COMPLETE,False,
+GV-000068,"House No. 808, Ganga Carnation, Near Bus Stand, Vesu, Chorasi, Surat, Gujarat 395007",SYNTHETIC,COMPLETE_VALID,en,latin,VERIFIED,Gujarat,Surat,Chorasi,Vesu,395007,COMPLETE,False,
+GV-000709,"Powai, Mulshi, Mumbai Suburban, Maharashtra 400076",SYNTHETIC,SUBDISTRICT_MISMATCH,en,latin,CONSISTENT,Maharashtra,Mumbai Suburban,Andheri,Powai,400076,COMPLETE,False,subdistrict_mismatch
+GV-000401,"Electronic Cityi, Bengaluru Urban, Karnataka 560100",SYNTHETIC,TYPO,en,latin,VERIFIED,Karnataka,Bengaluru Urban,,Electronic City,560100,ADEQUATE,False,char_typo
+GV-000628,"Kolkata, Karnataka 700091",SYNTHETIC,STATE_MISMATCH,en,latin,INCONSISTENT,West Bengal,Kolkata,,,700091,PARTIAL,False,state_mismatch
+GV-000228,"बंजारा हिल्स, हैदराबाद, तेलंगणा 500034",SYNTHETIC,DEVANAGARI_HINDI,hi,devanagari,VERIFIED,Telangana,Hyderabad,,Banjara Hills,500034,ADEQUATE,False,
+GV-000158,"adjacent Saket side, South Delhi, Delhi",SYNTHETIC,INFORMAL_SLANG,en,latin,CONSISTENT,Delhi,South Delhi,,Saket,,ADEQUATE,False,
+GV-000003,"House No. 560, Godrej Woods, Behind Police Station, T Nagar, Mylapore, Chennai, Tamil Nadu 600017",SYNTHETIC,COMPLETE_VALID,en,latin,VERIFIED,Tamil Nadu,Chennai,Mylapore,T Nagar,600017,COMPLETE,False,
+GV-000850,"Hadapsar, Pune, Maharashtra 12345",SYNTHETIC,INVALID_PIN,en,latin,NEEDS_REVIEW,Maharashtra,Pune,,Hadapsar,,PARTIAL,False,invalid_pin_format
+GV-000727,"Bandra West, Mulshi, Mumbai Suburban, Maharashtra 400050",SYNTHETIC,SUBDISTRICT_MISMATCH,en,latin,CONSISTENT,Maharashtra,Mumbai Suburban,Andheri,Bandra West,400050,COMPLETE,False,subdistrict_mismatch
+GV-000696,"Powai, Mulshi, Mumbai Suburban, Maharashtra 400076",SYNTHETIC,SUBDISTRICT_MISMATCH,en,latin,CONSISTENT,Maharashtra,Mumbai Suburban,Andheri,Powai,400076,COMPLETE,False,subdistrict_mismatch
+GV-000163,"just after Malviya Nagar chowk, Jaipur, Rajasthan",SYNTHETIC,INFORMAL_SLANG,en,latin,CONSISTENT,Rajasthan,Jaipur,,Malviya Nagar,,ADEQUATE,False,
+GV-000986,"Telangana, HITEC City, Hyderabad",SYNTHETIC,WRONG_ADMIN_HIERARCHY,en,latin,CONSISTENT,Telangana,Hyderabad,,HITEC City,,PARTIAL,False,inverted_hierarchy
+GV-000692,"Andheri East, Mulshi, Mumbai Suburban, Maharashtra 400069",SYNTHETIC,SUBDISTRICT_MISMATCH,en,latin,CONSISTENT,Maharashtra,Mumbai Suburban,Andheri,Andheri East,400069,COMPLETE,False,subdistrict_mismatch
+GV-000404,"Whitefieldi, Bengaluru Urban, Karnataka 560066",SYNTHETIC,TYPO,en,latin,VERIFIED,Karnataka,Bengaluru Urban,,Whitefield,560066,ADEQUATE,False,char_typo
+GV-000504,"Salt Lake, Calcutta, West Bengal 700091",SYNTHETIC,HISTORICAL_ALIAS,en,latin,VERIFIED,West Bengal,Kolkata,,Salt Lake,700091,ADEQUATE,False,historical_alias
+GV-000079,"Vaishali Nagar, Jaipur, Rajasthan",SYNTHETIC,PARTIAL_VALID,en,latin,CONSISTENT,Rajasthan,Jaipur,,Vaishali Nagar,,ADEQUATE,False,
+GV-000880,"Saket, South Delhi, Delhi 011014",SYNTHETIC,INVALID_PIN,en,latin,NEEDS_REVIEW,Delhi,South Delhi,,Saket,,PARTIAL,False,invalid_pin_format
+GV-000784,"Hinjewadi, Bengaluru Urban, Karnataka 560102",SYNTHETIC,LOCALITY_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Pune,,Hinjewadi,,ADEQUATE,False,cross_state_locality_mismatch
+GV-001011,"Near EON IT Park, Kharadi, Pune, Maharashtra 411028",SYNTHETIC,NEARBY_BUT_WRONG_LOCALITY,en,latin,CONSISTENT,Maharashtra,Pune,,Kharadi,411028,ADEQUATE,False,
+GV-000127,"Saket, South Delhi, Delhi",SYNTHETIC,PARTIAL_VALID,en,latin,CONSISTENT,Delhi,South Delhi,,Saket,,ADEQUATE,False,
+GV-000152,"just after Vesu circle, Surat, Gujarat",SYNTHETIC,INFORMAL_SLANG,en,latin,CONSISTENT,Gujarat,Surat,,Vesu,,ADEQUATE,False,
+GV-000486,"Koramangala, Bangalore, Karnataka 560034",SYNTHETIC,HISTORICAL_ALIAS,en,latin,VERIFIED,Karnataka,Bengaluru Urban,,Koramangala,560034,ADEQUATE,False,historical_alias
+GV-000939,"Near Metro Station, Ring Road",SYNTHETIC,INCOMPLETE,en,latin,UNABLE_TO_VERIFY,,,,,,MINIMAL,False,
+GV-000425,"Hadapsar, Poone, Maharastra 411028",SYNTHETIC,MISSPELLING,en,latin,VERIFIED,Maharashtra,Pune,,Hadapsar,411028,ADEQUATE,False,phonetic_misspelling
+GV-000583,"Adyar, Kolhapur, Tamil Nadu 600020",SYNTHETIC,DISTRICT_MISMATCH,en,latin,INCONSISTENT,Tamil Nadu,Chennai,,Adyar,600020,ADEQUATE,False,district_mismatch
+GV-000300,"Rajarampuri, कोल्हापूर, Maharashtra 416008",SYNTHETIC,MIXED_LANGUAGE,mixed_mr_en,mixed,VERIFIED,Maharashtra,Kolhapur,,Rajarampuri,416008,ADEQUATE,False,
+GV-000096,"Kothrud, Pune, Maharashtra",SYNTHETIC,PARTIAL_VALID,en,latin,CONSISTENT,Maharashtra,Pune,,Kothrud,,ADEQUATE,False,
+GV-000222,"इलेक्ट्रॉनिक सिटी, बंगळुरू, कर्नाटक 560100",SYNTHETIC,DEVANAGARI_HINDI,hi,devanagari,VERIFIED,Karnataka,Bengaluru Urban,,Electronic City,560100,ADEQUATE,False,
+GV-000632,"Chennai, Karnataka 600017",SYNTHETIC,STATE_MISMATCH,en,latin,INCONSISTENT,Tamil Nadu,Chennai,,,600017,PARTIAL,False,state_mismatch
+GV-000284,"गाव: खराडी, तालुका: हवेली, जिल्हा: पुणे, राज्य: महाराष्ट्र, पिन: 411014",SYNTHETIC,DEVANAGARI_MARATHI,mr,devanagari,VERIFIED,Maharashtra,Pune,Haveli,Kharadi,411014,COMPLETE,False,
+GV-001001,"Rajasthan, Malviya Nagar, Jaipur",SYNTHETIC,WRONG_ADMIN_HIERARCHY,en,latin,CONSISTENT,Rajasthan,Jaipur,,Malviya Nagar,,PARTIAL,False,inverted_hierarchy
+GV-000117,"Connaught Place, New Delhi, Delhi",SYNTHETIC,PARTIAL_VALID,en,latin,CONSISTENT,Delhi,New Delhi,,Connaught Place,,ADEQUATE,False,
+GV-000525,Bilaspur,SYNTHETIC,AMBIGUOUS_LOCALITY,en,latin,AMBIGUOUS,,,,Bilaspur,,MINIMAL,True,
+GV-000731,"Baner, Mulshi, Pune, Maharashtra 411045",SYNTHETIC,SUBDISTRICT_MISMATCH,en,latin,CONSISTENT,Maharashtra,Pune,Haveli,Baner,411045,COMPLETE,False,subdistrict_mismatch
+GV-000140,"just after Adyar circle, Chennai, Tamil Nadu",SYNTHETIC,INFORMAL_SLANG,en,latin,CONSISTENT,Tamil Nadu,Chennai,,Adyar,,ADEQUATE,False,
+GV-000962,"Maharashtra, Kothrud, Pune",SYNTHETIC,WRONG_ADMIN_HIERARCHY,en,latin,CONSISTENT,Maharashtra,Pune,,Kothrud,,PARTIAL,False,inverted_hierarchy
+GV-000565,Aurangabad,SYNTHETIC,AMBIGUOUS_LOCALITY,en,latin,AMBIGUOUS,,,,Aurangabad,,MINIMAL,True,
+GV-000168,"opposite to Kothrud circle, Pune, Maharashtra",SYNTHETIC,INFORMAL_SLANG,en,latin,CONSISTENT,Maharashtra,Pune,,Kothrud,,ADEQUATE,False,
+GV-000827,"Vesu, Surat, Gujarat 411014",SYNTHETIC,PIN_MISMATCH,en,latin,NEEDS_REVIEW,Gujarat,Surat,,Vesu,411014,ADEQUATE,False,pin_circle_mismatch
+GV-000970,"Delhi, Dwarka, South West Delhi",SYNTHETIC,WRONG_ADMIN_HIERARCHY,en,latin,CONSISTENT,Delhi,South West Delhi,,Dwarka,,PARTIAL,False,inverted_hierarchy
+GV-000786,"Rajarampuri, Mysuru, Karnataka 570002",SYNTHETIC,LOCALITY_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Kolhapur,,Rajarampuri,,ADEQUATE,False,cross_state_locality_mismatch
+GV-000982,"Karnataka, Electronic City, Bengaluru Urban",SYNTHETIC,WRONG_ADMIN_HIERARCHY,en,latin,CONSISTENT,Karnataka,Bengaluru Urban,,Electronic City,,PARTIAL,False,inverted_hierarchy
+GV-000175,"just after Koramangala area, Bengaluru Urban, Karnataka",SYNTHETIC,INFORMAL_SLANG,en,latin,CONSISTENT,Karnataka,Bengaluru Urban,,Koramangala,,ADEQUATE,False,
+GV-000399,"Kharadia, Pune, Maharashtra 411014",SYNTHETIC,TYPO,en,latin,VERIFIED,Maharashtra,Pune,,Kharadi,411014,ADEQUATE,False,char_typo
+GV-000978,"Rajasthan, Malviya Nagar, Jaipur",SYNTHETIC,WRONG_ADMIN_HIERARCHY,en,latin,CONSISTENT,Rajasthan,Jaipur,,Malviya Nagar,,PARTIAL,False,inverted_hierarchy
+GV-001014,"Near EON IT Park, Kharadi, Pune, Maharashtra 411014",SYNTHETIC,NEARBY_BUT_WRONG_LOCALITY,en,latin,CONSISTENT,Maharashtra,Pune,,Kharadi,411014,ADEQUATE,False,
+GV-000051,"House No. 753, Infinity Tower, Opposite City Mall, Gokulam, Mysuru, Mysuru, Karnataka 570002",SYNTHETIC,COMPLETE_VALID,en,latin,VERIFIED,Karnataka,Mysuru,Mysuru,Gokulam,570002,COMPLETE,False,
+GV-000028,"Flat 735, World Trade Center, Near Tech Park, Electronic City, Bengaluru South, Bengaluru Urban, Karnataka 560100",SYNTHETIC,COMPLETE_VALID,en,latin,VERIFIED,Karnataka,Bengaluru Urban,Bengaluru South,Electronic City,560100,COMPLETE,False,
+GV-000995,"Maharashtra, Rajarampuri, Kolhapur",SYNTHETIC,WRONG_ADMIN_HIERARCHY,en,latin,CONSISTENT,Maharashtra,Kolhapur,,Rajarampuri,,PARTIAL,False,inverted_hierarchy
+GV-000257,"गाव: कोथरूड, तालुका: पुणे शहर, जिल्हा: पुणे, राज्य: महाराष्ट्र, पिन: 411038",SYNTHETIC,DEVANAGARI_MARATHI,mr,devanagari,VERIFIED,Maharashtra,Pune,Pune City,Kothrud,411038,COMPLETE,False,
+GV-000443,"Hauz Khas, South Delhi, Delhi 110016",SYNTHETIC,MISSPELLING,en,latin,VERIFIED,Delhi,South Delhi,,Hauz Khas,110016,ADEQUATE,False,phonetic_misspelling
+GV-000832,"Adyar, Chennai, Tamil Nadu 411014",SYNTHETIC,PIN_MISMATCH,en,latin,NEEDS_REVIEW,Tamil Nadu,Chennai,,Adyar,411014,ADEQUATE,False,pin_circle_mismatch
+GV-000072,"Building Shanti Niketan, Near Metro Station, Indiranagar, Bengaluru East, Bengaluru Urban, Karnataka 560038",SYNTHETIC,COMPLETE_VALID,en,latin,VERIFIED,Karnataka,Bengaluru Urban,Bengaluru East,Indiranagar,560038,COMPLETE,False,
+GV-000977,"West Bengal, Salt Lake, Kolkata",SYNTHETIC,WRONG_ADMIN_HIERARCHY,en,latin,CONSISTENT,West Bengal,Kolkata,,Salt Lake,,PARTIAL,False,inverted_hierarchy
+GV-000816,"Dwarka, South West Delhi, Delhi 411014",SYNTHETIC,PIN_MISMATCH,en,latin,NEEDS_REVIEW,Delhi,South West Delhi,,Dwarka,411014,ADEQUATE,False,pin_circle_mismatch
+GV-000277,"गाव: राजारामपुरी, तालुका: करवीर, जिल्हा: कोल्हापूर, राज्य: महाराष्ट्र, पिन: 416008",SYNTHETIC,DEVANAGARI_MARATHI,mr,devanagari,VERIFIED,Maharashtra,Kolhapur,Karvir,Rajarampuri,416008,COMPLETE,False,
+GV-000347,"Banjara Hills, हैदराबाद, Telangana 500034",SYNTHETIC,MIXED_LANGUAGE,mixed_hi_en,mixed,VERIFIED,Telangana,Hyderabad,,Banjara Hills,500034,ADEQUATE,False,
+GV-000200,"अंधेरी पूर्व, मुंबई उपनगर, महाराष्ट्र 400069",SYNTHETIC,DEVANAGARI_HINDI,hi,devanagari,VERIFIED,Maharashtra,Mumbai Suburban,,Andheri East,400069,ADEQUATE,False,
+GV-000677,"Gautam Buddha Nagar, Karnataka 201309",SYNTHETIC,STATE_MISMATCH,en,latin,INCONSISTENT,Uttar Pradesh,Gautam Buddha Nagar,,,201309,PARTIAL,False,state_mismatch
+GV-001025,"Near EON IT Park, Viman Nagar, Pune, Maharashtra 411014",SYNTHETIC,NEARBY_BUT_WRONG_LOCALITY,en,latin,CONSISTENT,Maharashtra,Pune,,Viman Nagar,411014,ADEQUATE,False,
+GV-000395,"Whitefieldi, Bengaluru Urban, Karnataka 560066",SYNTHETIC,TYPO,en,latin,VERIFIED,Karnataka,Bengaluru Urban,,Whitefield,560066,ADEQUATE,False,char_typo
+GV-001010,"Telangana, Banjara Hills, Hyderabad",SYNTHETIC,WRONG_ADMIN_HIERARCHY,en,latin,CONSISTENT,Telangana,Hyderabad,,Banjara Hills,,PARTIAL,False,inverted_hierarchy
+GV-000881,"Whitefield, Bengaluru Urban, Karnataka 41101A",SYNTHETIC,INVALID_PIN,en,latin,NEEDS_REVIEW,Karnataka,Bengaluru Urban,,Whitefield,,PARTIAL,False,invalid_pin_format
+GV-000040,"Tower C, Cyber City, Beside Apollo Hospital, Kothrud, Pune City, Pune, Maharashtra 411038",SYNTHETIC,COMPLETE_VALID,en,latin,VERIFIED,Maharashtra,Pune,Pune City,Kothrud,411038,COMPLETE,False,
+GV-000444,"Banjara Hills, Hyderabad, Telangana 500034",SYNTHETIC,MISSPELLING,en,latin,VERIFIED,Telangana,Hyderabad,,Banjara Hills,500034,ADEQUATE,False,phonetic_misspelling
+GV-000365,"Salt Lakei, Kolkata, West Bengal 700091",SYNTHETIC,TYPO,en,latin,VERIFIED,West Bengal,Kolkata,,Salt Lake,700091,ADEQUATE,False,char_typo
+GV-000603,"HITEC City, Kolhapur, Telangana 500081",SYNTHETIC,DISTRICT_MISMATCH,en,latin,INCONSISTENT,Telangana,Hyderabad,,HITEC City,500081,ADEQUATE,False,district_mismatch
+GV-000074,"Cyber City, 3rd Floor, Opposite Railway Station, Navrangpura, Daskroi, Ahmedabad, Gujarat 380009",SYNTHETIC,COMPLETE_VALID,en,latin,VERIFIED,Gujarat,Ahmedabad,Daskroi,Navrangpura,380009,COMPLETE,False,
+GV-000301,"Gokulam, म्हैसूर, Karnataka 570002",SYNTHETIC,MIXED_LANGUAGE,mixed_hi_en,mixed,VERIFIED,Karnataka,Mysuru,,Gokulam,570002,ADEQUATE,False,
+GV-000107,"Banjara Hills, Hyderabad, Telangana",SYNTHETIC,PARTIAL_VALID,en,latin,CONSISTENT,Telangana,Hyderabad,,Banjara Hills,,ADEQUATE,False,
+GV-000725,"Bandra West, Mulshi, Mumbai Suburban, Maharashtra 400050",SYNTHETIC,SUBDISTRICT_MISMATCH,en,latin,CONSISTENT,Maharashtra,Mumbai Suburban,Andheri,Bandra West,400050,COMPLETE,False,subdistrict_mismatch
+GV-000896,"Vaishali Nagar, Jaipur, Rajasthan 41101A",SYNTHETIC,INVALID_PIN,en,latin,NEEDS_REVIEW,Rajasthan,Jaipur,,Vaishali Nagar,,PARTIAL,False,invalid_pin_format
+GV-000647,"North West Delhi, Karnataka 110085",SYNTHETIC,STATE_MISMATCH,en,latin,INCONSISTENT,Delhi,North West Delhi,,,110085,PARTIAL,False,state_mismatch
+GV-001005,"Gujarat, Vesu, Surat",SYNTHETIC,WRONG_ADMIN_HIERARCHY,en,latin,CONSISTENT,Gujarat,Surat,,Vesu,,PARTIAL,False,inverted_hierarchy
+GV-000337,"Baner, पुणे, Maharashtra 411045",SYNTHETIC,MIXED_LANGUAGE,mixed_mr_en,mixed,VERIFIED,Maharashtra,Pune,,Baner,411045,ADEQUATE,False,
+GV-000289,"गाव: कोथरूड, तालुका: पुणे शहर, जिल्हा: पुणे, राज्य: महाराष्ट्र, पिन: 411038",SYNTHETIC,DEVANAGARI_MARATHI,mr,devanagari,VERIFIED,Maharashtra,Pune,Pune City,Kothrud,411038,COMPLETE,False,
+GV-000922,Near City Hospital,SYNTHETIC,INCOMPLETE,en,latin,UNABLE_TO_VERIFY,,,,,,MINIMAL,False,
+GV-000782,"Kothrud, Mysuru, Karnataka 570002",SYNTHETIC,LOCALITY_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Pune,,Kothrud,,ADEQUATE,False,cross_state_locality_mismatch
+GV-000629,"Kolkata, Karnataka 700091",SYNTHETIC,STATE_MISMATCH,en,latin,INCONSISTENT,West Bengal,Kolkata,,,700091,PARTIAL,False,state_mismatch
+GV-000507,"Bandra West, Bombay, Maharashtra 400050",SYNTHETIC,HISTORICAL_ALIAS,en,latin,VERIFIED,Maharashtra,Mumbai Suburban,,Bandra West,400050,ADEQUATE,False,historical_alias
+GV-000933,Maharashtra,SYNTHETIC,INCOMPLETE,en,latin,NEEDS_REVIEW,Maharashtra,,,,,MINIMAL,False,
+GV-000695,"Hadapsar, Mulshi, Pune, Maharashtra 411028",SYNTHETIC,SUBDISTRICT_MISMATCH,en,latin,CONSISTENT,Maharashtra,Pune,Haveli,Hadapsar,411028,COMPLETE,False,subdistrict_mismatch
+GV-000422,"Saket, South Delhi, Delhi 110017",SYNTHETIC,MISSPELLING,en,latin,VERIFIED,Delhi,South Delhi,,Saket,110017,ADEQUATE,False,phonetic_misspelling
+GV-000291,"गाव: अंधेरी पूर्व, तालुका: अंधेरी, जिल्हा: मुंबई उपनगर, राज्य: महाराष्ट्र, पिन: 400069",SYNTHETIC,DEVANAGARI_MARATHI,mr,devanagari,VERIFIED,Maharashtra,Mumbai Suburban,Andheri,Andheri East,400069,COMPLETE,False,
+GV-000950,"Near Metro Station, Ring Road",SYNTHETIC,INCOMPLETE,en,latin,UNABLE_TO_VERIFY,,,,,,MINIMAL,False,
+GV-000109,"Indiranagar, Bengaluru Urban, Karnataka",SYNTHETIC,PARTIAL_VALID,en,latin,CONSISTENT,Karnataka,Bengaluru Urban,,Indiranagar,,ADEQUATE,False,
+GV-000118,"Thane West, Thane, Maharashtra",SYNTHETIC,PARTIAL_VALID,en,latin,CONSISTENT,Maharashtra,Thane,,Thane West,,ADEQUATE,False,
+GV-000022,"Shop 355, Pheonix Marketcity, Behind Police Station, Dwarka, Dwarka, South West Delhi, Delhi 110075",SYNTHETIC,COMPLETE_VALID,en,latin,VERIFIED,Delhi,South West Delhi,Dwarka,Dwarka,110075,COMPLETE,False,
+GV-000996,"Delhi, Karol Bagh, Central Delhi",SYNTHETIC,WRONG_ADMIN_HIERARCHY,en,latin,CONSISTENT,Delhi,Central Delhi,,Karol Bagh,,PARTIAL,False,inverted_hierarchy
+GV-000612,"Kothrud, Mumbai Suburban, Maharashtra 411038",SYNTHETIC,DISTRICT_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Pune,,Kothrud,411038,ADEQUATE,False,district_mismatch
+GV-000439,"Gomti Nagar, Lucknow, Uttar Pradesh 226010",SYNTHETIC,MISSPELLING,en,latin,VERIFIED,Uttar Pradesh,Lucknow,,Gomti Nagar,226010,ADEQUATE,False,phonetic_misspelling
+GV-000170,"opposite to Kharadi chowk, Pune, Maharashtra",SYNTHETIC,INFORMAL_SLANG,en,latin,CONSISTENT,Maharashtra,Pune,,Kharadi,,ADEQUATE,False,
+GV-000402,"Karol Baghi, Central Delhi, Delhi 110005",SYNTHETIC,TYPO,en,latin,VERIFIED,Delhi,Central Delhi,,Karol Bagh,110005,ADEQUATE,False,char_typo
+GV-000331,"Kothrud, पुणे, Maharashtra 411038",SYNTHETIC,MIXED_LANGUAGE,mixed_mr_en,mixed,VERIFIED,Maharashtra,Pune,,Kothrud,411038,ADEQUATE,False,
+GV-001047,"Near EON IT Park, Kharadi, Pune, Maharashtra 411038",SYNTHETIC,NEARBY_BUT_WRONG_LOCALITY,en,latin,CONSISTENT,Maharashtra,Pune,,Kharadi,411038,ADEQUATE,False,
+GV-000256,"गाव: अंधेरी पूर्व, तालुका: अंधेरी, जिल्हा: मुंबई उपनगर, राज्य: महाराष्ट्र, पिन: 400069",SYNTHETIC,DEVANAGARI_MARATHI,mr,devanagari,VERIFIED,Maharashtra,Mumbai Suburban,Andheri,Andheri East,400069,COMPLETE,False,
+GV-000043,"Building Kumar Primavera, Opposite Railway Station, Dwarka, Dwarka, South West Delhi, Delhi 110075",SYNTHETIC,COMPLETE_VALID,en,latin,VERIFIED,Delhi,South West Delhi,Dwarka,Dwarka,110075,COMPLETE,False,
+GV-000088,"HSR Layout, Bengaluru Urban, Karnataka",SYNTHETIC,PARTIAL_VALID,en,latin,CONSISTENT,Karnataka,Bengaluru Urban,,HSR Layout,,ADEQUATE,False,
+GV-000360,"HITEC Cityi, Hyderabad, Telangana 500081",SYNTHETIC,TYPO,en,latin,VERIFIED,Telangana,Hyderabad,,HITEC City,500081,ADEQUATE,False,char_typo
+GV-000961,"Telangana, Banjara Hills, Hyderabad",SYNTHETIC,WRONG_ADMIN_HIERARCHY,en,latin,CONSISTENT,Telangana,Hyderabad,,Banjara Hills,,PARTIAL,False,inverted_hierarchy
+GV-000600,"Karol Bagh, South Delhi, Delhi 110005",SYNTHETIC,DISTRICT_MISMATCH,en,latin,INCONSISTENT,Delhi,Central Delhi,,Karol Bagh,110005,ADEQUATE,False,district_mismatch
+GV-000029,"Tower A, Ganga Carnation, Near Central Bank, Electronic City, Bengaluru South, Bengaluru Urban, Karnataka 560100",SYNTHETIC,COMPLETE_VALID,en,latin,VERIFIED,Karnataka,Bengaluru Urban,Bengaluru South,Electronic City,560100,COMPLETE,False,
+GV-000244,"गाव: अंधेरी पूर्व, तालुका: अंधेरी, जिल्हा: मुंबई उपनगर, राज्य: महाराष्ट्र, पिन: 400069",SYNTHETIC,DEVANAGARI_MARATHI,mr,devanagari,VERIFIED,Maharashtra,Mumbai Suburban,Andheri,Andheri East,400069,COMPLETE,False,
+GV-000717,"Hadapsar, Mulshi, Pune, Maharashtra 411028",SYNTHETIC,SUBDISTRICT_MISMATCH,en,latin,CONSISTENT,Maharashtra,Pune,Haveli,Hadapsar,411028,COMPLETE,False,subdistrict_mismatch
+GV-000983,"Telangana, Banjara Hills, Hyderabad",SYNTHETIC,WRONG_ADMIN_HIERARCHY,en,latin,CONSISTENT,Telangana,Hyderabad,,Banjara Hills,,PARTIAL,False,inverted_hierarchy
+GV-000762,"Thane West, Bengaluru Urban, Karnataka 560038",SYNTHETIC,LOCALITY_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Thane,,Thane West,,ADEQUATE,False,cross_state_locality_mismatch
+GV-000441,"Rajarhat, North 24 Parganas, West Bengal 700135",SYNTHETIC,MISSPELLING,en,latin,VERIFIED,West Bengal,North 24 Parganas,,Rajarhat,700135,ADEQUATE,False,phonetic_misspelling
+GV-000048,"House No. 836, Infinity Tower, Opposite City Mall, T Nagar, Mylapore, Chennai, Tamil Nadu 600017",SYNTHETIC,COMPLETE_VALID,en,latin,VERIFIED,Tamil Nadu,Chennai,Mylapore,T Nagar,600017,COMPLETE,False,
+GV-000624,"HITEC City, Kolhapur, Telangana 500081",SYNTHETIC,DISTRICT_MISMATCH,en,latin,INCONSISTENT,Telangana,Hyderabad,,HITEC City,500081,ADEQUATE,False,district_mismatch
+GV-000926,"Near Bus Stand, Main Market",SYNTHETIC,INCOMPLETE,en,latin,UNABLE_TO_VERIFY,,,,,,MINIMAL,False,
+GV-001002,"Telangana, Banjara Hills, Hyderabad",SYNTHETIC,WRONG_ADMIN_HIERARCHY,en,latin,CONSISTENT,Telangana,Hyderabad,,Banjara Hills,,PARTIAL,False,inverted_hierarchy
+GV-000335,"Powai, मुंबई उपनगर, Maharashtra 400076",SYNTHETIC,MIXED_LANGUAGE,mixed_mr_en,mixed,VERIFIED,Maharashtra,Mumbai Suburban,,Powai,400076,ADEQUATE,False,
+GV-000042,"Tower C, Godrej Woods, Opposite City Mall, Koramangala, Bengaluru South, Bengaluru Urban, Karnataka 560034",SYNTHETIC,COMPLETE_VALID,en,latin,VERIFIED,Karnataka,Bengaluru Urban,Bengaluru South,Koramangala,560034,COMPLETE,False,
+GV-000649,"North 24 Parganas, Karnataka 700156",SYNTHETIC,STATE_MISMATCH,en,latin,INCONSISTENT,West Bengal,North 24 Parganas,,,700156,PARTIAL,False,state_mismatch
+GV-000991,"Delhi, Hauz Khas, South Delhi",SYNTHETIC,WRONG_ADMIN_HIERARCHY,en,latin,CONSISTENT,Delhi,South Delhi,,Hauz Khas,,PARTIAL,False,inverted_hierarchy
+GV-000955,Maharashtra,SYNTHETIC,INCOMPLETE,en,latin,NEEDS_REVIEW,Maharashtra,,,,,MINIMAL,False,
+GV-000658,"Pune, Karnataka 411014",SYNTHETIC,STATE_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Pune,,,411014,PARTIAL,False,state_mismatch
+GV-000947,"Flat 402, Sunshine Apartments",SYNTHETIC,INCOMPLETE,en,latin,UNABLE_TO_VERIFY,,,,,,MINIMAL,False,
+GV-000952,Maharashtra,SYNTHETIC,INCOMPLETE,en,latin,NEEDS_REVIEW,Maharashtra,,,,,MINIMAL,False,
+GV-000783,"Kharadi, Bengaluru Urban, Karnataka 560102",SYNTHETIC,LOCALITY_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Pune,,Kharadi,,ADEQUATE,False,cross_state_locality_mismatch
+GV-000527,Rampur,SYNTHETIC,AMBIGUOUS_LOCALITY,en,latin,AMBIGUOUS,,,,Rampur,,MINIMAL,True,
+GV-000742,"Andheri East, Bengaluru Urban, Karnataka 560066",SYNTHETIC,LOCALITY_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Mumbai Suburban,,Andheri East,,ADEQUATE,False,cross_state_locality_mismatch
+GV-000893,"Kothrud, Pune, Maharashtra 011014",SYNTHETIC,INVALID_PIN,en,latin,NEEDS_REVIEW,Maharashtra,Pune,,Kothrud,,PARTIAL,False,invalid_pin_format
+GV-000718,"Thane West, Mulshi, Thane, Maharashtra 400601",SYNTHETIC,SUBDISTRICT_MISMATCH,en,latin,CONSISTENT,Maharashtra,Thane,Thane,Thane West,400601,COMPLETE,False,subdistrict_mismatch
+GV-000204,"साकेत, दक्षिण दिल्ली, दिल्ली 110017",SYNTHETIC,DEVANAGARI_HINDI,hi,devanagari,VERIFIED,Delhi,South Delhi,,Saket,110017,ADEQUATE,False,
+GV-000408,"T Nagar, Chennai, Tamil Nadu 600017",SYNTHETIC,MISSPELLING,en,latin,VERIFIED,Tamil Nadu,Chennai,,T Nagar,600017,ADEQUATE,False,phonetic_misspelling
+GV-001062,"Near EON IT Park, Kharadi, Mumbai Suburban, Maharashtra 400050",SYNTHETIC,NEARBY_BUT_WRONG_LOCALITY,en,latin,CONSISTENT,Maharashtra,Mumbai Suburban,,Kharadi,400050,ADEQUATE,False,
+GV-000182,"behind Vaishali Nagar side, Jaipur, Rajasthan",SYNTHETIC,INFORMAL_SLANG,en,latin,CONSISTENT,Rajasthan,Jaipur,,Vaishali Nagar,,ADEQUATE,False,
+GV-000418,"Malviya Nagar, Jaipur, Rajasthan 302017",SYNTHETIC,MISSPELLING,en,latin,VERIFIED,Rajasthan,Jaipur,,Malviya Nagar,302017,ADEQUATE,False,phonetic_misspelling
+GV-000130,"Malviya Nagar, Jaipur, Rajasthan",SYNTHETIC,PARTIAL_VALID,en,latin,CONSISTENT,Rajasthan,Jaipur,,Malviya Nagar,,ADEQUATE,False,
+GV-000270,"गाव: हडपसर, तालुका: हवेली, जिल्हा: पुणे, राज्य: महाराष्ट्र, पिन: 411028",SYNTHETIC,DEVANAGARI_MARATHI,mr,devanagari,VERIFIED,Maharashtra,Pune,Haveli,Hadapsar,411028,COMPLETE,False,
+GV-000318,"Powai, मुंबई उपनगर, Maharashtra 400076",SYNTHETIC,MIXED_LANGUAGE,mixed_mr_en,mixed,VERIFIED,Maharashtra,Mumbai Suburban,,Powai,400076,ADEQUATE,False,
+GV-000099,"T Nagar, Chennai, Tamil Nadu",SYNTHETIC,PARTIAL_VALID,en,latin,CONSISTENT,Tamil Nadu,Chennai,,T Nagar,,ADEQUATE,False,
+GV-000124,"HITEC City, Hyderabad, Telangana",SYNTHETIC,PARTIAL_VALID,en,latin,CONSISTENT,Telangana,Hyderabad,,HITEC City,,ADEQUATE,False,
+GV-000077,"T Nagar, Chennai, Tamil Nadu",SYNTHETIC,PARTIAL_VALID,en,latin,CONSISTENT,Tamil Nadu,Chennai,,T Nagar,,ADEQUATE,False,
+GV-000511,"Kharadi, Poona, Maharashtra 411014",SYNTHETIC,HISTORICAL_ALIAS,en,latin,VERIFIED,Maharashtra,Pune,,Kharadi,411014,ADEQUATE,False,historical_alias
+GV-000645,"Pune, Karnataka 411014",SYNTHETIC,STATE_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Pune,,,411014,PARTIAL,False,state_mismatch
+GV-001050,"Near EON IT Park, Kharadi, Thane, Maharashtra 400601",SYNTHETIC,NEARBY_BUT_WRONG_LOCALITY,en,latin,CONSISTENT,Maharashtra,Thane,,Kharadi,400601,ADEQUATE,False,
+GV-000882,"Malviya Nagar, Jaipur, Rajasthan 011014",SYNTHETIC,INVALID_PIN,en,latin,NEEDS_REVIEW,Rajasthan,Jaipur,,Malviya Nagar,,PARTIAL,False,invalid_pin_format
+GV-000413,"HITEC City, Hyderabad, Telangana 500081",SYNTHETIC,MISSPELLING,en,latin,VERIFIED,Telangana,Hyderabad,,HITEC City,500081,ADEQUATE,False,phonetic_misspelling
+GV-000221,"राजारहाट, उत्तर 24 परगना, पश्चिम बंगाल 700135",SYNTHETIC,DEVANAGARI_HINDI,hi,devanagari,VERIFIED,West Bengal,North 24 Parganas,,Rajarhat,700135,ADEQUATE,False,
+GV-000728,"Hinjewadi, Haveli, Pune, Maharashtra 411057",SYNTHETIC,SUBDISTRICT_MISMATCH,en,latin,CONSISTENT,Maharashtra,Pune,Mulshi,Hinjewadi,411057,COMPLETE,False,subdistrict_mismatch
+GV-000960,"Delhi, Saket, South Delhi",SYNTHETIC,WRONG_ADMIN_HIERARCHY,en,latin,CONSISTENT,Delhi,South Delhi,,Saket,,PARTIAL,False,inverted_hierarchy
+GV-000895,"HITEC City, Hyderabad, Telangana 9999999",SYNTHETIC,INVALID_PIN,en,latin,NEEDS_REVIEW,Telangana,Hyderabad,,HITEC City,,PARTIAL,False,invalid_pin_format
+GV-000258,"गाव: खराडी, तालुका: हवेली, जिल्हा: पुणे, राज्य: महाराष्ट्र, पिन: 411014",SYNTHETIC,DEVANAGARI_MARATHI,mr,devanagari,VERIFIED,Maharashtra,Pune,Haveli,Kharadi,411014,COMPLETE,False,
+GV-000994,"Karnataka, Electronic City, Bengaluru Urban",SYNTHETIC,WRONG_ADMIN_HIERARCHY,en,latin,CONSISTENT,Karnataka,Bengaluru Urban,,Electronic City,,PARTIAL,False,inverted_hierarchy
+GV-000979,"Uttar Pradesh, Gomti Nagar, Lucknow",SYNTHETIC,WRONG_ADMIN_HIERARCHY,en,latin,CONSISTENT,Uttar Pradesh,Lucknow,,Gomti Nagar,,PARTIAL,False,inverted_hierarchy
+GV-001003,"Gujarat, Vesu, Surat",SYNTHETIC,WRONG_ADMIN_HIERARCHY,en,latin,CONSISTENT,Gujarat,Surat,,Vesu,,PARTIAL,False,inverted_hierarchy
+GV-000899,"Adyar, Chennai, Tamil Nadu PIN-CODE",SYNTHETIC,INVALID_PIN,en,latin,NEEDS_REVIEW,Tamil Nadu,Chennai,,Adyar,,PARTIAL,False,invalid_pin_format
+GV-000370,"Connaught Placei, New Delhi, Delhi 110001",SYNTHETIC,TYPO,en,latin,VERIFIED,Delhi,New Delhi,,Connaught Place,110001,ADEQUATE,False,char_typo
+GV-000272,"गाव: कोथरूड, तालुका: पुणे शहर, जिल्हा: पुणे, राज्य: महाराष्ट्र, पिन: 411038",SYNTHETIC,DEVANAGARI_MARATHI,mr,devanagari,VERIFIED,Maharashtra,Pune,Pune City,Kothrud,411038,COMPLETE,False,
+GV-000787,"Hinjewadi, Bengaluru Urban, Karnataka 560100",SYNTHETIC,LOCALITY_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Pune,,Hinjewadi,,ADEQUATE,False,cross_state_locality_mismatch
+GV-000808,"Sector 62, Gautam Buddha Nagar, Uttar Pradesh 411014",SYNTHETIC,PIN_MISMATCH,en,latin,NEEDS_REVIEW,Uttar Pradesh,Gautam Buddha Nagar,,Sector 62,411014,ADEQUATE,False,pin_circle_mismatch
+GV-000937,"Near Metro Station, Ring Road",SYNTHETIC,INCOMPLETE,en,latin,UNABLE_TO_VERIFY,,,,,,MINIMAL,False,
+GV-000660,"Jaipur, Karnataka 302017",SYNTHETIC,STATE_MISMATCH,en,latin,INCONSISTENT,Rajasthan,Jaipur,,,302017,PARTIAL,False,state_mismatch
+GV-000273,"गाव: राजारामपुरी, तालुका: करवीर, जिल्हा: कोल्हापूर, राज्य: महाराष्ट्र, पिन: 416008",SYNTHETIC,DEVANAGARI_MARATHI,mr,devanagari,VERIFIED,Maharashtra,Kolhapur,Karvir,Rajarampuri,416008,COMPLETE,False,
+GV-001017,"Near EON IT Park, Kharadi, Pune, Maharashtra 411038",SYNTHETIC,NEARBY_BUT_WRONG_LOCALITY,en,latin,CONSISTENT,Maharashtra,Pune,,Kharadi,411038,ADEQUATE,False,
+GV-000009,"Building Gokul Dham, Opposite Railway Station, Baner, Haveli, Pune, Maharashtra 411045",SYNTHETIC,COMPLETE_VALID,en,latin,VERIFIED,Maharashtra,Pune,Haveli,Baner,411045,COMPLETE,False,
+GV-000250,"गाव: विमान नगर, तालुका: हवेली, जिल्हा: पुणे, राज्य: महाराष्ट्र, पिन: 411014",SYNTHETIC,DEVANAGARI_MARATHI,mr,devanagari,VERIFIED,Maharashtra,Pune,Haveli,Viman Nagar,411014,COMPLETE,False,
+GV-000819,"Salt Lake, Kolkata, West Bengal 411014",SYNTHETIC,PIN_MISMATCH,en,latin,NEEDS_REVIEW,West Bengal,Kolkata,,Salt Lake,411014,ADEQUATE,False,pin_circle_mismatch
+GV-000248,"गाव: अंधेरी पूर्व, तालुका: अंधेरी, जिल्हा: मुंबई उपनगर, राज्य: महाराष्ट्र, पिन: 400069",SYNTHETIC,DEVANAGARI_MARATHI,mr,devanagari,VERIFIED,Maharashtra,Mumbai Suburban,Andheri,Andheri East,400069,COMPLETE,False,
+GV-000750,"Baner, Mysuru, Karnataka 570002",SYNTHETIC,LOCALITY_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Pune,,Baner,,ADEQUATE,False,cross_state_locality_mismatch
+GV-000740,"Andheri East, Bengaluru Urban, Karnataka 560100",SYNTHETIC,LOCALITY_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Mumbai Suburban,,Andheri East,,ADEQUATE,False,cross_state_locality_mismatch
+GV-000479,"Salt Lake, Calcutta, West Bengal 700091",SYNTHETIC,HISTORICAL_ALIAS,en,latin,VERIFIED,West Bengal,Kolkata,,Salt Lake,700091,ADEQUATE,False,historical_alias
+GV-000342,"Andheri East, मुंबई उपनगर, Maharashtra 400069",SYNTHETIC,MIXED_LANGUAGE,mixed_mr_en,mixed,VERIFIED,Maharashtra,Mumbai Suburban,,Andheri East,400069,ADEQUATE,False,
+GV-000608,"Banjara Hills, Kolhapur, Telangana 500034",SYNTHETIC,DISTRICT_MISMATCH,en,latin,INCONSISTENT,Telangana,Hyderabad,,Banjara Hills,500034,ADEQUATE,False,district_mismatch
+GV-000317,"Sector 62, गौतम बुद्ध नगर, Uttar Pradesh 201309",SYNTHETIC,MIXED_LANGUAGE,mixed_hi_en,mixed,VERIFIED,Uttar Pradesh,Gautam Buddha Nagar,,Sector 62,201309,ADEQUATE,False,
+GV-000031,"Plot 549, Sector 43, Beside Apollo Hospital, Hauz Khas, Hauz Khas, South Delhi, Delhi 110016",SYNTHETIC,COMPLETE_VALID,en,latin,VERIFIED,Delhi,South Delhi,Hauz Khas,Hauz Khas,110016,COMPLETE,False,
+GV-000192,"सेक्टर 62, गौतम बुद्ध नगर, उत्तर प्रदेश 201309",SYNTHETIC,DEVANAGARI_HINDI,hi,devanagari,VERIFIED,Uttar Pradesh,Gautam Buddha Nagar,,Sector 62,201309,ADEQUATE,False,
+GV-000234,"राजारामपुरी, कोल्हापूर, महाराष्ट्र 416008",SYNTHETIC,DEVANAGARI_HINDI,hi,devanagari,VERIFIED,Maharashtra,Kolhapur,,Rajarampuri,416008,ADEQUATE,False,
+GV-000259,"गाव: ठाणे पश्चिम, तालुका: ठाणे, जिल्हा: ठाणे, राज्य: महाराष्ट्र, पिन: 400601",SYNTHETIC,DEVANAGARI_MARATHI,mr,devanagari,VERIFIED,Maharashtra,Thane,Thane,Thane West,400601,COMPLETE,False,
+GV-000920,"Shop 12, MG Road",SYNTHETIC,INCOMPLETE,en,latin,UNABLE_TO_VERIFY,,,,,,MINIMAL,False,
+GV-000005,"Shop 488, Shanti Niketan, Opposite City Mall, Banjara Hills, Ameerpet, Hyderabad, Telangana 500034",SYNTHETIC,COMPLETE_VALID,en,latin,VERIFIED,Telangana,Hyderabad,Ameerpet,Banjara Hills,500034,COMPLETE,False,
+GV-000078,"Indiranagar, Bengaluru Urban, Karnataka",SYNTHETIC,PARTIAL_VALID,en,latin,CONSISTENT,Karnataka,Bengaluru Urban,,Indiranagar,,ADEQUATE,False,
+GV-000989,"Maharashtra, Andheri East, Mumbai Suburban",SYNTHETIC,WRONG_ADMIN_HIERARCHY,en,latin,CONSISTENT,Maharashtra,Mumbai Suburban,,Andheri East,,PARTIAL,False,inverted_hierarchy
+GV-000648,"South Delhi, Karnataka 110017",SYNTHETIC,STATE_MISMATCH,en,latin,INCONSISTENT,Delhi,South Delhi,,,110017,PARTIAL,False,state_mismatch
+GV-000119,"Kothrud, Pune, Maharashtra",SYNTHETIC,PARTIAL_VALID,en,latin,CONSISTENT,Maharashtra,Pune,,Kothrud,,ADEQUATE,False,
+GV-000323,"Salt Lake, कोलकाता, West Bengal 700091",SYNTHETIC,MIXED_LANGUAGE,mixed_hi_en,mixed,VERIFIED,West Bengal,Kolkata,,Salt Lake,700091,ADEQUATE,False,
+GV-000432,"Kothrud, Poone, Maharastra 411038",SYNTHETIC,MISSPELLING,en,latin,VERIFIED,Maharashtra,Pune,,Kothrud,411038,ADEQUATE,False,phonetic_misspelling
+GV-000701,"Bandra West, Mulshi, Mumbai Suburban, Maharashtra 400050",SYNTHETIC,SUBDISTRICT_MISMATCH,en,latin,CONSISTENT,Maharashtra,Mumbai Suburban,Andheri,Bandra West,400050,COMPLETE,False,subdistrict_mismatch
+GV-000652,"South Delhi, Karnataka 110017",SYNTHETIC,STATE_MISMATCH,en,latin,INCONSISTENT,Delhi,South Delhi,,,110017,PARTIAL,False,state_mismatch
+GV-000673,"Pune, Karnataka 411038",SYNTHETIC,STATE_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Pune,,,411038,PARTIAL,False,state_mismatch
+GV-000690,"Powai, Mulshi, Mumbai Suburban, Maharashtra 400076",SYNTHETIC,SUBDISTRICT_MISMATCH,en,latin,CONSISTENT,Maharashtra,Mumbai Suburban,Andheri,Powai,400076,COMPLETE,False,subdistrict_mismatch
+GV-000025,"Suite 372, Sobha Dream Acres, Beside Apollo Hospital, Kharadi, Haveli, Pune, Maharashtra 411014",SYNTHETIC,COMPLETE_VALID,en,latin,VERIFIED,Maharashtra,Pune,Haveli,Kharadi,411014,COMPLETE,False,
+GV-000343,"Electronic City, बंगळुरू, Karnataka 560100",SYNTHETIC,MIXED_LANGUAGE,mixed_hi_en,mixed,VERIFIED,Karnataka,Bengaluru Urban,,Electronic City,560100,ADEQUATE,False,
+GV-000617,"Koramangala, Mysuru, Karnataka 560034",SYNTHETIC,DISTRICT_MISMATCH,en,latin,INCONSISTENT,Karnataka,Bengaluru Urban,,Koramangala,560034,ADEQUATE,False,district_mismatch
+GV-000700,"Hadapsar, Mulshi, Pune, Maharashtra 411028",SYNTHETIC,SUBDISTRICT_MISMATCH,en,latin,CONSISTENT,Maharashtra,Pune,Haveli,Hadapsar,411028,COMPLETE,False,subdistrict_mismatch
+GV-000861,"HITEC City, Hyderabad, Telangana 12345",SYNTHETIC,INVALID_PIN,en,latin,NEEDS_REVIEW,Telangana,Hyderabad,,HITEC City,,PARTIAL,False,invalid_pin_format
+GV-000706,"Viman Nagar, Mulshi, Pune, Maharashtra 411014",SYNTHETIC,SUBDISTRICT_MISMATCH,en,latin,CONSISTENT,Maharashtra,Pune,Haveli,Viman Nagar,411014,COMPLETE,False,subdistrict_mismatch
+GV-000656,"Mumbai Suburban, Karnataka 400050",SYNTHETIC,STATE_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Mumbai Suburban,,,400050,PARTIAL,False,state_mismatch
+GV-000018,"House No. 166, Infinity Tower, Near Metro Station, Electronic City, Bengaluru South, Bengaluru Urban, Karnataka 560100",SYNTHETIC,COMPLETE_VALID,en,latin,VERIFIED,Karnataka,Bengaluru Urban,Bengaluru South,Electronic City,560100,COMPLETE,False,
+GV-000269,"गाव: राजारामपुरी, तालुका: करवीर, जिल्हा: कोल्हापूर, राज्य: महाराष्ट्र, पिन: 416008",SYNTHETIC,DEVANAGARI_MARATHI,mr,devanagari,VERIFIED,Maharashtra,Kolhapur,Karvir,Rajarampuri,416008,COMPLETE,False,
+GV-000884,"Bandra West, Mumbai Suburban, Maharashtra 011014",SYNTHETIC,INVALID_PIN,en,latin,NEEDS_REVIEW,Maharashtra,Mumbai Suburban,,Bandra West,,PARTIAL,False,invalid_pin_format
+GV-000602,"Kothrud, Thane, Maharashtra 411038",SYNTHETIC,DISTRICT_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Pune,,Kothrud,411038,ADEQUATE,False,district_mismatch
+GV-000521,Rajapur,SYNTHETIC,AMBIGUOUS_LOCALITY,en,latin,AMBIGUOUS,,,,Rajapur,,MINIMAL,True,
+GV-000636,"Pune, Karnataka 411038",SYNTHETIC,STATE_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Pune,,,411038,PARTIAL,False,state_mismatch
+GV-000174,"behind Rajarhat chowk, North 24 Parganas, West Bengal",SYNTHETIC,INFORMAL_SLANG,en,latin,CONSISTENT,West Bengal,North 24 Parganas,,Rajarhat,,ADEQUATE,False,
+GV-000361,"HITEC Cityi, Hyderabad, Telangana 500081",SYNTHETIC,TYPO,en,latin,VERIFIED,Telangana,Hyderabad,,HITEC City,500081,ADEQUATE,False,char_typo
+GV-000173,"adjacent Dwarka post, South West Delhi, Delhi",SYNTHETIC,INFORMAL_SLANG,en,latin,CONSISTENT,Delhi,South West Delhi,,Dwarka,,ADEQUATE,False,
+GV-000663,"Kolkata, Karnataka 700091",SYNTHETIC,STATE_MISMATCH,en,latin,INCONSISTENT,West Bengal,Kolkata,,,700091,PARTIAL,False,state_mismatch
+GV-000503,"Gokulam, Mysore, Karnataka 570002",SYNTHETIC,HISTORICAL_ALIAS,en,latin,VERIFIED,Karnataka,Mysuru,,Gokulam,570002,ADEQUATE,False,historical_alias
+GV-000730,"Hinjewadi, Haveli, Pune, Maharashtra 411057",SYNTHETIC,SUBDISTRICT_MISMATCH,en,latin,CONSISTENT,Maharashtra,Pune,Mulshi,Hinjewadi,411057,COMPLETE,False,subdistrict_mismatch
+GV-000836,"Sector 62, Gautam Buddha Nagar, Uttar Pradesh 411014",SYNTHETIC,PIN_MISMATCH,en,latin,NEEDS_REVIEW,Uttar Pradesh,Gautam Buddha Nagar,,Sector 62,411014,ADEQUATE,False,pin_circle_mismatch
+GV-000831,"Viman Nagar, Pune, Maharashtra 560066",SYNTHETIC,PIN_MISMATCH,en,latin,NEEDS_REVIEW,Maharashtra,Pune,,Viman Nagar,560066,ADEQUATE,False,pin_circle_mismatch
+GV-000512,"Andheri East, Bombay, Maharashtra 400069",SYNTHETIC,HISTORICAL_ALIAS,en,latin,VERIFIED,Maharashtra,Mumbai Suburban,,Andheri East,400069,ADEQUATE,False,historical_alias
+GV-000252,"गाव: कोथरूड, तालुका: पुणे शहर, जिल्हा: पुणे, राज्य: महाराष्ट्र, पिन: 411038",SYNTHETIC,DEVANAGARI_MARATHI,mr,devanagari,VERIFIED,Maharashtra,Pune,Pune City,Kothrud,411038,COMPLETE,False,
+GV-000666,"Bengaluru Urban, Maharashtra 560102",SYNTHETIC,STATE_MISMATCH,en,latin,INCONSISTENT,Karnataka,Bengaluru Urban,,,560102,PARTIAL,False,state_mismatch
+GV-000665,"Bengaluru Urban, Maharashtra 560066",SYNTHETIC,STATE_MISMATCH,en,latin,INCONSISTENT,Karnataka,Bengaluru Urban,,,560066,PARTIAL,False,state_mismatch
+GV-000801,"Baner, Pune, Maharashtra 560066",SYNTHETIC,PIN_MISMATCH,en,latin,NEEDS_REVIEW,Maharashtra,Pune,,Baner,560066,ADEQUATE,False,pin_circle_mismatch
+GV-000201,"अंधेरी पूर्व, मुंबई उपनगर, महाराष्ट्र 400069",SYNTHETIC,DEVANAGARI_HINDI,hi,devanagari,VERIFIED,Maharashtra,Mumbai Suburban,,Andheri East,400069,ADEQUATE,False,
+GV-000769,"Andheri East, Bengaluru Urban, Karnataka 560066",SYNTHETIC,LOCALITY_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Mumbai Suburban,,Andheri East,,ADEQUATE,False,cross_state_locality_mismatch
+GV-000826,"Vesu, Surat, Gujarat 411014",SYNTHETIC,PIN_MISMATCH,en,latin,NEEDS_REVIEW,Gujarat,Surat,,Vesu,411014,ADEQUATE,False,pin_circle_mismatch
+GV-000872,"Hauz Khas, South Delhi, Delhi 9999999",SYNTHETIC,INVALID_PIN,en,latin,NEEDS_REVIEW,Delhi,South Delhi,,Hauz Khas,,PARTIAL,False,invalid_pin_format
+GV-000720,"Kothrud, Mulshi, Pune, Maharashtra 411038",SYNTHETIC,SUBDISTRICT_MISMATCH,en,latin,CONSISTENT,Maharashtra,Pune,Pune City,Kothrud,411038,COMPLETE,False,subdistrict_mismatch
+GV-000910,Near City Hospital,SYNTHETIC,INCOMPLETE,en,latin,UNABLE_TO_VERIFY,,,,,,MINIMAL,False,
+GV-000941,Maharashtra,SYNTHETIC,INCOMPLETE,en,latin,NEEDS_REVIEW,Maharashtra,,,,,MINIMAL,False,
+GV-000623,"Electronic City, Mysuru, Karnataka 560100",SYNTHETIC,DISTRICT_MISMATCH,en,latin,INCONSISTENT,Karnataka,Bengaluru Urban,,Electronic City,560100,ADEQUATE,False,district_mismatch
+GV-001032,"Near EON IT Park, Kharadi, Pune, Maharashtra 411014",SYNTHETIC,NEARBY_BUT_WRONG_LOCALITY,en,latin,CONSISTENT,Maharashtra,Pune,,Kharadi,411014,ADEQUATE,False,
+GV-000622,"Whitefield, Mysuru, Karnataka 560066",SYNTHETIC,DISTRICT_MISMATCH,en,latin,INCONSISTENT,Karnataka,Bengaluru Urban,,Whitefield,560066,ADEQUATE,False,district_mismatch
+GV-000321,"Gokulam, म्हैसूर, Karnataka 570002",SYNTHETIC,MIXED_LANGUAGE,mixed_hi_en,mixed,VERIFIED,Karnataka,Mysuru,,Gokulam,570002,ADEQUATE,False,
+GV-000580,"Karol Bagh, South Delhi, Delhi 110005",SYNTHETIC,DISTRICT_MISMATCH,en,latin,INCONSISTENT,Delhi,Central Delhi,,Karol Bagh,110005,ADEQUATE,False,district_mismatch
+GV-000584,"Andheri East, Pune, Maharashtra 400069",SYNTHETIC,DISTRICT_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Mumbai Suburban,,Andheri East,400069,ADEQUATE,False,district_mismatch
+GV-000328,"Gomti Nagar, लखनऊ, Uttar Pradesh 226010",SYNTHETIC,MIXED_LANGUAGE,mixed_hi_en,mixed,VERIFIED,Uttar Pradesh,Lucknow,,Gomti Nagar,226010,ADEQUATE,False,
+GV-000481,"Hinjewadi, Hinjawadi, Maharashtra 411057",SYNTHETIC,HISTORICAL_ALIAS,en,latin,VERIFIED,Maharashtra,Pune,,Hinjewadi,411057,ADEQUATE,False,historical_alias
+GV-000101,"Navrangpura, Ahmedabad, Gujarat",SYNTHETIC,PARTIAL_VALID,en,latin,CONSISTENT,Gujarat,Ahmedabad,,Navrangpura,,ADEQUATE,False,
+GV-000639,"Lucknow, Karnataka 226010",SYNTHETIC,STATE_MISMATCH,en,latin,INCONSISTENT,Uttar Pradesh,Lucknow,,,226010,PARTIAL,False,state_mismatch
+GV-000510,"Bandra West, Bombay, Maharashtra 400050",SYNTHETIC,HISTORICAL_ALIAS,en,latin,VERIFIED,Maharashtra,Mumbai Suburban,,Bandra West,400050,ADEQUATE,False,historical_alias
+GV-001007,"Maharashtra, Viman Nagar, Pune",SYNTHETIC,WRONG_ADMIN_HIERARCHY,en,latin,CONSISTENT,Maharashtra,Pune,,Viman Nagar,,PARTIAL,False,inverted_hierarchy
+GV-000793,"Navrangpura, Ahmedabad, Gujarat 411014",SYNTHETIC,PIN_MISMATCH,en,latin,NEEDS_REVIEW,Gujarat,Ahmedabad,,Navrangpura,411014,ADEQUATE,False,pin_circle_mismatch
+GV-000795,"Bandra West, Mumbai Suburban, Maharashtra 560066",SYNTHETIC,PIN_MISMATCH,en,latin,NEEDS_REVIEW,Maharashtra,Mumbai Suburban,,Bandra West,560066,ADEQUATE,False,pin_circle_mismatch
+GV-000715,"Andheri East, Mulshi, Mumbai Suburban, Maharashtra 400069",SYNTHETIC,SUBDISTRICT_MISMATCH,en,latin,CONSISTENT,Maharashtra,Mumbai Suburban,Andheri,Andheri East,400069,COMPLETE,False,subdistrict_mismatch
+GV-000368,"Hadapsari, Pune, Maharashtra 411028",SYNTHETIC,TYPO,en,latin,VERIFIED,Maharashtra,Pune,,Hadapsar,411028,ADEQUATE,False,char_typo
+GV-000547,Aurangabad,SYNTHETIC,AMBIGUOUS_LOCALITY,en,latin,AMBIGUOUS,,,,Aurangabad,,MINIMAL,True,
+GV-000478,"Adyar, Madras, Tamil Nadu 600020",SYNTHETIC,HISTORICAL_ALIAS,en,latin,VERIFIED,Tamil Nadu,Chennai,,Adyar,600020,ADEQUATE,False,historical_alias
+GV-000390,"Connaught Placei, New Delhi, Delhi 110001",SYNTHETIC,TYPO,en,latin,VERIFIED,Delhi,New Delhi,,Connaught Place,110001,ADEQUATE,False,char_typo
+GV-000290,"गाव: विमान नगर, तालुका: हवेली, जिल्हा: पुणे, राज्य: महाराष्ट्र, पिन: 411014",SYNTHETIC,DEVANAGARI_MARATHI,mr,devanagari,VERIFIED,Maharashtra,Pune,Haveli,Viman Nagar,411014,COMPLETE,False,
+GV-000330,"Indiranagar, बंगळुरू, Karnataka 560038",SYNTHETIC,MIXED_LANGUAGE,mixed_hi_en,mixed,VERIFIED,Karnataka,Bengaluru Urban,,Indiranagar,560038,ADEQUATE,False,
+GV-000916,Near City Hospital,SYNTHETIC,INCOMPLETE,en,latin,UNABLE_TO_VERIFY,,,,,,MINIMAL,False,
+GV-000867,"Vesu, Surat, Gujarat PIN-CODE",SYNTHETIC,INVALID_PIN,en,latin,NEEDS_REVIEW,Gujarat,Surat,,Vesu,,PARTIAL,False,invalid_pin_format
+GV-000210,"रोहिणी, उत्तर पश्चिम दिल्ली, दिल्ली 110085",SYNTHETIC,DEVANAGARI_HINDI,hi,devanagari,VERIFIED,Delhi,North West Delhi,,Rohini,110085,ADEQUATE,False,
+GV-000586,"New Town, Kolkata, West Bengal 700156",SYNTHETIC,DISTRICT_MISMATCH,en,latin,INCONSISTENT,West Bengal,North 24 Parganas,,New Town,700156,ADEQUATE,False,district_mismatch
+GV-000569,Aurangabad,SYNTHETIC,AMBIGUOUS_LOCALITY,en,latin,AMBIGUOUS,,,,Aurangabad,,MINIMAL,True,
+GV-000778,"Bandra West, Bengaluru Urban, Karnataka 560066",SYNTHETIC,LOCALITY_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Mumbai Suburban,,Bandra West,,ADEQUATE,False,cross_state_locality_mismatch
+GV-000195,"इलेक्ट्रॉनिक सिटी, बंगळुरू, कर्नाटक 560100",SYNTHETIC,DEVANAGARI_HINDI,hi,devanagari,VERIFIED,Karnataka,Bengaluru Urban,,Electronic City,560100,ADEQUATE,False,
+GV-000217,"व्हाइटफील्ड, बंगळुरू, कर्नाटक 560066",SYNTHETIC,DEVANAGARI_HINDI,hi,devanagari,VERIFIED,Karnataka,Bengaluru Urban,,Whitefield,560066,ADEQUATE,False,
+GV-000016,"Shop 879, Prestige Tech Park, Beside Apollo Hospital, Vesu, Chorasi, Surat, Gujarat 395007",SYNTHETIC,COMPLETE_VALID,en,latin,VERIFIED,Gujarat,Surat,Chorasi,Vesu,395007,COMPLETE,False,
+GV-000311,"Gomti Nagar, लखनऊ, Uttar Pradesh 226010",SYNTHETIC,MIXED_LANGUAGE,mixed_hi_en,mixed,VERIFIED,Uttar Pradesh,Lucknow,,Gomti Nagar,226010,ADEQUATE,False,
+GV-000341,"Powai, मुंबई उपनगर, Maharashtra 400076",SYNTHETIC,MIXED_LANGUAGE,mixed_mr_en,mixed,VERIFIED,Maharashtra,Mumbai Suburban,,Powai,400076,ADEQUATE,False,
+GV-000214,"इलेक्ट्रॉनिक सिटी, बंगळुरू, कर्नाटक 560100",SYNTHETIC,DEVANAGARI_HINDI,hi,devanagari,VERIFIED,Karnataka,Bengaluru Urban,,Electronic City,560100,ADEQUATE,False,
+GV-000930,"Near Bus Stand, Main Market",SYNTHETIC,INCOMPLETE,en,latin,UNABLE_TO_VERIFY,,,,,,MINIMAL,False,
+GV-000638,"Mumbai Suburban, Karnataka 400069",SYNTHETIC,STATE_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Mumbai Suburban,,,400069,PARTIAL,False,state_mismatch
+GV-000193,"बाणेर, पुणे, महाराष्ट्र 411045",SYNTHETIC,DEVANAGARI_HINDI,hi,devanagari,VERIFIED,Maharashtra,Pune,,Baner,411045,ADEQUATE,False,
+GV-001020,"Near EON IT Park, Kharadi, Kolhapur, Maharashtra 416008",SYNTHETIC,NEARBY_BUT_WRONG_LOCALITY,en,latin,CONSISTENT,Maharashtra,Kolhapur,,Kharadi,416008,ADEQUATE,False,
+GV-000041,"Shop 711, Surya Enclave, Opposite Railway Station, Baner, Haveli, Pune, Maharashtra 411045",SYNTHETIC,COMPLETE_VALID,en,latin,VERIFIED,Maharashtra,Pune,Haveli,Baner,411045,COMPLETE,False,
+GV-000688,"Thane West, Mulshi, Thane, Maharashtra 400601",SYNTHETIC,SUBDISTRICT_MISMATCH,en,latin,CONSISTENT,Maharashtra,Thane,Thane,Thane West,400601,COMPLETE,False,subdistrict_mismatch
+GV-000275,"गाव: राजारामपुरी, तालुका: करवीर, जिल्हा: कोल्हापूर, राज्य: महाराष्ट्र, पिन: 416008",SYNTHETIC,DEVANAGARI_MARATHI,mr,devanagari,VERIFIED,Maharashtra,Kolhapur,Karvir,Rajarampuri,416008,COMPLETE,False,
+GV-000053,"Plot 824, Sector 27, Opposite Railway Station, Rajarhat, Barasat, North 24 Parganas, West Bengal 700135",SYNTHETIC,COMPLETE_VALID,en,latin,VERIFIED,West Bengal,North 24 Parganas,Barasat,Rajarhat,700135,COMPLETE,False,
+GV-000196,"हौज खास, दक्षिण दिल्ली, दिल्ली 110016",SYNTHETIC,DEVANAGARI_HINDI,hi,devanagari,VERIFIED,Delhi,South Delhi,,Hauz Khas,110016,ADEQUATE,False,
+GV-000549,Rajapur,SYNTHETIC,AMBIGUOUS_LOCALITY,en,latin,AMBIGUOUS,,,,Rajapur,,MINIMAL,True,
+GV-000095,"Gomti Nagar, Lucknow, Uttar Pradesh",SYNTHETIC,PARTIAL_VALID,en,latin,CONSISTENT,Uttar Pradesh,Lucknow,,Gomti Nagar,,ADEQUATE,False,
+GV-000380,"Bandra Westi, Mumbai Suburban, Maharashtra 400050",SYNTHETIC,TYPO,en,latin,VERIFIED,Maharashtra,Mumbai Suburban,,Bandra West,400050,ADEQUATE,False,char_typo
+GV-000461,"Adyar, Madras, Tamil Nadu 600020",SYNTHETIC,HISTORICAL_ALIAS,en,latin,VERIFIED,Tamil Nadu,Chennai,,Adyar,600020,ADEQUATE,False,historical_alias
+GV-001060,"Near EON IT Park, Kharadi, Pune, Maharashtra 411028",SYNTHETIC,NEARBY_BUT_WRONG_LOCALITY,en,latin,CONSISTENT,Maharashtra,Pune,,Kharadi,411028,ADEQUATE,False,
+GV-000841,"Karol Bagh, Central Delhi, Delhi 411014",SYNTHETIC,PIN_MISMATCH,en,latin,NEEDS_REVIEW,Delhi,Central Delhi,,Karol Bagh,411014,ADEQUATE,False,pin_circle_mismatch
+GV-001019,"Near EON IT Park, Kharadi, Thane, Maharashtra 400601",SYNTHETIC,NEARBY_BUT_WRONG_LOCALITY,en,latin,CONSISTENT,Maharashtra,Thane,,Kharadi,400601,ADEQUATE,False,
+GV-000262,"गाव: ठाणे पश्चिम, तालुका: ठाणे, जिल्हा: ठाणे, राज्य: महाराष्ट्र, पिन: 400601",SYNTHETIC,DEVANAGARI_MARATHI,mr,devanagari,VERIFIED,Maharashtra,Thane,Thane,Thane West,400601,COMPLETE,False,
+GV-000915,Maharashtra,SYNTHETIC,INCOMPLETE,en,latin,NEEDS_REVIEW,Maharashtra,,,,,MINIMAL,False,
+GV-000398,"Bandra Westi, Mumbai Suburban, Maharashtra 400050",SYNTHETIC,TYPO,en,latin,VERIFIED,Maharashtra,Mumbai Suburban,,Bandra West,400050,ADEQUATE,False,char_typo
+GV-000927,Near City Hospital,SYNTHETIC,INCOMPLETE,en,latin,UNABLE_TO_VERIFY,,,,,,MINIMAL,False,
+GV-000543,Aurangabad,SYNTHETIC,AMBIGUOUS_LOCALITY,en,latin,AMBIGUOUS,,,,Aurangabad,,MINIMAL,True,
+GV-000868,"Rajarhat, North 24 Parganas, West Bengal PIN-CODE",SYNTHETIC,INVALID_PIN,en,latin,NEEDS_REVIEW,West Bengal,North 24 Parganas,,Rajarhat,,PARTIAL,False,invalid_pin_format
+GV-000607,"Kothrud, Mumbai Suburban, Maharashtra 411038",SYNTHETIC,DISTRICT_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Pune,,Kothrud,411038,ADEQUATE,False,district_mismatch
+GV-001021,"Near EON IT Park, Kharadi, Kolhapur, Maharashtra 416008",SYNTHETIC,NEARBY_BUT_WRONG_LOCALITY,en,latin,CONSISTENT,Maharashtra,Kolhapur,,Kharadi,416008,ADEQUATE,False,
+GV-000924,Near City Hospital,SYNTHETIC,INCOMPLETE,en,latin,UNABLE_TO_VERIFY,,,,,,MINIMAL,False,
+GV-000763,"Hinjewadi, Bengaluru Urban, Karnataka 560066",SYNTHETIC,LOCALITY_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Pune,,Hinjewadi,,ADEQUATE,False,cross_state_locality_mismatch
+GV-000682,"Baner, Mulshi, Pune, Maharashtra 411045",SYNTHETIC,SUBDISTRICT_MISMATCH,en,latin,CONSISTENT,Maharashtra,Pune,Haveli,Baner,411045,COMPLETE,False,subdistrict_mismatch
+GV-000148,"near Karol Bagh circle, Central Delhi, Delhi",SYNTHETIC,INFORMAL_SLANG,en,latin,CONSISTENT,Delhi,Central Delhi,,Karol Bagh,,ADEQUATE,False,
+GV-000604,"Saket, South West Delhi, Delhi 110017",SYNTHETIC,DISTRICT_MISMATCH,en,latin,INCONSISTENT,Delhi,South Delhi,,Saket,110017,ADEQUATE,False,district_mismatch
+GV-001038,"Near EON IT Park, Kharadi, Pune, Maharashtra 411028",SYNTHETIC,NEARBY_BUT_WRONG_LOCALITY,en,latin,CONSISTENT,Maharashtra,Pune,,Kharadi,411028,ADEQUATE,False,
+GV-001055,"Near EON IT Park, Kharadi, Pune, Maharashtra 411014",SYNTHETIC,NEARBY_BUT_WRONG_LOCALITY,en,latin,CONSISTENT,Maharashtra,Pune,,Kharadi,411014,ADEQUATE,False,
+GV-000485,"Powai, Bombay, Maharashtra 400076",SYNTHETIC,HISTORICAL_ALIAS,en,latin,VERIFIED,Maharashtra,Mumbai Suburban,,Powai,400076,ADEQUATE,False,historical_alias
+GV-000685,"Baner, Mulshi, Pune, Maharashtra 411045",SYNTHETIC,SUBDISTRICT_MISMATCH,en,latin,CONSISTENT,Maharashtra,Pune,Haveli,Baner,411045,COMPLETE,False,subdistrict_mismatch
+GV-000189,"राजारहाट, उत्तर 24 परगना, पश्चिम बंगाल 700135",SYNTHETIC,DEVANAGARI_HINDI,hi,devanagari,VERIFIED,West Bengal,North 24 Parganas,,Rajarhat,700135,ADEQUATE,False,
+GV-000998,"Karnataka, Koramangala, Bengaluru Urban",SYNTHETIC,WRONG_ADMIN_HIERARCHY,en,latin,CONSISTENT,Karnataka,Bengaluru Urban,,Koramangala,,PARTIAL,False,inverted_hierarchy
+GV-000863,"Salt Lake, Kolkata, West Bengal 9999999",SYNTHETIC,INVALID_PIN,en,latin,NEEDS_REVIEW,West Bengal,Kolkata,,Salt Lake,,PARTIAL,False,invalid_pin_format
+GV-000153,"opp Hadapsar chowk, Pune, Maharashtra",SYNTHETIC,INFORMAL_SLANG,en,latin,CONSISTENT,Maharashtra,Pune,,Hadapsar,,ADEQUATE,False,
+GV-000733,"Powai, Mulshi, Mumbai Suburban, Maharashtra 400076",SYNTHETIC,SUBDISTRICT_MISMATCH,en,latin,CONSISTENT,Maharashtra,Mumbai Suburban,Andheri,Powai,400076,COMPLETE,False,subdistrict_mismatch
+GV-000427,"New Town, North 24 Parganas, West Bengal 700156",SYNTHETIC,MISSPELLING,en,latin,VERIFIED,West Bengal,North 24 Parganas,,New Town,700156,ADEQUATE,False,phonetic_misspelling
+GV-000919,Maharashtra,SYNTHETIC,INCOMPLETE,en,latin,NEEDS_REVIEW,Maharashtra,,,,,MINIMAL,False,
+GV-000538,Rajapur,SYNTHETIC,AMBIGUOUS_LOCALITY,en,latin,AMBIGUOUS,,,,Rajapur,,MINIMAL,True,
+GV-001027,"Near EON IT Park, Kharadi, Mumbai Suburban, Maharashtra 400069",SYNTHETIC,NEARBY_BUT_WRONG_LOCALITY,en,latin,CONSISTENT,Maharashtra,Mumbai Suburban,,Kharadi,400069,ADEQUATE,False,
+GV-000705,"Hadapsar, Mulshi, Pune, Maharashtra 411028",SYNTHETIC,SUBDISTRICT_MISMATCH,en,latin,CONSISTENT,Maharashtra,Pune,Haveli,Hadapsar,411028,COMPLETE,False,subdistrict_mismatch
+GV-000049,"House No. 281, Infinity Tower, Behind Police Station, Adyar, Guindy, Chennai, Tamil Nadu 600020",SYNTHETIC,COMPLETE_VALID,en,latin,VERIFIED,Tamil Nadu,Chennai,Guindy,Adyar,600020,COMPLETE,False,
+GV-000865,"Electronic City, Bengaluru Urban, Karnataka 12345",SYNTHETIC,INVALID_PIN,en,latin,NEEDS_REVIEW,Karnataka,Bengaluru Urban,,Electronic City,,PARTIAL,False,invalid_pin_format
+GV-000570,Fatehpur,SYNTHETIC,AMBIGUOUS_LOCALITY,en,latin,AMBIGUOUS,,,,Fatehpur,,MINIMAL,True,
+GV-000820,"Adyar, Chennai, Tamil Nadu 411014",SYNTHETIC,PIN_MISMATCH,en,latin,NEEDS_REVIEW,Tamil Nadu,Chennai,,Adyar,411014,ADEQUATE,False,pin_circle_mismatch
+GV-000942,Near City Hospital,SYNTHETIC,INCOMPLETE,en,latin,UNABLE_TO_VERIFY,,,,,,MINIMAL,False,
+GV-000606,"Malviya Nagar, Kolhapur, Rajasthan 302017",SYNTHETIC,DISTRICT_MISMATCH,en,latin,INCONSISTENT,Rajasthan,Jaipur,,Malviya Nagar,302017,ADEQUATE,False,district_mismatch
+GV-000571,"Indiranagar, Mysuru, Karnataka 560038",SYNTHETIC,DISTRICT_MISMATCH,en,latin,INCONSISTENT,Karnataka,Bengaluru Urban,,Indiranagar,560038,ADEQUATE,False,district_mismatch
+GV-000063,"Building Godrej Woods, Near Central Bank, Baner, Haveli, Pune, Maharashtra 411045",SYNTHETIC,COMPLETE_VALID,en,latin,VERIFIED,Maharashtra,Pune,Haveli,Baner,411045,COMPLETE,False,
+GV-000282,"गाव: कोथरूड, तालुका: पुणे शहर, जिल्हा: पुणे, राज्य: महाराष्ट्र, पिन: 411038",SYNTHETIC,DEVANAGARI_MARATHI,mr,devanagari,VERIFIED,Maharashtra,Pune,Pune City,Kothrud,411038,COMPLETE,False,
+GV-000308,"Thane West, ठाणे, Maharashtra 400601",SYNTHETIC,MIXED_LANGUAGE,mixed_mr_en,mixed,VERIFIED,Maharashtra,Thane,,Thane West,400601,ADEQUATE,False,
+GV-000906,"Shop 12, MG Road",SYNTHETIC,INCOMPLETE,en,latin,UNABLE_TO_VERIFY,,,,,,MINIMAL,False,
+GV-000773,"Rajarampuri, Mysuru, Karnataka 570002",SYNTHETIC,LOCALITY_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Kolhapur,,Rajarampuri,,ADEQUATE,False,cross_state_locality_mismatch
+GV-000534,Aurangabad,SYNTHETIC,AMBIGUOUS_LOCALITY,en,latin,AMBIGUOUS,,,,Aurangabad,,MINIMAL,True,
+GV-000147,"opposite to Viman Nagar chowk, Pune, Maharashtra",SYNTHETIC,INFORMAL_SLANG,en,latin,CONSISTENT,Maharashtra,Pune,,Viman Nagar,,ADEQUATE,False,
+GV-000800,"Koramangala, Bengaluru Urban, Karnataka 411014",SYNTHETIC,PIN_MISMATCH,en,latin,NEEDS_REVIEW,Karnataka,Bengaluru Urban,,Koramangala,411014,ADEQUATE,False,pin_circle_mismatch
+GV-000243,"गाव: हडपसर, तालुका: हवेली, जिल्हा: पुणे, राज्य: महाराष्ट्र, पिन: 411028",SYNTHETIC,DEVANAGARI_MARATHI,mr,devanagari,VERIFIED,Maharashtra,Pune,Haveli,Hadapsar,411028,COMPLETE,False,
+GV-000887,"Salt Lake, Kolkata, West Bengal 9999999",SYNTHETIC,INVALID_PIN,en,latin,NEEDS_REVIEW,West Bengal,Kolkata,,Salt Lake,,PARTIAL,False,invalid_pin_format
+GV-000646,"Thane, Karnataka 400601",SYNTHETIC,STATE_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Thane,,,400601,PARTIAL,False,state_mismatch
+GV-000592,"Rohini, South Delhi, Delhi 110085",SYNTHETIC,DISTRICT_MISMATCH,en,latin,INCONSISTENT,Delhi,North West Delhi,,Rohini,110085,ADEQUATE,False,district_mismatch
+GV-000327,"Hinjewadi, पुणे, Maharashtra 411057",SYNTHETIC,MIXED_LANGUAGE,mixed_mr_en,mixed,VERIFIED,Maharashtra,Pune,,Hinjewadi,411057,ADEQUATE,False,
+GV-000590,"Kothrud, Kolhapur, Maharashtra 411038",SYNTHETIC,DISTRICT_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Pune,,Kothrud,411038,ADEQUATE,False,district_mismatch
+GV-000640,"North 24 Parganas, Karnataka 700135",SYNTHETIC,STATE_MISMATCH,en,latin,INCONSISTENT,West Bengal,North 24 Parganas,,,700135,PARTIAL,False,state_mismatch
+GV-000862,"Bandra West, Mumbai Suburban, Maharashtra PIN-CODE",SYNTHETIC,INVALID_PIN,en,latin,NEEDS_REVIEW,Maharashtra,Mumbai Suburban,,Bandra West,,PARTIAL,False,invalid_pin_format
+GV-000516,Aurangabad,SYNTHETIC,AMBIGUOUS_LOCALITY,en,latin,AMBIGUOUS,,,,Aurangabad,,MINIMAL,True,
+GV-000812,"Koramangala, Bengaluru Urban, Karnataka 411014",SYNTHETIC,PIN_MISMATCH,en,latin,NEEDS_REVIEW,Karnataka,Bengaluru Urban,,Koramangala,411014,ADEQUATE,False,pin_circle_mismatch
+GV-000058,"House No. 566, Gokul Dham, Opposite City Mall, Karol Bagh, Karol Bagh, Central Delhi, Delhi 110005",SYNTHETIC,COMPLETE_VALID,en,latin,VERIFIED,Delhi,Central Delhi,Karol Bagh,Karol Bagh,110005,COMPLETE,False,
+GV-000223,"वेसू, सुरत, गुजरात 395007",SYNTHETIC,DEVANAGARI_HINDI,hi,devanagari,VERIFIED,Gujarat,Surat,,Vesu,395007,ADEQUATE,False,
+GV-000789,"Kharadi, Bengaluru Urban, Karnataka 560102",SYNTHETIC,LOCALITY_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Pune,,Kharadi,,ADEQUATE,False,cross_state_locality_mismatch
+GV-000240,"गोकुलम, म्हैसूर, कर्नाटक 570002",SYNTHETIC,DEVANAGARI_HINDI,hi,devanagari,VERIFIED,Karnataka,Mysuru,,Gokulam,570002,ADEQUATE,False,
+GV-000450,"HSR Layout, Bengalru, Karnataka 560102",SYNTHETIC,MISSPELLING,en,latin,VERIFIED,Karnataka,Bengaluru Urban,,HSR Layout,560102,ADEQUATE,False,phonetic_misspelling
+GV-000412,"Navrangpura, Ahamdabad, Gujarat 380009",SYNTHETIC,MISSPELLING,en,latin,VERIFIED,Gujarat,Ahmedabad,,Navrangpura,380009,ADEQUATE,False,phonetic_misspelling
+GV-000046,"Cyber City, 3rd Floor, Beside Apollo Hospital, HSR Layout, Bengaluru South, Bengaluru Urban, Karnataka 560102",SYNTHETIC,COMPLETE_VALID,en,latin,VERIFIED,Karnataka,Bengaluru Urban,Bengaluru South,HSR Layout,560102,COMPLETE,False,
+GV-000251,"गाव: ठाणे पश्चिम, तालुका: ठाणे, जिल्हा: ठाणे, राज्य: महाराष्ट्र, पिन: 400601",SYNTHETIC,DEVANAGARI_MARATHI,mr,devanagari,VERIFIED,Maharashtra,Thane,Thane,Thane West,400601,COMPLETE,False,
+GV-000050,"Building Sobha Dream Acres, Near Central Bank, Banjara Hills, Ameerpet, Hyderabad, Telangana 500034",SYNTHETIC,COMPLETE_VALID,en,latin,VERIFIED,Telangana,Hyderabad,Ameerpet,Banjara Hills,500034,COMPLETE,False,
+GV-001052,"Near EON IT Park, Kharadi, Pune, Maharashtra 411045",SYNTHETIC,NEARBY_BUT_WRONG_LOCALITY,en,latin,CONSISTENT,Maharashtra,Pune,,Kharadi,411045,ADEQUATE,False,
+GV-000752,"Thane West, Bengaluru Urban, Karnataka 560066",SYNTHETIC,LOCALITY_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Thane,,Thane West,,ADEQUATE,False,cross_state_locality_mismatch
+GV-001045,"Near EON IT Park, Kharadi, Mumbai Suburban, Maharashtra 400076",SYNTHETIC,NEARBY_BUT_WRONG_LOCALITY,en,latin,CONSISTENT,Maharashtra,Mumbai Suburban,,Kharadi,400076,ADEQUATE,False,
+GV-000609,"HITEC City, Kolhapur, Telangana 500081",SYNTHETIC,DISTRICT_MISMATCH,en,latin,INCONSISTENT,Telangana,Hyderabad,,HITEC City,500081,ADEQUATE,False,district_mismatch
+GV-000104,"Indiranagar, Bengaluru Urban, Karnataka",SYNTHETIC,PARTIAL_VALID,en,latin,CONSISTENT,Karnataka,Bengaluru Urban,,Indiranagar,,ADEQUATE,False,
+GV-000069,"House No. 414, Surya Enclave, Near Tech Park, New Town, Barasat, North 24 Parganas, West Bengal 700156",SYNTHETIC,COMPLETE_VALID,en,latin,VERIFIED,West Bengal,North 24 Parganas,Barasat,New Town,700156,COMPLETE,False,
+GV-000212,"अडयार, चेन्नई, तमिळनाडू 600020",SYNTHETIC,DEVANAGARI_HINDI,hi,devanagari,VERIFIED,Tamil Nadu,Chennai,,Adyar,600020,ADEQUATE,False,
+GV-000247,"गाव: हडपसर, तालुका: हवेली, जिल्हा: पुणे, राज्य: महाराष्ट्र, पिन: 411028",SYNTHETIC,DEVANAGARI_MARATHI,mr,devanagari,VERIFIED,Maharashtra,Pune,Haveli,Hadapsar,411028,COMPLETE,False,
+GV-000017,"Suite 317, Pheonix Marketcity, Opposite City Mall, Vaishali Nagar, Jaipur, Jaipur, Rajasthan 302021",SYNTHETIC,COMPLETE_VALID,en,latin,VERIFIED,Rajasthan,Jaipur,Jaipur,Vaishali Nagar,302021,COMPLETE,False,
+GV-000774,"Hinjewadi, Bengaluru Urban, Karnataka 560100",SYNTHETIC,LOCALITY_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Pune,,Hinjewadi,,ADEQUATE,False,cross_state_locality_mismatch
+GV-000430,"Vesu, Surat, Gujarat 395007",SYNTHETIC,MISSPELLING,en,latin,VERIFIED,Gujarat,Surat,,Vesu,395007,ADEQUATE,False,phonetic_misspelling
+GV-000699,"Powai, Mulshi, Mumbai Suburban, Maharashtra 400076",SYNTHETIC,SUBDISTRICT_MISMATCH,en,latin,CONSISTENT,Maharashtra,Mumbai Suburban,Andheri,Powai,400076,COMPLETE,False,subdistrict_mismatch
+GV-000842,"Hauz Khas, South Delhi, Delhi 411014",SYNTHETIC,PIN_MISMATCH,en,latin,NEEDS_REVIEW,Delhi,South Delhi,,Hauz Khas,411014,ADEQUATE,False,pin_circle_mismatch
+GV-000194,"कोथरूड, पुणे, महाराष्ट्र 411038",SYNTHETIC,DEVANAGARI_HINDI,hi,devanagari,VERIFIED,Maharashtra,Pune,,Kothrud,411038,ADEQUATE,False,
+GV-000283,"गाव: पवई, तालुका: अंधेरी, जिल्हा: मुंबई उपनगर, राज्य: महाराष्ट्र, पिन: 400076",SYNTHETIC,DEVANAGARI_MARATHI,mr,devanagari,VERIFIED,Maharashtra,Mumbai Suburban,Andheri,Powai,400076,COMPLETE,False,
+GV-000159,"behind Gomti Nagar side, Lucknow, Uttar Pradesh",SYNTHETIC,INFORMAL_SLANG,en,latin,CONSISTENT,Uttar Pradesh,Lucknow,,Gomti Nagar,,ADEQUATE,False,
+GV-000993,"Tamil Nadu, T Nagar, Chennai",SYNTHETIC,WRONG_ADMIN_HIERARCHY,en,latin,CONSISTENT,Tamil Nadu,Chennai,,T Nagar,,PARTIAL,False,inverted_hierarchy
+GV-000472,"Powai, Bombay, Maharashtra 400076",SYNTHETIC,HISTORICAL_ALIAS,en,latin,VERIFIED,Maharashtra,Mumbai Suburban,,Powai,400076,ADEQUATE,False,historical_alias
+GV-000877,"Karol Bagh, Central Delhi, Delhi 41101A",SYNTHETIC,INVALID_PIN,en,latin,NEEDS_REVIEW,Delhi,Central Delhi,,Karol Bagh,,PARTIAL,False,invalid_pin_format
+GV-000236,"हायटेक सिटी, हैदराबाद, तेलंगणा 500081",SYNTHETIC,DEVANAGARI_HINDI,hi,devanagari,VERIFIED,Telangana,Hyderabad,,HITEC City,500081,ADEQUATE,False,
+GV-000948,Near City Hospital,SYNTHETIC,INCOMPLETE,en,latin,UNABLE_TO_VERIFY,,,,,,MINIMAL,False,
+GV-000545,Rajapur,SYNTHETIC,AMBIGUOUS_LOCALITY,en,latin,AMBIGUOUS,,,,Rajapur,,MINIMAL,True,
+GV-000435,"Thane West, Thane, Maharastra 400601",SYNTHETIC,MISSPELLING,en,latin,VERIFIED,Maharashtra,Thane,,Thane West,400601,ADEQUATE,False,phonetic_misspelling
+GV-000558,Rampur,SYNTHETIC,AMBIGUOUS_LOCALITY,en,latin,AMBIGUOUS,,,,Rampur,,MINIMAL,True,
+GV-000475,"Hinjewadi, Hinjawadi, Maharashtra 411057",SYNTHETIC,HISTORICAL_ALIAS,en,latin,VERIFIED,Maharashtra,Pune,,Hinjewadi,411057,ADEQUATE,False,historical_alias
+GV-000859,"Thane West, Thane, Maharashtra 9999999",SYNTHETIC,INVALID_PIN,en,latin,NEEDS_REVIEW,Maharashtra,Thane,,Thane West,,PARTIAL,False,invalid_pin_format
+GV-000024,"Plot 517, Sector 14, Opposite Railway Station, Electronic City, Bengaluru South, Bengaluru Urban, Karnataka 560100",SYNTHETIC,COMPLETE_VALID,en,latin,VERIFIED,Karnataka,Bengaluru Urban,Bengaluru South,Electronic City,560100,COMPLETE,False,
+GV-000711,"Kothrud, Mulshi, Pune, Maharashtra 411038",SYNTHETIC,SUBDISTRICT_MISMATCH,en,latin,CONSISTENT,Maharashtra,Pune,Pune City,Kothrud,411038,COMPLETE,False,subdistrict_mismatch
+GV-000229,"गोकुलम, म्हैसूर, कर्नाटक 570002",SYNTHETIC,DEVANAGARI_HINDI,hi,devanagari,VERIFIED,Karnataka,Mysuru,,Gokulam,570002,ADEQUATE,False,
+GV-000131,"behind Sector 62 circle, Gautam Buddha Nagar, Uttar Pradesh",SYNTHETIC,INFORMAL_SLANG,en,latin,CONSISTENT,Uttar Pradesh,Gautam Buddha Nagar,,Sector 62,,ADEQUATE,False,
+GV-000542,Rajapur,SYNTHETIC,AMBIGUOUS_LOCALITY,en,latin,AMBIGUOUS,,,,Rajapur,,MINIMAL,True,
+GV-000403,"Hinjewadia, Pune, Maharashtra 411057",SYNTHETIC,TYPO,en,latin,VERIFIED,Maharashtra,Pune,,Hinjewadi,411057,ADEQUATE,False,char_typo
+GV-000760,"Kharadi, Bengaluru Urban, Karnataka 560034",SYNTHETIC,LOCALITY_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Pune,,Kharadi,,ADEQUATE,False,cross_state_locality_mismatch
+GV-000183,"behind Thane West area, Thane, Maharashtra",SYNTHETIC,INFORMAL_SLANG,en,latin,CONSISTENT,Maharashtra,Thane,,Thane West,,ADEQUATE,False,
+GV-000883,"Powai, Mumbai Suburban, Maharashtra 011014",SYNTHETIC,INVALID_PIN,en,latin,NEEDS_REVIEW,Maharashtra,Mumbai Suburban,,Powai,,PARTIAL,False,invalid_pin_format
+GV-000357,"Baneri, Pune, Maharashtra 411045",SYNTHETIC,TYPO,en,latin,VERIFIED,Maharashtra,Pune,,Baner,411045,ADEQUATE,False,char_typo
+GV-001016,"Near EON IT Park, Viman Nagar, Pune, Maharashtra 411014",SYNTHETIC,NEARBY_BUT_WRONG_LOCALITY,en,latin,CONSISTENT,Maharashtra,Pune,,Viman Nagar,411014,ADEQUATE,False,
+GV-000771,"Hadapsar, Bengaluru Urban, Karnataka 560100",SYNTHETIC,LOCALITY_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Pune,,Hadapsar,,ADEQUATE,False,cross_state_locality_mismatch
+GV-000553,Fatehpur,SYNTHETIC,AMBIGUOUS_LOCALITY,en,latin,AMBIGUOUS,,,,Fatehpur,,MINIMAL,True,
+GV-000678,"Jaipur, Karnataka 302021",SYNTHETIC,STATE_MISMATCH,en,latin,INCONSISTENT,Rajasthan,Jaipur,,,302021,PARTIAL,False,state_mismatch
+GV-000083,"Saket, South Delhi, Delhi",SYNTHETIC,PARTIAL_VALID,en,latin,CONSISTENT,Delhi,South Delhi,,Saket,,ADEQUATE,False,
+GV-000385,"HSR Layouti, Bengaluru Urban, Karnataka 560102",SYNTHETIC,TYPO,en,latin,VERIFIED,Karnataka,Bengaluru Urban,,HSR Layout,560102,ADEQUATE,False,char_typo
+GV-000387,"Dwarkai, South West Delhi, Delhi 110075",SYNTHETIC,TYPO,en,latin,VERIFIED,Delhi,South West Delhi,,Dwarka,110075,ADEQUATE,False,char_typo
+GV-000460,"Karol Bagh, Central Delhi, Delhi 110005",SYNTHETIC,MISSPELLING,en,latin,VERIFIED,Delhi,Central Delhi,,Karol Bagh,110005,ADEQUATE,False,phonetic_misspelling
+GV-000392,"Bandra Westi, Mumbai Suburban, Maharashtra 400050",SYNTHETIC,TYPO,en,latin,VERIFIED,Maharashtra,Mumbai Suburban,,Bandra West,400050,ADEQUATE,False,char_typo
+GV-000384,"HSR Layouti, Bengaluru Urban, Karnataka 560102",SYNTHETIC,TYPO,en,latin,VERIFIED,Karnataka,Bengaluru Urban,,HSR Layout,560102,ADEQUATE,False,char_typo
+GV-000431,"HITEC City, Hyderabad, Telangana 500081",SYNTHETIC,MISSPELLING,en,latin,VERIFIED,Telangana,Hyderabad,,HITEC City,500081,ADEQUATE,False,phonetic_misspelling
+GV-000885,"Vesu, Surat, Gujarat 12345",SYNTHETIC,INVALID_PIN,en,latin,NEEDS_REVIEW,Gujarat,Surat,,Vesu,,PARTIAL,False,invalid_pin_format
+GV-000852,"Malviya Nagar, Jaipur, Rajasthan 011014",SYNTHETIC,INVALID_PIN,en,latin,NEEDS_REVIEW,Rajasthan,Jaipur,,Malviya Nagar,,PARTIAL,False,invalid_pin_format
+GV-000139,"opp Connaught Place post, New Delhi, Delhi",SYNTHETIC,INFORMAL_SLANG,en,latin,CONSISTENT,Delhi,New Delhi,,Connaught Place,,ADEQUATE,False,
+GV-000185,"adjacent Dwarka circle, South West Delhi, Delhi",SYNTHETIC,INFORMAL_SLANG,en,latin,CONSISTENT,Delhi,South West Delhi,,Dwarka,,ADEQUATE,False,
+GV-000419,"Indiranagar, Bengalru, Karnataka 560038",SYNTHETIC,MISSPELLING,en,latin,VERIFIED,Karnataka,Bengaluru Urban,,Indiranagar,560038,ADEQUATE,False,phonetic_misspelling
+GV-000294,"गाव: बाणेर, तालुका: हवेली, जिल्हा: पुणे, राज्य: महाराष्ट्र, पिन: 411045",SYNTHETIC,DEVANAGARI_MARATHI,mr,devanagari,VERIFIED,Maharashtra,Pune,Haveli,Baner,411045,COMPLETE,False,
+GV-000033,"EON Free Zone, 3rd Floor, Near Metro Station, Malviya Nagar, Sanganer, Jaipur, Rajasthan 302017",SYNTHETIC,COMPLETE_VALID,en,latin,VERIFIED,Rajasthan,Jaipur,Sanganer,Malviya Nagar,302017,COMPLETE,False,
+GV-000903,"Shop 12, MG Road",SYNTHETIC,INCOMPLETE,en,latin,UNABLE_TO_VERIFY,,,,,,MINIMAL,False,
+GV-000071,"House No. 322, Shanti Niketan, Beside Apollo Hospital, Whitefield, Bengaluru East, Bengaluru Urban, Karnataka 560066",SYNTHETIC,COMPLETE_VALID,en,latin,VERIFIED,Karnataka,Bengaluru Urban,Bengaluru East,Whitefield,560066,COMPLETE,False,
+GV-000062,"Suite 833, Pheonix Marketcity, Opposite City Mall, Rajarhat, Barasat, North 24 Parganas, West Bengal 700135",SYNTHETIC,COMPLETE_VALID,en,latin,VERIFIED,West Bengal,North 24 Parganas,Barasat,Rajarhat,700135,COMPLETE,False,
+GV-000555,Bilaspur,SYNTHETIC,AMBIGUOUS_LOCALITY,en,latin,AMBIGUOUS,,,,Bilaspur,,MINIMAL,True,
+GV-000066,"Suite 445, Ganga Carnation, Near Tech Park, Banjara Hills, Ameerpet, Hyderabad, Telangana 500034",SYNTHETIC,COMPLETE_VALID,en,latin,VERIFIED,Telangana,Hyderabad,Ameerpet,Banjara Hills,500034,COMPLETE,False,
+GV-000353,"Andheri Easti, Mumbai Suburban, Maharashtra 400069",SYNTHETIC,TYPO,en,latin,VERIFIED,Maharashtra,Mumbai Suburban,,Andheri East,400069,ADEQUATE,False,char_typo
+GV-000434,"Karol Bagh, Central Delhi, Delhi 110005",SYNTHETIC,MISSPELLING,en,latin,VERIFIED,Delhi,Central Delhi,,Karol Bagh,110005,ADEQUATE,False,phonetic_misspelling
+GV-000047,"House No. 251, Brigade Gateway, Near Central Bank, Indiranagar, Bengaluru East, Bengaluru Urban, Karnataka 560038",SYNTHETIC,COMPLETE_VALID,en,latin,VERIFIED,Karnataka,Bengaluru Urban,Bengaluru East,Indiranagar,560038,COMPLETE,False,
+GV-000075,"Shop 691, Prestige Tech Park, Opposite City Mall, Vesu, Chorasi, Surat, Gujarat 395007",SYNTHETIC,COMPLETE_VALID,en,latin,VERIFIED,Gujarat,Surat,Chorasi,Vesu,395007,COMPLETE,False,
+GV-000593,"Thane West, Pune, Maharashtra 400601",SYNTHETIC,DISTRICT_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Thane,,Thane West,400601,ADEQUATE,False,district_mismatch
+GV-000758,"Kothrud, Bengaluru Urban, Karnataka 560034",SYNTHETIC,LOCALITY_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Pune,,Kothrud,,ADEQUATE,False,cross_state_locality_mismatch
+GV-000004,"Building World Trade Center, Near Metro Station, HSR Layout, Bengaluru South, Bengaluru Urban, Karnataka 560102",SYNTHETIC,COMPLETE_VALID,en,latin,VERIFIED,Karnataka,Bengaluru Urban,Bengaluru South,HSR Layout,560102,COMPLETE,False,
+GV-000261,"गाव: खराडी, तालुका: हवेली, जिल्हा: पुणे, राज्य: महाराष्ट्र, पिन: 411014",SYNTHETIC,DEVANAGARI_MARATHI,mr,devanagari,VERIFIED,Maharashtra,Pune,Haveli,Kharadi,411014,COMPLETE,False,
+GV-000406,"Hadapsar, Poone, Maharastra 411028",SYNTHETIC,MISSPELLING,en,latin,VERIFIED,Maharashtra,Pune,,Hadapsar,411028,ADEQUATE,False,phonetic_misspelling
+GV-000023,"World Trade Center, 3rd Floor, Opposite City Mall, Connaught Place, Chanakyapuri, New Delhi, Delhi 110001",SYNTHETIC,COMPLETE_VALID,en,latin,VERIFIED,Delhi,New Delhi,Chanakyapuri,Connaught Place,110001,COMPLETE,False,
+GV-000316,"Gokulam, म्हैसूर, Karnataka 570002",SYNTHETIC,MIXED_LANGUAGE,mixed_hi_en,mixed,VERIFIED,Karnataka,Mysuru,,Gokulam,570002,ADEQUATE,False,
+GV-001051,"Near EON IT Park, Kharadi, Pune, Maharashtra 411057",SYNTHETIC,NEARBY_BUT_WRONG_LOCALITY,en,latin,CONSISTENT,Maharashtra,Pune,,Kharadi,411057,ADEQUATE,False,
+GV-000474,"Bandra West, Bombay, Maharashtra 400050",SYNTHETIC,HISTORICAL_ALIAS,en,latin,VERIFIED,Maharashtra,Mumbai Suburban,,Bandra West,400050,ADEQUATE,False,historical_alias
+GV-000573,"Baner, Thane, Maharashtra 411045",SYNTHETIC,DISTRICT_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Pune,,Baner,411045,ADEQUATE,False,district_mismatch
+GV-000060,"Flat 737, Prestige Tech Park, Near Central Bank, Koramangala, Bengaluru South, Bengaluru Urban, Karnataka 560034",SYNTHETIC,COMPLETE_VALID,en,latin,VERIFIED,Karnataka,Bengaluru Urban,Bengaluru South,Koramangala,560034,COMPLETE,False,
+GV-000747,"Baner, Bengaluru Urban, Karnataka 560034",SYNTHETIC,LOCALITY_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Pune,,Baner,,ADEQUATE,False,cross_state_locality_mismatch
+GV-000468,"Andheri East, Bombay, Maharashtra 400069",SYNTHETIC,HISTORICAL_ALIAS,en,latin,VERIFIED,Maharashtra,Mumbai Suburban,,Andheri East,400069,ADEQUATE,False,historical_alias
+GV-000764,"Powai, Bengaluru Urban, Karnataka 560100",SYNTHETIC,LOCALITY_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Mumbai Suburban,,Powai,,ADEQUATE,False,cross_state_locality_mismatch
+GV-000526,Rampur,SYNTHETIC,AMBIGUOUS_LOCALITY,en,latin,AMBIGUOUS,,,,Rampur,,MINIMAL,True,
+GV-000136,"just after Hinjewadi chowk, Pune, Maharashtra",SYNTHETIC,INFORMAL_SLANG,en,latin,CONSISTENT,Maharashtra,Pune,,Hinjewadi,,ADEQUATE,False,
+GV-000465,"Bandra West, Bombay, Maharashtra 400050",SYNTHETIC,HISTORICAL_ALIAS,en,latin,VERIFIED,Maharashtra,Mumbai Suburban,,Bandra West,400050,ADEQUATE,False,historical_alias
+GV-000057,"Shop 759, Prestige Tech Park, Opposite Railway Station, Hinjewadi, Mulshi, Pune, Maharashtra 411057",SYNTHETIC,COMPLETE_VALID,en,latin,VERIFIED,Maharashtra,Pune,Mulshi,Hinjewadi,411057,COMPLETE,False,
+GV-000457,"New Town, North 24 Parganas, West Bengal 700156",SYNTHETIC,MISSPELLING,en,latin,VERIFIED,West Bengal,North 24 Parganas,,New Town,700156,ADEQUATE,False,phonetic_misspelling
+GV-000523,Fatehpur,SYNTHETIC,AMBIGUOUS_LOCALITY,en,latin,AMBIGUOUS,,,,Fatehpur,,MINIMAL,True,
+GV-000094,"Whitefield, Bengaluru Urban, Karnataka",SYNTHETIC,PARTIAL_VALID,en,latin,CONSISTENT,Karnataka,Bengaluru Urban,,Whitefield,,ADEQUATE,False,
+GV-000963,"Maharashtra, Hadapsar, Pune",SYNTHETIC,WRONG_ADMIN_HIERARCHY,en,latin,CONSISTENT,Maharashtra,Pune,,Hadapsar,,PARTIAL,False,inverted_hierarchy
+GV-000598,"Vesu, Ahmedabad, Gujarat 395007",SYNTHETIC,DISTRICT_MISMATCH,en,latin,INCONSISTENT,Gujarat,Surat,,Vesu,395007,ADEQUATE,False,district_mismatch
+GV-000211,"सॉल्ट लेक, कोलकाता, पश्चिम बंगाल 700091",SYNTHETIC,DEVANAGARI_HINDI,hi,devanagari,VERIFIED,West Bengal,Kolkata,,Salt Lake,700091,ADEQUATE,False,
+GV-000756,"Thane West, Bengaluru Urban, Karnataka 560100",SYNTHETIC,LOCALITY_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Thane,,Thane West,,ADEQUATE,False,cross_state_locality_mismatch
+GV-000120,"Hadapsar, Pune, Maharashtra",SYNTHETIC,PARTIAL_VALID,en,latin,CONSISTENT,Maharashtra,Pune,,Hadapsar,,ADEQUATE,False,
+GV-000934,Near City Hospital,SYNTHETIC,INCOMPLETE,en,latin,UNABLE_TO_VERIFY,,,,,,MINIMAL,False,
+GV-000533,Aurangabad,SYNTHETIC,AMBIGUOUS_LOCALITY,en,latin,AMBIGUOUS,,,,Aurangabad,,MINIMAL,True,
+GV-000818,"Powai, Mumbai Suburban, Maharashtra 560066",SYNTHETIC,PIN_MISMATCH,en,latin,NEEDS_REVIEW,Maharashtra,Mumbai Suburban,,Powai,560066,ADEQUATE,False,pin_circle_mismatch
+GV-000169,"adjacent Dwarka chowk, South West Delhi, Delhi",SYNTHETIC,INFORMAL_SLANG,en,latin,CONSISTENT,Delhi,South West Delhi,,Dwarka,,ADEQUATE,False,
+GV-000154,"opp Gomti Nagar chowk, Lucknow, Uttar Pradesh",SYNTHETIC,INFORMAL_SLANG,en,latin,CONSISTENT,Uttar Pradesh,Lucknow,,Gomti Nagar,,ADEQUATE,False,
+GV-000550,Bilaspur,SYNTHETIC,AMBIGUOUS_LOCALITY,en,latin,AMBIGUOUS,,,,Bilaspur,,MINIMAL,True,
+GV-000797,"Banjara Hills, Hyderabad, Telangana 411014",SYNTHETIC,PIN_MISMATCH,en,latin,NEEDS_REVIEW,Telangana,Hyderabad,,Banjara Hills,411014,ADEQUATE,False,pin_circle_mismatch
+GV-000208,"हडपसर, पुणे, महाराष्ट्र 411028",SYNTHETIC,DEVANAGARI_HINDI,hi,devanagari,VERIFIED,Maharashtra,Pune,,Hadapsar,411028,ADEQUATE,False,
+GV-000518,Rampur,SYNTHETIC,AMBIGUOUS_LOCALITY,en,latin,AMBIGUOUS,,,,Rampur,,MINIMAL,True,
+GV-000561,Rajapur,SYNTHETIC,AMBIGUOUS_LOCALITY,en,latin,AMBIGUOUS,,,,Rajapur,,MINIMAL,True,
+GV-000900,"Hadapsar, Pune, Maharashtra 12345",SYNTHETIC,INVALID_PIN,en,latin,NEEDS_REVIEW,Maharashtra,Pune,,Hadapsar,,PARTIAL,False,invalid_pin_format
+GV-000115,"Indiranagar, Bengaluru Urban, Karnataka",SYNTHETIC,PARTIAL_VALID,en,latin,CONSISTENT,Karnataka,Bengaluru Urban,,Indiranagar,,ADEQUATE,False,
+GV-000578,"Hauz Khas, New Delhi, Delhi 110016",SYNTHETIC,DISTRICT_MISMATCH,en,latin,INCONSISTENT,Delhi,South Delhi,,Hauz Khas,110016,ADEQUATE,False,district_mismatch
+GV-001064,"Near EON IT Park, Kharadi, Mumbai Suburban, Maharashtra 400050",SYNTHETIC,NEARBY_BUT_WRONG_LOCALITY,en,latin,CONSISTENT,Maharashtra,Mumbai Suburban,,Kharadi,400050,ADEQUATE,False,
+GV-000371,"Koramangalai, Bengaluru Urban, Karnataka 560034",SYNTHETIC,TYPO,en,latin,VERIFIED,Karnataka,Bengaluru Urban,,Koramangala,560034,ADEQUATE,False,char_typo
+GV-000781,"Andheri East, Bengaluru Urban, Karnataka 560102",SYNTHETIC,LOCALITY_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Mumbai Suburban,,Andheri East,,ADEQUATE,False,cross_state_locality_mismatch
+GV-000541,Bilaspur,SYNTHETIC,AMBIGUOUS_LOCALITY,en,latin,AMBIGUOUS,,,,Bilaspur,,MINIMAL,True,
+GV-000804,"Karol Bagh, Central Delhi, Delhi 411014",SYNTHETIC,PIN_MISMATCH,en,latin,NEEDS_REVIEW,Delhi,Central Delhi,,Karol Bagh,411014,ADEQUATE,False,pin_circle_mismatch
+GV-000999,"Maharashtra, Rajarampuri, Kolhapur",SYNTHETIC,WRONG_ADMIN_HIERARCHY,en,latin,CONSISTENT,Maharashtra,Kolhapur,,Rajarampuri,,PARTIAL,False,inverted_hierarchy
+GV-000084,"Adyar, Chennai, Tamil Nadu",SYNTHETIC,PARTIAL_VALID,en,latin,CONSISTENT,Tamil Nadu,Chennai,,Adyar,,ADEQUATE,False,
+GV-000611,"Salt Lake, North 24 Parganas, West Bengal 700091",SYNTHETIC,DISTRICT_MISMATCH,en,latin,INCONSISTENT,West Bengal,Kolkata,,Salt Lake,700091,ADEQUATE,False,district_mismatch
+GV-000697,"Thane West, Mulshi, Thane, Maharashtra 400601",SYNTHETIC,SUBDISTRICT_MISMATCH,en,latin,CONSISTENT,Maharashtra,Thane,Thane,Thane West,400601,COMPLETE,False,subdistrict_mismatch
+GV-000254,"गाव: खराडी, तालुका: हवेली, जिल्हा: पुणे, राज्य: महाराष्ट्र, पिन: 411014",SYNTHETIC,DEVANAGARI_MARATHI,mr,devanagari,VERIFIED,Maharashtra,Pune,Haveli,Kharadi,411014,COMPLETE,False,
+GV-000224,"ठाणे पश्चिम, ठाणे, महाराष्ट्र 400601",SYNTHETIC,DEVANAGARI_HINDI,hi,devanagari,VERIFIED,Maharashtra,Thane,,Thane West,400601,ADEQUATE,False,
+GV-000681,"Thane West, Mulshi, Thane, Maharashtra 400601",SYNTHETIC,SUBDISTRICT_MISMATCH,en,latin,CONSISTENT,Maharashtra,Thane,Thane,Thane West,400601,COMPLETE,False,subdistrict_mismatch
+GV-000551,Rampur,SYNTHETIC,AMBIGUOUS_LOCALITY,en,latin,AMBIGUOUS,,,,Rampur,,MINIMAL,True,
+GV-001013,"Near EON IT Park, Kharadi, Thane, Maharashtra 400601",SYNTHETIC,NEARBY_BUT_WRONG_LOCALITY,en,latin,CONSISTENT,Maharashtra,Thane,,Kharadi,400601,ADEQUATE,False,
+GV-000563,Bilaspur,SYNTHETIC,AMBIGUOUS_LOCALITY,en,latin,AMBIGUOUS,,,,Bilaspur,,MINIMAL,True,
+GV-000719,"Baner, Mulshi, Pune, Maharashtra 411045",SYNTHETIC,SUBDISTRICT_MISMATCH,en,latin,CONSISTENT,Maharashtra,Pune,Haveli,Baner,411045,COMPLETE,False,subdistrict_mismatch
+GV-000426,"Navrangpura, Ahamdabad, Gujarat 380009",SYNTHETIC,MISSPELLING,en,latin,VERIFIED,Gujarat,Ahmedabad,,Navrangpura,380009,ADEQUATE,False,phonetic_misspelling
+GV-000383,"Gomti Nagari, Lucknow, Uttar Pradesh 226010",SYNTHETIC,TYPO,en,latin,VERIFIED,Uttar Pradesh,Lucknow,,Gomti Nagar,226010,ADEQUATE,False,char_typo
+GV-000621,"Viman Nagar, Kolhapur, Maharashtra 411014",SYNTHETIC,DISTRICT_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Pune,,Viman Nagar,411014,ADEQUATE,False,district_mismatch
+GV-000931,Maharashtra,SYNTHETIC,INCOMPLETE,en,latin,NEEDS_REVIEW,Maharashtra,,,,,MINIMAL,False,
+GV-000853,"Hinjewadi, Pune, Maharashtra 011014",SYNTHETIC,INVALID_PIN,en,latin,NEEDS_REVIEW,Maharashtra,Pune,,Hinjewadi,,PARTIAL,False,invalid_pin_format
+GV-000157,"just after Electronic City area, Bengaluru Urban, Karnataka",SYNTHETIC,INFORMAL_SLANG,en,latin,CONSISTENT,Karnataka,Bengaluru Urban,,Electronic City,,ADEQUATE,False,
+GV-001000,"Gujarat, Vesu, Surat",SYNTHETIC,WRONG_ADMIN_HIERARCHY,en,latin,CONSISTENT,Gujarat,Surat,,Vesu,,PARTIAL,False,inverted_hierarchy
+GV-000137,"opp Baner circle, Pune, Maharashtra",SYNTHETIC,INFORMAL_SLANG,en,latin,CONSISTENT,Maharashtra,Pune,,Baner,,ADEQUATE,False,
+GV-001042,"Near EON IT Park, Kharadi, Pune, Maharashtra 411057",SYNTHETIC,NEARBY_BUT_WRONG_LOCALITY,en,latin,CONSISTENT,Maharashtra,Pune,,Kharadi,411057,ADEQUATE,False,
+GV-000227,"गोकुलम, म्हैसूर, कर्नाटक 570002",SYNTHETIC,DEVANAGARI_HINDI,hi,devanagari,VERIFIED,Karnataka,Mysuru,,Gokulam,570002,ADEQUATE,False,
+GV-000630,"South Delhi, Karnataka 110016",SYNTHETIC,STATE_MISMATCH,en,latin,INCONSISTENT,Delhi,South Delhi,,,110016,PARTIAL,False,state_mismatch
+GV-000377,"Hadapsari, Pune, Maharashtra 411028",SYNTHETIC,TYPO,en,latin,VERIFIED,Maharashtra,Pune,,Hadapsar,411028,ADEQUATE,False,char_typo
+GV-000843,"Saket, South Delhi, Delhi 411014",SYNTHETIC,PIN_MISMATCH,en,latin,NEEDS_REVIEW,Delhi,South Delhi,,Saket,411014,ADEQUATE,False,pin_circle_mismatch
+GV-000822,"HITEC City, Hyderabad, Telangana 411014",SYNTHETIC,PIN_MISMATCH,en,latin,NEEDS_REVIEW,Telangana,Hyderabad,,HITEC City,411014,ADEQUATE,False,pin_circle_mismatch
+GV-000121,"Rajarampuri, Kolhapur, Maharashtra",SYNTHETIC,PARTIAL_VALID,en,latin,CONSISTENT,Maharashtra,Kolhapur,,Rajarampuri,,ADEQUATE,False,
+GV-001061,"Near EON IT Park, Kharadi, Thane, Maharashtra 400601",SYNTHETIC,NEARBY_BUT_WRONG_LOCALITY,en,latin,CONSISTENT,Maharashtra,Thane,,Kharadi,400601,ADEQUATE,False,
+GV-000319,"Banjara Hills, हैदराबाद, Telangana 500034",SYNTHETIC,MIXED_LANGUAGE,mixed_hi_en,mixed,VERIFIED,Telangana,Hyderabad,,Banjara Hills,500034,ADEQUATE,False,
+GV-000721,"Kharadi, Mulshi, Pune, Maharashtra 411014",SYNTHETIC,SUBDISTRICT_MISMATCH,en,latin,CONSISTENT,Maharashtra,Pune,Haveli,Kharadi,411014,COMPLETE,False,subdistrict_mismatch
+GV-000515,"Adyar, Madras, Tamil Nadu 600020",SYNTHETIC,HISTORICAL_ALIAS,en,latin,VERIFIED,Tamil Nadu,Chennai,,Adyar,600020,ADEQUATE,False,historical_alias
+GV-000703,"Kothrud, Mulshi, Pune, Maharashtra 411038",SYNTHETIC,SUBDISTRICT_MISMATCH,en,latin,CONSISTENT,Maharashtra,Pune,Pune City,Kothrud,411038,COMPLETE,False,subdistrict_mismatch
+GV-000821,"New Town, North 24 Parganas, West Bengal 411014",SYNTHETIC,PIN_MISMATCH,en,latin,NEEDS_REVIEW,West Bengal,North 24 Parganas,,New Town,411014,ADEQUATE,False,pin_circle_mismatch
+GV-000164,"behind T Nagar circle, Chennai, Tamil Nadu",SYNTHETIC,INFORMAL_SLANG,en,latin,CONSISTENT,Tamil Nadu,Chennai,,T Nagar,,ADEQUATE,False,
+GV-000315,"Kharadi, पुणे, Maharashtra 411014",SYNTHETIC,MIXED_LANGUAGE,mixed_mr_en,mixed,VERIFIED,Maharashtra,Pune,,Kharadi,411014,ADEQUATE,False,
+GV-000477,"Powai, Bombay, Maharashtra 400076",SYNTHETIC,HISTORICAL_ALIAS,en,latin,VERIFIED,Maharashtra,Mumbai Suburban,,Powai,400076,ADEQUATE,False,historical_alias
+GV-000122,"Saket, South Delhi, Delhi",SYNTHETIC,PARTIAL_VALID,en,latin,CONSISTENT,Delhi,South Delhi,,Saket,,ADEQUATE,False,
+GV-000684,"Andheri East, Mulshi, Mumbai Suburban, Maharashtra 400069",SYNTHETIC,SUBDISTRICT_MISMATCH,en,latin,CONSISTENT,Maharashtra,Mumbai Suburban,Andheri,Andheri East,400069,COMPLETE,False,subdistrict_mismatch
+GV-001008,"West Bengal, New Town, North 24 Parganas",SYNTHETIC,WRONG_ADMIN_HIERARCHY,en,latin,CONSISTENT,West Bengal,North 24 Parganas,,New Town,,PARTIAL,False,inverted_hierarchy
+GV-001053,"Near EON IT Park, Kharadi, Pune, Maharashtra 411057",SYNTHETIC,NEARBY_BUT_WRONG_LOCALITY,en,latin,CONSISTENT,Maharashtra,Pune,,Kharadi,411057,ADEQUATE,False,
+GV-000981,"Delhi, Karol Bagh, Central Delhi",SYNTHETIC,WRONG_ADMIN_HIERARCHY,en,latin,CONSISTENT,Delhi,Central Delhi,,Karol Bagh,,PARTIAL,False,inverted_hierarchy
+GV-000369,"New Towni, North 24 Parganas, West Bengal 700156",SYNTHETIC,TYPO,en,latin,VERIFIED,West Bengal,North 24 Parganas,,New Town,700156,ADEQUATE,False,char_typo
+GV-000670,"Bengaluru Urban, Maharashtra 560038",SYNTHETIC,STATE_MISMATCH,en,latin,INCONSISTENT,Karnataka,Bengaluru Urban,,,560038,PARTIAL,False,state_mismatch
+GV-000866,"Hinjewadi, Pune, Maharashtra 011014",SYNTHETIC,INVALID_PIN,en,latin,NEEDS_REVIEW,Maharashtra,Pune,,Hinjewadi,,PARTIAL,False,invalid_pin_format
+GV-000012,"Suite 491, Sobha Dream Acres, Near Tech Park, Kothrud, Pune City, Pune, Maharashtra 411038",SYNTHETIC,COMPLETE_VALID,en,latin,VERIFIED,Maharashtra,Pune,Pune City,Kothrud,411038,COMPLETE,False,
+GV-000587,"New Town, Kolkata, West Bengal 700156",SYNTHETIC,DISTRICT_MISMATCH,en,latin,INCONSISTENT,West Bengal,North 24 Parganas,,New Town,700156,ADEQUATE,False,district_mismatch
+GV-000876,"HITEC City, Hyderabad, Telangana 12345",SYNTHETIC,INVALID_PIN,en,latin,NEEDS_REVIEW,Telangana,Hyderabad,,HITEC City,,PARTIAL,False,invalid_pin_format
+GV-000597,"Kothrud, Mumbai Suburban, Maharashtra 411038",SYNTHETIC,DISTRICT_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Pune,,Kothrud,411038,ADEQUATE,False,district_mismatch
+GV-000310,"New Town, उत्तर 24 परगना, West Bengal 700156",SYNTHETIC,MIXED_LANGUAGE,mixed_hi_en,mixed,VERIFIED,West Bengal,North 24 Parganas,,New Town,700156,ADEQUATE,False,
+GV-000338,"Baner, पुणे, Maharashtra 411045",SYNTHETIC,MIXED_LANGUAGE,mixed_mr_en,mixed,VERIFIED,Maharashtra,Pune,,Baner,411045,ADEQUATE,False,
+GV-000274,"गाव: राजारामपुरी, तालुका: करवीर, जिल्हा: कोल्हापूर, राज्य: महाराष्ट्र, पिन: 416008",SYNTHETIC,DEVANAGARI_MARATHI,mr,devanagari,VERIFIED,Maharashtra,Kolhapur,Karvir,Rajarampuri,416008,COMPLETE,False,
+GV-000772,"Andheri East, Bengaluru Urban, Karnataka 560034",SYNTHETIC,LOCALITY_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Mumbai Suburban,,Andheri East,,ADEQUATE,False,cross_state_locality_mismatch
+GV-000458,"T Nagar, Chennai, Tamil Nadu 600017",SYNTHETIC,MISSPELLING,en,latin,VERIFIED,Tamil Nadu,Chennai,,T Nagar,600017,ADEQUATE,False,phonetic_misspelling
+GV-000242,"गाव: कोथरूड, तालुका: पुणे शहर, जिल्हा: पुणे, राज्य: महाराष्ट्र, पिन: 411038",SYNTHETIC,DEVANAGARI_MARATHI,mr,devanagari,VERIFIED,Maharashtra,Pune,Pune City,Kothrud,411038,COMPLETE,False,
+GV-000393,"Sector 62i, Gautam Buddha Nagar, Uttar Pradesh 201309",SYNTHETIC,TYPO,en,latin,VERIFIED,Uttar Pradesh,Gautam Buddha Nagar,,Sector 62,201309,ADEQUATE,False,char_typo
+GV-000268,"गाव: हडपसर, तालुका: हवेली, जिल्हा: पुणे, राज्य: महाराष्ट्र, पिन: 411028",SYNTHETIC,DEVANAGARI_MARATHI,mr,devanagari,VERIFIED,Maharashtra,Pune,Haveli,Hadapsar,411028,COMPLETE,False,
+GV-000007,"Plot 480, Sector 43, Behind HP Petrol Pump, Salt Lake, Alipore, Kolkata, West Bengal 700091",SYNTHETIC,COMPLETE_VALID,en,latin,VERIFIED,West Bengal,Kolkata,Alipore,Salt Lake,700091,COMPLETE,False,
+GV-000255,"गाव: राजारामपुरी, तालुका: करवीर, जिल्हा: कोल्हापूर, राज्य: महाराष्ट्र, पिन: 416008",SYNTHETIC,DEVANAGARI_MARATHI,mr,devanagari,VERIFIED,Maharashtra,Kolhapur,Karvir,Rajarampuri,416008,COMPLETE,False,
+GV-000332,"Banjara Hills, हैदराबाद, Telangana 500034",SYNTHETIC,MIXED_LANGUAGE,mixed_hi_en,mixed,VERIFIED,Telangana,Hyderabad,,Banjara Hills,500034,ADEQUATE,False,
+GV-000892,"T Nagar, Chennai, Tamil Nadu 9999999",SYNTHETIC,INVALID_PIN,en,latin,NEEDS_REVIEW,Tamil Nadu,Chennai,,T Nagar,,PARTIAL,False,invalid_pin_format
+GV-000144,"just after T Nagar circle, Chennai, Tamil Nadu",SYNTHETIC,INFORMAL_SLANG,en,latin,CONSISTENT,Tamil Nadu,Chennai,,T Nagar,,ADEQUATE,False,
+GV-000190,"करोल बाग, मध्य दिल्ली, दिल्ली 110005",SYNTHETIC,DEVANAGARI_HINDI,hi,devanagari,VERIFIED,Delhi,Central Delhi,,Karol Bagh,110005,ADEQUATE,False,
+GV-000098,"Kharadi, Pune, Maharashtra",SYNTHETIC,PARTIAL_VALID,en,latin,CONSISTENT,Maharashtra,Pune,,Kharadi,,ADEQUATE,False,
+GV-000913,"Shop 12, MG Road",SYNTHETIC,INCOMPLETE,en,latin,UNABLE_TO_VERIFY,,,,,,MINIMAL,False,
+GV-000411,"Kothrud, Poone, Maharastra 411038",SYNTHETIC,MISSPELLING,en,latin,VERIFIED,Maharashtra,Pune,,Kothrud,411038,ADEQUATE,False,phonetic_misspelling
+GV-000089,"HSR Layout, Bengaluru Urban, Karnataka",SYNTHETIC,PARTIAL_VALID,en,latin,CONSISTENT,Karnataka,Bengaluru Urban,,HSR Layout,,ADEQUATE,False,
+GV-000336,"Bandra West, मुंबई उपनगर, Maharashtra 400050",SYNTHETIC,MIXED_LANGUAGE,mixed_mr_en,mixed,VERIFIED,Maharashtra,Mumbai Suburban,,Bandra West,400050,ADEQUATE,False,
+GV-000528,Fatehpur,SYNTHETIC,AMBIGUOUS_LOCALITY,en,latin,AMBIGUOUS,,,,Fatehpur,,MINIMAL,True,
+GV-000438,"Connaught Place, New Delhi, Delhi 110001",SYNTHETIC,MISSPELLING,en,latin,VERIFIED,Delhi,New Delhi,,Connaught Place,110001,ADEQUATE,False,phonetic_misspelling
+GV-000416,"Andheri East, Mumbai Suburban, Maharastra 400069",SYNTHETIC,MISSPELLING,en,latin,VERIFIED,Maharashtra,Mumbai Suburban,,Andheri East,400069,ADEQUATE,False,phonetic_misspelling
+GV-000655,"South West Delhi, Karnataka 110075",SYNTHETIC,STATE_MISMATCH,en,latin,INCONSISTENT,Delhi,South West Delhi,,,110075,PARTIAL,False,state_mismatch
+GV-000626,"Jaipur, Karnataka 302021",SYNTHETIC,STATE_MISMATCH,en,latin,INCONSISTENT,Rajasthan,Jaipur,,,302021,PARTIAL,False,state_mismatch
+GV-000873,"Koramangala, Bengaluru Urban, Karnataka 12345",SYNTHETIC,INVALID_PIN,en,latin,NEEDS_REVIEW,Karnataka,Bengaluru Urban,,Koramangala,,PARTIAL,False,invalid_pin_format
+GV-000844,"HITEC City, Hyderabad, Telangana 411014",SYNTHETIC,PIN_MISMATCH,en,latin,NEEDS_REVIEW,Telangana,Hyderabad,,HITEC City,411014,ADEQUATE,False,pin_circle_mismatch
+GV-000776,"Bandra West, Bengaluru Urban, Karnataka 560100",SYNTHETIC,LOCALITY_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Mumbai Suburban,,Bandra West,,ADEQUATE,False,cross_state_locality_mismatch
+GV-000691,"Kharadi, Mulshi, Pune, Maharashtra 411014",SYNTHETIC,SUBDISTRICT_MISMATCH,en,latin,CONSISTENT,Maharashtra,Pune,Haveli,Kharadi,411014,COMPLETE,False,subdistrict_mismatch
+GV-000875,"HITEC City, Hyderabad, Telangana 011014",SYNTHETIC,INVALID_PIN,en,latin,NEEDS_REVIEW,Telangana,Hyderabad,,HITEC City,,PARTIAL,False,invalid_pin_format
+GV-001031,"Near EON IT Park, Kharadi, Mumbai Suburban, Maharashtra 400069",SYNTHETIC,NEARBY_BUT_WRONG_LOCALITY,en,latin,CONSISTENT,Maharashtra,Mumbai Suburban,,Kharadi,400069,ADEQUATE,False,
+GV-000810,"Gokulam, Mysuru, Karnataka 411014",SYNTHETIC,PIN_MISMATCH,en,latin,NEEDS_REVIEW,Karnataka,Mysuru,,Gokulam,411014,ADEQUATE,False,pin_circle_mismatch
+GV-000346,"Rajarhat, उत्तर 24 परगना, West Bengal 700135",SYNTHETIC,MIXED_LANGUAGE,mixed_hi_en,mixed,VERIFIED,West Bengal,North 24 Parganas,,Rajarhat,700135,ADEQUATE,False,
+GV-001049,"Near EON IT Park, Kharadi, Kolhapur, Maharashtra 416008",SYNTHETIC,NEARBY_BUT_WRONG_LOCALITY,en,latin,CONSISTENT,Maharashtra,Kolhapur,,Kharadi,416008,ADEQUATE,False,
+GV-000015,"Flat 215, Surya Enclave, Opposite City Mall, Vesu, Chorasi, Surat, Gujarat 395007",SYNTHETIC,COMPLETE_VALID,en,latin,VERIFIED,Gujarat,Surat,Chorasi,Vesu,395007,COMPLETE,False,
+GV-000864,"Karol Bagh, Central Delhi, Delhi 41101A",SYNTHETIC,INVALID_PIN,en,latin,NEEDS_REVIEW,Delhi,Central Delhi,,Karol Bagh,,PARTIAL,False,invalid_pin_format
+GV-000736,"Andheri East, Bengaluru Urban, Karnataka 560066",SYNTHETIC,LOCALITY_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Mumbai Suburban,,Andheri East,,ADEQUATE,False,cross_state_locality_mismatch
+GV-000264,"गाव: कोथरूड, तालुका: पुणे शहर, जिल्हा: पुणे, राज्य: महाराष्ट्र, पिन: 411038",SYNTHETIC,DEVANAGARI_MARATHI,mr,devanagari,VERIFIED,Maharashtra,Pune,Pune City,Kothrud,411038,COMPLETE,False,
+GV-000664,"South Delhi, Karnataka 110017",SYNTHETIC,STATE_MISMATCH,en,latin,INCONSISTENT,Delhi,South Delhi,,,110017,PARTIAL,False,state_mismatch
+GV-000470,"Andheri East, Bombay, Maharashtra 400069",SYNTHETIC,HISTORICAL_ALIAS,en,latin,VERIFIED,Maharashtra,Mumbai Suburban,,Andheri East,400069,ADEQUATE,False,historical_alias
+GV-000749,"Powai, Mysuru, Karnataka 570002",SYNTHETIC,LOCALITY_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Mumbai Suburban,,Powai,,ADEQUATE,False,cross_state_locality_mismatch
+GV-000167,"just after Malviya Nagar area, Jaipur, Rajasthan",SYNTHETIC,INFORMAL_SLANG,en,latin,CONSISTENT,Rajasthan,Jaipur,,Malviya Nagar,,ADEQUATE,False,
+GV-000905,"Near Bus Stand, Main Market",SYNTHETIC,INCOMPLETE,en,latin,UNABLE_TO_VERIFY,,,,,,MINIMAL,False,
+GV-000116,"Thane West, Thane, Maharashtra",SYNTHETIC,PARTIAL_VALID,en,latin,CONSISTENT,Maharashtra,Thane,,Thane West,,ADEQUATE,False,
+GV-000829,"Vaishali Nagar, Jaipur, Rajasthan 411014",SYNTHETIC,PIN_MISMATCH,en,latin,NEEDS_REVIEW,Rajasthan,Jaipur,,Vaishali Nagar,411014,ADEQUATE,False,pin_circle_mismatch
+GV-000198,"विमान नगर, पुणे, महाराष्ट्र 411014",SYNTHETIC,DEVANAGARI_HINDI,hi,devanagari,VERIFIED,Maharashtra,Pune,,Viman Nagar,411014,ADEQUATE,False,
+GV-000280,"गाव: राजारामपुरी, तालुका: करवीर, जिल्हा: कोल्हापूर, राज्य: महाराष्ट्र, पिन: 416008",SYNTHETIC,DEVANAGARI_MARATHI,mr,devanagari,VERIFIED,Maharashtra,Kolhapur,Karvir,Rajarampuri,416008,COMPLETE,False,
+GV-000480,"Adyar, Madras, Tamil Nadu 600020",SYNTHETIC,HISTORICAL_ALIAS,en,latin,VERIFIED,Tamil Nadu,Chennai,,Adyar,600020,ADEQUATE,False,historical_alias
+GV-000517,Rajapur,SYNTHETIC,AMBIGUOUS_LOCALITY,en,latin,AMBIGUOUS,,,,Rajapur,,MINIMAL,True,
+GV-000138,"just after Vaishali Nagar circle, Jaipur, Rajasthan",SYNTHETIC,INFORMAL_SLANG,en,latin,CONSISTENT,Rajasthan,Jaipur,,Vaishali Nagar,,ADEQUATE,False,
+GV-000506,"Whitefield, Bangalore, Karnataka 560066",SYNTHETIC,HISTORICAL_ALIAS,en,latin,VERIFIED,Karnataka,Bengaluru Urban,,Whitefield,560066,ADEQUATE,False,historical_alias
+GV-000537,Aurangabad,SYNTHETIC,AMBIGUOUS_LOCALITY,en,latin,AMBIGUOUS,,,,Aurangabad,,MINIMAL,True,
+GV-000949,Maharashtra,SYNTHETIC,INCOMPLETE,en,latin,NEEDS_REVIEW,Maharashtra,,,,,MINIMAL,False,
+GV-000657,"Jaipur, Karnataka 302021",SYNTHETIC,STATE_MISMATCH,en,latin,INCONSISTENT,Rajasthan,Jaipur,,,302021,PARTIAL,False,state_mismatch
+GV-000466,"Sector 62, Noida, Uttar Pradesh 201309",SYNTHETIC,HISTORICAL_ALIAS,en,latin,VERIFIED,Uttar Pradesh,Gautam Buddha Nagar,,Sector 62,201309,ADEQUATE,False,historical_alias
+GV-000292,"गाव: बाणेर, तालुका: हवेली, जिल्हा: पुणे, राज्य: महाराष्ट्र, पिन: 411045",SYNTHETIC,DEVANAGARI_MARATHI,mr,devanagari,VERIFIED,Maharashtra,Pune,Haveli,Baner,411045,COMPLETE,False,
+GV-000344,"Sector 62, गौतम बुद्ध नगर, Uttar Pradesh 201309",SYNTHETIC,MIXED_LANGUAGE,mixed_hi_en,mixed,VERIFIED,Uttar Pradesh,Gautam Buddha Nagar,,Sector 62,201309,ADEQUATE,False,
+GV-000110,"Gokulam, Mysuru, Karnataka",SYNTHETIC,PARTIAL_VALID,en,latin,CONSISTENT,Karnataka,Mysuru,,Gokulam,,ADEQUATE,False,
+GV-000618,"Navrangpura, Surat, Gujarat 380009",SYNTHETIC,DISTRICT_MISMATCH,en,latin,INCONSISTENT,Gujarat,Ahmedabad,,Navrangpura,380009,ADEQUATE,False,district_mismatch
+GV-000582,"Salt Lake, North 24 Parganas, West Bengal 700091",SYNTHETIC,DISTRICT_MISMATCH,en,latin,INCONSISTENT,West Bengal,Kolkata,,Salt Lake,700091,ADEQUATE,False,district_mismatch
+GV-001046,"Near EON IT Park, Kharadi, Mumbai Suburban, Maharashtra 400050",SYNTHETIC,NEARBY_BUT_WRONG_LOCALITY,en,latin,CONSISTENT,Maharashtra,Mumbai Suburban,,Kharadi,400050,ADEQUATE,False,
+GV-000010,"Plot 372, Sector 36, Opposite Railway Station, Banjara Hills, Ameerpet, Hyderabad, Telangana 500034",SYNTHETIC,COMPLETE_VALID,en,latin,VERIFIED,Telangana,Hyderabad,Ameerpet,Banjara Hills,500034,COMPLETE,False,
+GV-000874,"Bandra West, Mumbai Suburban, Maharashtra 12345",SYNTHETIC,INVALID_PIN,en,latin,NEEDS_REVIEW,Maharashtra,Mumbai Suburban,,Bandra West,,PARTIAL,False,invalid_pin_format
+GV-000297,"Vaishali Nagar, जयपुर, Rajasthan 302021",SYNTHETIC,MIXED_LANGUAGE,mixed_hi_en,mixed,VERIFIED,Rajasthan,Jaipur,,Vaishali Nagar,302021,ADEQUATE,False,
+GV-000767,"Thane West, Bengaluru Urban, Karnataka 560034",SYNTHETIC,LOCALITY_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Thane,,Thane West,,ADEQUATE,False,cross_state_locality_mismatch
+GV-000191,"वेसू, सुरत, गुजरात 395007",SYNTHETIC,DEVANAGARI_HINDI,hi,devanagari,VERIFIED,Gujarat,Surat,,Vesu,395007,ADEQUATE,False,
+GV-000508,"T Nagar, Madras, Tamil Nadu 600017",SYNTHETIC,HISTORICAL_ALIAS,en,latin,VERIFIED,Tamil Nadu,Chennai,,T Nagar,600017,ADEQUATE,False,historical_alias
+GV-000807,"New Town, North 24 Parganas, West Bengal 411014",SYNTHETIC,PIN_MISMATCH,en,latin,NEEDS_REVIEW,West Bengal,North 24 Parganas,,New Town,411014,ADEQUATE,False,pin_circle_mismatch
+GV-000407,"Bandra West, Mumbai Suburban, Maharastra 400050",SYNTHETIC,MISSPELLING,en,latin,VERIFIED,Maharashtra,Mumbai Suburban,,Bandra West,400050,ADEQUATE,False,phonetic_misspelling
+GV-000857,"Salt Lake, Kolkata, West Bengal 9999999",SYNTHETIC,INVALID_PIN,en,latin,NEEDS_REVIEW,West Bengal,Kolkata,,Salt Lake,,PARTIAL,False,invalid_pin_format
+GV-000038,"Tower B, Pheonix Marketcity, Near Central Bank, Electronic City, Bengaluru South, Bengaluru Urban, Karnataka 560100",SYNTHETIC,COMPLETE_VALID,en,latin,VERIFIED,Karnataka,Bengaluru Urban,Bengaluru South,Electronic City,560100,COMPLETE,False,
+GV-000181,"behind Andheri East side, Mumbai Suburban, Maharashtra",SYNTHETIC,INFORMAL_SLANG,en,latin,CONSISTENT,Maharashtra,Mumbai Suburban,,Andheri East,,ADEQUATE,False,
+GV-000858,"Baner, Pune, Maharashtra PIN-CODE",SYNTHETIC,INVALID_PIN,en,latin,NEEDS_REVIEW,Maharashtra,Pune,,Baner,,PARTIAL,False,invalid_pin_format
+GV-000428,"Adyar, Chennai, Tamil Nadu 600020",SYNTHETIC,MISSPELLING,en,latin,VERIFIED,Tamil Nadu,Chennai,,Adyar,600020,ADEQUATE,False,phonetic_misspelling
+GV-000180,"adjacent Malviya Nagar chowk, Jaipur, Rajasthan",SYNTHETIC,INFORMAL_SLANG,en,latin,CONSISTENT,Rajasthan,Jaipur,,Malviya Nagar,,ADEQUATE,False,
+GV-001026,"Near EON IT Park, Kharadi, Pune, Maharashtra 411057",SYNTHETIC,NEARBY_BUT_WRONG_LOCALITY,en,latin,CONSISTENT,Maharashtra,Pune,,Kharadi,411057,ADEQUATE,False,
+GV-000871,"HSR Layout, Bengaluru Urban, Karnataka PIN-CODE",SYNTHETIC,INVALID_PIN,en,latin,NEEDS_REVIEW,Karnataka,Bengaluru Urban,,HSR Layout,,PARTIAL,False,invalid_pin_format
+GV-000741,"Viman Nagar, Bengaluru Urban, Karnataka 560034",SYNTHETIC,LOCALITY_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Pune,,Viman Nagar,,ADEQUATE,False,cross_state_locality_mismatch
+GV-000757,"Andheri East, Bengaluru Urban, Karnataka 560066",SYNTHETIC,LOCALITY_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Mumbai Suburban,,Andheri East,,ADEQUATE,False,cross_state_locality_mismatch
+GV-000548,Fatehpur,SYNTHETIC,AMBIGUOUS_LOCALITY,en,latin,AMBIGUOUS,,,,Fatehpur,,MINIMAL,True,
+GV-000238,"साकेत, दक्षिण दिल्ली, दिल्ली 110017",SYNTHETIC,DEVANAGARI_HINDI,hi,devanagari,VERIFIED,Delhi,South Delhi,,Saket,110017,ADEQUATE,False,
+GV-000951,"Flat 402, Sunshine Apartments",SYNTHETIC,INCOMPLETE,en,latin,UNABLE_TO_VERIFY,,,,,,MINIMAL,False,
+GV-000668,"Surat, Karnataka 395007",SYNTHETIC,STATE_MISMATCH,en,latin,INCONSISTENT,Gujarat,Surat,,,395007,PARTIAL,False,state_mismatch
+GV-000092,"Rajarampuri, Kolhapur, Maharashtra",SYNTHETIC,PARTIAL_VALID,en,latin,CONSISTENT,Maharashtra,Kolhapur,,Rajarampuri,,ADEQUATE,False,
+GV-000788,"Viman Nagar, Bengaluru Urban, Karnataka 560034",SYNTHETIC,LOCALITY_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Pune,,Viman Nagar,,ADEQUATE,False,cross_state_locality_mismatch
+GV-000061,"Building Kumar Primavera, Beside Apollo Hospital, Gokulam, Mysuru, Mysuru, Karnataka 570002",SYNTHETIC,COMPLETE_VALID,en,latin,VERIFIED,Karnataka,Mysuru,Mysuru,Gokulam,570002,COMPLETE,False,
+GV-000662,"Pune, Karnataka 411057",SYNTHETIC,STATE_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Pune,,,411057,PARTIAL,False,state_mismatch
+GV-000293,"गाव: हडपसर, तालुका: हवेली, जिल्हा: पुणे, राज्य: महाराष्ट्र, पिन: 411028",SYNTHETIC,DEVANAGARI_MARATHI,mr,devanagari,VERIFIED,Maharashtra,Pune,Haveli,Hadapsar,411028,COMPLETE,False,
+GV-000329,"Karol Bagh, मध्य दिल्ली, Delhi 110005",SYNTHETIC,MIXED_LANGUAGE,mixed_hi_en,mixed,VERIFIED,Delhi,Central Delhi,,Karol Bagh,110005,ADEQUATE,False,
+GV-000938,"Near Metro Station, Ring Road",SYNTHETIC,INCOMPLETE,en,latin,UNABLE_TO_VERIFY,,,,,,MINIMAL,False,
+GV-000775,"Viman Nagar, Bengaluru Urban, Karnataka 560066",SYNTHETIC,LOCALITY_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Pune,,Viman Nagar,,ADEQUATE,False,cross_state_locality_mismatch
+GV-000205,"हिंजवडी, पुणे, महाराष्ट्र 411057",SYNTHETIC,DEVANAGARI_HINDI,hi,devanagari,VERIFIED,Maharashtra,Pune,,Hinjewadi,411057,ADEQUATE,False,
+GV-000667,"South West Delhi, Karnataka 110075",SYNTHETIC,STATE_MISMATCH,en,latin,INCONSISTENT,Delhi,South West Delhi,,,110075,PARTIAL,False,state_mismatch
+GV-000489,"HSR Layout, Bangalore, Karnataka 560102",SYNTHETIC,HISTORICAL_ALIAS,en,latin,VERIFIED,Karnataka,Bengaluru Urban,,HSR Layout,560102,ADEQUATE,False,historical_alias
+GV-000488,"Sector 62, Noida, Uttar Pradesh 201309",SYNTHETIC,HISTORICAL_ALIAS,en,latin,VERIFIED,Uttar Pradesh,Gautam Buddha Nagar,,Sector 62,201309,ADEQUATE,False,historical_alias
+GV-000669,"Bengaluru Urban, Maharashtra 560034",SYNTHETIC,STATE_MISMATCH,en,latin,INCONSISTENT,Karnataka,Bengaluru Urban,,,560034,PARTIAL,False,state_mismatch
+GV-000417,"HITEC City, Hyderabad, Telangana 500081",SYNTHETIC,MISSPELLING,en,latin,VERIFIED,Telangana,Hyderabad,,HITEC City,500081,ADEQUATE,False,phonetic_misspelling
+GV-000162,"just after Vesu chowk, Surat, Gujarat",SYNTHETIC,INFORMAL_SLANG,en,latin,CONSISTENT,Gujarat,Surat,,Vesu,,ADEQUATE,False,
+GV-000564,Bilaspur,SYNTHETIC,AMBIGUOUS_LOCALITY,en,latin,AMBIGUOUS,,,,Bilaspur,,MINIMAL,True,
+GV-000006,"House No. 892, Kumar Primavera, Near Central Bank, Baner, Haveli, Pune, Maharashtra 411045",SYNTHETIC,COMPLETE_VALID,en,latin,VERIFIED,Maharashtra,Pune,Haveli,Baner,411045,COMPLETE,False,
+GV-000921,Near City Hospital,SYNTHETIC,INCOMPLETE,en,latin,UNABLE_TO_VERIFY,,,,,,MINIMAL,False,
+GV-000969,"Karnataka, HSR Layout, Bengaluru Urban",SYNTHETIC,WRONG_ADMIN_HIERARCHY,en,latin,CONSISTENT,Karnataka,Bengaluru Urban,,HSR Layout,,PARTIAL,False,inverted_hierarchy
+GV-001034,"Near EON IT Park, Kharadi, Mumbai Suburban, Maharashtra 400069",SYNTHETIC,NEARBY_BUT_WRONG_LOCALITY,en,latin,CONSISTENT,Maharashtra,Mumbai Suburban,,Kharadi,400069,ADEQUATE,False,
+GV-000907,Maharashtra,SYNTHETIC,INCOMPLETE,en,latin,NEEDS_REVIEW,Maharashtra,,,,,MINIMAL,False,
+GV-000484,"Salt Lake, Calcutta, West Bengal 700091",SYNTHETIC,HISTORICAL_ALIAS,en,latin,VERIFIED,West Bengal,Kolkata,,Salt Lake,700091,ADEQUATE,False,historical_alias
+GV-000735,"Baner, Mulshi, Pune, Maharashtra 411045",SYNTHETIC,SUBDISTRICT_MISMATCH,en,latin,CONSISTENT,Maharashtra,Pune,Haveli,Baner,411045,COMPLETE,False,subdistrict_mismatch
+GV-000339,"Saket, दक्षिण दिल्ली, Delhi 110017",SYNTHETIC,MIXED_LANGUAGE,mixed_hi_en,mixed,VERIFIED,Delhi,South Delhi,,Saket,110017,ADEQUATE,False,
+GV-000424,"Hinjewadi, Poone, Maharastra 411057",SYNTHETIC,MISSPELLING,en,latin,VERIFIED,Maharashtra,Pune,,Hinjewadi,411057,ADEQUATE,False,phonetic_misspelling
+GV-000103,"Baner, Pune, Maharashtra",SYNTHETIC,PARTIAL_VALID,en,latin,CONSISTENT,Maharashtra,Pune,,Baner,,ADEQUATE,False,
+GV-000054,"House No. 531, Marvel Cerise, Near Tech Park, Hadapsar, Haveli, Pune, Maharashtra 411028",SYNTHETIC,COMPLETE_VALID,en,latin,VERIFIED,Maharashtra,Pune,Haveli,Hadapsar,411028,COMPLETE,False,
+GV-000239,"अडयार, चेन्नई, तमिळनाडू 600020",SYNTHETIC,DEVANAGARI_HINDI,hi,devanagari,VERIFIED,Tamil Nadu,Chennai,,Adyar,600020,ADEQUATE,False,
+GV-000654,"North 24 Parganas, Karnataka 700135",SYNTHETIC,STATE_MISMATCH,en,latin,INCONSISTENT,West Bengal,North 24 Parganas,,,700135,PARTIAL,False,state_mismatch
+GV-000232,"हौज खास, दक्षिण दिल्ली, दिल्ली 110016",SYNTHETIC,DEVANAGARI_HINDI,hi,devanagari,VERIFIED,Delhi,South Delhi,,Hauz Khas,110016,ADEQUATE,False,
+GV-001037,"Near EON IT Park, Kharadi, Mumbai Suburban, Maharashtra 400050",SYNTHETIC,NEARBY_BUT_WRONG_LOCALITY,en,latin,CONSISTENT,Maharashtra,Mumbai Suburban,,Kharadi,400050,ADEQUATE,False,
+GV-000686,"Baner, Mulshi, Pune, Maharashtra 411045",SYNTHETIC,SUBDISTRICT_MISMATCH,en,latin,CONSISTENT,Maharashtra,Pune,Haveli,Baner,411045,COMPLETE,False,subdistrict_mismatch
+GV-000052,"House No. 379, World Trade Center, Near Bus Stand, Hauz Khas, Hauz Khas, South Delhi, Delhi 110016",SYNTHETIC,COMPLETE_VALID,en,latin,VERIFIED,Delhi,South Delhi,Hauz Khas,Hauz Khas,110016,COMPLETE,False,
+GV-000249,"गाव: ठाणे पश्चिम, तालुका: ठाणे, जिल्हा: ठाणे, राज्य: महाराष्ट्र, पिन: 400601",SYNTHETIC,DEVANAGARI_MARATHI,mr,devanagari,VERIFIED,Maharashtra,Thane,Thane,Thane West,400601,COMPLETE,False,
+GV-000246,"गाव: हिंजवडी, तालुका: मुळशी, जिल्हा: पुणे, राज्य: महाराष्ट्र, पिन: 411057",SYNTHETIC,DEVANAGARI_MARATHI,mr,devanagari,VERIFIED,Maharashtra,Pune,Mulshi,Hinjewadi,411057,COMPLETE,False,
+GV-000601,"Thane West, Mumbai Suburban, Maharashtra 400601",SYNTHETIC,DISTRICT_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Thane,,Thane West,400601,ADEQUATE,False,district_mismatch
+GV-000759,"Kothrud, Bengaluru Urban, Karnataka 560066",SYNTHETIC,LOCALITY_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Pune,,Kothrud,,ADEQUATE,False,cross_state_locality_mismatch
+GV-001040,"Near EON IT Park, Kharadi, Mumbai Suburban, Maharashtra 400050",SYNTHETIC,NEARBY_BUT_WRONG_LOCALITY,en,latin,CONSISTENT,Maharashtra,Mumbai Suburban,,Kharadi,400050,ADEQUATE,False,
+GV-000112,"Adyar, Chennai, Tamil Nadu",SYNTHETIC,PARTIAL_VALID,en,latin,CONSISTENT,Tamil Nadu,Chennai,,Adyar,,ADEQUATE,False,
+GV-000141,"behind Viman Nagar chowk, Pune, Maharashtra",SYNTHETIC,INFORMAL_SLANG,en,latin,CONSISTENT,Maharashtra,Pune,,Viman Nagar,,ADEQUATE,False,
+GV-000279,"गाव: राजारामपुरी, तालुका: करवीर, जिल्हा: कोल्हापूर, राज्य: महाराष्ट्र, पिन: 416008",SYNTHETIC,DEVANAGARI_MARATHI,mr,devanagari,VERIFIED,Maharashtra,Kolhapur,Karvir,Rajarampuri,416008,COMPLETE,False,
+GV-000713,"Bandra West, Mulshi, Mumbai Suburban, Maharashtra 400050",SYNTHETIC,SUBDISTRICT_MISMATCH,en,latin,CONSISTENT,Maharashtra,Mumbai Suburban,Andheri,Bandra West,400050,COMPLETE,False,subdistrict_mismatch
+GV-000576,"Adyar, Kolhapur, Tamil Nadu 600020",SYNTHETIC,DISTRICT_MISMATCH,en,latin,INCONSISTENT,Tamil Nadu,Chennai,,Adyar,600020,ADEQUATE,False,district_mismatch
+GV-000278,"गाव: हिंजवडी, तालुका: मुळशी, जिल्हा: पुणे, राज्य: महाराष्ट्र, पिन: 411057",SYNTHETIC,DEVANAGARI_MARATHI,mr,devanagari,VERIFIED,Maharashtra,Pune,Mulshi,Hinjewadi,411057,COMPLETE,False,
+GV-000552,Aurangabad,SYNTHETIC,AMBIGUOUS_LOCALITY,en,latin,AMBIGUOUS,,,,Aurangabad,,MINIMAL,True,
+GV-000848,"Baner, Pune, Maharashtra 41101A",SYNTHETIC,INVALID_PIN,en,latin,NEEDS_REVIEW,Maharashtra,Pune,,Baner,,PARTIAL,False,invalid_pin_format
+GV-000207,"करोल बाग, मध्य दिल्ली, दिल्ली 110005",SYNTHETIC,DEVANAGARI_HINDI,hi,devanagari,VERIFIED,Delhi,Central Delhi,,Karol Bagh,110005,ADEQUATE,False,
+GV-000220,"विमान नगर, पुणे, महाराष्ट्र 411014",SYNTHETIC,DEVANAGARI_HINDI,hi,devanagari,VERIFIED,Maharashtra,Pune,,Viman Nagar,411014,ADEQUATE,False,
+GV-000491,"Salt Lake, Calcutta, West Bengal 700091",SYNTHETIC,HISTORICAL_ALIAS,en,latin,VERIFIED,West Bengal,Kolkata,,Salt Lake,700091,ADEQUATE,False,historical_alias
+GV-000766,"Rajarampuri, Bengaluru Urban, Karnataka 560100",SYNTHETIC,LOCALITY_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Kolhapur,,Rajarampuri,,ADEQUATE,False,cross_state_locality_mismatch
+GV-000263,"गाव: पवई, तालुका: अंधेरी, जिल्हा: मुंबई उपनगर, राज्य: महाराष्ट्र, पिन: 400076",SYNTHETIC,DEVANAGARI_MARATHI,mr,devanagari,VERIFIED,Maharashtra,Mumbai Suburban,Andheri,Powai,400076,COMPLETE,False,
+GV-001058,"Near EON IT Park, Kharadi, Pune, Maharashtra 411014",SYNTHETIC,NEARBY_BUT_WRONG_LOCALITY,en,latin,CONSISTENT,Maharashtra,Pune,,Kharadi,411014,ADEQUATE,False,
+GV-000453,"Indiranagar, Bengalru, Karnataka 560038",SYNTHETIC,MISSPELLING,en,latin,VERIFIED,Karnataka,Bengaluru Urban,,Indiranagar,560038,ADEQUATE,False,phonetic_misspelling
+GV-000355,"T Nagari, Chennai, Tamil Nadu 600017",SYNTHETIC,TYPO,en,latin,VERIFIED,Tamil Nadu,Chennai,,T Nagar,600017,ADEQUATE,False,char_typo
+GV-000081,"HITEC City, Hyderabad, Telangana",SYNTHETIC,PARTIAL_VALID,en,latin,CONSISTENT,Telangana,Hyderabad,,HITEC City,,ADEQUATE,False,
+GV-000732,"Kothrud, Mulshi, Pune, Maharashtra 411038",SYNTHETIC,SUBDISTRICT_MISMATCH,en,latin,CONSISTENT,Maharashtra,Pune,Pune City,Kothrud,411038,COMPLETE,False,subdistrict_mismatch
+GV-000953,Near City Hospital,SYNTHETIC,INCOMPLETE,en,latin,UNABLE_TO_VERIFY,,,,,,MINIMAL,False,
+GV-000044,"Plot 297, Sector 44, Opposite Railway Station, Hauz Khas, Hauz Khas, South Delhi, Delhi 110016",SYNTHETIC,COMPLETE_VALID,en,latin,VERIFIED,Delhi,South Delhi,Hauz Khas,Hauz Khas,110016,COMPLETE,False,
+GV-000298,"Malviya Nagar, जयपुर, Rajasthan 302017",SYNTHETIC,MIXED_LANGUAGE,mixed_hi_en,mixed,VERIFIED,Rajasthan,Jaipur,,Malviya Nagar,302017,ADEQUATE,False,
+GV-000150,"behind Banjara Hills side, Hyderabad, Telangana",SYNTHETIC,INFORMAL_SLANG,en,latin,CONSISTENT,Telangana,Hyderabad,,Banjara Hills,,ADEQUATE,False,
+GV-000824,"Dwarka, South West Delhi, Delhi 411014",SYNTHETIC,PIN_MISMATCH,en,latin,NEEDS_REVIEW,Delhi,South West Delhi,,Dwarka,411014,ADEQUATE,False,pin_circle_mismatch
+GV-000792,"Banjara Hills, Hyderabad, Telangana 411014",SYNTHETIC,PIN_MISMATCH,en,latin,NEEDS_REVIEW,Telangana,Hyderabad,,Banjara Hills,411014,ADEQUATE,False,pin_circle_mismatch
+GV-000354,"Vesui, Surat, Gujarat 395007",SYNTHETIC,TYPO,en,latin,VERIFIED,Gujarat,Surat,,Vesu,395007,ADEQUATE,False,char_typo
+GV-000839,"Andheri East, Mumbai Suburban, Maharashtra 560066",SYNTHETIC,PIN_MISMATCH,en,latin,NEEDS_REVIEW,Maharashtra,Mumbai Suburban,,Andheri East,560066,ADEQUATE,False,pin_circle_mismatch
+GV-000405,"Gokulami, Mysuru, Karnataka 570002",SYNTHETIC,TYPO,en,latin,VERIFIED,Karnataka,Mysuru,,Gokulam,570002,ADEQUATE,False,char_typo
+GV-000918,"Near Bus Stand, Main Market",SYNTHETIC,INCOMPLETE,en,latin,UNABLE_TO_VERIFY,,,,,,MINIMAL,False,
+GV-000389,"Kharadia, Pune, Maharashtra 411014",SYNTHETIC,TYPO,en,latin,VERIFIED,Maharashtra,Pune,,Kharadi,411014,ADEQUATE,False,char_typo
+GV-000557,Rajapur,SYNTHETIC,AMBIGUOUS_LOCALITY,en,latin,AMBIGUOUS,,,,Rajapur,,MINIMAL,True,
+GV-000988,"Maharashtra, Thane West, Thane",SYNTHETIC,WRONG_ADMIN_HIERARCHY,en,latin,CONSISTENT,Maharashtra,Thane,,Thane West,,PARTIAL,False,inverted_hierarchy
+GV-000588,"Dwarka, South Delhi, Delhi 110075",SYNTHETIC,DISTRICT_MISMATCH,en,latin,INCONSISTENT,Delhi,South West Delhi,,Dwarka,110075,ADEQUATE,False,district_mismatch
+GV-000125,"Powai, Mumbai Suburban, Maharashtra",SYNTHETIC,PARTIAL_VALID,en,latin,CONSISTENT,Maharashtra,Mumbai Suburban,,Powai,,ADEQUATE,False,
+GV-000295,"गाव: वांद्रे पश्चिम, तालुका: अंधेरी, जिल्हा: मुंबई उपनगर, राज्य: महाराष्ट्र, पिन: 400050",SYNTHETIC,DEVANAGARI_MARATHI,mr,devanagari,VERIFIED,Maharashtra,Mumbai Suburban,Andheri,Bandra West,400050,COMPLETE,False,
+GV-001063,"Near EON IT Park, Kharadi, Mumbai Suburban, Maharashtra 400069",SYNTHETIC,NEARBY_BUT_WRONG_LOCALITY,en,latin,CONSISTENT,Maharashtra,Mumbai Suburban,,Kharadi,400069,ADEQUATE,False,
+GV-000985,"Delhi, Connaught Place, New Delhi",SYNTHETIC,WRONG_ADMIN_HIERARCHY,en,latin,CONSISTENT,Delhi,New Delhi,,Connaught Place,,PARTIAL,False,inverted_hierarchy
+GV-000815,"Hadapsar, Pune, Maharashtra 560066",SYNTHETIC,PIN_MISMATCH,en,latin,NEEDS_REVIEW,Maharashtra,Pune,,Hadapsar,560066,ADEQUATE,False,pin_circle_mismatch
+GV-000958,"Karnataka, Electronic City, Bengaluru Urban",SYNTHETIC,WRONG_ADMIN_HIERARCHY,en,latin,CONSISTENT,Karnataka,Bengaluru Urban,,Electronic City,,PARTIAL,False,inverted_hierarchy
+GV-000957,"Gujarat, Navrangpura, Ahmedabad",SYNTHETIC,WRONG_ADMIN_HIERARCHY,en,latin,CONSISTENT,Gujarat,Ahmedabad,,Navrangpura,,PARTIAL,False,inverted_hierarchy
+GV-000574,"Hinjewadi, Thane, Maharashtra 411057",SYNTHETIC,DISTRICT_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Pune,,Hinjewadi,411057,ADEQUATE,False,district_mismatch
+GV-000358,"Salt Lakei, Kolkata, West Bengal 700091",SYNTHETIC,TYPO,en,latin,VERIFIED,West Bengal,Kolkata,,Salt Lake,700091,ADEQUATE,False,char_typo
+GV-000492,"Salt Lake, Calcutta, West Bengal 700091",SYNTHETIC,HISTORICAL_ALIAS,en,latin,VERIFIED,West Bengal,Kolkata,,Salt Lake,700091,ADEQUATE,False,historical_alias
+GV-000325,"Indiranagar, बंगळुरू, Karnataka 560038",SYNTHETIC,MIXED_LANGUAGE,mixed_hi_en,mixed,VERIFIED,Karnataka,Bengaluru Urban,,Indiranagar,560038,ADEQUATE,False,
+GV-000501,"Indiranagar, Bangalore, Karnataka 560038",SYNTHETIC,HISTORICAL_ALIAS,en,latin,VERIFIED,Karnataka,Bengaluru Urban,,Indiranagar,560038,ADEQUATE,False,historical_alias
+GV-000967,"Gujarat, Navrangpura, Ahmedabad",SYNTHETIC,WRONG_ADMIN_HIERARCHY,en,latin,CONSISTENT,Gujarat,Ahmedabad,,Navrangpura,,PARTIAL,False,inverted_hierarchy
+GV-000707,"Rajarampuri, Mulshi, Kolhapur, Maharashtra 416008",SYNTHETIC,SUBDISTRICT_MISMATCH,en,latin,CONSISTENT,Maharashtra,Kolhapur,Karvir,Rajarampuri,416008,COMPLETE,False,subdistrict_mismatch
+GV-001048,"Near EON IT Park, Kharadi, Thane, Maharashtra 400601",SYNTHETIC,NEARBY_BUT_WRONG_LOCALITY,en,latin,CONSISTENT,Maharashtra,Thane,,Kharadi,400601,ADEQUATE,False,
+GV-000722,"Rajarampuri, Mulshi, Kolhapur, Maharashtra 416008",SYNTHETIC,SUBDISTRICT_MISMATCH,en,latin,CONSISTENT,Maharashtra,Kolhapur,Karvir,Rajarampuri,416008,COMPLETE,False,subdistrict_mismatch
+GV-000296,"Salt Lake, कोलकाता, West Bengal 700091",SYNTHETIC,MIXED_LANGUAGE,mixed_hi_en,mixed,VERIFIED,West Bengal,Kolkata,,Salt Lake,700091,ADEQUATE,False,
+GV-000790,"Bandra West, Bengaluru Urban, Karnataka 560102",SYNTHETIC,LOCALITY_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Mumbai Suburban,,Bandra West,,ADEQUATE,False,cross_state_locality_mismatch
+GV-000305,"Powai, मुंबई उपनगर, Maharashtra 400076",SYNTHETIC,MIXED_LANGUAGE,mixed_mr_en,mixed,VERIFIED,Maharashtra,Mumbai Suburban,,Powai,400076,ADEQUATE,False,
+GV-000965,"Telangana, HITEC City, Hyderabad",SYNTHETIC,WRONG_ADMIN_HIERARCHY,en,latin,CONSISTENT,Telangana,Hyderabad,,HITEC City,,PARTIAL,False,inverted_hierarchy
+GV-000231,"बंजारा हिल्स, हैदराबाद, तेलंगणा 500034",SYNTHETIC,DEVANAGARI_HINDI,hi,devanagari,VERIFIED,Telangana,Hyderabad,,Banjara Hills,500034,ADEQUATE,False,
+GV-001059,"Near EON IT Park, Kharadi, Pune, Maharashtra 411045",SYNTHETIC,NEARBY_BUT_WRONG_LOCALITY,en,latin,CONSISTENT,Maharashtra,Pune,,Kharadi,411045,ADEQUATE,False,
+GV-000572,"Kothrud, Thane, Maharashtra 411038",SYNTHETIC,DISTRICT_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Pune,,Kothrud,411038,ADEQUATE,False,district_mismatch
+GV-000286,"गाव: विमान नगर, तालुका: हवेली, जिल्हा: पुणे, राज्य: महाराष्ट्र, पिन: 411014",SYNTHETIC,DEVANAGARI_MARATHI,mr,devanagari,VERIFIED,Maharashtra,Pune,Haveli,Viman Nagar,411014,COMPLETE,False,
+GV-000253,"गाव: कोथरूड, तालुका: पुणे शहर, जिल्हा: पुणे, राज्य: महाराष्ट्र, पिन: 411038",SYNTHETIC,DEVANAGARI_MARATHI,mr,devanagari,VERIFIED,Maharashtra,Pune,Pune City,Kothrud,411038,COMPLETE,False,
+GV-000197,"इंदिरानगर, बंगळुरू, कर्नाटक 560038",SYNTHETIC,DEVANAGARI_HINDI,hi,devanagari,VERIFIED,Karnataka,Bengaluru Urban,,Indiranagar,560038,ADEQUATE,False,
+GV-000496,"Adyar, Madras, Tamil Nadu 600020",SYNTHETIC,HISTORICAL_ALIAS,en,latin,VERIFIED,Tamil Nadu,Chennai,,Adyar,600020,ADEQUATE,False,historical_alias
+GV-000625,"Vaishali Nagar, Kolhapur, Rajasthan 302021",SYNTHETIC,DISTRICT_MISMATCH,en,latin,INCONSISTENT,Rajasthan,Jaipur,,Vaishali Nagar,302021,ADEQUATE,False,district_mismatch
+GV-000271,"गाव: ठाणे पश्चिम, तालुका: ठाणे, जिल्हा: ठाणे, राज्य: महाराष्ट्र, पिन: 400601",SYNTHETIC,DEVANAGARI_MARATHI,mr,devanagari,VERIFIED,Maharashtra,Thane,Thane,Thane West,400601,COMPLETE,False,
+GV-000710,"Powai, Mulshi, Mumbai Suburban, Maharashtra 400076",SYNTHETIC,SUBDISTRICT_MISMATCH,en,latin,CONSISTENT,Maharashtra,Mumbai Suburban,Andheri,Powai,400076,COMPLETE,False,subdistrict_mismatch
+GV-000823,"Rajarhat, North 24 Parganas, West Bengal 411014",SYNTHETIC,PIN_MISMATCH,en,latin,NEEDS_REVIEW,West Bengal,North 24 Parganas,,Rajarhat,411014,ADEQUATE,False,pin_circle_mismatch
+GV-000659,"Chennai, Karnataka 600020",SYNTHETIC,STATE_MISMATCH,en,latin,INCONSISTENT,Tamil Nadu,Chennai,,,600020,PARTIAL,False,state_mismatch
+GV-000698,"Kothrud, Mulshi, Pune, Maharashtra 411038",SYNTHETIC,SUBDISTRICT_MISMATCH,en,latin,CONSISTENT,Maharashtra,Pune,Pune City,Kothrud,411038,COMPLETE,False,subdistrict_mismatch
+GV-000739,"Andheri East, Bengaluru Urban, Karnataka 560066",SYNTHETIC,LOCALITY_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Mumbai Suburban,,Andheri East,,ADEQUATE,False,cross_state_locality_mismatch
+GV-000889,"Viman Nagar, Pune, Maharashtra 12345",SYNTHETIC,INVALID_PIN,en,latin,NEEDS_REVIEW,Maharashtra,Pune,,Viman Nagar,,PARTIAL,False,invalid_pin_format
+GV-000791,"Whitefield, Bengaluru Urban, Karnataka 411014",SYNTHETIC,PIN_MISMATCH,en,latin,NEEDS_REVIEW,Karnataka,Bengaluru Urban,,Whitefield,411014,ADEQUATE,False,pin_circle_mismatch
+GV-000693,"Viman Nagar, Mulshi, Pune, Maharashtra 411014",SYNTHETIC,SUBDISTRICT_MISMATCH,en,latin,CONSISTENT,Maharashtra,Pune,Haveli,Viman Nagar,411014,COMPLETE,False,subdistrict_mismatch
+GV-000363,"Salt Lakei, Kolkata, West Bengal 700091",SYNTHETIC,TYPO,en,latin,VERIFIED,West Bengal,Kolkata,,Salt Lake,700091,ADEQUATE,False,char_typo
+GV-000560,Rajapur,SYNTHETIC,AMBIGUOUS_LOCALITY,en,latin,AMBIGUOUS,,,,Rajapur,,MINIMAL,True,
+GV-000351,"Thane Westi, Thane, Maharashtra 400601",SYNTHETIC,TYPO,en,latin,VERIFIED,Maharashtra,Thane,,Thane West,400601,ADEQUATE,False,char_typo
+GV-000546,Fatehpur,SYNTHETIC,AMBIGUOUS_LOCALITY,en,latin,AMBIGUOUS,,,,Fatehpur,,MINIMAL,True,
+GV-000935,"Shop 12, MG Road",SYNTHETIC,INCOMPLETE,en,latin,UNABLE_TO_VERIFY,,,,,,MINIMAL,False,
+GV-000471,"Adyar, Madras, Tamil Nadu 600020",SYNTHETIC,HISTORICAL_ALIAS,en,latin,VERIFIED,Tamil Nadu,Chennai,,Adyar,600020,ADEQUATE,False,historical_alias
+GV-000178,"behind Rajarhat area, North 24 Parganas, West Bengal",SYNTHETIC,INFORMAL_SLANG,en,latin,CONSISTENT,West Bengal,North 24 Parganas,,Rajarhat,,ADEQUATE,False,
+GV-000980,"Maharashtra, Andheri East, Mumbai Suburban",SYNTHETIC,WRONG_ADMIN_HIERARCHY,en,latin,CONSISTENT,Maharashtra,Mumbai Suburban,,Andheri East,,PARTIAL,False,inverted_hierarchy
+GV-000322,"Rajarhat, उत्तर 24 परगना, West Bengal 700135",SYNTHETIC,MIXED_LANGUAGE,mixed_hi_en,mixed,VERIFIED,West Bengal,North 24 Parganas,,Rajarhat,700135,ADEQUATE,False,
+GV-000386,"Indiranagari, Bengaluru Urban, Karnataka 560038",SYNTHETIC,TYPO,en,latin,VERIFIED,Karnataka,Bengaluru Urban,,Indiranagar,560038,ADEQUATE,False,char_typo
+GV-000539,Rampur,SYNTHETIC,AMBIGUOUS_LOCALITY,en,latin,AMBIGUOUS,,,,Rampur,,MINIMAL,True,
+GV-000490,"Powai, Bombay, Maharashtra 400076",SYNTHETIC,HISTORICAL_ALIAS,en,latin,VERIFIED,Maharashtra,Mumbai Suburban,,Powai,400076,ADEQUATE,False,historical_alias
+GV-001043,"Near EON IT Park, Kharadi, Mumbai Suburban, Maharashtra 400069",SYNTHETIC,NEARBY_BUT_WRONG_LOCALITY,en,latin,CONSISTENT,Maharashtra,Mumbai Suburban,,Kharadi,400069,ADEQUATE,False,
+GV-001054,"Near EON IT Park, Kharadi, Mumbai Suburban, Maharashtra 400069",SYNTHETIC,NEARBY_BUT_WRONG_LOCALITY,en,latin,CONSISTENT,Maharashtra,Mumbai Suburban,,Kharadi,400069,ADEQUATE,False,
+GV-000575,"Kothrud, Mumbai Suburban, Maharashtra 411038",SYNTHETIC,DISTRICT_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Pune,,Kothrud,411038,ADEQUATE,False,district_mismatch
+GV-000213,"ठाणे पश्चिम, ठाणे, महाराष्ट्र 400601",SYNTHETIC,DEVANAGARI_HINDI,hi,devanagari,VERIFIED,Maharashtra,Thane,,Thane West,400601,ADEQUATE,False,
+GV-000532,Aurangabad,SYNTHETIC,AMBIGUOUS_LOCALITY,en,latin,AMBIGUOUS,,,,Aurangabad,,MINIMAL,True,
+GV-000142,"opposite to T Nagar chowk, Chennai, Tamil Nadu",SYNTHETIC,INFORMAL_SLANG,en,latin,CONSISTENT,Tamil Nadu,Chennai,,T Nagar,,ADEQUATE,False,
+GV-000723,"Powai, Mulshi, Mumbai Suburban, Maharashtra 400076",SYNTHETIC,SUBDISTRICT_MISMATCH,en,latin,CONSISTENT,Maharashtra,Mumbai Suburban,Andheri,Powai,400076,COMPLETE,False,subdistrict_mismatch
+GV-000064,"Suite 471, Sobha Dream Acres, Behind HP Petrol Pump, Andheri East, Andheri, Mumbai Suburban, Maharashtra 400069",SYNTHETIC,COMPLETE_VALID,en,latin,VERIFIED,Maharashtra,Mumbai Suburban,Andheri,Andheri East,400069,COMPLETE,False,
+GV-000745,"Hinjewadi, Mysuru, Karnataka 570002",SYNTHETIC,LOCALITY_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Pune,,Hinjewadi,,ADEQUATE,False,cross_state_locality_mismatch
+GV-000754,"Kothrud, Bengaluru Urban, Karnataka 560034",SYNTHETIC,LOCALITY_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Pune,,Kothrud,,ADEQUATE,False,cross_state_locality_mismatch
+GV-000869,"Powai, Mumbai Suburban, Maharashtra 41101A",SYNTHETIC,INVALID_PIN,en,latin,NEEDS_REVIEW,Maharashtra,Mumbai Suburban,,Powai,,PARTIAL,False,invalid_pin_format
+GV-000894,"Karol Bagh, Central Delhi, Delhi 12345",SYNTHETIC,INVALID_PIN,en,latin,NEEDS_REVIEW,Delhi,Central Delhi,,Karol Bagh,,PARTIAL,False,invalid_pin_format
+GV-000483,"Electronic City, Bangalore, Karnataka 560100",SYNTHETIC,HISTORICAL_ALIAS,en,latin,VERIFIED,Karnataka,Bengaluru Urban,,Electronic City,560100,ADEQUATE,False,historical_alias
+GV-000943,"Shop 12, MG Road",SYNTHETIC,INCOMPLETE,en,latin,UNABLE_TO_VERIFY,,,,,,MINIMAL,False,
+GV-000627,"Kolhapur, Karnataka 416008",SYNTHETIC,STATE_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Kolhapur,,,416008,PARTIAL,False,state_mismatch
+GV-000794,"Whitefield, Bengaluru Urban, Karnataka 411014",SYNTHETIC,PIN_MISMATCH,en,latin,NEEDS_REVIEW,Karnataka,Bengaluru Urban,,Whitefield,411014,ADEQUATE,False,pin_circle_mismatch
+GV-000514,"T Nagar, Madras, Tamil Nadu 600017",SYNTHETIC,HISTORICAL_ALIAS,en,latin,VERIFIED,Tamil Nadu,Chennai,,T Nagar,600017,ADEQUATE,False,historical_alias
+GV-000421,"Vaishali Nagar, Jaipur, Rajasthan 302021",SYNTHETIC,MISSPELLING,en,latin,VERIFIED,Rajasthan,Jaipur,,Vaishali Nagar,302021,ADEQUATE,False,phonetic_misspelling
+GV-000209,"हौज खास, दक्षिण दिल्ली, दिल्ली 110016",SYNTHETIC,DEVANAGARI_HINDI,hi,devanagari,VERIFIED,Delhi,South Delhi,,Hauz Khas,110016,ADEQUATE,False,
+GV-000708,"Thane West, Mulshi, Thane, Maharashtra 400601",SYNTHETIC,SUBDISTRICT_MISMATCH,en,latin,CONSISTENT,Maharashtra,Thane,Thane,Thane West,400601,COMPLETE,False,subdistrict_mismatch
+GV-000423,"Banjara Hills, Hyderabad, Telangana 500034",SYNTHETIC,MISSPELLING,en,latin,VERIFIED,Telangana,Hyderabad,,Banjara Hills,500034,ADEQUATE,False,phonetic_misspelling
+GV-000156,"near Powai post, Mumbai Suburban, Maharashtra",SYNTHETIC,INFORMAL_SLANG,en,latin,CONSISTENT,Maharashtra,Mumbai Suburban,,Powai,,ADEQUATE,False,
+GV-000429,"Andheri East, Mumbai Suburban, Maharastra 400069",SYNTHETIC,MISSPELLING,en,latin,VERIFIED,Maharashtra,Mumbai Suburban,,Andheri East,400069,ADEQUATE,False,phonetic_misspelling
+GV-000643,"Thane, Karnataka 400601",SYNTHETIC,STATE_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Thane,,,400601,PARTIAL,False,state_mismatch
+GV-000904,"Near Bus Stand, Main Market",SYNTHETIC,INCOMPLETE,en,latin,UNABLE_TO_VERIFY,,,,,,MINIMAL,False,
+GV-000039,"Tower T1, Vasundhara Complex, Beside Apollo Hospital, Rohini, Rohini, North West Delhi, Delhi 110085",SYNTHETIC,COMPLETE_VALID,en,latin,VERIFIED,Delhi,North West Delhi,Rohini,Rohini,110085,COMPLETE,False,
+GV-000391,"Thane Westi, Thane, Maharashtra 400601",SYNTHETIC,TYPO,en,latin,VERIFIED,Maharashtra,Thane,,Thane West,400601,ADEQUATE,False,char_typo
+GV-000226,"बंजारा हिल्स, हैदराबाद, तेलंगणा 500034",SYNTHETIC,DEVANAGARI_HINDI,hi,devanagari,VERIFIED,Telangana,Hyderabad,,Banjara Hills,500034,ADEQUATE,False,
+GV-000065,"Gokul Dham, 3rd Floor, Near Bus Stand, Navrangpura, Daskroi, Ahmedabad, Gujarat 380009",SYNTHETIC,COMPLETE_VALID,en,latin,VERIFIED,Gujarat,Ahmedabad,Daskroi,Navrangpura,380009,COMPLETE,False,
+GV-000497,"Kharadi, Poona, Maharashtra 411014",SYNTHETIC,HISTORICAL_ALIAS,en,latin,VERIFIED,Maharashtra,Pune,,Kharadi,411014,ADEQUATE,False,historical_alias
+GV-000303,"Hauz Khas, दक्षिण दिल्ली, Delhi 110016",SYNTHETIC,MIXED_LANGUAGE,mixed_hi_en,mixed,VERIFIED,Delhi,South Delhi,,Hauz Khas,110016,ADEQUATE,False,
+GV-000779,"Andheri East, Bengaluru Urban, Karnataka 560038",SYNTHETIC,LOCALITY_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Mumbai Suburban,,Andheri East,,ADEQUATE,False,cross_state_locality_mismatch
+GV-000350,"T Nagar, चेन्नई, Tamil Nadu 600017",SYNTHETIC,MIXED_LANGUAGE,mixed_hi_en,mixed,VERIFIED,Tamil Nadu,Chennai,,T Nagar,600017,ADEQUATE,False,
+GV-000984,"Maharashtra, Powai, Mumbai Suburban",SYNTHETIC,WRONG_ADMIN_HIERARCHY,en,latin,CONSISTENT,Maharashtra,Mumbai Suburban,,Powai,,PARTIAL,False,inverted_hierarchy
+GV-000106,"Hauz Khas, South Delhi, Delhi",SYNTHETIC,PARTIAL_VALID,en,latin,CONSISTENT,Delhi,South Delhi,,Hauz Khas,,ADEQUATE,False,
+GV-000467,"Andheri East, Bombay, Maharashtra 400069",SYNTHETIC,HISTORICAL_ALIAS,en,latin,VERIFIED,Maharashtra,Mumbai Suburban,,Andheri East,400069,ADEQUATE,False,historical_alias
+GV-000544,Bilaspur,SYNTHETIC,AMBIGUOUS_LOCALITY,en,latin,AMBIGUOUS,,,,Bilaspur,,MINIMAL,True,
+GV-000972,"Delhi, Karol Bagh, Central Delhi",SYNTHETIC,WRONG_ADMIN_HIERARCHY,en,latin,CONSISTENT,Delhi,Central Delhi,,Karol Bagh,,PARTIAL,False,inverted_hierarchy
+GV-000055,"Suite 530, Infinity Tower, Near Metro Station, Saket, Saket, South Delhi, Delhi 110017",SYNTHETIC,COMPLETE_VALID,en,latin,VERIFIED,Delhi,South Delhi,Saket,Saket,110017,COMPLETE,False,
+GV-000631,"North 24 Parganas, Karnataka 700135",SYNTHETIC,STATE_MISMATCH,en,latin,INCONSISTENT,West Bengal,North 24 Parganas,,,700135,PARTIAL,False,state_mismatch
+GV-000854,"HITEC City, Hyderabad, Telangana 12345",SYNTHETIC,INVALID_PIN,en,latin,NEEDS_REVIEW,Telangana,Hyderabad,,HITEC City,,PARTIAL,False,invalid_pin_format
+GV-000225,"इंदिरानगर, बंगळुरू, कर्नाटक 560038",SYNTHETIC,DEVANAGARI_HINDI,hi,devanagari,VERIFIED,Karnataka,Bengaluru Urban,,Indiranagar,560038,ADEQUATE,False,
+GV-000679,"Pune, Karnataka 411045",SYNTHETIC,STATE_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Pune,,,411045,PARTIAL,False,state_mismatch
+GV-000755,"Baner, Bengaluru Urban, Karnataka 560100",SYNTHETIC,LOCALITY_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Pune,,Baner,,ADEQUATE,False,cross_state_locality_mismatch
+GV-000035,"Plot 659, Sector 38, Near Metro Station, Kothrud, Pune City, Pune, Maharashtra 411038",SYNTHETIC,COMPLETE_VALID,en,latin,VERIFIED,Maharashtra,Pune,Pune City,Kothrud,411038,COMPLETE,False,
+GV-000973,"Delhi, Karol Bagh, Central Delhi",SYNTHETIC,WRONG_ADMIN_HIERARCHY,en,latin,CONSISTENT,Delhi,Central Delhi,,Karol Bagh,,PARTIAL,False,inverted_hierarchy
+GV-000614,"Rajarhat, Kolkata, West Bengal 700135",SYNTHETIC,DISTRICT_MISMATCH,en,latin,INCONSISTENT,West Bengal,North 24 Parganas,,Rajarhat,700135,ADEQUATE,False,district_mismatch
+GV-001004,"Delhi, Saket, South Delhi",SYNTHETIC,WRONG_ADMIN_HIERARCHY,en,latin,CONSISTENT,Delhi,South Delhi,,Saket,,PARTIAL,False,inverted_hierarchy
+GV-001044,"Near EON IT Park, Kharadi, Mumbai Suburban, Maharashtra 400050",SYNTHETIC,NEARBY_BUT_WRONG_LOCALITY,en,latin,CONSISTENT,Maharashtra,Mumbai Suburban,,Kharadi,400050,ADEQUATE,False,
+GV-001039,"Near EON IT Park, Kharadi, Pune, Maharashtra 411014",SYNTHETIC,NEARBY_BUT_WRONG_LOCALITY,en,latin,CONSISTENT,Maharashtra,Pune,,Kharadi,411014,ADEQUATE,False,
+GV-000689,"Baner, Mulshi, Pune, Maharashtra 411045",SYNTHETIC,SUBDISTRICT_MISMATCH,en,latin,CONSISTENT,Maharashtra,Pune,Haveli,Baner,411045,COMPLETE,False,subdistrict_mismatch
+GV-000613,"Malviya Nagar, Kolhapur, Rajasthan 302017",SYNTHETIC,DISTRICT_MISMATCH,en,latin,INCONSISTENT,Rajasthan,Jaipur,,Malviya Nagar,302017,ADEQUATE,False,district_mismatch
+GV-000805,"Saket, South Delhi, Delhi 411014",SYNTHETIC,PIN_MISMATCH,en,latin,NEEDS_REVIEW,Delhi,South Delhi,,Saket,411014,ADEQUATE,False,pin_circle_mismatch
+GV-000333,"Saket, दक्षिण दिल्ली, Delhi 110017",SYNTHETIC,MIXED_LANGUAGE,mixed_hi_en,mixed,VERIFIED,Delhi,South Delhi,,Saket,110017,ADEQUATE,False,
+GV-000653,"Lucknow, Karnataka 226010",SYNTHETIC,STATE_MISMATCH,en,latin,INCONSISTENT,Uttar Pradesh,Lucknow,,,226010,PARTIAL,False,state_mismatch
+GV-000672,"Thane, Karnataka 400601",SYNTHETIC,STATE_MISMATCH,en,latin,INCONSISTENT,Maharashtra,Thane,,,400601,PARTIAL,False,state_mismatch
+GV-000287,"गाव: बाणेर, तालुका: हवेली, जिल्हा: पुणे, राज्य: महाराष्ट्र, पिन: 411045",SYNTHETIC,DEVANAGARI_MARATHI,mr,devanagari,VERIFIED,Maharashtra,Pune,Haveli,Baner,411045,COMPLETE,False,
+GV-001056,"Near EON IT Park, Kharadi, Pune, Maharashtra 411014",SYNTHETIC,NEARBY_BUT_WRONG_LOCALITY,en,latin,CONSISTENT,Maharashtra,Pune,,Kharadi,411014,ADEQUATE,False,
+GV-000306,"Banjara Hills, हैदराबाद, Telangana 500034",SYNTHETIC,MIXED_LANGUAGE,mixed_hi_en,mixed,VERIFIED,Telangana,Hyderabad,,Banjara Hills,500034,ADEQUATE,False,
+GV-000936,Near City Hospital,SYNTHETIC,INCOMPLETE,en,latin,UNABLE_TO_VERIFY,,,,,,MINIMAL,False,
+GV-000971,"Maharashtra, Thane West, Thane",SYNTHETIC,WRONG_ADMIN_HIERARCHY,en,latin,CONSISTENT,Maharashtra,Thane,,Thane West,,PARTIAL,False,inverted_hierarchy
+GV-000683,"Thane West, Mulshi, Thane, Maharashtra 400601",SYNTHETIC,SUBDISTRICT_MISMATCH,en,latin,CONSISTENT,Maharashtra,Thane,Thane,Thane West,400601,COMPLETE,False,subdistrict_mismatch
+GV-000281,"गाव: खराडी, तालुका: हवेली, जिल्हा: पुणे, राज्य: महाराष्ट्र, पिन: 411014",SYNTHETIC,DEVANAGARI_MARATHI,mr,devanagari,VERIFIED,Maharashtra,Pune,Haveli,Kharadi,411014,COMPLETE,False,
+GV-000080,"Rajarhat, North 24 Parganas, West Bengal",SYNTHETIC,PARTIAL_VALID,en,latin,CONSISTENT,West Bengal,North 24 Parganas,,Rajarhat,,ADEQUATE,False,
+GV-000093,"Electronic City, Bengaluru Urban, Karnataka",SYNTHETIC,PARTIAL_VALID,en,latin,CONSISTENT,Karnataka,Bengaluru Urban,,Electronic City,,ADEQUATE,False,

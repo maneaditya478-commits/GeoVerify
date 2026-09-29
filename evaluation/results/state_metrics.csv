@@ -1,0 +1,10 @@
+state,case_count,state_accuracy,district_accuracy,locality_accuracy,status_accuracy,mean_latency_ms
+Telangana,55,1.0,0.8727,0.8182,0.3636,3.9
+Karnataka,117,0.9573,0.8718,0.8974,0.735,4.36
+West Bengal,70,0.8857,0.4286,0.9143,0.2143,3.88
+Gujarat,37,0.973,0.8919,0.6216,0.0811,4.08
+Maharashtra,455,0.8418,0.8176,0.8879,0.5495,3.35
+Delhi,113,0.8761,0.1062,0.9646,0.531,4.06
+Rajasthan,36,0.8611,0.9167,0.75,0.2222,4.2
+Tamil Nadu,49,0.9592,0.9388,0.7551,0.5714,3.74
+Uttar Pradesh,34,0.9118,0.4706,0.3824,0.5294,4.18

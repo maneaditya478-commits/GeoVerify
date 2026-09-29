@@ -1,8 +1,8 @@
-# GeoVerify India Architecture (Phase 3)
+# GeoVerify India Architecture (Phase 4)
 
 ## 1. System Overview
 
-GeoVerify India is a multi-signal geospatial and administrative consistency verification platform designed specifically for the complexities of Indian addresses.
+GeoVerify India is an open-source, multi-signal geospatial and administrative consistency verification platform designed specifically for the complexities of Indian addresses.
 
 ```mermaid
 flowchart TD
@@ -49,13 +49,22 @@ flowchart TD
         Matcher --> Score3["Entity Match Score (0-100)"]
     end
 
+    subgraph EvaluationFramework [Phase 4 Evaluation & Benchmarking Subsystem]
+        Dataset["Benchmark Dataset (1,065 Cases)"] --> BenchRunner["Benchmark Runner CLI"]
+        BenchRunner --> PipelinePerf["Latency Micro-Benchmarker"]
+        BenchRunner --> MetricsEngine["Multi-Tier Metrics Engine"]
+        BenchRunner --> DiagnosticAnalyzer["12-Bucket Error Analyzer"]
+        MetricsEngine --> Visualizer["Matplotlib Chart Visualizer (7 Figures)"]
+        MetricsEngine --> ReportGen["Markdown Report Generator"]
+    end
+
     ScoringLayer --> Result[Verification Response + Evidence Graph + GeoJSON + Data Sources]
     Result --> Frontend[React / Vite / Leaflet GIS UI]
 ```
 
 ---
 
-## 2. Component Architecture
+## 2. Core Subsystems
 
 ### 2.1 Multilingual & Transliteration Layer (`app/services/transliteration.py`)
 - Detects input script: `Latin`, `Devanagari`, or `Mixed`.
@@ -100,3 +109,11 @@ Produces 3 transparent, deterministic scores:
 1. **Geographic Consistency Score** ($0 - 100$): Cross-signal administrative, geometric, and postal alignment.
 2. **Address Completeness Score** ($0 - 100$): Presence of premise, locality, district, state, and PIN.
 3. **Entity Match Score** ($0 - 100$): Gazetteer resolution confidence for identified entities.
+
+### 2.8 Benchmarking & Evaluation Subsystem (`evaluation/`)
+- `BenchmarkRunner`: End-to-end CLI with smoke tests, custom sizes, and seeds.
+- `MetricsEngine`: Computes multi-tier accuracies, $\text{Recall@}K$, ambiguity precision/recall/F1, and $6 \times 6$ confusion matrices.
+- `DiagnosticErrorAnalyzer`: Maps failures into 12 structured diagnostic failure buckets.
+- `PerformanceProfiler`: Measures per-component micro-latencies across percentiles (P50, P90, P95, P99).
+- `VisualizationEngine`: Generates 7 headless publication-grade Matplotlib plots.
+- `ReportGenerator`: Produces Markdown reports summarizing empirical findings.

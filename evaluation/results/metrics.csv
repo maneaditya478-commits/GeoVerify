@@ -1,0 +1,2 @@
+total_cases,state_accuracy,district_accuracy,subdistrict_accuracy,locality_accuracy,exact_hierarchy_accuracy,candidate_recall_at_1,candidate_recall_at_3,candidate_recall_at_5,candidate_recall_at_10,ambiguity_precision,ambiguity_recall,ambiguity_f1,status_overall_accuracy,status_macro_f1,status_weighted_f1,mean_latency_ms,p50_latency_ms,p95_latency_ms,p99_latency_ms
+1065,0.8861,0.7131,0.3676,0.8545,0.5333,0.444,0.444,0.444,0.444,0.3238,0.6182,0.425,0.5399,0.571,0.5265,3.69,3.46,5.4,6.8

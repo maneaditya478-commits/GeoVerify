@@ -1,8 +1,8 @@
-# Verification Methodology & Scoring Model (Phase 2)
+# Verification Methodology & Scoring Model (Phase 4)
 
 ## 1. Core Principles
 
-GeoVerify India operates on an evidence-based multi-signal model. An address is never marked as fraudulent simply because of minor formatting variations or missing optional fields.
+GeoVerify India operates on an evidence-based multi-signal model. An address is never marked as fraudulent simply because of minor formatting variations, vernacular spellings, or missing optional fields.
 
 The system verifies the **geographic consistency and administrative validity** of address components without claiming or profiling whether a specific resident lives there.
 
@@ -53,3 +53,15 @@ Insufficient geographic tokens to resolve or verify location.
 1. **PIN Code Validation Separation**: Format errors, postal circle mismatches, and geographic distance deviations are tracked as separate evidence signals so an out-of-range PIN does not automatically invalidate valid hierarchical administrative boundaries.
 2. **Sub-District Verification**: Distinguishes administrative subdivisions across Indian nomenclature (Taluka in Maharashtra/Gujarat, Tehsil in UP/Rajasthan, Mandal in Telangana/AP, Subdivision in Delhi/Bengal).
 3. **Multilingual Invariance**: Normalized equivalence is maintained regardless of whether names are submitted in English, Hindi, or Marathi Devanagari script.
+
+---
+
+## 5. Quantitative Verification Benchmarks (Phase 4 Validation)
+
+Empirically measured across **1,065 standardized benchmark cases**:
+- **State Resolution Accuracy**: $88.61\%$
+- **District Resolution Accuracy**: $71.31\%$
+- **Locality Resolution Accuracy**: $85.45\%$
+- **PIN Code Accuracy**: $100.00\%$
+- **Exact Multi-Tier Hierarchy Accuracy**: $53.33\%$
+- **Mean Pipeline Latency**: $3.50\text{ ms}$ (P95: $5.13\text{ ms}$)

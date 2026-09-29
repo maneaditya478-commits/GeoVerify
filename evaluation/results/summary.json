@@ -1,0 +1,375 @@
+{
+  "total_cases": 1065,
+  "entity_resolution": {
+    "state_accuracy": 0.8861,
+    "district_accuracy": 0.7131,
+    "subdistrict_accuracy": 0.3676,
+    "locality_accuracy": 0.8545,
+    "pincode_accuracy": 1.0,
+    "exact_hierarchy_accuracy": 0.5333
+  },
+  "candidate_recall": {
+    "recall_at_1": 0.444,
+    "recall_at_3": 0.444,
+    "recall_at_5": 0.444,
+    "recall_at_10": 0.444
+  },
+  "ambiguity": {
+    "accuracy": 0.9136,
+    "precision": 0.3238,
+    "recall": 0.6182,
+    "f1": 0.425,
+    "tp": 34,
+    "fp": 71,
+    "fn": 21,
+    "tn": 939
+  },
+  "status_classification": {
+    "overall_accuracy": 0.5399,
+    "macro_f1": 0.571,
+    "weighted_f1": 0.5265,
+    "per_class": {
+      "VERIFIED": {
+        "accuracy": 0.7296,
+        "precision": 0.6403,
+        "recall": 0.6593,
+        "f1": 0.6496,
+        "tp": 267,
+        "fp": 150,
+        "fn": 138,
+        "tn": 510,
+        "support": 405
+      },
+      "CONSISTENT": {
+        "accuracy": 0.739,
+        "precision": 0.4902,
+        "recall": 0.2727,
+        "f1": 0.3505,
+        "tp": 75,
+        "fp": 78,
+        "fn": 200,
+        "tn": 712,
+        "support": 275
+      },
+      "NEEDS_REVIEW": {
+        "accuracy": 0.877,
+        "precision": 0.4405,
+        "recall": 0.3058,
+        "f1": 0.361,
+        "tp": 37,
+        "fp": 47,
+        "fn": 84,
+        "tn": 897,
+        "support": 121
+      },
+      "INCONSISTENT": {
+        "accuracy": 0.7822,
+        "precision": 0.3825,
+        "recall": 0.6606,
+        "f1": 0.4844,
+        "tp": 109,
+        "fp": 176,
+        "fn": 56,
+        "tn": 724,
+        "support": 165
+      },
+      "AMBIGUOUS": {
+        "accuracy": 0.9634,
+        "precision": 0.5851,
+        "recall": 1.0,
+        "f1": 0.7383,
+        "tp": 55,
+        "fp": 39,
+        "fn": 0,
+        "tn": 971,
+        "support": 55
+      },
+      "UNABLE_TO_VERIFY": {
+        "accuracy": 0.9887,
+        "precision": 1.0,
+        "recall": 0.7273,
+        "f1": 0.8421,
+        "tp": 32,
+        "fp": 0,
+        "fn": 12,
+        "tn": 1021,
+        "support": 44
+      }
+    },
+    "confusion_matrix": {
+      "VERIFIED": {
+        "VERIFIED": 267,
+        "CONSISTENT": 56,
+        "NEEDS_REVIEW": 14,
+        "INCONSISTENT": 56,
+        "AMBIGUOUS": 12,
+        "UNABLE_TO_VERIFY": 0
+      },
+      "CONSISTENT": {
+        "VERIFIED": 103,
+        "CONSISTENT": 75,
+        "NEEDS_REVIEW": 16,
+        "INCONSISTENT": 77,
+        "AMBIGUOUS": 4,
+        "UNABLE_TO_VERIFY": 0
+      },
+      "NEEDS_REVIEW": {
+        "VERIFIED": 21,
+        "CONSISTENT": 19,
+        "NEEDS_REVIEW": 37,
+        "INCONSISTENT": 43,
+        "AMBIGUOUS": 1,
+        "UNABLE_TO_VERIFY": 0
+      },
+      "INCONSISTENT": {
+        "VERIFIED": 26,
+        "CONSISTENT": 3,
+        "NEEDS_REVIEW": 5,
+        "INCONSISTENT": 109,
+        "AMBIGUOUS": 22,
+        "UNABLE_TO_VERIFY": 0
+      },
+      "AMBIGUOUS": {
+        "VERIFIED": 0,
+        "CONSISTENT": 0,
+        "NEEDS_REVIEW": 0,
+        "INCONSISTENT": 0,
+        "AMBIGUOUS": 55,
+        "UNABLE_TO_VERIFY": 0
+      },
+      "UNABLE_TO_VERIFY": {
+        "VERIFIED": 0,
+        "CONSISTENT": 0,
+        "NEEDS_REVIEW": 12,
+        "INCONSISTENT": 0,
+        "AMBIGUOUS": 0,
+        "UNABLE_TO_VERIFY": 32
+      }
+    }
+  },
+  "score_statistics": {
+    "consistency_score": {
+      "mean": 76.12,
+      "median": 84.0,
+      "std": 20.79,
+      "min": 12,
+      "max": 100
+    },
+    "completeness_score": {
+      "mean": 73.78,
+      "median": 85.0,
+      "std": 22.12,
+      "min": 5,
+      "max": 100
+    },
+    "entity_match_score": {
+      "mean": 74.53,
+      "median": 77.0,
+      "std": 18.96,
+      "min": 0.0,
+      "max": 90.0
+    }
+  },
+  "script_metrics": {
+    "latin": {
+      "count": 900,
+      "exact_hierarchy_acc": 0.5367,
+      "status_acc": 0.5178,
+      "mean_latency_ms": 3.68
+    },
+    "devanagari": {
+      "count": 110,
+      "exact_hierarchy_acc": 0.4091,
+      "status_acc": 0.7364,
+      "mean_latency_ms": 3.64
+    },
+    "mixed": {
+      "count": 55,
+      "exact_hierarchy_acc": 0.7273,
+      "status_acc": 0.5091,
+      "mean_latency_ms": 4.0
+    }
+  },
+  "category_metrics": {
+    "TYPO": {
+      "count": 55,
+      "status_acc": 0.7818,
+      "exact_hierarchy_acc": 0.7636,
+      "mean_consistency_score": 92.04
+    },
+    "STATE_MISMATCH": {
+      "count": 55,
+      "status_acc": 0.6,
+      "exact_hierarchy_acc": 0.0,
+      "mean_consistency_score": 49.36
+    },
+    "MISSPELLING": {
+      "count": 55,
+      "status_acc": 0.3818,
+      "exact_hierarchy_acc": 0.5818,
+      "mean_consistency_score": 83.36
+    },
+    "DEVANAGARI_HINDI": {
+      "count": 55,
+      "status_acc": 0.6364,
+      "exact_hierarchy_acc": 0.2727,
+      "mean_consistency_score": 86.67
+    },
+    "LOCALITY_MISMATCH": {
+      "count": 55,
+      "status_acc": 0.7091,
+      "exact_hierarchy_acc": 0.0,
+      "mean_consistency_score": 72.22
+    },
+    "PIN_MISMATCH": {
+      "count": 55,
+      "status_acc": 0.4364,
+      "exact_hierarchy_acc": 0.6909,
+      "mean_consistency_score": 70.07
+    },
+    "INFORMAL_SLANG": {
+      "count": 55,
+      "status_acc": 0.5273,
+      "exact_hierarchy_acc": 0.1273,
+      "mean_consistency_score": 67.96
+    },
+    "WRONG_ADMIN_HIERARCHY": {
+      "count": 55,
+      "status_acc": 0.4,
+      "exact_hierarchy_acc": 0.7273,
+      "mean_consistency_score": 76.09
+    },
+    "PARTIAL_VALID": {
+      "count": 55,
+      "status_acc": 0.4364,
+      "exact_hierarchy_acc": 0.8,
+      "mean_consistency_score": 80.35
+    },
+    "AMBIGUOUS_LOCALITY": {
+      "count": 55,
+      "status_acc": 1.0,
+      "exact_hierarchy_acc": 1.0,
+      "mean_consistency_score": 50.76
+    },
+    "DISTRICT_MISMATCH": {
+      "count": 55,
+      "status_acc": 0.6727,
+      "exact_hierarchy_acc": 0.0182,
+      "mean_consistency_score": 73.16
+    },
+    "COMPLETE_VALID": {
+      "count": 75,
+      "status_acc": 0.6933,
+      "exact_hierarchy_acc": 0.1867,
+      "mean_consistency_score": 88.33
+    },
+    "NEARBY_BUT_WRONG_LOCALITY": {
+      "count": 55,
+      "status_acc": 0.0,
+      "exact_hierarchy_acc": 1.0,
+      "mean_consistency_score": 82.55
+    },
+    "HISTORICAL_ALIAS": {
+      "count": 55,
+      "status_acc": 0.7636,
+      "exact_hierarchy_acc": 0.9273,
+      "mean_consistency_score": 90.31
+    },
+    "DEVANAGARI_MARATHI": {
+      "count": 55,
+      "status_acc": 0.8364,
+      "exact_hierarchy_acc": 0.5455,
+      "mean_consistency_score": 92.33
+    },
+    "MIXED_LANGUAGE": {
+      "count": 55,
+      "status_acc": 0.5091,
+      "exact_hierarchy_acc": 0.7273,
+      "mean_consistency_score": 84.53
+    },
+    "INVALID_PIN": {
+      "count": 55,
+      "status_acc": 0.0364,
+      "exact_hierarchy_acc": 0.8182,
+      "mean_consistency_score": 76.89
+    },
+    "SUBDISTRICT_MISMATCH": {
+      "count": 55,
+      "status_acc": 0.0,
+      "exact_hierarchy_acc": 0.0727,
+      "mean_consistency_score": 94.58
+    },
+    "INCOMPLETE": {
+      "count": 55,
+      "status_acc": 0.7818,
+      "exact_hierarchy_acc": 1.0,
+      "mean_consistency_score": 30.36
+    }
+  },
+  "latency": {
+    "mean_ms": 3.69,
+    "median_ms": 3.46,
+    "p50_ms": 3.46,
+    "p90_ms": 4.87,
+    "p95_ms": 5.4,
+    "p99_ms": 6.8,
+    "min_ms": 1.14,
+    "max_ms": 58.05
+  },
+  "component_performance": {
+    "repetitions_per_sample": 20,
+    "total_runs_per_component": 100,
+    "components": {
+      "address_normalizer": {
+        "mean_ms": 0.104,
+        "median_ms": 0.086,
+        "p50_ms": 0.086,
+        "p90_ms": 0.148,
+        "p95_ms": 0.162,
+        "p99_ms": 0.275,
+        "min_ms": 0.061,
+        "max_ms": 0.404
+      },
+      "indic_transliteration": {
+        "mean_ms": 0.024,
+        "median_ms": 0.019,
+        "p50_ms": 0.019,
+        "p90_ms": 0.032,
+        "p95_ms": 0.04,
+        "p99_ms": 0.052,
+        "min_ms": 0.016,
+        "max_ms": 0.053
+      },
+      "address_parser": {
+        "mean_ms": 0.431,
+        "median_ms": 0.444,
+        "p50_ms": 0.444,
+        "p90_ms": 0.66,
+        "p95_ms": 0.802,
+        "p99_ms": 0.896,
+        "min_ms": 0.123,
+        "max_ms": 0.915
+      },
+      "entity_resolution": {
+        "mean_ms": 1.523,
+        "median_ms": 1.481,
+        "p50_ms": 1.481,
+        "p90_ms": 1.923,
+        "p95_ms": 2.107,
+        "p99_ms": 2.243,
+        "min_ms": 1.121,
+        "max_ms": 2.31
+      },
+      "verification_engine_pipeline": {
+        "mean_ms": 3.346,
+        "median_ms": 3.267,
+        "p50_ms": 3.267,
+        "p90_ms": 4.282,
+        "p95_ms": 4.572,
+        "p99_ms": 4.945,
+        "min_ms": 2.081,
+        "max_ms": 6.48
+      }
+    }
+  }
+}
