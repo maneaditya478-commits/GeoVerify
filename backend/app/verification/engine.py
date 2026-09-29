@@ -76,12 +76,12 @@ class VerificationEngine:
         struct = request.structured
 
         if struct:
-            locality_in = struct.locality or struct.address_line
-            subdistrict_in = struct.subdistrict
+            locality_in = struct.locality or struct.address_line or request.locality
+            subdistrict_in = struct.subdistrict or request.subdistrict
             city_in = struct.city
-            district_in = struct.district or struct.city
-            state_in = struct.state
-            pincode_in = struct.pincode
+            district_in = struct.district or struct.city or request.district
+            state_in = struct.state or request.state
+            pincode_in = struct.pincode or request.pincode
             parsed = ParsedAddress(
                 premise=struct.address_line,
                 locality=locality_in,
@@ -94,12 +94,17 @@ class VerificationEngine:
             )
         else:
             parsed = AddressParser.parse(raw_text)
-            locality_in = parsed.locality
-            subdistrict_in = parsed.subdistrict
+            locality_in = request.locality or parsed.locality
+            subdistrict_in = request.subdistrict or parsed.subdistrict
             city_in = parsed.city
-            district_in = parsed.district
-            state_in = parsed.state
-            pincode_in = parsed.pincode
+            district_in = request.district or parsed.district
+            state_in = request.state or parsed.state
+            pincode_in = request.pincode or parsed.pincode
+            if request.locality: parsed.locality = request.locality
+            if request.subdistrict: parsed.subdistrict = request.subdistrict
+            if request.district: parsed.district = request.district
+            if request.state: parsed.state = request.state
+            if request.pincode: parsed.pincode = request.pincode
 
         # 2. Address Normalization
         normalized: NormalizedAddress = AddressNormalizer.normalize_address(

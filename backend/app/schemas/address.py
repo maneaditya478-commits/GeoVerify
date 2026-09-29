@@ -21,6 +21,11 @@ class StructuredAddressRequest(BaseModel):
 class VerificationRequest(BaseModel):
     address: Optional[str] = Field(None, json_schema_extra={"example": "Kharadi, Pune, Maharashtra 411014"})
     structured: Optional[StructuredAddressRequest] = None
+    locality: Optional[str] = None
+    subdistrict: Optional[str] = None
+    district: Optional[str] = None
+    state: Optional[str] = None
+    pincode: Optional[str] = None
     radius_km: Optional[float] = Field(5.0, ge=0.5, le=50.0, description="Nearby search radius in km")
     include_geojson: bool = Field(True, description="Whether to include GeoJSON boundaries in response")
 

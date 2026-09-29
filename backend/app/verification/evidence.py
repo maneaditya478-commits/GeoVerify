@@ -1,10 +1,16 @@
-"""Evidence extraction and explainability narrative generator for GeoVerify India."""
+"""Evidence extraction and explainability narrative generator for GeoVerify India (Phase 7.3)."""
 
 from typing import List, Tuple
 from app.config import settings
 from app.schemas.address import NormalizedAddress, ParsedAddress, GeocodingResult
 from app.schemas.hierarchy import AdministrativeHierarchyResult
-from app.schemas.verification import EvidenceItem, BoundaryVerificationResult, PinVerificationResult
+from app.schemas.verification import (
+    EvidenceItem,
+    EvidenceSeverity,
+    EvidenceSemanticState,
+    BoundaryVerificationResult,
+    PinVerificationResult,
+)
 from app.schemas.nearby import NearbyPlace
 
 
@@ -35,6 +41,7 @@ class EvidenceEngine:
                     passed=True,
                     status="PASSED",
                     severity="INFO",
+                    semantic_state=EvidenceSemanticState.SUPPORTED,
                     weight=10,
                     score_contribution=10.0,
                     title="State Authority Match",
@@ -48,6 +55,7 @@ class EvidenceEngine:
                     passed=False,
                     status="FAILED",
                     severity="CONFLICT",
+                    semantic_state=EvidenceSemanticState.CONFLICTING,
                     weight=10,
                     score_contribution=0.0,
                     title="State Authority Match",
@@ -55,6 +63,20 @@ class EvidenceEngine:
                 ))
                 explanation.append(f"✗ Unrecognized state '{hierarchy.state}'")
                 warnings.append(f"State '{hierarchy.state}' not found in administrative records.")
+        else:
+            items.append(EvidenceItem(
+                code="STATE_MISSING",
+                category="hierarchy",
+                passed=False,
+                status="SKIPPED",
+                severity="INFO",
+                semantic_state=EvidenceSemanticState.MISSING,
+                weight=10,
+                score_contribution=3.0,
+                title="State Information",
+                description="State name omitted from input text."
+            ))
+            explanation.append("— State omitted from input")
 
         if hierarchy.district:
             dist_node = next((n for n in hierarchy.hierarchy_chain if n.level == "district"), None)
@@ -65,6 +87,7 @@ class EvidenceEngine:
                     passed=True,
                     status="PASSED",
                     severity="INFO",
+                    semantic_state=EvidenceSemanticState.SUPPORTED,
                     weight=15,
                     score_contribution=15.0,
                     title="District Administrative Hierarchy",
@@ -78,6 +101,7 @@ class EvidenceEngine:
                     passed=False,
                     status="FAILED",
                     severity="CONFLICT",
+                    semantic_state=EvidenceSemanticState.CONFLICTING,
                     weight=15,
                     score_contribution=0.0,
                     title="District Administrative Hierarchy",
@@ -85,6 +109,20 @@ class EvidenceEngine:
                 ))
                 explanation.append(f"✗ District mismatch: {dist_node.evidence if dist_node else 'Invalid district'}")
                 warnings.append(dist_node.evidence if dist_node else f"District hierarchy mismatch detected.")
+        else:
+            items.append(EvidenceItem(
+                code="DISTRICT_MISSING",
+                category="hierarchy",
+                passed=False,
+                status="SKIPPED",
+                severity="INFO",
+                semantic_state=EvidenceSemanticState.MISSING,
+                weight=15,
+                score_contribution=4.0,
+                title="District Information",
+                description="District omitted from input text."
+            ))
+            explanation.append("— District omitted from input")
 
         # 2. Geometric Boundary Match Evidence (Weight: 25)
         if geocoding:
@@ -95,6 +133,7 @@ class EvidenceEngine:
                     passed=True,
                     status="PASSED",
                     severity="INFO",
+                    semantic_state=EvidenceSemanticState.SUPPORTED,
                     weight=10,
                     score_contribution=10.0,
                     title="State Polygon Containment",
@@ -108,6 +147,7 @@ class EvidenceEngine:
                     passed=False,
                     status="FAILED",
                     severity="CONFLICT",
+                    semantic_state=EvidenceSemanticState.CONFLICTING,
                     weight=10,
                     score_contribution=0.0,
                     title="State Polygon Containment",
@@ -123,6 +163,7 @@ class EvidenceEngine:
                     passed=True,
                     status="PASSED",
                     severity="INFO",
+                    semantic_state=EvidenceSemanticState.SUPPORTED,
                     weight=15,
                     score_contribution=15.0,
                     title="District Polygon Containment",
@@ -136,6 +177,7 @@ class EvidenceEngine:
                     passed=False,
                     status="FAILED",
                     severity="CONFLICT",
+                    semantic_state=EvidenceSemanticState.CONFLICTING,
                     weight=15,
                     score_contribution=0.0,
                     title="District Polygon Containment",
@@ -144,18 +186,21 @@ class EvidenceEngine:
                 explanation.append(f"✗ Coordinates outside expected district boundary (detected: {boundary.detected_district or 'None'})")
                 warnings.append(f"Coordinates fall inside district '{boundary.detected_district or 'unknown'}', which conflicts with asserted district.")
         else:
+            # Missing coordinates: treat as uncoordinated baseline support if hierarchy is consistent
+            boundary_support = 15.0 if hierarchy.is_consistent and bool(hierarchy.district or hierarchy.state) else 5.0
             items.append(EvidenceItem(
                 code="NO_COORDINATES",
                 category="boundary",
                 passed=False,
                 status="SKIPPED",
-                severity="WARNING",
+                severity="INFO",
+                semantic_state=EvidenceSemanticState.MISSING,
                 weight=25,
-                score_contribution=0.0,
+                score_contribution=boundary_support,
                 title="Geospatial Boundary Check",
-                description="Unable to perform point-in-polygon verification because coordinates could not be resolved."
+                description="Spatial boundary check skipped because coordinates could not be resolved from text alone."
             ))
-            explanation.append("✗ Coordinates could not be resolved for boundary verification")
+            explanation.append("— Boundary check skipped (uncoordinated text)")
 
         # 3. Locality Match Evidence (Weight: 20)
         loc_name = normalized.locality or parsed.locality
@@ -168,6 +213,7 @@ class EvidenceEngine:
                     passed=True,
                     status="PASSED",
                     severity="INFO",
+                    semantic_state=EvidenceSemanticState.SUPPORTED,
                     weight=20,
                     score_contribution=20.0,
                     title="Locality Consistency",
@@ -181,6 +227,7 @@ class EvidenceEngine:
                     passed=False,
                     status="WARNING",
                     severity="CONFLICT",
+                    semantic_state=EvidenceSemanticState.CONFLICTING,
                     weight=20,
                     score_contribution=5.0,
                     title="Locality Consistency",
@@ -193,10 +240,11 @@ class EvidenceEngine:
                 code="LOCALITY_MISSING",
                 category="locality",
                 passed=False,
-                status="WARNING",
-                severity="WARNING",
+                status="SKIPPED",
+                severity="INFO",
+                semantic_state=EvidenceSemanticState.MISSING,
                 weight=20,
-                score_contribution=5.0,
+                score_contribution=8.0,
                 title="Locality Information",
                 description="No specific locality / village identified in address."
             ))
@@ -211,6 +259,7 @@ class EvidenceEngine:
                     passed=True,
                     status="PASSED",
                     severity="INFO",
+                    semantic_state=EvidenceSemanticState.SUPPORTED,
                     weight=15,
                     score_contribution=15.0,
                     title="PIN Code Consistency",
@@ -223,9 +272,10 @@ class EvidenceEngine:
                     category="pincode",
                     passed=False,
                     status="WARNING",
-                    severity="WARNING",
+                    severity="CONFLICT",
+                    semantic_state=EvidenceSemanticState.CONFLICTING,
                     weight=15,
-                    score_contribution=5.0,
+                    score_contribution=3.0,
                     title="PIN Code Discrepancy",
                     description=pin.evidence
                 ))
@@ -238,6 +288,7 @@ class EvidenceEngine:
                     passed=False,
                     status="FAILED",
                     severity="CONFLICT",
+                    semantic_state=EvidenceSemanticState.CONFLICTING,
                     weight=15,
                     score_contribution=0.0,
                     title="PIN Code Format",
@@ -251,9 +302,10 @@ class EvidenceEngine:
                 category="pincode",
                 passed=False,
                 status="SKIPPED",
-                severity="WARNING",
+                severity="INFO",
+                semantic_state=EvidenceSemanticState.MISSING,
                 weight=15,
-                score_contribution=5.0,
+                score_contribution=6.0,
                 title="PIN Code Check",
                 description="No PIN code provided in input address."
             ))
@@ -268,6 +320,7 @@ class EvidenceEngine:
                 passed=True,
                 status="PASSED",
                 severity="INFO",
+                semantic_state=EvidenceSemanticState.SUPPORTED,
                 weight=10,
                 score_contribution=geocoding_score,
                 title="Geocoding Quality",
@@ -279,15 +332,15 @@ class EvidenceEngine:
                 code="GEOCODING_UNRESOLVED",
                 category="geocoding",
                 passed=False,
-                status="FAILED",
-                severity="WARNING",
+                status="SKIPPED",
+                severity="INFO",
+                semantic_state=EvidenceSemanticState.MISSING,
                 weight=10,
-                score_contribution=0.0,
+                score_contribution=5.0,
                 title="Geocoding Quality",
                 description="Could not resolve geographic coordinates for the address."
             ))
-            explanation.append("✗ Unable to geocode address to coordinates")
-            warnings.append("Geocoding service could not establish latitude/longitude.")
+            explanation.append("— Unable to geocode address to coordinates")
 
         # 6. Nearby Entities Evidence (Weight: 5)
         if nearby and len(nearby) > 0:
@@ -297,6 +350,7 @@ class EvidenceEngine:
                 passed=True,
                 status="PASSED",
                 severity="INFO",
+                semantic_state=EvidenceSemanticState.SUPPORTED,
                 weight=5,
                 score_contribution=5.0,
                 title="Nearby Entity Context",
@@ -308,8 +362,9 @@ class EvidenceEngine:
                 code="NEARBY_NONE",
                 category="nearby",
                 passed=False,
-                status="WARNING",
+                status="SKIPPED",
                 severity="INFO",
+                semantic_state=EvidenceSemanticState.MISSING,
                 weight=5,
                 score_contribution=2.0,
                 title="Nearby Entity Context",

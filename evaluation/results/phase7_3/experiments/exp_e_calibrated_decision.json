@@ -1,0 +1,21 @@
+{
+  "experiment_id": "EXP_E_CALIBRATED_DECISION",
+  "configuration_name": "Calibrated Decision Thresholds",
+  "description": "Calibrated score bands (VERIFIED >= 80, CONSISTENT >= 60, NEEDS_REVIEW calibrated)",
+  "pin_accuracy_pct": 93.46,
+  "state_accuracy_pct": 94.23,
+  "district_accuracy_pct": 93.46,
+  "locality_accuracy_pct": 84.23,
+  "recall_at_1_pct": 82.31,
+  "recall_at_5_pct": 97.31,
+  "ambiguity_f1": 0.896,
+  "clean_status_accuracy_pct": 90.0,
+  "ocr_status_accuracy_pct": 82.5,
+  "clean_ocr_gap_pct": 7.5,
+  "decision_accuracy_pct": 88.08,
+  "macro_f1": 0.836,
+  "weighted_f1": 0.881,
+  "needs_review_f1": 0.742,
+  "mean_latency_ms": 157.4,
+  "p95_latency_ms": 285.6
+}

@@ -1,0 +1,21 @@
+{
+  "experiment_id": "EXP_F_COMBINED_PHASE7_3",
+  "configuration_name": "Combined Model (Phase 7.3)",
+  "description": "Full Phase 7.3: Missing-as-Neutral + Partial Semantics + Provenance + Decision Calibration",
+  "pin_accuracy_pct": 93.46,
+  "state_accuracy_pct": 94.23,
+  "district_accuracy_pct": 93.46,
+  "locality_accuracy_pct": 84.23,
+  "recall_at_1_pct": 82.31,
+  "recall_at_5_pct": 97.31,
+  "ambiguity_f1": 0.902,
+  "clean_status_accuracy_pct": 90.42,
+  "ocr_status_accuracy_pct": 83.75,
+  "clean_ocr_gap_pct": 6.67,
+  "decision_accuracy_pct": 88.85,
+  "macro_f1": 0.846,
+  "weighted_f1": 0.889,
+  "needs_review_f1": 0.762,
+  "mean_latency_ms": 156.8,
+  "p95_latency_ms": 284.2
+}

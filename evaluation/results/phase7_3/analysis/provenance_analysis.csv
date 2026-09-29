@@ -1,0 +1,8 @@
+channel_name,support_count,correct_count,incorrect_count,conflict_count,missing_count,precision,status_impact,calibrated_weight
+EXPLICIT,1168,896,272,267,0,76.71,344.62,1.0
+OCR_REPAIRED,46,39,7,7,0,84.78,15.0,0.95
+PIN_RECOVERY,20,20,0,0,0,100.0,7.69,0.88
+ADMIN_CONTEXT_RECOVERY,0,0,0,0,0,85.0,10.0,0.82
+FUZZY_MATCH,0,0,0,0,0,85.0,10.0,0.78
+PHONETIC_MATCH,0,0,0,0,0,85.0,10.0,0.75
+SPATIAL_MATCH,0,0,0,0,0,85.0,10.0,0.85

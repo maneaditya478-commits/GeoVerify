@@ -68,7 +68,7 @@ class VerificationDecisionEngine:
         )
 
         # Rule 1: Insufficient Geographic Anchors -> UNABLE_TO_VERIFY
-        if not hierarchy.state and not hierarchy.district and not hierarchy.locality and not pin.pincode:
+        if not hierarchy.state and not hierarchy.district and not hierarchy.locality and (not pin.pincode or not pin.matched):
             rationale.append("No authoritative administrative, postal, or locality tokens were found in the input address.")
             return VerificationDecision(
                 status=VerificationStatus.UNABLE_TO_VERIFY,
@@ -108,12 +108,12 @@ class VerificationDecisionEngine:
                 confidence_level="HIGH"
             )
 
-        # Rule 4: Postal Mismatch or Borderline Evidence -> NEEDS_REVIEW
-        if has_pin_mismatch or consistency_score < 70:
+        # Rule 4: Postal Mismatch or Low Consistency Score -> NEEDS_REVIEW
+        if has_pin_mismatch or consistency_score < 60:
             if has_pin_mismatch:
                 rationale.append(f"PIN code '{pin.pincode}' does not match the asserted state or district records.")
-            if consistency_score < 70:
-                rationale.append(f"Consistency score ({consistency_score}/100) is below the automated acceptance threshold (70/100).")
+            if consistency_score < 60:
+                rationale.append(f"Consistency score ({consistency_score}/100) is below the automated acceptance threshold (60/100).")
             
             return VerificationDecision(
                 status=VerificationStatus.NEEDS_REVIEW,
@@ -124,9 +124,13 @@ class VerificationDecisionEngine:
             )
 
         # Rule 5: High Confidence Verified -> VERIFIED
-        if consistency_score >= 85 and hierarchy.is_consistent and boundary.point_inside_district:
+        has_boundary_conflict = (boundary.point_inside_district is False and boundary.detected_district is not None)
+        if consistency_score >= 80 and hierarchy.is_consistent and not has_boundary_conflict:
             rationale.append(f"High consistency score ({consistency_score}/100) with complete administrative alignment.")
-            rationale.append("Spatial point-in-polygon verification confirmed within authoritative boundary polygons.")
+            if boundary.point_inside_district:
+                rationale.append("Spatial point-in-polygon verification confirmed within authoritative boundary polygons.")
+            else:
+                rationale.append("Administrative hierarchy fully consistent across state and district records.")
             if pin.pincode and pin.matched:
                 rationale.append(f"PIN code '{pin.pincode}' verified with India Post postal directory.")
 
@@ -145,7 +149,7 @@ class VerificationDecisionEngine:
             summary="Geographically consistent. Most authoritative evidence aligns with minor non-critical omissions.",
             decision_rationale=rationale,
             contributing_factors=factors,
-            confidence_level="HIGH" if consistency_score >= 75 else "MEDIUM"
+            confidence_level="HIGH" if consistency_score >= 70 else "MEDIUM"
         )
 
 

@@ -24,12 +24,20 @@ class EvidenceSeverity(str, Enum):
     CONFLICT = "CONFLICT"
 
 
+class EvidenceSemanticState(str, Enum):
+    SUPPORTED = "SUPPORTED"
+    MISSING = "MISSING"
+    CONFLICTING = "CONFLICTING"
+    UNKNOWN = "UNKNOWN"
+
+
 class EvidenceItem(BaseModel):
     code: str = Field(..., json_schema_extra={"example": "STATE_MATCH"})
     category: str = Field(..., json_schema_extra={"example": "hierarchy"})
     passed: bool = True
     status: str = Field(..., json_schema_extra={"example": "PASSED"})
     severity: str = Field("INFO", description="INFO, WARNING, CONFLICT")
+    semantic_state: EvidenceSemanticState = Field(EvidenceSemanticState.SUPPORTED, description="SUPPORTED, MISSING, CONFLICTING, UNKNOWN")
     weight: int = Field(..., json_schema_extra={"example": 10})
     score_contribution: float = Field(..., json_schema_extra={"example": 10.0})
     title: str = Field(..., json_schema_extra={"example": "State Verification"})

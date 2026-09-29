@@ -1,0 +1,21 @@
+{
+  "experiment_id": "EXP_B_MISSING_NEUTRAL",
+  "configuration_name": "Missing-as-Neutral",
+  "description": "Missing evidence treated as unknown/neutral rather than geometric conflict",
+  "pin_accuracy_pct": 93.46,
+  "state_accuracy_pct": 94.23,
+  "district_accuracy_pct": 93.46,
+  "locality_accuracy_pct": 84.23,
+  "recall_at_1_pct": 81.92,
+  "recall_at_5_pct": 97.31,
+  "ambiguity_f1": 0.88,
+  "clean_status_accuracy_pct": 87.5,
+  "ocr_status_accuracy_pct": 76.25,
+  "clean_ocr_gap_pct": 11.25,
+  "decision_accuracy_pct": 83.46,
+  "macro_f1": 0.772,
+  "weighted_f1": 0.835,
+  "needs_review_f1": 0.625,
+  "mean_latency_ms": 158.8,
+  "p95_latency_ms": 288.4
+}

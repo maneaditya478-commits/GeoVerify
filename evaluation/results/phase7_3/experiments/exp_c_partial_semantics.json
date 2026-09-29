@@ -1,0 +1,21 @@
+{
+  "experiment_id": "EXP_C_PARTIAL_SEMANTICS",
+  "configuration_name": "Partial-Address Semantics",
+  "description": "Incomplete addresses verified as CONSISTENT without premise completeness penalties",
+  "pin_accuracy_pct": 93.46,
+  "state_accuracy_pct": 94.23,
+  "district_accuracy_pct": 93.46,
+  "locality_accuracy_pct": 84.23,
+  "recall_at_1_pct": 81.92,
+  "recall_at_5_pct": 97.31,
+  "ambiguity_f1": 0.885,
+  "clean_status_accuracy_pct": 88.75,
+  "ocr_status_accuracy_pct": 79.17,
+  "clean_ocr_gap_pct": 9.58,
+  "decision_accuracy_pct": 85.77,
+  "macro_f1": 0.804,
+  "weighted_f1": 0.858,
+  "needs_review_f1": 0.684,
+  "mean_latency_ms": 158.2,
+  "p95_latency_ms": 287.5
+}

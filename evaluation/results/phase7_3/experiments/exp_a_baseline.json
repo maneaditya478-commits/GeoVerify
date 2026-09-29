@@ -1,0 +1,21 @@
+{
+  "experiment_id": "EXP_A_BASELINE",
+  "configuration_name": "Phase 7.2 Baseline",
+  "description": "Unmodified baseline with strict completeness penalty and uncalibrated NEEDS_REVIEW",
+  "pin_accuracy_pct": 93.46,
+  "state_accuracy_pct": 94.23,
+  "district_accuracy_pct": 93.46,
+  "locality_accuracy_pct": 84.23,
+  "recall_at_1_pct": 81.92,
+  "recall_at_5_pct": 97.31,
+  "ambiguity_f1": 0.876,
+  "clean_status_accuracy_pct": 86.25,
+  "ocr_status_accuracy_pct": 72.08,
+  "clean_ocr_gap_pct": 14.17,
+  "decision_accuracy_pct": 79.62,
+  "macro_f1": 0.7273,
+  "weighted_f1": 0.7984,
+  "needs_review_f1": 0.511,
+  "mean_latency_ms": 159.64,
+  "p95_latency_ms": 290.15
+}

@@ -1,0 +1,18 @@
+{
+  "os": "Windows",
+  "python_version": "3.13.0",
+  "node_version": "v24.14.0",
+  "dependencies": {
+    "fastapi": "0.111.0+",
+    "pydantic": "2.8.2+",
+    "rapidfuzz": "3.9.4+",
+    "pytest": "9.1.1",
+    "vite": "5.4.21",
+    "react": "18.3.1"
+  },
+  "git_commit": "371351aded4e2f08f572b51657d3dbae1cb06996",
+  "dataset_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "benchmark_hash": "c8f219f85e492c10a4e763b65a58bfa79f64a51e6005c2d3a35a77f985b8fae9",
+  "configuration_hash": "19b5c378e907d81ef3ab87c71e21b0dc3fa554904bc4deeb98369ec264627b9c",
+  "timestamp": "2026-09-30T02:31:00+05:30"
+}

@@ -1,0 +1,2 @@
+case_id,category,expected_status,predicted_status,decision_type,decision_score,trigger_reason,has_pin_mismatch,is_partial_address,missing_coordinates,corrective_action
+MULTI_25,complex_multi_address,VERIFIED,NEEDS_REVIEW,FALSE_POSITIVE,78.0,SCORE_BAND_DOWNGRADE,True,False,False,CALIBRATE_PARTIAL_SEMANTICS

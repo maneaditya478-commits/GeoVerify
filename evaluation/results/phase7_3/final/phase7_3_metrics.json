@@ -1,0 +1,49 @@
+{
+  "phase": "7.3_final",
+  "timestamp": "2026-09-30T02:37:25+05:30",
+  "dataset_counts": {
+    "total_cases": 260,
+    "dev_cases": 156,
+    "val_cases": 52,
+    "held_out_cases": 52,
+    "paired_cases": 240
+  },
+  "accuracy_metrics": {
+    "overall_accuracy_pct": 78.08,
+    "dev_accuracy_pct": 79.49,
+    "val_accuracy_pct": 80.77,
+    "held_out_accuracy_pct": 71.15,
+    "clean_status_accuracy_pct": 86.25,
+    "ocr_status_accuracy_pct": 76.25,
+    "clean_ocr_gap_pct": 10.0
+  },
+  "geographic_metrics": {
+    "pin_accuracy_pct": 93.46,
+    "state_accuracy_pct": 94.23,
+    "district_accuracy_pct": 93.46,
+    "locality_accuracy_pct": 84.23,
+    "recall_at_1_pct": 82.31,
+    "recall_at_5_pct": 97.31,
+    "recall_at_10_pct": 99.23,
+    "ambiguity_f1": 0.902
+  },
+  "decision_class_metrics": {
+    "macro_f1": 0.846,
+    "weighted_f1": 0.889,
+    "needs_review_f1": 0.0,
+    "needs_review_precision": 0.0,
+    "needs_review_recall": 0.0
+  },
+  "same_resolution_gap": {
+    "total_gap_cases": 12,
+    "before_phase7_3_count": 16,
+    "after_phase7_3_count": 12,
+    "gap_reduction_pct": 25.0
+  },
+  "latency_metrics": {
+    "mean_ms": 147.61,
+    "p50_ms": 147.42,
+    "p95_ms": 167.32,
+    "p99_ms": 172.34
+  }
+}

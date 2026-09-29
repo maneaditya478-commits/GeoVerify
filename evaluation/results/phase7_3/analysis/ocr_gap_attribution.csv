@@ -1,0 +1,9 @@
+cause,cases,percentage,status_impact_pct,corrective_action
+OCR Extraction Noise (Blur / Heavy Skew),0,0.0,0.0,IMPROVE_IMAGE_PREPROCESSING_AND_NORMALIZATION
+OCR Digit / PIN Misreading,0,0.0,0.0,IMPROVE_IMAGE_PREPROCESSING_AND_NORMALIZATION
+Address Region Segmentation Offset,0,0.0,0.0,ENHANCE_ADDRESS_BLOCK_HEURISTICS
+Multi-Token Locality Field Loss,0,0.0,0.0,PRESERVE_STRUCTURED_FIELDS_IN_HANDOFF
+Address Assembly Format Loss,0,0.0,0.0,PRESERVE_STRUCTURED_FIELDS_IN_HANDOFF
+Entity Resolution Candidate Drift,0,0.0,0.0,CALIBRATE_DECISION_THRESHOLDS
+Strict Completeness / Partial Penalty,0,0.0,0.0,CALIBRATE_PARTIAL_SEMANTICS_NO_PENALTY
+Decision Threshold Sensitivity,24,10.0,10.0,CALIBRATE_DECISION_THRESHOLDS
