@@ -1,0 +1,194 @@
+[
+  {
+    "pincode": "411014",
+    "circle": "Maharashtra",
+    "region": "Pune",
+    "division": "Pune City East",
+    "post_offices": [
+      "Kharadi B.O",
+      "Viman Nagar S.O",
+      "Vadgaon Sheri S.O",
+      "Dunkirk Lines S.O"
+    ],
+    "district": "Pune",
+    "state": "Maharashtra",
+    "state_code": "MH",
+    "centroid": {
+      "latitude": 18.555,
+      "longitude": 73.935
+    }
+  },
+  {
+    "pincode": "411057",
+    "circle": "Maharashtra",
+    "region": "Pune",
+    "division": "Pune City West",
+    "post_offices": [
+      "Infotech Park (Hinjawadi) S.O",
+      "Hinjawadi B.O",
+      "Wakand B.O"
+    ],
+    "district": "Pune",
+    "state": "Maharashtra",
+    "state_code": "MH",
+    "centroid": {
+      "latitude": 18.591,
+      "longitude": 73.738
+    }
+  },
+  {
+    "pincode": "411038",
+    "circle": "Maharashtra",
+    "region": "Pune",
+    "division": "Pune City West",
+    "post_offices": [
+      "Kothrud S.O",
+      "Ex-Servicemen Colony S.O"
+    ],
+    "district": "Pune",
+    "state": "Maharashtra",
+    "state_code": "MH",
+    "centroid": {
+      "latitude": 18.507,
+      "longitude": 73.807
+    }
+  },
+  {
+    "pincode": "411045",
+    "circle": "Maharashtra",
+    "region": "Pune",
+    "division": "Pune City West",
+    "post_offices": [
+      "Baner Gaon S.O",
+      "Baner Road S.O"
+    ],
+    "district": "Pune",
+    "state": "Maharashtra",
+    "state_code": "MH",
+    "centroid": {
+      "latitude": 18.559,
+      "longitude": 73.786
+    }
+  },
+  {
+    "pincode": "400050",
+    "circle": "Maharashtra",
+    "region": "Mumbai",
+    "division": "Mumbai West",
+    "post_offices": [
+      "Bandra West S.O",
+      "Waterfield Road S.O"
+    ],
+    "district": "Mumbai Suburban",
+    "state": "Maharashtra",
+    "state_code": "MH",
+    "centroid": {
+      "latitude": 19.059,
+      "longitude": 72.829
+    }
+  },
+  {
+    "pincode": "400069",
+    "circle": "Maharashtra",
+    "region": "Mumbai",
+    "division": "Mumbai West",
+    "post_offices": [
+      "Andheri East S.O",
+      "Chakala MIDC S.O"
+    ],
+    "district": "Mumbai Suburban",
+    "state": "Maharashtra",
+    "state_code": "MH",
+    "centroid": {
+      "latitude": 19.113,
+      "longitude": 72.869
+    }
+  },
+  {
+    "pincode": "560066",
+    "circle": "Karnataka",
+    "region": "Bengaluru HQ",
+    "division": "Bangalore East",
+    "post_offices": [
+      "Whitefield S.O",
+      "EPIP S.O"
+    ],
+    "district": "Bengaluru Urban",
+    "state": "Karnataka",
+    "state_code": "KA",
+    "centroid": {
+      "latitude": 12.969,
+      "longitude": 77.749
+    }
+  },
+  {
+    "pincode": "560038",
+    "circle": "Karnataka",
+    "region": "Bengaluru HQ",
+    "division": "Bangalore East",
+    "post_offices": [
+      "Indiranagar S.O",
+      "HAL II Stage S.O"
+    ],
+    "district": "Bengaluru Urban",
+    "state": "Karnataka",
+    "state_code": "KA",
+    "centroid": {
+      "latitude": 12.978,
+      "longitude": 77.64
+    }
+  },
+  {
+    "pincode": "110001",
+    "circle": "Delhi",
+    "region": "Delhi",
+    "division": "New Delhi Central",
+    "post_offices": [
+      "Connaught Place H.O",
+      "Barakhamba Road S.O",
+      "Janpath S.O"
+    ],
+    "district": "New Delhi",
+    "state": "Delhi",
+    "state_code": "DL",
+    "centroid": {
+      "latitude": 28.631,
+      "longitude": 77.216
+    }
+  },
+  {
+    "pincode": "110016",
+    "circle": "Delhi",
+    "region": "Delhi",
+    "division": "New Delhi South",
+    "post_offices": [
+      "Hauz Khas S.O",
+      "IIT Delhi S.O"
+    ],
+    "district": "New Delhi",
+    "state": "Delhi",
+    "state_code": "DL",
+    "centroid": {
+      "latitude": 28.549,
+      "longitude": 77.2
+    }
+  },
+  {
+    "pincode": "416001",
+    "circle": "Maharashtra",
+    "region": "Goa-Kolhapur",
+    "division": "Kolhapur",
+    "post_offices": [
+      "Kolhapur H.O",
+      "Shahupuri S.O",
+      "Laxmipuri S.O"
+    ],
+    "district": "Kolhapur",
+    "state": "Maharashtra",
+    "state_code": "MH",
+    "centroid": {
+      "latitude": 16.705,
+      "longitude": 74.243
+    }
+  }
+]

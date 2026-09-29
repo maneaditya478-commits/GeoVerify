@@ -1,0 +1,194 @@
+[
+  {
+    "name": "EON IT Park",
+    "category": "commercial",
+    "subtype": "IT Park / Tech Zone",
+    "coordinates": {
+      "latitude": 18.5515,
+      "longitude": 73.9515
+    },
+    "address": "Kharadi, Pune",
+    "district": "Pune",
+    "state": "Maharashtra"
+  },
+  {
+    "name": "World Trade Center Pune",
+    "category": "commercial",
+    "subtype": "Business Center",
+    "coordinates": {
+      "latitude": 18.5528,
+      "longitude": 73.9534
+    },
+    "address": "Opposite EON Free Zone, Kharadi, Pune",
+    "district": "Pune",
+    "state": "Maharashtra"
+  },
+  {
+    "name": "Manipal Hospital Kharadi",
+    "category": "hospital",
+    "subtype": "Multi-speciality Hospital",
+    "coordinates": {
+      "latitude": 18.551,
+      "longitude": 73.937
+    },
+    "address": "Kharadi Bypass, Pune",
+    "district": "Pune",
+    "state": "Maharashtra"
+  },
+  {
+    "name": "Chandan Nagar Police Station",
+    "category": "police",
+    "subtype": "Police Station",
+    "coordinates": {
+      "latitude": 18.554,
+      "longitude": 73.931
+    },
+    "address": "Nagar Road, Chandan Nagar, Pune",
+    "district": "Pune",
+    "state": "Maharashtra"
+  },
+  {
+    "name": "Kharadi Post Office",
+    "category": "post_office",
+    "subtype": "Postal Sub-Office",
+    "coordinates": {
+      "latitude": 18.549,
+      "longitude": 73.942
+    },
+    "address": "Main Road, Kharadi, Pune",
+    "district": "Pune",
+    "state": "Maharashtra"
+  },
+  {
+    "name": "Pune International Airport (PNQ)",
+    "category": "transit",
+    "subtype": "Airport",
+    "coordinates": {
+      "latitude": 18.5822,
+      "longitude": 73.9197
+    },
+    "address": "New Airport Rd, Lohegaon, Pune",
+    "district": "Pune",
+    "state": "Maharashtra"
+  },
+  {
+    "name": "Phoenix Marketcity Pune",
+    "category": "landmark",
+    "subtype": "Shopping Mall",
+    "coordinates": {
+      "latitude": 18.562,
+      "longitude": 73.9168
+    },
+    "address": "Viman Nagar, Pune",
+    "district": "Pune",
+    "state": "Maharashtra"
+  },
+  {
+    "name": "Pune Railway Station",
+    "category": "transit",
+    "subtype": "Railway Junction",
+    "coordinates": {
+      "latitude": 18.5289,
+      "longitude": 73.8744
+    },
+    "address": "Agarkar Nagar, Pune",
+    "district": "Pune",
+    "state": "Maharashtra"
+  },
+  {
+    "name": "Rajiv Gandhi Infotech Park",
+    "category": "commercial",
+    "subtype": "IT Park",
+    "coordinates": {
+      "latitude": 18.5915,
+      "longitude": 73.738
+    },
+    "address": "Hinjewadi Phase 1, Pune",
+    "district": "Pune",
+    "state": "Maharashtra"
+  },
+  {
+    "name": "Hinjewadi Police Station",
+    "category": "police",
+    "subtype": "Police Station",
+    "coordinates": {
+      "latitude": 18.593,
+      "longitude": 73.742
+    },
+    "address": "Hinjewadi, Pune",
+    "district": "Pune",
+    "state": "Maharashtra"
+  },
+  {
+    "name": "International Tech Park Bangalore (ITPB)",
+    "category": "commercial",
+    "subtype": "Tech Park",
+    "coordinates": {
+      "latitude": 12.986,
+      "longitude": 77.74
+    },
+    "address": "Whitefield, Bengaluru",
+    "district": "Bengaluru Urban",
+    "state": "Karnataka"
+  },
+  {
+    "name": "Manipal Hospital Whitefield",
+    "category": "hospital",
+    "subtype": "Hospital",
+    "coordinates": {
+      "latitude": 12.975,
+      "longitude": 77.742
+    },
+    "address": "Whitefield Main Rd, Bengaluru",
+    "district": "Bengaluru Urban",
+    "state": "Karnataka"
+  },
+  {
+    "name": "Whitefield Railway Station",
+    "category": "transit",
+    "subtype": "Railway Station",
+    "coordinates": {
+      "latitude": 12.996,
+      "longitude": 77.76
+    },
+    "address": "Kadugodi, Bengaluru",
+    "district": "Bengaluru Urban",
+    "state": "Karnataka"
+  },
+  {
+    "name": "Rajiv Chowk Metro Station",
+    "category": "transit",
+    "subtype": "Metro Interchange Station",
+    "coordinates": {
+      "latitude": 28.6328,
+      "longitude": 77.2195
+    },
+    "address": "Connaught Place, New Delhi",
+    "district": "New Delhi",
+    "state": "Delhi"
+  },
+  {
+    "name": "Dr. Ram Manohar Lohia Hospital",
+    "category": "hospital",
+    "subtype": "Government Hospital",
+    "coordinates": {
+      "latitude": 28.624,
+      "longitude": 77.201
+    },
+    "address": "Baba Kharak Singh Marg, Connaught Place, New Delhi",
+    "district": "New Delhi",
+    "state": "Delhi"
+  },
+  {
+    "name": "Connaught Place Police Station",
+    "category": "police",
+    "subtype": "Police Station",
+    "coordinates": {
+      "latitude": 28.63,
+      "longitude": 77.215
+    },
+    "address": "Janpath, New Delhi",
+    "district": "New Delhi",
+    "state": "Delhi"
+  }
+]

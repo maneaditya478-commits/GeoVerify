@@ -1,0 +1,175 @@
+"""Core multi-signal verification engine for GeoVerify India."""
+
+from datetime import datetime, timezone
+import uuid
+from typing import Optional, List
+from app.schemas.address import (
+    VerificationRequest,
+    NormalizedAddress,
+    ParsedAddress,
+    GeocodingResult
+)
+from app.schemas.verification import (
+    VerificationResponse,
+    VerificationStatus
+)
+from app.services.normalizer import AddressNormalizer
+from app.services.address_parser import AddressParser
+from app.services.geocoder import geocoder_service
+from app.services.pin_validator import pin_validator
+from app.services.nearby import nearby_service
+from app.verification.hierarchy import hierarchy_validator
+from app.verification.boundaries import boundary_service
+from app.verification.evidence import EvidenceEngine
+from app.verification.scoring import ScoringEngine
+
+# Known ambiguous locality names that occur in multiple states
+AMBIGUOUS_NAMES = ["rampur", "bilaspur", "aurangabad", "fatehpur", "balrampur"]
+
+
+class VerificationEngine:
+    """Coordinates multi-signal verification pipeline."""
+
+    async def verify(self, request: VerificationRequest) -> VerificationResponse:
+        verification_id = f"gv_{uuid.uuid4().hex[:12]}"
+        timestamp = datetime.now(timezone.utc).isoformat()
+
+        # 1. Parse or Extract Components
+        raw_text = request.address or ""
+        struct = request.structured
+
+        if struct:
+            locality_in = struct.locality or struct.address_line
+            subdistrict_in = struct.subdistrict
+            city_in = struct.city
+            district_in = struct.district or struct.city
+            state_in = struct.state
+            pincode_in = struct.pincode
+            parsed = ParsedAddress(
+                premise=struct.address_line,
+                locality=locality_in,
+                subdistrict=subdistrict_in,
+                city=city_in,
+                district=district_in,
+                state=state_in,
+                pincode=pincode_in,
+                parse_confidence=0.9
+            )
+        else:
+            parsed = AddressParser.parse(raw_text)
+            locality_in = parsed.locality
+            subdistrict_in = parsed.subdistrict
+            city_in = parsed.city
+            district_in = parsed.district
+            state_in = parsed.state
+            pincode_in = parsed.pincode
+
+        # 2. Address Normalization
+        normalized: NormalizedAddress = AddressNormalizer.normalize_address(
+            address_text=raw_text,
+            locality=locality_in,
+            subdistrict=subdistrict_in,
+            city=city_in,
+            district=district_in,
+            state=state_in,
+            pincode=pincode_in
+        )
+
+        effective_locality = normalized.locality or parsed.locality
+        effective_district = normalized.district or parsed.district
+        effective_state = normalized.state or parsed.state
+        effective_pin = normalized.pincode or parsed.pincode
+
+        # 3. Check for Ambiguity (e.g. Rampur without state/district/pin)
+        is_ambiguous = False
+        if effective_locality and effective_locality.lower() in AMBIGUOUS_NAMES:
+            if not effective_state and not effective_district and not effective_pin:
+                is_ambiguous = True
+
+        # 4. Geocoding
+        geocoding_query = normalized.normalized_text or raw_text
+        geocoding: Optional[GeocodingResult] = await geocoder_service.geocode(
+            query=geocoding_query,
+            locality=effective_locality,
+            district=effective_district,
+            state=effective_state,
+            pincode=effective_pin
+        )
+
+        # 5. Administrative Hierarchy Verification
+        hierarchy_res = hierarchy_validator.validate_hierarchy(
+            state=effective_state,
+            district=effective_district,
+            subdistrict=subdistrict_in,
+            locality=effective_locality
+        )
+
+        # 6. Geometric Boundary Verification (Point-in-Polygon)
+        coords = geocoding.coordinates if geocoding else None
+        boundary_res = boundary_service.verify_boundaries(
+            coordinates=coords,
+            asserted_state=effective_state,
+            asserted_district=effective_district,
+            asserted_locality=effective_locality
+        )
+
+        # 7. PIN Code Validation
+        pin_res = pin_validator.validate(
+            pincode=effective_pin,
+            state=effective_state,
+            district=effective_district,
+            coordinates=coords
+        )
+
+        # 8. Nearby Intelligence
+        nearby_places = []
+        if coords:
+            radius = request.radius_km or 5.0
+            nearby_resp = nearby_service.find_nearby(center=coords, radius_km=radius)
+            nearby_places = nearby_resp.places
+
+        # 9. Evidence Generation & Explainability
+        evidence_items, explanation, warnings = EvidenceEngine.generate_evidence(
+            normalized=normalized,
+            parsed=parsed,
+            geocoding=geocoding,
+            hierarchy=hierarchy_res,
+            boundary=boundary_res,
+            pin=pin_res,
+            nearby=nearby_places
+        )
+
+        # 10. Scoring & Status Determination
+        score, score_breakdown, status, summary = ScoringEngine.calculate_score(
+            evidence_items=evidence_items,
+            hierarchy=hierarchy_res,
+            boundary=boundary_res,
+            pin=pin_res,
+            is_ambiguous=is_ambiguous
+        )
+
+        # GeoJSON filtering if requested
+        if not request.include_geojson:
+            boundary_res.boundary_geojson = None
+
+        return VerificationResponse(
+            verification_id=verification_id,
+            timestamp=timestamp,
+            status=status,
+            score=score,
+            summary=summary,
+            explanation=explanation,
+            warnings=warnings,
+            evidence=evidence_items,
+            normalized_address=normalized,
+            parsed_address=parsed,
+            geocoding=geocoding,
+            administrative_hierarchy=hierarchy_res,
+            boundary_verification=boundary_res,
+            pin_verification=pin_res,
+            score_breakdown=score_breakdown,
+            nearby_places=nearby_places
+        )
+
+
+verification_engine = VerificationEngine()

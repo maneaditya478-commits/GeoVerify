@@ -1,0 +1,487 @@
+[
+  {
+    "code": "MH",
+    "name": "Maharashtra",
+    "canonical_name": "Maharashtra",
+    "aliases": [
+      "Maharastra",
+      "Maharashthra",
+      "MH",
+      "Maharashtra State"
+    ],
+    "capital": "Mumbai",
+    "bbox": [
+      72.6,
+      15.6,
+      80.9,
+      22.0
+    ],
+    "polygon": [
+      [
+        72.6,
+        18.9
+      ],
+      [
+        72.8,
+        20.0
+      ],
+      [
+        74.5,
+        21.9
+      ],
+      [
+        78.5,
+        21.8
+      ],
+      [
+        80.9,
+        19.5
+      ],
+      [
+        80.0,
+        18.0
+      ],
+      [
+        77.5,
+        15.6
+      ],
+      [
+        73.5,
+        15.8
+      ],
+      [
+        72.6,
+        18.9
+      ]
+    ]
+  },
+  {
+    "code": "KA",
+    "name": "Karnataka",
+    "canonical_name": "Karnataka",
+    "aliases": [
+      "Karnatak",
+      "KA",
+      "Karnataka State",
+      "Mysore State"
+    ],
+    "capital": "Bengaluru",
+    "bbox": [
+      74.0,
+      11.5,
+      78.5,
+      18.5
+    ],
+    "polygon": [
+      [
+        74.0,
+        14.5
+      ],
+      [
+        74.5,
+        17.5
+      ],
+      [
+        77.5,
+        18.5
+      ],
+      [
+        78.5,
+        15.0
+      ],
+      [
+        77.8,
+        12.0
+      ],
+      [
+        76.0,
+        11.5
+      ],
+      [
+        74.5,
+        12.5
+      ],
+      [
+        74.0,
+        14.5
+      ]
+    ]
+  },
+  {
+    "code": "DL",
+    "name": "Delhi",
+    "canonical_name": "Delhi",
+    "aliases": [
+      "NCT of Delhi",
+      "National Capital Territory of Delhi",
+      "DL",
+      "New Delhi"
+    ],
+    "capital": "New Delhi",
+    "bbox": [
+      76.8,
+      28.4,
+      77.4,
+      28.9
+    ],
+    "polygon": [
+      [
+        76.8,
+        28.5
+      ],
+      [
+        76.9,
+        28.8
+      ],
+      [
+        77.2,
+        28.9
+      ],
+      [
+        77.4,
+        28.7
+      ],
+      [
+        77.3,
+        28.4
+      ],
+      [
+        77.0,
+        28.4
+      ],
+      [
+        76.8,
+        28.5
+      ]
+    ]
+  },
+  {
+    "code": "TN",
+    "name": "Tamil Nadu",
+    "canonical_name": "Tamil Nadu",
+    "aliases": [
+      "Tamilnadu",
+      "TN",
+      "Madras State"
+    ],
+    "capital": "Chennai",
+    "bbox": [
+      76.2,
+      8.0,
+      80.4,
+      13.5
+    ],
+    "polygon": [
+      [
+        76.2,
+        10.5
+      ],
+      [
+        77.0,
+        12.5
+      ],
+      [
+        80.3,
+        13.5
+      ],
+      [
+        80.0,
+        10.0
+      ],
+      [
+        78.0,
+        8.0
+      ],
+      [
+        77.2,
+        8.3
+      ],
+      [
+        76.8,
+        9.5
+      ],
+      [
+        76.2,
+        10.5
+      ]
+    ]
+  },
+  {
+    "code": "TG",
+    "name": "Telangana",
+    "canonical_name": "Telangana",
+    "aliases": [
+      "Telengana",
+      "TG",
+      "TS"
+    ],
+    "capital": "Hyderabad",
+    "bbox": [
+      77.2,
+      15.8,
+      81.8,
+      19.9
+    ],
+    "polygon": [
+      [
+        77.2,
+        17.0
+      ],
+      [
+        78.0,
+        19.5
+      ],
+      [
+        80.5,
+        19.9
+      ],
+      [
+        81.8,
+        17.5
+      ],
+      [
+        79.8,
+        16.0
+      ],
+      [
+        78.2,
+        15.8
+      ],
+      [
+        77.2,
+        17.0
+      ]
+    ]
+  },
+  {
+    "code": "GJ",
+    "name": "Gujarat",
+    "canonical_name": "Gujarat",
+    "aliases": [
+      "Gujrat",
+      "GJ"
+    ],
+    "capital": "Gandhinagar",
+    "bbox": [
+      68.1,
+      20.1,
+      74.5,
+      24.7
+    ],
+    "polygon": [
+      [
+        68.1,
+        23.5
+      ],
+      [
+        70.0,
+        24.7
+      ],
+      [
+        74.5,
+        24.0
+      ],
+      [
+        73.5,
+        20.1
+      ],
+      [
+        72.5,
+        20.8
+      ],
+      [
+        69.0,
+        22.0
+      ],
+      [
+        68.1,
+        23.5
+      ]
+    ]
+  },
+  {
+    "code": "WB",
+    "name": "West Bengal",
+    "canonical_name": "West Bengal",
+    "aliases": [
+      "Westbengal",
+      "WB",
+      "Paschim Banga"
+    ],
+    "capital": "Kolkata",
+    "bbox": [
+      85.8,
+      21.5,
+      89.9,
+      27.2
+    ],
+    "polygon": [
+      [
+        85.8,
+        23.5
+      ],
+      [
+        87.5,
+        27.2
+      ],
+      [
+        89.9,
+        26.5
+      ],
+      [
+        88.5,
+        22.0
+      ],
+      [
+        87.5,
+        21.5
+      ],
+      [
+        86.5,
+        22.5
+      ],
+      [
+        85.8,
+        23.5
+      ]
+    ]
+  },
+  {
+    "code": "UP",
+    "name": "Uttar Pradesh",
+    "canonical_name": "Uttar Pradesh",
+    "aliases": [
+      "UP",
+      "Uttarpradesh"
+    ],
+    "capital": "Lucknow",
+    "bbox": [
+      77.0,
+      23.8,
+      84.6,
+      30.4
+    ],
+    "polygon": [
+      [
+        77.0,
+        28.5
+      ],
+      [
+        78.0,
+        30.4
+      ],
+      [
+        84.6,
+        27.5
+      ],
+      [
+        83.5,
+        24.0
+      ],
+      [
+        81.0,
+        23.8
+      ],
+      [
+        78.5,
+        25.5
+      ],
+      [
+        77.0,
+        28.5
+      ]
+    ]
+  },
+  {
+    "code": "RJ",
+    "name": "Rajasthan",
+    "canonical_name": "Rajasthan",
+    "aliases": [
+      "RJ",
+      "Rajsthan"
+    ],
+    "capital": "Jaipur",
+    "bbox": [
+      69.5,
+      23.0,
+      78.2,
+      30.2
+    ],
+    "polygon": [
+      [
+        69.5,
+        27.0
+      ],
+      [
+        72.0,
+        30.2
+      ],
+      [
+        77.0,
+        29.0
+      ],
+      [
+        78.2,
+        26.5
+      ],
+      [
+        76.0,
+        23.5
+      ],
+      [
+        73.0,
+        23.0
+      ],
+      [
+        69.5,
+        27.0
+      ]
+    ]
+  },
+  {
+    "code": "KL",
+    "name": "Kerala",
+    "canonical_name": "Kerala",
+    "aliases": [
+      "KL",
+      "Keralam"
+    ],
+    "capital": "Thiruvananthapuram",
+    "bbox": [
+      74.8,
+      8.2,
+      77.5,
+      12.8
+    ],
+    "polygon": [
+      [
+        74.8,
+        12.8
+      ],
+      [
+        76.0,
+        12.0
+      ],
+      [
+        77.5,
+        10.0
+      ],
+      [
+        77.3,
+        8.3
+      ],
+      [
+        76.8,
+        8.2
+      ],
+      [
+        75.8,
+        10.5
+      ],
+      [
+        74.8,
+        12.8
+      ]
+    ]
+  }
+]

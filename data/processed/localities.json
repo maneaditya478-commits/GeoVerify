@@ -1,0 +1,581 @@
+[
+  {
+    "name": "Kharadi",
+    "aliases": [
+      "Kharadi Gaon",
+      "Kharadi Bypass",
+      "EON Free Zone Kharadi"
+    ],
+    "subdistrict": "Haveli",
+    "district": "Pune",
+    "state": "Maharashtra",
+    "state_code": "MH",
+    "pincode": "411014",
+    "coordinates": {
+      "latitude": 18.5514,
+      "longitude": 73.9405
+    },
+    "bbox": [
+      73.92,
+      18.53,
+      73.96,
+      18.57
+    ],
+    "polygon": [
+      [
+        73.92,
+        18.54
+      ],
+      [
+        73.93,
+        18.57
+      ],
+      [
+        73.96,
+        18.56
+      ],
+      [
+        73.95,
+        18.53
+      ],
+      [
+        73.92,
+        18.54
+      ]
+    ]
+  },
+  {
+    "name": "Viman Nagar",
+    "aliases": [
+      "Vimannagar",
+      "Viman Nagar Pune"
+    ],
+    "subdistrict": "Haveli",
+    "district": "Pune",
+    "state": "Maharashtra",
+    "state_code": "MH",
+    "pincode": "411014",
+    "coordinates": {
+      "latitude": 18.5679,
+      "longitude": 73.9143
+    },
+    "bbox": [
+      73.9,
+      18.55,
+      73.93,
+      18.58
+    ],
+    "polygon": [
+      [
+        73.9,
+        18.56
+      ],
+      [
+        73.91,
+        18.58
+      ],
+      [
+        73.93,
+        18.57
+      ],
+      [
+        73.92,
+        18.55
+      ],
+      [
+        73.9,
+        18.56
+      ]
+    ]
+  },
+  {
+    "name": "Hinjewadi",
+    "aliases": [
+      "Hinjawadi",
+      "Hinjawadi Phase 1",
+      "Hinjewadi Phase 2",
+      "Hinjewadi Phase 3"
+    ],
+    "subdistrict": "Mulshi",
+    "district": "Pune",
+    "state": "Maharashtra",
+    "state_code": "MH",
+    "pincode": "411057",
+    "coordinates": {
+      "latitude": 18.5913,
+      "longitude": 73.7389
+    },
+    "bbox": [
+      73.7,
+      18.57,
+      73.77,
+      18.62
+    ],
+    "polygon": [
+      [
+        73.7,
+        18.58
+      ],
+      [
+        73.72,
+        18.62
+      ],
+      [
+        73.77,
+        18.6
+      ],
+      [
+        73.75,
+        18.57
+      ],
+      [
+        73.7,
+        18.58
+      ]
+    ]
+  },
+  {
+    "name": "Kothrud",
+    "aliases": [
+      "Kothrud Pune",
+      "Paud Road"
+    ],
+    "subdistrict": "Pune City",
+    "district": "Pune",
+    "state": "Maharashtra",
+    "state_code": "MH",
+    "pincode": "411038",
+    "coordinates": {
+      "latitude": 18.5074,
+      "longitude": 73.8077
+    },
+    "bbox": [
+      73.78,
+      18.49,
+      73.83,
+      18.53
+    ],
+    "polygon": [
+      [
+        73.78,
+        18.5
+      ],
+      [
+        73.8,
+        18.53
+      ],
+      [
+        73.83,
+        18.52
+      ],
+      [
+        73.82,
+        18.49
+      ],
+      [
+        73.78,
+        18.5
+      ]
+    ]
+  },
+  {
+    "name": "Baner",
+    "aliases": [
+      "Baner Gaon",
+      "Baner Road"
+    ],
+    "subdistrict": "Haveli",
+    "district": "Pune",
+    "state": "Maharashtra",
+    "state_code": "MH",
+    "pincode": "411045",
+    "coordinates": {
+      "latitude": 18.559,
+      "longitude": 73.7868
+    },
+    "bbox": [
+      73.76,
+      18.54,
+      73.81,
+      18.58
+    ],
+    "polygon": [
+      [
+        73.76,
+        18.55
+      ],
+      [
+        73.78,
+        18.58
+      ],
+      [
+        73.81,
+        18.57
+      ],
+      [
+        73.79,
+        18.54
+      ],
+      [
+        73.76,
+        18.55
+      ]
+    ]
+  },
+  {
+    "name": "Bandra West",
+    "aliases": [
+      "Bandra",
+      "Bandra W",
+      "Bandstand"
+    ],
+    "subdistrict": "Andheri",
+    "district": "Mumbai Suburban",
+    "state": "Maharashtra",
+    "state_code": "MH",
+    "pincode": "400050",
+    "coordinates": {
+      "latitude": 19.0596,
+      "longitude": 72.8295
+    },
+    "bbox": [
+      72.81,
+      19.04,
+      72.85,
+      19.08
+    ],
+    "polygon": [
+      [
+        72.81,
+        19.05
+      ],
+      [
+        72.82,
+        19.08
+      ],
+      [
+        72.85,
+        19.07
+      ],
+      [
+        72.84,
+        19.04
+      ],
+      [
+        72.81,
+        19.05
+      ]
+    ]
+  },
+  {
+    "name": "Andheri East",
+    "aliases": [
+      "Andheri",
+      "Andheri E",
+      "MIDC Andheri",
+      "Chakala"
+    ],
+    "subdistrict": "Andheri",
+    "district": "Mumbai Suburban",
+    "state": "Maharashtra",
+    "state_code": "MH",
+    "pincode": "400069",
+    "coordinates": {
+      "latitude": 19.1136,
+      "longitude": 72.8697
+    },
+    "bbox": [
+      72.85,
+      19.09,
+      72.89,
+      19.14
+    ],
+    "polygon": [
+      [
+        72.85,
+        19.1
+      ],
+      [
+        72.86,
+        19.14
+      ],
+      [
+        72.89,
+        19.13
+      ],
+      [
+        72.88,
+        19.09
+      ],
+      [
+        72.85,
+        19.1
+      ]
+    ]
+  },
+  {
+    "name": "Whitefield",
+    "aliases": [
+      "Whitefield Bangalore",
+      "ITPB",
+      "EPIP Zone"
+    ],
+    "subdistrict": "Bengaluru East",
+    "district": "Bengaluru Urban",
+    "state": "Karnataka",
+    "state_code": "KA",
+    "pincode": "560066",
+    "coordinates": {
+      "latitude": 12.9698,
+      "longitude": 77.7499
+    },
+    "bbox": [
+      77.72,
+      12.94,
+      77.78,
+      13.0
+    ],
+    "polygon": [
+      [
+        77.72,
+        12.95
+      ],
+      [
+        77.73,
+        13.0
+      ],
+      [
+        77.78,
+        12.98
+      ],
+      [
+        77.76,
+        12.94
+      ],
+      [
+        77.72,
+        12.95
+      ]
+    ]
+  },
+  {
+    "name": "Indiranagar",
+    "aliases": [
+      "Indira Nagar",
+      "100 Feet Road Indiranagar"
+    ],
+    "subdistrict": "Bengaluru East",
+    "district": "Bengaluru Urban",
+    "state": "Karnataka",
+    "state_code": "KA",
+    "pincode": "560038",
+    "coordinates": {
+      "latitude": 12.9784,
+      "longitude": 77.6408
+    },
+    "bbox": [
+      77.62,
+      12.96,
+      77.66,
+      13.0
+    ],
+    "polygon": [
+      [
+        77.62,
+        12.97
+      ],
+      [
+        77.63,
+        13.0
+      ],
+      [
+        77.66,
+        12.99
+      ],
+      [
+        77.65,
+        12.96
+      ],
+      [
+        77.62,
+        12.97
+      ]
+    ]
+  },
+  {
+    "name": "Connaught Place",
+    "aliases": [
+      "CP",
+      "Rajiv Chowk",
+      "Connaught Circus"
+    ],
+    "subdistrict": "Chanakyapuri",
+    "district": "New Delhi",
+    "state": "Delhi",
+    "state_code": "DL",
+    "pincode": "110001",
+    "coordinates": {
+      "latitude": 28.6315,
+      "longitude": 77.2167
+    },
+    "bbox": [
+      77.2,
+      28.62,
+      77.23,
+      28.64
+    ],
+    "polygon": [
+      [
+        77.2,
+        28.63
+      ],
+      [
+        77.21,
+        28.64
+      ],
+      [
+        77.23,
+        28.635
+      ],
+      [
+        77.22,
+        28.62
+      ],
+      [
+        77.2,
+        28.63
+      ]
+    ]
+  },
+  {
+    "name": "Hauz Khas",
+    "aliases": [
+      "Hauz Khas Village",
+      "HKV"
+    ],
+    "subdistrict": "Hauz Khas",
+    "district": "New Delhi",
+    "state": "Delhi",
+    "state_code": "DL",
+    "pincode": "110016",
+    "coordinates": {
+      "latitude": 28.5494,
+      "longitude": 77.2001
+    },
+    "bbox": [
+      77.18,
+      28.53,
+      77.22,
+      28.57
+    ],
+    "polygon": [
+      [
+        77.18,
+        28.54
+      ],
+      [
+        77.19,
+        28.57
+      ],
+      [
+        77.22,
+        28.56
+      ],
+      [
+        77.21,
+        28.53
+      ],
+      [
+        77.18,
+        28.54
+      ]
+    ]
+  },
+  {
+    "name": "Rajarhat",
+    "aliases": [
+      "New Town Rajarhat",
+      "Action Area 1"
+    ],
+    "subdistrict": "Rajarhat",
+    "district": "North 24 Parganas",
+    "state": "West Bengal",
+    "state_code": "WB",
+    "pincode": "700156",
+    "coordinates": {
+      "latitude": 22.5867,
+      "longitude": 88.4756
+    },
+    "bbox": [
+      77.44,
+      22.56,
+      88.51,
+      22.62
+    ],
+    "polygon": [
+      [
+        88.45,
+        22.57
+      ],
+      [
+        88.47,
+        22.62
+      ],
+      [
+        88.51,
+        22.6
+      ],
+      [
+        88.49,
+        22.56
+      ],
+      [
+        88.45,
+        22.57
+      ]
+    ]
+  },
+  {
+    "name": "Rampur",
+    "aliases": [
+      "Rampur City"
+    ],
+    "subdistrict": "Rampur",
+    "district": "Rampur",
+    "state": "Uttar Pradesh",
+    "state_code": "UP",
+    "pincode": "244901",
+    "coordinates": {
+      "latitude": 28.8154,
+      "longitude": 79.0257
+    },
+    "bbox": [
+      78.98,
+      28.78,
+      79.07,
+      28.85
+    ],
+    "polygon": [
+      [
+        78.98,
+        28.8
+      ],
+      [
+        79.01,
+        28.85
+      ],
+      [
+        79.07,
+        28.83
+      ],
+      [
+        79.05,
+        28.78
+      ],
+      [
+        78.98,
+        28.8
+      ]
+    ]
+  }
+]
