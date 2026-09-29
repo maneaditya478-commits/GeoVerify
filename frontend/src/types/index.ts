@@ -304,3 +304,135 @@ export interface VerificationRequest {
   radius_km?: number;
   include_geojson?: boolean;
 }
+
+// -------------------------------------------------------------
+// Phase 7: Document & OCR Verification Types
+// -------------------------------------------------------------
+
+export interface BoundingBox {
+  x: number;
+  y: number;
+  width: number;
+  height: number;
+  page_num?: number;
+}
+
+export interface OCRWord {
+  text: string;
+  confidence: number;
+  bbox?: BoundingBox;
+  line_num?: number;
+  word_num?: number;
+  page_num?: number;
+}
+
+export interface OCRLine {
+  text: string;
+  confidence: number;
+  words?: OCRWord[];
+  bbox?: BoundingBox;
+  line_num?: number;
+}
+
+export interface OCRBlock {
+  text: string;
+  confidence: number;
+  lines?: OCRLine[];
+  bbox?: BoundingBox;
+}
+
+export interface OCRPage {
+  page_num: number;
+  width: number;
+  height: number;
+  text: string;
+  confidence: number;
+  blocks: OCRBlock[];
+  lines: OCRLine[];
+  words: OCRWord[];
+  detected_languages: Record<string, number>;
+  processing_time_ms: number;
+}
+
+export interface OCRResult {
+  document_id: string;
+  engine: string;
+  pages: OCRPage[];
+  full_text: string;
+  mean_confidence: number;
+  primary_language: string;
+  quality_status: 'HIGH' | 'MEDIUM' | 'LOW' | 'FAILED';
+  processing_time_ms: number;
+}
+
+export interface ExtractedAddressField {
+  field_name: string;
+  raw_value: string;
+  normalized_value?: string;
+  confidence: number;
+  line_num?: number;
+  page_num?: number;
+  bbox?: BoundingBox;
+  source_text?: string;
+  correction_reason?: string;
+}
+
+export interface ExtractedAddressCandidate {
+  candidate_id: string;
+  address_type: string;
+  raw_address_text: string;
+  assembled_address: string;
+  fields: Record<string, ExtractedAddressField>;
+  structured_components: Record<string, string | null>;
+  extraction_confidence: number;
+  extraction_status: 'EXTRACTED' | 'PARTIAL' | 'PARTIALLY_EXTRACTED' | 'AMBIGUOUS' | 'NOT_FOUND' | 'FAILED';
+  page_num: number;
+  region_bbox?: BoundingBox;
+  provenance: Record<string, any>;
+  pin_recovered: boolean;
+  verification_result?: VerificationResponse;
+}
+
+export interface DocumentMetadata {
+  document_id: string;
+  filename: string;
+  file_type: string;
+  mime_type: string;
+  size_bytes: number;
+  page_count: number;
+  sha256: string;
+}
+
+export interface OCRMetadata {
+  status: string;
+  engine: string;
+  mean_confidence: number;
+  quality_status: 'HIGH' | 'MEDIUM' | 'LOW' | 'FAILED';
+  primary_language: string;
+  languages_detected: Record<string, number>;
+  pages_processed: number;
+  processing_time_ms: number;
+  ocr_result?: OCRResult;
+}
+
+export interface AddressExtractionMetadata {
+  status: string;
+  extraction_confidence: number;
+  total_candidates_found: number;
+  selected_candidate_index: number;
+  extracted_fields_count: number;
+  pin_recovered: boolean;
+  processing_time_ms: number;
+}
+
+export interface DocumentVerificationResponse {
+  document: DocumentMetadata;
+  ocr: OCRMetadata;
+  address_extraction: AddressExtractionMetadata;
+  address_candidates: ExtractedAddressCandidate[];
+  primary_candidate?: ExtractedAddressCandidate;
+  verification?: VerificationResponse;
+  transformation_pipeline: Array<Record<string, any>>;
+  stage_timings_ms: Record<string, number>;
+  summary: string;
+}

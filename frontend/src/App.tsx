@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { Navbar } from './components/Navbar';
 import { VerifyPage } from './pages/VerifyPage';
+import { DocumentVerifyPage } from './pages/DocumentVerifyPage';
 import { MapExplorerPage } from './pages/MapExplorerPage';
 import { HistoryPage } from './pages/HistoryPage';
 import { DocsPage } from './pages/DocsPage';
@@ -70,6 +71,7 @@ function MainApp() {
             isLoading={isLoading}
           />
         )}
+        {activeTab === 'document' && <DocumentVerifyPage />}
         {activeTab === 'map' && <MapExplorerPage />}
         {activeTab === 'history' && (
           <HistoryPage

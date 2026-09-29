@@ -57,6 +57,31 @@ class Settings(BaseSettings):
     ANONYMIZE_LOGS: bool = True
     DATA_RETENTION_DAYS: int = 30
 
+    # Document & OCR Settings (Phase 7)
+    MAX_DOCUMENT_SIZE_MB: int = 15
+    MAX_DOCUMENT_PAGES: int = 10
+    MAX_IMAGE_WIDTH: int = 4096
+    MAX_IMAGE_HEIGHT: int = 4096
+    ALLOWED_DOCUMENT_TYPES: List[str] = [
+        "image/jpeg",
+        "image/jpg",
+        "image/png",
+        "image/webp",
+        "application/pdf"
+    ]
+    ALLOWED_DOCUMENT_EXTENSIONS: List[str] = [
+        ".jpg",
+        ".jpeg",
+        ".png",
+        ".webp",
+        ".pdf"
+    ]
+    OCR_DEFAULT_ENGINE: str = "auto"  # 'auto', 'tesseract', 'mock'
+    OCR_DEFAULT_LANGUAGES: str = "eng+hin+mar"
+    OCR_MIN_CONFIDENCE_THRESHOLD: float = 0.40
+    DOCUMENT_RETENTION_MODE: str = "transient"  # 'transient', 'audit'
+
+
     @property
     def scoring_weights(self) -> Dict[str, int]:
         return {

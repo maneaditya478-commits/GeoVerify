@@ -1,5 +1,5 @@
 import React from 'react';
-import { Compass, Map, History, BookOpen, Info } from 'lucide-react';
+import { Compass, Map, History, BookOpen, Info, FileText } from 'lucide-react';
 
 interface NavbarProps {
   activeTab: string;
@@ -10,6 +10,7 @@ interface NavbarProps {
 export const Navbar: React.FC<NavbarProps> = ({ activeTab, setActiveTab, backendHealthy }) => {
   const navItems = [
     { id: 'verify', label: 'Verify Address', icon: <Compass className="w-4 h-4" /> },
+    { id: 'document', label: 'Document OCR', icon: <FileText className="w-4 h-4" /> },
     { id: 'map', label: 'Map Explorer', icon: <Map className="w-4 h-4" /> },
     { id: 'history', label: 'Verification History', icon: <History className="w-4 h-4" /> },
     { id: 'docs', label: 'Documentation', icon: <BookOpen className="w-4 h-4" /> },
