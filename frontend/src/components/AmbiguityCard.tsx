@@ -1,6 +1,6 @@
 import React from 'react';
 import { AmbiguityDetails, EntityMatchResult } from '../types';
-import { AlertTriangle, HelpCircle } from 'lucide-react';
+import { AlertTriangle, HelpCircle, Layers, ShieldAlert, Award } from 'lucide-react';
 
 interface AmbiguityCardProps {
   ambiguity: AmbiguityDetails;
@@ -58,28 +58,31 @@ export const AmbiguityCard: React.FC<AmbiguityCardProps> = ({ ambiguity, candida
         </div>
       )}
 
-      {/* Candidate entities list */}
+      {/* Candidate entities list with Phase 6 ranking metrics */}
       {list.length > 0 && (
         <div>
-          <div className="text-xs font-bold text-slate-700 dark:text-slate-300 uppercase tracking-wider mb-2.5">
-            Top Candidate Entities ({list.length}):
+          <div className="text-xs font-bold text-slate-700 dark:text-slate-300 uppercase tracking-wider mb-2.5 flex items-center justify-between">
+            <span>Ranked Candidates ({list.length}):</span>
+            <span className="text-[11px] text-slate-500 font-normal">Context-Aware Multi-Factor Ranking</span>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
             {list.map((item, idx) => {
               const c = item.candidate;
+              const exp = item.ranking_explanation;
               const isTop = idx === 0;
               return (
                 <div
                   key={c.id || idx}
                   className={`p-4 rounded-lg border transition-all ${
                     isTop
-                      ? 'bg-white dark:bg-slate-900 border-amber-400 dark:border-amber-600 shadow-sm'
-                      : 'bg-white/60 dark:bg-slate-900/60 border-slate-200 dark:border-slate-800'
+                      ? 'bg-white dark:bg-slate-900 border-amber-400 dark:border-amber-600 shadow-sm ring-1 ring-amber-400/20'
+                      : 'bg-white/70 dark:bg-slate-900/70 border-slate-200 dark:border-slate-800'
                   }`}
                 >
                   <div className="flex items-start justify-between mb-2">
                     <div>
                       <div className="text-sm font-bold text-slate-900 dark:text-white flex items-center gap-1.5">
+                        {isTop && <Award className="w-4 h-4 text-amber-500 shrink-0" />}
                         <span>{c.name}</span>
                         {c.name_hi && (
                           <span className="text-xs font-normal text-slate-500 dark:text-slate-400">
@@ -87,16 +90,25 @@ export const AmbiguityCard: React.FC<AmbiguityCardProps> = ({ ambiguity, candida
                           </span>
                         )}
                       </div>
-                      <span className="text-[11px] px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 uppercase font-medium">
-                        {c.entity_type}
-                      </span>
+                      <div className="flex items-center gap-1.5 mt-0.5">
+                        <span className="text-[10px] px-1.5 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 uppercase font-medium">
+                          {c.entity_type}
+                        </span>
+                        {exp && exp.consensus_count && exp.consensus_count > 1 && (
+                          <span className="text-[10px] px-1.5 py-0.5 rounded bg-indigo-50 dark:bg-indigo-950/50 text-indigo-700 dark:text-indigo-300 font-medium flex items-center gap-1">
+                            <Layers className="w-3 h-3" /> {exp.consensus_count} Channels
+                          </span>
+                        )}
+                      </div>
                     </div>
 
                     <div className="text-right">
                       <div className="text-sm font-bold text-indigo-600 dark:text-indigo-400">
-                        {Math.round(item.match_score)} / 100
+                        {item.match_score.toFixed(1)} / 100
                       </div>
-                      <span className="text-[10px] text-slate-400">Match Score</span>
+                      <span className="text-[10px] text-slate-400">
+                        {item.match_confidence} Confidence
+                      </span>
                     </div>
                   </div>
 
@@ -127,6 +139,18 @@ export const AmbiguityCard: React.FC<AmbiguityCardProps> = ({ ambiguity, candida
                         <span className="font-mono font-medium text-slate-800 dark:text-slate-200">
                           {c.pincode}
                         </span>
+                      </div>
+                    )}
+
+                    {/* Applied Penalties Display if any */}
+                    {exp && exp.applied_penalties && exp.applied_penalties.length > 0 && (
+                      <div className="mt-2 pt-1 border-t border-red-100 dark:border-red-950/40">
+                        {exp.applied_penalties.map((pen, pIdx) => (
+                          <div key={pIdx} className="flex items-center gap-1 text-[11px] text-red-600 dark:text-red-400">
+                            <ShieldAlert className="w-3 h-3 shrink-0" />
+                            <span>{pen.name}: {pen.deduction} pts ({pen.reason})</span>
+                          </div>
+                        ))}
                       </div>
                     )}
                   </div>

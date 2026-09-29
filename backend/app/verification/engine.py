@@ -190,7 +190,9 @@ class VerificationEngine:
             hierarchy=hierarchy_res,
             boundary=boundary_res,
             pin=pin_res,
-            is_ambiguous=is_ambiguous
+            is_ambiguous=is_ambiguous,
+            top_candidate=resolution.candidate_matches[0] if resolution.candidate_matches else None,
+            ambiguity_details=resolution.ambiguity
         )
 
         # 11. Evidence Graph Construction

@@ -1,6 +1,6 @@
 """Transparent multi-factor Entity Match Scorer for geographic candidate ranking."""
 
-from typing import Optional, Tuple
+from typing import Optional, List, Tuple
 import math
 from app.entity_resolution.models import (
     CandidateEntity,
@@ -9,6 +9,7 @@ from app.entity_resolution.models import (
     EntityType
 )
 from app.schemas.address import Coordinates
+from app.entity_resolution.ranking import context_aware_ranker, ContextAwareRanker
 
 
 def _haversine_distance(c1: Coordinates, c2: Coordinates) -> float:
@@ -21,7 +22,6 @@ def _haversine_distance(c1: Coordinates, c2: Coordinates) -> float:
     a = math.sin(dlat / 2)**2 + math.cos(lat1_rad) * math.cos(lat2_rad) * math.sin(dlon / 2)**2
     c = 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))
     return round(R * c, 2)
-
 
 
 class EntityMatcher:
@@ -125,6 +125,30 @@ class EntityMatcher:
             match_score=total_score,
             breakdown=breakdown,
             match_confidence=confidence
+        )
+
+    @classmethod
+    def rank_candidates(
+        cls,
+        candidates: List[CandidateEntity],
+        query_text: str,
+        context_state: Optional[str] = None,
+        context_district: Optional[str] = None,
+        context_subdistrict: Optional[str] = None,
+        context_pin: Optional[str] = None,
+        context_coordinates: Optional[Coordinates] = None,
+        expected_type: Optional[EntityType] = None
+    ) -> List[EntityMatchResult]:
+        """Ranks candidate entities with Phase 6 ContextAwareRanker."""
+        return context_aware_ranker.rank_candidates(
+            candidates=candidates,
+            query_text=query_text,
+            context_state=context_state,
+            context_district=context_district,
+            context_subdistrict=context_subdistrict,
+            context_pin=context_pin,
+            context_coordinates=context_coordinates,
+            expected_type=expected_type
         )
 
 

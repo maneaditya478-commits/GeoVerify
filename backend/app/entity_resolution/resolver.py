@@ -167,7 +167,7 @@ class AddressEntityResolver:
                     resolved_entities["subdistrict"] = c
 
         # 4. Locality Candidate Resolution & Multi-Token Expansion
-        locality_matches: List[EntityMatchResult] = []
+        locality_candidates: List[CandidateEntity] = []
         loc_queries: List[str] = []
         if parsed.locality:
             loc_queries.append(parsed.locality)
@@ -189,28 +189,30 @@ class AddressEntityResolver:
                 context_subdistrict=parsed.subdistrict,
                 context_pin=parsed.pincode,
                 context_coordinates=context_coordinates,
-                limit=8
+                limit=10
             )
             for c in loc_cands:
-                if c.id in seen_loc_candidate_ids:
-                    continue
-                seen_loc_candidate_ids.add(c.id)
+                if c.id not in seen_loc_candidate_ids:
+                    seen_loc_candidate_ids.add(c.id)
+                    locality_candidates.append(c)
 
-                match_res = entity_matcher.match_candidate(
-                    c,
-                    query_text=q,
-                    context_state=parsed.state,
-                    context_district=target_dist,
-                    context_subdistrict=parsed.subdistrict,
-                    context_pin=parsed.pincode,
-                    context_coordinates=context_coordinates
-                )
-                locality_matches.append(match_res)
-                all_candidate_matches.append(match_res)
+        # Rank locality candidates with full contextual scoring and penalty deductions
+        primary_loc_query = parsed.locality or (loc_queries[0] if loc_queries else address_text)
+        locality_matches = entity_matcher.rank_candidates(
+            candidates=locality_candidates,
+            query_text=primary_loc_query,
+            context_state=parsed.state or (resolved_entities["state"].name if resolved_entities["state"] else None),
+            context_district=target_dist or (resolved_entities["district"].name if resolved_entities["district"] else None),
+            context_subdistrict=parsed.subdistrict,
+            context_pin=parsed.pincode,
+            context_coordinates=context_coordinates,
+            expected_type=EntityType.LOCALITY
+        )
 
-        # Sort locality candidates by match score
-        locality_matches.sort(key=lambda m: m.match_score, reverse=True)
-        if locality_matches and locality_matches[0].match_score >= 60.0:
+        for lm in locality_matches:
+            all_candidate_matches.append(lm)
+
+        if locality_matches and locality_matches[0].match_score >= 45.0:
             resolved_entities["locality"] = locality_matches[0].candidate
 
         # 5. PIN Code Candidate Resolution

@@ -24,3 +24,7 @@ class DatasetLoader:
     @classmethod
     def load_default(cls) -> BenchmarkDataset:
         return cls.load_from_json(cls.get_default_dataset_path())
+
+    @classmethod
+    def load_default_dataset(cls) -> BenchmarkDataset:
+        return cls.load_default()

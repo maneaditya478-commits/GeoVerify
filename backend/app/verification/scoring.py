@@ -1,6 +1,6 @@
 """Scoring engine and status evaluator for GeoVerify India."""
 
-from typing import List, Tuple
+from typing import List, Tuple, Optional, Any
 from app.config import settings
 from app.schemas.verification import (
     VerificationStatus,
@@ -10,6 +10,7 @@ from app.schemas.verification import (
     PinVerificationResult
 )
 from app.schemas.hierarchy import AdministrativeHierarchyResult
+from app.verification.decision_engine import decision_engine
 
 
 class ScoringEngine:
@@ -22,7 +23,9 @@ class ScoringEngine:
         hierarchy: AdministrativeHierarchyResult,
         boundary: BoundaryVerificationResult,
         pin: PinVerificationResult,
-        is_ambiguous: bool = False
+        is_ambiguous: bool = False,
+        top_candidate: Optional[Any] = None,
+        ambiguity_details: Optional[Any] = None
     ) -> Tuple[int, ScoreBreakdown, VerificationStatus, str]:
         weights = settings.scoring_weights
 
@@ -59,28 +62,15 @@ class ScoringEngine:
             total_score=total_score
         )
 
-        # Check for conflicts
-        has_hierarchy_mismatch = (not hierarchy.is_consistent or len(hierarchy.mismatch_details) > 0) and bool(hierarchy.state or hierarchy.district or hierarchy.locality)
-        has_boundary_mismatch = (boundary.point_inside_district is False and boundary.detected_district is not None)
-        has_pin_mismatch = pin.pincode is not None and pin.is_valid_format and not pin.matched
+        # Evaluate verification decision via VerificationDecisionEngine
+        decision = decision_engine.evaluate(
+            consistency_score=total_score,
+            hierarchy=hierarchy,
+            boundary=boundary,
+            pin=pin,
+            is_ambiguous=is_ambiguous,
+            top_candidate=top_candidate,
+            ambiguity_details=ambiguity_details
+        )
 
-        if not hierarchy.state and not hierarchy.district and not hierarchy.locality and not pin.pincode:
-            status = VerificationStatus.UNABLE_TO_VERIFY
-            summary = "Insufficient geographic details to verify the address."
-        elif has_hierarchy_mismatch or has_boundary_mismatch:
-            status = VerificationStatus.INCONSISTENT
-            summary = "Important address components conflict with authoritative administrative or geometric boundaries."
-        elif is_ambiguous:
-            status = VerificationStatus.AMBIGUOUS
-            summary = "Multiple distinct geographic locations match the supplied information. Additional context or PIN code is required."
-        elif has_pin_mismatch or total_score < 70:
-            status = VerificationStatus.NEEDS_REVIEW
-            summary = "Some evidence discrepancies or incomplete data detected. Human verification recommended."
-        elif total_score >= 85 and hierarchy.is_consistent and boundary.point_inside_district:
-            status = VerificationStatus.VERIFIED
-            summary = "Strong geographic, administrative, and geometric consistency verified across all signals."
-        else:
-            status = VerificationStatus.CONSISTENT
-            summary = "Geographically consistent. Most authoritative evidence aligns with minor non-critical omissions."
-
-        return total_score, score_breakdown, status, summary
+        return total_score, score_breakdown, decision.status, decision.summary

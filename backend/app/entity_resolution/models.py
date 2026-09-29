@@ -35,14 +35,38 @@ class CandidateEntity(BaseModel):
     bbox: Optional[List[float]] = Field(None, description="Bounding box [min_lon, min_lat, max_lon, max_lat]")
     similarity_score: float = Field(..., ge=0.0, le=1.0, description="Raw name similarity ratio (0-1)")
     match_source: str = Field("catalog", description="Resolution strategy: exact, alias, transliteration, fuzzy")
+    channels: List[str] = Field(default_factory=list, description="List of retrieval channels that discovered this candidate")
+
+
+class AppliedPenalty(BaseModel):
+    name: str = Field(..., description="Penalty rule identifier")
+    deduction: float = Field(..., description="Negative score point deduction")
+    reason: str = Field(..., description="Human-readable explanation of why penalty was applied")
+
+
+class RankingExplanation(BaseModel):
+    feature_contributions: Dict[str, float] = Field(default_factory=dict, description="Raw and weighted component contributions")
+    applied_penalties: List[AppliedPenalty] = Field(default_factory=list, description="List of administrative or type conflict deductions")
+    total_penalty_deduction: float = Field(0.0, description="Sum of penalty deductions")
+    retrieval_channels: List[str] = Field(default_factory=list, description="Retrieval channels that found this entity")
+    consensus_count: int = Field(1, description="Number of independent retrieval channels")
+    rank: int = Field(1, description="Final rank of candidate (1-indexed)")
+    score_delta_to_next: Optional[float] = Field(None, description="Score difference compared to the next candidate")
+    admin_differences: List[str] = Field(default_factory=list, description="Administrative differences from contextual assertions")
+    summary: str = Field("", description="Explainable ranking rationale")
 
 
 class EntityMatchBreakdown(BaseModel):
-    name_similarity: float = Field(..., description="Weighted name similarity score (0-40)")
+    name_similarity: float = Field(..., description="Weighted name similarity score (0-40 or 0-25)")
     admin_context: float = Field(..., description="Administrative context agreement score (0-25)")
-    pin_compatibility: float = Field(..., description="Postal code compatibility score (0-15)")
-    geographic_proximity: float = Field(..., description="Spatial proximity / coordinate score (0-15)")
+    parent_child_compatibility: float = Field(0.0, description="Hierarchical multi-tier jurisdictional alignment (0-15)")
+    pin_compatibility: float = Field(..., description="Postal code compatibility score (0-15 or 0-10)")
+    geographic_proximity: float = Field(..., description="Spatial proximity / coordinate score (0-15 or 0-10)")
+    transliteration_phonetic: float = Field(0.0, description="Devanagari transliteration and Indic phonetic agreement (0-5)")
     entity_type_weight: float = Field(..., description="Classification confidence score (0-5)")
+    retrieval_consensus: float = Field(0.0, description="Consensus across independent retrieval channels (0-3)")
+    data_quality: float = Field(0.0, description="Source authority, completeness, and geometry freshness (0-2)")
+    penalty_deduction: float = Field(0.0, description="Total penalty deduction applied (negative or zero)")
     total_score: float = Field(..., ge=0.0, le=100.0, description="Total Entity Match Score (0-100)")
 
 
@@ -51,6 +75,7 @@ class EntityMatchResult(BaseModel):
     match_score: float = Field(..., ge=0.0, le=100.0, description="Entity Match Score (0-100)")
     breakdown: EntityMatchBreakdown
     match_confidence: str = Field("HIGH", description="HIGH, MEDIUM, LOW")
+    ranking_explanation: Optional[RankingExplanation] = None
 
 
 class AmbiguityDetails(BaseModel):

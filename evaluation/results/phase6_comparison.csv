@@ -1,0 +1,956 @@
+case_id,category,ground_truth,phase5_r1,phase6_r1,phase5_top1,phase6_top1
+GV-000734,SUBDISTRICT_MISMATCH,Bandra West,True,False,Bandra West,400050
+GV-000218,DEVANAGARI_HINDI,Rajarampuri,True,True,Rajarampuri,Rajarampuri
+GV-001015,NEARBY_BUT_WRONG_LOCALITY,Viman Nagar,True,True,Viman Nagar,Viman Nagar
+GV-000487,HISTORICAL_ALIAS,Bandra West,True,True,Bandra West,Bandra West
+GV-000151,INFORMAL_SLANG,Koramangala,True,True,Koramangala,Koramangala
+GV-000433,MISSPELLING,Viman Nagar,True,True,Viman Nagar,Viman Nagar
+GV-000186,DEVANAGARI_HINDI,Viman Nagar,True,True,Viman Nagar,Viman Nagar
+GV-000495,HISTORICAL_ALIAS,HSR Layout,True,True,HSR Layout,HSR Layout
+GV-000304,MIXED_LANGUAGE,Dwarka,False,False,Connaught Place,Connaught Place
+GV-000409,MISSPELLING,Vaishali Nagar,True,True,Vaishali Nagar,Vaishali Nagar
+GV-000806,PIN_MISMATCH,Malviya Nagar,True,True,Malviya Nagar,Malviya Nagar
+GV-000388,TYPO,Thane West,True,True,Thane West,Thane West
+GV-000724,SUBDISTRICT_MISMATCH,Viman Nagar,True,False,Viman Nagar,Hinjewadi
+GV-001035,NEARBY_BUT_WRONG_LOCALITY,Viman Nagar,True,True,Viman Nagar,Viman Nagar
+GV-000100,PARTIAL_VALID,HITEC City,True,True,HITEC City,HITEC City
+GV-000013,COMPLETE_VALID,Powai,True,True,Powai,Powai
+GV-000768,LOCALITY_MISMATCH,Baner,False,False,HSR Layout,HSR Layout
+GV-001018,NEARBY_BUT_WRONG_LOCALITY,Kharadi,False,False,Powai,Powai
+GV-000307,MIXED_LANGUAGE,Kothrud,True,True,Kothrud,Kothrud
+GV-000502,HISTORICAL_ALIAS,Electronic City,True,True,Electronic City,Electronic City
+GV-000002,COMPLETE_VALID,Baner,True,True,Baner,Baner
+GV-000540,AMBIGUOUS_LOCALITY,Fatehpur,True,True,Fatehpur,Fatehpur
+GV-000704,SUBDISTRICT_MISMATCH,Powai,True,False,Powai,400076
+GV-000011,COMPLETE_VALID,Salt Lake,True,True,Salt Lake,Salt Lake
+GV-000219,DEVANAGARI_HINDI,Whitefield,True,True,Whitefield,Whitefield
+GV-000505,HISTORICAL_ALIAS,Kharadi,True,True,Kharadi,Kharadi
+GV-000455,MISSPELLING,Dwarka,False,False,Connaught Place,Connaught Place
+GV-000454,MISSPELLING,T Nagar,True,True,T Nagar,T Nagar
+GV-000744,LOCALITY_MISMATCH,Kharadi,False,False,HSR Layout,HSR Layout
+GV-000215,DEVANAGARI_HINDI,Vaishali Nagar,True,True,Vaishali Nagar,Vaishali Nagar
+GV-000473,HISTORICAL_ALIAS,Salt Lake,True,True,Salt Lake,Salt Lake
+GV-000813,PIN_MISMATCH,Hauz Khas,False,False,Connaught Place,Connaught Place
+GV-000856,INVALID_PIN,Electronic City,True,True,Electronic City,Electronic City
+GV-001033,NEARBY_BUT_WRONG_LOCALITY,Viman Nagar,True,True,Viman Nagar,Viman Nagar
+GV-000712,SUBDISTRICT_MISMATCH,Andheri East,True,True,Andheri East,Andheri East
+GV-000188,DEVANAGARI_HINDI,Sector 62,True,True,Sector 62,Sector 62
+GV-000260,DEVANAGARI_MARATHI,Rajarampuri,True,True,Rajarampuri,Rajarampuri
+GV-000241,DEVANAGARI_MARATHI,Powai,True,True,Powai,Powai
+GV-000834,PIN_MISMATCH,Adyar,True,True,Adyar,Adyar
+GV-000314,MIXED_LANGUAGE,New Town,True,True,New Town,New Town
+GV-000687,SUBDISTRICT_MISMATCH,Baner,True,False,Baner,Hinjewadi
+GV-000206,DEVANAGARI_HINDI,Baner,True,True,Baner,Baner
+GV-000114,PARTIAL_VALID,Sector 62,True,True,Sector 62,Sector 62
+GV-000356,TYPO,Connaught Place,True,True,Connaught Place,Connaught Place
+GV-000008,COMPLETE_VALID,Electronic City,True,True,Electronic City,Electronic City
+GV-000509,HISTORICAL_ALIAS,Andheri East,True,True,Andheri East,Andheri East
+GV-000345,MIXED_LANGUAGE,Bandra West,True,True,Bandra West,Bandra West
+GV-000132,INFORMAL_SLANG,Viman Nagar,True,True,Viman Nagar,Viman Nagar
+GV-000761,LOCALITY_MISMATCH,Andheri East,False,False,Gokulam,570002
+GV-000524,AMBIGUOUS_LOCALITY,Bilaspur,True,True,Bilaspur,Bilaspur
+GV-000020,COMPLETE_VALID,Vesu,True,True,Vesu,Vesu
+GV-000179,INFORMAL_SLANG,Vesu,True,True,Vesu,Vesu
+GV-000135,INFORMAL_SLANG,Indiranagar,True,True,Indiranagar,Indiranagar
+GV-000585,DISTRICT_MISMATCH,Adyar,True,True,Adyar,Adyar
+GV-000237,DEVANAGARI_HINDI,Rohini,False,False,Connaught Place,Connaught Place
+GV-000352,TYPO,T Nagar,True,True,T Nagar,T Nagar
+GV-000442,MISSPELLING,Vaishali Nagar,True,True,Vaishali Nagar,Vaishali Nagar
+GV-000802,PIN_MISMATCH,Koramangala,True,True,Koramangala,Koramangala
+GV-000780,LOCALITY_MISMATCH,Kharadi,False,False,Gokulam,Gokulam
+GV-000073,COMPLETE_VALID,Gomti Nagar,True,True,Gomti Nagar,Gomti Nagar
+GV-000838,PIN_MISMATCH,Karol Bagh,False,False,Connaught Place,Connaught Place
+GV-000577,DISTRICT_MISMATCH,New Town,False,False,Salt Lake,Salt Lake
+GV-001036,NEARBY_BUT_WRONG_LOCALITY,Kharadi,False,False,Thane West,Thane West
+GV-000320,MIXED_LANGUAGE,Salt Lake,True,True,Salt Lake,Salt Lake
+GV-000987,WRONG_ADMIN_HIERARCHY,Electronic City,True,True,Electronic City,Electronic City
+GV-000034,COMPLETE_VALID,Dwarka,True,False,Dwarka,110001
+GV-000562,AMBIGUOUS_LOCALITY,Rajapur,True,True,Rajapur,Rajapur
+GV-000059,COMPLETE_VALID,Navrangpura,True,True,Navrangpura,Navrangpura
+GV-000160,INFORMAL_SLANG,Indiranagar,False,False,Whitefield,Whitefield
+GV-000498,HISTORICAL_ALIAS,Indiranagar,True,True,Indiranagar,Indiranagar
+GV-000814,PIN_MISMATCH,Rohini,False,False,Connaught Place,Connaught Place
+GV-000312,MIXED_LANGUAGE,Salt Lake,True,True,Salt Lake,Salt Lake
+GV-000959,WRONG_ADMIN_HIERARCHY,New Town,True,True,New Town,New Town
+GV-000245,DEVANAGARI_MARATHI,Powai,True,True,Powai,Powai
+GV-000964,WRONG_ADMIN_HIERARCHY,Rajarampuri,True,True,Rajarampuri,Rajarampuri
+GV-000177,INFORMAL_SLANG,Baner,True,True,Baner,Baner
+GV-000464,HISTORICAL_ALIAS,Salt Lake,True,True,Salt Lake,Salt Lake
+GV-000001,COMPLETE_VALID,Powai,True,True,Powai,Powai
+GV-000456,MISSPELLING,Banjara Hills,True,True,Banjara Hills,Banjara Hills
+GV-000265,DEVANAGARI_MARATHI,Hadapsar,True,True,Hadapsar,Hadapsar
+GV-000397,TYPO,Hinjewadi,True,True,Hinjewadi,Hinjewadi
+GV-000830,PIN_MISMATCH,Connaught Place,True,True,Connaught Place,Connaught Place
+GV-000835,PIN_MISMATCH,Whitefield,True,True,Whitefield,Whitefield
+GV-000366,TYPO,Sector 62,True,True,Sector 62,Sector 62
+GV-000056,COMPLETE_VALID,Rajarhat,True,True,Rajarhat,Rajarhat
+GV-000359,TYPO,HSR Layout,True,True,HSR Layout,HSR Layout
+GV-000891,INVALID_PIN,Navrangpura,True,True,Navrangpura,Navrangpura
+GV-000452,MISSPELLING,HITEC City,True,True,HITEC City,HITEC City
+GV-000400,TYPO,Rohini,False,False,Connaught Place,Connaught Place
+GV-000809,PIN_MISMATCH,Navrangpura,True,True,Navrangpura,Navrangpura
+GV-000313,MIXED_LANGUAGE,Viman Nagar,True,True,Viman Nagar,Viman Nagar
+GV-000594,DISTRICT_MISMATCH,Andheri East,True,True,Andheri East,Andheri East
+GV-000445,MISSPELLING,Malviya Nagar,True,True,Malviya Nagar,Malviya Nagar
+GV-000324,MIXED_LANGUAGE,Andheri East,True,True,Andheri East,Andheri East
+GV-000021,COMPLETE_VALID,Andheri East,True,True,Andheri East,Andheri East
+GV-000499,HISTORICAL_ALIAS,Kharadi,True,True,Kharadi,Kharadi
+GV-000714,SUBDISTRICT_MISMATCH,Bandra West,True,False,Bandra West,400050
+GV-000610,DISTRICT_MISMATCH,Baner,True,False,Baner,Bandra West
+GV-000032,COMPLETE_VALID,Powai,True,True,Powai,Powai
+GV-000579,DISTRICT_MISMATCH,New Town,False,False,Salt Lake,Salt Lake
+GV-000620,DISTRICT_MISMATCH,Andheri East,True,True,Andheri East,Andheri East
+GV-000437,MISSPELLING,Bandra West,True,True,Bandra West,Bandra West
+GV-001041,NEARBY_BUT_WRONG_LOCALITY,Kharadi,False,False,Kothrud,Kothrud
+GV-000847,INVALID_PIN,Rohini,False,False,Connaught Place,Connaught Place
+GV-000956,WRONG_ADMIN_HIERARCHY,Saket,False,False,Connaught Place,Connaught Place
+GV-000299,MIXED_LANGUAGE,Connaught Place,True,True,Connaught Place,Connaught Place
+GV-000459,MISSPELLING,Andheri East,True,True,Andheri East,Andheri East
+GV-000376,TYPO,Hinjewadi,True,True,Hinjewadi,Hinjewadi
+GV-000833,PIN_MISMATCH,Viman Nagar,True,True,Viman Nagar,Viman Nagar
+GV-000176,INFORMAL_SLANG,Rajarhat,True,False,Rajarhat,New Town
+GV-000898,INVALID_PIN,Whitefield,True,True,Whitefield,Whitefield
+GV-000568,AMBIGUOUS_LOCALITY,Rampur,True,True,Rampur,Rajarampuri
+GV-000554,AMBIGUOUS_LOCALITY,Bilaspur,True,True,Bilaspur,Bilaspur
+GV-000469,HISTORICAL_ALIAS,Andheri East,True,True,Andheri East,Andheri East
+GV-000436,MISSPELLING,Kothrud,True,True,Kothrud,Kothrud
+GV-000520,AMBIGUOUS_LOCALITY,Rajapur,True,True,Rajapur,Rajapur
+GV-000997,WRONG_ADMIN_HIERARCHY,Karol Bagh,False,False,Connaught Place,Connaught Place
+GV-000146,INFORMAL_SLANG,Gomti Nagar,True,True,Gomti Nagar,Gomti Nagar
+GV-000134,INFORMAL_SLANG,Gokulam,True,True,Gokulam,Gokulam
+GV-000566,AMBIGUOUS_LOCALITY,Aurangabad,True,True,Aurangabad,Aurangabad
+GV-000798,PIN_MISMATCH,Baner,True,True,Baner,Baner
+GV-000463,HISTORICAL_ALIAS,Indiranagar,True,True,Indiranagar,Indiranagar
+GV-000748,LOCALITY_MISMATCH,Kharadi,False,False,HSR Layout,HSR Layout
+GV-000090,PARTIAL_VALID,Gokulam,True,True,Gokulam,Gokulam
+GV-000037,COMPLETE_VALID,T Nagar,True,True,T Nagar,T Nagar
+GV-000811,PIN_MISMATCH,Baner,True,True,Baner,Baner
+GV-000870,INVALID_PIN,Gokulam,True,True,Gokulam,Gokulam
+GV-001023,NEARBY_BUT_WRONG_LOCALITY,Kharadi,False,False,Kothrud,Kothrud
+GV-000076,PARTIAL_VALID,Gomti Nagar,True,True,Gomti Nagar,Gomti Nagar
+GV-000027,COMPLETE_VALID,Vaishali Nagar,True,True,Vaishali Nagar,Vaishali Nagar
+GV-000379,TYPO,Electronic City,True,True,Electronic City,Electronic City
+GV-000803,PIN_MISMATCH,Baner,True,True,Baner,Baner
+GV-000817,PIN_MISMATCH,Connaught Place,True,True,Connaught Place,Connaught Place
+GV-000494,HISTORICAL_ALIAS,Indiranagar,True,True,Indiranagar,Indiranagar
+GV-000276,DEVANAGARI_MARATHI,Baner,True,True,Baner,Baner
+GV-000777,LOCALITY_MISMATCH,Bandra West,False,False,Electronic City,Electronic City
+GV-000440,MISSPELLING,Karol Bagh,False,False,Connaught Place,Connaught Place
+GV-000451,MISSPELLING,Adyar,True,True,Adyar,Adyar
+GV-000536,AMBIGUOUS_LOCALITY,Aurangabad,True,True,Aurangabad,Aurangabad
+GV-000161,INFORMAL_SLANG,Powai,True,True,Powai,Powai
+GV-000149,INFORMAL_SLANG,Malviya Nagar,True,True,Malviya Nagar,Malviya Nagar
+GV-000143,INFORMAL_SLANG,Andheri East,True,True,Andheri East,Andheri East
+GV-000133,INFORMAL_SLANG,Adyar,True,True,Adyar,Adyar
+GV-000726,SUBDISTRICT_MISMATCH,Hinjewadi,True,False,Hinjewadi,Kharadi
+GV-000067,COMPLETE_VALID,Gokulam,True,True,Gokulam,Gokulam
+GV-000026,COMPLETE_VALID,HSR Layout,True,True,HSR Layout,HSR Layout
+GV-000326,MIXED_LANGUAGE,Navrangpura,True,True,Navrangpura,Navrangpura
+GV-000375,TYPO,HSR Layout,True,True,HSR Layout,HSR Layout
+GV-000111,PARTIAL_VALID,Koramangala,True,True,Koramangala,Koramangala
+GV-000085,PARTIAL_VALID,Saket,False,False,Connaught Place,Connaught Place
+GV-000348,MIXED_LANGUAGE,Salt Lake,True,True,Salt Lake,Salt Lake
+GV-000374,TYPO,Viman Nagar,True,True,Viman Nagar,Viman Nagar
+GV-000233,DEVANAGARI_HINDI,Sector 62,True,True,Sector 62,Sector 62
+GV-000796,PIN_MISMATCH,Kothrud,True,True,Kothrud,Kothrud
+GV-000530,AMBIGUOUS_LOCALITY,Bilaspur,True,True,Bilaspur,Bilaspur
+GV-000166,INFORMAL_SLANG,Thane West,True,True,Thane West,Thane West
+GV-000394,TYPO,Gokulam,True,True,Gokulam,Gokulam
+GV-000091,PARTIAL_VALID,Viman Nagar,True,True,Viman Nagar,Viman Nagar
+GV-000266,DEVANAGARI_MARATHI,Thane West,True,True,Thane West,Thane West
+GV-000888,INVALID_PIN,Gomti Nagar,True,True,Gomti Nagar,Gomti Nagar
+GV-001009,WRONG_ADMIN_HIERARCHY,Malviya Nagar,True,True,Malviya Nagar,Malviya Nagar
+GV-000367,TYPO,Rohini,False,False,Connaught Place,Connaught Place
+GV-001012,NEARBY_BUT_WRONG_LOCALITY,Kharadi,False,False,Hadapsar,Hadapsar
+GV-000785,LOCALITY_MISMATCH,Hadapsar,False,False,Gokulam,Gokulam
+GV-000605,DISTRICT_MISMATCH,Hadapsar,True,False,Hadapsar,Bandra West
+GV-000288,DEVANAGARI_MARATHI,Hinjewadi,True,True,Hinjewadi,Hinjewadi
+GV-000616,DISTRICT_MISMATCH,HITEC City,True,True,HITEC City,HITEC City
+GV-001065,NEARBY_BUT_WRONG_LOCALITY,Viman Nagar,True,True,Viman Nagar,Viman Nagar
+GV-000860,INVALID_PIN,Salt Lake,True,True,Salt Lake,Salt Lake
+GV-000482,HISTORICAL_ALIAS,Electronic City,True,True,Electronic City,Electronic City
+GV-000108,PARTIAL_VALID,Kothrud,True,True,Kothrud,Kothrud
+GV-000449,MISSPELLING,Gomti Nagar,True,True,Gomti Nagar,Gomti Nagar
+GV-000446,MISSPELLING,Adyar,True,True,Adyar,Adyar
+GV-000878,INVALID_PIN,Kothrud,True,True,Kothrud,Kothrud
+GV-000302,MIXED_LANGUAGE,Navrangpura,True,True,Navrangpura,Navrangpura
+GV-000123,PARTIAL_VALID,Hauz Khas,False,False,Connaught Place,Connaught Place
+GV-000770,LOCALITY_MISMATCH,Thane West,False,False,HSR Layout,560102
+GV-000746,LOCALITY_MISMATCH,Rajarampuri,False,False,HSR Layout,HSR Layout
+GV-000019,COMPLETE_VALID,Kothrud,True,True,Kothrud,Kothrud
+GV-000184,INFORMAL_SLANG,Kothrud,True,True,Kothrud,Kothrud
+GV-000522,AMBIGUOUS_LOCALITY,Fatehpur,True,True,Fatehpur,Fatehpur
+GV-001029,NEARBY_BUT_WRONG_LOCALITY,Kharadi,False,False,Kothrud,Kothrud
+GV-000702,SUBDISTRICT_MISMATCH,Hadapsar,True,False,Hadapsar,Hinjewadi
+GV-000493,HISTORICAL_ALIAS,Powai,True,True,Powai,Powai
+GV-000415,MISSPELLING,Malviya Nagar,True,True,Malviya Nagar,Malviya Nagar
+GV-000036,COMPLETE_VALID,Saket,True,False,Saket,110001
+GV-000128,PARTIAL_VALID,New Town,True,True,New Town,New Town
+GV-000743,LOCALITY_MISMATCH,Viman Nagar,False,False,Koramangala,Koramangala
+GV-000105,PARTIAL_VALID,Hauz Khas,False,False,Connaught Place,Connaught Place
+GV-000897,INVALID_PIN,Bandra West,True,True,Bandra West,Bandra West
+GV-000462,HISTORICAL_ALIAS,Gokulam,True,True,Gokulam,Gokulam
+GV-000879,INVALID_PIN,Sector 62,True,True,Sector 62,Sector 62
+GV-000992,WRONG_ADMIN_HIERARCHY,Rajarhat,True,False,Rajarhat,New Town
+GV-000966,WRONG_ADMIN_HIERARCHY,T Nagar,True,True,T Nagar,T Nagar
+GV-000990,WRONG_ADMIN_HIERARCHY,Hadapsar,True,True,Hadapsar,Hadapsar
+GV-000890,INVALID_PIN,Saket,False,False,Connaught Place,Connaught Place
+GV-000113,PARTIAL_VALID,Powai,True,True,Powai,Powai
+GV-000799,PIN_MISMATCH,Hauz Khas,False,False,Connaught Place,Connaught Place
+GV-000364,TYPO,Andheri East,True,True,Andheri East,Andheri East
+GV-000187,DEVANAGARI_HINDI,Dwarka,False,False,Connaught Place,Connaught Place
+GV-000531,AMBIGUOUS_LOCALITY,Rajapur,True,True,Rajapur,Rajapur
+GV-000589,DISTRICT_MISMATCH,Dwarka,False,False,Connaught Place,Connaught Place
+GV-000373,TYPO,Banjara Hills,True,True,Banjara Hills,Banjara Hills
+GV-000362,TYPO,Electronic City,True,True,Electronic City,Electronic City
+GV-000420,MISSPELLING,Baner,True,True,Baner,Baner
+GV-000340,MIXED_LANGUAGE,Vesu,True,True,Vesu,Vesu
+GV-000145,INFORMAL_SLANG,Hauz Khas,False,False,Connaught Place,Connaught Place
+GV-000030,COMPLETE_VALID,Andheri East,True,True,Andheri East,Andheri East
+GV-000729,SUBDISTRICT_MISMATCH,Kothrud,True,False,Kothrud,Hinjewadi
+GV-000595,DISTRICT_MISMATCH,Gokulam,True,False,Gokulam,Whitefield
+GV-000202,DEVANAGARI_HINDI,HITEC City,True,True,HITEC City,HITEC City
+GV-000559,AMBIGUOUS_LOCALITY,Rampur,True,True,Rampur,Rajarampuri
+GV-000378,TYPO,Dwarka,False,False,Connaught Place,Connaught Place
+GV-000097,PARTIAL_VALID,Rajarampuri,True,True,Rajarampuri,Rajarampuri
+GV-000381,TYPO,HSR Layout,True,True,HSR Layout,HSR Layout
+GV-000619,DISTRICT_MISMATCH,Hadapsar,True,False,Hadapsar,Thane West
+GV-000529,AMBIGUOUS_LOCALITY,Bilaspur,True,True,Bilaspur,Bilaspur
+GV-000596,DISTRICT_MISMATCH,Whitefield,True,False,Whitefield,Gokulam
+GV-000126,PARTIAL_VALID,Banjara Hills,True,True,Banjara Hills,Banjara Hills
+GV-000556,AMBIGUOUS_LOCALITY,Rampur,True,True,Rampur,Rajarampuri
+GV-000513,HISTORICAL_ALIAS,Koramangala,True,True,Koramangala,Koramangala
+GV-000448,MISSPELLING,Powai,True,True,Powai,Powai
+GV-000082,PARTIAL_VALID,HITEC City,True,True,HITEC City,HITEC City
+GV-000396,TYPO,Powai,True,True,Powai,Powai
+GV-000102,PARTIAL_VALID,Hauz Khas,False,False,Connaught Place,Connaught Place
+GV-000599,DISTRICT_MISMATCH,HITEC City,True,True,HITEC City,HITEC City
+GV-000309,MIXED_LANGUAGE,Indiranagar,True,True,Indiranagar,Indiranagar
+GV-000828,PIN_MISMATCH,Salt Lake,True,True,Salt Lake,Salt Lake
+GV-000851,INVALID_PIN,New Town,True,True,New Town,New Town
+GV-000165,INFORMAL_SLANG,Electronic City,False,False,Whitefield,Whitefield
+GV-000845,PIN_MISMATCH,Adyar,True,True,Adyar,Adyar
+GV-000567,AMBIGUOUS_LOCALITY,Rampur,True,True,Rampur,Rajarampuri
+GV-000172,INFORMAL_SLANG,Sector 62,True,True,Sector 62,Sector 62
+GV-001028,NEARBY_BUT_WRONG_LOCALITY,Kharadi,False,False,Baner,Baner
+GV-000738,LOCALITY_MISMATCH,Viman Nagar,False,False,Whitefield,Whitefield
+GV-000968,WRONG_ADMIN_HIERARCHY,Banjara Hills,True,True,Banjara Hills,Banjara Hills
+GV-000171,INFORMAL_SLANG,Vesu,True,True,Vesu,Vesu
+GV-000203,DEVANAGARI_HINDI,Rajarampuri,True,True,Rajarampuri,Rajarampuri
+GV-000476,HISTORICAL_ALIAS,Gokulam,True,True,Gokulam,Gokulam
+GV-001022,NEARBY_BUT_WRONG_LOCALITY,Kharadi,False,False,Powai,Powai
+GV-000070,COMPLETE_VALID,Banjara Hills,True,True,Banjara Hills,Banjara Hills
+GV-000235,DEVANAGARI_HINDI,Kothrud,True,True,Kothrud,Kothrud
+GV-000837,PIN_MISMATCH,Hauz Khas,False,False,Connaught Place,Connaught Place
+GV-000855,INVALID_PIN,Bandra West,True,True,Bandra West,Bandra West
+GV-000129,PARTIAL_VALID,Connaught Place,True,True,Connaught Place,Connaught Place
+GV-001030,NEARBY_BUT_WRONG_LOCALITY,Kharadi,True,True,Kharadi,Kharadi
+GV-000765,LOCALITY_MISMATCH,Bandra West,False,False,Whitefield,Whitefield
+GV-000846,INVALID_PIN,Rajarampuri,True,True,Rajarampuri,Rajarampuri
+GV-000382,TYPO,Kothrud,True,True,Kothrud,Kothrud
+GV-000216,DEVANAGARI_HINDI,T Nagar,True,True,T Nagar,T Nagar
+GV-001006,WRONG_ADMIN_HIERARCHY,Hinjewadi,True,True,Hinjewadi,Hinjewadi
+GV-000414,MISSPELLING,Salt Lake,True,True,Salt Lake,Salt Lake
+GV-000086,PARTIAL_VALID,Hadapsar,True,True,Hadapsar,Hadapsar
+GV-000694,SUBDISTRICT_MISMATCH,Rajarampuri,True,False,Rajarampuri,416008
+GV-000974,WRONG_ADMIN_HIERARCHY,Rohini,False,False,Connaught Place,Connaught Place
+GV-000976,WRONG_ADMIN_HIERARCHY,Bandra West,True,True,Bandra West,Bandra West
+GV-000410,MISSPELLING,Powai,True,True,Powai,Powai
+GV-000155,INFORMAL_SLANG,HITEC City,True,True,HITEC City,HITEC City
+GV-000737,LOCALITY_MISMATCH,Hadapsar,False,False,Indiranagar,Indiranagar
+GV-000372,TYPO,Powai,True,True,Powai,Powai
+GV-000334,MIXED_LANGUAGE,T Nagar,True,True,T Nagar,T Nagar
+GV-000087,PARTIAL_VALID,Andheri East,True,True,Andheri East,Andheri East
+GV-000267,DEVANAGARI_MARATHI,Viman Nagar,True,True,Viman Nagar,Viman Nagar
+GV-000886,INVALID_PIN,Salt Lake,True,True,Salt Lake,Salt Lake
+GV-000615,DISTRICT_MISMATCH,Gomti Nagar,True,True,Gomti Nagar,Gomti Nagar
+GV-001057,NEARBY_BUT_WRONG_LOCALITY,Kharadi,False,False,Bandra West,Bandra West
+GV-000849,INVALID_PIN,Adyar,True,True,Adyar,Adyar
+GV-000199,DEVANAGARI_HINDI,Adyar,True,True,Adyar,Adyar
+GV-000500,HISTORICAL_ALIAS,Whitefield,True,True,Whitefield,Whitefield
+GV-000535,AMBIGUOUS_LOCALITY,Fatehpur,True,True,Fatehpur,Fatehpur
+GV-000519,AMBIGUOUS_LOCALITY,Rajapur,True,True,Rajapur,Rajapur
+GV-000825,PIN_MISMATCH,Whitefield,True,True,Whitefield,Whitefield
+GV-000840,PIN_MISMATCH,Viman Nagar,True,True,Viman Nagar,Viman Nagar
+GV-000591,DISTRICT_MISMATCH,Powai,True,False,Powai,Kharadi
+GV-000349,MIXED_LANGUAGE,Sector 62,True,True,Sector 62,Sector 62
+GV-000447,MISSPELLING,Andheri East,True,True,Andheri East,Andheri East
+GV-001024,NEARBY_BUT_WRONG_LOCALITY,Kharadi,False,False,Bandra West,Bandra West
+GV-000014,COMPLETE_VALID,Andheri East,True,True,Andheri East,Andheri East
+GV-000753,LOCALITY_MISMATCH,Hinjewadi,False,False,Whitefield,Whitefield
+GV-000751,LOCALITY_MISMATCH,Powai,False,False,Indiranagar,Indiranagar
+GV-000285,DEVANAGARI_MARATHI,Thane West,True,True,Thane West,Thane West
+GV-000975,WRONG_ADMIN_HIERARCHY,New Town,True,True,New Town,New Town
+GV-000230,DEVANAGARI_HINDI,Kharadi,True,True,Kharadi,Kharadi
+GV-000716,SUBDISTRICT_MISMATCH,Baner,True,False,Baner,Hinjewadi
+GV-000581,DISTRICT_MISMATCH,Banjara Hills,True,True,Banjara Hills,Banjara Hills
+GV-000045,COMPLETE_VALID,Gomti Nagar,True,True,Gomti Nagar,Gomti Nagar
+GV-000068,COMPLETE_VALID,Vesu,True,True,Vesu,Vesu
+GV-000709,SUBDISTRICT_MISMATCH,Powai,True,False,Powai,400076
+GV-000401,TYPO,Electronic City,True,True,Electronic City,Electronic City
+GV-000228,DEVANAGARI_HINDI,Banjara Hills,True,True,Banjara Hills,Banjara Hills
+GV-000158,INFORMAL_SLANG,Saket,False,False,Connaught Place,Connaught Place
+GV-000003,COMPLETE_VALID,T Nagar,True,True,T Nagar,T Nagar
+GV-000850,INVALID_PIN,Hadapsar,True,True,Hadapsar,Hadapsar
+GV-000727,SUBDISTRICT_MISMATCH,Bandra West,True,False,Bandra West,400050
+GV-000696,SUBDISTRICT_MISMATCH,Powai,True,False,Powai,400076
+GV-000163,INFORMAL_SLANG,Malviya Nagar,True,True,Malviya Nagar,Malviya Nagar
+GV-000986,WRONG_ADMIN_HIERARCHY,HITEC City,True,True,HITEC City,HITEC City
+GV-000692,SUBDISTRICT_MISMATCH,Andheri East,True,True,Andheri East,Andheri East
+GV-000404,TYPO,Whitefield,True,True,Whitefield,Whitefield
+GV-000504,HISTORICAL_ALIAS,Salt Lake,True,True,Salt Lake,Salt Lake
+GV-000079,PARTIAL_VALID,Vaishali Nagar,True,True,Vaishali Nagar,Vaishali Nagar
+GV-000880,INVALID_PIN,Saket,False,False,Connaught Place,Connaught Place
+GV-000784,LOCALITY_MISMATCH,Hinjewadi,False,False,HSR Layout,HSR Layout
+GV-001011,NEARBY_BUT_WRONG_LOCALITY,Kharadi,False,False,Hadapsar,Hadapsar
+GV-000127,PARTIAL_VALID,Saket,False,False,Connaught Place,Connaught Place
+GV-000152,INFORMAL_SLANG,Vesu,True,True,Vesu,Vesu
+GV-000486,HISTORICAL_ALIAS,Koramangala,True,True,Koramangala,Koramangala
+GV-000425,MISSPELLING,Hadapsar,True,True,Hadapsar,Hadapsar
+GV-000583,DISTRICT_MISMATCH,Adyar,True,True,Adyar,Adyar
+GV-000300,MIXED_LANGUAGE,Rajarampuri,True,True,Rajarampuri,Rajarampuri
+GV-000096,PARTIAL_VALID,Kothrud,True,True,Kothrud,Kothrud
+GV-000222,DEVANAGARI_HINDI,Electronic City,True,True,Electronic City,Electronic City
+GV-000284,DEVANAGARI_MARATHI,Kharadi,True,True,Kharadi,Kharadi
+GV-001001,WRONG_ADMIN_HIERARCHY,Malviya Nagar,True,True,Malviya Nagar,Malviya Nagar
+GV-000117,PARTIAL_VALID,Connaught Place,True,True,Connaught Place,Connaught Place
+GV-000525,AMBIGUOUS_LOCALITY,Bilaspur,True,True,Bilaspur,Bilaspur
+GV-000731,SUBDISTRICT_MISMATCH,Baner,True,False,Baner,Hinjewadi
+GV-000140,INFORMAL_SLANG,Adyar,True,True,Adyar,Adyar
+GV-000962,WRONG_ADMIN_HIERARCHY,Kothrud,True,True,Kothrud,Kothrud
+GV-000565,AMBIGUOUS_LOCALITY,Aurangabad,True,True,Aurangabad,Aurangabad
+GV-000168,INFORMAL_SLANG,Kothrud,True,True,Kothrud,Kothrud
+GV-000827,PIN_MISMATCH,Vesu,True,True,Vesu,Vesu
+GV-000970,WRONG_ADMIN_HIERARCHY,Dwarka,False,False,Connaught Place,Connaught Place
+GV-000786,LOCALITY_MISMATCH,Rajarampuri,False,False,Gokulam,Gokulam
+GV-000982,WRONG_ADMIN_HIERARCHY,Electronic City,True,True,Electronic City,Electronic City
+GV-000175,INFORMAL_SLANG,Koramangala,True,True,Koramangala,Koramangala
+GV-000399,TYPO,Kharadi,True,True,Kharadi,Kharadi
+GV-000978,WRONG_ADMIN_HIERARCHY,Malviya Nagar,True,True,Malviya Nagar,Malviya Nagar
+GV-001014,NEARBY_BUT_WRONG_LOCALITY,Kharadi,True,True,Kharadi,Kharadi
+GV-000051,COMPLETE_VALID,Gokulam,True,True,Gokulam,Gokulam
+GV-000028,COMPLETE_VALID,Electronic City,True,True,Electronic City,Electronic City
+GV-000995,WRONG_ADMIN_HIERARCHY,Rajarampuri,True,True,Rajarampuri,Rajarampuri
+GV-000257,DEVANAGARI_MARATHI,Kothrud,True,True,Kothrud,Kothrud
+GV-000443,MISSPELLING,Hauz Khas,False,False,Connaught Place,Connaught Place
+GV-000832,PIN_MISMATCH,Adyar,True,True,Adyar,Adyar
+GV-000072,COMPLETE_VALID,Indiranagar,True,True,Indiranagar,Indiranagar
+GV-000977,WRONG_ADMIN_HIERARCHY,Salt Lake,True,True,Salt Lake,Salt Lake
+GV-000816,PIN_MISMATCH,Dwarka,False,False,Connaught Place,Connaught Place
+GV-000277,DEVANAGARI_MARATHI,Rajarampuri,True,True,Rajarampuri,Rajarampuri
+GV-000347,MIXED_LANGUAGE,Banjara Hills,True,True,Banjara Hills,Banjara Hills
+GV-000200,DEVANAGARI_HINDI,Andheri East,True,True,Andheri East,Andheri East
+GV-001025,NEARBY_BUT_WRONG_LOCALITY,Viman Nagar,True,True,Viman Nagar,Viman Nagar
+GV-000395,TYPO,Whitefield,True,True,Whitefield,Whitefield
+GV-001010,WRONG_ADMIN_HIERARCHY,Banjara Hills,True,True,Banjara Hills,Banjara Hills
+GV-000881,INVALID_PIN,Whitefield,True,True,Whitefield,Whitefield
+GV-000040,COMPLETE_VALID,Kothrud,True,True,Kothrud,Kothrud
+GV-000444,MISSPELLING,Banjara Hills,True,True,Banjara Hills,Banjara Hills
+GV-000365,TYPO,Salt Lake,True,True,Salt Lake,Salt Lake
+GV-000603,DISTRICT_MISMATCH,HITEC City,True,True,HITEC City,HITEC City
+GV-000074,COMPLETE_VALID,Navrangpura,True,True,Navrangpura,Navrangpura
+GV-000301,MIXED_LANGUAGE,Gokulam,True,True,Gokulam,Gokulam
+GV-000107,PARTIAL_VALID,Banjara Hills,True,True,Banjara Hills,Banjara Hills
+GV-000725,SUBDISTRICT_MISMATCH,Bandra West,True,False,Bandra West,400050
+GV-000896,INVALID_PIN,Vaishali Nagar,True,True,Vaishali Nagar,Vaishali Nagar
+GV-001005,WRONG_ADMIN_HIERARCHY,Vesu,True,True,Vesu,Vesu
+GV-000337,MIXED_LANGUAGE,Baner,True,True,Baner,Baner
+GV-000289,DEVANAGARI_MARATHI,Kothrud,True,True,Kothrud,Kothrud
+GV-000782,LOCALITY_MISMATCH,Kothrud,False,False,Gokulam,Gokulam
+GV-000507,HISTORICAL_ALIAS,Bandra West,True,True,Bandra West,Bandra West
+GV-000695,SUBDISTRICT_MISMATCH,Hadapsar,True,False,Hadapsar,Hinjewadi
+GV-000422,MISSPELLING,Saket,False,False,Connaught Place,Connaught Place
+GV-000291,DEVANAGARI_MARATHI,Andheri East,True,True,Andheri East,Andheri East
+GV-000109,PARTIAL_VALID,Indiranagar,True,True,Indiranagar,Indiranagar
+GV-000118,PARTIAL_VALID,Thane West,True,True,Thane West,Thane West
+GV-000022,COMPLETE_VALID,Dwarka,True,False,Dwarka,110001
+GV-000996,WRONG_ADMIN_HIERARCHY,Karol Bagh,False,False,Connaught Place,Connaught Place
+GV-000612,DISTRICT_MISMATCH,Kothrud,True,False,Kothrud,Bandra West
+GV-000439,MISSPELLING,Gomti Nagar,True,True,Gomti Nagar,Gomti Nagar
+GV-000170,INFORMAL_SLANG,Kharadi,True,True,Kharadi,Kharadi
+GV-000402,TYPO,Karol Bagh,False,False,Connaught Place,Connaught Place
+GV-000331,MIXED_LANGUAGE,Kothrud,True,True,Kothrud,Kothrud
+GV-001047,NEARBY_BUT_WRONG_LOCALITY,Kharadi,False,False,Kothrud,Kothrud
+GV-000256,DEVANAGARI_MARATHI,Andheri East,True,True,Andheri East,Andheri East
+GV-000043,COMPLETE_VALID,Dwarka,True,False,Dwarka,110001
+GV-000088,PARTIAL_VALID,HSR Layout,True,True,HSR Layout,HSR Layout
+GV-000360,TYPO,HITEC City,True,True,HITEC City,HITEC City
+GV-000961,WRONG_ADMIN_HIERARCHY,Banjara Hills,True,True,Banjara Hills,Banjara Hills
+GV-000600,DISTRICT_MISMATCH,Karol Bagh,False,False,Connaught Place,Connaught Place
+GV-000029,COMPLETE_VALID,Electronic City,True,True,Electronic City,Electronic City
+GV-000244,DEVANAGARI_MARATHI,Andheri East,True,True,Andheri East,Andheri East
+GV-000717,SUBDISTRICT_MISMATCH,Hadapsar,True,False,Hadapsar,Hinjewadi
+GV-000983,WRONG_ADMIN_HIERARCHY,Banjara Hills,True,True,Banjara Hills,Banjara Hills
+GV-000762,LOCALITY_MISMATCH,Thane West,False,False,Indiranagar,560038
+GV-000441,MISSPELLING,Rajarhat,True,True,Rajarhat,Rajarhat
+GV-000048,COMPLETE_VALID,T Nagar,True,True,T Nagar,T Nagar
+GV-000624,DISTRICT_MISMATCH,HITEC City,True,True,HITEC City,HITEC City
+GV-001002,WRONG_ADMIN_HIERARCHY,Banjara Hills,True,True,Banjara Hills,Banjara Hills
+GV-000335,MIXED_LANGUAGE,Powai,True,True,Powai,Powai
+GV-000042,COMPLETE_VALID,Koramangala,True,True,Koramangala,Koramangala
+GV-000991,WRONG_ADMIN_HIERARCHY,Hauz Khas,False,False,Connaught Place,Connaught Place
+GV-000783,LOCALITY_MISMATCH,Kharadi,False,False,HSR Layout,HSR Layout
+GV-000527,AMBIGUOUS_LOCALITY,Rampur,True,True,Rampur,Rajarampuri
+GV-000742,LOCALITY_MISMATCH,Andheri East,False,False,Whitefield,560066
+GV-000893,INVALID_PIN,Kothrud,True,True,Kothrud,Kothrud
+GV-000718,SUBDISTRICT_MISMATCH,Thane West,True,False,Thane West,400601
+GV-000204,DEVANAGARI_HINDI,Saket,False,False,Connaught Place,Connaught Place
+GV-000408,MISSPELLING,T Nagar,True,True,T Nagar,T Nagar
+GV-001062,NEARBY_BUT_WRONG_LOCALITY,Kharadi,False,False,Bandra West,Bandra West
+GV-000182,INFORMAL_SLANG,Vaishali Nagar,True,True,Vaishali Nagar,Vaishali Nagar
+GV-000418,MISSPELLING,Malviya Nagar,True,True,Malviya Nagar,Malviya Nagar
+GV-000130,PARTIAL_VALID,Malviya Nagar,True,True,Malviya Nagar,Malviya Nagar
+GV-000270,DEVANAGARI_MARATHI,Hadapsar,True,True,Hadapsar,Hadapsar
+GV-000318,MIXED_LANGUAGE,Powai,True,True,Powai,Powai
+GV-000099,PARTIAL_VALID,T Nagar,True,True,T Nagar,T Nagar
+GV-000124,PARTIAL_VALID,HITEC City,True,True,HITEC City,HITEC City
+GV-000077,PARTIAL_VALID,T Nagar,True,True,T Nagar,T Nagar
+GV-000511,HISTORICAL_ALIAS,Kharadi,True,True,Kharadi,Kharadi
+GV-001050,NEARBY_BUT_WRONG_LOCALITY,Kharadi,False,False,Thane West,Thane West
+GV-000882,INVALID_PIN,Malviya Nagar,True,True,Malviya Nagar,Malviya Nagar
+GV-000413,MISSPELLING,HITEC City,True,True,HITEC City,HITEC City
+GV-000221,DEVANAGARI_HINDI,Rajarhat,True,True,Rajarhat,Rajarhat
+GV-000728,SUBDISTRICT_MISMATCH,Hinjewadi,True,False,Hinjewadi,Kharadi
+GV-000960,WRONG_ADMIN_HIERARCHY,Saket,False,False,Connaught Place,Connaught Place
+GV-000895,INVALID_PIN,HITEC City,True,True,HITEC City,HITEC City
+GV-000258,DEVANAGARI_MARATHI,Kharadi,True,True,Kharadi,Kharadi
+GV-000994,WRONG_ADMIN_HIERARCHY,Electronic City,True,True,Electronic City,Electronic City
+GV-000979,WRONG_ADMIN_HIERARCHY,Gomti Nagar,True,True,Gomti Nagar,Gomti Nagar
+GV-001003,WRONG_ADMIN_HIERARCHY,Vesu,True,True,Vesu,Vesu
+GV-000899,INVALID_PIN,Adyar,True,True,Adyar,Adyar
+GV-000370,TYPO,Connaught Place,True,True,Connaught Place,Connaught Place
+GV-000272,DEVANAGARI_MARATHI,Kothrud,True,True,Kothrud,Kothrud
+GV-000787,LOCALITY_MISMATCH,Hinjewadi,False,False,Electronic City,Electronic City
+GV-000808,PIN_MISMATCH,Sector 62,True,True,Sector 62,Sector 62
+GV-000273,DEVANAGARI_MARATHI,Rajarampuri,True,True,Rajarampuri,Rajarampuri
+GV-001017,NEARBY_BUT_WRONG_LOCALITY,Kharadi,False,False,Kothrud,Kothrud
+GV-000009,COMPLETE_VALID,Baner,True,True,Baner,Baner
+GV-000250,DEVANAGARI_MARATHI,Viman Nagar,True,True,Viman Nagar,Viman Nagar
+GV-000819,PIN_MISMATCH,Salt Lake,True,True,Salt Lake,Salt Lake
+GV-000248,DEVANAGARI_MARATHI,Andheri East,True,True,Andheri East,Andheri East
+GV-000750,LOCALITY_MISMATCH,Baner,False,False,Gokulam,Gokulam
+GV-000740,LOCALITY_MISMATCH,Andheri East,False,False,Electronic City,560100
+GV-000479,HISTORICAL_ALIAS,Salt Lake,True,True,Salt Lake,Salt Lake
+GV-000342,MIXED_LANGUAGE,Andheri East,True,True,Andheri East,Andheri East
+GV-000608,DISTRICT_MISMATCH,Banjara Hills,True,True,Banjara Hills,Banjara Hills
+GV-000317,MIXED_LANGUAGE,Sector 62,True,True,Sector 62,Sector 62
+GV-000031,COMPLETE_VALID,Hauz Khas,True,False,Hauz Khas,110001
+GV-000192,DEVANAGARI_HINDI,Sector 62,True,True,Sector 62,Sector 62
+GV-000234,DEVANAGARI_HINDI,Rajarampuri,True,True,Rajarampuri,Rajarampuri
+GV-000259,DEVANAGARI_MARATHI,Thane West,True,True,Thane West,Thane West
+GV-000005,COMPLETE_VALID,Banjara Hills,True,True,Banjara Hills,Banjara Hills
+GV-000078,PARTIAL_VALID,Indiranagar,True,True,Indiranagar,Indiranagar
+GV-000989,WRONG_ADMIN_HIERARCHY,Andheri East,True,True,Andheri East,Andheri East
+GV-000119,PARTIAL_VALID,Kothrud,True,True,Kothrud,Kothrud
+GV-000323,MIXED_LANGUAGE,Salt Lake,True,True,Salt Lake,Salt Lake
+GV-000432,MISSPELLING,Kothrud,True,True,Kothrud,Kothrud
+GV-000701,SUBDISTRICT_MISMATCH,Bandra West,True,False,Bandra West,400050
+GV-000690,SUBDISTRICT_MISMATCH,Powai,True,False,Powai,400076
+GV-000025,COMPLETE_VALID,Kharadi,True,True,Kharadi,Kharadi
+GV-000343,MIXED_LANGUAGE,Electronic City,True,True,Electronic City,Electronic City
+GV-000617,DISTRICT_MISMATCH,Koramangala,True,False,Koramangala,Gokulam
+GV-000700,SUBDISTRICT_MISMATCH,Hadapsar,True,False,Hadapsar,Hinjewadi
+GV-000861,INVALID_PIN,HITEC City,True,True,HITEC City,HITEC City
+GV-000706,SUBDISTRICT_MISMATCH,Viman Nagar,True,False,Viman Nagar,Hinjewadi
+GV-000018,COMPLETE_VALID,Electronic City,True,True,Electronic City,Electronic City
+GV-000269,DEVANAGARI_MARATHI,Rajarampuri,True,True,Rajarampuri,Rajarampuri
+GV-000884,INVALID_PIN,Bandra West,True,True,Bandra West,Bandra West
+GV-000602,DISTRICT_MISMATCH,Kothrud,True,False,Kothrud,Thane West
+GV-000521,AMBIGUOUS_LOCALITY,Rajapur,True,True,Rajapur,Rajapur
+GV-000174,INFORMAL_SLANG,Rajarhat,True,False,Rajarhat,New Town
+GV-000361,TYPO,HITEC City,True,True,HITEC City,HITEC City
+GV-000173,INFORMAL_SLANG,Dwarka,False,False,Connaught Place,Connaught Place
+GV-000503,HISTORICAL_ALIAS,Gokulam,True,True,Gokulam,Gokulam
+GV-000730,SUBDISTRICT_MISMATCH,Hinjewadi,True,False,Hinjewadi,Kharadi
+GV-000836,PIN_MISMATCH,Sector 62,True,True,Sector 62,Sector 62
+GV-000831,PIN_MISMATCH,Viman Nagar,True,True,Viman Nagar,Viman Nagar
+GV-000512,HISTORICAL_ALIAS,Andheri East,True,True,Andheri East,Andheri East
+GV-000252,DEVANAGARI_MARATHI,Kothrud,True,True,Kothrud,Kothrud
+GV-000801,PIN_MISMATCH,Baner,True,True,Baner,Baner
+GV-000201,DEVANAGARI_HINDI,Andheri East,True,True,Andheri East,Andheri East
+GV-000769,LOCALITY_MISMATCH,Andheri East,False,False,Whitefield,560066
+GV-000826,PIN_MISMATCH,Vesu,True,True,Vesu,Vesu
+GV-000872,INVALID_PIN,Hauz Khas,False,False,Connaught Place,Connaught Place
+GV-000720,SUBDISTRICT_MISMATCH,Kothrud,True,False,Kothrud,Hinjewadi
+GV-000623,DISTRICT_MISMATCH,Electronic City,True,False,Electronic City,Gokulam
+GV-001032,NEARBY_BUT_WRONG_LOCALITY,Kharadi,True,True,Kharadi,Kharadi
+GV-000622,DISTRICT_MISMATCH,Whitefield,True,False,Whitefield,Gokulam
+GV-000321,MIXED_LANGUAGE,Gokulam,True,True,Gokulam,Gokulam
+GV-000580,DISTRICT_MISMATCH,Karol Bagh,False,False,Connaught Place,Connaught Place
+GV-000584,DISTRICT_MISMATCH,Andheri East,True,True,Andheri East,Andheri East
+GV-000328,MIXED_LANGUAGE,Gomti Nagar,True,True,Gomti Nagar,Gomti Nagar
+GV-000481,HISTORICAL_ALIAS,Hinjewadi,True,True,Hinjewadi,Hinjewadi
+GV-000101,PARTIAL_VALID,Navrangpura,True,True,Navrangpura,Navrangpura
+GV-000510,HISTORICAL_ALIAS,Bandra West,True,True,Bandra West,Bandra West
+GV-001007,WRONG_ADMIN_HIERARCHY,Viman Nagar,True,True,Viman Nagar,Viman Nagar
+GV-000793,PIN_MISMATCH,Navrangpura,True,True,Navrangpura,Navrangpura
+GV-000795,PIN_MISMATCH,Bandra West,True,True,Bandra West,Bandra West
+GV-000715,SUBDISTRICT_MISMATCH,Andheri East,True,True,Andheri East,Andheri East
+GV-000368,TYPO,Hadapsar,True,True,Hadapsar,Hadapsar
+GV-000547,AMBIGUOUS_LOCALITY,Aurangabad,True,True,Aurangabad,Aurangabad
+GV-000478,HISTORICAL_ALIAS,Adyar,True,True,Adyar,Adyar
+GV-000390,TYPO,Connaught Place,True,True,Connaught Place,Connaught Place
+GV-000290,DEVANAGARI_MARATHI,Viman Nagar,True,True,Viman Nagar,Viman Nagar
+GV-000330,MIXED_LANGUAGE,Indiranagar,True,True,Indiranagar,Indiranagar
+GV-000867,INVALID_PIN,Vesu,True,True,Vesu,Vesu
+GV-000210,DEVANAGARI_HINDI,Rohini,False,False,Connaught Place,Connaught Place
+GV-000586,DISTRICT_MISMATCH,New Town,False,False,Salt Lake,Salt Lake
+GV-000569,AMBIGUOUS_LOCALITY,Aurangabad,True,True,Aurangabad,Aurangabad
+GV-000778,LOCALITY_MISMATCH,Bandra West,False,False,Whitefield,Whitefield
+GV-000195,DEVANAGARI_HINDI,Electronic City,True,True,Electronic City,Electronic City
+GV-000217,DEVANAGARI_HINDI,Whitefield,True,True,Whitefield,Whitefield
+GV-000016,COMPLETE_VALID,Vesu,True,True,Vesu,Vesu
+GV-000311,MIXED_LANGUAGE,Gomti Nagar,True,True,Gomti Nagar,Gomti Nagar
+GV-000341,MIXED_LANGUAGE,Powai,True,True,Powai,Powai
+GV-000214,DEVANAGARI_HINDI,Electronic City,True,True,Electronic City,Electronic City
+GV-000193,DEVANAGARI_HINDI,Baner,True,True,Baner,Baner
+GV-001020,NEARBY_BUT_WRONG_LOCALITY,Kharadi,False,False,Rajarampuri,Rajarampuri
+GV-000041,COMPLETE_VALID,Baner,True,True,Baner,Baner
+GV-000688,SUBDISTRICT_MISMATCH,Thane West,True,False,Thane West,400601
+GV-000275,DEVANAGARI_MARATHI,Rajarampuri,True,True,Rajarampuri,Rajarampuri
+GV-000053,COMPLETE_VALID,Rajarhat,True,True,Rajarhat,Rajarhat
+GV-000196,DEVANAGARI_HINDI,Hauz Khas,False,False,Connaught Place,Connaught Place
+GV-000549,AMBIGUOUS_LOCALITY,Rajapur,True,True,Rajapur,Rajapur
+GV-000095,PARTIAL_VALID,Gomti Nagar,True,True,Gomti Nagar,Gomti Nagar
+GV-000380,TYPO,Bandra West,True,True,Bandra West,Bandra West
+GV-000461,HISTORICAL_ALIAS,Adyar,True,True,Adyar,Adyar
+GV-001060,NEARBY_BUT_WRONG_LOCALITY,Kharadi,False,False,Hadapsar,Hadapsar
+GV-000841,PIN_MISMATCH,Karol Bagh,False,False,Connaught Place,Connaught Place
+GV-001019,NEARBY_BUT_WRONG_LOCALITY,Kharadi,False,False,Thane West,Thane West
+GV-000262,DEVANAGARI_MARATHI,Thane West,True,True,Thane West,Thane West
+GV-000398,TYPO,Bandra West,True,True,Bandra West,Bandra West
+GV-000543,AMBIGUOUS_LOCALITY,Aurangabad,True,True,Aurangabad,Aurangabad
+GV-000868,INVALID_PIN,Rajarhat,True,False,Rajarhat,New Town
+GV-000607,DISTRICT_MISMATCH,Kothrud,True,False,Kothrud,Bandra West
+GV-001021,NEARBY_BUT_WRONG_LOCALITY,Kharadi,False,False,Rajarampuri,Rajarampuri
+GV-000763,LOCALITY_MISMATCH,Hinjewadi,False,False,Whitefield,Whitefield
+GV-000682,SUBDISTRICT_MISMATCH,Baner,True,False,Baner,Hinjewadi
+GV-000148,INFORMAL_SLANG,Karol Bagh,False,False,Connaught Place,Connaught Place
+GV-000604,DISTRICT_MISMATCH,Saket,False,False,Connaught Place,Connaught Place
+GV-001038,NEARBY_BUT_WRONG_LOCALITY,Kharadi,False,False,Hadapsar,Hadapsar
+GV-001055,NEARBY_BUT_WRONG_LOCALITY,Kharadi,True,True,Kharadi,Kharadi
+GV-000485,HISTORICAL_ALIAS,Powai,True,True,Powai,Powai
+GV-000685,SUBDISTRICT_MISMATCH,Baner,True,False,Baner,Hinjewadi
+GV-000189,DEVANAGARI_HINDI,Rajarhat,True,True,Rajarhat,Rajarhat
+GV-000998,WRONG_ADMIN_HIERARCHY,Koramangala,True,True,Koramangala,Koramangala
+GV-000863,INVALID_PIN,Salt Lake,True,True,Salt Lake,Salt Lake
+GV-000153,INFORMAL_SLANG,Hadapsar,True,True,Hadapsar,Hadapsar
+GV-000733,SUBDISTRICT_MISMATCH,Powai,True,False,Powai,400076
+GV-000427,MISSPELLING,New Town,True,True,New Town,New Town
+GV-000538,AMBIGUOUS_LOCALITY,Rajapur,True,True,Rajapur,Rajapur
+GV-001027,NEARBY_BUT_WRONG_LOCALITY,Kharadi,False,False,Andheri East,Andheri East
+GV-000705,SUBDISTRICT_MISMATCH,Hadapsar,True,False,Hadapsar,Hinjewadi
+GV-000049,COMPLETE_VALID,Adyar,True,True,Adyar,Adyar
+GV-000865,INVALID_PIN,Electronic City,True,True,Electronic City,Electronic City
+GV-000570,AMBIGUOUS_LOCALITY,Fatehpur,True,True,Fatehpur,Fatehpur
+GV-000820,PIN_MISMATCH,Adyar,True,True,Adyar,Adyar
+GV-000606,DISTRICT_MISMATCH,Malviya Nagar,True,True,Malviya Nagar,Malviya Nagar
+GV-000571,DISTRICT_MISMATCH,Indiranagar,True,False,Indiranagar,Gokulam
+GV-000063,COMPLETE_VALID,Baner,True,True,Baner,Baner
+GV-000282,DEVANAGARI_MARATHI,Kothrud,True,True,Kothrud,Kothrud
+GV-000308,MIXED_LANGUAGE,Thane West,True,True,Thane West,Thane West
+GV-000773,LOCALITY_MISMATCH,Rajarampuri,False,False,Gokulam,Gokulam
+GV-000534,AMBIGUOUS_LOCALITY,Aurangabad,True,True,Aurangabad,Aurangabad
+GV-000147,INFORMAL_SLANG,Viman Nagar,True,True,Viman Nagar,Viman Nagar
+GV-000800,PIN_MISMATCH,Koramangala,True,True,Koramangala,Koramangala
+GV-000243,DEVANAGARI_MARATHI,Hadapsar,True,True,Hadapsar,Hadapsar
+GV-000887,INVALID_PIN,Salt Lake,True,True,Salt Lake,Salt Lake
+GV-000592,DISTRICT_MISMATCH,Rohini,False,False,Connaught Place,Connaught Place
+GV-000327,MIXED_LANGUAGE,Hinjewadi,True,True,Hinjewadi,Hinjewadi
+GV-000590,DISTRICT_MISMATCH,Kothrud,True,False,Kothrud,Rajarampuri
+GV-000862,INVALID_PIN,Bandra West,True,True,Bandra West,Bandra West
+GV-000516,AMBIGUOUS_LOCALITY,Aurangabad,True,True,Aurangabad,Aurangabad
+GV-000812,PIN_MISMATCH,Koramangala,True,True,Koramangala,Koramangala
+GV-000058,COMPLETE_VALID,Karol Bagh,True,False,Karol Bagh,110001
+GV-000223,DEVANAGARI_HINDI,Vesu,True,True,Vesu,Vesu
+GV-000789,LOCALITY_MISMATCH,Kharadi,False,False,HSR Layout,HSR Layout
+GV-000240,DEVANAGARI_HINDI,Gokulam,True,True,Gokulam,Gokulam
+GV-000450,MISSPELLING,HSR Layout,True,True,HSR Layout,HSR Layout
+GV-000412,MISSPELLING,Navrangpura,True,True,Navrangpura,Navrangpura
+GV-000046,COMPLETE_VALID,HSR Layout,True,True,HSR Layout,HSR Layout
+GV-000251,DEVANAGARI_MARATHI,Thane West,True,True,Thane West,Thane West
+GV-000050,COMPLETE_VALID,Banjara Hills,True,True,Banjara Hills,Banjara Hills
+GV-001052,NEARBY_BUT_WRONG_LOCALITY,Kharadi,False,False,Baner,Baner
+GV-000752,LOCALITY_MISMATCH,Thane West,False,False,Whitefield,560066
+GV-001045,NEARBY_BUT_WRONG_LOCALITY,Kharadi,False,False,Powai,Powai
+GV-000609,DISTRICT_MISMATCH,HITEC City,True,True,HITEC City,HITEC City
+GV-000104,PARTIAL_VALID,Indiranagar,True,True,Indiranagar,Indiranagar
+GV-000069,COMPLETE_VALID,New Town,True,True,New Town,New Town
+GV-000212,DEVANAGARI_HINDI,Adyar,True,True,Adyar,Adyar
+GV-000247,DEVANAGARI_MARATHI,Hadapsar,True,True,Hadapsar,Hadapsar
+GV-000017,COMPLETE_VALID,Vaishali Nagar,True,True,Vaishali Nagar,Vaishali Nagar
+GV-000774,LOCALITY_MISMATCH,Hinjewadi,False,False,Electronic City,Electronic City
+GV-000430,MISSPELLING,Vesu,True,True,Vesu,Vesu
+GV-000699,SUBDISTRICT_MISMATCH,Powai,True,False,Powai,400076
+GV-000842,PIN_MISMATCH,Hauz Khas,False,False,Connaught Place,Connaught Place
+GV-000194,DEVANAGARI_HINDI,Kothrud,True,True,Kothrud,Kothrud
+GV-000283,DEVANAGARI_MARATHI,Powai,True,True,Powai,Powai
+GV-000159,INFORMAL_SLANG,Gomti Nagar,True,True,Gomti Nagar,Gomti Nagar
+GV-000993,WRONG_ADMIN_HIERARCHY,T Nagar,True,True,T Nagar,T Nagar
+GV-000472,HISTORICAL_ALIAS,Powai,True,True,Powai,Powai
+GV-000877,INVALID_PIN,Karol Bagh,False,False,Connaught Place,Connaught Place
+GV-000236,DEVANAGARI_HINDI,HITEC City,True,True,HITEC City,HITEC City
+GV-000545,AMBIGUOUS_LOCALITY,Rajapur,True,True,Rajapur,Rajapur
+GV-000435,MISSPELLING,Thane West,True,True,Thane West,Thane West
+GV-000558,AMBIGUOUS_LOCALITY,Rampur,True,True,Rampur,Rajarampuri
+GV-000475,HISTORICAL_ALIAS,Hinjewadi,True,True,Hinjewadi,Hinjewadi
+GV-000859,INVALID_PIN,Thane West,True,True,Thane West,Thane West
+GV-000024,COMPLETE_VALID,Electronic City,True,True,Electronic City,Electronic City
+GV-000711,SUBDISTRICT_MISMATCH,Kothrud,True,False,Kothrud,Hinjewadi
+GV-000229,DEVANAGARI_HINDI,Gokulam,True,True,Gokulam,Gokulam
+GV-000131,INFORMAL_SLANG,Sector 62,True,True,Sector 62,Sector 62
+GV-000542,AMBIGUOUS_LOCALITY,Rajapur,True,True,Rajapur,Rajapur
+GV-000403,TYPO,Hinjewadi,True,True,Hinjewadi,Hinjewadi
+GV-000760,LOCALITY_MISMATCH,Kharadi,False,False,Koramangala,Koramangala
+GV-000183,INFORMAL_SLANG,Thane West,True,True,Thane West,Thane West
+GV-000883,INVALID_PIN,Powai,True,True,Powai,Powai
+GV-000357,TYPO,Baner,True,True,Baner,Baner
+GV-001016,NEARBY_BUT_WRONG_LOCALITY,Viman Nagar,True,True,Viman Nagar,Viman Nagar
+GV-000771,LOCALITY_MISMATCH,Hadapsar,False,False,Electronic City,Electronic City
+GV-000553,AMBIGUOUS_LOCALITY,Fatehpur,True,True,Fatehpur,Fatehpur
+GV-000083,PARTIAL_VALID,Saket,False,False,Connaught Place,Connaught Place
+GV-000385,TYPO,HSR Layout,True,True,HSR Layout,HSR Layout
+GV-000387,TYPO,Dwarka,False,False,Connaught Place,Connaught Place
+GV-000460,MISSPELLING,Karol Bagh,False,False,Connaught Place,Connaught Place
+GV-000392,TYPO,Bandra West,True,True,Bandra West,Bandra West
+GV-000384,TYPO,HSR Layout,True,True,HSR Layout,HSR Layout
+GV-000431,MISSPELLING,HITEC City,True,True,HITEC City,HITEC City
+GV-000885,INVALID_PIN,Vesu,True,True,Vesu,Vesu
+GV-000852,INVALID_PIN,Malviya Nagar,True,True,Malviya Nagar,Malviya Nagar
+GV-000139,INFORMAL_SLANG,Connaught Place,True,True,Connaught Place,Connaught Place
+GV-000185,INFORMAL_SLANG,Dwarka,False,False,Connaught Place,Connaught Place
+GV-000419,MISSPELLING,Indiranagar,True,True,Indiranagar,Indiranagar
+GV-000294,DEVANAGARI_MARATHI,Baner,True,True,Baner,Baner
+GV-000033,COMPLETE_VALID,Malviya Nagar,True,True,Malviya Nagar,Malviya Nagar
+GV-000071,COMPLETE_VALID,Whitefield,True,True,Whitefield,Whitefield
+GV-000062,COMPLETE_VALID,Rajarhat,True,True,Rajarhat,Rajarhat
+GV-000555,AMBIGUOUS_LOCALITY,Bilaspur,True,True,Bilaspur,Bilaspur
+GV-000066,COMPLETE_VALID,Banjara Hills,True,True,Banjara Hills,Banjara Hills
+GV-000353,TYPO,Andheri East,True,True,Andheri East,Andheri East
+GV-000434,MISSPELLING,Karol Bagh,False,False,Connaught Place,Connaught Place
+GV-000047,COMPLETE_VALID,Indiranagar,True,True,Indiranagar,Indiranagar
+GV-000075,COMPLETE_VALID,Vesu,True,True,Vesu,Vesu
+GV-000593,DISTRICT_MISMATCH,Thane West,True,True,Thane West,Thane West
+GV-000758,LOCALITY_MISMATCH,Kothrud,False,False,Koramangala,Koramangala
+GV-000004,COMPLETE_VALID,HSR Layout,True,True,HSR Layout,HSR Layout
+GV-000261,DEVANAGARI_MARATHI,Kharadi,True,True,Kharadi,Kharadi
+GV-000406,MISSPELLING,Hadapsar,True,True,Hadapsar,Hadapsar
+GV-000023,COMPLETE_VALID,Connaught Place,True,True,Connaught Place,Connaught Place
+GV-000316,MIXED_LANGUAGE,Gokulam,True,True,Gokulam,Gokulam
+GV-001051,NEARBY_BUT_WRONG_LOCALITY,Kharadi,False,False,Hinjewadi,Hinjewadi
+GV-000474,HISTORICAL_ALIAS,Bandra West,True,True,Bandra West,Bandra West
+GV-000573,DISTRICT_MISMATCH,Baner,True,False,Baner,Thane West
+GV-000060,COMPLETE_VALID,Koramangala,True,True,Koramangala,Koramangala
+GV-000747,LOCALITY_MISMATCH,Baner,False,False,Koramangala,Koramangala
+GV-000468,HISTORICAL_ALIAS,Andheri East,True,True,Andheri East,Andheri East
+GV-000764,LOCALITY_MISMATCH,Powai,False,False,Electronic City,Electronic City
+GV-000526,AMBIGUOUS_LOCALITY,Rampur,True,True,Rampur,Rajarampuri
+GV-000136,INFORMAL_SLANG,Hinjewadi,True,True,Hinjewadi,Hinjewadi
+GV-000465,HISTORICAL_ALIAS,Bandra West,True,True,Bandra West,Bandra West
+GV-000057,COMPLETE_VALID,Hinjewadi,True,True,Hinjewadi,Hinjewadi
+GV-000457,MISSPELLING,New Town,True,True,New Town,New Town
+GV-000523,AMBIGUOUS_LOCALITY,Fatehpur,True,True,Fatehpur,Fatehpur
+GV-000094,PARTIAL_VALID,Whitefield,True,True,Whitefield,Whitefield
+GV-000963,WRONG_ADMIN_HIERARCHY,Hadapsar,True,True,Hadapsar,Hadapsar
+GV-000598,DISTRICT_MISMATCH,Vesu,True,False,Vesu,Navrangpura
+GV-000211,DEVANAGARI_HINDI,Salt Lake,True,True,Salt Lake,Salt Lake
+GV-000756,LOCALITY_MISMATCH,Thane West,False,False,Electronic City,560100
+GV-000120,PARTIAL_VALID,Hadapsar,True,True,Hadapsar,Hadapsar
+GV-000533,AMBIGUOUS_LOCALITY,Aurangabad,True,True,Aurangabad,Aurangabad
+GV-000818,PIN_MISMATCH,Powai,True,True,Powai,Powai
+GV-000169,INFORMAL_SLANG,Dwarka,False,False,Connaught Place,Connaught Place
+GV-000154,INFORMAL_SLANG,Gomti Nagar,True,True,Gomti Nagar,Gomti Nagar
+GV-000550,AMBIGUOUS_LOCALITY,Bilaspur,True,True,Bilaspur,Bilaspur
+GV-000797,PIN_MISMATCH,Banjara Hills,True,True,Banjara Hills,Banjara Hills
+GV-000208,DEVANAGARI_HINDI,Hadapsar,True,True,Hadapsar,Hadapsar
+GV-000518,AMBIGUOUS_LOCALITY,Rampur,True,True,Rampur,Rajarampuri
+GV-000561,AMBIGUOUS_LOCALITY,Rajapur,True,True,Rajapur,Rajapur
+GV-000900,INVALID_PIN,Hadapsar,True,True,Hadapsar,Hadapsar
+GV-000115,PARTIAL_VALID,Indiranagar,True,True,Indiranagar,Indiranagar
+GV-000578,DISTRICT_MISMATCH,Hauz Khas,False,False,Connaught Place,Connaught Place
+GV-001064,NEARBY_BUT_WRONG_LOCALITY,Kharadi,False,False,Bandra West,Bandra West
+GV-000371,TYPO,Koramangala,True,True,Koramangala,Koramangala
+GV-000781,LOCALITY_MISMATCH,Andheri East,False,False,HSR Layout,560102
+GV-000541,AMBIGUOUS_LOCALITY,Bilaspur,True,True,Bilaspur,Bilaspur
+GV-000804,PIN_MISMATCH,Karol Bagh,False,False,Connaught Place,Connaught Place
+GV-000999,WRONG_ADMIN_HIERARCHY,Rajarampuri,True,True,Rajarampuri,Rajarampuri
+GV-000084,PARTIAL_VALID,Adyar,True,True,Adyar,Adyar
+GV-000611,DISTRICT_MISMATCH,Salt Lake,True,True,Salt Lake,Salt Lake
+GV-000697,SUBDISTRICT_MISMATCH,Thane West,True,False,Thane West,400601
+GV-000254,DEVANAGARI_MARATHI,Kharadi,True,True,Kharadi,Kharadi
+GV-000224,DEVANAGARI_HINDI,Thane West,True,True,Thane West,Thane West
+GV-000681,SUBDISTRICT_MISMATCH,Thane West,True,False,Thane West,400601
+GV-000551,AMBIGUOUS_LOCALITY,Rampur,True,True,Rampur,Rajarampuri
+GV-001013,NEARBY_BUT_WRONG_LOCALITY,Kharadi,False,False,Thane West,Thane West
+GV-000563,AMBIGUOUS_LOCALITY,Bilaspur,True,True,Bilaspur,Bilaspur
+GV-000719,SUBDISTRICT_MISMATCH,Baner,True,False,Baner,Hinjewadi
+GV-000426,MISSPELLING,Navrangpura,True,True,Navrangpura,Navrangpura
+GV-000383,TYPO,Gomti Nagar,True,True,Gomti Nagar,Gomti Nagar
+GV-000621,DISTRICT_MISMATCH,Viman Nagar,True,False,Viman Nagar,Rajarampuri
+GV-000853,INVALID_PIN,Hinjewadi,True,True,Hinjewadi,Hinjewadi
+GV-000157,INFORMAL_SLANG,Electronic City,True,True,Electronic City,Electronic City
+GV-001000,WRONG_ADMIN_HIERARCHY,Vesu,True,True,Vesu,Vesu
+GV-000137,INFORMAL_SLANG,Baner,True,True,Baner,Baner
+GV-001042,NEARBY_BUT_WRONG_LOCALITY,Kharadi,False,False,Hinjewadi,Hinjewadi
+GV-000227,DEVANAGARI_HINDI,Gokulam,True,True,Gokulam,Gokulam
+GV-000377,TYPO,Hadapsar,True,True,Hadapsar,Hadapsar
+GV-000843,PIN_MISMATCH,Saket,False,False,Connaught Place,Connaught Place
+GV-000822,PIN_MISMATCH,HITEC City,True,True,HITEC City,HITEC City
+GV-000121,PARTIAL_VALID,Rajarampuri,True,True,Rajarampuri,Rajarampuri
+GV-001061,NEARBY_BUT_WRONG_LOCALITY,Kharadi,False,False,Thane West,Thane West
+GV-000319,MIXED_LANGUAGE,Banjara Hills,True,True,Banjara Hills,Banjara Hills
+GV-000721,SUBDISTRICT_MISMATCH,Kharadi,True,False,Kharadi,Hinjewadi
+GV-000515,HISTORICAL_ALIAS,Adyar,True,True,Adyar,Adyar
+GV-000703,SUBDISTRICT_MISMATCH,Kothrud,True,False,Kothrud,Hinjewadi
+GV-000821,PIN_MISMATCH,New Town,True,True,New Town,New Town
+GV-000164,INFORMAL_SLANG,T Nagar,True,True,T Nagar,T Nagar
+GV-000315,MIXED_LANGUAGE,Kharadi,True,True,Kharadi,Kharadi
+GV-000477,HISTORICAL_ALIAS,Powai,True,True,Powai,Powai
+GV-000122,PARTIAL_VALID,Saket,False,False,Connaught Place,Connaught Place
+GV-000684,SUBDISTRICT_MISMATCH,Andheri East,True,True,Andheri East,Andheri East
+GV-001008,WRONG_ADMIN_HIERARCHY,New Town,True,True,New Town,New Town
+GV-001053,NEARBY_BUT_WRONG_LOCALITY,Kharadi,False,False,Hinjewadi,Hinjewadi
+GV-000981,WRONG_ADMIN_HIERARCHY,Karol Bagh,False,False,Connaught Place,Connaught Place
+GV-000369,TYPO,New Town,True,True,New Town,New Town
+GV-000866,INVALID_PIN,Hinjewadi,True,True,Hinjewadi,Hinjewadi
+GV-000012,COMPLETE_VALID,Kothrud,True,True,Kothrud,Kothrud
+GV-000587,DISTRICT_MISMATCH,New Town,False,False,Salt Lake,Salt Lake
+GV-000876,INVALID_PIN,HITEC City,True,True,HITEC City,HITEC City
+GV-000597,DISTRICT_MISMATCH,Kothrud,True,False,Kothrud,Bandra West
+GV-000310,MIXED_LANGUAGE,New Town,True,True,New Town,New Town
+GV-000338,MIXED_LANGUAGE,Baner,True,True,Baner,Baner
+GV-000274,DEVANAGARI_MARATHI,Rajarampuri,True,True,Rajarampuri,Rajarampuri
+GV-000772,LOCALITY_MISMATCH,Andheri East,False,False,Koramangala,560034
+GV-000458,MISSPELLING,T Nagar,True,True,T Nagar,T Nagar
+GV-000242,DEVANAGARI_MARATHI,Kothrud,True,True,Kothrud,Kothrud
+GV-000393,TYPO,Sector 62,True,True,Sector 62,Sector 62
+GV-000268,DEVANAGARI_MARATHI,Hadapsar,True,True,Hadapsar,Hadapsar
+GV-000007,COMPLETE_VALID,Salt Lake,True,True,Salt Lake,Salt Lake
+GV-000255,DEVANAGARI_MARATHI,Rajarampuri,True,True,Rajarampuri,Rajarampuri
+GV-000332,MIXED_LANGUAGE,Banjara Hills,True,True,Banjara Hills,Banjara Hills
+GV-000892,INVALID_PIN,T Nagar,True,True,T Nagar,T Nagar
+GV-000144,INFORMAL_SLANG,T Nagar,True,True,T Nagar,T Nagar
+GV-000190,DEVANAGARI_HINDI,Karol Bagh,False,False,Connaught Place,Connaught Place
+GV-000098,PARTIAL_VALID,Kharadi,True,True,Kharadi,Kharadi
+GV-000411,MISSPELLING,Kothrud,True,True,Kothrud,Kothrud
+GV-000089,PARTIAL_VALID,HSR Layout,True,True,HSR Layout,HSR Layout
+GV-000336,MIXED_LANGUAGE,Bandra West,True,True,Bandra West,Bandra West
+GV-000528,AMBIGUOUS_LOCALITY,Fatehpur,True,True,Fatehpur,Fatehpur
+GV-000438,MISSPELLING,Connaught Place,True,True,Connaught Place,Connaught Place
+GV-000416,MISSPELLING,Andheri East,True,True,Andheri East,Andheri East
+GV-000873,INVALID_PIN,Koramangala,True,True,Koramangala,Koramangala
+GV-000844,PIN_MISMATCH,HITEC City,True,True,HITEC City,HITEC City
+GV-000776,LOCALITY_MISMATCH,Bandra West,False,False,Electronic City,Electronic City
+GV-000691,SUBDISTRICT_MISMATCH,Kharadi,True,False,Kharadi,Hinjewadi
+GV-000875,INVALID_PIN,HITEC City,True,True,HITEC City,HITEC City
+GV-001031,NEARBY_BUT_WRONG_LOCALITY,Kharadi,False,False,Andheri East,Andheri East
+GV-000810,PIN_MISMATCH,Gokulam,True,True,Gokulam,Gokulam
+GV-000346,MIXED_LANGUAGE,Rajarhat,True,True,Rajarhat,Rajarhat
+GV-001049,NEARBY_BUT_WRONG_LOCALITY,Kharadi,False,False,Rajarampuri,Rajarampuri
+GV-000015,COMPLETE_VALID,Vesu,True,True,Vesu,Vesu
+GV-000864,INVALID_PIN,Karol Bagh,False,False,Connaught Place,Connaught Place
+GV-000736,LOCALITY_MISMATCH,Andheri East,False,False,Whitefield,560066
+GV-000264,DEVANAGARI_MARATHI,Kothrud,True,True,Kothrud,Kothrud
+GV-000470,HISTORICAL_ALIAS,Andheri East,True,True,Andheri East,Andheri East
+GV-000749,LOCALITY_MISMATCH,Powai,False,False,Gokulam,Gokulam
+GV-000167,INFORMAL_SLANG,Malviya Nagar,True,True,Malviya Nagar,Malviya Nagar
+GV-000116,PARTIAL_VALID,Thane West,True,True,Thane West,Thane West
+GV-000829,PIN_MISMATCH,Vaishali Nagar,True,True,Vaishali Nagar,Vaishali Nagar
+GV-000198,DEVANAGARI_HINDI,Viman Nagar,True,True,Viman Nagar,Viman Nagar
+GV-000280,DEVANAGARI_MARATHI,Rajarampuri,True,True,Rajarampuri,Rajarampuri
+GV-000480,HISTORICAL_ALIAS,Adyar,True,True,Adyar,Adyar
+GV-000517,AMBIGUOUS_LOCALITY,Rajapur,True,True,Rajapur,Rajapur
+GV-000138,INFORMAL_SLANG,Vaishali Nagar,True,True,Vaishali Nagar,Vaishali Nagar
+GV-000506,HISTORICAL_ALIAS,Whitefield,True,True,Whitefield,Whitefield
+GV-000537,AMBIGUOUS_LOCALITY,Aurangabad,True,True,Aurangabad,Aurangabad
+GV-000466,HISTORICAL_ALIAS,Sector 62,True,True,Sector 62,Sector 62
+GV-000292,DEVANAGARI_MARATHI,Baner,True,True,Baner,Baner
+GV-000344,MIXED_LANGUAGE,Sector 62,True,True,Sector 62,Sector 62
+GV-000110,PARTIAL_VALID,Gokulam,True,True,Gokulam,Gokulam
+GV-000618,DISTRICT_MISMATCH,Navrangpura,True,False,Navrangpura,Vesu
+GV-000582,DISTRICT_MISMATCH,Salt Lake,True,True,Salt Lake,Salt Lake
+GV-001046,NEARBY_BUT_WRONG_LOCALITY,Kharadi,False,False,Bandra West,Bandra West
+GV-000010,COMPLETE_VALID,Banjara Hills,True,True,Banjara Hills,Banjara Hills
+GV-000874,INVALID_PIN,Bandra West,True,True,Bandra West,Bandra West
+GV-000297,MIXED_LANGUAGE,Vaishali Nagar,True,True,Vaishali Nagar,Vaishali Nagar
+GV-000767,LOCALITY_MISMATCH,Thane West,False,False,Koramangala,560034
+GV-000191,DEVANAGARI_HINDI,Vesu,True,True,Vesu,Vesu
+GV-000508,HISTORICAL_ALIAS,T Nagar,True,True,T Nagar,T Nagar
+GV-000807,PIN_MISMATCH,New Town,True,True,New Town,New Town
+GV-000407,MISSPELLING,Bandra West,True,True,Bandra West,Bandra West
+GV-000857,INVALID_PIN,Salt Lake,True,True,Salt Lake,Salt Lake
+GV-000038,COMPLETE_VALID,Electronic City,True,True,Electronic City,Electronic City
+GV-000181,INFORMAL_SLANG,Andheri East,True,True,Andheri East,Andheri East
+GV-000858,INVALID_PIN,Baner,True,True,Baner,Baner
+GV-000428,MISSPELLING,Adyar,True,True,Adyar,Adyar
+GV-000180,INFORMAL_SLANG,Malviya Nagar,True,True,Malviya Nagar,Malviya Nagar
+GV-001026,NEARBY_BUT_WRONG_LOCALITY,Kharadi,False,False,Hinjewadi,Hinjewadi
+GV-000871,INVALID_PIN,HSR Layout,True,True,HSR Layout,HSR Layout
+GV-000741,LOCALITY_MISMATCH,Viman Nagar,False,False,Koramangala,Koramangala
+GV-000757,LOCALITY_MISMATCH,Andheri East,False,False,Whitefield,560066
+GV-000548,AMBIGUOUS_LOCALITY,Fatehpur,True,True,Fatehpur,Fatehpur
+GV-000238,DEVANAGARI_HINDI,Saket,False,False,Connaught Place,Connaught Place
+GV-000092,PARTIAL_VALID,Rajarampuri,True,True,Rajarampuri,Rajarampuri
+GV-000788,LOCALITY_MISMATCH,Viman Nagar,False,False,Koramangala,Koramangala
+GV-000061,COMPLETE_VALID,Gokulam,True,True,Gokulam,Gokulam
+GV-000293,DEVANAGARI_MARATHI,Hadapsar,True,True,Hadapsar,Hadapsar
+GV-000329,MIXED_LANGUAGE,Karol Bagh,False,False,Connaught Place,Connaught Place
+GV-000775,LOCALITY_MISMATCH,Viman Nagar,False,False,Whitefield,Whitefield
+GV-000205,DEVANAGARI_HINDI,Hinjewadi,True,True,Hinjewadi,Hinjewadi
+GV-000489,HISTORICAL_ALIAS,HSR Layout,True,True,HSR Layout,HSR Layout
+GV-000488,HISTORICAL_ALIAS,Sector 62,True,True,Sector 62,Sector 62
+GV-000417,MISSPELLING,HITEC City,True,True,HITEC City,HITEC City
+GV-000162,INFORMAL_SLANG,Vesu,True,True,Vesu,Vesu
+GV-000564,AMBIGUOUS_LOCALITY,Bilaspur,True,True,Bilaspur,Bilaspur
+GV-000006,COMPLETE_VALID,Baner,True,True,Baner,Baner
+GV-000969,WRONG_ADMIN_HIERARCHY,HSR Layout,True,True,HSR Layout,HSR Layout
+GV-001034,NEARBY_BUT_WRONG_LOCALITY,Kharadi,False,False,Andheri East,Andheri East
+GV-000484,HISTORICAL_ALIAS,Salt Lake,True,True,Salt Lake,Salt Lake
+GV-000735,SUBDISTRICT_MISMATCH,Baner,True,False,Baner,Hinjewadi
+GV-000339,MIXED_LANGUAGE,Saket,False,False,Connaught Place,Connaught Place
+GV-000424,MISSPELLING,Hinjewadi,True,True,Hinjewadi,Hinjewadi
+GV-000103,PARTIAL_VALID,Baner,True,True,Baner,Baner
+GV-000054,COMPLETE_VALID,Hadapsar,True,True,Hadapsar,Hadapsar
+GV-000239,DEVANAGARI_HINDI,Adyar,True,True,Adyar,Adyar
+GV-000232,DEVANAGARI_HINDI,Hauz Khas,False,False,Connaught Place,Connaught Place
+GV-001037,NEARBY_BUT_WRONG_LOCALITY,Kharadi,False,False,Bandra West,Bandra West
+GV-000686,SUBDISTRICT_MISMATCH,Baner,True,False,Baner,Hinjewadi
+GV-000052,COMPLETE_VALID,Hauz Khas,True,False,Hauz Khas,110001
+GV-000249,DEVANAGARI_MARATHI,Thane West,True,True,Thane West,Thane West
+GV-000246,DEVANAGARI_MARATHI,Hinjewadi,True,True,Hinjewadi,Hinjewadi
+GV-000601,DISTRICT_MISMATCH,Thane West,True,False,Thane West,400050
+GV-000759,LOCALITY_MISMATCH,Kothrud,False,False,Whitefield,Whitefield
+GV-001040,NEARBY_BUT_WRONG_LOCALITY,Kharadi,False,False,Bandra West,Bandra West
+GV-000112,PARTIAL_VALID,Adyar,True,True,Adyar,Adyar
+GV-000141,INFORMAL_SLANG,Viman Nagar,True,True,Viman Nagar,Viman Nagar
+GV-000279,DEVANAGARI_MARATHI,Rajarampuri,True,True,Rajarampuri,Rajarampuri
+GV-000713,SUBDISTRICT_MISMATCH,Bandra West,True,False,Bandra West,400050
+GV-000576,DISTRICT_MISMATCH,Adyar,True,True,Adyar,Adyar
+GV-000278,DEVANAGARI_MARATHI,Hinjewadi,True,True,Hinjewadi,Hinjewadi
+GV-000552,AMBIGUOUS_LOCALITY,Aurangabad,True,True,Aurangabad,Aurangabad
+GV-000848,INVALID_PIN,Baner,True,True,Baner,Baner
+GV-000207,DEVANAGARI_HINDI,Karol Bagh,False,False,Connaught Place,Connaught Place
+GV-000220,DEVANAGARI_HINDI,Viman Nagar,True,True,Viman Nagar,Viman Nagar
+GV-000491,HISTORICAL_ALIAS,Salt Lake,True,True,Salt Lake,Salt Lake
+GV-000766,LOCALITY_MISMATCH,Rajarampuri,False,False,Electronic City,Electronic City
+GV-000263,DEVANAGARI_MARATHI,Powai,True,True,Powai,Powai
+GV-001058,NEARBY_BUT_WRONG_LOCALITY,Kharadi,True,True,Kharadi,Kharadi
+GV-000453,MISSPELLING,Indiranagar,True,True,Indiranagar,Indiranagar
+GV-000355,TYPO,T Nagar,True,True,T Nagar,T Nagar
+GV-000081,PARTIAL_VALID,HITEC City,True,True,HITEC City,HITEC City
+GV-000732,SUBDISTRICT_MISMATCH,Kothrud,True,False,Kothrud,Hinjewadi
+GV-000044,COMPLETE_VALID,Hauz Khas,True,False,Hauz Khas,110001
+GV-000298,MIXED_LANGUAGE,Malviya Nagar,True,True,Malviya Nagar,Malviya Nagar
+GV-000150,INFORMAL_SLANG,Banjara Hills,True,True,Banjara Hills,Banjara Hills
+GV-000824,PIN_MISMATCH,Dwarka,False,False,Connaught Place,Connaught Place
+GV-000792,PIN_MISMATCH,Banjara Hills,True,True,Banjara Hills,Banjara Hills
+GV-000354,TYPO,Vesu,True,True,Vesu,Vesu
+GV-000839,PIN_MISMATCH,Andheri East,True,True,Andheri East,Andheri East
+GV-000405,TYPO,Gokulam,True,True,Gokulam,Gokulam
+GV-000389,TYPO,Kharadi,True,True,Kharadi,Kharadi
+GV-000557,AMBIGUOUS_LOCALITY,Rajapur,True,True,Rajapur,Rajapur
+GV-000988,WRONG_ADMIN_HIERARCHY,Thane West,True,True,Thane West,Thane West
+GV-000588,DISTRICT_MISMATCH,Dwarka,False,False,Connaught Place,Connaught Place
+GV-000125,PARTIAL_VALID,Powai,True,True,Powai,Powai
+GV-000295,DEVANAGARI_MARATHI,Bandra West,True,True,Bandra West,Bandra West
+GV-001063,NEARBY_BUT_WRONG_LOCALITY,Kharadi,False,False,Andheri East,Andheri East
+GV-000985,WRONG_ADMIN_HIERARCHY,Connaught Place,True,True,Connaught Place,Connaught Place
+GV-000815,PIN_MISMATCH,Hadapsar,True,True,Hadapsar,Hadapsar
+GV-000958,WRONG_ADMIN_HIERARCHY,Electronic City,True,True,Electronic City,Electronic City
+GV-000957,WRONG_ADMIN_HIERARCHY,Navrangpura,True,True,Navrangpura,Navrangpura
+GV-000574,DISTRICT_MISMATCH,Hinjewadi,True,False,Hinjewadi,Thane West
+GV-000358,TYPO,Salt Lake,True,True,Salt Lake,Salt Lake
+GV-000492,HISTORICAL_ALIAS,Salt Lake,True,True,Salt Lake,Salt Lake
+GV-000325,MIXED_LANGUAGE,Indiranagar,True,True,Indiranagar,Indiranagar
+GV-000501,HISTORICAL_ALIAS,Indiranagar,True,True,Indiranagar,Indiranagar
+GV-000967,WRONG_ADMIN_HIERARCHY,Navrangpura,True,True,Navrangpura,Navrangpura
+GV-000707,SUBDISTRICT_MISMATCH,Rajarampuri,True,False,Rajarampuri,416008
+GV-001048,NEARBY_BUT_WRONG_LOCALITY,Kharadi,False,False,Thane West,Thane West
+GV-000722,SUBDISTRICT_MISMATCH,Rajarampuri,True,False,Rajarampuri,416008
+GV-000296,MIXED_LANGUAGE,Salt Lake,True,True,Salt Lake,Salt Lake
+GV-000790,LOCALITY_MISMATCH,Bandra West,False,False,HSR Layout,HSR Layout
+GV-000305,MIXED_LANGUAGE,Powai,True,True,Powai,Powai
+GV-000965,WRONG_ADMIN_HIERARCHY,HITEC City,True,True,HITEC City,HITEC City
+GV-000231,DEVANAGARI_HINDI,Banjara Hills,True,True,Banjara Hills,Banjara Hills
+GV-001059,NEARBY_BUT_WRONG_LOCALITY,Kharadi,False,False,Baner,Baner
+GV-000572,DISTRICT_MISMATCH,Kothrud,True,False,Kothrud,Thane West
+GV-000286,DEVANAGARI_MARATHI,Viman Nagar,True,True,Viman Nagar,Viman Nagar
+GV-000253,DEVANAGARI_MARATHI,Kothrud,True,True,Kothrud,Kothrud
+GV-000197,DEVANAGARI_HINDI,Indiranagar,True,True,Indiranagar,Indiranagar
+GV-000496,HISTORICAL_ALIAS,Adyar,True,True,Adyar,Adyar
+GV-000625,DISTRICT_MISMATCH,Vaishali Nagar,True,True,Vaishali Nagar,Vaishali Nagar
+GV-000271,DEVANAGARI_MARATHI,Thane West,True,True,Thane West,Thane West
+GV-000710,SUBDISTRICT_MISMATCH,Powai,True,False,Powai,400076
+GV-000823,PIN_MISMATCH,Rajarhat,True,False,Rajarhat,New Town
+GV-000698,SUBDISTRICT_MISMATCH,Kothrud,True,False,Kothrud,Hinjewadi
+GV-000739,LOCALITY_MISMATCH,Andheri East,False,False,Whitefield,560066
+GV-000889,INVALID_PIN,Viman Nagar,True,True,Viman Nagar,Viman Nagar
+GV-000791,PIN_MISMATCH,Whitefield,True,True,Whitefield,Whitefield
+GV-000693,SUBDISTRICT_MISMATCH,Viman Nagar,True,False,Viman Nagar,Hinjewadi
+GV-000363,TYPO,Salt Lake,True,True,Salt Lake,Salt Lake
+GV-000560,AMBIGUOUS_LOCALITY,Rajapur,True,True,Rajapur,Rajapur
+GV-000351,TYPO,Thane West,True,True,Thane West,Thane West
+GV-000546,AMBIGUOUS_LOCALITY,Fatehpur,True,True,Fatehpur,Fatehpur
+GV-000471,HISTORICAL_ALIAS,Adyar,True,True,Adyar,Adyar
+GV-000178,INFORMAL_SLANG,Rajarhat,True,False,Rajarhat,New Town
+GV-000980,WRONG_ADMIN_HIERARCHY,Andheri East,True,True,Andheri East,Andheri East
+GV-000322,MIXED_LANGUAGE,Rajarhat,True,True,Rajarhat,Rajarhat
+GV-000386,TYPO,Indiranagar,True,True,Indiranagar,Indiranagar
+GV-000539,AMBIGUOUS_LOCALITY,Rampur,True,True,Rampur,Rajarampuri
+GV-000490,HISTORICAL_ALIAS,Powai,True,True,Powai,Powai
+GV-001043,NEARBY_BUT_WRONG_LOCALITY,Kharadi,False,False,Andheri East,Andheri East
+GV-001054,NEARBY_BUT_WRONG_LOCALITY,Kharadi,False,False,Andheri East,Andheri East
+GV-000575,DISTRICT_MISMATCH,Kothrud,True,False,Kothrud,Bandra West
+GV-000213,DEVANAGARI_HINDI,Thane West,True,True,Thane West,Thane West
+GV-000532,AMBIGUOUS_LOCALITY,Aurangabad,True,True,Aurangabad,Aurangabad
+GV-000142,INFORMAL_SLANG,T Nagar,True,True,T Nagar,T Nagar
+GV-000723,SUBDISTRICT_MISMATCH,Powai,True,False,Powai,400076
+GV-000064,COMPLETE_VALID,Andheri East,True,True,Andheri East,Andheri East
+GV-000745,LOCALITY_MISMATCH,Hinjewadi,False,False,Gokulam,Gokulam
+GV-000754,LOCALITY_MISMATCH,Kothrud,False,False,Koramangala,Koramangala
+GV-000869,INVALID_PIN,Powai,True,True,Powai,Powai
+GV-000894,INVALID_PIN,Karol Bagh,False,False,Connaught Place,Connaught Place
+GV-000483,HISTORICAL_ALIAS,Electronic City,True,True,Electronic City,Electronic City
+GV-000794,PIN_MISMATCH,Whitefield,True,True,Whitefield,Whitefield
+GV-000514,HISTORICAL_ALIAS,T Nagar,True,True,T Nagar,T Nagar
+GV-000421,MISSPELLING,Vaishali Nagar,True,True,Vaishali Nagar,Vaishali Nagar
+GV-000209,DEVANAGARI_HINDI,Hauz Khas,False,False,Connaught Place,Connaught Place
+GV-000708,SUBDISTRICT_MISMATCH,Thane West,True,False,Thane West,400601
+GV-000423,MISSPELLING,Banjara Hills,True,True,Banjara Hills,Banjara Hills
+GV-000156,INFORMAL_SLANG,Powai,True,True,Powai,Powai
+GV-000429,MISSPELLING,Andheri East,True,True,Andheri East,Andheri East
+GV-000039,COMPLETE_VALID,Rohini,True,False,Rohini,110001
+GV-000391,TYPO,Thane West,True,True,Thane West,Thane West
+GV-000226,DEVANAGARI_HINDI,Banjara Hills,True,True,Banjara Hills,Banjara Hills
+GV-000065,COMPLETE_VALID,Navrangpura,True,True,Navrangpura,Navrangpura
+GV-000497,HISTORICAL_ALIAS,Kharadi,True,True,Kharadi,Kharadi
+GV-000303,MIXED_LANGUAGE,Hauz Khas,False,False,Connaught Place,Connaught Place
+GV-000779,LOCALITY_MISMATCH,Andheri East,False,False,Indiranagar,560038
+GV-000350,MIXED_LANGUAGE,T Nagar,True,True,T Nagar,T Nagar
+GV-000984,WRONG_ADMIN_HIERARCHY,Powai,True,True,Powai,Powai
+GV-000106,PARTIAL_VALID,Hauz Khas,False,False,Connaught Place,Connaught Place
+GV-000467,HISTORICAL_ALIAS,Andheri East,True,True,Andheri East,Andheri East
+GV-000544,AMBIGUOUS_LOCALITY,Bilaspur,True,True,Bilaspur,Bilaspur
+GV-000972,WRONG_ADMIN_HIERARCHY,Karol Bagh,False,False,Connaught Place,Connaught Place
+GV-000055,COMPLETE_VALID,Saket,True,False,Saket,110001
+GV-000854,INVALID_PIN,HITEC City,True,True,HITEC City,HITEC City
+GV-000225,DEVANAGARI_HINDI,Indiranagar,True,True,Indiranagar,Indiranagar
+GV-000755,LOCALITY_MISMATCH,Baner,False,False,Electronic City,Electronic City
+GV-000035,COMPLETE_VALID,Kothrud,True,True,Kothrud,Kothrud
+GV-000973,WRONG_ADMIN_HIERARCHY,Karol Bagh,False,False,Connaught Place,Connaught Place
+GV-000614,DISTRICT_MISMATCH,Rajarhat,False,False,Salt Lake,Salt Lake
+GV-001004,WRONG_ADMIN_HIERARCHY,Saket,False,False,Connaught Place,Connaught Place
+GV-001044,NEARBY_BUT_WRONG_LOCALITY,Kharadi,False,False,Bandra West,Bandra West
+GV-001039,NEARBY_BUT_WRONG_LOCALITY,Kharadi,True,True,Kharadi,Kharadi
+GV-000689,SUBDISTRICT_MISMATCH,Baner,True,False,Baner,Hinjewadi
+GV-000613,DISTRICT_MISMATCH,Malviya Nagar,True,True,Malviya Nagar,Malviya Nagar
+GV-000805,PIN_MISMATCH,Saket,False,False,Connaught Place,Connaught Place
+GV-000333,MIXED_LANGUAGE,Saket,False,False,Connaught Place,Connaught Place
+GV-000287,DEVANAGARI_MARATHI,Baner,True,True,Baner,Baner
+GV-001056,NEARBY_BUT_WRONG_LOCALITY,Kharadi,True,True,Kharadi,Kharadi
+GV-000306,MIXED_LANGUAGE,Banjara Hills,True,True,Banjara Hills,Banjara Hills
+GV-000971,WRONG_ADMIN_HIERARCHY,Thane West,True,True,Thane West,Thane West
+GV-000683,SUBDISTRICT_MISMATCH,Thane West,True,False,Thane West,400601
+GV-000281,DEVANAGARI_MARATHI,Kharadi,True,True,Kharadi,Kharadi
+GV-000080,PARTIAL_VALID,Rajarhat,True,False,Rajarhat,New Town
+GV-000093,PARTIAL_VALID,Electronic City,True,True,Electronic City,Electronic City

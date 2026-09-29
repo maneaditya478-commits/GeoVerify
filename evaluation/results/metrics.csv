@@ -1,2 +1,2 @@
 total_cases,state_accuracy,district_accuracy,subdistrict_accuracy,locality_accuracy,exact_hierarchy_accuracy,candidate_recall_at_1,candidate_recall_at_3,candidate_recall_at_5,candidate_recall_at_10,ambiguity_precision,ambiguity_recall,ambiguity_f1,status_overall_accuracy,status_macro_f1,status_weighted_f1,mean_latency_ms,p50_latency_ms,p95_latency_ms,p99_latency_ms
-1065,0.8861,0.7194,0.4162,0.911,0.5831,0.7623,0.9298,0.9874,0.9979,0.2607,1.0,0.4135,0.6272,0.6329,0.5923,35.11,31.45,65.98,83.68
+1065,0.8861,0.7194,0.4162,0.911,0.5831,0.7351,0.8953,0.933,0.9979,0.3873,1.0,0.5584,0.6404,0.662,0.6045,37.77,34.77,70.0,89.17

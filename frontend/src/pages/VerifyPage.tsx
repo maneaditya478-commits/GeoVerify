@@ -12,6 +12,7 @@ import { WarningsList } from '../components/WarningsList';
 import { DataSourcesCard } from '../components/DataSourcesCard';
 import { AddressInterpretationCard } from '../components/AddressInterpretationCard';
 import { AmbiguityCard } from '../components/AmbiguityCard';
+import { CandidateRankingCard } from '../components/CandidateRankingCard';
 import { EvidenceGraphView } from '../components/EvidenceGraphView';
 import { MapPin, Clock, Fingerprint } from 'lucide-react';
 
@@ -64,6 +65,11 @@ export const VerifyPage: React.FC<VerifyPageProps> = ({ result, onVerify, isLoad
           {/* Ambiguity Card if ambiguous */}
           {result.ambiguity && result.ambiguity.is_ambiguous && (
             <AmbiguityCard ambiguity={result.ambiguity} candidates={result.candidate_matches} />
+          )}
+
+          {/* Candidate Multi-Factor Ranking Card */}
+          {result.candidate_matches && result.candidate_matches.length > 0 && (
+            <CandidateRankingCard candidates={result.candidate_matches} />
           )}
 
           {/* Warnings Banner if any */}

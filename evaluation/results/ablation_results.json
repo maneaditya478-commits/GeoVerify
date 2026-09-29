@@ -1,0 +1,82 @@
+[
+  {
+    "configuration": "Full_Phase6_Model",
+    "total_locality_cases": 955,
+    "recall_at_1": 0.7152,
+    "recall_at_3": 0.8775,
+    "recall_at_5": 0.9016,
+    "recall_at_10": 0.9508,
+    "r1_percentage": 71.52,
+    "r5_percentage": 90.16
+  },
+  {
+    "configuration": "Ablation_No_Admin_Penalties",
+    "total_locality_cases": 955,
+    "recall_at_1": 0.7801,
+    "recall_at_3": 0.9225,
+    "recall_at_5": 0.9309,
+    "recall_at_10": 0.9508,
+    "r1_percentage": 78.01,
+    "r5_percentage": 93.09
+  },
+  {
+    "configuration": "Ablation_No_Parent_Child_Hierarchy",
+    "total_locality_cases": 955,
+    "recall_at_1": 0.7068,
+    "recall_at_3": 0.8775,
+    "recall_at_5": 0.9016,
+    "recall_at_10": 0.9508,
+    "r1_percentage": 70.68,
+    "r5_percentage": 90.16
+  },
+  {
+    "configuration": "Ablation_No_PIN_Compatibility",
+    "total_locality_cases": 955,
+    "recall_at_1": 0.7204,
+    "recall_at_3": 0.8733,
+    "recall_at_5": 0.8974,
+    "recall_at_10": 0.9508,
+    "r1_percentage": 72.04,
+    "r5_percentage": 89.74
+  },
+  {
+    "configuration": "Ablation_No_Geographic_Proximity",
+    "total_locality_cases": 955,
+    "recall_at_1": 0.7152,
+    "recall_at_3": 0.8775,
+    "recall_at_5": 0.9016,
+    "recall_at_10": 0.9508,
+    "r1_percentage": 71.52,
+    "r5_percentage": 90.16
+  },
+  {
+    "configuration": "Ablation_No_Phonetic_Translit",
+    "total_locality_cases": 955,
+    "recall_at_1": 0.7225,
+    "recall_at_3": 0.8775,
+    "recall_at_5": 0.9005,
+    "recall_at_10": 0.9508,
+    "r1_percentage": 72.25,
+    "r5_percentage": 90.05
+  },
+  {
+    "configuration": "Ablation_No_Consensus_Bonus",
+    "total_locality_cases": 955,
+    "recall_at_1": 0.7152,
+    "recall_at_3": 0.8775,
+    "recall_at_5": 0.9005,
+    "recall_at_10": 0.9508,
+    "r1_percentage": 71.52,
+    "r5_percentage": 90.05
+  },
+  {
+    "configuration": "Phase5_Baseline",
+    "total_locality_cases": 955,
+    "recall_at_1": 0.8105,
+    "recall_at_3": 0.9183,
+    "recall_at_5": 0.933,
+    "recall_at_10": 0.9508,
+    "r1_percentage": 81.05,
+    "r5_percentage": 93.3
+  }
+]

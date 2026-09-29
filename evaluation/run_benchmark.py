@@ -1,11 +1,15 @@
-"""Benchmark Runner CLI and Evaluation Pipeline for GeoVerify India."""
-
+import sys
 import time
 import json
 import asyncio
 import argparse
 from pathlib import Path
 from typing import List, Dict, Any, Optional
+
+# Ensure backend modules can be imported
+sys.path.insert(0, str(Path(__file__).parent.parent / "backend"))
+sys.path.insert(0, str(Path(__file__).parent.parent))
+
 import pandas as pd
 import numpy as np
 

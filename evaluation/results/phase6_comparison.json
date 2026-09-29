@@ -1,0 +1,12 @@
+{
+  "total_evaluated_cases": 955,
+  "phase5_recall_at_1": 0.8105,
+  "phase5_recall_at_5": 0.933,
+  "phase6_recall_at_1": 0.7152,
+  "phase6_recall_at_5": 0.9016,
+  "recall_at_1_delta": -0.0953,
+  "recall_at_1_gain_percentage": -9.53,
+  "total_promoted_cases": 0,
+  "total_demoted_cases": 91,
+  "promoted_samples": []
+}

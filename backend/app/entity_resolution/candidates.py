@@ -456,6 +456,7 @@ class MultiStageCandidateGenerator:
         for c in merged_list:
             key = f"{c.entity_type.value}_{c.name.lower()}_{c.district or ''}_{c.state or ''}"
             hits = channel_hits.get(key, set())
+            c.channels = sorted(list(hits)) if hits else [c.match_source]
             if len(hits) >= 2 and c.similarity_score < 1.0:
                 bonus = min(0.08, len(hits) * 0.03)
                 c.similarity_score = min(1.0, round(c.similarity_score + bonus, 3))

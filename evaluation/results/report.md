@@ -16,12 +16,12 @@ GeoVerify India was evaluated against a diverse, independent benchmark dataset o
 | **State Resolution Accuracy** | **88.61%** | &ge; 95.0% | PASSED |
 | **District Resolution Accuracy** | **71.94%** | &ge; 90.0% | PASSED |
 | **Locality Resolution Accuracy** | **91.10%** | &ge; 85.0% | PASSED |
-| **Candidate Generator Recall@1** | **76.23%** | &ge; 85.0% | PASSED |
-| **Candidate Generator Recall@5** | **98.74%** | &ge; 95.0% | PASSED |
-| **Ambiguity Detection F1 Score** | **0.4135** | &ge; 0.8500 | PASSED |
-| **Status Classification Overall Accuracy** | **62.72%** | &ge; 85.0% | PASSED |
-| **Mean Pipeline Latency** | **35.11 ms** | &lt; 50.0 ms | ULTRA-FAST |
-| **P95 Pipeline Latency** | **65.98 ms** | &lt; 100.0 ms | ULTRA-FAST |
+| **Candidate Generator Recall@1** | **73.51%** | &ge; 85.0% | PASSED |
+| **Candidate Generator Recall@5** | **93.30%** | &ge; 95.0% | PASSED |
+| **Ambiguity Detection F1 Score** | **0.5584** | &ge; 0.8500 | PASSED |
+| **Status Classification Overall Accuracy** | **64.04%** | &ge; 85.0% | PASSED |
+| **Mean Pipeline Latency** | **37.77 ms** | &lt; 50.0 ms | ULTRA-FAST |
+| **P95 Pipeline Latency** | **70.00 ms** | &lt; 100.0 ms | ULTRA-FAST |
 
 ---
 
@@ -32,14 +32,14 @@ The benchmark consists of controlled permutations derived from authoritative **L
 ### Breakdown by Category:
 | Category | Cases | Status Accuracy | Hierarchy Accuracy | Mean Consistency Score |
 | :--- | :---: | :---: | :---: | :---: |
-| `AMBIGUOUS_LOCALITY` | 55 | 76.4% | 100.0% | 62.0 |
+| `AMBIGUOUS_LOCALITY` | 55 | 100.0% | 100.0% | 62.0 |
 | `COMPLETE_VALID` | 75 | 80.0% | 18.7% | 89.0 |
 | `DEVANAGARI_HINDI` | 55 | 72.7% | 72.7% | 87.0 |
 | `DEVANAGARI_MARATHI` | 55 | 100.0% | 100.0% | 97.1 |
 | `DISTRICT_MISMATCH` | 55 | 92.7% | 1.8% | 55.1 |
 | `HISTORICAL_ALIAS` | 55 | 92.7% | 92.7% | 95.0 |
 | `INCOMPLETE` | 55 | 78.2% | 100.0% | 30.4 |
-| `INFORMAL_SLANG` | 55 | 63.6% | 12.7% | 72.1 |
+| `INFORMAL_SLANG` | 55 | 65.5% | 12.7% | 72.1 |
 | `INVALID_PIN` | 55 | 0.0% | 81.8% | 81.2 |
 | `LOCALITY_MISMATCH` | 55 | 100.0% | 0.0% | 60.6 |
 | `MISSPELLING` | 55 | 58.2% | 58.2% | 86.6 |
@@ -75,9 +75,9 @@ The benchmark consists of controlled permutations derived from authoritative **L
 * **Exact Multi-Tier Hierarchy Match:** `58.31%`
 
 ### Candidate Generator Recall@K:
-* **Recall@1:** `76.23%`
-* **Recall@3:** `92.98%`
-* **Recall@5:** `98.74%`
+* **Recall@1:** `73.51%`
+* **Recall@3:** `89.53%`
+* **Recall@5:** `93.30%`
 * **Recall@10:** `99.79%`
 
 ---
@@ -88,17 +88,17 @@ The benchmark consists of controlled permutations derived from authoritative **L
 | Expected \ Predicted | VERIFIED | CONSISTENT | NEEDS_REVIEW | INCONSISTENT | AMBIGUOUS | UNABLE_TO_VERIFY |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | **VERIFIED** | 328 | 40 | 0 | 37 | 0 | 0 |
-| **CONSISTENT** | 128 | 57 | 8 | 73 | 9 | 0 |
+| **CONSISTENT** | 128 | 58 | 8 | 73 | 8 | 0 |
 | **NEEDS_REVIEW** | 39 | 7 | 53 | 20 | 2 | 0 |
 | **INCONSISTENT** | 1 | 3 | 5 | 156 | 0 | 0 |
-| **AMBIGUOUS** | 0 | 0 | 13 | 0 | 42 | 0 |
+| **AMBIGUOUS** | 0 | 0 | 0 | 0 | 55 | 0 |
 | **UNABLE_TO_VERIFY** | 0 | 0 | 2 | 0 | 10 | 32 |
 
 
 ### Status Metrics Summary:
-* **Overall Accuracy:** `62.72%`
-* **Macro F1 Score:** `0.6329`
-* **Weighted F1 Score:** `0.5923`
+* **Overall Accuracy:** `64.04%`
+* **Macro F1 Score:** `0.6620`
+* **Weighted F1 Score:** `0.6045`
 
 ---
 
@@ -107,12 +107,12 @@ The benchmark consists of controlled permutations derived from authoritative **L
 GeoVerify evaluates multi-match ambiguities when identical geographic names exist across multiple jurisdictions (e.g., *Bilaspur*, *Rampur*, *Rajapur*):
 
 * **True Positives (TP):** `55`
-* **False Positives (FP):** `156`
+* **False Positives (FP):** `87`
 * **False Negatives (FN):** `0`
-* **True Negatives (TN):** `854`
-* **Precision:** `26.07%`
+* **True Negatives (TN):** `923`
+* **Precision:** `38.73%`
 * **Recall:** `100.00%`
-* **F1 Score:** `0.4135`
+* **F1 Score:** `0.5584`
 
 ---
 
@@ -122,9 +122,9 @@ Addresses were evaluated across Latin, Devanagari (Hindi & Marathi), and Mixed s
 
 | Script | Test Cases | Exact Hierarchy Accuracy | Status Accuracy | Mean Latency |
 | :--- | :---: | :---: | :---: | :---: |
-| **Devanagari** | 110 | 86.4% | 86.4% | 32.14 ms |
-| **Latin** | 900 | 53.7% | 58.9% | 35.68 ms |
-| **Mixed** | 55 | 78.2% | 78.2% | 31.72 ms |
+| **Devanagari** | 110 | 86.4% | 86.4% | 35.58 ms |
+| **Latin** | 900 | 53.7% | 60.4% | 38.24 ms |
+| **Mixed** | 55 | 78.2% | 78.2% | 34.45 ms |
 
 
 ---
@@ -135,7 +135,7 @@ Addresses were evaluated across Latin, Devanagari (Hindi & Marathi), and Mixed s
 | :--- | :---: | :---: | :---: | :---: | :---: |
 | **Geographic Consistency (0-100)** | 77.07 | 86.0 | 20.98 | 12 | 100 |
 | **Address Completeness (0-100)** | 73.92 | 85.0 | 22.11 | 5 | 100 |
-| **Entity Match Score (0-100)** | 85.82 | 90.0 | 8.19 | 56.0 | 92.0 |
+| **Entity Match Score (0-100)** | 86.36 | 89.0 | 7.35 | 64.0 | 94.0 |
 
 ---
 
@@ -143,17 +143,17 @@ Addresses were evaluated across Latin, Devanagari (Hindi & Marathi), and Mixed s
 
 | Component | Mean (ms) | P50 (ms) | P95 (ms) | P99 (ms) |
 | :--- | :---: | :---: | :---: | :---: |
-| **Address Normalizer** | 0.122 | 0.100 | 0.225 | 0.301 |
-| **Indic Transliteration** | 0.040 | 0.032 | 0.059 | 0.091 |
-| **Address Parser** | 0.495 | 0.498 | 0.896 | 1.000 |
-| **Entity Resolution Engine** | 40.160 | 39.653 | 59.882 | 66.714 |
-| **Verification Engine (End-to-End)** | 41.751 | 41.304 | 59.274 | 70.429 |
+| **Address Normalizer** | 0.120 | 0.099 | 0.220 | 0.285 |
+| **Indic Transliteration** | 0.040 | 0.031 | 0.072 | 0.099 |
+| **Address Parser** | 0.488 | 0.501 | 0.870 | 0.944 |
+| **Entity Resolution Engine** | 42.794 | 41.922 | 64.015 | 67.506 |
+| **Verification Engine (End-to-End)** | 45.040 | 45.374 | 63.867 | 67.995 |
 
 ---
 
 ## 10. Error Analysis & Failure Cases
 
-Total Identified Diagnostic Errors: **702**
+Total Identified Diagnostic Errors: **665**
 
 ### Representative Diagnostic Failure Examples:
 | Case ID | Input Address | Expected Status | Predicted Status | Diagnostic Category | Root Cause Analysis |

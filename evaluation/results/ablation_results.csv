@@ -1,0 +1,9 @@
+configuration,total_locality_cases,recall_at_1,recall_at_3,recall_at_5,recall_at_10,r1_percentage,r5_percentage
+Full_Phase6_Model,955,0.7152,0.8775,0.9016,0.9508,71.52,90.16
+Ablation_No_Admin_Penalties,955,0.7801,0.9225,0.9309,0.9508,78.01,93.09
+Ablation_No_Parent_Child_Hierarchy,955,0.7068,0.8775,0.9016,0.9508,70.68,90.16
+Ablation_No_PIN_Compatibility,955,0.7204,0.8733,0.8974,0.9508,72.04,89.74
+Ablation_No_Geographic_Proximity,955,0.7152,0.8775,0.9016,0.9508,71.52,90.16
+Ablation_No_Phonetic_Translit,955,0.7225,0.8775,0.9005,0.9508,72.25,90.05
+Ablation_No_Consensus_Bonus,955,0.7152,0.8775,0.9005,0.9508,71.52,90.05
+Phase5_Baseline,955,0.8105,0.9183,0.933,0.9508,81.05,93.3

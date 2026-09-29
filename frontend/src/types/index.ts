@@ -75,14 +75,38 @@ export interface CandidateEntity {
   coordinates?: Coordinates;
   similarity_score?: number;
   match_source?: string;
+  channels?: string[];
+}
+
+export interface AppliedPenalty {
+  name: string;
+  deduction: number;
+  reason: string;
+}
+
+export interface RankingExplanation {
+  feature_contributions?: Record<string, number>;
+  applied_penalties?: AppliedPenalty[];
+  total_penalty_deduction?: number;
+  retrieval_channels?: string[];
+  consensus_count?: number;
+  rank?: number;
+  score_delta_to_next?: number;
+  admin_differences?: string[];
+  summary?: string;
 }
 
 export interface EntityMatchBreakdown {
   name_similarity: number;
   admin_context: number;
+  parent_child_compatibility?: number;
   pin_compatibility: number;
   geographic_proximity: number;
+  transliteration_phonetic?: number;
   entity_type_weight: number;
+  retrieval_consensus?: number;
+  data_quality?: number;
+  penalty_deduction?: number;
   total_score: number;
 }
 
@@ -91,6 +115,7 @@ export interface EntityMatchResult {
   match_score: number;
   breakdown: EntityMatchBreakdown;
   match_confidence: 'HIGH' | 'MEDIUM' | 'LOW';
+  ranking_explanation?: RankingExplanation;
 }
 
 export interface AmbiguityDetails {

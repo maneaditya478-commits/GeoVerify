@@ -1,4 +1,4 @@
-# GeoVerify India Architecture (Phase 4)
+# GeoVerify India Architecture (Phase 6)
 
 ## 1. System Overview
 
@@ -15,10 +15,10 @@ flowchart TD
     end
 
     subgraph EntityResolution [Address Entity Resolution Layer]
-        Translit --> CandGen["Candidate Entity Generator (LGD + Postal Gazetteers)"]
-        CandGen --> Matcher["Multi-Factor Entity Matcher (0-100)"]
-        Matcher --> Ambiguity["Ambiguity Detector (Score Delta & Jurisdiction)"]
-        Matcher --> Completeness["Address Completeness Evaluator (0-100)"]
+        Translit --> CandGen["Multi-Channel Candidate Generator (9 Channels)"]
+        CandGen --> Ranker["Context-Aware 9-Factor Ranker & Admin Penalties"]
+        Ranker --> Ambiguity["Calibrated Ambiguity Detector (Delta <= 12.0)"]
+        Ranker --> Completeness["Address Completeness Evaluator (0-100)"]
     end
 
     subgraph VerificationPipeline [GIS & Multi-Signal Pipeline]
@@ -36,6 +36,11 @@ flowchart TD
         Pin --> Evid
         Near --> Evid
     end
+
+    subgraph DecisionEngineLayer [Verification Decision Engine]
+        Evid --> DecisionMatrix["Deterministic 6-Rule Decision Matrix"]
+        DecisionMatrix --> StatusDerivation["Calibrated Status (VERIFIED, CONSISTENT, NEEDS_REVIEW, INCONSISTENT, AMBIGUOUS, UNABLE_TO_VERIFY)"]
+    end
     
     subgraph EvidenceGraphLayer [Directed Evidence Graph Layer]
         Evid --> GraphBuilder["Evidence Graph Builder (Nodes & Directed Edges)"]
@@ -46,20 +51,19 @@ flowchart TD
     subgraph ScoringLayer [Multi-Score Evaluation Engine]
         Evid --> Score1["Geographic Consistency Score (0-100)"]
         Completeness --> Score2["Address Completeness Score (0-100)"]
-        Matcher --> Score3["Entity Match Score (0-100)"]
+        Ranker --> Score3["Entity Match Score (0-100)"]
     end
 
-    subgraph EvaluationFramework [Phase 4 Evaluation & Benchmarking Subsystem]
+    subgraph EvaluationFramework [Phase 6 Evaluation & Benchmarking Subsystem]
         Dataset["Benchmark Dataset (1,065 Cases)"] --> BenchRunner["Benchmark Runner CLI"]
-        BenchRunner --> PipelinePerf["Latency Micro-Benchmarker"]
+        BenchRunner --> AblationRunner["8-Config Ablation Study CLI"]
+        BenchRunner --> ErrorAnalyzer["Comparative Ranking Error Analyzer"]
+        BenchRunner --> AmbiguityCalibrator["Ambiguity Threshold Calibrator"]
         BenchRunner --> MetricsEngine["Multi-Tier Metrics Engine"]
-        BenchRunner --> DiagnosticAnalyzer["12-Bucket Error Analyzer"]
-        MetricsEngine --> Visualizer["Matplotlib Chart Visualizer (7 Figures)"]
-        MetricsEngine --> ReportGen["Markdown Report Generator"]
     end
 
     ScoringLayer --> Result[Verification Response + Evidence Graph + GeoJSON + Data Sources]
-    Result --> Frontend[React / Vite / Leaflet GIS UI]
+    Result --> Frontend[React / Vite / Leaflet GIS UI + CandidateRankingCard]
 ```
 
 ---
