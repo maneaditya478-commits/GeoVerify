@@ -21,6 +21,10 @@ from app.document.models import (
 from app.services.address_parser import AddressParser
 from app.services.normalizer import AddressNormalizer
 from app.document.address.ocr_normalizer import OCRNormalizer
+from app.document.address.post_corrector import post_corrector
+from app.config import Settings
+
+_settings = Settings()
 
 
 def _extract_str(val: Any) -> Optional[str]:
@@ -38,6 +42,7 @@ class AddressFieldExtractor:
     def __init__(self):
         self.ocr_normalizer = OCRNormalizer()
         self.address_parser = AddressParser()
+        self.post_corrector = post_corrector
 
     def extract_fields(self, region: AddressRegion) -> Dict[str, ExtractedAddressField]:
         """Extract structured address fields from an AddressRegion."""
@@ -46,6 +51,10 @@ class AddressFieldExtractor:
         # 1. Normalize full region text
         raw_text = region.full_region_text
         normalized_text = self.ocr_normalizer.normalize_text(raw_text)
+
+        # 1b. Apply Geographically Grounded Post-Correction (Phase 8)
+        if _settings.ENABLE_MULTILINGUAL_POSTCORRECTION:
+            normalized_text, _ = self.post_corrector.post_correct(normalized_text)
 
         # 2. Extract PIN code
         pincode_field = self._extract_pincode(normalized_text, raw_text, region.page_num, region.bbox)

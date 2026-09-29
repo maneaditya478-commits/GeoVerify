@@ -1,0 +1,31 @@
+case_id,query_text,token,context_provided,expected_status,predicted_status,is_correct,score_margin,top1_candidate,top2_candidate,disambiguation_suggestions
+stress_homonym_1,"Village Rampur, Tehsil Sadar, District Rampur, Uttar Pradesh 244901",Rampur,True,VERIFIED,VERIFIED,True,7.0,"Rampur (Rampur, Uttar Pradesh)","Rampur UP (Rampur, Uttar Pradesh)",
+stress_homonym_2,"Rampur Bushahr, Shimla District, Himachal Pradesh 172001",Rampur,True,VERIFIED,VERIFIED,True,8.6,"Rampur (Shimla, Himachal Pradesh)","Rampur (Shimla, Himachal Pradesh)",
+stress_homonym_3,"Rampur Village, Shimla, Himachal Pradesh",Rampur,True,VERIFIED,VERIFIED,True,8.6,"Rampur (Shimla, Himachal Pradesh)","Rampur (Shimla, Himachal Pradesh)",
+stress_homonym_4,"Rampur, without state or district context",Rampur,False,AMBIGUOUS,AMBIGUOUS,True,0.0,"Rampur (Rampur, Uttar Pradesh)","Rampur (Shimla, Himachal Pradesh)","State name (e.g., 'Maharashtra', 'Karnataka'); District or City name; 6-digit PIN code; Prominent nearby landmark"
+stress_homonym_5,"Main Road, Bilaspur, Chhattisgarh 495001",Bilaspur,True,VERIFIED,VERIFIED,True,6.0,"Bilaspur (Bilaspur, Chhattisgarh)","Bilaspur CG (Bilaspur, Chhattisgarh)",
+stress_homonym_6,"Sadhu Sundar Singh Marg, Bilaspur, Himachal Pradesh 174001",Bilaspur,True,VERIFIED,VERIFIED,True,10.6,"Bilaspur (Bilaspur, Himachal Pradesh)","Bilaspur (Bilaspur, Himachal Pradesh)",
+stress_homonym_7,"Bilaspur Chowk, Gurugram, Haryana 122413",Gurugram,True,VERIFIED,VERIFIED,True,,None,None,
+stress_homonym_8,Bilaspur Town,Bilaspur Town,False,AMBIGUOUS,VERIFIED,False,0.6,"Bilaspur (Bilaspur, Himachal Pradesh)","Bilaspur (Bilaspur, Himachal Pradesh)",
+stress_homonym_9,"FC Road, Shivaji Nagar, Pune, Maharashtra 411005",Shivaji Nagar,True,VERIFIED,VERIFIED,True,0.0,"411014 (Pune, Maharashtra)","411057 (Pune, Maharashtra)",
+stress_homonym_10,"Shivaji Nagar, Govandi, Mumbai Suburban, Maharashtra 400043",Shivaji Nagar,True,VERIFIED,VERIFIED,True,9.9,"Powai (Mumbai Suburban, Maharashtra)","400050 (Mumbai Suburban, Maharashtra)",
+stress_homonym_11,"Russell Market, Shivaji Nagar, Bengaluru, Karnataka 560051",Russell Market,True,VERIFIED,VERIFIED,True,27.9,"Bengaluru East (Bengaluru Urban, Karnataka)","Bengaluru South (Bengaluru Urban, Karnataka)",
+stress_homonym_12,Shivaji Nagar Bus Stand,Shivaji Nagar,False,AMBIGUOUS,AMBIGUOUS,True,0.9,"T Nagar (Chennai, Tamil Nadu)","Jharkhand (None, Jharkhand)","State name (e.g., 'Maharashtra', 'Karnataka'); District or City name; 6-digit PIN code; Prominent nearby landmark"
+stress_homonym_13,"Sector 11, Gandhinagar, Gujarat 382011",Gandhinagar,True,VERIFIED,VERIFIED,True,0.0,"Goa (None, Goa)","Arunachal Pradesh (None, Arunachal Pradesh)",
+stress_homonym_14,"Gandhi Nagar, East Delhi, Delhi 110031",Gandhi Nagar,True,VERIFIED,VERIFIED,True,0.4,"Goa (None, Goa)","Adyar (Chennai, Tamil Nadu)",
+stress_homonym_15,"Gandhi Nagar, Bandra East, Mumbai Suburban 400051",Bandra East,True,VERIFIED,VERIFIED,True,5.1,"Bandra West (Mumbai Suburban, Maharashtra)","Andheri East (Mumbai Suburban, Maharashtra)",
+stress_homonym_16,"Village Rampur, Tehsil Sadar, District Rampur, Uttar Pradesh 244901",Rampur,True,VERIFIED,VERIFIED,True,7.0,"Rampur (Rampur, Uttar Pradesh)","Rampur UP (Rampur, Uttar Pradesh)",
+stress_homonym_17,"Rampur Bushahr, Shimla District, Himachal Pradesh 172001",Rampur,True,VERIFIED,VERIFIED,True,8.6,"Rampur (Shimla, Himachal Pradesh)","Rampur (Shimla, Himachal Pradesh)",
+stress_homonym_18,"Rampur Village, Shimla, Himachal Pradesh",Rampur,True,VERIFIED,VERIFIED,True,8.6,"Rampur (Shimla, Himachal Pradesh)","Rampur (Shimla, Himachal Pradesh)",
+stress_homonym_19,"Rampur, without state or district context",Rampur,False,AMBIGUOUS,AMBIGUOUS,True,0.0,"Rampur (Rampur, Uttar Pradesh)","Rampur (Shimla, Himachal Pradesh)","State name (e.g., 'Maharashtra', 'Karnataka'); District or City name; 6-digit PIN code; Prominent nearby landmark"
+stress_homonym_20,"Main Road, Bilaspur, Chhattisgarh 495001",Bilaspur,True,VERIFIED,VERIFIED,True,6.0,"Bilaspur (Bilaspur, Chhattisgarh)","Bilaspur CG (Bilaspur, Chhattisgarh)",
+stress_homonym_21,"Sadhu Sundar Singh Marg, Bilaspur, Himachal Pradesh 174001",Bilaspur,True,VERIFIED,VERIFIED,True,10.6,"Bilaspur (Bilaspur, Himachal Pradesh)","Bilaspur (Bilaspur, Himachal Pradesh)",
+stress_homonym_22,"Bilaspur Chowk, Gurugram, Haryana 122413",Gurugram,True,VERIFIED,VERIFIED,True,,None,None,
+stress_homonym_23,Bilaspur Town,Bilaspur Town,False,AMBIGUOUS,VERIFIED,False,0.6,"Bilaspur (Bilaspur, Himachal Pradesh)","Bilaspur (Bilaspur, Himachal Pradesh)",
+stress_homonym_24,"FC Road, Shivaji Nagar, Pune, Maharashtra 411005",Shivaji Nagar,True,VERIFIED,VERIFIED,True,0.0,"411014 (Pune, Maharashtra)","411057 (Pune, Maharashtra)",
+stress_homonym_25,"Shivaji Nagar, Govandi, Mumbai Suburban, Maharashtra 400043",Shivaji Nagar,True,VERIFIED,VERIFIED,True,9.9,"Powai (Mumbai Suburban, Maharashtra)","400050 (Mumbai Suburban, Maharashtra)",
+stress_homonym_26,"Russell Market, Shivaji Nagar, Bengaluru, Karnataka 560051",Russell Market,True,VERIFIED,VERIFIED,True,27.9,"Bengaluru East (Bengaluru Urban, Karnataka)","Bengaluru South (Bengaluru Urban, Karnataka)",
+stress_homonym_27,Shivaji Nagar Bus Stand,Shivaji Nagar,False,AMBIGUOUS,AMBIGUOUS,True,0.9,"T Nagar (Chennai, Tamil Nadu)","Jharkhand (None, Jharkhand)","State name (e.g., 'Maharashtra', 'Karnataka'); District or City name; 6-digit PIN code; Prominent nearby landmark"
+stress_homonym_28,"Sector 11, Gandhinagar, Gujarat 382011",Gandhinagar,True,VERIFIED,VERIFIED,True,0.0,"Goa (None, Goa)","Arunachal Pradesh (None, Arunachal Pradesh)",
+stress_homonym_29,"Gandhi Nagar, East Delhi, Delhi 110031",Gandhi Nagar,True,VERIFIED,VERIFIED,True,0.4,"Goa (None, Goa)","Adyar (Chennai, Tamil Nadu)",
+stress_homonym_30,"Gandhi Nagar, Bandra East, Mumbai Suburban 400051",Bandra East,True,VERIFIED,VERIFIED,True,5.1,"Bandra West (Mumbai Suburban, Maharashtra)","Andheri East (Mumbai Suburban, Maharashtra)",

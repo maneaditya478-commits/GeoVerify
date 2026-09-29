@@ -5,10 +5,10 @@
 [![Python: 3.11+](https://img.shields.io/badge/Python-3.11%2B-blue.svg)](https://www.python.org/)
 [![React: 18](https://img.shields.io/badge/React-18-cyan.svg)](https://react.dev/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.111%2B-teal.svg)](https://fastapi.tiangolo.com/)
-[![Tests: 228 Passing](https://img.shields.io/badge/Pytest-228%20Passing-brightgreen.svg)](backend/tests)
-[![Phase 7.3 Verified](https://img.shields.io/badge/Phase%207.3-Decision%20Calibrated-blue.svg)](docs/phase7-3-decision-calibration.md)
-[![Candidate Recall@1: 82.3%](https://img.shields.io/badge/Recall%401-82.31%25-blueviolet.svg)](docs/ranking-architecture.md)
-[![Candidate Recall@5: 97.3%](https://img.shields.io/badge/Recall%405-97.31%25-blueviolet.svg)](docs/ranking-architecture.md)
+[![Tests: 246 Passing](https://img.shields.io/badge/Pytest-246%20Passing-brightgreen.svg)](backend/tests)
+[![Phase 8 Verified](https://img.shields.io/badge/Phase%208.0-Multimodal%20Spatial%20Retrieval-blue.svg)](docs/phase8-multimodal-spatial-retrieval.md)
+[![Candidate Recall@1: 88.5%](https://img.shields.io/badge/Recall%401-88.46%25-blueviolet.svg)](docs/ranking-architecture.md)
+[![Candidate Recall@5: 99.2%](https://img.shields.io/badge/Recall%405-99.23%25-blueviolet.svg)](docs/ranking-architecture.md)
 [![Benchmark: 1,065 Cases](https://img.shields.io/badge/Benchmark-1%2C065%20Cases-purple.svg)](evaluation/)
 
 **GeoVerify India** is an open-source address intelligence, entity resolution, and geographic consistency verification platform tailored for the unique administrative and spatial complexities of Indian addresses.

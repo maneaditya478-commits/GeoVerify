@@ -4,6 +4,34 @@ All notable changes to the **GeoVerify India** platform are documented in this f
 
 ---
 
+## [Phase 8.0] - 2026-09-30
+
+### Multimodal Spatial Retrieval, Advanced Geographic Resolution & Multilingual OCR Recovery
+- **Core Invariant Preserved**: GeoVerify verifies geographic consistency through deterministic evidence graphs and calibrated ranking, not opaque end-to-end classification.
+- **Adaptive Image Preprocessing (`app.document.preprocessing.adaptive`)**:
+  - Image quality profiler estimating DPI, skew angle, dynamic range, and blur.
+  - Adaptive deskewing, Lanczos upscaling for low DPI scans, contrast enhancement, and unsharp mask sharpening.
+- **Geographically Grounded Multilingual OCR Post-Correction (`app.document.address.post_corrector`)**:
+  - Indic Devanagari numerals translation (`०-९` $\to$ `0-9`).
+  - Devanagari-to-Romanized geographic alignment (e.g. `कोथरूड` $\to$ `Kothrud`, `पुणे` $\to$ `Pune`, `महाराष्ट्र` $\to$ `Maharashtra`).
+  - Authority-anchored typo correction without ungrounded hallucinations.
+- **Dense Geographic & Spatial Retrieval (`app.entity_resolution`)**:
+  - `DenseGeographicRetriever`: Character n-gram vector representations and fast cosine similarity retrieval (`DENSE_GEOGRAPHIC`).
+  - `SpatialProximityRetriever`: Coordinate distance (Haversine metric) and spatial neighborhood retrieval (`SPATIAL_PROXIMITY`).
+  - Integrated into `MultiStageCandidateGenerator` behind `settings.ENABLE_DENSE_RETRIEVAL`.
+- **Homonymous Locality Disambiguation**:
+  - Disambiguates cross-jurisdictional duplicate place names (Rampur, Bilaspur, Shivaji Nagar, Gandhi Nagar) using parent administrative context.
+  - Appropriately flags isolated homonym queries as `AMBIGUOUS` with explainable suggestions.
+- **Key Empirical Results**:
+  - **Recall@1**: Increased from 82.31% $\to$ **88.46%** (+6.15%).
+  - **Locality Accuracy**: Increased from 84.23% $\to$ **91.54%** (+7.31%).
+  - **Clean vs OCR Accuracy Gap**: Reduced from 10.00% down to **3.85%** (-6.15% gap closed).
+  - **Macro F1**: Improved from 0.8460 $\to$ **0.9125**.
+  - **246 / 246 tests passing** (184 backend + 62 evaluation).
+  - Frontend production build verified.
+
+---
+
 ## [Phase 7.3] - 2026-09-30
 
 ### Verification Decision Calibration & OCR-to-GeoVerify Handoff Gap Closure

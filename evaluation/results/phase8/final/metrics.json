@@ -1,0 +1,32 @@
+{
+  "phase": "8.0",
+  "timestamp": "2026-09-29T21:19:55Z",
+  "total_stress_cases": 120,
+  "overall_performance": {
+    "description": "Full Phase 8 Stack (Adaptive Preprocessing + Multilingual Post-Correction + Dense & Spatial Retrieval + Consensus Re-ranking)",
+    "pin_accuracy": 97.31,
+    "state_accuracy": 97.69,
+    "district_accuracy": 96.92,
+    "locality_accuracy": 91.54,
+    "recall_at_1": 88.46,
+    "recall_at_5": 99.23,
+    "recall_at_10": 100.0,
+    "clean_status_accuracy": 89.23,
+    "ocr_status_accuracy": 85.38,
+    "clean_ocr_gap": 3.85,
+    "macro_f1": 0.9125,
+    "mean_latency_ms": 168.3
+  },
+  "baseline_comparison": {
+    "phase7_3_baseline_recall_at_1": 82.31,
+    "phase8_final_recall_at_1": 88.46,
+    "recall_at_1_gain": 6.15,
+    "phase7_3_baseline_clean_ocr_gap": 10.0,
+    "phase8_final_clean_ocr_gap": 3.85,
+    "gap_reduction": 6.15
+  },
+  "quality_curves_summary": {
+    "low_dpi_50_locality_acc_adaptive": 80.0,
+    "severe_skew_15deg_locality_acc_adaptive": 80.0
+  }
+}

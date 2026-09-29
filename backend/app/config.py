@@ -57,7 +57,7 @@ class Settings(BaseSettings):
     ANONYMIZE_LOGS: bool = True
     DATA_RETENTION_DAYS: int = 30
 
-    # Document & OCR Settings (Phase 7)
+    # Document & OCR Settings (Phase 7 & Phase 8)
     MAX_DOCUMENT_SIZE_MB: int = 15
     MAX_DOCUMENT_PAGES: int = 10
     MAX_IMAGE_WIDTH: int = 4096
@@ -80,6 +80,13 @@ class Settings(BaseSettings):
     OCR_DEFAULT_LANGUAGES: str = "eng+hin+mar"
     OCR_MIN_CONFIDENCE_THRESHOLD: float = 0.40
     DOCUMENT_RETENTION_MODE: str = "transient"  # 'transient', 'audit'
+
+    # Phase 8 Advanced Settings & Feature Flags
+    ENABLE_DENSE_RETRIEVAL: bool = True
+    ENABLE_OCR_ENSEMBLE: bool = False
+    ENABLE_ADAPTIVE_PREPROCESSING: bool = True
+    ENABLE_GEOGRAPHIC_EMBEDDINGS: bool = True
+    ENABLE_MULTILINGUAL_POSTCORRECTION: bool = True
 
 
     @property

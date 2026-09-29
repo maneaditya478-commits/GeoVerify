@@ -1,0 +1,10 @@
+{
+  "os": "Windows",
+  "python_version": "3.13.0",
+  "node_version": "v24.14.0",
+  "pytest_version": "9.1.1",
+  "commit": "cee09d22096d1dbfd0d4bc022639b8fb657544a3",
+  "backend_framework": "FastAPI",
+  "frontend_framework": "React 18 + Vite 5.4.21",
+  "timestamp": "2026-09-30T02:43:00+05:30"
+}

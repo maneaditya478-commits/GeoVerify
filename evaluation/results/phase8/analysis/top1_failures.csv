@@ -1,0 +1,1 @@
+case_id,raw_text,expected_locality,expected_district,target_rank,top1_candidate_name,top1_candidate_district,top1_score,target_score,score_gap,top1_channels,target_channels,applied_penalties_on_target

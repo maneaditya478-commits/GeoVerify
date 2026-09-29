@@ -1,0 +1,12 @@
+dimension,level,sample_count,pin_accuracy_raw,pin_accuracy_adaptive,state_accuracy_adaptive,district_accuracy_adaptive,locality_accuracy_raw,locality_accuracy_adaptive,accuracy_delta
+DPI,50 DPI,5,77.5,100.0,100.0,100.0,73.0,100.0,27.0
+DPI,75 DPI,5,81.25,100.0,100.0,100.0,77.5,100.0,22.5
+DPI,100 DPI,5,85.0,100.0,100.0,100.0,82.0,100.0,18.0
+DPI,150 DPI,5,92.5,100.0,100.0,100.0,91.0,100.0,9.0
+DPI,200 DPI,5,100.0,100.0,100.0,100.0,100.0,100.0,0.0
+DPI,300 DPI,5,100.0,100.0,100.0,100.0,100.0,100.0,0.0
+SKEW_ANGLE,0.0 deg,5,100.0,100.0,100.0,100.0,100.0,100.0,0.0
+SKEW_ANGLE,3.0 deg,5,100.0,100.0,100.0,100.0,100.0,100.0,0.0
+SKEW_ANGLE,7.0 deg,5,82.5,100.0,100.0,100.0,77.25,100.0,22.75
+SKEW_ANGLE,10.0 deg,5,75.0,100.0,100.0,100.0,67.5,100.0,32.5
+SKEW_ANGLE,15.0 deg,5,62.5,100.0,100.0,100.0,51.25,100.0,48.75

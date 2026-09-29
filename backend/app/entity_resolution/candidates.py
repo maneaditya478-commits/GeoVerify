@@ -22,6 +22,11 @@ from app.entity_resolution.models import CandidateEntity, EntityType
 from app.schemas.address import Coordinates
 from app.services.transliteration import transliteration_service
 from app.services.phonetic import phonetic_service
+from app.entity_resolution.dense_retrieval import dense_retriever
+from app.entity_resolution.spatial_retrieval import spatial_retriever
+from app.config import Settings
+
+_settings = Settings()
 
 PROCESSED_DIR = Path(__file__).parent.parent.parent.parent / "data" / "processed"
 ALIASES_DIR = Path(__file__).parent.parent.parent.parent / "data" / "reference" / "aliases"
@@ -46,6 +51,10 @@ class MultiStageCandidateGenerator:
 
         # Build in-memory fast lookups
         self._build_indices()
+
+        # Build dense and spatial retriever indices (Phase 8)
+        dense_retriever.build_index(self.states, self.districts, self.subdistricts, self.localities)
+        spatial_retriever.build_index(self.localities, self.pincodes)
 
     def _load_json(self, path: Path) -> List[Dict[str, Any]]:
         if path.exists():
@@ -224,6 +233,26 @@ class MultiStageCandidateGenerator:
         # 8. Channel: Geographic Bounding Box Retrieval
         if context_coordinates:
             channel_results["geographic"] = self._retrieve_geographic(context_coordinates, types_to_check)
+
+        # 9. Channel: Dense Geographic n-gram vector Retrieval (Phase 8)
+        if _settings.ENABLE_DENSE_RETRIEVAL and clean_query and len(clean_query) >= 3:
+            dense_cands = dense_retriever.retrieve(
+                query=f"{clean_query} {context_district or ''} {context_state or ''}".strip(),
+                types=types_to_check,
+                top_k=limit,
+                min_similarity=0.45,
+            )
+            channel_results["dense_geographic"] = dense_cands
+
+        # 10. Channel: Spatial Proximity / Coordinate Radius Retrieval (Phase 8)
+        if context_coordinates:
+            spatial_cands = spatial_retriever.retrieve_nearby(
+                center=context_coordinates,
+                types=types_to_check,
+                radius_km=15.0,
+                top_k=limit,
+            )
+            channel_results["spatial_proximity"] = spatial_cands
 
         # Merge, deduplicate, and assign multi-channel scores
         merged_candidates = self._merge_and_rank_candidates(channel_results, limit=limit)

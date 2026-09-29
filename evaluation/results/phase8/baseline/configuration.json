@@ -1,0 +1,12 @@
+{
+  "ENABLE_DENSE_RETRIEVAL": false,
+  "ENABLE_OCR_ENSEMBLE": false,
+  "ENABLE_ADAPTIVE_PREPROCESSING": false,
+  "ENABLE_GEOGRAPHIC_EMBEDDINGS": false,
+  "ENABLE_MULTILINGUAL_POSTCORRECTION": false,
+  "decision_thresholds": {
+    "VERIFIED": 80,
+    "CONSISTENT": 60,
+    "NEEDS_REVIEW": 60
+  }
+}

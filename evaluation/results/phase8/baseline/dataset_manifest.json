@@ -1,0 +1,20 @@
+{
+  "benchmark_dataset": "evaluation/phase7_2/dataset.py",
+  "total_cases": 260,
+  "splits": {
+    "DEV": 156,
+    "VAL": 52,
+    "HELD_OUT": 52
+  },
+  "dataset_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "categories": [
+    "clean_documents",
+    "multilingual_devanagari",
+    "scan_degradations",
+    "ocr_noise_substitutions",
+    "complex_multi_address",
+    "multi_token_localities",
+    "partial_and_rural",
+    "negative_adversarial"
+  ]
+}

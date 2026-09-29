@@ -1,0 +1,46 @@
+{
+  "phase": "Phase 8 Baseline Freeze (from Phase 7.3)",
+  "commit": "cee09d22096d1dbfd0d4bc022639b8fb657544a3",
+  "timestamp": "2026-09-30T02:43:00+05:30",
+  "benchmark_dataset_counts": {
+    "total_cases": 260,
+    "dev_cases": 156,
+    "val_cases": 52,
+    "held_out_cases": 52,
+    "paired_control_cases": 240
+  },
+  "overall_metrics": {
+    "pin_accuracy_pct": 93.46,
+    "state_accuracy_pct": 94.23,
+    "district_accuracy_pct": 93.46,
+    "locality_accuracy_pct": 84.23,
+    "recall_at_1_pct": 82.31,
+    "recall_at_5_pct": 97.31,
+    "recall_at_10_pct": 99.23,
+    "ambiguity_f1": 0.902,
+    "clean_status_accuracy_pct": 86.25,
+    "ocr_status_accuracy_pct": 76.25,
+    "clean_ocr_gap_pct": 10.00,
+    "decision_accuracy_pct": 78.08,
+    "macro_f1": 0.8460,
+    "weighted_f1": 0.8890,
+    "mean_latency_ms": 147.61,
+    "p95_latency_ms": 167.32,
+    "p99_latency_ms": 172.34
+  },
+  "held_out_52_metrics": {
+    "pin_accuracy_pct": 92.31,
+    "state_accuracy_pct": 94.23,
+    "district_accuracy_pct": 92.31,
+    "locality_accuracy_pct": 82.69,
+    "recall_at_1_pct": 80.77,
+    "recall_at_5_pct": 96.15,
+    "decision_accuracy_pct": 71.15,
+    "clean_status_accuracy_pct": 84.62,
+    "ocr_status_accuracy_pct": 75.00,
+    "clean_ocr_gap_pct": 9.62
+  },
+  "test_count": 228,
+  "test_status": "ALL_PASSING",
+  "frontend_build_status": "PASS"
+}
