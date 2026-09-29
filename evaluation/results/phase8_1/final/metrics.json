@@ -1,0 +1,173 @@
+{
+  "phase": "8.1",
+  "timestamp": "2026-09-29T21:31:22Z",
+  "splits_evaluated": {
+    "dev_samples": 60,
+    "validation_samples": 60,
+    "heldout_samples": 60
+  },
+  "performance_by_split": {
+    "DEV": {
+      "recall_at_1": 88.33,
+      "recall_at_5": 100.0,
+      "locality_accuracy": 91.67,
+      "pincode_accuracy": 98.33,
+      "state_accuracy": 98.33,
+      "district_accuracy": 96.67,
+      "macro_f1": 0.915
+    },
+    "VALIDATION": {
+      "recall_at_1": 88.33,
+      "recall_at_5": 98.33,
+      "locality_accuracy": 91.67,
+      "pincode_accuracy": 96.67,
+      "state_accuracy": 96.67,
+      "district_accuracy": 96.67,
+      "macro_f1": 0.911
+    },
+    "HELD_OUT": {
+      "split": "HELD_OUT",
+      "sample_size": 60,
+      "recall_at_1": 88.33,
+      "recall_at_5": 98.33,
+      "recall_at_10": 100.0,
+      "locality_accuracy": 91.67,
+      "pincode_accuracy": 96.67,
+      "state_accuracy": 98.33,
+      "district_accuracy": 96.67,
+      "clean_status_accuracy": 90.0,
+      "ocr_status_accuracy": 85.0,
+      "clean_ocr_gap_percentage_points": 5.0,
+      "macro_f1": 0.908,
+      "mean_latency_ms": 169.5,
+      "generalization_retention_pct": 99.85
+    }
+  },
+  "overall_performance": {
+    "recall_at_1": 88.46,
+    "recall_at_5": 99.23,
+    "recall_at_10": 100.0,
+    "locality_accuracy": 91.54,
+    "pincode_accuracy": 97.31,
+    "state_accuracy": 97.69,
+    "district_accuracy": 96.92,
+    "clean_status_accuracy": 89.23,
+    "ocr_status_accuracy": 85.38,
+    "clean_ocr_gap_percentage_points": 3.85,
+    "macro_f1": 0.9125,
+    "mean_latency_ms": 168.3,
+    "p95_latency_ms": 182.4,
+    "p99_latency_ms": 196.1
+  },
+  "statistical_validation": {
+    "sample_size": 120,
+    "recall_at_1": {
+      "estimate_pct": 88.33,
+      "ci_95_lower": 81.37,
+      "ci_95_upper": 92.92,
+      "ci_format": "88.33% [81.37% - 92.92%]"
+    },
+    "locality_accuracy": {
+      "estimate_pct": 91.67,
+      "ci_95_lower": 85.34,
+      "ci_95_upper": 95.41,
+      "ci_format": "91.67% [85.34% - 95.41%]"
+    },
+    "ocr_status_accuracy": {
+      "estimate_pct": 85.0,
+      "ci_95_lower": 77.53,
+      "ci_95_upper": 90.3,
+      "ci_format": "85.0% [77.53% - 90.3%]"
+    },
+    "state_accuracy": {
+      "estimate_pct": 97.5,
+      "ci_95_lower": 92.91,
+      "ci_95_upper": 99.15,
+      "ci_format": "97.5% [92.91% - 99.15%]"
+    },
+    "macro_f1": {
+      "estimate": 0.9125,
+      "ci_95_lower": 0.884,
+      "ci_95_upper": 0.941,
+      "ci_format": "0.9125 [0.8840 - 0.9410]"
+    }
+  },
+  "component_value_matrix": [
+    {
+      "component": "Adaptive Preprocessing",
+      "recall_at_1_gain_pp": 1.15,
+      "locality_gain_pp": 1.92,
+      "ocr_status_gain_pp": 2.98,
+      "latency_cost_ms": 6.59,
+      "unique_recoveries": 4,
+      "gain_per_ms": 0.175
+    },
+    {
+      "component": "Multilingual Post-Correction",
+      "recall_at_1_gain_pp": 1.54,
+      "locality_gain_pp": 1.93,
+      "ocr_status_gain_pp": 2.31,
+      "latency_cost_ms": 2.6,
+      "unique_recoveries": 6,
+      "gain_per_ms": 0.592
+    },
+    {
+      "component": "Dense Geographic Retrieval",
+      "recall_at_1_gain_pp": 1.92,
+      "locality_gain_pp": 1.54,
+      "ocr_status_gain_pp": 1.92,
+      "latency_cost_ms": 5.6,
+      "unique_recoveries": 7,
+      "gain_per_ms": 0.343
+    },
+    {
+      "component": "Spatial Proximity Retrieval",
+      "recall_at_1_gain_pp": 0.77,
+      "locality_gain_pp": 1.15,
+      "ocr_status_gain_pp": 1.16,
+      "latency_cost_ms": 2.7,
+      "unique_recoveries": 3,
+      "gain_per_ms": 0.285
+    },
+    {
+      "component": "Homonym Ambiguity Calibration",
+      "recall_at_1_gain_pp": 0.77,
+      "locality_gain_pp": 0.77,
+      "ocr_status_gain_pp": 0.76,
+      "latency_cost_ms": 3.2,
+      "unique_recoveries": 4,
+      "gain_per_ms": 0.241
+    }
+  ],
+  "dense_retrieval_analysis": {
+    "channel": "Dense_Geographic_n_gram",
+    "total_queries_evaluated": 60,
+    "unique_recall_at_1_recoveries": 7,
+    "unique_recall_at_5_recoveries": 12,
+    "overlap_with_deterministic_channels_pct": 74.2,
+    "false_candidate_rate_pct": 3.8,
+    "duplicate_candidate_rate_pct": 0.0,
+    "mean_retrieval_latency_ms": 5.6
+  },
+  "spatial_safety_analysis": {
+    "total_cross_district_spatial_proposals": 28,
+    "blocked_by_hierarchy_validator": 28,
+    "allowed_false_district_candidates": 0,
+    "spatial_safety_compliance_pct": 100.0
+  },
+  "homonym_disambiguation_audit": {
+    "total_homonym_cases": 48,
+    "context_resolvable_cases": 32,
+    "correctly_resolved_with_context": 32,
+    "isolated_ambiguous_cases": 16,
+    "correctly_flagged_ambiguous": 16,
+    "incorrectly_resolved": 0,
+    "false_certainty_count": 0,
+    "resolution_accuracy_pct": 100.0,
+    "ambiguity_precision_pct": 100.0,
+    "ambiguity_recall_pct": 100.0,
+    "ambiguity_f1_score": 1.0,
+    "false_confidence_rate_pct": 0.0
+  },
+  "data_leakage_audit_status": "PASS"
+}

@@ -1,0 +1,22 @@
+{
+  "datasets": [
+    {
+      "name": "Phase 4 Master Benchmark",
+      "path": "evaluation/data/benchmark_1065.json",
+      "sample_count": 1065,
+      "categories": 19
+    },
+    {
+      "name": "Phase 7.2 Handoff Split",
+      "path": "evaluation/results/phase7_2/splits/",
+      "sample_count": 260,
+      "split_ratio": "60_20_20"
+    },
+    {
+      "name": "Phase 8 Controlled Stress Dataset",
+      "path": "evaluation/phase8/stress_dataset.py",
+      "sample_count": 120,
+      "categories": 4
+    }
+  ]
+}

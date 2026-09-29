@@ -1,0 +1,17 @@
+{
+  "split": "HELD_OUT",
+  "sample_size": 60,
+  "recall_at_1": 88.33,
+  "recall_at_5": 98.33,
+  "recall_at_10": 100.0,
+  "locality_accuracy": 91.67,
+  "pincode_accuracy": 96.67,
+  "state_accuracy": 98.33,
+  "district_accuracy": 96.67,
+  "clean_status_accuracy": 90.0,
+  "ocr_status_accuracy": 85.0,
+  "clean_ocr_gap_percentage_points": 5.0,
+  "macro_f1": 0.908,
+  "mean_latency_ms": 169.5,
+  "generalization_retention_pct": 99.85
+}

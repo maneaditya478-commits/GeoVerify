@@ -1,0 +1,22 @@
+{
+  "experiment_id": "EXP_PHASE_8_1_FULL_VALIDATION",
+  "git_commit": "901246f",
+  "timestamp": "2026-09-29T21:31:12Z",
+  "seed": 42,
+  "split": "all_splits",
+  "features_enabled": [
+    "ENABLE_DENSE_RETRIEVAL",
+    "ENABLE_ADAPTIVE_PREPROCESSING",
+    "ENABLE_GEOGRAPHIC_EMBEDDINGS",
+    "ENABLE_MULTILINGUAL_POSTCORRECTION"
+  ],
+  "dataset_hashes": {
+    "D:\\Project\\GeoVerify\\evaluation\\phase8_1\\splits.py": "5b6e395205ba60242b49bfbfde93ba207908f610ed09815157b279de0319a041"
+  },
+  "software_versions": {
+    "python": "3.13.0",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "system": "Windows"
+  },
+  "notes": "Phase 8.1 strict generalization, attribution, and stress benchmark."
+}

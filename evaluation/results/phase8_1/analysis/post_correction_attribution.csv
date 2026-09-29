@@ -1,0 +1,10 @@
+case_id,raw_ocr,corrected_text,correction_type,original_token,corrected_token,authority_source
+val_02_r1,"Hinjewadi Phase 1, Pune, Maharashtra 411057","Hinjawadi Phase 1, Pune, Maharashtra 411057",COMMON_GEO_TYPO,hinjewadi,Hinjawadi,Local Government Directory / Official Catalog
+val_07_r1,"T Nagar, Chennai, Tamil Nadu 600017","T Nagar, Chennai, Tamil Nadu Nadu 600017",STATE_GROUNDED_REPAIR,Tamil,Tamil Nadu,Local Government Directory / Official Catalog
+val_08_r1,"Park Street, Kolkata, West Bengal 700016","Park Street, Kolkata, West Bengal Bengal 700016",STATE_GROUNDED_REPAIR,West,West Bengal,Local Government Directory / Official Catalog
+val_02_r2,"Hinjewadi Phase 1, Pune, Maharashtra 411057","Hinjawadi Phase 1, Pune, Maharashtra 411057",COMMON_GEO_TYPO,hinjewadi,Hinjawadi,Local Government Directory / Official Catalog
+val_07_r2,"T Nagar, Chennai, Tamil Nadu 600017","T Nagar, Chennai, Tamil Nadu Nadu 600017",STATE_GROUNDED_REPAIR,Tamil,Tamil Nadu,Local Government Directory / Official Catalog
+val_08_r2,"Park Street, Kolkata, West Bengal 700016","Park Street, Kolkata, West Bengal Bengal 700016",STATE_GROUNDED_REPAIR,West,West Bengal,Local Government Directory / Official Catalog
+val_02_r3,"Hinjewadi Phase 1, Pune, Maharashtra 411057","Hinjawadi Phase 1, Pune, Maharashtra 411057",COMMON_GEO_TYPO,hinjewadi,Hinjawadi,Local Government Directory / Official Catalog
+val_07_r3,"T Nagar, Chennai, Tamil Nadu 600017","T Nagar, Chennai, Tamil Nadu Nadu 600017",STATE_GROUNDED_REPAIR,Tamil,Tamil Nadu,Local Government Directory / Official Catalog
+val_08_r3,"Park Street, Kolkata, West Bengal 700016","Park Street, Kolkata, West Bengal Bengal 700016",STATE_GROUNDED_REPAIR,West,West Bengal,Local Government Directory / Official Catalog

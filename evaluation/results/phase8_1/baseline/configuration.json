@@ -1,0 +1,26 @@
+{
+  "feature_flags": {
+    "ENABLE_DENSE_RETRIEVAL": true,
+    "ENABLE_OCR_ENSEMBLE": false,
+    "ENABLE_ADAPTIVE_PREPROCESSING": true,
+    "ENABLE_GEOGRAPHIC_EMBEDDINGS": true,
+    "ENABLE_MULTILINGUAL_POSTCORRECTION": true
+  },
+  "retrieval_channels_enabled": [
+    "exact",
+    "alias",
+    "normalized",
+    "transliteration",
+    "phonetic",
+    "fuzzy",
+    "admin_context",
+    "pin",
+    "geographic",
+    "dense_geographic",
+    "spatial_proximity"
+  ],
+  "ranker_configuration": {
+    "version": "Phase 6.1 Calibrated",
+    "ambiguity_threshold": 12.0
+  }
+}

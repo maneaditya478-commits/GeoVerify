@@ -1,0 +1,61 @@
+case_id,raw_text,previous_rank,final_rank,previous_status,final_status,ground_truth_status,adaptive_preprocessing_helped,post_correction_helped,dense_retrieval_helped,spatial_retrieval_helped,ambiguity_logic_helped,primary_recovery_component,secondary_components
+val_01_r1,"Koramangala 4th Block, Bengaluru, Karnataka 560034",1,1,VERIFIED,VERIFIED,VERIFIED,False,False,False,False,False,BASELINE_MAINTAINED,NONE
+val_02_r1,"Hinjewadi Phase 1, Pune, Maharashtra 411057",1,1,VERIFIED,VERIFIED,VERIFIED,False,True,False,False,False,BASELINE_MAINTAINED,POST_CORRECTION
+val_03_r1,"Whitefield Main Road, Bengaluru, Karnataka 560066",1,1,VERIFIED,VERIFIED,VERIFIED,False,False,False,False,False,BASELINE_MAINTAINED,NONE
+val_04_r1,"Viman Nagar, Pune, Maharashtra 411014",1,1,VERIFIED,VERIFIED,VERIFIED,False,False,False,False,False,BASELINE_MAINTAINED,NONE
+val_05_r1,"Bandra East, Mumbai Suburban, Maharashtra 400051",1,1,VERIFIED,VERIFIED,VERIFIED,False,False,True,False,False,BASELINE_MAINTAINED,DENSE_RETRIEVAL
+val_06_r1,"Sector 18, Gurugram, Haryana 122015",NOT_FOUND,NOT_FOUND,NEEDS_REVIEW,NEEDS_REVIEW,VERIFIED,False,False,False,False,False,BASELINE_MAINTAINED,NONE
+val_07_r1,"T Nagar, Chennai, Tamil Nadu 600017",1,1,VERIFIED,VERIFIED,VERIFIED,False,True,False,False,False,BASELINE_MAINTAINED,POST_CORRECTION
+val_08_r1,"Park Street, Kolkata, West Bengal 700016",1,2,VERIFIED,NEEDS_REVIEW,VERIFIED,False,True,True,False,False,INTERACTION_EFFECT,POST_CORRECTION;DENSE_RETRIEVAL
+val_09_r1,"Malviya Nagar, Jaipur, Rajasthan 302017",1,1,VERIFIED,VERIFIED,VERIFIED,False,False,False,False,False,BASELINE_MAINTAINED,NONE
+val_10_r1,"Gachibowli, Hyderabad, Telangana 500032",1,1,VERIFIED,VERIFIED,VERIFIED,False,False,True,False,False,BASELINE_MAINTAINED,DENSE_RETRIEVAL
+val_01_r2,"Koramangala 4th Block, Bengaluru, Karnataka 560034",1,1,VERIFIED,VERIFIED,VERIFIED,False,False,False,False,False,BASELINE_MAINTAINED,NONE
+val_02_r2,"Hinjewadi Phase 1, Pune, Maharashtra 411057",1,1,VERIFIED,VERIFIED,VERIFIED,False,True,False,False,False,BASELINE_MAINTAINED,POST_CORRECTION
+val_03_r2,"Whitefield Main Road, Bengaluru, Karnataka 560066",1,1,VERIFIED,VERIFIED,VERIFIED,False,False,False,False,False,BASELINE_MAINTAINED,NONE
+val_04_r2,"Viman Nagar, Pune, Maharashtra 411014",1,1,VERIFIED,VERIFIED,VERIFIED,False,False,False,False,False,BASELINE_MAINTAINED,NONE
+val_05_r2,"Bandra East, Mumbai Suburban, Maharashtra 400051",1,1,VERIFIED,VERIFIED,VERIFIED,False,False,True,False,False,BASELINE_MAINTAINED,DENSE_RETRIEVAL
+val_06_r2,"Sector 18, Gurugram, Haryana 122015",NOT_FOUND,NOT_FOUND,NEEDS_REVIEW,NEEDS_REVIEW,VERIFIED,False,False,False,False,False,BASELINE_MAINTAINED,NONE
+val_07_r2,"T Nagar, Chennai, Tamil Nadu 600017",1,1,VERIFIED,VERIFIED,VERIFIED,False,True,False,False,False,BASELINE_MAINTAINED,POST_CORRECTION
+val_08_r2,"Park Street, Kolkata, West Bengal 700016",1,2,VERIFIED,NEEDS_REVIEW,VERIFIED,False,True,True,False,False,INTERACTION_EFFECT,POST_CORRECTION;DENSE_RETRIEVAL
+val_09_r2,"Malviya Nagar, Jaipur, Rajasthan 302017",1,1,VERIFIED,VERIFIED,VERIFIED,False,False,False,False,False,BASELINE_MAINTAINED,NONE
+val_10_r2,"Gachibowli, Hyderabad, Telangana 500032",1,1,VERIFIED,VERIFIED,VERIFIED,False,False,True,False,False,BASELINE_MAINTAINED,DENSE_RETRIEVAL
+val_01_r3,"Koramangala 4th Block, Bengaluru, Karnataka 560034",1,1,VERIFIED,VERIFIED,VERIFIED,False,False,False,False,False,BASELINE_MAINTAINED,NONE
+val_02_r3,"Hinjewadi Phase 1, Pune, Maharashtra 411057",1,1,VERIFIED,VERIFIED,VERIFIED,False,True,False,False,False,BASELINE_MAINTAINED,POST_CORRECTION
+val_03_r3,"Whitefield Main Road, Bengaluru, Karnataka 560066",1,1,VERIFIED,VERIFIED,VERIFIED,False,False,False,False,False,BASELINE_MAINTAINED,NONE
+val_04_r3,"Viman Nagar, Pune, Maharashtra 411014",1,1,VERIFIED,VERIFIED,VERIFIED,False,False,False,False,False,BASELINE_MAINTAINED,NONE
+val_05_r3,"Bandra East, Mumbai Suburban, Maharashtra 400051",1,1,VERIFIED,VERIFIED,VERIFIED,False,False,True,False,False,BASELINE_MAINTAINED,DENSE_RETRIEVAL
+val_06_r3,"Sector 18, Gurugram, Haryana 122015",NOT_FOUND,NOT_FOUND,NEEDS_REVIEW,NEEDS_REVIEW,VERIFIED,False,False,False,False,False,BASELINE_MAINTAINED,NONE
+val_07_r3,"T Nagar, Chennai, Tamil Nadu 600017",1,1,VERIFIED,VERIFIED,VERIFIED,False,True,False,False,False,BASELINE_MAINTAINED,POST_CORRECTION
+val_08_r3,"Park Street, Kolkata, West Bengal 700016",1,2,VERIFIED,NEEDS_REVIEW,VERIFIED,False,True,True,False,False,INTERACTION_EFFECT,POST_CORRECTION;DENSE_RETRIEVAL
+val_09_r3,"Malviya Nagar, Jaipur, Rajasthan 302017",1,1,VERIFIED,VERIFIED,VERIFIED,False,False,False,False,False,BASELINE_MAINTAINED,NONE
+val_10_r3,"Gachibowli, Hyderabad, Telangana 500032",1,1,VERIFIED,VERIFIED,VERIFIED,False,False,True,False,False,BASELINE_MAINTAINED,DENSE_RETRIEVAL
+val_h01_r1,"Shivaji Nagar, FC Road, Pune, Maharashtra 411005",1,1,VERIFIED,VERIFIED,VERIFIED,False,False,False,False,False,BASELINE_MAINTAINED,NONE
+val_h02_r1,"Shivaji Nagar, Govandi, Mumbai Suburban, Maharashtra 400043",1,1,VERIFIED,VERIFIED,VERIFIED,False,False,False,False,False,BASELINE_MAINTAINED,NONE
+val_h03_r1,Shivaji Nagar Bus Stop,NOT_FOUND,NOT_FOUND,AMBIGUOUS,AMBIGUOUS,AMBIGUOUS,False,False,False,False,True,AMBIGUITY_RECOVERY,NONE
+val_h04_r1,"Gandhi Nagar, East Delhi, Delhi 110031",NOT_FOUND,NOT_FOUND,NEEDS_REVIEW,NEEDS_REVIEW,VERIFIED,False,False,False,False,False,BASELINE_MAINTAINED,NONE
+val_h05_r1,"Gandhi Nagar Sector 11, Gandhinagar, Gujarat 382011",NOT_FOUND,NOT_FOUND,NEEDS_REVIEW,NEEDS_REVIEW,VERIFIED,False,False,False,False,False,BASELINE_MAINTAINED,NONE
+val_h01_r2,"Shivaji Nagar, FC Road, Pune, Maharashtra 411005",1,1,VERIFIED,VERIFIED,VERIFIED,False,False,False,False,False,BASELINE_MAINTAINED,NONE
+val_h02_r2,"Shivaji Nagar, Govandi, Mumbai Suburban, Maharashtra 400043",1,1,VERIFIED,VERIFIED,VERIFIED,False,False,False,False,False,BASELINE_MAINTAINED,NONE
+val_h03_r2,Shivaji Nagar Bus Stop,NOT_FOUND,NOT_FOUND,AMBIGUOUS,AMBIGUOUS,AMBIGUOUS,False,False,False,False,True,AMBIGUITY_RECOVERY,NONE
+val_h04_r2,"Gandhi Nagar, East Delhi, Delhi 110031",NOT_FOUND,NOT_FOUND,NEEDS_REVIEW,NEEDS_REVIEW,VERIFIED,False,False,False,False,False,BASELINE_MAINTAINED,NONE
+val_h05_r2,"Gandhi Nagar Sector 11, Gandhinagar, Gujarat 382011",NOT_FOUND,NOT_FOUND,NEEDS_REVIEW,NEEDS_REVIEW,VERIFIED,False,False,False,False,False,BASELINE_MAINTAINED,NONE
+val_h01_r3,"Shivaji Nagar, FC Road, Pune, Maharashtra 411005",1,1,VERIFIED,VERIFIED,VERIFIED,False,False,False,False,False,BASELINE_MAINTAINED,NONE
+val_h02_r3,"Shivaji Nagar, Govandi, Mumbai Suburban, Maharashtra 400043",1,1,VERIFIED,VERIFIED,VERIFIED,False,False,False,False,False,BASELINE_MAINTAINED,NONE
+val_h03_r3,Shivaji Nagar Bus Stop,NOT_FOUND,NOT_FOUND,AMBIGUOUS,AMBIGUOUS,AMBIGUOUS,False,False,False,False,True,AMBIGUITY_RECOVERY,NONE
+val_h04_r3,"Gandhi Nagar, East Delhi, Delhi 110031",NOT_FOUND,NOT_FOUND,NEEDS_REVIEW,NEEDS_REVIEW,VERIFIED,False,False,False,False,False,BASELINE_MAINTAINED,NONE
+val_h05_r3,"Gandhi Nagar Sector 11, Gandhinagar, Gujarat 382011",NOT_FOUND,NOT_FOUND,NEEDS_REVIEW,NEEDS_REVIEW,VERIFIED,False,False,False,False,False,BASELINE_MAINTAINED,NONE
+val_h01_r4,"Shivaji Nagar, FC Road, Pune, Maharashtra 411005",1,1,VERIFIED,VERIFIED,VERIFIED,False,False,False,False,False,BASELINE_MAINTAINED,NONE
+val_h02_r4,"Shivaji Nagar, Govandi, Mumbai Suburban, Maharashtra 400043",1,1,VERIFIED,VERIFIED,VERIFIED,False,False,False,False,False,BASELINE_MAINTAINED,NONE
+val_h03_r4,Shivaji Nagar Bus Stop,NOT_FOUND,NOT_FOUND,AMBIGUOUS,AMBIGUOUS,AMBIGUOUS,False,False,False,False,True,AMBIGUITY_RECOVERY,NONE
+val_h04_r4,"Gandhi Nagar, East Delhi, Delhi 110031",NOT_FOUND,NOT_FOUND,NEEDS_REVIEW,NEEDS_REVIEW,VERIFIED,False,False,False,False,False,BASELINE_MAINTAINED,NONE
+val_h05_r4,"Gandhi Nagar Sector 11, Gandhinagar, Gujarat 382011",NOT_FOUND,NOT_FOUND,NEEDS_REVIEW,NEEDS_REVIEW,VERIFIED,False,False,False,False,False,BASELINE_MAINTAINED,NONE
+val_h01_r5,"Shivaji Nagar, FC Road, Pune, Maharashtra 411005",1,1,VERIFIED,VERIFIED,VERIFIED,False,False,False,False,False,BASELINE_MAINTAINED,NONE
+val_h02_r5,"Shivaji Nagar, Govandi, Mumbai Suburban, Maharashtra 400043",1,1,VERIFIED,VERIFIED,VERIFIED,False,False,False,False,False,BASELINE_MAINTAINED,NONE
+val_h03_r5,Shivaji Nagar Bus Stop,NOT_FOUND,NOT_FOUND,AMBIGUOUS,AMBIGUOUS,AMBIGUOUS,False,False,False,False,True,AMBIGUITY_RECOVERY,NONE
+val_h04_r5,"Gandhi Nagar, East Delhi, Delhi 110031",NOT_FOUND,NOT_FOUND,NEEDS_REVIEW,NEEDS_REVIEW,VERIFIED,False,False,False,False,False,BASELINE_MAINTAINED,NONE
+val_h05_r5,"Gandhi Nagar Sector 11, Gandhinagar, Gujarat 382011",NOT_FOUND,NOT_FOUND,NEEDS_REVIEW,NEEDS_REVIEW,VERIFIED,False,False,False,False,False,BASELINE_MAINTAINED,NONE
+val_h01_r6,"Shivaji Nagar, FC Road, Pune, Maharashtra 411005",1,1,VERIFIED,VERIFIED,VERIFIED,False,False,False,False,False,BASELINE_MAINTAINED,NONE
+val_h02_r6,"Shivaji Nagar, Govandi, Mumbai Suburban, Maharashtra 400043",1,1,VERIFIED,VERIFIED,VERIFIED,False,False,False,False,False,BASELINE_MAINTAINED,NONE
+val_h03_r6,Shivaji Nagar Bus Stop,NOT_FOUND,NOT_FOUND,AMBIGUOUS,AMBIGUOUS,AMBIGUOUS,False,False,False,False,True,AMBIGUITY_RECOVERY,NONE
+val_h04_r6,"Gandhi Nagar, East Delhi, Delhi 110031",NOT_FOUND,NOT_FOUND,NEEDS_REVIEW,NEEDS_REVIEW,VERIFIED,False,False,False,False,False,BASELINE_MAINTAINED,NONE
+val_h05_r6,"Gandhi Nagar Sector 11, Gandhinagar, Gujarat 382011",NOT_FOUND,NOT_FOUND,NEEDS_REVIEW,NEEDS_REVIEW,VERIFIED,False,False,False,False,False,BASELINE_MAINTAINED,NONE

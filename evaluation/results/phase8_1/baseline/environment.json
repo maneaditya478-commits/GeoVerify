@@ -1,0 +1,18 @@
+{
+  "python_version": "3.13.0",
+  "os": "Windows 11",
+  "node_version": "v24.14.0",
+  "platform": "win32",
+  "packages": {
+    "fastapi": "0.115.0",
+    "pydantic": "2.9.2",
+    "rapidfuzz": "3.10.0",
+    "pillow": "11.0.0",
+    "pytest": "9.1.1",
+    "shapely": "2.0.6",
+    "vite": "5.4.21",
+    "react": "18.3.1"
+  },
+  "git_commit": "901246f",
+  "frozen_at": "2026-09-30T02:59:00Z"
+}

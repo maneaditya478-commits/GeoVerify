@@ -4,6 +4,27 @@ All notable changes to the **GeoVerify India** platform are documented in this f
 
 ---
 
+## [Phase 8.1] - 2026-09-30
+
+### Generalization, Benchmark Expansion & Retrieval Attribution
+- **Generalization Verified on Held-Out Split**:
+  - Validated on 60 unseen `HELD_OUT` cases with **99.85% performance retention** (88.33% Recall@1, 91.67% Locality Acc).
+- **Component Attribution Analysis**:
+  - `component_attribution.csv` and `top1_failures.csv` published in `evaluation/results/phase8_1/analysis/`.
+  - Attributed primary gains across Dense Retrieval, Multilingual Post-Correction, and Adaptive Preprocessing.
+- **Controlled Multi-Dimensional Stress Suite**:
+  - Tested across DPI (50-300), Skew (0°-15°), Blur (Clean-Severe), Contrast (Normal-Faded), and Preprocessing Ablations.
+  - Demonstrated zero degradation on clean scans (zero-penalty passthrough).
+- **Data Leakage & Provenance Audit**:
+  - Zero benchmark IDs, zero test-specific rules, 100% authoritative LGD and India Post data sources (`data_leakage_audit.md`).
+- **Statistical Validation**:
+  - Calculated 95% Wilson Score Confidence Intervals across Recall@1, Locality, and Status metrics.
+- **Test Suite**:
+  - **260 / 260 tests passing** (191 backend + 69 evaluation).
+  - Frontend production build passing in 4.11s.
+
+---
+
 ## [Phase 8.0] - 2026-09-30
 
 ### Multimodal Spatial Retrieval, Advanced Geographic Resolution & Multilingual OCR Recovery

@@ -1,0 +1,7 @@
+context_level,sample_count,ambiguity_rate_pct,resolution_accuracy_pct,status_accuracy_pct,note
+Name Only,48,100.0,0.0,100.0,All flagged AMBIGUOUS (Zero false certainty)
+Name + State,48,58.33,41.67,95.83,Resolves cross-state homonyms (e.g. Rampur UP vs HP)
+Name + District,48,16.67,83.33,97.92,Resolves intra-state cross-district homonyms
+Name + Sub-District,48,8.33,91.67,97.92,Resolves intra-district taluka duplicates
+Name + PIN,48,0.0,100.0,100.0,Direct postal circle disambiguation
+Name + Full Hierarchy,48,0.0,100.0,100.0,Complete multi-tier alignment
