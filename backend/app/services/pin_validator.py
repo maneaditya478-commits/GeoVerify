@@ -148,7 +148,10 @@ class PinValidator:
         if db_record:
             matched_district = db_record.get("district")
             matched_state = db_record.get("state", circle_state)
-            matched_post_offices = db_record.get("post_offices", [])
+            pos = db_record.get("post_offices", [])
+            if not pos and db_record.get("office_name"):
+                pos = [db_record.get("office_name")]
+            matched_post_offices = pos
             if "centroid" in db_record and db_record["centroid"]:
                 centroid = Coordinates(
                     latitude=db_record["centroid"]["latitude"],

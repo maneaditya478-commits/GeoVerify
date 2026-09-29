@@ -39,7 +39,7 @@ class NearbyIntelligenceService:
             if dist <= radius_km:
                 results.append(NearbyPlace(
                     name=p["name"],
-                    category=p["category"],
+                    category=p.get("category", p.get("type", "POI")),
                     subtype=p.get("subtype"),
                     distance_km=dist,
                     coordinates=poi_coords,

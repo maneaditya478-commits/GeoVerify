@@ -1,0 +1,600 @@
+{
+  "total_cases": 1065,
+  "cases_with_locality_gt": 955,
+  "recall_1_hits": 890,
+  "recall_5_hits": 916,
+  "recall_10_hits": 916,
+  "failure_reasons": {
+    "NO_EXACT_MATCH": 28,
+    "NO_ALIAS_MATCH": 0,
+    "NO_TRANSLITERATION_MATCH": 3,
+    "NO_PHONETIC_MATCH": 8,
+    "NO_FUZZY_MATCH": 0,
+    "WRONG_ADMIN_CONTEXT": 0,
+    "WRONG_ENTITY_TYPE": 0,
+    "INSUFFICIENT_INDEX": 0,
+    "PARSER_FAILURE": 0,
+    "MISSING_DATA": 0,
+    "UNKNOWN": 0
+  },
+  "detailed_failures": [
+    {
+      "case_id": "GV-000188",
+      "address": "सेक्टर 62, गौतम बुद्ध नगर, उत्तर प्रदेश 201309",
+      "category": "DEVANAGARI_HINDI",
+      "ground_truth_locality": "Sector 62",
+      "parsed_locality": "Gautam Buddha Nagar",
+      "query_used": "Gautam Buddha Nagar",
+      "candidates_returned": [
+        "t nagar",
+        "salt lake",
+        "viman nagar",
+        "vaishali nagar",
+        "gomti nagar",
+        "indiranagar",
+        "malviya nagar",
+        "aurangabad",
+        "adyar"
+      ],
+      "failure_reason": "NO_TRANSLITERATION_MATCH"
+    },
+    {
+      "case_id": "GV-000114",
+      "address": "Sector 62, Gautam Buddha Nagar, Uttar Pradesh",
+      "category": "PARTIAL_VALID",
+      "ground_truth_locality": "Sector 62",
+      "parsed_locality": "Gautam Buddha Nagar",
+      "query_used": "Gautam Buddha Nagar",
+      "candidates_returned": [
+        "t nagar",
+        "salt lake",
+        "viman nagar",
+        "vaishali nagar",
+        "gomti nagar",
+        "indiranagar",
+        "malviya nagar",
+        "aurangabad",
+        "adyar"
+      ],
+      "failure_reason": "NO_EXACT_MATCH"
+    },
+    {
+      "case_id": "GV-000020",
+      "address": "House No. 653, Brigade Gateway, Opposite City Mall, Vesu, Chorasi, Surat, Gujarat 395007",
+      "category": "COMPLETE_VALID",
+      "ground_truth_locality": "Vesu",
+      "parsed_locality": "Brigade Gateway",
+      "query_used": "Brigade Gateway",
+      "candidates_returned": [
+        "powai"
+      ],
+      "failure_reason": "NO_EXACT_MATCH"
+    },
+    {
+      "case_id": "GV-000073",
+      "address": "Tower T2, Shanti Niketan, Near Central Bank, Gomti Nagar, Lucknow, Lucknow, Uttar Pradesh 226010",
+      "category": "COMPLETE_VALID",
+      "ground_truth_locality": "Gomti Nagar",
+      "parsed_locality": "Shanti Niketan",
+      "query_used": "Shanti Niketan",
+      "candidates_returned": [],
+      "failure_reason": "NO_EXACT_MATCH"
+    },
+    {
+      "case_id": "GV-000059",
+      "address": "Flat 868, EON Free Zone, Near Bus Stand, Navrangpura, Daskroi, Ahmedabad, Gujarat 380009",
+      "category": "COMPLETE_VALID",
+      "ground_truth_locality": "Navrangpura",
+      "parsed_locality": "Eon Free Zone",
+      "query_used": "Eon Free Zone",
+      "candidates_returned": [
+        "kharadi",
+        "whitefield"
+      ],
+      "failure_reason": "NO_PHONETIC_MATCH"
+    },
+    {
+      "case_id": "GV-000160",
+      "address": "near Indiranagar circle, Bengaluru Urban, Karnataka",
+      "category": "INFORMAL_SLANG",
+      "ground_truth_locality": "Indiranagar",
+      "parsed_locality": "Urban",
+      "query_used": "Urban",
+      "candidates_returned": [],
+      "failure_reason": "NO_EXACT_MATCH"
+    },
+    {
+      "case_id": "GV-000366",
+      "address": "Sector 62i, Gautam Buddha Nagar, Uttar Pradesh 201309",
+      "category": "TYPO",
+      "ground_truth_locality": "Sector 62",
+      "parsed_locality": "Gautam Buddha Nagar",
+      "query_used": "Gautam Buddha Nagar",
+      "candidates_returned": [
+        "t nagar",
+        "salt lake",
+        "viman nagar",
+        "vaishali nagar",
+        "gomti nagar",
+        "indiranagar",
+        "malviya nagar",
+        "aurangabad",
+        "adyar"
+      ],
+      "failure_reason": "NO_EXACT_MATCH"
+    },
+    {
+      "case_id": "GV-000021",
+      "address": "Suite 463, Godrej Woods, Opposite Railway Station, Andheri East, Andheri, Mumbai Suburban, Maharashtra 400069",
+      "category": "COMPLETE_VALID",
+      "ground_truth_locality": "Andheri East",
+      "parsed_locality": "Godrej Woods",
+      "query_used": "Godrej Woods",
+      "candidates_returned": [],
+      "failure_reason": "NO_EXACT_MATCH"
+    },
+    {
+      "case_id": "GV-000233",
+      "address": "सेक्टर 62, गौतम बुद्ध नगर, उत्तर प्रदेश 201309",
+      "category": "DEVANAGARI_HINDI",
+      "ground_truth_locality": "Sector 62",
+      "parsed_locality": "Gautam Buddha Nagar",
+      "query_used": "Gautam Buddha Nagar",
+      "candidates_returned": [
+        "t nagar",
+        "salt lake",
+        "viman nagar",
+        "vaishali nagar",
+        "gomti nagar",
+        "indiranagar",
+        "malviya nagar",
+        "aurangabad",
+        "adyar"
+      ],
+      "failure_reason": "NO_TRANSLITERATION_MATCH"
+    },
+    {
+      "case_id": "GV-000879",
+      "address": "Sector 62, Gautam Buddha Nagar, Uttar Pradesh 41101A",
+      "category": "INVALID_PIN",
+      "ground_truth_locality": "Sector 62",
+      "parsed_locality": "Gautam Buddha Nagar",
+      "query_used": "Gautam Buddha Nagar",
+      "candidates_returned": [
+        "t nagar",
+        "salt lake",
+        "viman nagar",
+        "vaishali nagar",
+        "gomti nagar",
+        "indiranagar",
+        "malviya nagar",
+        "aurangabad",
+        "adyar"
+      ],
+      "failure_reason": "NO_EXACT_MATCH"
+    },
+    {
+      "case_id": "GV-000030",
+      "address": "Shop 651, Gokul Dham, Near Tech Park, Andheri East, Andheri, Mumbai Suburban, Maharashtra 400069",
+      "category": "COMPLETE_VALID",
+      "ground_truth_locality": "Andheri East",
+      "parsed_locality": "Gokul Dham",
+      "query_used": "Gokul Dham",
+      "candidates_returned": [
+        "gokulam"
+      ],
+      "failure_reason": "NO_PHONETIC_MATCH"
+    },
+    {
+      "case_id": "GV-000165",
+      "address": "behind Electronic City post, Bengaluru Urban, Karnataka",
+      "category": "INFORMAL_SLANG",
+      "ground_truth_locality": "Electronic City",
+      "parsed_locality": "Urban",
+      "query_used": "Urban",
+      "candidates_returned": [],
+      "failure_reason": "NO_EXACT_MATCH"
+    },
+    {
+      "case_id": "GV-000172",
+      "address": "behind Sector 62 chowk, Gautam Buddha Nagar, Uttar Pradesh",
+      "category": "INFORMAL_SLANG",
+      "ground_truth_locality": "Sector 62",
+      "parsed_locality": "Gautam Buddha Nagar",
+      "query_used": "Gautam Buddha Nagar",
+      "candidates_returned": [
+        "t nagar",
+        "salt lake",
+        "viman nagar",
+        "vaishali nagar",
+        "gomti nagar",
+        "indiranagar",
+        "malviya nagar",
+        "aurangabad",
+        "adyar"
+      ],
+      "failure_reason": "NO_EXACT_MATCH"
+    },
+    {
+      "case_id": "GV-000070",
+      "address": "Tower C, Kumar Primavera, Behind HP Petrol Pump, Banjara Hills, Ameerpet, Hyderabad, Telangana 500034",
+      "category": "COMPLETE_VALID",
+      "ground_truth_locality": "Banjara Hills",
+      "parsed_locality": "Kumar Primavera",
+      "query_used": "Kumar Primavera",
+      "candidates_returned": [],
+      "failure_reason": "NO_EXACT_MATCH"
+    },
+    {
+      "case_id": "GV-000349",
+      "address": "Sector 62, गौतम बुद्ध नगर, Uttar Pradesh 201309",
+      "category": "MIXED_LANGUAGE",
+      "ground_truth_locality": "Sector 62",
+      "parsed_locality": "Gautam Buddha Nagar",
+      "query_used": "Gautam Buddha Nagar",
+      "candidates_returned": [
+        "t nagar",
+        "salt lake",
+        "viman nagar",
+        "vaishali nagar",
+        "gomti nagar",
+        "indiranagar",
+        "malviya nagar",
+        "aurangabad",
+        "adyar"
+      ],
+      "failure_reason": "NO_EXACT_MATCH"
+    },
+    {
+      "case_id": "GV-000014",
+      "address": "Tower T2, Ganga Carnation, Near Tech Park, Andheri East, Andheri, Mumbai Suburban, Maharashtra 400069",
+      "category": "COMPLETE_VALID",
+      "ground_truth_locality": "Andheri East",
+      "parsed_locality": "Ganga Carnation",
+      "query_used": "Ganga Carnation",
+      "candidates_returned": [
+        "bandra west",
+        "t nagar"
+      ],
+      "failure_reason": "NO_PHONETIC_MATCH"
+    },
+    {
+      "case_id": "GV-000045",
+      "address": "Flat 412, Shanti Niketan, Near Central Bank, Gomti Nagar, Lucknow, Lucknow, Uttar Pradesh 226010",
+      "category": "COMPLETE_VALID",
+      "ground_truth_locality": "Gomti Nagar",
+      "parsed_locality": "Shanti Niketan",
+      "query_used": "Shanti Niketan",
+      "candidates_returned": [],
+      "failure_reason": "NO_EXACT_MATCH"
+    },
+    {
+      "case_id": "GV-000068",
+      "address": "House No. 808, Ganga Carnation, Near Bus Stand, Vesu, Chorasi, Surat, Gujarat 395007",
+      "category": "COMPLETE_VALID",
+      "ground_truth_locality": "Vesu",
+      "parsed_locality": "Ganga Carnation",
+      "query_used": "Ganga Carnation",
+      "candidates_returned": [
+        "bandra west",
+        "t nagar"
+      ],
+      "failure_reason": "NO_PHONETIC_MATCH"
+    },
+    {
+      "case_id": "GV-000003",
+      "address": "House No. 560, Godrej Woods, Behind Police Station, T Nagar, Mylapore, Chennai, Tamil Nadu 600017",
+      "category": "COMPLETE_VALID",
+      "ground_truth_locality": "T Nagar",
+      "parsed_locality": "Godrej Woods",
+      "query_used": "Godrej Woods",
+      "candidates_returned": [],
+      "failure_reason": "NO_EXACT_MATCH"
+    },
+    {
+      "case_id": "GV-000051",
+      "address": "House No. 753, Infinity Tower, Opposite City Mall, Gokulam, Mysuru, Mysuru, Karnataka 570002",
+      "category": "COMPLETE_VALID",
+      "ground_truth_locality": "Gokulam",
+      "parsed_locality": "Infinity Tower",
+      "query_used": "Infinity Tower",
+      "candidates_returned": [
+        "hitec city"
+      ],
+      "failure_reason": "NO_EXACT_MATCH"
+    },
+    {
+      "case_id": "GV-000074",
+      "address": "Cyber City, 3rd Floor, Opposite Railway Station, Navrangpura, Daskroi, Ahmedabad, Gujarat 380009",
+      "category": "COMPLETE_VALID",
+      "ground_truth_locality": "Navrangpura",
+      "parsed_locality": "Cyber City",
+      "query_used": "Cyber City",
+      "candidates_returned": [
+        "sector 62",
+        "electronic city",
+        "hitec city",
+        "salt lake"
+      ],
+      "failure_reason": "NO_PHONETIC_MATCH"
+    },
+    {
+      "case_id": "GV-000048",
+      "address": "House No. 836, Infinity Tower, Opposite City Mall, T Nagar, Mylapore, Chennai, Tamil Nadu 600017",
+      "category": "COMPLETE_VALID",
+      "ground_truth_locality": "T Nagar",
+      "parsed_locality": "Infinity Tower",
+      "query_used": "Infinity Tower",
+      "candidates_returned": [
+        "hitec city"
+      ],
+      "failure_reason": "NO_EXACT_MATCH"
+    },
+    {
+      "case_id": "GV-000808",
+      "address": "Sector 62, Gautam Buddha Nagar, Uttar Pradesh 411014",
+      "category": "PIN_MISMATCH",
+      "ground_truth_locality": "Sector 62",
+      "parsed_locality": "Gautam Buddha Nagar",
+      "query_used": "Gautam Buddha Nagar",
+      "candidates_returned": [
+        "t nagar",
+        "salt lake",
+        "viman nagar",
+        "vaishali nagar",
+        "gomti nagar",
+        "indiranagar",
+        "malviya nagar",
+        "aurangabad",
+        "adyar"
+      ],
+      "failure_reason": "NO_EXACT_MATCH"
+    },
+    {
+      "case_id": "GV-000317",
+      "address": "Sector 62, गौतम बुद्ध नगर, Uttar Pradesh 201309",
+      "category": "MIXED_LANGUAGE",
+      "ground_truth_locality": "Sector 62",
+      "parsed_locality": "Gautam Buddha Nagar",
+      "query_used": "Gautam Buddha Nagar",
+      "candidates_returned": [
+        "t nagar",
+        "salt lake",
+        "viman nagar",
+        "vaishali nagar",
+        "gomti nagar",
+        "indiranagar",
+        "malviya nagar",
+        "aurangabad",
+        "adyar"
+      ],
+      "failure_reason": "NO_EXACT_MATCH"
+    },
+    {
+      "case_id": "GV-000192",
+      "address": "सेक्टर 62, गौतम बुद्ध नगर, उत्तर प्रदेश 201309",
+      "category": "DEVANAGARI_HINDI",
+      "ground_truth_locality": "Sector 62",
+      "parsed_locality": "Gautam Buddha Nagar",
+      "query_used": "Gautam Buddha Nagar",
+      "candidates_returned": [
+        "t nagar",
+        "salt lake",
+        "viman nagar",
+        "vaishali nagar",
+        "gomti nagar",
+        "indiranagar",
+        "malviya nagar",
+        "aurangabad",
+        "adyar"
+      ],
+      "failure_reason": "NO_TRANSLITERATION_MATCH"
+    },
+    {
+      "case_id": "GV-000005",
+      "address": "Shop 488, Shanti Niketan, Opposite City Mall, Banjara Hills, Ameerpet, Hyderabad, Telangana 500034",
+      "category": "COMPLETE_VALID",
+      "ground_truth_locality": "Banjara Hills",
+      "parsed_locality": "Shanti Niketan",
+      "query_used": "Shanti Niketan",
+      "candidates_returned": [],
+      "failure_reason": "NO_EXACT_MATCH"
+    },
+    {
+      "case_id": "GV-000836",
+      "address": "Sector 62, Gautam Buddha Nagar, Uttar Pradesh 411014",
+      "category": "PIN_MISMATCH",
+      "ground_truth_locality": "Sector 62",
+      "parsed_locality": "Gautam Buddha Nagar",
+      "query_used": "Gautam Buddha Nagar",
+      "candidates_returned": [
+        "t nagar",
+        "salt lake",
+        "viman nagar",
+        "vaishali nagar",
+        "gomti nagar",
+        "indiranagar",
+        "malviya nagar",
+        "aurangabad",
+        "adyar"
+      ],
+      "failure_reason": "NO_EXACT_MATCH"
+    },
+    {
+      "case_id": "GV-000016",
+      "address": "Shop 879, Prestige Tech Park, Beside Apollo Hospital, Vesu, Chorasi, Surat, Gujarat 395007",
+      "category": "COMPLETE_VALID",
+      "ground_truth_locality": "Vesu",
+      "parsed_locality": "Prestige Tech Park",
+      "query_used": "Prestige Tech Park",
+      "candidates_returned": [
+        "connaught place",
+        "dwarka"
+      ],
+      "failure_reason": "NO_EXACT_MATCH"
+    },
+    {
+      "case_id": "GV-000148",
+      "address": "near Karol Bagh circle, Central Delhi, Delhi",
+      "category": "INFORMAL_SLANG",
+      "ground_truth_locality": "Karol Bagh",
+      "parsed_locality": "Central",
+      "query_used": "Central",
+      "candidates_returned": [
+        "saket"
+      ],
+      "failure_reason": "NO_EXACT_MATCH"
+    },
+    {
+      "case_id": "GV-000049",
+      "address": "House No. 281, Infinity Tower, Behind Police Station, Adyar, Guindy, Chennai, Tamil Nadu 600020",
+      "category": "COMPLETE_VALID",
+      "ground_truth_locality": "Adyar",
+      "parsed_locality": "Infinity Tower",
+      "query_used": "Infinity Tower",
+      "candidates_returned": [
+        "hitec city"
+      ],
+      "failure_reason": "NO_EXACT_MATCH"
+    },
+    {
+      "case_id": "GV-000017",
+      "address": "Suite 317, Pheonix Marketcity, Opposite City Mall, Vaishali Nagar, Jaipur, Jaipur, Rajasthan 302021",
+      "category": "COMPLETE_VALID",
+      "ground_truth_locality": "Vaishali Nagar",
+      "parsed_locality": "Pheonix Marketcity",
+      "query_used": "Pheonix Marketcity",
+      "candidates_returned": [
+        "electronic city",
+        "saket",
+        "connaught place",
+        "hitec city"
+      ],
+      "failure_reason": "NO_EXACT_MATCH"
+    },
+    {
+      "case_id": "GV-000131",
+      "address": "behind Sector 62 circle, Gautam Buddha Nagar, Uttar Pradesh",
+      "category": "INFORMAL_SLANG",
+      "ground_truth_locality": "Sector 62",
+      "parsed_locality": "Gautam Buddha Nagar",
+      "query_used": "Gautam Buddha Nagar",
+      "candidates_returned": [
+        "t nagar",
+        "salt lake",
+        "viman nagar",
+        "vaishali nagar",
+        "gomti nagar",
+        "indiranagar",
+        "malviya nagar",
+        "aurangabad",
+        "adyar"
+      ],
+      "failure_reason": "NO_EXACT_MATCH"
+    },
+    {
+      "case_id": "GV-000033",
+      "address": "EON Free Zone, 3rd Floor, Near Metro Station, Malviya Nagar, Sanganer, Jaipur, Rajasthan 302017",
+      "category": "COMPLETE_VALID",
+      "ground_truth_locality": "Malviya Nagar",
+      "parsed_locality": "Eon Free Zone",
+      "query_used": "Eon Free Zone",
+      "candidates_returned": [
+        "kharadi",
+        "whitefield"
+      ],
+      "failure_reason": "NO_PHONETIC_MATCH"
+    },
+    {
+      "case_id": "GV-000066",
+      "address": "Suite 445, Ganga Carnation, Near Tech Park, Banjara Hills, Ameerpet, Hyderabad, Telangana 500034",
+      "category": "COMPLETE_VALID",
+      "ground_truth_locality": "Banjara Hills",
+      "parsed_locality": "Ganga Carnation",
+      "query_used": "Ganga Carnation",
+      "candidates_returned": [
+        "bandra west",
+        "t nagar"
+      ],
+      "failure_reason": "NO_PHONETIC_MATCH"
+    },
+    {
+      "case_id": "GV-000075",
+      "address": "Shop 691, Prestige Tech Park, Opposite City Mall, Vesu, Chorasi, Surat, Gujarat 395007",
+      "category": "COMPLETE_VALID",
+      "ground_truth_locality": "Vesu",
+      "parsed_locality": "Prestige Tech Park",
+      "query_used": "Prestige Tech Park",
+      "candidates_returned": [
+        "connaught place",
+        "dwarka"
+      ],
+      "failure_reason": "NO_EXACT_MATCH"
+    },
+    {
+      "case_id": "GV-000393",
+      "address": "Sector 62i, Gautam Buddha Nagar, Uttar Pradesh 201309",
+      "category": "TYPO",
+      "ground_truth_locality": "Sector 62",
+      "parsed_locality": "Gautam Buddha Nagar",
+      "query_used": "Gautam Buddha Nagar",
+      "candidates_returned": [
+        "t nagar",
+        "salt lake",
+        "viman nagar",
+        "vaishali nagar",
+        "gomti nagar",
+        "indiranagar",
+        "malviya nagar",
+        "aurangabad",
+        "adyar"
+      ],
+      "failure_reason": "NO_EXACT_MATCH"
+    },
+    {
+      "case_id": "GV-000344",
+      "address": "Sector 62, गौतम बुद्ध नगर, Uttar Pradesh 201309",
+      "category": "MIXED_LANGUAGE",
+      "ground_truth_locality": "Sector 62",
+      "parsed_locality": "Gautam Buddha Nagar",
+      "query_used": "Gautam Buddha Nagar",
+      "candidates_returned": [
+        "t nagar",
+        "salt lake",
+        "viman nagar",
+        "vaishali nagar",
+        "gomti nagar",
+        "indiranagar",
+        "malviya nagar",
+        "aurangabad",
+        "adyar"
+      ],
+      "failure_reason": "NO_EXACT_MATCH"
+    },
+    {
+      "case_id": "GV-000064",
+      "address": "Suite 471, Sobha Dream Acres, Behind HP Petrol Pump, Andheri East, Andheri, Mumbai Suburban, Maharashtra 400069",
+      "category": "COMPLETE_VALID",
+      "ground_truth_locality": "Andheri East",
+      "parsed_locality": "Sobha Dream Acres",
+      "query_used": "Sobha Dream Acres",
+      "candidates_returned": [
+        "bandra west",
+        "vesu"
+      ],
+      "failure_reason": "NO_EXACT_MATCH"
+    },
+    {
+      "case_id": "GV-000065",
+      "address": "Gokul Dham, 3rd Floor, Near Bus Stand, Navrangpura, Daskroi, Ahmedabad, Gujarat 380009",
+      "category": "COMPLETE_VALID",
+      "ground_truth_locality": "Navrangpura",
+      "parsed_locality": "Gokul Dham",
+      "query_used": "Gokul Dham",
+      "candidates_returned": [
+        "gokulam"
+      ],
+      "failure_reason": "NO_PHONETIC_MATCH"
+    }
+  ]
+}

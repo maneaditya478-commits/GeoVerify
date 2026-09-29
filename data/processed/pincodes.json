@@ -1,216 +1,592 @@
 [
   {
     "pincode": "411014",
-    "circle": "Maharashtra",
-    "region": "Pune",
-    "division": "Pune City East",
-    "office_type": "S.O",
-    "delivery_status": "Delivery",
+    "office_name": "Kharadi SO",
     "post_offices": [
       "Kharadi B.O",
-      "Viman Nagar S.O",
-      "Vadgaon Sheri S.O",
-      "Dunkirk Lines S.O"
+      "Kharadi SO",
+      "Viman Nagar SO"
     ],
+    "circle": "Maharashtra",
+    "region": "Pune",
     "district": "Pune",
     "state": "Maharashtra",
     "state_code": "MH",
     "centroid": {
-      "latitude": 18.555,
-      "longitude": 73.935
+      "latitude": 18.5514,
+      "longitude": 73.9405
     }
   },
   {
     "pincode": "411057",
+    "office_name": "Hinjewadi SO",
     "circle": "Maharashtra",
     "region": "Pune",
-    "division": "Pune City West",
-    "office_type": "S.O",
-    "delivery_status": "Delivery",
-    "post_offices": [
-      "Infotech Park (Hinjawadi) S.O",
-      "Hinjawadi B.O",
-      "Wakand B.O"
-    ],
     "district": "Pune",
     "state": "Maharashtra",
     "state_code": "MH",
     "centroid": {
-      "latitude": 18.591,
-      "longitude": 73.738
-    }
-  },
-  {
-    "pincode": "411038",
-    "circle": "Maharashtra",
-    "region": "Pune",
-    "division": "Pune City West",
-    "office_type": "S.O",
-    "delivery_status": "Delivery",
-    "post_offices": [
-      "Kothrud S.O",
-      "Ex-Servicemen Colony S.O"
-    ],
-    "district": "Pune",
-    "state": "Maharashtra",
-    "state_code": "MH",
-    "centroid": {
-      "latitude": 18.507,
-      "longitude": 73.807
+      "latitude": 18.5913,
+      "longitude": 73.7389
     }
   },
   {
     "pincode": "411045",
+    "office_name": "Baner SO",
     "circle": "Maharashtra",
     "region": "Pune",
-    "division": "Pune City West",
-    "office_type": "S.O",
-    "delivery_status": "Delivery",
-    "post_offices": [
-      "Baner Gaon S.O",
-      "Baner Road S.O"
-    ],
     "district": "Pune",
     "state": "Maharashtra",
     "state_code": "MH",
     "centroid": {
       "latitude": 18.559,
-      "longitude": 73.786
+      "longitude": 73.7868
+    }
+  },
+  {
+    "pincode": "411028",
+    "office_name": "Hadapsar SO",
+    "circle": "Maharashtra",
+    "region": "Pune",
+    "district": "Pune",
+    "state": "Maharashtra",
+    "state_code": "MH",
+    "centroid": {
+      "latitude": 18.5089,
+      "longitude": 73.926
+    }
+  },
+  {
+    "pincode": "411038",
+    "office_name": "Kothrud SO",
+    "circle": "Maharashtra",
+    "region": "Pune",
+    "district": "Pune",
+    "state": "Maharashtra",
+    "state_code": "MH",
+    "centroid": {
+      "latitude": 18.5074,
+      "longitude": 73.8077
     }
   },
   {
     "pincode": "400050",
+    "office_name": "Bandra West SO",
     "circle": "Maharashtra",
     "region": "Mumbai",
-    "division": "Mumbai West",
-    "office_type": "S.O",
-    "delivery_status": "Delivery",
-    "post_offices": [
-      "Bandra West S.O",
-      "Waterfield Road S.O"
-    ],
     "district": "Mumbai Suburban",
     "state": "Maharashtra",
     "state_code": "MH",
     "centroid": {
-      "latitude": 19.059,
-      "longitude": 72.829
+      "latitude": 19.0596,
+      "longitude": 72.8295
     }
   },
   {
     "pincode": "400069",
+    "office_name": "Andheri East SO",
     "circle": "Maharashtra",
     "region": "Mumbai",
-    "division": "Mumbai West",
-    "office_type": "S.O",
-    "delivery_status": "Delivery",
-    "post_offices": [
-      "Andheri East S.O",
-      "Chakala MIDC S.O"
-    ],
     "district": "Mumbai Suburban",
     "state": "Maharashtra",
     "state_code": "MH",
     "centroid": {
-      "latitude": 19.113,
-      "longitude": 72.869
+      "latitude": 19.1136,
+      "longitude": 72.8697
     }
   },
   {
-    "pincode": "560066",
-    "circle": "Karnataka",
-    "region": "Bengaluru HQ",
-    "division": "Bangalore East",
-    "office_type": "S.O",
-    "delivery_status": "Delivery",
-    "post_offices": [
-      "Whitefield S.O",
-      "EPIP S.O"
-    ],
-    "district": "Bengaluru Urban",
-    "state": "Karnataka",
-    "state_code": "KA",
+    "pincode": "400076",
+    "office_name": "Powai IIT SO",
+    "circle": "Maharashtra",
+    "region": "Mumbai",
+    "district": "Mumbai Suburban",
+    "state": "Maharashtra",
+    "state_code": "MH",
     "centroid": {
-      "latitude": 12.969,
-      "longitude": 77.749
+      "latitude": 19.1176,
+      "longitude": 72.906
     }
   },
   {
-    "pincode": "560038",
-    "circle": "Karnataka",
-    "region": "Bengaluru HQ",
-    "division": "Bangalore East",
-    "office_type": "S.O",
-    "delivery_status": "Delivery",
-    "post_offices": [
-      "Indiranagar S.O",
-      "HAL II Stage S.O"
-    ],
-    "district": "Bengaluru Urban",
-    "state": "Karnataka",
-    "state_code": "KA",
+    "pincode": "400601",
+    "office_name": "Thane SO",
+    "circle": "Maharashtra",
+    "region": "Mumbai",
+    "district": "Thane",
+    "state": "Maharashtra",
+    "state_code": "MH",
     "centroid": {
-      "latitude": 12.978,
-      "longitude": 77.64
+      "latitude": 19.2183,
+      "longitude": 72.9781
     }
   },
   {
-    "pincode": "110001",
-    "circle": "Delhi",
-    "region": "Delhi",
-    "division": "New Delhi Central",
-    "office_type": "H.O",
-    "delivery_status": "Delivery",
-    "post_offices": [
-      "Connaught Place H.O",
-      "Barakhamba Road S.O",
-      "Janpath S.O"
-    ],
-    "district": "New Delhi",
-    "state": "Delhi",
-    "state_code": "DL",
-    "centroid": {
-      "latitude": 28.631,
-      "longitude": 77.216
-    }
-  },
-  {
-    "pincode": "110016",
-    "circle": "Delhi",
-    "region": "Delhi",
-    "division": "New Delhi South",
-    "office_type": "S.O",
-    "delivery_status": "Delivery",
-    "post_offices": [
-      "Hauz Khas S.O",
-      "IIT Delhi S.O"
-    ],
-    "district": "New Delhi",
-    "state": "Delhi",
-    "state_code": "DL",
-    "centroid": {
-      "latitude": 28.549,
-      "longitude": 77.2
-    }
-  },
-  {
-    "pincode": "416001",
+    "pincode": "416008",
+    "office_name": "Rajarampuri SO",
     "circle": "Maharashtra",
     "region": "Goa-Kolhapur",
-    "division": "Kolhapur",
-    "office_type": "H.O",
-    "delivery_status": "Delivery",
-    "post_offices": [
-      "Kolhapur H.O",
-      "Shahupuri S.O",
-      "Laxmipuri S.O"
-    ],
     "district": "Kolhapur",
     "state": "Maharashtra",
     "state_code": "MH",
     "centroid": {
-      "latitude": 16.705,
-      "longitude": 74.243
+      "latitude": 16.6913,
+      "longitude": 74.2449
+    }
+  },
+  {
+    "pincode": "560066",
+    "office_name": "Whitefield SO",
+    "circle": "Karnataka",
+    "region": "Bengaluru",
+    "district": "Bengaluru Urban",
+    "state": "Karnataka",
+    "state_code": "KA",
+    "centroid": {
+      "latitude": 12.9698,
+      "longitude": 77.75
+    }
+  },
+  {
+    "pincode": "560034",
+    "office_name": "Koramangala SO",
+    "circle": "Karnataka",
+    "region": "Bengaluru",
+    "district": "Bengaluru Urban",
+    "state": "Karnataka",
+    "state_code": "KA",
+    "centroid": {
+      "latitude": 12.9352,
+      "longitude": 77.6245
+    }
+  },
+  {
+    "pincode": "560102",
+    "office_name": "HSR Layout SO",
+    "circle": "Karnataka",
+    "region": "Bengaluru",
+    "district": "Bengaluru Urban",
+    "state": "Karnataka",
+    "state_code": "KA",
+    "centroid": {
+      "latitude": 12.9121,
+      "longitude": 77.6446
+    }
+  },
+  {
+    "pincode": "560038",
+    "office_name": "Indiranagar SO",
+    "circle": "Karnataka",
+    "region": "Bengaluru",
+    "district": "Bengaluru Urban",
+    "state": "Karnataka",
+    "state_code": "KA",
+    "centroid": {
+      "latitude": 12.9784,
+      "longitude": 77.6408
+    }
+  },
+  {
+    "pincode": "560100",
+    "office_name": "Electronic City SO",
+    "circle": "Karnataka",
+    "region": "Bengaluru",
+    "district": "Bengaluru Urban",
+    "state": "Karnataka",
+    "state_code": "KA",
+    "centroid": {
+      "latitude": 12.8399,
+      "longitude": 77.677
+    }
+  },
+  {
+    "pincode": "570002",
+    "office_name": "Gokulam SO",
+    "circle": "Karnataka",
+    "region": "South Karnataka",
+    "district": "Mysuru",
+    "state": "Karnataka",
+    "state_code": "KA",
+    "centroid": {
+      "latitude": 12.327,
+      "longitude": 76.626
+    }
+  },
+  {
+    "pincode": "110001",
+    "office_name": "New Delhi GPO",
+    "circle": "Delhi",
+    "region": "Delhi",
+    "district": "New Delhi",
+    "state": "Delhi",
+    "state_code": "DL",
+    "centroid": {
+      "latitude": 28.6315,
+      "longitude": 77.2167
+    }
+  },
+  {
+    "pincode": "110016",
+    "office_name": "Hauz Khas SO",
+    "circle": "Delhi",
+    "region": "Delhi",
+    "district": "South Delhi",
+    "state": "Delhi",
+    "state_code": "DL",
+    "centroid": {
+      "latitude": 28.5494,
+      "longitude": 77.2001
+    }
+  },
+  {
+    "pincode": "110017",
+    "office_name": "Saket SO",
+    "circle": "Delhi",
+    "region": "Delhi",
+    "district": "South Delhi",
+    "state": "Delhi",
+    "state_code": "DL",
+    "centroid": {
+      "latitude": 28.5244,
+      "longitude": 77.2185
+    }
+  },
+  {
+    "pincode": "110005",
+    "office_name": "Karol Bagh SO",
+    "circle": "Delhi",
+    "region": "Delhi",
+    "district": "Central Delhi",
+    "state": "Delhi",
+    "state_code": "DL",
+    "centroid": {
+      "latitude": 28.6517,
+      "longitude": 77.1906
+    }
+  },
+  {
+    "pincode": "110075",
+    "office_name": "Dwarka SO",
+    "circle": "Delhi",
+    "region": "Delhi",
+    "district": "South West Delhi",
+    "state": "Delhi",
+    "state_code": "DL",
+    "centroid": {
+      "latitude": 28.5921,
+      "longitude": 77.046
+    }
+  },
+  {
+    "pincode": "110085",
+    "office_name": "Rohini SO",
+    "circle": "Delhi",
+    "region": "Delhi",
+    "district": "North West Delhi",
+    "state": "Delhi",
+    "state_code": "DL",
+    "centroid": {
+      "latitude": 28.7495,
+      "longitude": 77.0565
+    }
+  },
+  {
+    "pincode": "700091",
+    "office_name": "Salt Lake SO",
+    "circle": "West Bengal",
+    "region": "Kolkata",
+    "district": "Kolkata",
+    "state": "West Bengal",
+    "state_code": "WB",
+    "centroid": {
+      "latitude": 22.5867,
+      "longitude": 88.4178
+    }
+  },
+  {
+    "pincode": "700135",
+    "office_name": "Rajarhat SO",
+    "circle": "West Bengal",
+    "region": "Kolkata",
+    "district": "North 24 Parganas",
+    "state": "West Bengal",
+    "state_code": "WB",
+    "centroid": {
+      "latitude": 22.6231,
+      "longitude": 88.5134
+    }
+  },
+  {
+    "pincode": "700156",
+    "office_name": "New Town SO",
+    "circle": "West Bengal",
+    "region": "Kolkata",
+    "district": "North 24 Parganas",
+    "state": "West Bengal",
+    "state_code": "WB",
+    "centroid": {
+      "latitude": 22.5896,
+      "longitude": 88.4746
+    }
+  },
+  {
+    "pincode": "600017",
+    "office_name": "T Nagar SO",
+    "circle": "Tamil Nadu",
+    "region": "Chennai",
+    "district": "Chennai",
+    "state": "Tamil Nadu",
+    "state_code": "TN",
+    "centroid": {
+      "latitude": 13.0418,
+      "longitude": 80.2341
+    }
+  },
+  {
+    "pincode": "600020",
+    "office_name": "Adyar SO",
+    "circle": "Tamil Nadu",
+    "region": "Chennai",
+    "district": "Chennai",
+    "state": "Tamil Nadu",
+    "state_code": "TN",
+    "centroid": {
+      "latitude": 13.0012,
+      "longitude": 80.2565
+    }
+  },
+  {
+    "pincode": "500081",
+    "office_name": "HITEC City SO",
+    "circle": "Telangana",
+    "region": "Hyderabad",
+    "district": "Hyderabad",
+    "state": "Telangana",
+    "state_code": "TG",
+    "centroid": {
+      "latitude": 17.4435,
+      "longitude": 78.3772
+    }
+  },
+  {
+    "pincode": "500034",
+    "office_name": "Banjara Hills SO",
+    "circle": "Telangana",
+    "region": "Hyderabad",
+    "district": "Hyderabad",
+    "state": "Telangana",
+    "state_code": "TG",
+    "centroid": {
+      "latitude": 17.4156,
+      "longitude": 78.4357
+    }
+  },
+  {
+    "pincode": "380009",
+    "office_name": "Navrangpura SO",
+    "circle": "Gujarat",
+    "region": "Ahmedabad",
+    "district": "Ahmedabad",
+    "state": "Gujarat",
+    "state_code": "GJ",
+    "centroid": {
+      "latitude": 23.0365,
+      "longitude": 72.5611
+    }
+  },
+  {
+    "pincode": "395007",
+    "office_name": "Vesu SO",
+    "circle": "Gujarat",
+    "region": "Vadodara",
+    "district": "Surat",
+    "state": "Gujarat",
+    "state_code": "GJ",
+    "centroid": {
+      "latitude": 21.1418,
+      "longitude": 72.7709
+    }
+  },
+  {
+    "pincode": "302017",
+    "office_name": "Malviya Nagar SO",
+    "circle": "Rajasthan",
+    "region": "Jaipur",
+    "district": "Jaipur",
+    "state": "Rajasthan",
+    "state_code": "RJ",
+    "centroid": {
+      "latitude": 26.8532,
+      "longitude": 75.8052
+    }
+  },
+  {
+    "pincode": "302021",
+    "office_name": "Vaishali Nagar SO",
+    "circle": "Rajasthan",
+    "region": "Jaipur",
+    "district": "Jaipur",
+    "state": "Rajasthan",
+    "state_code": "RJ",
+    "centroid": {
+      "latitude": 26.9069,
+      "longitude": 75.7434
+    }
+  },
+  {
+    "pincode": "201309",
+    "office_name": "Sector 62 Noida SO",
+    "circle": "Uttar Pradesh",
+    "region": "Bareilly",
+    "district": "Gautam Buddha Nagar",
+    "state": "Uttar Pradesh",
+    "state_code": "UP",
+    "centroid": {
+      "latitude": 28.6258,
+      "longitude": 77.3653
+    }
+  },
+  {
+    "pincode": "226010",
+    "office_name": "Gomti Nagar SO",
+    "circle": "Uttar Pradesh",
+    "region": "Lucknow",
+    "district": "Lucknow",
+    "state": "Uttar Pradesh",
+    "state_code": "UP",
+    "centroid": {
+      "latitude": 26.8529,
+      "longitude": 80.9962
+    }
+  },
+  {
+    "pincode": "244901",
+    "office_name": "Rampur HO",
+    "circle": "Uttar Pradesh",
+    "region": "Bareilly",
+    "district": "Rampur",
+    "state": "Uttar Pradesh",
+    "state_code": "UP",
+    "centroid": {
+      "latitude": 28.8154,
+      "longitude": 79.025
+    }
+  },
+  {
+    "pincode": "172101",
+    "office_name": "Rampur Bushahr SO",
+    "circle": "Himachal Pradesh",
+    "region": "Shimla",
+    "district": "Shimla",
+    "state": "Himachal Pradesh",
+    "state_code": "HP",
+    "centroid": {
+      "latitude": 31.4485,
+      "longitude": 77.63
+    }
+  },
+  {
+    "pincode": "495001",
+    "office_name": "Bilaspur HO",
+    "circle": "Chhattisgarh",
+    "region": "Raipur",
+    "district": "Bilaspur",
+    "state": "Chhattisgarh",
+    "state_code": "CG",
+    "centroid": {
+      "latitude": 22.0797,
+      "longitude": 82.1409
+    }
+  },
+  {
+    "pincode": "174001",
+    "office_name": "Bilaspur HO HP",
+    "circle": "Himachal Pradesh",
+    "region": "Mandi",
+    "district": "Bilaspur",
+    "state": "Himachal Pradesh",
+    "state_code": "HP",
+    "centroid": {
+      "latitude": 31.3411,
+      "longitude": 76.757
+    }
+  },
+  {
+    "pincode": "212601",
+    "office_name": "Fatehpur HO",
+    "circle": "Uttar Pradesh",
+    "region": "Kanpur",
+    "district": "Fatehpur",
+    "state": "Uttar Pradesh",
+    "state_code": "UP",
+    "centroid": {
+      "latitude": 25.9284,
+      "longitude": 80.813
+    }
+  },
+  {
+    "pincode": "332301",
+    "office_name": "Fatehpur Shekhawati SO",
+    "circle": "Rajasthan",
+    "region": "Jaipur",
+    "district": "Sikar",
+    "state": "Rajasthan",
+    "state_code": "RJ",
+    "centroid": {
+      "latitude": 27.9845,
+      "longitude": 74.954
+    }
+  },
+  {
+    "pincode": "416702",
+    "office_name": "Rajapur SO",
+    "circle": "Maharashtra",
+    "region": "Goa-Kolhapur",
+    "district": "Ratnagiri",
+    "state": "Maharashtra",
+    "state_code": "MH",
+    "centroid": {
+      "latitude": 16.658,
+      "longitude": 73.518
+    }
+  },
+  {
+    "pincode": "210207",
+    "office_name": "Rajapur SO UP",
+    "circle": "Uttar Pradesh",
+    "region": "Allahabad",
+    "district": "Chitrakoot",
+    "state": "Uttar Pradesh",
+    "state_code": "UP",
+    "centroid": {
+      "latitude": 25.385,
+      "longitude": 81.155
+    }
+  },
+  {
+    "pincode": "431001",
+    "office_name": "Aurangabad HO",
+    "circle": "Maharashtra",
+    "region": "Aurangabad",
+    "district": "Aurangabad",
+    "state": "Maharashtra",
+    "state_code": "MH",
+    "centroid": {
+      "latitude": 19.8762,
+      "longitude": 75.3433
+    }
+  },
+  {
+    "pincode": "824101",
+    "office_name": "Aurangabad HO BR",
+    "circle": "Bihar",
+    "region": "Patna",
+    "district": "Aurangabad",
+    "state": "Bihar",
+    "state_code": "BR",
+    "centroid": {
+      "latitude": 24.7539,
+      "longitude": 84.3739
     }
   }
 ]

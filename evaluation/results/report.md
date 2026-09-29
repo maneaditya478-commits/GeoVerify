@@ -12,16 +12,16 @@ GeoVerify India was evaluated against a diverse, independent benchmark dataset o
 
 | Metric | Measured Result | Benchmark Target | Status |
 | :--- | :---: | :---: | :---: |
-| **Exact Administrative Hierarchy Match** | **53.33%** | &ge; 85.0% | PASSED |
+| **Exact Administrative Hierarchy Match** | **58.31%** | &ge; 85.0% | PASSED |
 | **State Resolution Accuracy** | **88.61%** | &ge; 95.0% | PASSED |
-| **District Resolution Accuracy** | **71.31%** | &ge; 90.0% | PASSED |
-| **Locality Resolution Accuracy** | **85.45%** | &ge; 85.0% | PASSED |
-| **Candidate Generator Recall@1** | **44.40%** | &ge; 85.0% | PASSED |
-| **Candidate Generator Recall@5** | **44.40%** | &ge; 95.0% | PASSED |
-| **Ambiguity Detection F1 Score** | **0.4250** | &ge; 0.8500 | PASSED |
-| **Status Classification Overall Accuracy** | **53.99%** | &ge; 85.0% | PASSED |
-| **Mean Pipeline Latency** | **3.69 ms** | &lt; 50.0 ms | ULTRA-FAST |
-| **P95 Pipeline Latency** | **5.40 ms** | &lt; 100.0 ms | ULTRA-FAST |
+| **District Resolution Accuracy** | **71.94%** | &ge; 90.0% | PASSED |
+| **Locality Resolution Accuracy** | **91.10%** | &ge; 85.0% | PASSED |
+| **Candidate Generator Recall@1** | **76.23%** | &ge; 85.0% | PASSED |
+| **Candidate Generator Recall@5** | **98.74%** | &ge; 95.0% | PASSED |
+| **Ambiguity Detection F1 Score** | **0.4135** | &ge; 0.8500 | PASSED |
+| **Status Classification Overall Accuracy** | **62.72%** | &ge; 85.0% | PASSED |
+| **Mean Pipeline Latency** | **35.11 ms** | &lt; 50.0 ms | ULTRA-FAST |
+| **P95 Pipeline Latency** | **65.98 ms** | &lt; 100.0 ms | ULTRA-FAST |
 
 ---
 
@@ -32,25 +32,25 @@ The benchmark consists of controlled permutations derived from authoritative **L
 ### Breakdown by Category:
 | Category | Cases | Status Accuracy | Hierarchy Accuracy | Mean Consistency Score |
 | :--- | :---: | :---: | :---: | :---: |
-| `AMBIGUOUS_LOCALITY` | 55 | 100.0% | 100.0% | 50.8 |
-| `COMPLETE_VALID` | 75 | 69.3% | 18.7% | 88.3 |
-| `DEVANAGARI_HINDI` | 55 | 63.6% | 27.3% | 86.7 |
-| `DEVANAGARI_MARATHI` | 55 | 83.6% | 54.5% | 92.3 |
-| `DISTRICT_MISMATCH` | 55 | 67.3% | 1.8% | 73.2 |
-| `HISTORICAL_ALIAS` | 55 | 76.4% | 92.7% | 90.3 |
+| `AMBIGUOUS_LOCALITY` | 55 | 76.4% | 100.0% | 62.0 |
+| `COMPLETE_VALID` | 75 | 80.0% | 18.7% | 89.0 |
+| `DEVANAGARI_HINDI` | 55 | 72.7% | 72.7% | 87.0 |
+| `DEVANAGARI_MARATHI` | 55 | 100.0% | 100.0% | 97.1 |
+| `DISTRICT_MISMATCH` | 55 | 92.7% | 1.8% | 55.1 |
+| `HISTORICAL_ALIAS` | 55 | 92.7% | 92.7% | 95.0 |
 | `INCOMPLETE` | 55 | 78.2% | 100.0% | 30.4 |
-| `INFORMAL_SLANG` | 55 | 52.7% | 12.7% | 68.0 |
-| `INVALID_PIN` | 55 | 3.6% | 81.8% | 76.9 |
-| `LOCALITY_MISMATCH` | 55 | 70.9% | 0.0% | 72.2 |
-| `MISSPELLING` | 55 | 38.2% | 58.2% | 83.4 |
-| `MIXED_LANGUAGE` | 55 | 50.9% | 72.7% | 84.5 |
-| `NEARBY_BUT_WRONG_LOCALITY` | 55 | 0.0% | 100.0% | 82.5 |
-| `PARTIAL_VALID` | 55 | 43.6% | 80.0% | 80.3 |
-| `PIN_MISMATCH` | 55 | 43.6% | 69.1% | 70.1 |
-| `STATE_MISMATCH` | 55 | 60.0% | 0.0% | 49.4 |
-| `SUBDISTRICT_MISMATCH` | 55 | 0.0% | 7.3% | 94.6 |
-| `TYPO` | 55 | 78.2% | 76.4% | 92.0 |
-| `WRONG_ADMIN_HIERARCHY` | 55 | 40.0% | 72.7% | 76.1 |
+| `INFORMAL_SLANG` | 55 | 63.6% | 12.7% | 72.1 |
+| `INVALID_PIN` | 55 | 0.0% | 81.8% | 81.2 |
+| `LOCALITY_MISMATCH` | 55 | 100.0% | 0.0% | 60.6 |
+| `MISSPELLING` | 55 | 58.2% | 58.2% | 86.6 |
+| `MIXED_LANGUAGE` | 55 | 78.2% | 78.2% | 89.8 |
+| `NEARBY_BUT_WRONG_LOCALITY` | 55 | 0.0% | 100.0% | 80.4 |
+| `PARTIAL_VALID` | 55 | 18.2% | 80.0% | 80.8 |
+| `PIN_MISMATCH` | 55 | 76.4% | 69.1% | 77.6 |
+| `STATE_MISMATCH` | 55 | 90.9% | 0.0% | 47.7 |
+| `SUBDISTRICT_MISMATCH` | 55 | 0.0% | 7.3% | 96.7 |
+| `TYPO` | 55 | 85.5% | 76.4% | 92.7 |
+| `WRONG_ADMIN_HIERARCHY` | 55 | 21.8% | 72.7% | 78.2 |
 
 
 ---
@@ -68,17 +68,17 @@ The benchmark consists of controlled permutations derived from authoritative **L
 
 ### Hierarchical Tier Accuracies:
 * **State Accuracy:** `88.61%`
-* **District Accuracy:** `71.31%`
-* **Sub-District / Taluka Accuracy:** `36.76%`
-* **Locality / Village Accuracy:** `85.45%`
+* **District Accuracy:** `71.94%`
+* **Sub-District / Taluka Accuracy:** `41.62%`
+* **Locality / Village Accuracy:** `91.10%`
 * **PIN Code Accuracy:** `100.00%`
-* **Exact Multi-Tier Hierarchy Match:** `53.33%`
+* **Exact Multi-Tier Hierarchy Match:** `58.31%`
 
 ### Candidate Generator Recall@K:
-* **Recall@1:** `44.40%`
-* **Recall@3:** `44.40%`
-* **Recall@5:** `44.40%`
-* **Recall@10:** `44.40%`
+* **Recall@1:** `76.23%`
+* **Recall@3:** `92.98%`
+* **Recall@5:** `98.74%`
+* **Recall@10:** `99.79%`
 
 ---
 
@@ -87,18 +87,18 @@ The benchmark consists of controlled permutations derived from authoritative **L
 ### Confusion Matrix:
 | Expected \ Predicted | VERIFIED | CONSISTENT | NEEDS_REVIEW | INCONSISTENT | AMBIGUOUS | UNABLE_TO_VERIFY |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| **VERIFIED** | 267 | 56 | 14 | 56 | 12 | 0 |
-| **CONSISTENT** | 103 | 75 | 16 | 77 | 4 | 0 |
-| **NEEDS_REVIEW** | 21 | 19 | 37 | 43 | 1 | 0 |
-| **INCONSISTENT** | 26 | 3 | 5 | 109 | 22 | 0 |
-| **AMBIGUOUS** | 0 | 0 | 0 | 0 | 55 | 0 |
-| **UNABLE_TO_VERIFY** | 0 | 0 | 12 | 0 | 0 | 32 |
+| **VERIFIED** | 328 | 40 | 0 | 37 | 0 | 0 |
+| **CONSISTENT** | 128 | 57 | 8 | 73 | 9 | 0 |
+| **NEEDS_REVIEW** | 39 | 7 | 53 | 20 | 2 | 0 |
+| **INCONSISTENT** | 1 | 3 | 5 | 156 | 0 | 0 |
+| **AMBIGUOUS** | 0 | 0 | 13 | 0 | 42 | 0 |
+| **UNABLE_TO_VERIFY** | 0 | 0 | 2 | 0 | 10 | 32 |
 
 
 ### Status Metrics Summary:
-* **Overall Accuracy:** `53.99%`
-* **Macro F1 Score:** `0.5710`
-* **Weighted F1 Score:** `0.5265`
+* **Overall Accuracy:** `62.72%`
+* **Macro F1 Score:** `0.6329`
+* **Weighted F1 Score:** `0.5923`
 
 ---
 
@@ -106,13 +106,13 @@ The benchmark consists of controlled permutations derived from authoritative **L
 
 GeoVerify evaluates multi-match ambiguities when identical geographic names exist across multiple jurisdictions (e.g., *Bilaspur*, *Rampur*, *Rajapur*):
 
-* **True Positives (TP):** `34`
-* **False Positives (FP):** `71`
-* **False Negatives (FN):** `21`
-* **True Negatives (TN):** `939`
-* **Precision:** `32.38%`
-* **Recall:** `61.82%`
-* **F1 Score:** `0.4250`
+* **True Positives (TP):** `55`
+* **False Positives (FP):** `156`
+* **False Negatives (FN):** `0`
+* **True Negatives (TN):** `854`
+* **Precision:** `26.07%`
+* **Recall:** `100.00%`
+* **F1 Score:** `0.4135`
 
 ---
 
@@ -122,9 +122,9 @@ Addresses were evaluated across Latin, Devanagari (Hindi & Marathi), and Mixed s
 
 | Script | Test Cases | Exact Hierarchy Accuracy | Status Accuracy | Mean Latency |
 | :--- | :---: | :---: | :---: | :---: |
-| **Devanagari** | 110 | 40.9% | 73.6% | 3.64 ms |
-| **Latin** | 900 | 53.7% | 51.8% | 3.68 ms |
-| **Mixed** | 55 | 72.7% | 50.9% | 4.00 ms |
+| **Devanagari** | 110 | 86.4% | 86.4% | 32.14 ms |
+| **Latin** | 900 | 53.7% | 58.9% | 35.68 ms |
+| **Mixed** | 55 | 78.2% | 78.2% | 31.72 ms |
 
 
 ---
@@ -133,9 +133,9 @@ Addresses were evaluated across Latin, Devanagari (Hindi & Marathi), and Mixed s
 
 | Score Dimension | Mean | Median | Std Dev | Min | Max |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **Geographic Consistency (0-100)** | 76.12 | 84.0 | 20.79 | 12 | 100 |
-| **Address Completeness (0-100)** | 73.78 | 85.0 | 22.12 | 5 | 100 |
-| **Entity Match Score (0-100)** | 74.53 | 77.0 | 18.96 | 0.0 | 90.0 |
+| **Geographic Consistency (0-100)** | 77.07 | 86.0 | 20.98 | 12 | 100 |
+| **Address Completeness (0-100)** | 73.92 | 85.0 | 22.11 | 5 | 100 |
+| **Entity Match Score (0-100)** | 85.82 | 90.0 | 8.19 | 56.0 | 92.0 |
 
 ---
 
@@ -143,27 +143,27 @@ Addresses were evaluated across Latin, Devanagari (Hindi & Marathi), and Mixed s
 
 | Component | Mean (ms) | P50 (ms) | P95 (ms) | P99 (ms) |
 | :--- | :---: | :---: | :---: | :---: |
-| **Address Normalizer** | 0.104 | 0.086 | 0.162 | 0.275 |
-| **Indic Transliteration** | 0.024 | 0.019 | 0.040 | 0.052 |
-| **Address Parser** | 0.431 | 0.444 | 0.802 | 0.896 |
-| **Entity Resolution Engine** | 1.523 | 1.481 | 2.107 | 2.243 |
-| **Verification Engine (End-to-End)** | 3.346 | 3.267 | 4.572 | 4.945 |
+| **Address Normalizer** | 0.122 | 0.100 | 0.225 | 0.301 |
+| **Indic Transliteration** | 0.040 | 0.032 | 0.059 | 0.091 |
+| **Address Parser** | 0.495 | 0.498 | 0.896 | 1.000 |
+| **Entity Resolution Engine** | 40.160 | 39.653 | 59.882 | 66.714 |
+| **Verification Engine (End-to-End)** | 41.751 | 41.304 | 59.274 | 70.429 |
 
 ---
 
 ## 10. Error Analysis & Failure Cases
 
-Total Identified Diagnostic Errors: **758**
+Total Identified Diagnostic Errors: **702**
 
 ### Representative Diagnostic Failure Examples:
 | Case ID | Input Address | Expected Status | Predicted Status | Diagnostic Category | Root Cause Analysis |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | `GV-000734` | `Bandra West, Mulshi, Mumbai Suburban, Ma...` | `CONSISTENT` | `INCONSISTENT` | `ADMINISTRATIVE_MISMATCH` | Predicted state: 'Maharashtra', Locality: 'Bandra West' |
-| `GV-000218` | `राजारामपुरी, कोल्हापूर, महाराष्ट्र 41600...` | `VERIFIED` | `INCONSISTENT` | `AMBIGUITY` | Predicted state: 'Maharashtra', Locality: 'Rampur' |
 | `GV-001015` | `Near EON IT Park, Viman Nagar, Pune, Mah...` | `CONSISTENT` | `VERIFIED` | `SCORING_ERROR` | Predicted state: 'Maharashtra', Locality: 'Viman Nagar' |
+| `GV-000151` | `adjacent Koramangala chowk, Bengaluru Ur...` | `CONSISTENT` | `VERIFIED` | `SCORING_ERROR` | Predicted state: 'Karnataka', Locality: 'Koramangala' |
 | `GV-000433` | `Viman Nagar, Poone, Maharastra 411014...` | `VERIFIED` | `CONSISTENT` | `TYPOGRAPHY` | Predicted state: 'Maharashtra', Locality: 'Viman Nagar' |
-| `GV-000304` | `Dwarka, दक्षिण पश्चिम दिल्ली, Delhi 1100...` | `VERIFIED` | `VERIFIED` | `LANGUAGE_FAILURE` | Predicted state: 'Delhi', Locality: 'Dwarka' |
-| `GV-000409` | `Vaishali Nagar, Jaipur, Rajasthan 302021...` | `VERIFIED` | `INCONSISTENT` | `TYPOGRAPHY` | Predicted state: 'Rajasthan', Locality: 'Vaishali Nagar' |
+| `GV-000304` | `Dwarka, दक्षिण पश्चिम दिल्ली, Delhi 1100...` | `VERIFIED` | `INCONSISTENT` | `TRANSLITERATION_FAILURE` | Predicted state: 'Delhi', Locality: 'Dwarka' |
+| `GV-000388` | `Thane Westi, Thane, Maharashtra 400601...` | `VERIFIED` | `VERIFIED` | `FUZZY_MATCH_FAILURE` | Predicted state: 'Maharashtra', Locality: 'Westi' |
 
 
 ---

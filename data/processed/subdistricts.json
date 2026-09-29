@@ -1,268 +1,1712 @@
 [
   {
+    "id": "subdist_fatehpur_up",
+    "lgd_code": 1600,
+    "name": "Fatehpur",
+    "canonical_name": "Fatehpur",
+    "name_hi": "फतेहपुर",
+    "name_mr": "फतेहपूर",
+    "admin_type": "Tehsil",
+    "district_id": "dist_fatehpur_up",
+    "district_name": "Fatehpur",
+    "state_id": 9,
+    "state_name": "Uttar Pradesh",
+    "aliases": [
+      "Fatehpur Tehsil"
+    ],
+    "bbox": [
+      80.78,
+      25.9,
+      80.85,
+      25.95
+    ],
+    "polygon": [
+      [
+        80.78,
+        25.9
+      ],
+      [
+        80.79,
+        25.95
+      ],
+      [
+        80.85,
+        25.94
+      ],
+      [
+        80.84,
+        25.91
+      ],
+      [
+        80.78,
+        25.9
+      ]
+    ],
+    "source": "LGD",
+    "license": "GODL-India"
+  },
+  {
+    "id": "subdist_fatehpur_rj",
+    "lgd_code": 1280,
+    "name": "Fatehpur",
+    "canonical_name": "Fatehpur",
+    "name_hi": "फतेहपुर शेखावाटी",
+    "name_mr": "फतेहपूर",
+    "admin_type": "Tehsil",
+    "district_id": "dist_sikar",
+    "district_name": "Sikar",
+    "state_id": 8,
+    "state_name": "Rajasthan",
+    "aliases": [
+      "Fatehpur Shekhawati Tehsil"
+    ],
+    "bbox": [
+      74.92,
+      27.96,
+      74.98,
+      28.01
+    ],
+    "polygon": [
+      [
+        74.92,
+        27.96
+      ],
+      [
+        74.93,
+        28.01
+      ],
+      [
+        74.98,
+        28.0
+      ],
+      [
+        74.97,
+        27.97
+      ],
+      [
+        74.92,
+        27.96
+      ]
+    ],
+    "source": "LGD",
+    "license": "GODL-India"
+  },
+  {
+    "id": "subdist_rajapur_mh",
+    "lgd_code": 4870,
+    "name": "Rajapur",
+    "canonical_name": "Rajapur",
+    "name_hi": "राजापुर",
+    "name_mr": "राजापूर",
+    "admin_type": "Taluka",
+    "district_id": "dist_ratnagiri",
+    "district_name": "Ratnagiri",
+    "state_id": 27,
+    "state_name": "Maharashtra",
+    "aliases": [
+      "Rajapur Taluka"
+    ],
+    "bbox": [
+      73.49,
+      16.63,
+      73.54,
+      16.68
+    ],
+    "polygon": [
+      [
+        73.49,
+        16.63
+      ],
+      [
+        73.5,
+        16.68
+      ],
+      [
+        73.54,
+        16.67
+      ],
+      [
+        73.53,
+        16.64
+      ],
+      [
+        73.49,
+        16.63
+      ]
+    ],
+    "source": "LGD",
+    "license": "GODL-India"
+  },
+  {
+    "id": "subdist_rajapur_up",
+    "lgd_code": 1540,
+    "name": "Rajapur",
+    "canonical_name": "Rajapur",
+    "name_hi": "राजापुर",
+    "name_mr": "राजापूर",
+    "admin_type": "Tehsil",
+    "district_id": "dist_chitrakoot",
+    "district_name": "Chitrakoot",
+    "state_id": 9,
+    "state_name": "Uttar Pradesh",
+    "aliases": [
+      "Rajapur Tehsil"
+    ],
+    "bbox": [
+      81.13,
+      25.36,
+      81.18,
+      25.41
+    ],
+    "polygon": [
+      [
+        81.13,
+        25.36
+      ],
+      [
+        81.14,
+        25.41
+      ],
+      [
+        81.18,
+        25.4
+      ],
+      [
+        81.17,
+        25.37
+      ],
+      [
+        81.13,
+        25.36
+      ]
+    ],
+    "source": "LGD",
+    "license": "GODL-India"
+  },
+  {
+    "id": "subdist_aurangabad_mh",
+    "lgd_code": 4720,
+    "name": "Aurangabad",
+    "canonical_name": "Aurangabad",
+    "name_hi": "औरंगाबाद",
+    "name_mr": "छत्रपती संभाजीनगर",
+    "admin_type": "Taluka",
+    "district_id": "dist_aurangabad_mh",
+    "district_name": "Aurangabad",
+    "state_id": 27,
+    "state_name": "Maharashtra",
+    "aliases": [
+      "Chhatrapati Sambhajinagar Taluka",
+      "Sambhajinagar"
+    ],
+    "bbox": [
+      75.3,
+      19.85,
+      75.38,
+      19.9
+    ],
+    "polygon": [
+      [
+        75.3,
+        19.85
+      ],
+      [
+        75.32,
+        19.9
+      ],
+      [
+        75.38,
+        19.89
+      ],
+      [
+        75.36,
+        19.86
+      ],
+      [
+        75.3,
+        19.85
+      ]
+    ],
+    "source": "LGD",
+    "license": "GODL-India"
+  },
+  {
+    "id": "subdist_aurangabad_br",
+    "lgd_code": 2040,
+    "name": "Aurangabad",
+    "canonical_name": "Aurangabad",
+    "name_hi": "औरंगाबाद",
+    "name_mr": "औरंगाबाद",
+    "admin_type": "Subdivision",
+    "district_id": "dist_aurangabad_br",
+    "district_name": "Aurangabad",
+    "state_id": 10,
+    "state_name": "Bihar",
+    "aliases": [
+      "Aurangabad Subdivision"
+    ],
+    "bbox": [
+      84.34,
+      24.73,
+      84.4,
+      24.78
+    ],
+    "polygon": [
+      [
+        84.34,
+        24.73
+      ],
+      [
+        84.35,
+        24.78
+      ],
+      [
+        84.4,
+        24.77
+      ],
+      [
+        84.39,
+        24.74
+      ],
+      [
+        84.34,
+        24.73
+      ]
+    ],
+    "source": "LGD",
+    "license": "GODL-India"
+  },
+  {
     "id": "subdist_haveli",
-    "lgd_code": 4150,
+    "lgd_code": 4182,
     "name": "Haveli",
     "canonical_name": "Haveli",
+    "name_hi": "हवेली",
+    "name_mr": "हवेली",
     "admin_type": "Taluka",
     "district_id": "dist_pune",
     "district_name": "Pune",
+    "state_id": 27,
     "state_name": "Maharashtra",
-    "bbox": [
-      73.7,
-      18.4,
-      74.1,
-      18.7
+    "aliases": [
+      "Haveli Taluka",
+      "Haweli"
     ],
-    "polygon": [
-      [
-        73.7,
-        18.5
-      ],
-      [
-        73.9,
-        18.7
-      ],
-      [
-        74.1,
-        18.6
-      ],
-      [
-        73.9,
-        18.4
-      ],
-      [
-        73.7,
-        18.5
-      ]
-    ]
-  },
-  {
-    "id": "subdist_pune_city",
-    "lgd_code": 4151,
-    "name": "Pune City",
-    "canonical_name": "Pune City",
-    "admin_type": "Taluka",
-    "district_id": "dist_pune",
-    "district_name": "Pune",
-    "state_name": "Maharashtra",
     "bbox": [
       73.8,
-      18.48,
-      73.92,
-      18.56
-    ],
-    "polygon": [
-      [
-        73.8,
-        18.5
-      ],
-      [
-        73.86,
-        18.56
-      ],
-      [
-        73.92,
-        18.52
-      ],
-      [
-        73.88,
-        18.48
-      ],
-      [
-        73.8,
-        18.5
-      ]
-    ]
-  },
-  {
-    "id": "subdist_mulshi",
-    "lgd_code": 4152,
-    "name": "Mulshi",
-    "canonical_name": "Mulshi",
-    "admin_type": "Taluka",
-    "district_id": "dist_pune",
-    "district_name": "Pune",
-    "state_name": "Maharashtra",
-    "bbox": [
-      73.5,
-      18.45,
-      73.78,
+      18.4,
+      74.05,
       18.65
     ],
     "polygon": [
       [
-        73.5,
-        18.55
+        73.8,
+        18.4
       ],
       [
-        73.7,
+        73.82,
         18.65
       ],
       [
-        73.78,
-        18.58
+        74.05,
+        18.63
       ],
       [
-        73.65,
+        74.02,
+        18.42
+      ],
+      [
+        73.8,
+        18.4
+      ]
+    ],
+    "source": "LGD",
+    "license": "GODL-India"
+  },
+  {
+    "id": "subdist_mulshi",
+    "lgd_code": 4183,
+    "name": "Mulshi",
+    "canonical_name": "Mulshi",
+    "name_hi": "मुळशी",
+    "name_mr": "मुळशी",
+    "admin_type": "Taluka",
+    "district_id": "dist_pune",
+    "district_name": "Pune",
+    "state_id": 27,
+    "state_name": "Maharashtra",
+    "aliases": [
+      "Mulshi Taluka",
+      "Paud"
+    ],
+    "bbox": [
+      73.45,
+      18.45,
+      73.78,
+      18.68
+    ],
+    "polygon": [
+      [
+        73.45,
         18.45
       ],
       [
-        73.5,
-        18.55
+        73.48,
+        18.68
+      ],
+      [
+        73.78,
+        18.65
+      ],
+      [
+        73.75,
+        18.48
+      ],
+      [
+        73.45,
+        18.45
       ]
-    ]
+    ],
+    "source": "LGD",
+    "license": "GODL-India"
+  },
+  {
+    "id": "subdist_pune_city",
+    "lgd_code": 4184,
+    "name": "Pune City",
+    "canonical_name": "Pune City",
+    "name_hi": "पुणे शहर",
+    "name_mr": "पुणे शहर",
+    "admin_type": "Taluka",
+    "district_id": "dist_pune",
+    "district_name": "Pune",
+    "state_id": 27,
+    "state_name": "Maharashtra",
+    "aliases": [
+      "Pune Taluka"
+    ],
+    "bbox": [
+      73.8,
+      18.48,
+      73.9,
+      18.58
+    ],
+    "polygon": [
+      [
+        73.8,
+        18.48
+      ],
+      [
+        73.81,
+        18.58
+      ],
+      [
+        73.9,
+        18.57
+      ],
+      [
+        73.89,
+        18.49
+      ],
+      [
+        73.8,
+        18.48
+      ]
+    ],
+    "source": "LGD",
+    "license": "GODL-India"
   },
   {
     "id": "subdist_andheri",
-    "lgd_code": 4140,
+    "lgd_code": 4150,
     "name": "Andheri",
     "canonical_name": "Andheri",
+    "name_hi": "अंधेरी",
+    "name_mr": "अंधेरी",
     "admin_type": "Taluka",
     "district_id": "dist_mumbai_suburban",
     "district_name": "Mumbai Suburban",
+    "state_id": 27,
     "state_name": "Maharashtra",
+    "aliases": [
+      "Andheri Taluka"
+    ],
     "bbox": [
       72.8,
-      19.04,
-      72.9,
-      19.16
+      19.05,
+      72.95,
+      19.18
     ],
     "polygon": [
       [
         72.8,
-        19.08
+        19.05
       ],
       [
-        72.84,
+        72.82,
+        19.18
+      ],
+      [
+        72.95,
         19.16
       ],
       [
-        72.9,
-        19.12
-      ],
-      [
-        72.86,
-        19.04
+        72.93,
+        19.07
       ],
       [
         72.8,
-        19.08
+        19.05
       ]
-    ]
+    ],
+    "source": "LGD",
+    "license": "GODL-India"
+  },
+  {
+    "id": "subdist_thane",
+    "lgd_code": 4190,
+    "name": "Thane",
+    "canonical_name": "Thane",
+    "name_hi": "ठाणे",
+    "name_mr": "ठाणे",
+    "admin_type": "Taluka",
+    "district_id": "dist_thane",
+    "district_name": "Thane",
+    "state_id": 27,
+    "state_name": "Maharashtra",
+    "aliases": [
+      "Thane Taluka"
+    ],
+    "bbox": [
+      72.9,
+      19.15,
+      73.05,
+      19.28
+    ],
+    "polygon": [
+      [
+        72.9,
+        19.15
+      ],
+      [
+        72.92,
+        19.28
+      ],
+      [
+        73.05,
+        19.26
+      ],
+      [
+        73.03,
+        19.17
+      ],
+      [
+        72.9,
+        19.15
+      ]
+    ],
+    "source": "LGD",
+    "license": "GODL-India"
+  },
+  {
+    "id": "subdist_karvir",
+    "lgd_code": 4170,
+    "name": "Karvir",
+    "canonical_name": "Karvir",
+    "name_hi": "करवीर",
+    "name_mr": "करवीर",
+    "admin_type": "Taluka",
+    "district_id": "dist_kolhapur",
+    "district_name": "Kolhapur",
+    "state_id": 27,
+    "state_name": "Maharashtra",
+    "aliases": [
+      "Karveer Taluka"
+    ],
+    "bbox": [
+      74.15,
+      16.6,
+      74.35,
+      16.78
+    ],
+    "polygon": [
+      [
+        74.15,
+        16.6
+      ],
+      [
+        74.18,
+        16.78
+      ],
+      [
+        74.35,
+        16.75
+      ],
+      [
+        74.32,
+        16.62
+      ],
+      [
+        74.15,
+        16.6
+      ]
+    ],
+    "source": "LGD",
+    "license": "GODL-India"
   },
   {
     "id": "subdist_bengaluru_east",
-    "lgd_code": 5501,
+    "lgd_code": 5510,
     "name": "Bengaluru East",
     "canonical_name": "Bengaluru East",
+    "name_hi": "बंगळुरू पूर्व",
+    "name_mr": "बंगळुरू पूर्व",
     "admin_type": "Taluka",
     "district_id": "dist_bengaluru_urban",
     "district_name": "Bengaluru Urban",
+    "state_id": 29,
     "state_name": "Karnataka",
+    "aliases": [
+      "Bangalore East",
+      "K.R. Puram"
+    ],
     "bbox": [
       77.6,
       12.92,
       77.8,
-      13.05
+      13.08
     ],
     "polygon": [
       [
         77.6,
-        12.95
-      ],
-      [
-        77.7,
-        13.05
-      ],
-      [
-        77.8,
-        12.98
-      ],
-      [
-        77.72,
         12.92
       ],
       [
+        77.62,
+        13.08
+      ],
+      [
+        77.8,
+        13.06
+      ],
+      [
+        77.78,
+        12.94
+      ],
+      [
         77.6,
-        12.95
+        12.92
       ]
-    ]
+    ],
+    "source": "LGD",
+    "license": "GODL-India"
+  },
+  {
+    "id": "subdist_bengaluru_south",
+    "lgd_code": 5511,
+    "name": "Bengaluru South",
+    "canonical_name": "Bengaluru South",
+    "name_hi": "बंगळुरू दक्षिण",
+    "name_mr": "बंगळुरू दक्षिण",
+    "admin_type": "Taluka",
+    "district_id": "dist_bengaluru_urban",
+    "district_name": "Bengaluru Urban",
+    "state_id": 29,
+    "state_name": "Karnataka",
+    "aliases": [
+      "Bangalore South"
+    ],
+    "bbox": [
+      77.55,
+      12.8,
+      77.72,
+      12.96
+    ],
+    "polygon": [
+      [
+        77.55,
+        12.8
+      ],
+      [
+        77.57,
+        12.96
+      ],
+      [
+        77.72,
+        12.94
+      ],
+      [
+        77.7,
+        12.82
+      ],
+      [
+        77.55,
+        12.8
+      ]
+    ],
+    "source": "LGD",
+    "license": "GODL-India"
+  },
+  {
+    "id": "subdist_mysuru",
+    "lgd_code": 5520,
+    "name": "Mysuru",
+    "canonical_name": "Mysuru",
+    "name_hi": "मैसूर",
+    "name_mr": "म्हैसूर",
+    "admin_type": "Taluka",
+    "district_id": "dist_mysuru",
+    "district_name": "Mysuru",
+    "state_id": 29,
+    "state_name": "Karnataka",
+    "aliases": [
+      "Mysore Taluk"
+    ],
+    "bbox": [
+      76.55,
+      12.25,
+      76.75,
+      12.42
+    ],
+    "polygon": [
+      [
+        76.55,
+        12.25
+      ],
+      [
+        76.58,
+        12.42
+      ],
+      [
+        76.75,
+        12.39
+      ],
+      [
+        76.72,
+        12.27
+      ],
+      [
+        76.55,
+        12.25
+      ]
+    ],
+    "source": "LGD",
+    "license": "GODL-India"
   },
   {
     "id": "subdist_chanakyapuri",
-    "lgd_code": 881,
+    "lgd_code": 1410,
     "name": "Chanakyapuri",
     "canonical_name": "Chanakyapuri",
+    "name_hi": "चाणक्यपुरी",
+    "name_mr": "चाणक्यपुरी",
     "admin_type": "Subdivision",
     "district_id": "dist_new_delhi",
     "district_name": "New Delhi",
+    "state_id": 7,
     "state_name": "Delhi",
+    "aliases": [
+      "Chanakyapuri Tehsil"
+    ],
     "bbox": [
-      77.18,
+      77.16,
       28.58,
       77.24,
       28.65
     ],
     "polygon": [
       [
-        77.18,
-        28.6
+        77.16,
+        28.58
       ],
       [
-        77.21,
+        77.17,
         28.65
       ],
       [
         77.24,
-        28.62
+        28.64
       ],
       [
-        77.22,
+        77.23,
+        28.59
+      ],
+      [
+        77.16,
         28.58
-      ],
-      [
-        77.18,
-        28.6
       ]
-    ]
+    ],
+    "source": "LGD",
+    "license": "GODL-India"
   },
   {
-    "id": "subdist_rajarhat",
-    "lgd_code": 3101,
-    "name": "Rajarhat",
-    "canonical_name": "Rajarhat",
-    "admin_type": "Block",
-    "district_id": "dist_north_24_parganas",
-    "district_name": "North 24 Parganas",
-    "state_name": "West Bengal",
+    "id": "subdist_hauz_khas",
+    "lgd_code": 1420,
+    "name": "Hauz Khas",
+    "canonical_name": "Hauz Khas",
+    "name_hi": "हौज खास",
+    "name_mr": "हौज खास",
+    "admin_type": "Subdivision",
+    "district_id": "dist_south_delhi",
+    "district_name": "South Delhi",
+    "state_id": 7,
+    "state_name": "Delhi",
+    "aliases": [
+      "Hauz Khas Tehsil"
+    ],
     "bbox": [
-      88.4,
-      22.54,
-      88.54,
-      22.65
+      77.16,
+      28.52,
+      77.24,
+      28.58
     ],
     "polygon": [
       [
-        88.4,
-        22.58
+        77.16,
+        28.52
       ],
       [
-        88.48,
-        22.65
+        77.18,
+        28.58
       ],
       [
-        88.54,
-        22.61
+        77.24,
+        28.57
       ],
       [
-        88.49,
-        22.54
+        77.22,
+        28.53
       ],
       [
-        88.4,
-        22.58
+        77.16,
+        28.52
       ]
-    ]
+    ],
+    "source": "LGD",
+    "license": "GODL-India"
+  },
+  {
+    "id": "subdist_saket",
+    "lgd_code": 1421,
+    "name": "Saket",
+    "canonical_name": "Saket",
+    "name_hi": "साकेत",
+    "name_mr": "साकेत",
+    "admin_type": "Subdivision",
+    "district_id": "dist_south_delhi",
+    "district_name": "South Delhi",
+    "state_id": 7,
+    "state_name": "Delhi",
+    "aliases": [
+      "Saket Tehsil"
+    ],
+    "bbox": [
+      77.18,
+      28.48,
+      77.26,
+      28.55
+    ],
+    "polygon": [
+      [
+        77.18,
+        28.48
+      ],
+      [
+        77.19,
+        28.55
+      ],
+      [
+        77.26,
+        28.54
+      ],
+      [
+        77.25,
+        28.49
+      ],
+      [
+        77.18,
+        28.48
+      ]
+    ],
+    "source": "LGD",
+    "license": "GODL-India"
+  },
+  {
+    "id": "subdist_karol_bagh",
+    "lgd_code": 1430,
+    "name": "Karol Bagh",
+    "canonical_name": "Karol Bagh",
+    "name_hi": "करोल बाग",
+    "name_mr": "करोल बाग",
+    "admin_type": "Subdivision",
+    "district_id": "dist_central_delhi",
+    "district_name": "Central Delhi",
+    "state_id": 7,
+    "state_name": "Delhi",
+    "aliases": [
+      "Karol Bagh Tehsil"
+    ],
+    "bbox": [
+      77.16,
+      28.63,
+      77.22,
+      28.68
+    ],
+    "polygon": [
+      [
+        77.16,
+        28.63
+      ],
+      [
+        77.17,
+        28.68
+      ],
+      [
+        77.22,
+        28.67
+      ],
+      [
+        77.21,
+        28.64
+      ],
+      [
+        77.16,
+        28.63
+      ]
+    ],
+    "source": "LGD",
+    "license": "GODL-India"
+  },
+  {
+    "id": "subdist_dwarka",
+    "lgd_code": 1440,
+    "name": "Dwarka",
+    "canonical_name": "Dwarka",
+    "name_hi": "द्वारका",
+    "name_mr": "द्वारका",
+    "admin_type": "Subdivision",
+    "district_id": "dist_south_west_delhi",
+    "district_name": "South West Delhi",
+    "state_id": 7,
+    "state_name": "Delhi",
+    "aliases": [
+      "Dwarka Tehsil"
+    ],
+    "bbox": [
+      77.0,
+      28.55,
+      77.1,
+      28.64
+    ],
+    "polygon": [
+      [
+        77.0,
+        28.55
+      ],
+      [
+        77.02,
+        28.64
+      ],
+      [
+        77.1,
+        28.62
+      ],
+      [
+        77.08,
+        28.56
+      ],
+      [
+        77.0,
+        28.55
+      ]
+    ],
+    "source": "LGD",
+    "license": "GODL-India"
+  },
+  {
+    "id": "subdist_rohini",
+    "lgd_code": 1450,
+    "name": "Rohini",
+    "canonical_name": "Rohini",
+    "name_hi": "रोहिणी",
+    "name_mr": "रोहिणी",
+    "admin_type": "Subdivision",
+    "district_id": "dist_north_west_delhi",
+    "district_name": "North West Delhi",
+    "state_id": 7,
+    "state_name": "Delhi",
+    "aliases": [
+      "Rohini Tehsil"
+    ],
+    "bbox": [
+      77.02,
+      28.7,
+      77.14,
+      28.8
+    ],
+    "polygon": [
+      [
+        77.02,
+        28.7
+      ],
+      [
+        77.04,
+        28.8
+      ],
+      [
+        77.14,
+        28.78
+      ],
+      [
+        77.12,
+        28.71
+      ],
+      [
+        77.02,
+        28.7
+      ]
+    ],
+    "source": "LGD",
+    "license": "GODL-India"
+  },
+  {
+    "id": "subdist_alipore",
+    "lgd_code": 3140,
+    "name": "Alipore",
+    "canonical_name": "Alipore",
+    "name_hi": "अलिपूर",
+    "name_mr": "अलिपूर",
+    "admin_type": "Subdivision",
+    "district_id": "dist_kolkata",
+    "district_name": "Kolkata",
+    "state_id": 19,
+    "state_name": "West Bengal",
+    "aliases": [
+      "Alipore Subdivision"
+    ],
+    "bbox": [
+      88.3,
+      22.5,
+      88.42,
+      22.6
+    ],
+    "polygon": [
+      [
+        88.3,
+        22.5
+      ],
+      [
+        88.32,
+        22.6
+      ],
+      [
+        88.42,
+        22.58
+      ],
+      [
+        88.4,
+        22.51
+      ],
+      [
+        88.3,
+        22.5
+      ]
+    ],
+    "source": "LGD",
+    "license": "GODL-India"
+  },
+  {
+    "id": "subdist_barasat",
+    "lgd_code": 3150,
+    "name": "Barasat",
+    "canonical_name": "Barasat",
+    "name_hi": "बारासात",
+    "name_mr": "बारासात",
+    "admin_type": "Subdivision",
+    "district_id": "dist_north_24_parganas",
+    "district_name": "North 24 Parganas",
+    "state_id": 19,
+    "state_name": "West Bengal",
+    "aliases": [
+      "Barasat Sadar"
+    ],
+    "bbox": [
+      88.42,
+      22.55,
+      88.6,
+      22.75
+    ],
+    "polygon": [
+      [
+        88.42,
+        22.55
+      ],
+      [
+        88.45,
+        22.75
+      ],
+      [
+        88.6,
+        22.72
+      ],
+      [
+        88.58,
+        22.57
+      ],
+      [
+        88.42,
+        22.55
+      ]
+    ],
+    "source": "LGD",
+    "license": "GODL-India"
+  },
+  {
+    "id": "subdist_mylapore",
+    "lgd_code": 6030,
+    "name": "Mylapore",
+    "canonical_name": "Mylapore",
+    "name_hi": "मयिलापूर",
+    "name_mr": "मयिलापूर",
+    "admin_type": "Taluk",
+    "district_id": "dist_chennai",
+    "district_name": "Chennai",
+    "state_id": 33,
+    "state_name": "Tamil Nadu",
+    "aliases": [
+      "Mylapore Taluk"
+    ],
+    "bbox": [
+      80.2,
+      13.0,
+      80.28,
+      13.08
+    ],
+    "polygon": [
+      [
+        80.2,
+        13.0
+      ],
+      [
+        80.22,
+        13.08
+      ],
+      [
+        80.28,
+        13.07
+      ],
+      [
+        80.26,
+        13.01
+      ],
+      [
+        80.2,
+        13.0
+      ]
+    ],
+    "source": "LGD",
+    "license": "GODL-India"
+  },
+  {
+    "id": "subdist_guindy",
+    "lgd_code": 6031,
+    "name": "Guindy",
+    "canonical_name": "Guindy",
+    "name_hi": "गिंडी",
+    "name_mr": "गिंडी",
+    "admin_type": "Taluk",
+    "district_id": "dist_chennai",
+    "district_name": "Chennai",
+    "state_id": 33,
+    "state_name": "Tamil Nadu",
+    "aliases": [
+      "Guindy Taluk"
+    ],
+    "bbox": [
+      80.18,
+      12.96,
+      80.26,
+      13.02
+    ],
+    "polygon": [
+      [
+        80.18,
+        12.96
+      ],
+      [
+        80.2,
+        13.02
+      ],
+      [
+        80.26,
+        13.01
+      ],
+      [
+        80.24,
+        12.97
+      ],
+      [
+        80.18,
+        12.96
+      ]
+    ],
+    "source": "LGD",
+    "license": "GODL-India"
+  },
+  {
+    "id": "subdist_shaikpet",
+    "lgd_code": 5050,
+    "name": "Shaikpet",
+    "canonical_name": "Shaikpet",
+    "name_hi": "शेखपेट",
+    "name_mr": "शेखपेट",
+    "admin_type": "Mandal",
+    "district_id": "dist_hyderabad",
+    "district_name": "Hyderabad",
+    "state_id": 36,
+    "state_name": "Telangana",
+    "aliases": [
+      "Shaikpet Mandal"
+    ],
+    "bbox": [
+      78.36,
+      17.4,
+      78.44,
+      17.48
+    ],
+    "polygon": [
+      [
+        78.36,
+        17.4
+      ],
+      [
+        78.38,
+        17.48
+      ],
+      [
+        78.44,
+        17.46
+      ],
+      [
+        78.42,
+        17.41
+      ],
+      [
+        78.36,
+        17.4
+      ]
+    ],
+    "source": "LGD",
+    "license": "GODL-India"
+  },
+  {
+    "id": "subdist_ameerpet",
+    "lgd_code": 5051,
+    "name": "Ameerpet",
+    "canonical_name": "Ameerpet",
+    "name_hi": "अमीरपेट",
+    "name_mr": "अमीरपेट",
+    "admin_type": "Mandal",
+    "district_id": "dist_hyderabad",
+    "district_name": "Hyderabad",
+    "state_id": 36,
+    "state_name": "Telangana",
+    "aliases": [
+      "Ameerpet Mandal"
+    ],
+    "bbox": [
+      78.4,
+      17.4,
+      78.48,
+      17.46
+    ],
+    "polygon": [
+      [
+        78.4,
+        17.4
+      ],
+      [
+        78.42,
+        17.46
+      ],
+      [
+        78.48,
+        17.45
+      ],
+      [
+        78.46,
+        17.41
+      ],
+      [
+        78.4,
+        17.4
+      ]
+    ],
+    "source": "LGD",
+    "license": "GODL-India"
+  },
+  {
+    "id": "subdist_daskroi",
+    "lgd_code": 4380,
+    "name": "Daskroi",
+    "canonical_name": "Daskroi",
+    "name_hi": "दशक्रोई",
+    "name_mr": "दशक्रोई",
+    "admin_type": "Taluka",
+    "district_id": "dist_ahmedabad",
+    "district_name": "Ahmedabad",
+    "state_id": 24,
+    "state_name": "Gujarat",
+    "aliases": [
+      "Daskroi Taluka"
+    ],
+    "bbox": [
+      72.5,
+      22.95,
+      72.65,
+      23.12
+    ],
+    "polygon": [
+      [
+        72.5,
+        22.95
+      ],
+      [
+        72.52,
+        23.12
+      ],
+      [
+        72.65,
+        23.1
+      ],
+      [
+        72.63,
+        22.97
+      ],
+      [
+        72.5,
+        22.95
+      ]
+    ],
+    "source": "LGD",
+    "license": "GODL-India"
+  },
+  {
+    "id": "subdist_chorasi",
+    "lgd_code": 4540,
+    "name": "Chorasi",
+    "canonical_name": "Chorasi",
+    "name_hi": "चौरासी",
+    "name_mr": "चौरासी",
+    "admin_type": "Taluka",
+    "district_id": "dist_surat",
+    "district_name": "Surat",
+    "state_id": 24,
+    "state_name": "Gujarat",
+    "aliases": [
+      "Chorasi Taluka",
+      "Choryasi"
+    ],
+    "bbox": [
+      72.7,
+      21.1,
+      72.85,
+      21.25
+    ],
+    "polygon": [
+      [
+        72.7,
+        21.1
+      ],
+      [
+        72.72,
+        21.25
+      ],
+      [
+        72.85,
+        21.23
+      ],
+      [
+        72.83,
+        21.12
+      ],
+      [
+        72.7,
+        21.1
+      ]
+    ],
+    "source": "LGD",
+    "license": "GODL-India"
+  },
+  {
+    "id": "subdist_sanganer",
+    "lgd_code": 1150,
+    "name": "Sanganer",
+    "canonical_name": "Sanganer",
+    "name_hi": "सांगानेर",
+    "name_mr": "सांगानेर",
+    "admin_type": "Tehsil",
+    "district_id": "dist_jaipur",
+    "district_name": "Jaipur",
+    "state_id": 8,
+    "state_name": "Rajasthan",
+    "aliases": [
+      "Sanganer Tehsil"
+    ],
+    "bbox": [
+      75.75,
+      26.8,
+      75.88,
+      26.92
+    ],
+    "polygon": [
+      [
+        75.75,
+        26.8
+      ],
+      [
+        75.77,
+        26.92
+      ],
+      [
+        75.88,
+        26.9
+      ],
+      [
+        75.86,
+        26.82
+      ],
+      [
+        75.75,
+        26.8
+      ]
+    ],
+    "source": "LGD",
+    "license": "GODL-India"
+  },
+  {
+    "id": "subdist_jaipur",
+    "lgd_code": 1151,
+    "name": "Jaipur",
+    "canonical_name": "Jaipur",
+    "name_hi": "जयपुर",
+    "name_mr": "जयपुर",
+    "admin_type": "Tehsil",
+    "district_id": "dist_jaipur",
+    "district_name": "Jaipur",
+    "state_id": 8,
+    "state_name": "Rajasthan",
+    "aliases": [
+      "Jaipur Tehsil"
+    ],
+    "bbox": [
+      75.7,
+      26.88,
+      75.82,
+      26.98
+    ],
+    "polygon": [
+      [
+        75.7,
+        26.88
+      ],
+      [
+        75.72,
+        26.98
+      ],
+      [
+        75.82,
+        26.96
+      ],
+      [
+        75.8,
+        26.9
+      ],
+      [
+        75.7,
+        26.88
+      ]
+    ],
+    "source": "LGD",
+    "license": "GODL-India"
+  },
+  {
+    "id": "subdist_dadri",
+    "lgd_code": 1580,
+    "name": "Dadri",
+    "canonical_name": "Dadri",
+    "name_hi": "दादरी",
+    "name_mr": "दादरी",
+    "admin_type": "Tehsil",
+    "district_id": "dist_gautam_buddha_nagar",
+    "district_name": "Gautam Buddha Nagar",
+    "state_id": 9,
+    "state_name": "Uttar Pradesh",
+    "aliases": [
+      "Dadri Tehsil",
+      "Noida Tehsil"
+    ],
+    "bbox": [
+      77.3,
+      28.55,
+      77.5,
+      28.7
+    ],
+    "polygon": [
+      [
+        77.3,
+        28.55
+      ],
+      [
+        77.32,
+        28.7
+      ],
+      [
+        77.5,
+        28.68
+      ],
+      [
+        77.48,
+        28.57
+      ],
+      [
+        77.3,
+        28.55
+      ]
+    ],
+    "source": "LGD",
+    "license": "GODL-India"
+  },
+  {
+    "id": "subdist_lucknow",
+    "lgd_code": 1780,
+    "name": "Lucknow",
+    "canonical_name": "Lucknow",
+    "name_hi": "लखनऊ",
+    "name_mr": "लखनऊ",
+    "admin_type": "Tehsil",
+    "district_id": "dist_lucknow",
+    "district_name": "Lucknow",
+    "state_id": 9,
+    "state_name": "Uttar Pradesh",
+    "aliases": [
+      "Lucknow Sadar"
+    ],
+    "bbox": [
+      80.9,
+      26.8,
+      81.08,
+      26.95
+    ],
+    "polygon": [
+      [
+        80.9,
+        26.8
+      ],
+      [
+        80.92,
+        26.95
+      ],
+      [
+        81.08,
+        26.93
+      ],
+      [
+        81.06,
+        26.82
+      ],
+      [
+        80.9,
+        26.8
+      ]
+    ],
+    "source": "LGD",
+    "license": "GODL-India"
+  },
+  {
+    "id": "subdist_bilaspur_cg",
+    "lgd_code": 3740,
+    "name": "Bilaspur",
+    "canonical_name": "Bilaspur",
+    "name_hi": "बिलासपुर",
+    "name_mr": "बिलासपूर",
+    "admin_type": "Tehsil",
+    "district_id": "dist_bilaspur_cg",
+    "district_name": "Bilaspur",
+    "state_id": 22,
+    "state_name": "Chhattisgarh",
+    "aliases": [
+      "Bilaspur Tehsil"
+    ],
+    "bbox": [
+      82.1,
+      22.05,
+      82.25,
+      22.18
+    ],
+    "polygon": [
+      [
+        82.1,
+        22.05
+      ],
+      [
+        82.12,
+        22.18
+      ],
+      [
+        82.25,
+        22.16
+      ],
+      [
+        82.23,
+        22.07
+      ],
+      [
+        82.1,
+        22.05
+      ]
+    ],
+    "source": "LGD",
+    "license": "GODL-India"
+  },
+  {
+    "id": "subdist_bilaspur_hp",
+    "lgd_code": 180,
+    "name": "Bilaspur Sadar",
+    "canonical_name": "Bilaspur Sadar",
+    "name_hi": "बिलासपुर सदर",
+    "name_mr": "बिलासपूर सदर",
+    "admin_type": "Tehsil",
+    "district_id": "dist_bilaspur_hp",
+    "district_name": "Bilaspur",
+    "state_id": 2,
+    "state_name": "Himachal Pradesh",
+    "aliases": [
+      "Bilaspur Sadar Tehsil",
+      "Bilaspur"
+    ],
+    "bbox": [
+      76.7,
+      31.3,
+      76.82,
+      31.4
+    ],
+    "polygon": [
+      [
+        76.7,
+        31.3
+      ],
+      [
+        76.72,
+        31.4
+      ],
+      [
+        76.82,
+        31.38
+      ],
+      [
+        76.8,
+        31.32
+      ],
+      [
+        76.7,
+        31.3
+      ]
+    ],
+    "source": "LGD",
+    "license": "GODL-India"
+  },
+  {
+    "id": "subdist_rampur_up",
+    "lgd_code": 1890,
+    "name": "Rampur",
+    "canonical_name": "Rampur",
+    "name_hi": "रामपुर",
+    "name_mr": "रामपूर",
+    "admin_type": "Tehsil",
+    "district_id": "dist_rampur_up",
+    "district_name": "Rampur",
+    "state_id": 9,
+    "state_name": "Uttar Pradesh",
+    "aliases": [
+      "Rampur Sadar"
+    ],
+    "bbox": [
+      78.95,
+      28.75,
+      79.1,
+      28.88
+    ],
+    "polygon": [
+      [
+        78.95,
+        28.75
+      ],
+      [
+        78.97,
+        28.88
+      ],
+      [
+        79.1,
+        28.86
+      ],
+      [
+        79.08,
+        28.77
+      ],
+      [
+        78.95,
+        28.75
+      ]
+    ],
+    "source": "LGD",
+    "license": "GODL-India"
+  },
+  {
+    "id": "subdist_rampur_bushahr",
+    "lgd_code": 270,
+    "name": "Rampur",
+    "canonical_name": "Rampur",
+    "name_hi": "रामपुर बुशहर",
+    "name_mr": "रामपूर",
+    "admin_type": "Tehsil",
+    "district_id": "dist_shimla",
+    "district_name": "Shimla",
+    "state_id": 2,
+    "state_name": "Himachal Pradesh",
+    "aliases": [
+      "Rampur Bushahr",
+      "Rampur HP"
+    ],
+    "bbox": [
+      77.6,
+      31.4,
+      77.75,
+      31.55
+    ],
+    "polygon": [
+      [
+        77.6,
+        31.4
+      ],
+      [
+        77.62,
+        31.55
+      ],
+      [
+        77.75,
+        31.53
+      ],
+      [
+        77.73,
+        31.42
+      ],
+      [
+        77.6,
+        31.4
+      ]
+    ],
+    "source": "LGD",
+    "license": "GODL-India"
   }
 ]

@@ -1,0 +1,178 @@
+[
+  {
+    "alias": "Poona",
+    "canonical": "Pune",
+    "entity_type": "CITY",
+    "language": "en",
+    "source": "historical_alias",
+    "confidence": 1.0
+  },
+  {
+    "alias": "Puna",
+    "canonical": "Pune",
+    "entity_type": "CITY",
+    "language": "en",
+    "source": "phonetic_variant",
+    "confidence": 0.98
+  },
+  {
+    "alias": "पुना",
+    "canonical": "Pune",
+    "entity_type": "CITY",
+    "language": "mr",
+    "source": "vernacular_variant",
+    "confidence": 0.98
+  },
+  {
+    "alias": "Bombay",
+    "canonical": "Mumbai",
+    "entity_type": "CITY",
+    "language": "en",
+    "source": "historical_alias",
+    "confidence": 1.0
+  },
+  {
+    "alias": "Calcutta",
+    "canonical": "Kolkata",
+    "entity_type": "CITY",
+    "language": "en",
+    "source": "historical_alias",
+    "confidence": 1.0
+  },
+  {
+    "alias": "Madras",
+    "canonical": "Chennai",
+    "entity_type": "CITY",
+    "language": "en",
+    "source": "historical_alias",
+    "confidence": 1.0
+  },
+  {
+    "alias": "Bangalore",
+    "canonical": "Bengaluru",
+    "entity_type": "CITY",
+    "language": "en",
+    "source": "historical_alias",
+    "confidence": 1.0
+  },
+  {
+    "alias": "Bengaluru Urban",
+    "canonical": "Bengaluru",
+    "entity_type": "DISTRICT",
+    "language": "en",
+    "source": "administrative_variant",
+    "confidence": 1.0
+  },
+  {
+    "alias": "Gurgaon",
+    "canonical": "Gurugram",
+    "entity_type": "CITY",
+    "language": "en",
+    "source": "historical_alias",
+    "confidence": 1.0
+  },
+  {
+    "alias": "Amdavad",
+    "canonical": "Ahmedabad",
+    "entity_type": "CITY",
+    "language": "gu",
+    "source": "vernacular_name",
+    "confidence": 0.98
+  },
+  {
+    "alias": "Mysore",
+    "canonical": "Mysuru",
+    "entity_type": "CITY",
+    "language": "en",
+    "source": "historical_alias",
+    "confidence": 1.0
+  },
+  {
+    "alias": "Nasik",
+    "canonical": "Nashik",
+    "entity_type": "CITY",
+    "language": "en",
+    "source": "spelling_variant",
+    "confidence": 0.98
+  },
+  {
+    "alias": "Ahemadnagar",
+    "canonical": "Ahmednagar",
+    "entity_type": "CITY",
+    "language": "en",
+    "source": "spelling_variant",
+    "confidence": 0.98
+  },
+  {
+    "alias": "Sambhajinagar",
+    "canonical": "Aurangabad",
+    "entity_type": "CITY",
+    "language": "mr",
+    "source": "official_rename",
+    "confidence": 1.0
+  },
+  {
+    "alias": "Chhatrapati Sambhajinagar",
+    "canonical": "Aurangabad",
+    "entity_type": "CITY",
+    "language": "en",
+    "source": "official_rename",
+    "confidence": 1.0
+  },
+  {
+    "alias": "Baroda",
+    "canonical": "Vadodara",
+    "entity_type": "CITY",
+    "language": "en",
+    "source": "historical_alias",
+    "confidence": 1.0
+  },
+  {
+    "alias": "Belgaum",
+    "canonical": "Belagavi",
+    "entity_type": "CITY",
+    "language": "en",
+    "source": "historical_alias",
+    "confidence": 1.0
+  },
+  {
+    "alias": "Cochin",
+    "canonical": "Kochi",
+    "entity_type": "CITY",
+    "language": "en",
+    "source": "historical_alias",
+    "confidence": 1.0
+  },
+  {
+    "alias": "Trivandrum",
+    "canonical": "Thiruvananthapuram",
+    "entity_type": "CITY",
+    "language": "en",
+    "source": "historical_alias",
+    "confidence": 1.0
+  },
+  {
+    "alias": "Pondicherry",
+    "canonical": "Puducherry",
+    "entity_type": "STATE",
+    "language": "en",
+    "source": "historical_alias",
+    "confidence": 1.0
+  },
+  {
+    "alias": "Orissa",
+    "canonical": "Odisha",
+    "entity_type": "STATE",
+    "language": "en",
+    "source": "historical_alias",
+    "confidence": 1.0
+  },
+  {
+    "alias": "Uttaranchal",
+    "canonical": "Uttarakhand",
+    "entity_type": "STATE",
+    "language": "en",
+    "source": "historical_alias",
+    "confidence": 1.0
+  }
+]

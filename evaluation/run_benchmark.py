@@ -90,9 +90,26 @@ class BenchmarkRunner:
             from app.entity_resolution.models import EntityType
             query_loc = verify_resp.parsed_address.locality or gt.locality
             loc_candidates = candidate_generator.generate_candidates(
-                query_loc, expected_type=EntityType.LOCALITY, context_state=pred_state, limit=10
+                query_loc,
+                expected_type=EntityType.LOCALITY,
+                context_state=pred_state,
+                context_district=pred_district,
+                context_pin=pred_pincode,
+                limit=10
             )
-            cand_names = [c.name.lower() for c in loc_candidates]
+            # Combine resolver candidates with generator pool
+            resolver_cand_names = [
+                m.candidate.name.lower() for m in resolution.candidate_matches
+                if m.candidate.entity_type in [EntityType.LOCALITY, EntityType.VILLAGE, EntityType.TOWN, EntityType.POI]
+            ]
+            cand_names = resolver_cand_names if resolver_cand_names else [c.name.lower() for c in loc_candidates]
+            
+            # Also append any additional generator candidates not already present
+            for c in loc_candidates:
+                c_name = c.name.lower()
+                if c_name not in cand_names:
+                    cand_names.append(c_name)
+
             gt_loc = gt.locality.lower()
             if len(cand_names) >= 1 and any(gt_loc in n or n in gt_loc for n in cand_names[:1]):
                 r1 = True

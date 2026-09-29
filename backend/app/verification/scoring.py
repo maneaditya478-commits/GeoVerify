@@ -67,12 +67,12 @@ class ScoringEngine:
         if not hierarchy.state and not hierarchy.district and not hierarchy.locality and not pin.pincode:
             status = VerificationStatus.UNABLE_TO_VERIFY
             summary = "Insufficient geographic details to verify the address."
-        elif is_ambiguous:
-            status = VerificationStatus.AMBIGUOUS
-            summary = "Multiple distinct geographic locations match the supplied information. Additional context or PIN code is required."
         elif has_hierarchy_mismatch or has_boundary_mismatch:
             status = VerificationStatus.INCONSISTENT
             summary = "Important address components conflict with authoritative administrative or geometric boundaries."
+        elif is_ambiguous:
+            status = VerificationStatus.AMBIGUOUS
+            summary = "Multiple distinct geographic locations match the supplied information. Additional context or PIN code is required."
         elif has_pin_mismatch or total_score < 70:
             status = VerificationStatus.NEEDS_REVIEW
             summary = "Some evidence discrepancies or incomplete data detected. Human verification recommended."

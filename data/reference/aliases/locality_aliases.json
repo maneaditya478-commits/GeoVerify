@@ -1,0 +1,106 @@
+[
+  {
+    "alias": "CP",
+    "canonical": "Connaught Place",
+    "entity_type": "LOCALITY",
+    "language": "en",
+    "source": "abbreviation",
+    "confidence": 1.0
+  },
+  {
+    "alias": "Connaught Circus",
+    "canonical": "Connaught Place",
+    "entity_type": "LOCALITY",
+    "language": "en",
+    "source": "synonym",
+    "confidence": 1.0
+  },
+  {
+    "alias": "Rajiv Chowk",
+    "canonical": "Connaught Place",
+    "entity_type": "LOCALITY",
+    "language": "en",
+    "source": "metro_station_alias",
+    "confidence": 0.95
+  },
+  {
+    "alias": "Cyber City",
+    "canonical": "Sector 62",
+    "entity_type": "LOCALITY",
+    "language": "en",
+    "source": "tech_hub_alias",
+    "confidence": 0.90
+  },
+  {
+    "alias": "EON Free Zone",
+    "canonical": "Kharadi",
+    "entity_type": "LOCALITY",
+    "language": "en",
+    "source": "business_park_alias",
+    "confidence": 0.95
+  },
+  {
+    "alias": "Hinjawadi",
+    "canonical": "Hinjewadi",
+    "entity_type": "LOCALITY",
+    "language": "en",
+    "source": "spelling_variant",
+    "confidence": 1.0
+  },
+  {
+    "alias": "Vimannagar",
+    "canonical": "Viman Nagar",
+    "entity_type": "LOCALITY",
+    "language": "en",
+    "source": "spelling_variant",
+    "confidence": 1.0
+  },
+  {
+    "alias": "Bandra W",
+    "canonical": "Bandra West",
+    "entity_type": "LOCALITY",
+    "language": "en",
+    "source": "abbreviation",
+    "confidence": 1.0
+  },
+  {
+    "alias": "Andheri E",
+    "canonical": "Andheri East",
+    "entity_type": "LOCALITY",
+    "language": "en",
+    "source": "abbreviation",
+    "confidence": 1.0
+  },
+  {
+    "alias": "HSR",
+    "canonical": "HSR Layout",
+    "entity_type": "LOCALITY",
+    "language": "en",
+    "source": "abbreviation",
+    "confidence": 1.0
+  },
+  {
+    "alias": "E-City",
+    "canonical": "Electronic City",
+    "entity_type": "LOCALITY",
+    "language": "en",
+    "source": "abbreviation",
+    "confidence": 1.0
+  },
+  {
+    "alias": "BKC",
+    "canonical": "Bandra West",
+    "entity_type": "LOCALITY",
+    "language": "en",
+    "source": "business_district_alias",
+    "confidence": 0.90
+  },
+  {
+    "alias": "DLF Phase 2",
+    "canonical": "Sector 62",
+    "entity_type": "LOCALITY",
+    "language": "en",
+    "source": "urban_complex_alias",
+    "confidence": 0.85
+  }
+]

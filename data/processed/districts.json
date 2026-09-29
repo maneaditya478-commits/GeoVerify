@@ -6,199 +6,153 @@
     "canonical_name": "Pune",
     "name_hi": "पुणे",
     "name_mr": "पुणे",
+    "state_id": 27,
+    "state_name": "Maharashtra",
+    "state_code": "MH",
+    "headquarters": "Pune",
     "aliases": [
       "Poona",
-      "Pune District",
-      "Puna"
+      "Puna",
+      "Pune District"
     ],
-    "state_lgd_code": 27,
-    "state_code": "MH",
-    "state_name": "Maharashtra",
-    "headquarters": "Pune",
     "bbox": [
       73.3,
-      17.9,
-      75.1,
+      18.0,
+      75.2,
       19.4
     ],
     "polygon": [
       [
         73.3,
-        18.5
-      ],
-      [
-        73.6,
-        19.3
-      ],
-      [
-        74.5,
-        19.4
-      ],
-      [
-        75.1,
-        18.6
-      ],
-      [
-        74.8,
-        17.9
-      ],
-      [
-        73.8,
         18.0
-      ],
-      [
-        73.3,
-        18.5
-      ]
-    ]
-  },
-  {
-    "id": "dist_mumbai_suburban",
-    "lgd_code": 489,
-    "name": "Mumbai Suburban",
-    "canonical_name": "Mumbai Suburban",
-    "name_hi": "मुंबई उपनगर",
-    "name_mr": "मुंबई उपनगर",
-    "aliases": [
-      "Mumbai",
-      "Bombay",
-      "Mumbai Suburban District",
-      "Bandra"
-    ],
-    "state_lgd_code": 27,
-    "state_code": "MH",
-    "state_name": "Maharashtra",
-    "headquarters": "Bandra",
-    "bbox": [
-      72.7,
-      18.9,
-      73.0,
-      19.3
-    ],
-    "polygon": [
-      [
-        72.7,
-        19.0
-      ],
-      [
-        72.8,
-        19.3
-      ],
-      [
-        73.0,
-        19.2
-      ],
-      [
-        72.9,
-        18.9
-      ],
-      [
-        72.7,
-        19.0
-      ]
-    ]
-  },
-  {
-    "id": "dist_mumbai_city",
-    "lgd_code": 488,
-    "name": "Mumbai City",
-    "canonical_name": "Mumbai City",
-    "name_hi": "मुंबई शहर",
-    "name_mr": "मुंबई शहर",
-    "aliases": [
-      "South Mumbai",
-      "Town"
-    ],
-    "state_lgd_code": 27,
-    "state_code": "MH",
-    "state_name": "Maharashtra",
-    "headquarters": "Mumbai",
-    "bbox": [
-      72.8,
-      18.88,
-      72.86,
-      19.02
-    ],
-    "polygon": [
-      [
-        72.8,
-        18.9
-      ],
-      [
-        72.82,
-        19.02
-      ],
-      [
-        72.86,
-        19.0
-      ],
-      [
-        72.84,
-        18.88
-      ],
-      [
-        72.8,
-        18.9
-      ]
-    ]
-  },
-  {
-    "id": "dist_thane",
-    "lgd_code": 501,
-    "name": "Thane",
-    "canonical_name": "Thane",
-    "name_hi": "ठाणे",
-    "name_mr": "ठाणे",
-    "aliases": [
-      "Thana"
-    ],
-    "state_lgd_code": 27,
-    "state_code": "MH",
-    "state_name": "Maharashtra",
-    "headquarters": "Thane",
-    "bbox": [
-      72.9,
-      19.1,
-      73.5,
-      19.6
-    ],
-    "polygon": [
-      [
-        72.9,
-        19.2
-      ],
-      [
-        73.1,
-        19.6
       ],
       [
         73.5,
         19.4
       ],
       [
+        75.2,
+        19.0
+      ],
+      [
+        74.8,
+        18.2
+      ],
+      [
+        73.3,
+        18.0
+      ]
+    ],
+    "source": "LGD / Survey of India",
+    "license": "GODL-India"
+  },
+  {
+    "id": "dist_mumbai_suburban",
+    "lgd_code": 483,
+    "name": "Mumbai Suburban",
+    "canonical_name": "Mumbai Suburban",
+    "name_hi": "मुंबई उपनगर",
+    "name_mr": "मुंबई उपनगर",
+    "state_id": 27,
+    "state_name": "Maharashtra",
+    "state_code": "MH",
+    "headquarters": "Bandra",
+    "aliases": [
+      "Bombay Suburban",
+      "Mumbai Suburban District",
+      "Bombay"
+    ],
+    "bbox": [
+      72.75,
+      18.95,
+      72.98,
+      19.3
+    ],
+    "polygon": [
+      [
+        72.75,
+        18.95
+      ],
+      [
+        72.78,
+        19.3
+      ],
+      [
+        72.98,
+        19.25
+      ],
+      [
+        72.95,
+        18.98
+      ],
+      [
+        72.75,
+        18.95
+      ]
+    ],
+    "source": "LGD / Survey of India",
+    "license": "GODL-India"
+  },
+  {
+    "id": "dist_thane",
+    "lgd_code": 492,
+    "name": "Thane",
+    "canonical_name": "Thane",
+    "name_hi": "ठाणे",
+    "name_mr": "ठाणे",
+    "state_id": 27,
+    "state_name": "Maharashtra",
+    "state_code": "MH",
+    "headquarters": "Thane",
+    "aliases": [
+      "Thana",
+      "Thane District"
+    ],
+    "bbox": [
+      72.8,
+      19.0,
+      73.5,
+      19.8
+    ],
+    "polygon": [
+      [
+        72.8,
+        19.0
+      ],
+      [
+        72.9,
+        19.8
+      ],
+      [
+        73.5,
+        19.6
+      ],
+      [
         73.3,
         19.1
       ],
       [
-        72.9,
-        19.2
+        72.8,
+        19.0
       ]
-    ]
+    ],
+    "source": "LGD / Survey of India",
+    "license": "GODL-India"
   },
   {
     "id": "dist_kolhapur",
-    "lgd_code": 482,
+    "lgd_code": 480,
     "name": "Kolhapur",
     "canonical_name": "Kolhapur",
-    "name_hi": "कोल्हापुर",
+    "name_hi": "कोल्हापूर",
     "name_mr": "कोल्हापूर",
+    "state_id": 27,
+    "state_name": "Maharashtra",
+    "state_code": "MH",
+    "headquarters": "Kolhapur",
     "aliases": [
       "Kolhapur District"
     ],
-    "state_lgd_code": 27,
-    "state_code": "MH",
-    "state_name": "Maharashtra",
-    "headquarters": "Kolhapur",
     "bbox": [
       73.7,
       15.7,
@@ -208,10 +162,10 @@
     "polygon": [
       [
         73.7,
-        16.5
+        15.7
       ],
       [
-        74.0,
+        73.9,
         17.2
       ],
       [
@@ -220,175 +174,46 @@
       ],
       [
         74.5,
-        15.7
+        15.9
       ],
       [
         73.7,
-        16.5
+        15.7
       ]
-    ]
-  },
-  {
-    "id": "dist_nagpur",
-    "lgd_code": 485,
-    "name": "Nagpur",
-    "canonical_name": "Nagpur",
-    "name_hi": "नागपुर",
-    "name_mr": "नागपूर",
-    "aliases": [
-      "Nagpur District"
     ],
-    "state_lgd_code": 27,
-    "state_code": "MH",
-    "state_name": "Maharashtra",
-    "headquarters": "Nagpur",
-    "bbox": [
-      78.5,
-      20.5,
-      79.6,
-      21.8
-    ],
-    "polygon": [
-      [
-        78.5,
-        21.0
-      ],
-      [
-        78.8,
-        21.8
-      ],
-      [
-        79.6,
-        21.5
-      ],
-      [
-        79.4,
-        20.5
-      ],
-      [
-        78.5,
-        21.0
-      ]
-    ]
-  },
-  {
-    "id": "dist_nashik",
-    "lgd_code": 487,
-    "name": "Nashik",
-    "canonical_name": "Nashik",
-    "name_hi": "नासिक",
-    "name_mr": "नाशिक",
-    "aliases": [
-      "Nasik"
-    ],
-    "state_lgd_code": 27,
-    "state_code": "MH",
-    "state_name": "Maharashtra",
-    "headquarters": "Nashik",
-    "bbox": [
-      73.3,
-      19.5,
-      74.9,
-      20.9
-    ],
-    "polygon": [
-      [
-        73.3,
-        20.0
-      ],
-      [
-        74.0,
-        20.9
-      ],
-      [
-        74.9,
-        20.5
-      ],
-      [
-        74.5,
-        19.5
-      ],
-      [
-        73.3,
-        20.0
-      ]
-    ]
-  },
-  {
-    "id": "dist_aurangabad_mh",
-    "lgd_code": 470,
-    "name": "Chhatrapati Sambhajinagar",
-    "canonical_name": "Chhatrapati Sambhajinagar",
-    "name_hi": "छत्रपति संभाजीनगर",
-    "name_mr": "छत्रपती संभाजीनगर",
-    "aliases": [
-      "Aurangabad",
-      "Aurangabad Maharashtra",
-      "Sambhajinagar"
-    ],
-    "state_lgd_code": 27,
-    "state_code": "MH",
-    "state_name": "Maharashtra",
-    "headquarters": "Chhatrapati Sambhajinagar",
-    "bbox": [
-      74.7,
-      19.3,
-      76.0,
-      20.7
-    ],
-    "polygon": [
-      [
-        74.7,
-        19.8
-      ],
-      [
-        75.2,
-        20.7
-      ],
-      [
-        76.0,
-        20.2
-      ],
-      [
-        75.5,
-        19.3
-      ],
-      [
-        74.7,
-        19.8
-      ]
-    ]
+    "source": "LGD / Survey of India",
+    "license": "GODL-India"
   },
   {
     "id": "dist_bengaluru_urban",
     "lgd_code": 529,
     "name": "Bengaluru Urban",
     "canonical_name": "Bengaluru Urban",
-    "name_hi": "बेंगलुरु शहरी",
-    "name_mr": "बंगळूर शहरी",
+    "name_hi": "बंगळुरू",
+    "name_mr": "बंगळुरू",
+    "state_id": 29,
+    "state_name": "Karnataka",
+    "state_code": "KA",
+    "headquarters": "Bengaluru",
     "aliases": [
       "Bangalore",
-      "Bengaluru",
       "Bangalore Urban",
+      "Bengaluru",
       "BLR"
     ],
-    "state_lgd_code": 29,
-    "state_code": "KA",
-    "state_name": "Karnataka",
-    "headquarters": "Bengaluru",
     "bbox": [
-      77.4,
+      77.3,
       12.7,
       77.8,
       13.2
     ],
     "polygon": [
       [
-        77.4,
-        12.9
+        77.3,
+        12.7
       ],
       [
-        77.5,
+        77.4,
         13.2
       ],
       [
@@ -396,193 +221,426 @@
         13.1
       ],
       [
-        77.8,
+        77.7,
         12.8
       ],
       [
-        77.5,
+        77.3,
         12.7
-      ],
-      [
-        77.4,
-        12.9
       ]
-    ]
+    ],
+    "source": "LGD / Survey of India",
+    "license": "GODL-India"
   },
   {
     "id": "dist_mysuru",
-    "lgd_code": 544,
+    "lgd_code": 535,
     "name": "Mysuru",
     "canonical_name": "Mysuru",
     "name_hi": "मैसूर",
     "name_mr": "म्हैसूर",
-    "aliases": [
-      "Mysore"
-    ],
-    "state_lgd_code": 29,
-    "state_code": "KA",
+    "state_id": 29,
     "state_name": "Karnataka",
+    "state_code": "KA",
     "headquarters": "Mysuru",
+    "aliases": [
+      "Mysore",
+      "Mysuru District"
+    ],
     "bbox": [
       75.9,
       11.7,
-      77.1,
+      77.2,
       12.6
     ],
     "polygon": [
       [
         75.9,
-        12.2
-      ],
-      [
-        76.5,
-        12.6
-      ],
-      [
-        77.1,
-        12.0
-      ],
-      [
-        76.6,
         11.7
       ],
       [
+        76.1,
+        12.6
+      ],
+      [
+        77.2,
+        12.4
+      ],
+      [
+        76.9,
+        11.8
+      ],
+      [
         75.9,
-        12.2
+        11.7
       ]
-    ]
+    ],
+    "source": "LGD / Survey of India",
+    "license": "GODL-India"
   },
   {
     "id": "dist_new_delhi",
-    "lgd_code": 88,
+    "lgd_code": 141,
     "name": "New Delhi",
     "canonical_name": "New Delhi",
     "name_hi": "नई दिल्ली",
     "name_mr": "नवी दिल्ली",
-    "aliases": [
-      "Central Delhi",
-      "Delhi Central",
-      "NDLS"
-    ],
-    "state_lgd_code": 7,
-    "state_code": "DL",
+    "state_id": 7,
     "state_name": "Delhi",
-    "headquarters": "Connaught Place",
+    "state_code": "DL",
+    "headquarters": "New Delhi",
+    "aliases": [
+      "Delhi",
+      "Central Delhi"
+    ],
     "bbox": [
-      77.1,
-      28.5,
-      77.3,
-      28.7
+      77.15,
+      28.55,
+      77.25,
+      28.65
     ],
     "polygon": [
       [
-        77.1,
-        28.6
+        77.15,
+        28.55
       ],
       [
-        77.2,
-        28.7
+        77.16,
+        28.65
       ],
       [
-        77.3,
-        28.6
+        77.25,
+        28.64
       ],
       [
-        77.2,
-        28.5
+        77.24,
+        28.56
       ],
       [
-        77.1,
-        28.6
+        77.15,
+        28.55
       ]
-    ]
+    ],
+    "source": "LGD / Survey of India",
+    "license": "GODL-India"
   },
   {
     "id": "dist_south_delhi",
-    "lgd_code": 91,
+    "lgd_code": 142,
     "name": "South Delhi",
     "canonical_name": "South Delhi",
     "name_hi": "दक्षिण दिल्ली",
     "name_mr": "दक्षिण दिल्ली",
+    "state_id": 7,
+    "state_name": "Delhi",
+    "state_code": "DL",
+    "headquarters": "Saket",
     "aliases": [
       "South Delhi District"
     ],
-    "state_lgd_code": 7,
-    "state_code": "DL",
-    "state_name": "Delhi",
-    "headquarters": "Saket",
     "bbox": [
       77.15,
       28.45,
       77.3,
-      28.58
+      28.6
     ],
     "polygon": [
       [
         77.15,
-        28.5
-      ],
-      [
-        77.25,
-        28.58
-      ],
-      [
-        77.3,
-        28.52
-      ],
-      [
-        77.2,
         28.45
       ],
       [
+        77.16,
+        28.6
+      ],
+      [
+        77.3,
+        28.58
+      ],
+      [
+        77.28,
+        28.46
+      ],
+      [
         77.15,
+        28.45
+      ]
+    ],
+    "source": "LGD / Survey of India",
+    "license": "GODL-India"
+  },
+  {
+    "id": "dist_central_delhi",
+    "lgd_code": 143,
+    "name": "Central Delhi",
+    "canonical_name": "Central Delhi",
+    "name_hi": "मध्य दिल्ली",
+    "name_mr": "मध्य दिल्ली",
+    "state_id": 7,
+    "state_name": "Delhi",
+    "state_code": "DL",
+    "headquarters": "Karol Bagh",
+    "aliases": [
+      "Central Delhi District"
+    ],
+    "bbox": [
+      77.16,
+      28.62,
+      77.26,
+      28.7
+    ],
+    "polygon": [
+      [
+        77.16,
+        28.62
+      ],
+      [
+        77.17,
+        28.7
+      ],
+      [
+        77.26,
+        28.69
+      ],
+      [
+        77.25,
+        28.63
+      ],
+      [
+        77.16,
+        28.62
+      ]
+    ],
+    "source": "LGD / Survey of India",
+    "license": "GODL-India"
+  },
+  {
+    "id": "dist_south_west_delhi",
+    "lgd_code": 144,
+    "name": "South West Delhi",
+    "canonical_name": "South West Delhi",
+    "name_hi": "दक्षिण पश्चिम दिल्ली",
+    "name_mr": "दक्षिण पश्चिम दिल्ली",
+    "state_id": 7,
+    "state_name": "Delhi",
+    "state_code": "DL",
+    "headquarters": "Dwarka",
+    "aliases": [
+      "South West Delhi District"
+    ],
+    "bbox": [
+      76.95,
+      28.5,
+      77.15,
+      28.65
+    ],
+    "polygon": [
+      [
+        76.95,
+        28.5
+      ],
+      [
+        76.98,
+        28.65
+      ],
+      [
+        77.15,
+        28.63
+      ],
+      [
+        77.12,
+        28.51
+      ],
+      [
+        76.95,
         28.5
       ]
-    ]
+    ],
+    "source": "LGD / Survey of India",
+    "license": "GODL-India"
+  },
+  {
+    "id": "dist_north_west_delhi",
+    "lgd_code": 145,
+    "name": "North West Delhi",
+    "canonical_name": "North West Delhi",
+    "name_hi": "उत्तर पश्चिम दिल्ली",
+    "name_mr": "उत्तर पश्चिम दिल्ली",
+    "state_id": 7,
+    "state_name": "Delhi",
+    "state_code": "DL",
+    "headquarters": "Rohini",
+    "aliases": [
+      "North West Delhi District"
+    ],
+    "bbox": [
+      76.98,
+      28.68,
+      77.18,
+      28.82
+    ],
+    "polygon": [
+      [
+        76.98,
+        28.68
+      ],
+      [
+        77.01,
+        28.82
+      ],
+      [
+        77.18,
+        28.8
+      ],
+      [
+        77.16,
+        28.69
+      ],
+      [
+        76.98,
+        28.68
+      ]
+    ],
+    "source": "LGD / Survey of India",
+    "license": "GODL-India"
+  },
+  {
+    "id": "dist_kolkata",
+    "lgd_code": 314,
+    "name": "Kolkata",
+    "canonical_name": "Kolkata",
+    "name_hi": "कोलकाता",
+    "name_mr": "कोलकाता",
+    "state_id": 19,
+    "state_name": "West Bengal",
+    "state_code": "WB",
+    "headquarters": "Kolkata",
+    "aliases": [
+      "Calcutta",
+      "Kolkata District"
+    ],
+    "bbox": [
+      88.3,
+      22.45,
+      88.45,
+      22.65
+    ],
+    "polygon": [
+      [
+        88.3,
+        22.45
+      ],
+      [
+        88.32,
+        22.65
+      ],
+      [
+        88.45,
+        22.62
+      ],
+      [
+        88.42,
+        22.46
+      ],
+      [
+        88.3,
+        22.45
+      ]
+    ],
+    "source": "LGD / Survey of India",
+    "license": "GODL-India"
+  },
+  {
+    "id": "dist_north_24_parganas",
+    "lgd_code": 315,
+    "name": "North 24 Parganas",
+    "canonical_name": "North 24 Parganas",
+    "name_hi": "उत्तर 24 परगना",
+    "name_mr": "उत्तर 24 परगना",
+    "state_id": 19,
+    "state_name": "West Bengal",
+    "state_code": "WB",
+    "headquarters": "Barasat",
+    "aliases": [
+      "North 24 Parganas District",
+      "24 Parganas North"
+    ],
+    "bbox": [
+      88.35,
+      22.15,
+      89.05,
+      23.25
+    ],
+    "polygon": [
+      [
+        88.35,
+        22.15
+      ],
+      [
+        88.4,
+        23.25
+      ],
+      [
+        89.05,
+        23.15
+      ],
+      [
+        88.95,
+        22.2
+      ],
+      [
+        88.35,
+        22.15
+      ]
+    ],
+    "source": "LGD / Survey of India",
+    "license": "GODL-India"
   },
   {
     "id": "dist_chennai",
-    "lgd_code": 565,
+    "lgd_code": 603,
     "name": "Chennai",
     "canonical_name": "Chennai",
     "name_hi": "चेन्नई",
     "name_mr": "चेन्नई",
+    "state_id": 33,
+    "state_name": "Tamil Nadu",
+    "state_code": "TN",
+    "headquarters": "Chennai",
     "aliases": [
       "Madras",
       "Chennai District"
     ],
-    "state_lgd_code": 33,
-    "state_code": "TN",
-    "state_name": "Tamil Nadu",
-    "headquarters": "Chennai",
     "bbox": [
-      80.1,
-      12.9,
-      80.35,
+      80.15,
+      12.95,
+      80.32,
       13.2
     ],
     "polygon": [
       [
-        80.1,
-        13.0
+        80.15,
+        12.95
       ],
       [
-        80.2,
+        80.18,
         13.2
       ],
       [
-        80.35,
-        13.1
+        80.32,
+        13.18
       ],
       [
         80.3,
-        12.9
+        12.96
       ],
       [
-        80.1,
-        13.0
+        80.15,
+        12.95
       ]
-    ]
+    ],
+    "source": "LGD / Survey of India",
+    "license": "GODL-India"
   },
   {
     "id": "dist_hyderabad",
@@ -591,172 +649,731 @@
     "canonical_name": "Hyderabad",
     "name_hi": "हैदराबाद",
     "name_mr": "हैदराबाद",
+    "state_id": 36,
+    "state_name": "Telangana",
+    "state_code": "TG",
+    "headquarters": "Hyderabad",
     "aliases": [
       "Hyderabad District",
       "HYD",
       "Secunderabad"
     ],
-    "state_lgd_code": 36,
-    "state_code": "TG",
-    "state_name": "Telangana",
-    "headquarters": "Hyderabad",
     "bbox": [
-      78.3,
-      17.2,
-      78.6,
-      17.55
+      78.35,
+      17.3,
+      78.58,
+      17.52
     ],
     "polygon": [
       [
-        78.3,
-        17.4
+        78.35,
+        17.3
       ],
       [
-        78.4,
-        17.55
+        78.38,
+        17.52
       ],
       [
-        78.6,
-        17.45
+        78.58,
+        17.5
       ],
       [
-        78.5,
-        17.2
+        78.55,
+        17.32
       ],
       [
-        78.3,
-        17.4
+        78.35,
+        17.3
       ]
-    ]
+    ],
+    "source": "LGD / Survey of India",
+    "license": "GODL-India"
+  },
+  {
+    "id": "dist_ahmedabad",
+    "lgd_code": 438,
+    "name": "Ahmedabad",
+    "canonical_name": "Ahmedabad",
+    "name_hi": "अहमदाबाद",
+    "name_mr": "अहमदाबाद",
+    "state_id": 24,
+    "state_name": "Gujarat",
+    "state_code": "GJ",
+    "headquarters": "Ahmedabad",
+    "aliases": [
+      "Amdavad",
+      "Ahmedabad District"
+    ],
+    "bbox": [
+      71.8,
+      22.0,
+      72.9,
+      23.3
+    ],
+    "polygon": [
+      [
+        71.8,
+        22.0
+      ],
+      [
+        72.0,
+        23.3
+      ],
+      [
+        72.9,
+        23.1
+      ],
+      [
+        72.7,
+        22.2
+      ],
+      [
+        71.8,
+        22.0
+      ]
+    ],
+    "source": "LGD / Survey of India",
+    "license": "GODL-India"
+  },
+  {
+    "id": "dist_surat",
+    "lgd_code": 454,
+    "name": "Surat",
+    "canonical_name": "Surat",
+    "name_hi": "सुरत",
+    "name_mr": "सुरत",
+    "state_id": 24,
+    "state_name": "Gujarat",
+    "state_code": "GJ",
+    "headquarters": "Surat",
+    "aliases": [
+      "Surat District"
+    ],
+    "bbox": [
+      72.6,
+      20.8,
+      73.4,
+      21.6
+    ],
+    "polygon": [
+      [
+        72.6,
+        20.8
+      ],
+      [
+        72.8,
+        21.6
+      ],
+      [
+        73.4,
+        21.4
+      ],
+      [
+        73.2,
+        20.9
+      ],
+      [
+        72.6,
+        20.8
+      ]
+    ],
+    "source": "LGD / Survey of India",
+    "license": "GODL-India"
+  },
+  {
+    "id": "dist_jaipur",
+    "lgd_code": 115,
+    "name": "Jaipur",
+    "canonical_name": "Jaipur",
+    "name_hi": "जयपुर",
+    "name_mr": "जयपुर",
+    "state_id": 8,
+    "state_name": "Rajasthan",
+    "state_code": "RJ",
+    "headquarters": "Jaipur",
+    "aliases": [
+      "Pink City",
+      "Jaipur District"
+    ],
+    "bbox": [
+      74.9,
+      26.4,
+      76.2,
+      27.8
+    ],
+    "polygon": [
+      [
+        74.9,
+        26.4
+      ],
+      [
+        75.1,
+        27.8
+      ],
+      [
+        76.2,
+        27.5
+      ],
+      [
+        75.9,
+        26.6
+      ],
+      [
+        74.9,
+        26.4
+      ]
+    ],
+    "source": "LGD / Survey of India",
+    "license": "GODL-India"
+  },
+  {
+    "id": "dist_gautam_buddha_nagar",
+    "lgd_code": 158,
+    "name": "Gautam Buddha Nagar",
+    "canonical_name": "Gautam Buddha Nagar",
+    "name_hi": "गौतम बुद्ध नगर",
+    "name_mr": "गौतम बुद्ध नगर",
+    "state_id": 9,
+    "state_name": "Uttar Pradesh",
+    "state_code": "UP",
+    "headquarters": "Greater Noida",
+    "aliases": [
+      "Noida",
+      "GB Nagar",
+      "Gautam Budh Nagar"
+    ],
+    "bbox": [
+      77.25,
+      28.1,
+      77.65,
+      28.7
+    ],
+    "polygon": [
+      [
+        77.25,
+        28.1
+      ],
+      [
+        77.3,
+        28.7
+      ],
+      [
+        77.65,
+        28.65
+      ],
+      [
+        77.6,
+        28.15
+      ],
+      [
+        77.25,
+        28.1
+      ]
+    ],
+    "source": "LGD / Survey of India",
+    "license": "GODL-India"
   },
   {
     "id": "dist_lucknow",
-    "lgd_code": 160,
+    "lgd_code": 178,
     "name": "Lucknow",
     "canonical_name": "Lucknow",
     "name_hi": "लखनऊ",
-    "name_mr": "लखनौ",
-    "aliases": [
-      "LKO"
-    ],
-    "state_lgd_code": 9,
-    "state_code": "UP",
+    "name_mr": "लखनऊ",
+    "state_id": 9,
     "state_name": "Uttar Pradesh",
+    "state_code": "UP",
     "headquarters": "Lucknow",
+    "aliases": [
+      "Lucknow District"
+    ],
     "bbox": [
-      80.6,
+      80.5,
       26.5,
-      81.2,
+      81.3,
       27.2
     ],
     "polygon": [
       [
-        80.6,
-        26.8
-      ],
-      [
-        80.9,
-        27.2
-      ],
-      [
-        81.2,
-        26.9
-      ],
-      [
-        80.9,
+        80.5,
         26.5
       ],
       [
-        80.6,
-        26.8
+        80.7,
+        27.2
+      ],
+      [
+        81.3,
+        27.0
+      ],
+      [
+        81.1,
+        26.6
+      ],
+      [
+        80.5,
+        26.5
       ]
-    ]
+    ],
+    "source": "LGD / Survey of India",
+    "license": "GODL-India"
   },
   {
-    "id": "dist_rampur",
-    "lgd_code": 178,
+    "id": "dist_bilaspur_cg",
+    "lgd_code": 374,
+    "name": "Bilaspur",
+    "canonical_name": "Bilaspur",
+    "name_hi": "बिलासपुर",
+    "name_mr": "बिलासपूर",
+    "state_id": 22,
+    "state_name": "Chhattisgarh",
+    "state_code": "CG",
+    "headquarters": "Bilaspur",
+    "aliases": [
+      "Bilaspur CG",
+      "Bilaspur Chhattisgarh"
+    ],
+    "bbox": [
+      81.5,
+      21.7,
+      82.5,
+      22.8
+    ],
+    "polygon": [
+      [
+        81.5,
+        21.7
+      ],
+      [
+        81.7,
+        22.8
+      ],
+      [
+        82.5,
+        22.6
+      ],
+      [
+        82.3,
+        21.8
+      ],
+      [
+        81.5,
+        21.7
+      ]
+    ],
+    "source": "LGD / Survey of India",
+    "license": "GODL-India"
+  },
+  {
+    "id": "dist_bilaspur_hp",
+    "lgd_code": 18,
+    "name": "Bilaspur",
+    "canonical_name": "Bilaspur",
+    "name_hi": "बिलासपुर",
+    "name_mr": "बिलासपूर",
+    "state_id": 2,
+    "state_name": "Himachal Pradesh",
+    "state_code": "HP",
+    "headquarters": "Bilaspur",
+    "aliases": [
+      "Bilaspur HP",
+      "Bilaspur Himachal"
+    ],
+    "bbox": [
+      76.5,
+      31.2,
+      77.0,
+      31.6
+    ],
+    "polygon": [
+      [
+        76.5,
+        31.2
+      ],
+      [
+        76.6,
+        31.6
+      ],
+      [
+        77.0,
+        31.5
+      ],
+      [
+        76.9,
+        31.3
+      ],
+      [
+        76.5,
+        31.2
+      ]
+    ],
+    "source": "LGD / Survey of India",
+    "license": "GODL-India"
+  },
+  {
+    "id": "dist_rampur_up",
+    "lgd_code": 189,
     "name": "Rampur",
     "canonical_name": "Rampur",
     "name_hi": "रामपुर",
     "name_mr": "रामपूर",
+    "state_id": 9,
+    "state_name": "Uttar Pradesh",
+    "state_code": "UP",
+    "headquarters": "Rampur",
     "aliases": [
+      "Rampur UP",
       "Rampur District"
     ],
-    "state_lgd_code": 9,
-    "state_code": "UP",
-    "state_name": "Uttar Pradesh",
-    "headquarters": "Rampur",
     "bbox": [
-      78.9,
-      28.6,
-      79.3,
-      29.1
+      78.8,
+      28.4,
+      79.4,
+      29.2
     ],
     "polygon": [
       [
-        78.9,
-        28.8
+        78.8,
+        28.4
       ],
       [
-        79.1,
-        29.1
+        79.0,
+        29.2
       ],
       [
-        79.3,
-        28.9
+        79.4,
+        29.0
       ],
       [
-        79.1,
-        28.6
+        79.2,
+        28.5
       ],
       [
-        78.9,
-        28.8
+        78.8,
+        28.4
       ]
-    ]
+    ],
+    "source": "LGD / Survey of India",
+    "license": "GODL-India"
   },
   {
-    "id": "dist_north_24_parganas",
-    "lgd_code": 310,
-    "name": "North 24 Parganas",
-    "canonical_name": "North 24 Parganas",
-    "name_hi": "उत्तर 24 परगना",
-    "name_mr": "उत्तर २४ परगणा",
+    "id": "dist_shimla",
+    "lgd_code": 27,
+    "name": "Shimla",
+    "canonical_name": "Shimla",
+    "name_hi": "शिमला",
+    "name_mr": "शिमला",
+    "state_id": 2,
+    "state_name": "Himachal Pradesh",
+    "state_code": "HP",
+    "headquarters": "Shimla",
     "aliases": [
-      "24 Parganas North",
-      "Rajarhat Area"
+      "Simla",
+      "Shimla District"
     ],
-    "state_lgd_code": 19,
-    "state_code": "WB",
-    "state_name": "West Bengal",
-    "headquarters": "Barasat",
     "bbox": [
-      88.3,
-      22.2,
-      89.1,
-      23.2
+      77.0,
+      30.8,
+      78.2,
+      31.6
     ],
     "polygon": [
       [
-        88.3,
-        22.6
+        77.0,
+        30.8
       ],
       [
-        88.7,
-        23.2
+        77.2,
+        31.6
       ],
       [
-        89.1,
-        22.8
+        78.2,
+        31.4
       ],
       [
-        88.8,
-        22.2
+        77.9,
+        30.9
       ],
       [
-        88.3,
-        22.6
+        77.0,
+        30.8
       ]
-    ]
+    ],
+    "source": "LGD / Survey of India",
+    "license": "GODL-India"
+  },
+  {
+    "id": "dist_fatehpur_up",
+    "lgd_code": 160,
+    "name": "Fatehpur",
+    "canonical_name": "Fatehpur",
+    "name_hi": "फतेहपुर",
+    "name_mr": "फतेहपूर",
+    "state_id": 9,
+    "state_name": "Uttar Pradesh",
+    "state_code": "UP",
+    "headquarters": "Fatehpur",
+    "aliases": [
+      "Fatehpur District",
+      "Fatehpur UP"
+    ],
+    "bbox": [
+      80.5,
+      25.6,
+      81.3,
+      26.2
+    ],
+    "polygon": [
+      [
+        80.5,
+        25.6
+      ],
+      [
+        80.7,
+        26.2
+      ],
+      [
+        81.3,
+        26.0
+      ],
+      [
+        81.1,
+        25.7
+      ],
+      [
+        80.5,
+        25.6
+      ]
+    ],
+    "source": "LGD / Survey of India",
+    "license": "GODL-India"
+  },
+  {
+    "id": "dist_sikar",
+    "lgd_code": 128,
+    "name": "Sikar",
+    "canonical_name": "Sikar",
+    "name_hi": "सीकर",
+    "name_mr": "सीकर",
+    "state_id": 8,
+    "state_name": "Rajasthan",
+    "state_code": "RJ",
+    "headquarters": "Sikar",
+    "aliases": [
+      "Sikar District"
+    ],
+    "bbox": [
+      74.7,
+      27.2,
+      75.6,
+      28.2
+    ],
+    "polygon": [
+      [
+        74.7,
+        27.2
+      ],
+      [
+        74.9,
+        28.2
+      ],
+      [
+        75.6,
+        28.0
+      ],
+      [
+        75.4,
+        27.3
+      ],
+      [
+        74.7,
+        27.2
+      ]
+    ],
+    "source": "LGD / Survey of India",
+    "license": "GODL-India"
+  },
+  {
+    "id": "dist_ratnagiri",
+    "lgd_code": 487,
+    "name": "Ratnagiri",
+    "canonical_name": "Ratnagiri",
+    "name_hi": "रत्नागिरी",
+    "name_mr": "रत्नागिरी",
+    "state_id": 27,
+    "state_name": "Maharashtra",
+    "state_code": "MH",
+    "headquarters": "Ratnagiri",
+    "aliases": [
+      "Ratnagiri District"
+    ],
+    "bbox": [
+      73.1,
+      16.5,
+      73.9,
+      18.1
+    ],
+    "polygon": [
+      [
+        73.1,
+        16.5
+      ],
+      [
+        73.3,
+        18.1
+      ],
+      [
+        73.9,
+        17.8
+      ],
+      [
+        73.7,
+        16.6
+      ],
+      [
+        73.1,
+        16.5
+      ]
+    ],
+    "source": "LGD / Survey of India",
+    "license": "GODL-India"
+  },
+  {
+    "id": "dist_chitrakoot",
+    "lgd_code": 154,
+    "name": "Chitrakoot",
+    "canonical_name": "Chitrakoot",
+    "name_hi": "चित्रकूट",
+    "name_mr": "चित्रकूट",
+    "state_id": 9,
+    "state_name": "Uttar Pradesh",
+    "state_code": "UP",
+    "headquarters": "Chitrakoot",
+    "aliases": [
+      "Chitrakoot District"
+    ],
+    "bbox": [
+      80.6,
+      24.8,
+      81.6,
+      25.5
+    ],
+    "polygon": [
+      [
+        80.6,
+        24.8
+      ],
+      [
+        80.8,
+        25.5
+      ],
+      [
+        81.6,
+        25.3
+      ],
+      [
+        81.4,
+        24.9
+      ],
+      [
+        80.6,
+        24.8
+      ]
+    ],
+    "source": "LGD / Survey of India",
+    "license": "GODL-India"
+  },
+  {
+    "id": "dist_aurangabad_mh",
+    "lgd_code": 472,
+    "name": "Aurangabad",
+    "canonical_name": "Aurangabad",
+    "name_hi": "औरंगाबाद",
+    "name_mr": "छत्रपती संभाजीनगर",
+    "state_id": 27,
+    "state_name": "Maharashtra",
+    "state_code": "MH",
+    "headquarters": "Chhatrapati Sambhajinagar",
+    "aliases": [
+      "Chhatrapati Sambhajinagar",
+      "Sambhajinagar",
+      "Aurangabad MH"
+    ],
+    "bbox": [
+      74.6,
+      19.3,
+      76.1,
+      20.7
+    ],
+    "polygon": [
+      [
+        74.6,
+        19.3
+      ],
+      [
+        74.8,
+        20.7
+      ],
+      [
+        76.1,
+        20.5
+      ],
+      [
+        75.9,
+        19.4
+      ],
+      [
+        74.6,
+        19.3
+      ]
+    ],
+    "source": "LGD / Survey of India",
+    "license": "GODL-India"
+  },
+  {
+    "id": "dist_aurangabad_br",
+    "lgd_code": 204,
+    "name": "Aurangabad",
+    "canonical_name": "Aurangabad",
+    "name_hi": "औरंगाबाद",
+    "name_mr": "औरंगाबाद",
+    "state_id": 10,
+    "state_name": "Bihar",
+    "state_code": "BR",
+    "headquarters": "Aurangabad",
+    "aliases": [
+      "Aurangabad Bihar",
+      "Aurangabad BR"
+    ],
+    "bbox": [
+      84.1,
+      24.5,
+      84.8,
+      25.1
+    ],
+    "polygon": [
+      [
+        84.1,
+        24.5
+      ],
+      [
+        84.2,
+        25.1
+      ],
+      [
+        84.8,
+        25.0
+      ],
+      [
+        84.7,
+        24.6
+      ],
+      [
+        84.1,
+        24.5
+      ]
+    ],
+    "source": "LGD / Survey of India",
+    "license": "GODL-India"
   }
 ]

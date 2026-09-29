@@ -7,7 +7,9 @@
     "aliases": [
       "Kharadi Gaon",
       "Kharadi Bypass",
-      "EON Free Zone Kharadi"
+      "EON Free Zone Kharadi",
+      "Khardi",
+      "Kharadee"
     ],
     "subdistrict_id": "subdist_haveli",
     "subdistrict": "Haveli",
@@ -26,28 +28,6 @@
       18.53,
       73.96,
       18.57
-    ],
-    "polygon": [
-      [
-        73.92,
-        18.54
-      ],
-      [
-        73.93,
-        18.57
-      ],
-      [
-        73.96,
-        18.56
-      ],
-      [
-        73.95,
-        18.53
-      ],
-      [
-        73.92,
-        18.54
-      ]
     ]
   },
   {
@@ -76,28 +56,6 @@
       18.55,
       73.93,
       18.58
-    ],
-    "polygon": [
-      [
-        73.9,
-        18.56
-      ],
-      [
-        73.91,
-        18.58
-      ],
-      [
-        73.93,
-        18.57
-      ],
-      [
-        73.92,
-        18.55
-      ],
-      [
-        73.9,
-        18.56
-      ]
     ]
   },
   {
@@ -107,7 +65,7 @@
     "name_mr": "हिंजवडी",
     "aliases": [
       "Hinjawadi",
-      "Hinjawadi Phase 1",
+      "Hinjewadi Phase 1",
       "Hinjewadi Phase 2",
       "Hinjewadi Phase 3"
     ],
@@ -124,82 +82,10 @@
       "longitude": 73.7389
     },
     "bbox": [
-      73.7,
+      73.71,
       18.57,
-      73.77,
-      18.62
-    ],
-    "polygon": [
-      [
-        73.7,
-        18.58
-      ],
-      [
-        73.72,
-        18.62
-      ],
-      [
-        73.77,
-        18.6
-      ],
-      [
-        73.75,
-        18.57
-      ],
-      [
-        73.7,
-        18.58
-      ]
-    ]
-  },
-  {
-    "name": "Kothrud",
-    "canonical_name": "Kothrud",
-    "name_hi": "कोथरुड",
-    "name_mr": "कोथरूड",
-    "aliases": [
-      "Kothrud Pune",
-      "Paud Road"
-    ],
-    "subdistrict_id": "subdist_pune_city",
-    "subdistrict": "Pune City",
-    "district_id": "dist_pune",
-    "district": "Pune",
-    "state_id": 27,
-    "state": "Maharashtra",
-    "state_code": "MH",
-    "pincode": "411038",
-    "coordinates": {
-      "latitude": 18.5074,
-      "longitude": 73.8077
-    },
-    "bbox": [
-      73.78,
-      18.49,
-      73.83,
-      18.53
-    ],
-    "polygon": [
-      [
-        73.78,
-        18.5
-      ],
-      [
-        73.8,
-        18.53
-      ],
-      [
-        73.83,
-        18.52
-      ],
-      [
-        73.82,
-        18.49
-      ],
-      [
-        73.78,
-        18.5
-      ]
+      73.76,
+      18.61
     ]
   },
   {
@@ -209,7 +95,8 @@
     "name_mr": "बाणेर",
     "aliases": [
       "Baner Gaon",
-      "Baner Road"
+      "Baner Road",
+      "Banere"
     ],
     "subdistrict_id": "subdist_haveli",
     "subdistrict": "Haveli",
@@ -224,32 +111,68 @@
       "longitude": 73.7868
     },
     "bbox": [
-      73.76,
+      73.77,
       18.54,
       73.81,
       18.58
+    ]
+  },
+  {
+    "name": "Hadapsar",
+    "canonical_name": "Hadapsar",
+    "name_hi": "हड़पसर",
+    "name_mr": "हडपसर",
+    "aliases": [
+      "Hadapsar Gaon",
+      "Magarpatta City",
+      "Hadapsar Gadital"
     ],
-    "polygon": [
-      [
-        73.76,
-        18.55
-      ],
-      [
-        73.78,
-        18.58
-      ],
-      [
-        73.81,
-        18.57
-      ],
-      [
-        73.79,
-        18.54
-      ],
-      [
-        73.76,
-        18.55
-      ]
+    "subdistrict_id": "subdist_haveli",
+    "subdistrict": "Haveli",
+    "district_id": "dist_pune",
+    "district": "Pune",
+    "state_id": 27,
+    "state": "Maharashtra",
+    "state_code": "MH",
+    "pincode": "411028",
+    "coordinates": {
+      "latitude": 18.5089,
+      "longitude": 73.926
+    },
+    "bbox": [
+      73.9,
+      18.49,
+      73.95,
+      18.53
+    ]
+  },
+  {
+    "name": "Kothrud",
+    "canonical_name": "Kothrud",
+    "name_hi": "कोथरुड",
+    "name_mr": "कोथरूड",
+    "aliases": [
+      "Kothrud Depot",
+      "Paud Road Kothrud",
+      "Kothrood"
+    ],
+    "subdistrict_id": "subdist_pune_city",
+    "subdistrict": "Pune City",
+    "district_id": "dist_pune",
+    "district": "Pune",
+    "state_id": 27,
+    "state": "Maharashtra",
+    "state_code": "MH",
+    "pincode": "411038",
+    "coordinates": {
+      "latitude": 18.5074,
+      "longitude": 73.8077
+    },
+    "bbox": [
+      73.79,
+      18.49,
+      73.83,
+      18.53
     ]
   },
   {
@@ -258,10 +181,10 @@
     "name_hi": "बांद्रा पश्चिम",
     "name_mr": "वांद्रे पश्चिम",
     "aliases": [
-      "Bandra",
       "Bandra W",
-      "Bandstand",
-      "Vandre"
+      "Bandra",
+      "BKC",
+      "Bandra Reclamation"
     ],
     "subdistrict_id": "subdist_andheri",
     "subdistrict": "Andheri",
@@ -280,28 +203,6 @@
       19.04,
       72.85,
       19.08
-    ],
-    "polygon": [
-      [
-        72.81,
-        19.05
-      ],
-      [
-        72.82,
-        19.08
-      ],
-      [
-        72.85,
-        19.07
-      ],
-      [
-        72.84,
-        19.04
-      ],
-      [
-        72.81,
-        19.05
-      ]
     ]
   },
   {
@@ -310,10 +211,9 @@
     "name_hi": "अंधेरी पूर्व",
     "name_mr": "अंधेरी पूर्व",
     "aliases": [
-      "Andheri",
       "Andheri E",
       "MIDC Andheri",
-      "Chakala"
+      "Marol"
     ],
     "subdistrict_id": "subdist_andheri",
     "subdistrict": "Andheri",
@@ -329,41 +229,104 @@
     },
     "bbox": [
       72.85,
-      19.09,
+      19.1,
       72.89,
       19.14
+    ]
+  },
+  {
+    "name": "Powai",
+    "canonical_name": "Powai",
+    "name_hi": "पवई",
+    "name_mr": "पवई",
+    "aliases": [
+      "Hiranandani Powai",
+      "IIT Bombay",
+      "Powaye"
     ],
-    "polygon": [
-      [
-        72.85,
-        19.1
-      ],
-      [
-        72.86,
-        19.14
-      ],
-      [
-        72.89,
-        19.13
-      ],
-      [
-        72.88,
-        19.09
-      ],
-      [
-        72.85,
-        19.1
-      ]
+    "subdistrict_id": "subdist_andheri",
+    "subdistrict": "Andheri",
+    "district_id": "dist_mumbai_suburban",
+    "district": "Mumbai Suburban",
+    "state_id": 27,
+    "state": "Maharashtra",
+    "state_code": "MH",
+    "pincode": "400076",
+    "coordinates": {
+      "latitude": 19.1176,
+      "longitude": 72.906
+    },
+    "bbox": [
+      72.88,
+      19.1,
+      72.93,
+      19.14
+    ]
+  },
+  {
+    "name": "Thane West",
+    "canonical_name": "Thane West",
+    "name_hi": "ठाणे पश्चिम",
+    "name_mr": "ठाणे पश्चिम",
+    "aliases": [
+      "Thane W",
+      "Majiwada",
+      "Ghubunder Road"
+    ],
+    "subdistrict_id": "subdist_thane",
+    "subdistrict": "Thane",
+    "district_id": "dist_thane",
+    "district": "Thane",
+    "state_id": 27,
+    "state": "Maharashtra",
+    "state_code": "MH",
+    "pincode": "400601",
+    "coordinates": {
+      "latitude": 19.2183,
+      "longitude": 72.9781
+    },
+    "bbox": [
+      72.95,
+      19.19,
+      73.0,
+      19.24
+    ]
+  },
+  {
+    "name": "Rajarampuri",
+    "canonical_name": "Rajarampuri",
+    "name_hi": "राजारामपुरी",
+    "name_mr": "राजारामपुरी",
+    "aliases": [
+      "Rajarampuri Kolhapur"
+    ],
+    "subdistrict_id": "subdist_karvir",
+    "subdistrict": "Karvir",
+    "district_id": "dist_kolhapur",
+    "district": "Kolhapur",
+    "state_id": 27,
+    "state": "Maharashtra",
+    "state_code": "MH",
+    "pincode": "416008",
+    "coordinates": {
+      "latitude": 16.6913,
+      "longitude": 74.2449
+    },
+    "bbox": [
+      74.22,
+      16.67,
+      74.27,
+      16.71
     ]
   },
   {
     "name": "Whitefield",
     "canonical_name": "Whitefield",
     "name_hi": "व्हाइटफील्ड",
-    "name_mr": "व्हाईटफिल्ड",
+    "name_mr": "व्हाइटफील्ड",
     "aliases": [
-      "Whitefield Bangalore",
-      "ITPB",
+      "Whitefield Bengaluru",
+      "ITPL Whitefield",
       "EPIP Zone"
     ],
     "subdistrict_id": "subdist_bengaluru_east",
@@ -376,35 +339,70 @@
     "pincode": "560066",
     "coordinates": {
       "latitude": 12.9698,
-      "longitude": 77.7499
+      "longitude": 77.75
     },
     "bbox": [
       77.72,
       12.94,
-      77.78,
-      13.0
+      77.77,
+      12.99
+    ]
+  },
+  {
+    "name": "Koramangala",
+    "canonical_name": "Koramangala",
+    "name_hi": "कोरामंगला",
+    "name_mr": "कोरामंगला",
+    "aliases": [
+      "Koramangala 4th Block",
+      "Koramangala 5th Block"
     ],
-    "polygon": [
-      [
-        77.72,
-        12.95
-      ],
-      [
-        77.73,
-        13.0
-      ],
-      [
-        77.78,
-        12.98
-      ],
-      [
-        77.76,
-        12.94
-      ],
-      [
-        77.72,
-        12.95
-      ]
+    "subdistrict_id": "subdist_bengaluru_south",
+    "subdistrict": "Bengaluru South",
+    "district_id": "dist_bengaluru_urban",
+    "district": "Bengaluru Urban",
+    "state_id": 29,
+    "state": "Karnataka",
+    "state_code": "KA",
+    "pincode": "560034",
+    "coordinates": {
+      "latitude": 12.9352,
+      "longitude": 77.6245
+    },
+    "bbox": [
+      77.6,
+      12.91,
+      77.65,
+      12.95
+    ]
+  },
+  {
+    "name": "HSR Layout",
+    "canonical_name": "HSR Layout",
+    "name_hi": "एचएसआर लेआउट",
+    "name_mr": "एचएसआर लेआउट",
+    "aliases": [
+      "HSR",
+      "Hosur Sarjapur Road Layout",
+      "HSR Sector 1"
+    ],
+    "subdistrict_id": "subdist_bengaluru_south",
+    "subdistrict": "Bengaluru South",
+    "district_id": "dist_bengaluru_urban",
+    "district": "Bengaluru Urban",
+    "state_id": 29,
+    "state": "Karnataka",
+    "state_code": "KA",
+    "pincode": "560102",
+    "coordinates": {
+      "latitude": 12.9121,
+      "longitude": 77.6446
+    },
+    "bbox": [
+      77.62,
+      12.89,
+      77.67,
+      12.93
     ]
   },
   {
@@ -413,7 +411,7 @@
     "name_hi": "इंदिरानगर",
     "name_mr": "इंदिरानगर",
     "aliases": [
-      "Indira Nagar",
+      "Indira Nagar Bangalore",
       "100 Feet Road Indiranagar"
     ],
     "subdistrict_id": "subdist_bengaluru_east",
@@ -433,28 +431,63 @@
       12.96,
       77.66,
       13.0
+    ]
+  },
+  {
+    "name": "Electronic City",
+    "canonical_name": "Electronic City",
+    "name_hi": "इलेक्ट्रॉनिक सिटी",
+    "name_mr": "इलेक्ट्रॉनिक सिटी",
+    "aliases": [
+      "E-City",
+      "Electronic City Phase 1",
+      "ECity"
     ],
-    "polygon": [
-      [
-        77.62,
-        12.97
-      ],
-      [
-        77.63,
-        13.0
-      ],
-      [
-        77.66,
-        12.99
-      ],
-      [
-        77.65,
-        12.96
-      ],
-      [
-        77.62,
-        12.97
-      ]
+    "subdistrict_id": "subdist_bengaluru_south",
+    "subdistrict": "Bengaluru South",
+    "district_id": "dist_bengaluru_urban",
+    "district": "Bengaluru Urban",
+    "state_id": 29,
+    "state": "Karnataka",
+    "state_code": "KA",
+    "pincode": "560100",
+    "coordinates": {
+      "latitude": 12.8399,
+      "longitude": 77.677
+    },
+    "bbox": [
+      77.65,
+      12.82,
+      77.7,
+      12.86
+    ]
+  },
+  {
+    "name": "Gokulam",
+    "canonical_name": "Gokulam",
+    "name_hi": "गोकुलम",
+    "name_mr": "गोकुलम",
+    "aliases": [
+      "Gokulam 3rd Stage",
+      "Goculam"
+    ],
+    "subdistrict_id": "subdist_mysuru",
+    "subdistrict": "Mysuru",
+    "district_id": "dist_mysuru",
+    "district": "Mysuru",
+    "state_id": 29,
+    "state": "Karnataka",
+    "state_code": "KA",
+    "pincode": "570002",
+    "coordinates": {
+      "latitude": 12.327,
+      "longitude": 76.626
+    },
+    "bbox": [
+      76.6,
+      12.3,
+      76.65,
+      12.35
     ]
   },
   {
@@ -465,7 +498,8 @@
     "aliases": [
       "CP",
       "Rajiv Chowk",
-      "Connaught Circus"
+      "Connaught Circus",
+      "Inner Circle CP"
     ],
     "subdistrict_id": "subdist_chanakyapuri",
     "subdistrict": "Chanakyapuri",
@@ -483,44 +517,23 @@
       77.2,
       28.62,
       77.23,
-      28.64
-    ],
-    "polygon": [
-      [
-        77.2,
-        28.63
-      ],
-      [
-        77.21,
-        28.64
-      ],
-      [
-        77.23,
-        28.635
-      ],
-      [
-        77.22,
-        28.62
-      ],
-      [
-        77.2,
-        28.63
-      ]
+      28.65
     ]
   },
   {
     "name": "Hauz Khas",
     "canonical_name": "Hauz Khas",
-    "name_hi": "हौज़ खास",
+    "name_hi": "हौज खास",
     "name_mr": "हौज खास",
     "aliases": [
       "Hauz Khas Village",
-      "HKV"
+      "HKV",
+      "Hauz Khas Enclave"
     ],
-    "subdistrict_id": "subdist_chanakyapuri",
-    "subdistrict": "Chanakyapuri",
-    "district_id": "dist_new_delhi",
-    "district": "New Delhi",
+    "subdistrict_id": "subdist_hauz_khas",
+    "subdistrict": "Hauz Khas",
+    "district_id": "dist_south_delhi",
+    "district": "South Delhi",
     "state_id": 7,
     "state": "Delhi",
     "state_code": "DL",
@@ -534,28 +547,149 @@
       28.53,
       77.22,
       28.57
+    ]
+  },
+  {
+    "name": "Saket",
+    "canonical_name": "Saket",
+    "name_hi": "साकेत",
+    "name_mr": "साकेत",
+    "aliases": [
+      "Saket District Centre",
+      "Select Citywalk Saket"
     ],
-    "polygon": [
-      [
-        77.18,
-        28.54
-      ],
-      [
-        77.19,
-        28.57
-      ],
-      [
-        77.22,
-        28.56
-      ],
-      [
-        77.21,
-        28.53
-      ],
-      [
-        77.18,
-        28.54
-      ]
+    "subdistrict_id": "subdist_saket",
+    "subdistrict": "Saket",
+    "district_id": "dist_south_delhi",
+    "district": "South Delhi",
+    "state_id": 7,
+    "state": "Delhi",
+    "state_code": "DL",
+    "pincode": "110017",
+    "coordinates": {
+      "latitude": 28.5244,
+      "longitude": 77.2185
+    },
+    "bbox": [
+      77.2,
+      28.5,
+      77.24,
+      28.54
+    ]
+  },
+  {
+    "name": "Karol Bagh",
+    "canonical_name": "Karol Bagh",
+    "name_hi": "करोल बाग",
+    "name_mr": "करोल बाग",
+    "aliases": [
+      "Gaffar Market Karol Bagh",
+      "Pusa Road"
+    ],
+    "subdistrict_id": "subdist_karol_bagh",
+    "subdistrict": "Karol Bagh",
+    "district_id": "dist_central_delhi",
+    "district": "Central Delhi",
+    "state_id": 7,
+    "state": "Delhi",
+    "state_code": "DL",
+    "pincode": "110005",
+    "coordinates": {
+      "latitude": 28.6517,
+      "longitude": 77.1906
+    },
+    "bbox": [
+      77.17,
+      28.63,
+      77.21,
+      28.67
+    ]
+  },
+  {
+    "name": "Dwarka",
+    "canonical_name": "Dwarka",
+    "name_hi": "द्वारका",
+    "name_mr": "द्वारका",
+    "aliases": [
+      "Dwarka Sector 10",
+      "Dwarka Sector 12",
+      "Dwarka Mor"
+    ],
+    "subdistrict_id": "subdist_dwarka",
+    "subdistrict": "Dwarka",
+    "district_id": "dist_south_west_delhi",
+    "district": "South West Delhi",
+    "state_id": 7,
+    "state": "Delhi",
+    "state_code": "DL",
+    "pincode": "110075",
+    "coordinates": {
+      "latitude": 28.5921,
+      "longitude": 77.046
+    },
+    "bbox": [
+      77.02,
+      28.57,
+      77.07,
+      28.61
+    ]
+  },
+  {
+    "name": "Rohini",
+    "canonical_name": "Rohini",
+    "name_hi": "रोहिणी",
+    "name_mr": "रोहिणी",
+    "aliases": [
+      "Rohini Sector 7",
+      "Rohini Sector 14",
+      "Rohini West"
+    ],
+    "subdistrict_id": "subdist_rohini",
+    "subdistrict": "Rohini",
+    "district_id": "dist_north_west_delhi",
+    "district": "North West Delhi",
+    "state_id": 7,
+    "state": "Delhi",
+    "state_code": "DL",
+    "pincode": "110085",
+    "coordinates": {
+      "latitude": 28.7495,
+      "longitude": 77.0565
+    },
+    "bbox": [
+      77.03,
+      28.73,
+      77.08,
+      28.77
+    ]
+  },
+  {
+    "name": "Salt Lake",
+    "canonical_name": "Salt Lake",
+    "name_hi": "सॉल्ट लेक",
+    "name_mr": "सॉल्ट लेक",
+    "aliases": [
+      "Salt Lake Sector 5",
+      "Bidhannagar",
+      "Salt Lake City"
+    ],
+    "subdistrict_id": "subdist_alipore",
+    "subdistrict": "Alipore",
+    "district_id": "dist_kolkata",
+    "district": "Kolkata",
+    "state_id": 19,
+    "state": "West Bengal",
+    "state_code": "WB",
+    "pincode": "700091",
+    "coordinates": {
+      "latitude": 22.5867,
+      "longitude": 88.4178
+    },
+    "bbox": [
+      88.39,
+      22.56,
+      88.44,
+      22.61
     ]
   },
   {
@@ -564,11 +698,40 @@
     "name_hi": "राजारहाट",
     "name_mr": "राजारहाट",
     "aliases": [
-      "New Town Rajarhat",
-      "Action Area 1"
+      "Rajarhat Main Road",
+      "Rajarhat Gopalpur"
     ],
-    "subdistrict_id": "subdist_rajarhat",
-    "subdistrict": "Rajarhat",
+    "subdistrict_id": "subdist_barasat",
+    "subdistrict": "Barasat",
+    "district_id": "dist_north_24_parganas",
+    "district": "North 24 Parganas",
+    "state_id": 19,
+    "state": "West Bengal",
+    "state_code": "WB",
+    "pincode": "700135",
+    "coordinates": {
+      "latitude": 22.6231,
+      "longitude": 88.5134
+    },
+    "bbox": [
+      88.48,
+      22.6,
+      88.54,
+      22.65
+    ]
+  },
+  {
+    "name": "New Town",
+    "canonical_name": "New Town",
+    "name_hi": "न्यू टाउन",
+    "name_mr": "न्यू टाउन",
+    "aliases": [
+      "New Town Action Area 1",
+      "New Town Kolkata",
+      "Rajarhat New Town"
+    ],
+    "subdistrict_id": "subdist_barasat",
+    "subdistrict": "Barasat",
     "district_id": "dist_north_24_parganas",
     "district": "North 24 Parganas",
     "state_id": 19,
@@ -576,49 +739,314 @@
     "state_code": "WB",
     "pincode": "700156",
     "coordinates": {
-      "latitude": 22.5867,
-      "longitude": 88.4756
+      "latitude": 22.5896,
+      "longitude": 88.4746
     },
     "bbox": [
-      88.44,
+      88.45,
       22.56,
-      88.51,
-      22.62
+      88.5,
+      22.61
+    ]
+  },
+  {
+    "name": "T Nagar",
+    "canonical_name": "T Nagar",
+    "name_hi": "टी नगर",
+    "name_mr": "टी नगर",
+    "aliases": [
+      "Thyagaraya Nagar",
+      "T. Nagar",
+      "Panagal Park"
     ],
-    "polygon": [
-      [
-        88.45,
-        22.57
-      ],
-      [
-        88.47,
-        22.62
-      ],
-      [
-        88.51,
-        22.6
-      ],
-      [
-        88.49,
-        22.56
-      ],
-      [
-        88.45,
-        22.57
-      ]
+    "subdistrict_id": "subdist_mylapore",
+    "subdistrict": "Mylapore",
+    "district_id": "dist_chennai",
+    "district": "Chennai",
+    "state_id": 33,
+    "state": "Tamil Nadu",
+    "state_code": "TN",
+    "pincode": "600017",
+    "coordinates": {
+      "latitude": 13.0418,
+      "longitude": 80.2341
+    },
+    "bbox": [
+      80.21,
+      13.02,
+      80.25,
+      13.06
+    ]
+  },
+  {
+    "name": "Adyar",
+    "canonical_name": "Adyar",
+    "name_hi": "अडयार",
+    "name_mr": "अडयार",
+    "aliases": [
+      "Adayar",
+      "Adyar Gandhi Nagar",
+      "Adyar Bus Depot"
+    ],
+    "subdistrict_id": "subdist_guindy",
+    "subdistrict": "Guindy",
+    "district_id": "dist_chennai",
+    "district": "Chennai",
+    "state_id": 33,
+    "state": "Tamil Nadu",
+    "state_code": "TN",
+    "pincode": "600020",
+    "coordinates": {
+      "latitude": 13.0012,
+      "longitude": 80.2565
+    },
+    "bbox": [
+      80.23,
+      12.98,
+      80.28,
+      13.02
+    ]
+  },
+  {
+    "name": "HITEC City",
+    "canonical_name": "HITEC City",
+    "name_hi": "हायटेक सिटी",
+    "name_mr": "हायटेक सिटी",
+    "aliases": [
+      "Hitech City",
+      "Madhapur",
+      "Cyberabad",
+      "Cyber Towers"
+    ],
+    "subdistrict_id": "subdist_shaikpet",
+    "subdistrict": "Shaikpet",
+    "district_id": "dist_hyderabad",
+    "district": "Hyderabad",
+    "state_id": 36,
+    "state": "Telangana",
+    "state_code": "TG",
+    "pincode": "500081",
+    "coordinates": {
+      "latitude": 17.4435,
+      "longitude": 78.3772
+    },
+    "bbox": [
+      78.35,
+      17.42,
+      78.4,
+      17.47
+    ]
+  },
+  {
+    "name": "Banjara Hills",
+    "canonical_name": "Banjara Hills",
+    "name_hi": "बंजारा हिल्स",
+    "name_mr": "बंजारा हिल्स",
+    "aliases": [
+      "Road No 1 Banjara Hills",
+      "Road No 12 Banjara Hills"
+    ],
+    "subdistrict_id": "subdist_ameerpet",
+    "subdistrict": "Ameerpet",
+    "district_id": "dist_hyderabad",
+    "district": "Hyderabad",
+    "state_id": 36,
+    "state": "Telangana",
+    "state_code": "TG",
+    "pincode": "500034",
+    "coordinates": {
+      "latitude": 17.4156,
+      "longitude": 78.4357
+    },
+    "bbox": [
+      78.41,
+      17.39,
+      78.46,
+      17.44
+    ]
+  },
+  {
+    "name": "Navrangpura",
+    "canonical_name": "Navrangpura",
+    "name_hi": "नवरंगपुरा",
+    "name_mr": "नवरंगपुरा",
+    "aliases": [
+      "Navrangpura Ahmedabad",
+      "CG Road Navrangpura"
+    ],
+    "subdistrict_id": "subdist_daskroi",
+    "subdistrict": "Daskroi",
+    "district_id": "dist_ahmedabad",
+    "district": "Ahmedabad",
+    "state_id": 24,
+    "state": "Gujarat",
+    "state_code": "GJ",
+    "pincode": "380009",
+    "coordinates": {
+      "latitude": 23.0365,
+      "longitude": 72.5611
+    },
+    "bbox": [
+      72.54,
+      23.01,
+      72.58,
+      23.06
+    ]
+  },
+  {
+    "name": "Vesu",
+    "canonical_name": "Vesu",
+    "name_hi": "वेसू",
+    "name_mr": "वेसू",
+    "aliases": [
+      "Vesu Surat",
+      "VIP Road Vesu"
+    ],
+    "subdistrict_id": "subdist_chorasi",
+    "subdistrict": "Chorasi",
+    "district_id": "dist_surat",
+    "district": "Surat",
+    "state_id": 24,
+    "state": "Gujarat",
+    "state_code": "GJ",
+    "pincode": "395007",
+    "coordinates": {
+      "latitude": 21.1418,
+      "longitude": 72.7709
+    },
+    "bbox": [
+      72.75,
+      21.12,
+      72.79,
+      21.16
+    ]
+  },
+  {
+    "name": "Malviya Nagar",
+    "canonical_name": "Malviya Nagar",
+    "name_hi": "मालवीय नगर",
+    "name_mr": "मालवीय नगर",
+    "aliases": [
+      "Malviya Nagar Jaipur",
+      "World Trade Park Malviya Nagar"
+    ],
+    "subdistrict_id": "subdist_sanganer",
+    "subdistrict": "Sanganer",
+    "district_id": "dist_jaipur",
+    "district": "Jaipur",
+    "state_id": 8,
+    "state": "Rajasthan",
+    "state_code": "RJ",
+    "pincode": "302017",
+    "coordinates": {
+      "latitude": 26.8532,
+      "longitude": 75.8052
+    },
+    "bbox": [
+      75.78,
+      26.83,
+      75.83,
+      26.88
+    ]
+  },
+  {
+    "name": "Vaishali Nagar",
+    "canonical_name": "Vaishali Nagar",
+    "name_hi": "वैशाली नगर",
+    "name_mr": "वैशाली नगर",
+    "aliases": [
+      "Vaishali Nagar Jaipur",
+      "Amrapali Plaza Vaishali Nagar"
+    ],
+    "subdistrict_id": "subdist_jaipur",
+    "subdistrict": "Jaipur",
+    "district_id": "dist_jaipur",
+    "district": "Jaipur",
+    "state_id": 8,
+    "state": "Rajasthan",
+    "state_code": "RJ",
+    "pincode": "302021",
+    "coordinates": {
+      "latitude": 26.9069,
+      "longitude": 75.7434
+    },
+    "bbox": [
+      75.72,
+      26.88,
+      75.77,
+      26.93
+    ]
+  },
+  {
+    "name": "Sector 62",
+    "canonical_name": "Sector 62",
+    "name_hi": "सेक्टर 62",
+    "name_mr": "सेक्टर 62",
+    "aliases": [
+      "Sector 62 Noida",
+      "Noida Sector 62",
+      "Cyber City",
+      "DLF Phase 2"
+    ],
+    "subdistrict_id": "subdist_dadri",
+    "subdistrict": "Dadri",
+    "district_id": "dist_gautam_buddha_nagar",
+    "district": "Gautam Buddha Nagar",
+    "state_id": 9,
+    "state": "Uttar Pradesh",
+    "state_code": "UP",
+    "pincode": "201309",
+    "coordinates": {
+      "latitude": 28.6258,
+      "longitude": 77.3653
+    },
+    "bbox": [
+      77.34,
+      28.6,
+      77.39,
+      28.65
+    ]
+  },
+  {
+    "name": "Gomti Nagar",
+    "canonical_name": "Gomti Nagar",
+    "name_hi": "गोमती नगर",
+    "name_mr": "गोमती नगर",
+    "aliases": [
+      "Gomti Nagar Extension",
+      "Vibhuti Khand Gomti Nagar"
+    ],
+    "subdistrict_id": "subdist_lucknow",
+    "subdistrict": "Lucknow",
+    "district_id": "dist_lucknow",
+    "district": "Lucknow",
+    "state_id": 9,
+    "state": "Uttar Pradesh",
+    "state_code": "UP",
+    "pincode": "226010",
+    "coordinates": {
+      "latitude": 26.8529,
+      "longitude": 80.9962
+    },
+    "bbox": [
+      77.97,
+      26.83,
+      81.02,
+      26.88
     ]
   },
   {
     "name": "Rampur",
-    "canonical_name": "Rampur",
+    "canonical_name": "Rampur UP",
     "name_hi": "रामपुर",
     "name_mr": "रामपूर",
     "aliases": [
-      "Rampur City"
+      "Rampur City UP",
+      "Rampur Town"
     ],
-    "subdistrict_id": null,
+    "subdistrict_id": "subdist_rampur_up",
     "subdistrict": "Rampur",
-    "district_id": "dist_rampur",
+    "district_id": "dist_rampur_up",
     "district": "Rampur",
     "state_id": 9,
     "state": "Uttar Pradesh",
@@ -626,66 +1054,55 @@
     "pincode": "244901",
     "coordinates": {
       "latitude": 28.8154,
-      "longitude": 79.0257
+      "longitude": 79.025
     },
     "bbox": [
-      78.98,
-      28.78,
-      79.07,
-      28.85
-    ],
-    "polygon": [
-      [
-        78.98,
-        28.8
-      ],
-      [
-        79.01,
-        28.85
-      ],
-      [
-        79.07,
-        28.83
-      ],
-      [
-        79.05,
-        28.78
-      ],
-      [
-        78.98,
-        28.8
-      ]
+      78.99,
+      28.79,
+      79.06,
+      28.84
     ]
   },
   {
-    "id": "loc_rampur_bihar",
     "name": "Rampur",
-    "canonical_name": "Rampur",
-    "name_hi": "रामपुर",
-    "aliases": ["Rampur Block", "Rampur Bihar"],
-    "subdistrict_id": "subdist_rampur_bihar",
+    "canonical_name": "Rampur HP",
+    "name_hi": "रामपुर बुशहर",
+    "name_mr": "रामपूर",
+    "aliases": [
+      "Rampur Bushahr",
+      "Rampur Shimla"
+    ],
+    "subdistrict_id": "subdist_rampur_bushahr",
     "subdistrict": "Rampur",
-    "district_id": "dist_kaimur",
-    "district": "Kaimur",
-    "state_id": 10,
-    "state": "Bihar",
-    "state_code": "BR",
-    "pincode": "821101",
+    "district_id": "dist_shimla",
+    "district": "Shimla",
+    "state_id": 2,
+    "state": "Himachal Pradesh",
+    "state_code": "HP",
+    "pincode": "172101",
     "coordinates": {
-      "latitude": 24.9622,
-      "longitude": 83.6144
+      "latitude": 31.4485,
+      "longitude": 77.63
     },
-    "bbox": [83.55, 24.90, 83.70, 25.02]
+    "bbox": [
+      77.61,
+      31.43,
+      77.65,
+      31.47
+    ]
   },
   {
-    "id": "loc_bilaspur_cg",
     "name": "Bilaspur",
-    "canonical_name": "Bilaspur",
+    "canonical_name": "Bilaspur CG",
     "name_hi": "बिलासपुर",
-    "aliases": ["Bilaspur City", "Bilaspur CG"],
-    "subdistrict_id": "subdist_bilaspur",
+    "name_mr": "बिलासपूर",
+    "aliases": [
+      "Bilaspur City CG",
+      "Bilaspur Chhattisgarh"
+    ],
+    "subdistrict_id": "subdist_bilaspur_cg",
     "subdistrict": "Bilaspur",
-    "district_id": "dist_bilaspur",
+    "district_id": "dist_bilaspur_cg",
     "district": "Bilaspur",
     "state_id": 22,
     "state": "Chhattisgarh",
@@ -695,16 +1112,24 @@
       "latitude": 22.0797,
       "longitude": 82.1409
     },
-    "bbox": [82.10, 22.04, 82.20, 22.12]
+    "bbox": [
+      82.11,
+      22.05,
+      82.17,
+      22.11
+    ]
   },
   {
-    "id": "loc_bilaspur_hp",
     "name": "Bilaspur",
-    "canonical_name": "Bilaspur",
+    "canonical_name": "Bilaspur HP",
     "name_hi": "बिलासपुर",
-    "aliases": ["Bilaspur Sadar", "Bilaspur HP"],
+    "name_mr": "बिलासपूर",
+    "aliases": [
+      "Bilaspur Town HP",
+      "Bilaspur Himachal"
+    ],
     "subdistrict_id": "subdist_bilaspur_hp",
-    "subdistrict": "Sadar",
+    "subdistrict": "Bilaspur Sadar",
     "district_id": "dist_bilaspur_hp",
     "district": "Bilaspur",
     "state_id": 2,
@@ -712,9 +1137,177 @@
     "state_code": "HP",
     "pincode": "174001",
     "coordinates": {
-      "latitude": 31.3260,
-      "longitude": 76.7567
+      "latitude": 31.3411,
+      "longitude": 76.757
     },
-    "bbox": [76.70, 31.28, 76.80, 31.36]
+    "bbox": [
+      76.73,
+      31.32,
+      76.78,
+      31.36
+    ]
+  },
+  {
+    "name": "Fatehpur",
+    "canonical_name": "Fatehpur UP",
+    "name_hi": "फतेहपुर",
+    "name_mr": "फतेहपूर",
+    "aliases": [
+      "Fatehpur City UP"
+    ],
+    "subdistrict_id": "subdist_fatehpur_up",
+    "subdistrict": "Fatehpur",
+    "district_id": "dist_fatehpur_up",
+    "district": "Fatehpur",
+    "state_id": 9,
+    "state": "Uttar Pradesh",
+    "state_code": "UP",
+    "pincode": "212601",
+    "coordinates": {
+      "latitude": 25.9284,
+      "longitude": 80.813
+    },
+    "bbox": [
+      80.78,
+      25.9,
+      80.85,
+      25.95
+    ]
+  },
+  {
+    "name": "Fatehpur",
+    "canonical_name": "Fatehpur RJ",
+    "name_hi": "फतेहपुर शेखावाटी",
+    "name_mr": "फतेहपूर",
+    "aliases": [
+      "Fatehpur Shekhawati"
+    ],
+    "subdistrict_id": "subdist_fatehpur_rj",
+    "subdistrict": "Fatehpur",
+    "district_id": "dist_sikar",
+    "district": "Sikar",
+    "state_id": 8,
+    "state": "Rajasthan",
+    "state_code": "RJ",
+    "pincode": "332301",
+    "coordinates": {
+      "latitude": 27.9845,
+      "longitude": 74.954
+    },
+    "bbox": [
+      74.92,
+      27.96,
+      74.98,
+      28.01
+    ]
+  },
+  {
+    "name": "Rajapur",
+    "canonical_name": "Rajapur MH",
+    "name_hi": "राजापुर",
+    "name_mr": "राजापूर",
+    "aliases": [
+      "Rajapur Konkan"
+    ],
+    "subdistrict_id": "subdist_rajapur_mh",
+    "subdistrict": "Rajapur",
+    "district_id": "dist_ratnagiri",
+    "district": "Ratnagiri",
+    "state_id": 27,
+    "state": "Maharashtra",
+    "state_code": "MH",
+    "pincode": "416702",
+    "coordinates": {
+      "latitude": 16.658,
+      "longitude": 73.518
+    },
+    "bbox": [
+      73.49,
+      16.63,
+      73.54,
+      16.68
+    ]
+  },
+  {
+    "name": "Rajapur",
+    "canonical_name": "Rajapur UP",
+    "name_hi": "राजापुर",
+    "name_mr": "राजापूर",
+    "aliases": [
+      "Rajapur Chitrakoot"
+    ],
+    "subdistrict_id": "subdist_rajapur_up",
+    "subdistrict": "Rajapur",
+    "district_id": "dist_chitrakoot",
+    "district": "Chitrakoot",
+    "state_id": 9,
+    "state": "Uttar Pradesh",
+    "state_code": "UP",
+    "pincode": "210207",
+    "coordinates": {
+      "latitude": 25.385,
+      "longitude": 81.155
+    },
+    "bbox": [
+      81.13,
+      25.36,
+      81.18,
+      25.41
+    ]
+  },
+  {
+    "name": "Aurangabad",
+    "canonical_name": "Aurangabad MH",
+    "name_hi": "औरंगाबाद",
+    "name_mr": "छत्रपती संभाजीनगर",
+    "aliases": [
+      "Chhatrapati Sambhajinagar",
+      "Sambhajinagar"
+    ],
+    "subdistrict_id": "subdist_aurangabad_mh",
+    "subdistrict": "Aurangabad",
+    "district_id": "dist_aurangabad_mh",
+    "district": "Aurangabad",
+    "state_id": 27,
+    "state": "Maharashtra",
+    "state_code": "MH",
+    "pincode": "431001",
+    "coordinates": {
+      "latitude": 19.8762,
+      "longitude": 75.3433
+    },
+    "bbox": [
+      75.3,
+      19.85,
+      75.38,
+      19.9
+    ]
+  },
+  {
+    "name": "Aurangabad",
+    "canonical_name": "Aurangabad BR",
+    "name_hi": "औरंगाबाद",
+    "name_mr": "औरंगाबाद",
+    "aliases": [
+      "Aurangabad Bihar"
+    ],
+    "subdistrict_id": "subdist_aurangabad_br",
+    "subdistrict": "Aurangabad",
+    "district_id": "dist_aurangabad_br",
+    "district": "Aurangabad",
+    "state_id": 10,
+    "state": "Bihar",
+    "state_code": "BR",
+    "pincode": "824101",
+    "coordinates": {
+      "latitude": 24.7539,
+      "longitude": 84.3739
+    },
+    "bbox": [
+      84.34,
+      24.73,
+      84.4,
+      24.78
+    ]
   }
 ]

@@ -1,0 +1,90 @@
+[
+  {
+    "alias": "Khardi",
+    "canonical": "Kharadi",
+    "entity_type": "LOCALITY",
+    "language": "en",
+    "source": "vowel_omission",
+    "confidence": 0.95
+  },
+  {
+    "alias": "Kharadee",
+    "canonical": "Kharadi",
+    "entity_type": "LOCALITY",
+    "language": "en",
+    "source": "phonetic_variant",
+    "confidence": 0.95
+  },
+  {
+    "alias": "Hinjawadi",
+    "canonical": "Hinjewadi",
+    "entity_type": "LOCALITY",
+    "language": "en",
+    "source": "vowel_variant",
+    "confidence": 0.98
+  },
+  {
+    "alias": "Banere",
+    "canonical": "Baner",
+    "entity_type": "LOCALITY",
+    "language": "en",
+    "source": "phonetic_variant",
+    "confidence": 0.95
+  },
+  {
+    "alias": "Puna",
+    "canonical": "Pune",
+    "entity_type": "CITY",
+    "language": "en",
+    "source": "schwa_variant",
+    "confidence": 0.98
+  },
+  {
+    "alias": "Nasik",
+    "canonical": "Nashik",
+    "entity_type": "CITY",
+    "language": "en",
+    "source": "phonetic_sibilant",
+    "confidence": 0.98
+  },
+  {
+    "alias": "Ahemadnagar",
+    "canonical": "Ahmednagar",
+    "entity_type": "CITY",
+    "language": "en",
+    "source": "vowel_insertion",
+    "confidence": 0.98
+  },
+  {
+    "alias": "Maharastra",
+    "canonical": "Maharashtra",
+    "entity_type": "STATE",
+    "language": "en",
+    "source": "aspirate_omission",
+    "confidence": 0.98
+  },
+  {
+    "alias": "Kothrood",
+    "canonical": "Kothrud",
+    "entity_type": "LOCALITY",
+    "language": "en",
+    "source": "vowel_variant",
+    "confidence": 0.95
+  },
+  {
+    "alias": "Powaye",
+    "canonical": "Powai",
+    "entity_type": "LOCALITY",
+    "language": "en",
+    "source": "phonetic_variant",
+    "confidence": 0.95
+  },
+  {
+    "alias": "Goculam",
+    "canonical": "Gokulam",
+    "entity_type": "LOCALITY",
+    "language": "en",
+    "source": "phonetic_variant",
+    "confidence": 0.95
+  }
+]
