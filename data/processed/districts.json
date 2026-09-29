@@ -1,14 +1,20 @@
 [
   {
     "id": "dist_pune",
+    "lgd_code": 490,
     "name": "Pune",
     "canonical_name": "Pune",
+    "name_hi": "पुणे",
+    "name_mr": "पुणे",
     "aliases": [
       "Poona",
-      "Pune District"
+      "Pune District",
+      "Puna"
     ],
+    "state_lgd_code": 27,
     "state_code": "MH",
     "state_name": "Maharashtra",
+    "headquarters": "Pune",
     "bbox": [
       73.3,
       17.9,
@@ -47,16 +53,22 @@
     ]
   },
   {
-    "id": "dist_mumbai",
+    "id": "dist_mumbai_suburban",
+    "lgd_code": 489,
     "name": "Mumbai Suburban",
     "canonical_name": "Mumbai Suburban",
+    "name_hi": "मुंबई उपनगर",
+    "name_mr": "मुंबई उपनगर",
     "aliases": [
       "Mumbai",
       "Bombay",
-      "Mumbai Suburban District"
+      "Mumbai Suburban District",
+      "Bandra"
     ],
+    "state_lgd_code": 27,
     "state_code": "MH",
     "state_name": "Maharashtra",
+    "headquarters": "Bandra",
     "bbox": [
       72.7,
       18.9,
@@ -87,14 +99,106 @@
     ]
   },
   {
+    "id": "dist_mumbai_city",
+    "lgd_code": 488,
+    "name": "Mumbai City",
+    "canonical_name": "Mumbai City",
+    "name_hi": "मुंबई शहर",
+    "name_mr": "मुंबई शहर",
+    "aliases": [
+      "South Mumbai",
+      "Town"
+    ],
+    "state_lgd_code": 27,
+    "state_code": "MH",
+    "state_name": "Maharashtra",
+    "headquarters": "Mumbai",
+    "bbox": [
+      72.8,
+      18.88,
+      72.86,
+      19.02
+    ],
+    "polygon": [
+      [
+        72.8,
+        18.9
+      ],
+      [
+        72.82,
+        19.02
+      ],
+      [
+        72.86,
+        19.0
+      ],
+      [
+        72.84,
+        18.88
+      ],
+      [
+        72.8,
+        18.9
+      ]
+    ]
+  },
+  {
+    "id": "dist_thane",
+    "lgd_code": 501,
+    "name": "Thane",
+    "canonical_name": "Thane",
+    "name_hi": "ठाणे",
+    "name_mr": "ठाणे",
+    "aliases": [
+      "Thana"
+    ],
+    "state_lgd_code": 27,
+    "state_code": "MH",
+    "state_name": "Maharashtra",
+    "headquarters": "Thane",
+    "bbox": [
+      72.9,
+      19.1,
+      73.5,
+      19.6
+    ],
+    "polygon": [
+      [
+        72.9,
+        19.2
+      ],
+      [
+        73.1,
+        19.6
+      ],
+      [
+        73.5,
+        19.4
+      ],
+      [
+        73.3,
+        19.1
+      ],
+      [
+        72.9,
+        19.2
+      ]
+    ]
+  },
+  {
     "id": "dist_kolhapur",
+    "lgd_code": 482,
     "name": "Kolhapur",
     "canonical_name": "Kolhapur",
+    "name_hi": "कोल्हापुर",
+    "name_mr": "कोल्हापूर",
     "aliases": [
       "Kolhapur District"
     ],
+    "state_lgd_code": 27,
     "state_code": "MH",
     "state_name": "Maharashtra",
+    "headquarters": "Kolhapur",
     "bbox": [
       73.7,
       15.7,
@@ -126,13 +230,18 @@
   },
   {
     "id": "dist_nagpur",
+    "lgd_code": 485,
     "name": "Nagpur",
     "canonical_name": "Nagpur",
+    "name_hi": "नागपुर",
+    "name_mr": "नागपूर",
     "aliases": [
       "Nagpur District"
     ],
+    "state_lgd_code": 27,
     "state_code": "MH",
     "state_name": "Maharashtra",
+    "headquarters": "Nagpur",
     "bbox": [
       78.5,
       20.5,
@@ -163,17 +272,110 @@
     ]
   },
   {
+    "id": "dist_nashik",
+    "lgd_code": 487,
+    "name": "Nashik",
+    "canonical_name": "Nashik",
+    "name_hi": "नासिक",
+    "name_mr": "नाशिक",
+    "aliases": [
+      "Nasik"
+    ],
+    "state_lgd_code": 27,
+    "state_code": "MH",
+    "state_name": "Maharashtra",
+    "headquarters": "Nashik",
+    "bbox": [
+      73.3,
+      19.5,
+      74.9,
+      20.9
+    ],
+    "polygon": [
+      [
+        73.3,
+        20.0
+      ],
+      [
+        74.0,
+        20.9
+      ],
+      [
+        74.9,
+        20.5
+      ],
+      [
+        74.5,
+        19.5
+      ],
+      [
+        73.3,
+        20.0
+      ]
+    ]
+  },
+  {
+    "id": "dist_aurangabad_mh",
+    "lgd_code": 470,
+    "name": "Chhatrapati Sambhajinagar",
+    "canonical_name": "Chhatrapati Sambhajinagar",
+    "name_hi": "छत्रपति संभाजीनगर",
+    "name_mr": "छत्रपती संभाजीनगर",
+    "aliases": [
+      "Aurangabad",
+      "Aurangabad Maharashtra",
+      "Sambhajinagar"
+    ],
+    "state_lgd_code": 27,
+    "state_code": "MH",
+    "state_name": "Maharashtra",
+    "headquarters": "Chhatrapati Sambhajinagar",
+    "bbox": [
+      74.7,
+      19.3,
+      76.0,
+      20.7
+    ],
+    "polygon": [
+      [
+        74.7,
+        19.8
+      ],
+      [
+        75.2,
+        20.7
+      ],
+      [
+        76.0,
+        20.2
+      ],
+      [
+        75.5,
+        19.3
+      ],
+      [
+        74.7,
+        19.8
+      ]
+    ]
+  },
+  {
     "id": "dist_bengaluru_urban",
+    "lgd_code": 529,
     "name": "Bengaluru Urban",
     "canonical_name": "Bengaluru Urban",
+    "name_hi": "बेंगलुरु शहरी",
+    "name_mr": "बंगळूर शहरी",
     "aliases": [
       "Bangalore",
       "Bengaluru",
       "Bangalore Urban",
       "BLR"
     ],
+    "state_lgd_code": 29,
     "state_code": "KA",
     "state_name": "Karnataka",
+    "headquarters": "Bengaluru",
     "bbox": [
       77.4,
       12.7,
@@ -208,16 +410,64 @@
     ]
   },
   {
+    "id": "dist_mysuru",
+    "lgd_code": 544,
+    "name": "Mysuru",
+    "canonical_name": "Mysuru",
+    "name_hi": "मैसूर",
+    "name_mr": "म्हैसूर",
+    "aliases": [
+      "Mysore"
+    ],
+    "state_lgd_code": 29,
+    "state_code": "KA",
+    "state_name": "Karnataka",
+    "headquarters": "Mysuru",
+    "bbox": [
+      75.9,
+      11.7,
+      77.1,
+      12.6
+    ],
+    "polygon": [
+      [
+        75.9,
+        12.2
+      ],
+      [
+        76.5,
+        12.6
+      ],
+      [
+        77.1,
+        12.0
+      ],
+      [
+        76.6,
+        11.7
+      ],
+      [
+        75.9,
+        12.2
+      ]
+    ]
+  },
+  {
     "id": "dist_new_delhi",
+    "lgd_code": 88,
     "name": "New Delhi",
     "canonical_name": "New Delhi",
+    "name_hi": "नई दिल्ली",
+    "name_mr": "नवी दिल्ली",
     "aliases": [
       "Central Delhi",
       "Delhi Central",
       "NDLS"
     ],
+    "state_lgd_code": 7,
     "state_code": "DL",
     "state_name": "Delhi",
+    "headquarters": "Connaught Place",
     "bbox": [
       77.1,
       28.5,
@@ -248,15 +498,63 @@
     ]
   },
   {
+    "id": "dist_south_delhi",
+    "lgd_code": 91,
+    "name": "South Delhi",
+    "canonical_name": "South Delhi",
+    "name_hi": "दक्षिण दिल्ली",
+    "name_mr": "दक्षिण दिल्ली",
+    "aliases": [
+      "South Delhi District"
+    ],
+    "state_lgd_code": 7,
+    "state_code": "DL",
+    "state_name": "Delhi",
+    "headquarters": "Saket",
+    "bbox": [
+      77.15,
+      28.45,
+      77.3,
+      28.58
+    ],
+    "polygon": [
+      [
+        77.15,
+        28.5
+      ],
+      [
+        77.25,
+        28.58
+      ],
+      [
+        77.3,
+        28.52
+      ],
+      [
+        77.2,
+        28.45
+      ],
+      [
+        77.15,
+        28.5
+      ]
+    ]
+  },
+  {
     "id": "dist_chennai",
+    "lgd_code": 565,
     "name": "Chennai",
     "canonical_name": "Chennai",
+    "name_hi": "चेन्नई",
+    "name_mr": "चेन्नई",
     "aliases": [
       "Madras",
       "Chennai District"
     ],
+    "state_lgd_code": 33,
     "state_code": "TN",
     "state_name": "Tamil Nadu",
+    "headquarters": "Chennai",
     "bbox": [
       80.1,
       12.9,
@@ -288,14 +586,20 @@
   },
   {
     "id": "dist_hyderabad",
+    "lgd_code": 505,
     "name": "Hyderabad",
     "canonical_name": "Hyderabad",
+    "name_hi": "हैदराबाद",
+    "name_mr": "हैदराबाद",
     "aliases": [
       "Hyderabad District",
-      "HYD"
+      "HYD",
+      "Secunderabad"
     ],
+    "state_lgd_code": 36,
     "state_code": "TG",
     "state_name": "Telangana",
+    "headquarters": "Hyderabad",
     "bbox": [
       78.3,
       17.2,
@@ -322,6 +626,136 @@
       [
         78.3,
         17.4
+      ]
+    ]
+  },
+  {
+    "id": "dist_lucknow",
+    "lgd_code": 160,
+    "name": "Lucknow",
+    "canonical_name": "Lucknow",
+    "name_hi": "लखनऊ",
+    "name_mr": "लखनौ",
+    "aliases": [
+      "LKO"
+    ],
+    "state_lgd_code": 9,
+    "state_code": "UP",
+    "state_name": "Uttar Pradesh",
+    "headquarters": "Lucknow",
+    "bbox": [
+      80.6,
+      26.5,
+      81.2,
+      27.2
+    ],
+    "polygon": [
+      [
+        80.6,
+        26.8
+      ],
+      [
+        80.9,
+        27.2
+      ],
+      [
+        81.2,
+        26.9
+      ],
+      [
+        80.9,
+        26.5
+      ],
+      [
+        80.6,
+        26.8
+      ]
+    ]
+  },
+  {
+    "id": "dist_rampur",
+    "lgd_code": 178,
+    "name": "Rampur",
+    "canonical_name": "Rampur",
+    "name_hi": "रामपुर",
+    "name_mr": "रामपूर",
+    "aliases": [
+      "Rampur District"
+    ],
+    "state_lgd_code": 9,
+    "state_code": "UP",
+    "state_name": "Uttar Pradesh",
+    "headquarters": "Rampur",
+    "bbox": [
+      78.9,
+      28.6,
+      79.3,
+      29.1
+    ],
+    "polygon": [
+      [
+        78.9,
+        28.8
+      ],
+      [
+        79.1,
+        29.1
+      ],
+      [
+        79.3,
+        28.9
+      ],
+      [
+        79.1,
+        28.6
+      ],
+      [
+        78.9,
+        28.8
+      ]
+    ]
+  },
+  {
+    "id": "dist_north_24_parganas",
+    "lgd_code": 310,
+    "name": "North 24 Parganas",
+    "canonical_name": "North 24 Parganas",
+    "name_hi": "उत्तर 24 परगना",
+    "name_mr": "उत्तर २४ परगणा",
+    "aliases": [
+      "24 Parganas North",
+      "Rajarhat Area"
+    ],
+    "state_lgd_code": 19,
+    "state_code": "WB",
+    "state_name": "West Bengal",
+    "headquarters": "Barasat",
+    "bbox": [
+      88.3,
+      22.2,
+      89.1,
+      23.2
+    ],
+    "polygon": [
+      [
+        88.3,
+        22.6
+      ],
+      [
+        88.7,
+        23.2
+      ],
+      [
+        89.1,
+        22.8
+      ],
+      [
+        88.8,
+        22.2
+      ],
+      [
+        88.3,
+        22.6
       ]
     ]
   }

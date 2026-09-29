@@ -136,6 +136,14 @@ export interface NearbyPlace {
   state?: string;
 }
 
+export interface DataSourceAttribution {
+  name: string;
+  source_url: string;
+  license: string;
+  version: string;
+  coverage: string;
+}
+
 export interface VerificationResponse {
   verification_id: string;
   timestamp: string;
@@ -153,6 +161,7 @@ export interface VerificationResponse {
   pin_verification: PinVerificationResult;
   score_breakdown: ScoreBreakdown;
   nearby_places: NearbyPlace[];
+  data_sources?: DataSourceAttribution[];
 }
 
 export interface StructuredAddressRequest {

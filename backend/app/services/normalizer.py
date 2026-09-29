@@ -9,67 +9,67 @@ from app.schemas.address import NormalizedAddress, TransformationStep
 STATE_MAPPINGS = {
     "Maharashtra": {
         "code": "MH",
-        "aliases": ["maharashtra", "maharastra", "maharashthra", "mh", "maha", "maharashtra state"]
+        "aliases": ["maharashtra", "maharastra", "maharashthra", "mh", "maha", "maharashtra state", "महाराष्ट्र", "महा"]
     },
     "Karnataka": {
         "code": "KA",
-        "aliases": ["karnataka", "karnatak", "ka", "mysore", "mysore state", "karnataka state"]
+        "aliases": ["karnataka", "karnatak", "ka", "mysore", "mysore state", "karnataka state", "कर्नाटक", "ಕರ್ನಾಟಕ"]
     },
     "Delhi": {
         "code": "DL",
-        "aliases": ["delhi", "new delhi", "nct of delhi", "national capital territory of delhi", "dl", "dilli"]
+        "aliases": ["delhi", "new delhi", "nct of delhi", "national capital territory of delhi", "dl", "dilli", "दिल्ली", "दिली"]
     },
     "Tamil Nadu": {
         "code": "TN",
-        "aliases": ["tamil nadu", "tamilnadu", "tn", "madras state", "tamil nadu state"]
+        "aliases": ["tamil nadu", "tamilnadu", "tn", "madras state", "tamil nadu state", "तमिलनाडु", "தமிழ்நாடு"]
     },
     "Telangana": {
         "code": "TG",
-        "aliases": ["telangana", "telengana", "tg", "ts"]
+        "aliases": ["telangana", "telengana", "tg", "ts", "तेलंगाना", "తెలంగాణ"]
     },
     "Gujarat": {
         "code": "GJ",
-        "aliases": ["gujarat", "gujrat", "gj", "gujarat state"]
+        "aliases": ["gujarat", "gujrat", "gj", "gujarat state", "गुजरात", "ગુજરાત"]
     },
     "West Bengal": {
         "code": "WB",
-        "aliases": ["west bengal", "westbengal", "wb", "paschim banga", "bengal"]
+        "aliases": ["west bengal", "westbengal", "wb", "paschim banga", "bengal", "पश्चिम बंगाल", "পশ্চিমবঙ্গ"]
     },
     "Uttar Pradesh": {
         "code": "UP",
-        "aliases": ["uttar pradesh", "uttarpradesh", "up", "u.p."]
+        "aliases": ["uttar pradesh", "uttarpradesh", "up", "u.p.", "उत्तर प्रदेश"]
     },
     "Rajasthan": {
         "code": "RJ",
-        "aliases": ["rajasthan", "rajsthan", "rj", "rajputana"]
+        "aliases": ["rajasthan", "rajsthan", "rj", "rajputana", "राजस्थान"]
     },
     "Kerala": {
         "code": "KL",
-        "aliases": ["kerala", "keralam", "kl"]
+        "aliases": ["kerala", "keralam", "kl", "केरल", "केरलम", "കേരളം"]
     },
     "Madhya Pradesh": {
         "code": "MP",
-        "aliases": ["madhya pradesh", "mp", "m.p."]
+        "aliases": ["madhya pradesh", "mp", "m.p.", "मध्य प्रदेश"]
     },
     "Andhra Pradesh": {
         "code": "AP",
-        "aliases": ["andhra pradesh", "ap", "a.p."]
+        "aliases": ["andhra pradesh", "ap", "a.p.", "आंध्र प्रदेश", "ఆంధ్ర ప్రదేశ్"]
     },
     "Punjab": {
         "code": "PB",
-        "aliases": ["punjab", "pb"]
+        "aliases": ["punjab", "pb", "पंजाब", "ਪੰਜਾਬ"]
     },
     "Haryana": {
         "code": "HR",
-        "aliases": ["haryana", "hr"]
+        "aliases": ["haryana", "hr", "हरियाणा"]
     },
     "Bihar": {
         "code": "BR",
-        "aliases": ["bihar", "br"]
+        "aliases": ["bihar", "br", "बिहार"]
     },
     "Odisha": {
         "code": "OD",
-        "aliases": ["odisha", "orissa", "od"]
+        "aliases": ["odisha", "orissa", "od", "ओडिशा", "উড়িষ্যা", "ଓଡ଼ିଶା"]
     }
 }
 

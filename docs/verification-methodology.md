@@ -1,8 +1,12 @@
-# Verification Methodology & Scoring Model
+# Verification Methodology & Scoring Model (Phase 2)
 
 ## 1. Core Principles
 
 GeoVerify India operates on an evidence-based multi-signal model. An address is never marked as fraudulent simply because of minor formatting variations or missing optional fields.
+
+The system verifies the **geographic consistency and administrative validity** of address components without claiming or profiling whether a specific resident lives there.
+
+---
 
 ## 2. Consistency Scoring Framework
 
@@ -12,12 +16,12 @@ $$\text{Score} = S_{\text{hierarchy}} + S_{\text{boundary}} + S_{\text{locality}
 
 | Signal Layer | Max Weight | Verification Criteria |
 | :--- | :---: | :--- |
-| **Administrative Hierarchy** | 25 | Validates parent-child alignment between country, state, district, and taluka. |
-| **Geographic Boundary Match** | 25 | Confirms point coordinates fall inside authoritative district and state polygons. |
+| **Administrative Hierarchy** | 25 | Validates multi-tier parent-child alignment: Country $\rightarrow$ State $\rightarrow$ District $\rightarrow$ Sub-District / Taluka $\rightarrow$ Locality. |
+| **Geographic Boundary Match** | 25 | Confirms point coordinates fall inside authoritative district, state, and subdistrict polygons via Shapely. |
 | **Locality Match** | 20 | Confirms locality / village exists within the asserted jurisdiction. |
-| **PIN Code Consistency** | 15 | Validates 6-digit postal format, postal circle prefix, and centroid distance $\le 20\text{ km}$. |
+| **PIN Code Consistency** | 15 | Validates 6-digit postal format, circle prefix alignment, postal district, and centroid distance $\le 20\text{ km}$. |
 | **Geocoding Quality** | 10 | Granularity and confidence of resolved spatial coordinates. |
-| **Nearby Context** | 5 | Presence of verified contextual infrastructure (transit, hospitals, public services). |
+| **Nearby Context** | 5 | Presence of verified contextual infrastructure (transit hubs, hospitals, public services). |
 | **Total** | **100** | |
 
 ---
@@ -41,3 +45,11 @@ The locality name occurs across multiple Indian states/districts without disting
 
 ### `UNABLE_TO_VERIFY`
 Insufficient geographic tokens to resolve or verify location.
+
+---
+
+## 4. Signal Breakdown Isolation
+
+1. **PIN Code Validation Separation**: Format errors, postal circle mismatches, and geographic distance deviations are tracked as separate evidence signals so an out-of-range PIN does not automatically invalidate valid hierarchical administrative boundaries.
+2. **Sub-District Verification**: Distinguishes administrative subdivisions across Indian nomenclature (Taluka in Maharashtra/Gujarat, Tehsil in UP/Rajasthan, Mandal in Telangana/AP, Subdivision in Delhi/Bengal).
+3. **Multilingual Invariance**: Normalized equivalence is maintained regardless of whether names are submitted in English, Hindi, or Marathi Devanagari script.

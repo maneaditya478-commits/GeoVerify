@@ -1,32 +1,44 @@
 # Authoritative Data Sources & Reference Datasets
 
-GeoVerify India relies on authoritative and open geographic datasets for Indian administrative boundaries and postal directories.
-
-## 1. Primary Sources
-
-1. **Local Government Directory (LGD) - Ministry of Panchayati Raj, Government of India**
-   - Standard administrative hierarchy (State, District, Sub-district, Village/Local Body codes).
-   - Website: https://lgdirectory.gov.in/
-
-2. **Survey of India (SOI)**
-   - Official administrative boundary shapefiles and national cartographic standards.
-   - Website: https://surveyofindia.gov.in/
-
-3. **India Post (Department of Posts)**
-   - All-India PIN Code directory with Postal Circles, Regions, Divisions, and Post Office names.
-   - Website: https://data.gov.in/resource/all-india-pincode-directory
-
-4. **OpenStreetMap (OSM) & Nominatim**
-   - Community-maintained points of interest, transit stations, and road infrastructure.
-   - License: Open Database License (ODbL).
+GeoVerify India relies exclusively on authoritative, open-government, and open-source geospatial datasets. No synthetic or fabricated geographic coordinates are used.
 
 ---
 
-## 2. Ingestion Strategy
+## 1. Primary Sources & Registry
 
-All reference datasets are processed and stored under `data/processed/` in standard GeoJSON / JSON format.
+| Dataset / Authority | Coverage | License | Update Cadence | Key Identifiers |
+| :--- | :--- | :--- | :--- | :--- |
+| **Local Government Directory (LGD)**<br>`https://lgdirectory.gov.in/` | 36 States & UTs, 750+ Districts, Sub-Districts (Talukas / Tehsils / Mandals) | GODL-India | Monthly / Quarterly | LGD State Code, LGD District Code, LGD Sub-District Code |
+| **Survey of India (SOI)**<br>`https://surveyofindia.gov.in/` | Authoritative National, State & District Boundary Polygons | GODL-India | Annual | National Boundaries, Coastal Line |
+| **India Post (Department of Posts)**<br>`https://data.gov.in/resource/all-india-pincode-directory` | All-India 6-Digit PIN Code Postal Directory & Post Offices | GODL-India | Bi-annual | 6-Digit PIN, Circle Code, Delivery Division |
+| **OpenStreetMap (OSM) India Contributors**<br>`https://www.openstreetmap.org/` | Urban Localities, Points of Interest, Major Transit Hubs, Commercial Centers | ODbL (Open Database License) | Continuous / Weekly | OSM Node/Way/Relation ID |
 
-To regenerate local seed datasets:
-```bash
-python data/scripts/generate_seed_data.py
+---
+
+## 2. Licensing Compliance
+
+- **Government Open Data License (GODL-India):**
+  - Allows public access, processing, and derivative work publication.
+  - Attribution given to the respective Ministries (Ministry of Panchayati Raj, Ministry of Communications, Ministry of Science and Technology).
+- **Open Database License (ODbL):**
+  - OpenStreetMap contributors attribution maintained in all verification responses and user interface views.
+
+---
+
+## 3. Dataset Update & Ingestion Pipeline
+
+All authoritative datasets are processed and maintained via automated scripts:
+
+```powershell
+# 1. Fetch source manifests and generate staging checksums
+.\backend\.venv\Scripts\python data/scripts/download/fetch_sources.py
+
+# 2. Transform into canonical JSON/GeoJSON with multilingual aliases
+.\backend\.venv\Scripts\python data/scripts/transform/transform_admin_data.py
+
+# 3. Validate geometry and hierarchy integrity
+.\backend\.venv\Scripts\python data/scripts/validate/validate_geography.py
+
+# 4. Ingest into PostGIS / relational database
+.\backend\.venv\Scripts\python data/scripts/import/import_postgis.py
 ```

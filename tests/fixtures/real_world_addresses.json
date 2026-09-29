@@ -1,0 +1,102 @@
+[
+  {
+    "id": "tc_01_valid_kharadi_pune",
+    "description": "Valid complete address in Pune, Maharashtra",
+    "address": "Flat 402, Ganga Carnation, Near EON IT Park, Kharadi, Pune, Maharashtra 411014",
+    "expected_status": "VERIFIED",
+    "expected_state": "Maharashtra",
+    "expected_district": "Pune",
+    "expected_pincode": "411014",
+    "min_score": 85
+  },
+  {
+    "id": "tc_02_valid_hinjewadi_pune",
+    "description": "Valid IT hub address in Mulshi/Pune",
+    "address": "Phase 1, Rajiv Gandhi Infotech Park, Hinjewadi, Pune, Maharashtra 411057",
+    "expected_status": "VERIFIED",
+    "expected_state": "Maharashtra",
+    "expected_district": "Pune",
+    "expected_pincode": "411057",
+    "min_score": 85
+  },
+  {
+    "id": "tc_03_valid_whitefield_bengaluru",
+    "description": "Valid address in Bengaluru Urban, Karnataka",
+    "address": "ITPB Main Road, Whitefield, Bengaluru, Karnataka 560066",
+    "expected_status": "VERIFIED",
+    "expected_state": "Karnataka",
+    "expected_district": "Bengaluru Urban",
+    "expected_pincode": "560066",
+    "min_score": 85
+  },
+  {
+    "id": "tc_04_valid_connaught_place_delhi",
+    "description": "Valid address in Central/New Delhi",
+    "address": "Inner Circle, Connaught Place, New Delhi, Delhi 110001",
+    "expected_status": "VERIFIED",
+    "expected_state": "Delhi",
+    "expected_district": "New Delhi",
+    "expected_pincode": "110001",
+    "min_score": 85
+  },
+  {
+    "id": "tc_05_valid_bandra_west_mumbai",
+    "description": "Valid address in Mumbai Suburban",
+    "address": "Bandstand Promenade, Bandra West, Mumbai, Maharashtra 400050",
+    "expected_status": "VERIFIED",
+    "expected_state": "Maharashtra",
+    "expected_district": "Mumbai Suburban",
+    "expected_pincode": "400050",
+    "min_score": 85
+  },
+  {
+    "id": "tc_06_district_mismatch",
+    "description": "Kharadi asserted under Kolhapur district instead of Pune",
+    "address": "Kharadi, Kolhapur, Maharashtra 411014",
+    "expected_status": "INCONSISTENT",
+    "expected_state": "Maharashtra",
+    "expected_mismatch": "district"
+  },
+  {
+    "id": "tc_07_state_mismatch",
+    "description": "Pune asserted under Karnataka state",
+    "address": "Kothrud, Pune, Karnataka 411038",
+    "expected_status": "INCONSISTENT",
+    "expected_mismatch": "state"
+  },
+  {
+    "id": "tc_08_pincode_mismatch",
+    "description": "Valid Pune address with Delhi PIN code (110001)",
+    "address": "Kharadi, Pune, Maharashtra 110001",
+    "expected_status": "NEEDS_REVIEW",
+    "expected_mismatch": "pincode"
+  },
+  {
+    "id": "tc_09_spelling_variation_typo",
+    "description": "Address with common typos and abbreviations",
+    "address": "Kharadi, Puna, Maharastra 411014",
+    "expected_status": "VERIFIED",
+    "expected_state": "Maharashtra",
+    "expected_district": "Pune"
+  },
+  {
+    "id": "tc_10_incomplete_address",
+    "description": "Incomplete address with only locality",
+    "address": "Kharadi",
+    "expected_status": "CONSISTENT"
+  },
+  {
+    "id": "tc_11_ambiguous_locality",
+    "description": "Ambiguous locality (Rampur) without disambiguating state or district",
+    "address": "Rampur",
+    "expected_status": "AMBIGUOUS"
+  },
+  {
+    "id": "tc_12_multilingual_marathi",
+    "description": "Address written in Marathi script",
+    "address": "खराडी, पुणे, महाराष्ट्र 411014",
+    "expected_status": "VERIFIED",
+    "expected_state": "Maharashtra",
+    "expected_district": "Pune"
+  }
+]

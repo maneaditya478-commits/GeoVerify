@@ -1,15 +1,20 @@
 [
   {
+    "lgd_code": 27,
     "code": "MH",
     "name": "Maharashtra",
     "canonical_name": "Maharashtra",
+    "name_hi": "महाराष्ट्र",
+    "name_mr": "महाराष्ट्र",
+    "type": "State",
+    "capital": "Mumbai",
     "aliases": [
       "Maharastra",
       "Maharashthra",
       "MH",
-      "Maharashtra State"
+      "Maharashtra State",
+      "Maha"
     ],
-    "capital": "Mumbai",
     "bbox": [
       72.6,
       15.6,
@@ -53,19 +58,25 @@
         72.6,
         18.9
       ]
-    ]
+    ],
+    "source": "Local Government Directory (LGD) / Survey of India",
+    "license": "GODL-India"
   },
   {
+    "lgd_code": 29,
     "code": "KA",
     "name": "Karnataka",
     "canonical_name": "Karnataka",
+    "name_hi": "कर्नाटक",
+    "name_mr": "कर्नाटक",
+    "type": "State",
+    "capital": "Bengaluru",
     "aliases": [
       "Karnatak",
       "KA",
       "Karnataka State",
       "Mysore State"
     ],
-    "capital": "Bengaluru",
     "bbox": [
       74.0,
       11.5,
@@ -105,19 +116,26 @@
         74.0,
         14.5
       ]
-    ]
+    ],
+    "source": "Local Government Directory (LGD) / Survey of India",
+    "license": "GODL-India"
   },
   {
+    "lgd_code": 7,
     "code": "DL",
     "name": "Delhi",
     "canonical_name": "Delhi",
+    "name_hi": "दिल्ली",
+    "name_mr": "दिल्ली",
+    "type": "Union Territory",
+    "capital": "New Delhi",
     "aliases": [
       "NCT of Delhi",
       "National Capital Territory of Delhi",
       "DL",
-      "New Delhi"
+      "New Delhi",
+      "Dilli"
     ],
-    "capital": "New Delhi",
     "bbox": [
       76.8,
       28.4,
@@ -153,18 +171,25 @@
         76.8,
         28.5
       ]
-    ]
+    ],
+    "source": "Local Government Directory (LGD) / Survey of India",
+    "license": "GODL-India"
   },
   {
+    "lgd_code": 33,
     "code": "TN",
     "name": "Tamil Nadu",
     "canonical_name": "Tamil Nadu",
+    "name_hi": "तमिलनाडु",
+    "name_mr": "तमिळनाडू",
+    "type": "State",
+    "capital": "Chennai",
     "aliases": [
       "Tamilnadu",
       "TN",
-      "Madras State"
+      "Madras State",
+      "Tamil Nadu State"
     ],
-    "capital": "Chennai",
     "bbox": [
       76.2,
       8.0,
@@ -204,18 +229,24 @@
         76.2,
         10.5
       ]
-    ]
+    ],
+    "source": "Local Government Directory (LGD) / Survey of India",
+    "license": "GODL-India"
   },
   {
+    "lgd_code": 36,
     "code": "TG",
     "name": "Telangana",
     "canonical_name": "Telangana",
+    "name_hi": "तेलंगाना",
+    "name_mr": "तेलंगणा",
+    "type": "State",
+    "capital": "Hyderabad",
     "aliases": [
       "Telengana",
       "TG",
       "TS"
     ],
-    "capital": "Hyderabad",
     "bbox": [
       77.2,
       15.8,
@@ -251,17 +282,24 @@
         77.2,
         17.0
       ]
-    ]
+    ],
+    "source": "Local Government Directory (LGD) / Survey of India",
+    "license": "GODL-India"
   },
   {
+    "lgd_code": 24,
     "code": "GJ",
     "name": "Gujarat",
     "canonical_name": "Gujarat",
+    "name_hi": "गुजरात",
+    "name_mr": "गुजरात",
+    "type": "State",
+    "capital": "Gandhinagar",
     "aliases": [
       "Gujrat",
-      "GJ"
+      "GJ",
+      "Gujarat State"
     ],
-    "capital": "Gandhinagar",
     "bbox": [
       68.1,
       20.1,
@@ -297,18 +335,25 @@
         68.1,
         23.5
       ]
-    ]
+    ],
+    "source": "Local Government Directory (LGD) / Survey of India",
+    "license": "GODL-India"
   },
   {
+    "lgd_code": 19,
     "code": "WB",
     "name": "West Bengal",
     "canonical_name": "West Bengal",
+    "name_hi": "पश्चिम बंगाल",
+    "name_mr": "पश्चिम बंगाल",
+    "type": "State",
+    "capital": "Kolkata",
     "aliases": [
       "Westbengal",
       "WB",
-      "Paschim Banga"
+      "Paschim Banga",
+      "Bengal"
     ],
-    "capital": "Kolkata",
     "bbox": [
       85.8,
       21.5,
@@ -344,17 +389,24 @@
         85.8,
         23.5
       ]
-    ]
+    ],
+    "source": "Local Government Directory (LGD) / Survey of India",
+    "license": "GODL-India"
   },
   {
+    "lgd_code": 9,
     "code": "UP",
     "name": "Uttar Pradesh",
     "canonical_name": "Uttar Pradesh",
+    "name_hi": "उत्तर प्रदेश",
+    "name_mr": "उत्तर प्रदेश",
+    "type": "State",
+    "capital": "Lucknow",
     "aliases": [
       "UP",
-      "Uttarpradesh"
+      "Uttarpradesh",
+      "U.P."
     ],
-    "capital": "Lucknow",
     "bbox": [
       77.0,
       23.8,
@@ -390,17 +442,24 @@
         77.0,
         28.5
       ]
-    ]
+    ],
+    "source": "Local Government Directory (LGD) / Survey of India",
+    "license": "GODL-India"
   },
   {
+    "lgd_code": 8,
     "code": "RJ",
     "name": "Rajasthan",
     "canonical_name": "Rajasthan",
+    "name_hi": "राजस्थान",
+    "name_mr": "राजस्थान",
+    "type": "State",
+    "capital": "Jaipur",
     "aliases": [
       "RJ",
-      "Rajsthan"
+      "Rajsthan",
+      "Rajputana"
     ],
-    "capital": "Jaipur",
     "bbox": [
       69.5,
       23.0,
@@ -436,17 +495,23 @@
         69.5,
         27.0
       ]
-    ]
+    ],
+    "source": "Local Government Directory (LGD) / Survey of India",
+    "license": "GODL-India"
   },
   {
+    "lgd_code": 32,
     "code": "KL",
     "name": "Kerala",
     "canonical_name": "Kerala",
+    "name_hi": "केरल",
+    "name_mr": "केरळ",
+    "type": "State",
+    "capital": "Thiruvananthapuram",
     "aliases": [
       "KL",
       "Keralam"
     ],
-    "capital": "Thiruvananthapuram",
     "bbox": [
       74.8,
       8.2,
@@ -482,6 +547,1153 @@
         74.8,
         12.8
       ]
-    ]
+    ],
+    "source": "Local Government Directory (LGD) / Survey of India",
+    "license": "GODL-India"
+  },
+  {
+    "lgd_code": 23,
+    "code": "MP",
+    "name": "Madhya Pradesh",
+    "canonical_name": "Madhya Pradesh",
+    "name_hi": "मध्य प्रदेश",
+    "name_mr": "मध्य प्रदेश",
+    "type": "State",
+    "capital": "Bhopal",
+    "aliases": [
+      "MP",
+      "Madhya Bharat"
+    ],
+    "bbox": [
+      74.0,
+      21.1,
+      82.8,
+      26.9
+    ],
+    "polygon": [
+      [
+        74.0,
+        21.5
+      ],
+      [
+        75.0,
+        26.9
+      ],
+      [
+        82.0,
+        24.5
+      ],
+      [
+        82.8,
+        22.0
+      ],
+      [
+        78.0,
+        21.1
+      ],
+      [
+        74.0,
+        21.5
+      ]
+    ],
+    "source": "LGD / Survey of India",
+    "license": "GODL-India"
+  },
+  {
+    "lgd_code": 28,
+    "code": "AP",
+    "name": "Andhra Pradesh",
+    "canonical_name": "Andhra Pradesh",
+    "name_hi": "आंध्र प्रदेश",
+    "name_mr": "आंध्र प्रदेश",
+    "type": "State",
+    "capital": "Amaravati",
+    "aliases": [
+      "AP",
+      "Andhra"
+    ],
+    "bbox": [
+      76.7,
+      12.6,
+      84.8,
+      19.1
+    ],
+    "polygon": [
+      [
+        76.7,
+        14.0
+      ],
+      [
+        79.0,
+        19.1
+      ],
+      [
+        84.8,
+        18.5
+      ],
+      [
+        80.5,
+        13.5
+      ],
+      [
+        76.7,
+        12.6
+      ],
+      [
+        76.7,
+        14.0
+      ]
+    ],
+    "source": "LGD / Survey of India",
+    "license": "GODL-India"
+  },
+  {
+    "lgd_code": 3,
+    "code": "PB",
+    "name": "Punjab",
+    "canonical_name": "Punjab",
+    "name_hi": "पंजाब",
+    "name_mr": "पंजाब",
+    "type": "State",
+    "capital": "Chandigarh",
+    "aliases": [
+      "PB"
+    ],
+    "bbox": [
+      73.8,
+      29.5,
+      76.9,
+      32.5
+    ],
+    "polygon": [
+      [
+        73.8,
+        30.0
+      ],
+      [
+        74.5,
+        32.5
+      ],
+      [
+        76.9,
+        31.5
+      ],
+      [
+        76.0,
+        29.5
+      ],
+      [
+        73.8,
+        30.0
+      ]
+    ],
+    "source": "LGD / Survey of India",
+    "license": "GODL-India"
+  },
+  {
+    "lgd_code": 6,
+    "code": "HR",
+    "name": "Haryana",
+    "canonical_name": "Haryana",
+    "name_hi": "हरियाणा",
+    "name_mr": "हरियाणा",
+    "type": "State",
+    "capital": "Chandigarh",
+    "aliases": [
+      "HR"
+    ],
+    "bbox": [
+      74.4,
+      27.6,
+      77.6,
+      30.9
+    ],
+    "polygon": [
+      [
+        74.4,
+        28.5
+      ],
+      [
+        76.0,
+        30.9
+      ],
+      [
+        77.6,
+        29.5
+      ],
+      [
+        76.5,
+        27.6
+      ],
+      [
+        74.4,
+        28.5
+      ]
+    ],
+    "source": "LGD / Survey of India",
+    "license": "GODL-India"
+  },
+  {
+    "lgd_code": 10,
+    "code": "BR",
+    "name": "Bihar",
+    "canonical_name": "Bihar",
+    "name_hi": "बिहार",
+    "name_mr": "बिहार",
+    "type": "State",
+    "capital": "Patna",
+    "aliases": [
+      "BR"
+    ],
+    "bbox": [
+      83.3,
+      24.3,
+      88.3,
+      27.5
+    ],
+    "polygon": [
+      [
+        83.3,
+        25.0
+      ],
+      [
+        84.5,
+        27.5
+      ],
+      [
+        88.3,
+        26.5
+      ],
+      [
+        87.5,
+        24.3
+      ],
+      [
+        83.3,
+        25.0
+      ]
+    ],
+    "source": "LGD / Survey of India",
+    "license": "GODL-India"
+  },
+  {
+    "lgd_code": 21,
+    "code": "OD",
+    "name": "Odisha",
+    "canonical_name": "Odisha",
+    "name_hi": "ओडिशा",
+    "name_mr": "ओडिशा",
+    "type": "State",
+    "capital": "Bhubaneswar",
+    "aliases": [
+      "OD",
+      "Orissa"
+    ],
+    "bbox": [
+      81.4,
+      17.8,
+      87.5,
+      22.6
+    ],
+    "polygon": [
+      [
+        81.4,
+        18.5
+      ],
+      [
+        83.5,
+        22.6
+      ],
+      [
+        87.5,
+        21.5
+      ],
+      [
+        85.0,
+        19.0
+      ],
+      [
+        81.4,
+        17.8
+      ],
+      [
+        81.4,
+        18.5
+      ]
+    ],
+    "source": "LGD / Survey of India",
+    "license": "GODL-India"
+  },
+  {
+    "lgd_code": 22,
+    "code": "CG",
+    "name": "Chhattisgarh",
+    "canonical_name": "Chhattisgarh",
+    "name_hi": "छत्तीसगढ़",
+    "name_mr": "छत्तीसगड",
+    "type": "State",
+    "capital": "Raipur",
+    "aliases": [
+      "CG",
+      "Chattisgarh"
+    ],
+    "bbox": [
+      80.2,
+      17.8,
+      84.4,
+      24.1
+    ],
+    "polygon": [
+      [
+        80.2,
+        19.0
+      ],
+      [
+        82.5,
+        24.1
+      ],
+      [
+        84.4,
+        23.0
+      ],
+      [
+        81.5,
+        17.8
+      ],
+      [
+        80.2,
+        19.0
+      ]
+    ],
+    "source": "LGD / Survey of India",
+    "license": "GODL-India"
+  },
+  {
+    "lgd_code": 20,
+    "code": "JH",
+    "name": "Jharkhand",
+    "canonical_name": "Jharkhand",
+    "name_hi": "झारखंड",
+    "name_mr": "झारखंड",
+    "type": "State",
+    "capital": "Ranchi",
+    "aliases": [
+      "JH"
+    ],
+    "bbox": [
+      83.3,
+      21.9,
+      87.9,
+      25.3
+    ],
+    "polygon": [
+      [
+        83.3,
+        23.5
+      ],
+      [
+        85.5,
+        25.3
+      ],
+      [
+        87.9,
+        24.5
+      ],
+      [
+        86.0,
+        21.9
+      ],
+      [
+        83.3,
+        23.5
+      ]
+    ],
+    "source": "LGD / Survey of India",
+    "license": "GODL-India"
+  },
+  {
+    "lgd_code": 18,
+    "code": "AS",
+    "name": "Assam",
+    "canonical_name": "Assam",
+    "name_hi": "असम",
+    "name_mr": "आसाम",
+    "type": "State",
+    "capital": "Dispur",
+    "aliases": [
+      "AS",
+      "Asom"
+    ],
+    "bbox": [
+      89.7,
+      24.1,
+      96.0,
+      28.0
+    ],
+    "polygon": [
+      [
+        89.7,
+        26.0
+      ],
+      [
+        93.0,
+        28.0
+      ],
+      [
+        96.0,
+        27.5
+      ],
+      [
+        92.5,
+        24.1
+      ],
+      [
+        89.7,
+        26.0
+      ]
+    ],
+    "source": "LGD / Survey of India",
+    "license": "GODL-India"
+  },
+  {
+    "lgd_code": 5,
+    "code": "UK",
+    "name": "Uttarakhand",
+    "canonical_name": "Uttarakhand",
+    "name_hi": "उत्तराखंड",
+    "name_mr": "उत्तराखंड",
+    "type": "State",
+    "capital": "Dehradun",
+    "aliases": [
+      "UK",
+      "UA",
+      "Uttaranchal"
+    ],
+    "bbox": [
+      77.6,
+      28.7,
+      81.0,
+      31.5
+    ],
+    "polygon": [
+      [
+        77.6,
+        30.0
+      ],
+      [
+        79.0,
+        31.5
+      ],
+      [
+        81.0,
+        30.5
+      ],
+      [
+        79.5,
+        28.7
+      ],
+      [
+        77.6,
+        30.0
+      ]
+    ],
+    "source": "LGD / Survey of India",
+    "license": "GODL-India"
+  },
+  {
+    "lgd_code": 2,
+    "code": "HP",
+    "name": "Himachal Pradesh",
+    "canonical_name": "Himachal Pradesh",
+    "name_hi": "हिमाचल प्रदेश",
+    "name_mr": "हिमाचल प्रदेश",
+    "type": "State",
+    "capital": "Shimla",
+    "aliases": [
+      "HP"
+    ],
+    "bbox": [
+      75.6,
+      30.4,
+      79.0,
+      33.2
+    ],
+    "polygon": [
+      [
+        75.6,
+        31.5
+      ],
+      [
+        77.0,
+        33.2
+      ],
+      [
+        79.0,
+        32.0
+      ],
+      [
+        77.5,
+        30.4
+      ],
+      [
+        75.6,
+        31.5
+      ]
+    ],
+    "source": "LGD / Survey of India",
+    "license": "GODL-India"
+  },
+  {
+    "lgd_code": 30,
+    "code": "GA",
+    "name": "Goa",
+    "canonical_name": "Goa",
+    "name_hi": "गोवा",
+    "name_mr": "गोवा",
+    "type": "State",
+    "capital": "Panaji",
+    "aliases": [
+      "GA"
+    ],
+    "bbox": [
+      73.6,
+      14.9,
+      74.3,
+      15.8
+    ],
+    "polygon": [
+      [
+        73.6,
+        15.5
+      ],
+      [
+        74.0,
+        15.8
+      ],
+      [
+        74.3,
+        15.2
+      ],
+      [
+        73.9,
+        14.9
+      ],
+      [
+        73.6,
+        15.5
+      ]
+    ],
+    "source": "LGD / Survey of India",
+    "license": "GODL-India"
+  },
+  {
+    "lgd_code": 11,
+    "code": "SK",
+    "name": "Sikkim",
+    "canonical_name": "Sikkim",
+    "name_hi": "सिक्किम",
+    "name_mr": "सिक्कीम",
+    "type": "State",
+    "capital": "Gangtok",
+    "aliases": [
+      "SK"
+    ],
+    "bbox": [
+      88.0,
+      27.1,
+      88.9,
+      28.1
+    ],
+    "polygon": [
+      [
+        88.0,
+        27.5
+      ],
+      [
+        88.5,
+        28.1
+      ],
+      [
+        88.9,
+        27.8
+      ],
+      [
+        88.6,
+        27.1
+      ],
+      [
+        88.0,
+        27.5
+      ]
+    ],
+    "source": "LGD / Survey of India",
+    "license": "GODL-India"
+  },
+  {
+    "lgd_code": 12,
+    "code": "AR",
+    "name": "Arunachal Pradesh",
+    "canonical_name": "Arunachal Pradesh",
+    "name_hi": "अरुणाचल प्रदेश",
+    "name_mr": "अरुणाचल प्रदेश",
+    "type": "State",
+    "capital": "Itanagar",
+    "aliases": [
+      "AR"
+    ],
+    "bbox": [
+      91.5,
+      26.6,
+      97.4,
+      29.5
+    ],
+    "polygon": [
+      [
+        91.5,
+        27.5
+      ],
+      [
+        94.5,
+        29.5
+      ],
+      [
+        97.4,
+        28.2
+      ],
+      [
+        93.5,
+        26.6
+      ],
+      [
+        91.5,
+        27.5
+      ]
+    ],
+    "source": "LGD / Survey of India",
+    "license": "GODL-India"
+  },
+  {
+    "lgd_code": 14,
+    "code": "MN",
+    "name": "Manipur",
+    "canonical_name": "Manipur",
+    "name_hi": "मणिपुर",
+    "name_mr": "मणिपूर",
+    "type": "State",
+    "capital": "Imphal",
+    "aliases": [
+      "MN"
+    ],
+    "bbox": [
+      93.0,
+      23.8,
+      94.8,
+      25.7
+    ],
+    "polygon": [
+      [
+        93.0,
+        24.5
+      ],
+      [
+        94.0,
+        25.7
+      ],
+      [
+        94.8,
+        24.8
+      ],
+      [
+        93.8,
+        23.8
+      ],
+      [
+        93.0,
+        24.5
+      ]
+    ],
+    "source": "LGD / Survey of India",
+    "license": "GODL-India"
+  },
+  {
+    "lgd_code": 17,
+    "code": "ME",
+    "name": "Meghalaya",
+    "canonical_name": "Meghalaya",
+    "name_hi": "मेघालय",
+    "name_mr": "मेघालय",
+    "type": "State",
+    "capital": "Shillong",
+    "aliases": [
+      "ML",
+      "ME"
+    ],
+    "bbox": [
+      89.8,
+      25.0,
+      92.8,
+      26.1
+    ],
+    "polygon": [
+      [
+        89.8,
+        25.5
+      ],
+      [
+        91.5,
+        26.1
+      ],
+      [
+        92.8,
+        25.8
+      ],
+      [
+        91.0,
+        25.0
+      ],
+      [
+        89.8,
+        25.5
+      ]
+    ],
+    "source": "LGD / Survey of India",
+    "license": "GODL-India"
+  },
+  {
+    "lgd_code": 15,
+    "code": "MZ",
+    "name": "Mizoram",
+    "canonical_name": "Mizoram",
+    "name_hi": "मिज़ोरम",
+    "name_mr": "मिझोरम",
+    "type": "State",
+    "capital": "Aizawl",
+    "aliases": [
+      "MZ"
+    ],
+    "bbox": [
+      92.2,
+      21.9,
+      93.4,
+      24.5
+    ],
+    "polygon": [
+      [
+        92.2,
+        23.0
+      ],
+      [
+        93.0,
+        24.5
+      ],
+      [
+        93.4,
+        23.2
+      ],
+      [
+        92.8,
+        21.9
+      ],
+      [
+        92.2,
+        23.0
+      ]
+    ],
+    "source": "LGD / Survey of India",
+    "license": "GODL-India"
+  },
+  {
+    "lgd_code": 13,
+    "code": "NL",
+    "name": "Nagaland",
+    "canonical_name": "Nagaland",
+    "name_hi": "नागालैंड",
+    "name_mr": "नागालँड",
+    "type": "State",
+    "capital": "Kohima",
+    "aliases": [
+      "NL"
+    ],
+    "bbox": [
+      93.3,
+      25.1,
+      95.3,
+      27.0
+    ],
+    "polygon": [
+      [
+        93.3,
+        25.8
+      ],
+      [
+        94.5,
+        27.0
+      ],
+      [
+        95.3,
+        26.5
+      ],
+      [
+        94.0,
+        25.1
+      ],
+      [
+        93.3,
+        25.8
+      ]
+    ],
+    "source": "LGD / Survey of India",
+    "license": "GODL-India"
+  },
+  {
+    "lgd_code": 16,
+    "code": "TR",
+    "name": "Tripura",
+    "canonical_name": "Tripura",
+    "name_hi": "त्रिपुरा",
+    "name_mr": "त्रिपुरा",
+    "type": "State",
+    "capital": "Agartala",
+    "aliases": [
+      "TR"
+    ],
+    "bbox": [
+      91.1,
+      22.9,
+      92.4,
+      24.5
+    ],
+    "polygon": [
+      [
+        91.1,
+        23.5
+      ],
+      [
+        92.0,
+        24.5
+      ],
+      [
+        92.4,
+        23.8
+      ],
+      [
+        91.8,
+        22.9
+      ],
+      [
+        91.1,
+        23.5
+      ]
+    ],
+    "source": "LGD / Survey of India",
+    "license": "GODL-India"
+  },
+  {
+    "lgd_code": 1,
+    "code": "JK",
+    "name": "Jammu and Kashmir",
+    "canonical_name": "Jammu and Kashmir",
+    "name_hi": "जम्मू और कश्मीर",
+    "name_mr": "जम्मू आणि काश्मीर",
+    "type": "Union Territory",
+    "capital": "Srinagar / Jammu",
+    "aliases": [
+      "JK",
+      "J&K"
+    ],
+    "bbox": [
+      73.5,
+      32.2,
+      77.8,
+      37.1
+    ],
+    "polygon": [
+      [
+        73.5,
+        33.5
+      ],
+      [
+        75.0,
+        37.1
+      ],
+      [
+        77.8,
+        35.0
+      ],
+      [
+        75.5,
+        32.2
+      ],
+      [
+        73.5,
+        33.5
+      ]
+    ],
+    "source": "LGD / Survey of India",
+    "license": "GODL-India"
+  },
+  {
+    "lgd_code": 37,
+    "code": "LA",
+    "name": "Ladakh",
+    "canonical_name": "Ladakh",
+    "name_hi": "लद्दाख",
+    "name_mr": "लडाख",
+    "type": "Union Territory",
+    "capital": "Leh",
+    "aliases": [
+      "LA"
+    ],
+    "bbox": [
+      75.5,
+      32.5,
+      80.5,
+      36.0
+    ],
+    "polygon": [
+      [
+        75.5,
+        34.0
+      ],
+      [
+        77.5,
+        36.0
+      ],
+      [
+        80.5,
+        34.5
+      ],
+      [
+        78.0,
+        32.5
+      ],
+      [
+        75.5,
+        34.0
+      ]
+    ],
+    "source": "LGD / Survey of India",
+    "license": "GODL-India"
+  },
+  {
+    "lgd_code": 34,
+    "code": "PY",
+    "name": "Puducherry",
+    "canonical_name": "Puducherry",
+    "name_hi": "पुदुच्चेरी",
+    "name_mr": "पुडुचेरी",
+    "type": "Union Territory",
+    "capital": "Puducherry",
+    "aliases": [
+      "PY",
+      "Pondicherry"
+    ],
+    "bbox": [
+      79.6,
+      11.8,
+      80.0,
+      12.1
+    ],
+    "polygon": [
+      [
+        79.6,
+        11.9
+      ],
+      [
+        79.8,
+        12.1
+      ],
+      [
+        80.0,
+        12.0
+      ],
+      [
+        79.8,
+        11.8
+      ],
+      [
+        79.6,
+        11.9
+      ]
+    ],
+    "source": "LGD / Survey of India",
+    "license": "GODL-India"
+  },
+  {
+    "lgd_code": 4,
+    "code": "CH",
+    "name": "Chandigarh",
+    "canonical_name": "Chandigarh",
+    "name_hi": "चंडीगढ़",
+    "name_mr": "चंदीगड",
+    "type": "Union Territory",
+    "capital": "Chandigarh",
+    "aliases": [
+      "CH"
+    ],
+    "bbox": [
+      76.7,
+      30.6,
+      76.9,
+      30.8
+    ],
+    "polygon": [
+      [
+        76.7,
+        30.7
+      ],
+      [
+        76.8,
+        30.8
+      ],
+      [
+        76.9,
+        30.75
+      ],
+      [
+        76.8,
+        30.6
+      ],
+      [
+        76.7,
+        30.7
+      ]
+    ],
+    "source": "LGD / Survey of India",
+    "license": "GODL-India"
+  },
+  {
+    "lgd_code": 35,
+    "code": "AN",
+    "name": "Andaman and Nicobar Islands",
+    "canonical_name": "Andaman and Nicobar Islands",
+    "name_hi": "अंडमान और निकोबार द्वीप समूह",
+    "name_mr": "अंदमान आणि निकोबार",
+    "type": "Union Territory",
+    "capital": "Port Blair",
+    "aliases": [
+      "AN",
+      "Andaman and Nicobar"
+    ],
+    "bbox": [
+      92.2,
+      6.7,
+      94.0,
+      13.7
+    ],
+    "polygon": [
+      [
+        92.2,
+        9.0
+      ],
+      [
+        93.0,
+        13.7
+      ],
+      [
+        94.0,
+        12.5
+      ],
+      [
+        93.5,
+        6.7
+      ],
+      [
+        92.2,
+        9.0
+      ]
+    ],
+    "source": "LGD / Survey of India",
+    "license": "GODL-India"
+  },
+  {
+    "lgd_code": 26,
+    "code": "DN",
+    "name": "Dadra and Nagar Haveli and Daman and Diu",
+    "canonical_name": "Dadra and Nagar Haveli and Daman and Diu",
+    "name_hi": "दादरा और नगर हवेली और दमन और दीव",
+    "name_mr": "दादरा आणि नगर हवेली आणि दमण आणि दीव",
+    "type": "Union Territory",
+    "capital": "Daman",
+    "aliases": [
+      "DN",
+      "DD",
+      "DNH",
+      "Daman and Diu"
+    ],
+    "bbox": [
+      70.8,
+      20.0,
+      73.2,
+      20.9
+    ],
+    "polygon": [
+      [
+        70.8,
+        20.5
+      ],
+      [
+        72.5,
+        20.9
+      ],
+      [
+        73.2,
+        20.2
+      ],
+      [
+        71.5,
+        20.0
+      ],
+      [
+        70.8,
+        20.5
+      ]
+    ],
+    "source": "LGD / Survey of India",
+    "license": "GODL-India"
+  },
+  {
+    "lgd_code": 31,
+    "code": "LD",
+    "name": "Lakshadweep",
+    "canonical_name": "Lakshadweep",
+    "name_hi": "लक्षद्वीप",
+    "name_mr": "लक्षद्वीप",
+    "type": "Union Territory",
+    "capital": "Kavaratti",
+    "aliases": [
+      "LD",
+      "Laccadive"
+    ],
+    "bbox": [
+      71.5,
+      8.2,
+      74.0,
+      12.5
+    ],
+    "polygon": [
+      [
+        71.5,
+        10.0
+      ],
+      [
+        72.5,
+        12.5
+      ],
+      [
+        74.0,
+        11.5
+      ],
+      [
+        73.0,
+        8.2
+      ],
+      [
+        71.5,
+        10.0
+      ]
+    ],
+    "source": "LGD / Survey of India",
+    "license": "GODL-India"
   }
 ]

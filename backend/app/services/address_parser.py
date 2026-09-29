@@ -36,7 +36,16 @@ KNOWN_LOCALITIES = [
     "Whitefield", "Indiranagar", "Koramangala", "HSR Layout", "Electronic City",
     "Bandra West", "Bandra East", "Andheri East", "Andheri West", "Powai", "Juhu",
     "Connaught Place", "Hauz Khas", "Saket", "Karol Bagh", "Dwarka", "Rohini",
-    "Rajarhat", "Salt Lake", "New Town", "Rampur"
+    "Rajarhat", "Salt Lake", "New Town", "Rampur",
+    "खराडी", "हिंजवडी", "कोथरूड", "बाणेर"
+]
+
+
+# Known sub-districts / talukas for direct detection
+KNOWN_SUBDISTRICTS = [
+    "Haveli", "Mulshi", "Maval", "Pune City", "Khed", "Shirur", "Baramati",
+    "Chanakyapuri", "Alipore", "Bengaluru South", "Bengaluru North", "Bengaluru East",
+    "Andheri", "Kurla", "Borivali", "Thane", "Kalyan"
 ]
 
 
@@ -67,25 +76,11 @@ class AddressParser:
                 landmarks.append(landmark_text)
                 remaining_text = remaining_text.replace(landmark_text, " ").strip()
 
-        # 4. Extract State
-        state = None
-        state_code = None
-        # Check by reverse scanning tokens or alias matches
-        for canonical, data in STATE_MAPPINGS.items():
-            for alias in [canonical.lower()] + data["aliases"]:
-                pattern = r"\b" + re.escape(alias) + r"\b"
-                if re.search(pattern, remaining_text, re.IGNORECASE):
-                    state = canonical
-                    state_code = data["code"]
-                    remaining_text = re.sub(pattern, "", remaining_text, flags=re.IGNORECASE).strip()
-                    break
-            if state:
-                break
-
-        # 5. Extract District / City
+        # 4. Extract District / City (sorted by alias length descending so "New Delhi" matches before "Delhi")
         district = None
         city = None
-        for alias, canonical in DISTRICT_ALIASES.items():
+        sorted_district_aliases = sorted(DISTRICT_ALIASES.items(), key=lambda x: len(x[0]), reverse=True)
+        for alias, canonical in sorted_district_aliases:
             pattern = r"\b" + re.escape(alias) + r"\b"
             if re.search(pattern, remaining_text, re.IGNORECASE):
                 district = canonical
@@ -93,10 +88,43 @@ class AddressParser:
                 remaining_text = re.sub(pattern, "", remaining_text, flags=re.IGNORECASE).strip()
                 break
 
-        # 6. Extract Locality
+        # 5. Extract State
+        state = None
+        state_code = None
+        # Collect all state aliases sorted by length descending
+        all_state_aliases = []
+        for canonical, data in STATE_MAPPINGS.items():
+            for alias in [canonical.lower()] + data["aliases"]:
+                all_state_aliases.append((alias, canonical, data["code"]))
+        all_state_aliases.sort(key=lambda x: len(x[0]), reverse=True)
+
+        for alias, canonical, code in all_state_aliases:
+            pattern = r"\b" + re.escape(alias) + r"\b"
+            if re.search(pattern, remaining_text, re.IGNORECASE):
+                state = canonical
+                state_code = code
+                remaining_text = re.sub(pattern, "", remaining_text, flags=re.IGNORECASE).strip()
+                break
+
+        # If state is Delhi and district not found, set district to New Delhi
+        if state == "Delhi" and not district:
+            district = "New Delhi"
+            city = "New Delhi"
+
+        # 6. Extract Sub-District / Taluka
+        subdistrict = None
+        sorted_subdistricts = sorted(KNOWN_SUBDISTRICTS, key=lambda x: len(x), reverse=True)
+        for sd in sorted_subdistricts:
+            pattern = r"\b" + re.escape(sd) + r"\b"
+            if re.search(pattern, remaining_text, re.IGNORECASE):
+                subdistrict = sd
+                remaining_text = re.sub(pattern, "", remaining_text, flags=re.IGNORECASE).strip()
+                break
+
+        # 7. Extract Locality
         locality = None
-        # Check against known localities
-        for loc in KNOWN_LOCALITIES:
+        sorted_known_localities = sorted(KNOWN_LOCALITIES, key=lambda x: len(x), reverse=True)
+        for loc in sorted_known_localities:
             pattern = r"\b" + re.escape(loc) + r"\b"
             if re.search(pattern, remaining_text, re.IGNORECASE):
                 locality = loc
@@ -118,7 +146,7 @@ class AddressParser:
             else:
                 unparsed.append(token)
 
-        # 7. Calculate parse confidence score
+        # 8. Calculate parse confidence score
         confidence = 0.0
         if state:
             confidence += 0.25
@@ -132,7 +160,7 @@ class AddressParser:
         return ParsedAddress(
             premise=premise,
             locality=locality,
-            subdistrict=None,
+            subdistrict=subdistrict,
             city=city,
             district=district,
             state=state,

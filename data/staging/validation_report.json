@@ -1,0 +1,34 @@
+{
+  "status": "PASSED",
+  "stats": {
+    "states": {
+      "total_records": 36,
+      "invalid_geometries": 0,
+      "missing_names": 0,
+      "crs": "EPSG:4326 (WGS84)"
+    },
+    "districts": {
+      "total_records": 17,
+      "invalid_geometries": 0,
+      "missing_parent_state": 0,
+      "crs": "EPSG:4326 (WGS84)"
+    },
+    "subdistricts": {
+      "total_records": 7,
+      "invalid_geometries": 0,
+      "missing_parent_district": 0,
+      "crs": "EPSG:4326 (WGS84)"
+    },
+    "localities": {
+      "total_records": 13,
+      "invalid_coordinates": 0,
+      "crs": "EPSG:4326 (WGS84)"
+    },
+    "pincodes": {
+      "total_records": 11,
+      "invalid_format_count": 0,
+      "postal_circles_covered": 3
+    }
+  },
+  "issues": []
+}

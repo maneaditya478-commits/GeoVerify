@@ -9,6 +9,7 @@ import { MapView } from '../components/MapView';
 import { NearbyPlacesTable } from '../components/NearbyPlacesTable';
 import { TransformationViewer } from '../components/TransformationViewer';
 import { WarningsList } from '../components/WarningsList';
+import { DataSourcesCard } from '../components/DataSourcesCard';
 import { MapPin, Clock, Fingerprint } from 'lucide-react';
 
 interface VerifyPageProps {
@@ -74,6 +75,7 @@ export const VerifyPage: React.FC<VerifyPageProps> = ({ result, onVerify, isLoad
               <HierarchyTree hierarchy={result.administrative_hierarchy} />
               <TransformationViewer normalized={result.normalized_address} />
               <EvidenceCard evidence={result.evidence} explanation={result.explanation} />
+              <DataSourcesCard sources={result.data_sources} />
             </div>
 
             {/* Right Column: Interactive Map & Nearby Intelligence (7 cols) */}

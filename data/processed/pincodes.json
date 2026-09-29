@@ -4,6 +4,8 @@
     "circle": "Maharashtra",
     "region": "Pune",
     "division": "Pune City East",
+    "office_type": "S.O",
+    "delivery_status": "Delivery",
     "post_offices": [
       "Kharadi B.O",
       "Viman Nagar S.O",
@@ -23,6 +25,8 @@
     "circle": "Maharashtra",
     "region": "Pune",
     "division": "Pune City West",
+    "office_type": "S.O",
+    "delivery_status": "Delivery",
     "post_offices": [
       "Infotech Park (Hinjawadi) S.O",
       "Hinjawadi B.O",
@@ -41,6 +45,8 @@
     "circle": "Maharashtra",
     "region": "Pune",
     "division": "Pune City West",
+    "office_type": "S.O",
+    "delivery_status": "Delivery",
     "post_offices": [
       "Kothrud S.O",
       "Ex-Servicemen Colony S.O"
@@ -58,6 +64,8 @@
     "circle": "Maharashtra",
     "region": "Pune",
     "division": "Pune City West",
+    "office_type": "S.O",
+    "delivery_status": "Delivery",
     "post_offices": [
       "Baner Gaon S.O",
       "Baner Road S.O"
@@ -75,6 +83,8 @@
     "circle": "Maharashtra",
     "region": "Mumbai",
     "division": "Mumbai West",
+    "office_type": "S.O",
+    "delivery_status": "Delivery",
     "post_offices": [
       "Bandra West S.O",
       "Waterfield Road S.O"
@@ -92,6 +102,8 @@
     "circle": "Maharashtra",
     "region": "Mumbai",
     "division": "Mumbai West",
+    "office_type": "S.O",
+    "delivery_status": "Delivery",
     "post_offices": [
       "Andheri East S.O",
       "Chakala MIDC S.O"
@@ -109,6 +121,8 @@
     "circle": "Karnataka",
     "region": "Bengaluru HQ",
     "division": "Bangalore East",
+    "office_type": "S.O",
+    "delivery_status": "Delivery",
     "post_offices": [
       "Whitefield S.O",
       "EPIP S.O"
@@ -126,6 +140,8 @@
     "circle": "Karnataka",
     "region": "Bengaluru HQ",
     "division": "Bangalore East",
+    "office_type": "S.O",
+    "delivery_status": "Delivery",
     "post_offices": [
       "Indiranagar S.O",
       "HAL II Stage S.O"
@@ -143,6 +159,8 @@
     "circle": "Delhi",
     "region": "Delhi",
     "division": "New Delhi Central",
+    "office_type": "H.O",
+    "delivery_status": "Delivery",
     "post_offices": [
       "Connaught Place H.O",
       "Barakhamba Road S.O",
@@ -161,6 +179,8 @@
     "circle": "Delhi",
     "region": "Delhi",
     "division": "New Delhi South",
+    "office_type": "S.O",
+    "delivery_status": "Delivery",
     "post_offices": [
       "Hauz Khas S.O",
       "IIT Delhi S.O"
@@ -178,6 +198,8 @@
     "circle": "Maharashtra",
     "region": "Goa-Kolhapur",
     "division": "Kolhapur",
+    "office_type": "H.O",
+    "delivery_status": "Delivery",
     "post_offices": [
       "Kolhapur H.O",
       "Shahupuri S.O",

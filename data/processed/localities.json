@@ -1,13 +1,19 @@
 [
   {
     "name": "Kharadi",
+    "canonical_name": "Kharadi",
+    "name_hi": "खराड़ी",
+    "name_mr": "खराडी",
     "aliases": [
       "Kharadi Gaon",
       "Kharadi Bypass",
       "EON Free Zone Kharadi"
     ],
+    "subdistrict_id": "subdist_haveli",
     "subdistrict": "Haveli",
+    "district_id": "dist_pune",
     "district": "Pune",
+    "state_id": 27,
     "state": "Maharashtra",
     "state_code": "MH",
     "pincode": "411014",
@@ -46,12 +52,18 @@
   },
   {
     "name": "Viman Nagar",
+    "canonical_name": "Viman Nagar",
+    "name_hi": "विमान नगर",
+    "name_mr": "विमान नगर",
     "aliases": [
       "Vimannagar",
       "Viman Nagar Pune"
     ],
+    "subdistrict_id": "subdist_haveli",
     "subdistrict": "Haveli",
+    "district_id": "dist_pune",
     "district": "Pune",
+    "state_id": 27,
     "state": "Maharashtra",
     "state_code": "MH",
     "pincode": "411014",
@@ -90,14 +102,20 @@
   },
   {
     "name": "Hinjewadi",
+    "canonical_name": "Hinjewadi",
+    "name_hi": "हिंजेवाड़ी",
+    "name_mr": "हिंजवडी",
     "aliases": [
       "Hinjawadi",
       "Hinjawadi Phase 1",
       "Hinjewadi Phase 2",
       "Hinjewadi Phase 3"
     ],
+    "subdistrict_id": "subdist_mulshi",
     "subdistrict": "Mulshi",
+    "district_id": "dist_pune",
     "district": "Pune",
+    "state_id": 27,
     "state": "Maharashtra",
     "state_code": "MH",
     "pincode": "411057",
@@ -136,12 +154,18 @@
   },
   {
     "name": "Kothrud",
+    "canonical_name": "Kothrud",
+    "name_hi": "कोथरुड",
+    "name_mr": "कोथरूड",
     "aliases": [
       "Kothrud Pune",
       "Paud Road"
     ],
+    "subdistrict_id": "subdist_pune_city",
     "subdistrict": "Pune City",
+    "district_id": "dist_pune",
     "district": "Pune",
+    "state_id": 27,
     "state": "Maharashtra",
     "state_code": "MH",
     "pincode": "411038",
@@ -180,12 +204,18 @@
   },
   {
     "name": "Baner",
+    "canonical_name": "Baner",
+    "name_hi": "बानेर",
+    "name_mr": "बाणेर",
     "aliases": [
       "Baner Gaon",
       "Baner Road"
     ],
+    "subdistrict_id": "subdist_haveli",
     "subdistrict": "Haveli",
+    "district_id": "dist_pune",
     "district": "Pune",
+    "state_id": 27,
     "state": "Maharashtra",
     "state_code": "MH",
     "pincode": "411045",
@@ -224,13 +254,20 @@
   },
   {
     "name": "Bandra West",
+    "canonical_name": "Bandra West",
+    "name_hi": "बांद्रा पश्चिम",
+    "name_mr": "वांद्रे पश्चिम",
     "aliases": [
       "Bandra",
       "Bandra W",
-      "Bandstand"
+      "Bandstand",
+      "Vandre"
     ],
+    "subdistrict_id": "subdist_andheri",
     "subdistrict": "Andheri",
+    "district_id": "dist_mumbai_suburban",
     "district": "Mumbai Suburban",
+    "state_id": 27,
     "state": "Maharashtra",
     "state_code": "MH",
     "pincode": "400050",
@@ -269,14 +306,20 @@
   },
   {
     "name": "Andheri East",
+    "canonical_name": "Andheri East",
+    "name_hi": "अंधेरी पूर्व",
+    "name_mr": "अंधेरी पूर्व",
     "aliases": [
       "Andheri",
       "Andheri E",
       "MIDC Andheri",
       "Chakala"
     ],
+    "subdistrict_id": "subdist_andheri",
     "subdistrict": "Andheri",
+    "district_id": "dist_mumbai_suburban",
     "district": "Mumbai Suburban",
+    "state_id": 27,
     "state": "Maharashtra",
     "state_code": "MH",
     "pincode": "400069",
@@ -315,13 +358,19 @@
   },
   {
     "name": "Whitefield",
+    "canonical_name": "Whitefield",
+    "name_hi": "व्हाइटफील्ड",
+    "name_mr": "व्हाईटफिल्ड",
     "aliases": [
       "Whitefield Bangalore",
       "ITPB",
       "EPIP Zone"
     ],
+    "subdistrict_id": "subdist_bengaluru_east",
     "subdistrict": "Bengaluru East",
+    "district_id": "dist_bengaluru_urban",
     "district": "Bengaluru Urban",
+    "state_id": 29,
     "state": "Karnataka",
     "state_code": "KA",
     "pincode": "560066",
@@ -360,12 +409,18 @@
   },
   {
     "name": "Indiranagar",
+    "canonical_name": "Indiranagar",
+    "name_hi": "इंदिरानगर",
+    "name_mr": "इंदिरानगर",
     "aliases": [
       "Indira Nagar",
       "100 Feet Road Indiranagar"
     ],
+    "subdistrict_id": "subdist_bengaluru_east",
     "subdistrict": "Bengaluru East",
+    "district_id": "dist_bengaluru_urban",
     "district": "Bengaluru Urban",
+    "state_id": 29,
     "state": "Karnataka",
     "state_code": "KA",
     "pincode": "560038",
@@ -404,13 +459,19 @@
   },
   {
     "name": "Connaught Place",
+    "canonical_name": "Connaught Place",
+    "name_hi": "कनॉट प्लेस",
+    "name_mr": "कनॉट प्लेस",
     "aliases": [
       "CP",
       "Rajiv Chowk",
       "Connaught Circus"
     ],
+    "subdistrict_id": "subdist_chanakyapuri",
     "subdistrict": "Chanakyapuri",
+    "district_id": "dist_new_delhi",
     "district": "New Delhi",
+    "state_id": 7,
     "state": "Delhi",
     "state_code": "DL",
     "pincode": "110001",
@@ -449,12 +510,18 @@
   },
   {
     "name": "Hauz Khas",
+    "canonical_name": "Hauz Khas",
+    "name_hi": "हौज़ खास",
+    "name_mr": "हौज खास",
     "aliases": [
       "Hauz Khas Village",
       "HKV"
     ],
-    "subdistrict": "Hauz Khas",
+    "subdistrict_id": "subdist_chanakyapuri",
+    "subdistrict": "Chanakyapuri",
+    "district_id": "dist_new_delhi",
     "district": "New Delhi",
+    "state_id": 7,
     "state": "Delhi",
     "state_code": "DL",
     "pincode": "110016",
@@ -493,12 +560,18 @@
   },
   {
     "name": "Rajarhat",
+    "canonical_name": "Rajarhat",
+    "name_hi": "राजारहाट",
+    "name_mr": "राजारहाट",
     "aliases": [
       "New Town Rajarhat",
       "Action Area 1"
     ],
+    "subdistrict_id": "subdist_rajarhat",
     "subdistrict": "Rajarhat",
+    "district_id": "dist_north_24_parganas",
     "district": "North 24 Parganas",
+    "state_id": 19,
     "state": "West Bengal",
     "state_code": "WB",
     "pincode": "700156",
@@ -507,7 +580,7 @@
       "longitude": 88.4756
     },
     "bbox": [
-      77.44,
+      88.44,
       22.56,
       88.51,
       22.62
@@ -537,11 +610,17 @@
   },
   {
     "name": "Rampur",
+    "canonical_name": "Rampur",
+    "name_hi": "रामपुर",
+    "name_mr": "रामपूर",
     "aliases": [
       "Rampur City"
     ],
+    "subdistrict_id": null,
     "subdistrict": "Rampur",
+    "district_id": "dist_rampur",
     "district": "Rampur",
+    "state_id": 9,
     "state": "Uttar Pradesh",
     "state_code": "UP",
     "pincode": "244901",

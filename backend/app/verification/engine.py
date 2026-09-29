@@ -11,7 +11,8 @@ from app.schemas.address import (
 )
 from app.schemas.verification import (
     VerificationResponse,
-    VerificationStatus
+    VerificationStatus,
+    DataSourceAttribution
 )
 from app.services.normalizer import AddressNormalizer
 from app.services.address_parser import AddressParser
@@ -25,6 +26,37 @@ from app.verification.scoring import ScoringEngine
 
 # Known ambiguous locality names that occur in multiple states
 AMBIGUOUS_NAMES = ["rampur", "bilaspur", "aurangabad", "fatehpur", "balrampur"]
+
+STANDARD_DATA_SOURCES = [
+    DataSourceAttribution(
+        name="Local Government Directory (LGD)",
+        source_url="https://lgdirectory.gov.in/",
+        license="GODL-India",
+        version="2026.1",
+        coverage="36 States & UTs, 750+ Districts, Sub-Districts"
+    ),
+    DataSourceAttribution(
+        name="Survey of India (SOI)",
+        source_url="https://surveyofindia.gov.in/",
+        license="GODL-India",
+        version="2026.1",
+        coverage="National Boundary Polygons"
+    ),
+    DataSourceAttribution(
+        name="India Post (Department of Posts)",
+        source_url="https://data.gov.in/resource/all-india-pincode-directory",
+        license="GODL-India",
+        version="2026.1",
+        coverage="All-India PIN Code Postal Directory"
+    ),
+    DataSourceAttribution(
+        name="OpenStreetMap / Verified Gazetteers",
+        source_url="https://www.openstreetmap.org/",
+        license="ODbL",
+        version="2026",
+        coverage="Points of Interest & Urban Localities"
+    )
+]
 
 
 class VerificationEngine:
@@ -76,6 +108,7 @@ class VerificationEngine:
         )
 
         effective_locality = normalized.locality or parsed.locality
+        effective_subdistrict = normalized.subdistrict or parsed.subdistrict
         effective_district = normalized.district or parsed.district
         effective_state = normalized.state or parsed.state
         effective_pin = normalized.pincode or parsed.pincode
@@ -100,7 +133,7 @@ class VerificationEngine:
         hierarchy_res = hierarchy_validator.validate_hierarchy(
             state=effective_state,
             district=effective_district,
-            subdistrict=subdistrict_in,
+            subdistrict=effective_subdistrict,
             locality=effective_locality
         )
 
@@ -110,6 +143,7 @@ class VerificationEngine:
             coordinates=coords,
             asserted_state=effective_state,
             asserted_district=effective_district,
+            asserted_subdistrict=effective_subdistrict,
             asserted_locality=effective_locality
         )
 
@@ -168,7 +202,8 @@ class VerificationEngine:
             boundary_verification=boundary_res,
             pin_verification=pin_res,
             score_breakdown=score_breakdown,
-            nearby_places=nearby_places
+            nearby_places=nearby_places,
+            data_sources=STANDARD_DATA_SOURCES
         )
 
 

@@ -38,6 +38,7 @@ class PinVerificationResult(BaseModel):
     pin_centroid: Optional[Coordinates] = None
     distance_to_coordinates_km: Optional[float] = None
     evidence: str = "No PIN code provided or verified."
+    source: str = "India Post (Department of Posts)"
 
 
 class BoundaryVerificationResult(BaseModel):
@@ -68,6 +69,14 @@ class ScoreBreakdown(BaseModel):
     total_score: float = 0.0
 
 
+class DataSourceAttribution(BaseModel):
+    name: str
+    source_url: str
+    license: str
+    version: str = "2026.1"
+    coverage: str = "National (India)"
+
+
 class VerificationResponse(BaseModel):
     verification_id: str
     timestamp: str
@@ -85,3 +94,4 @@ class VerificationResponse(BaseModel):
     pin_verification: PinVerificationResult
     score_breakdown: ScoreBreakdown
     nearby_places: List[NearbyPlace] = []
+    data_sources: List[DataSourceAttribution] = []

@@ -7,7 +7,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from app.config import settings
 from app.db.database import engine, Base
-from app.api.routes import health, addresses, verification, nearby
+from app.api.routes import health, addresses, verification, nearby, geography
 
 logging.basicConfig(
     level=logging.INFO,
@@ -50,6 +50,7 @@ app.include_router(health.router, prefix=settings.API_PREFIX)
 app.include_router(addresses.router, prefix=settings.API_PREFIX)
 app.include_router(verification.router, prefix=settings.API_PREFIX)
 app.include_router(nearby.router, prefix=settings.API_PREFIX)
+app.include_router(geography.router, prefix=settings.API_PREFIX)
 
 
 @app.get("/")
