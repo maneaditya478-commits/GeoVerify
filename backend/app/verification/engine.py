@@ -12,7 +12,9 @@ from app.schemas.address import (
 from app.schemas.verification import (
     VerificationResponse,
     VerificationStatus,
-    DataSourceAttribution
+    DataSourceAttribution,
+    AddressScores,
+    EvidenceGraphResponse
 )
 from app.services.normalizer import AddressNormalizer
 from app.services.address_parser import AddressParser
@@ -23,6 +25,9 @@ from app.verification.hierarchy import hierarchy_validator
 from app.verification.boundaries import boundary_service
 from app.verification.evidence import EvidenceEngine
 from app.verification.scoring import ScoringEngine
+from app.entity_resolution.resolver import address_entity_resolver
+from app.evidence.graph import evidence_graph_builder
+from app.evidence.serializer import evidence_serializer
 
 # Known ambiguous locality names that occur in multiple states
 AMBIGUOUS_NAMES = ["rampur", "bilaspur", "aurangabad", "fatehpur", "balrampur"]
@@ -113,13 +118,7 @@ class VerificationEngine:
         effective_state = normalized.state or parsed.state
         effective_pin = normalized.pincode or parsed.pincode
 
-        # 3. Check for Ambiguity (e.g. Rampur without state/district/pin)
-        is_ambiguous = False
-        if effective_locality and effective_locality.lower() in AMBIGUOUS_NAMES:
-            if not effective_state and not effective_district and not effective_pin:
-                is_ambiguous = True
-
-        # 4. Geocoding
+        # 3. Geocoding
         geocoding_query = normalized.normalized_text or raw_text
         geocoding: Optional[GeocodingResult] = await geocoder_service.geocode(
             query=geocoding_query,
@@ -128,6 +127,19 @@ class VerificationEngine:
             state=effective_state,
             pincode=effective_pin
         )
+        coords = geocoding.coordinates if geocoding else None
+
+        # 4. Entity Resolution, Candidate Matching & Ambiguity
+        resolution = address_entity_resolver.resolve_address(
+            address_text=raw_text,
+            parsed_override=parsed,
+            context_coordinates=coords
+        )
+
+        is_ambiguous = resolution.ambiguity.is_ambiguous
+        if effective_locality and effective_locality.lower() in AMBIGUOUS_NAMES:
+            if not effective_state and not effective_district and not effective_pin:
+                is_ambiguous = True
 
         # 5. Administrative Hierarchy Verification
         hierarchy_res = hierarchy_validator.validate_hierarchy(
@@ -138,7 +150,6 @@ class VerificationEngine:
         )
 
         # 6. Geometric Boundary Verification (Point-in-Polygon)
-        coords = geocoding.coordinates if geocoding else None
         boundary_res = boundary_service.verify_boundaries(
             coordinates=coords,
             asserted_state=effective_state,
@@ -182,6 +193,30 @@ class VerificationEngine:
             is_ambiguous=is_ambiguous
         )
 
+        # 11. Evidence Graph Construction
+        graph_obj = evidence_graph_builder.build_graph(
+            hierarchy=hierarchy_res,
+            boundary=boundary_res,
+            pin=pin_res,
+            coordinates=coords,
+            nearby_places=nearby_places,
+            evidence_items=evidence_items
+        )
+        graph_resp = EvidenceGraphResponse(
+            nodes=[n.model_dump() for n in graph_obj.nodes],
+            relationships=[e.model_dump() for e in graph_obj.edges],
+            summary=graph_obj.summary,
+            conflicts_count=graph_obj.conflicts_count,
+            warnings_count=graph_obj.warnings_count
+        )
+
+        # Multi-Scores
+        multi_scores = AddressScores(
+            geographic_consistency=score,
+            address_completeness=resolution.completeness.score,
+            entity_match=resolution.entity_match_score
+        )
+
         # GeoJSON filtering if requested
         if not request.include_geojson:
             boundary_res.boundary_geojson = None
@@ -191,6 +226,7 @@ class VerificationEngine:
             timestamp=timestamp,
             status=status,
             score=score,
+            scores=multi_scores,
             summary=summary,
             explanation=explanation,
             warnings=warnings,
@@ -203,8 +239,13 @@ class VerificationEngine:
             pin_verification=pin_res,
             score_breakdown=score_breakdown,
             nearby_places=nearby_places,
+            candidate_matches=resolution.candidate_matches,
+            ambiguity=resolution.ambiguity,
+            completeness=resolution.completeness,
+            evidence_graph=graph_resp,
             data_sources=STANDARD_DATA_SOURCES
         )
 
 
 verification_engine = VerificationEngine()
+

@@ -1,0 +1,219 @@
+{
+  "version": "3.0",
+  "description": "GeoVerify India Phase 3 Address Intelligence Benchmark Suite",
+  "total_cases": 18,
+  "cases": [
+    {
+      "id": "tc_valid_01",
+      "category": "VALID",
+      "input": "World Trade Center, Kharadi, Haveli, Pune, Maharashtra 411014",
+      "expected_status": "VERIFIED",
+      "expected_entities": {
+        "locality": "Kharadi",
+        "subdistrict": "Haveli",
+        "district": "Pune",
+        "state": "Maharashtra",
+        "pincode": "411014"
+      },
+      "reason": "Complete valid Indian address with locality, taluka, district, state, and matching PIN."
+    },
+    {
+      "id": "tc_valid_02",
+      "category": "VALID",
+      "input": "Prestige Tech Park, Marathahalli-Sarjapur Outer Ring Road, Bengaluru Urban, Karnataka 560103",
+      "expected_status": "VERIFIED",
+      "expected_entities": {
+        "district": "Bengaluru Urban",
+        "state": "Karnataka",
+        "pincode": "560103"
+      },
+      "reason": "Valid Karnataka tech corridor address with matching district and PIN circle 5."
+    },
+    {
+      "id": "tc_typo_01",
+      "category": "TYPO",
+      "input": "Eon Free Zone, Kharadi, Poona, Maharastra 411014",
+      "expected_status": "VERIFIED",
+      "expected_entities": {
+        "locality": "Kharadi",
+        "district": "Pune",
+        "state": "Maharashtra",
+        "pincode": "411014"
+      },
+      "reason": "Spelling variations 'Poona' (Pune alias) and 'Maharastra' normalize cleanly."
+    },
+    {
+      "id": "tc_typo_02",
+      "category": "TYPO",
+      "input": "Connaught Plce, New Dilli, DL 110001",
+      "expected_status": "VERIFIED",
+      "expected_entities": {
+        "locality": "Connaught Place",
+        "district": "New Delhi",
+        "state": "Delhi",
+        "pincode": "110001"
+      },
+      "reason": "Typo in 'Connaught Plce' and 'New Dilli' resolves via RapidFuzz and state aliases."
+    },
+    {
+      "id": "tc_multilingual_01",
+      "category": "MULTILINGUAL",
+      "input": "गाव: खराडी, तालुका: हवेली, जिल्हा: पुणे, राज्य: महाराष्ट्र, पिन: 411014",
+      "expected_status": "VERIFIED",
+      "expected_entities": {
+        "locality": "Kharadi",
+        "subdistrict": "Haveli",
+        "district": "Pune",
+        "state": "Maharashtra",
+        "pincode": "411014"
+      },
+      "reason": "Prefix-labeled Devanagari Marathi address extracts all 5 administrative tiers cleanly."
+    },
+    {
+      "id": "tc_multilingual_02",
+      "category": "MULTILINGUAL",
+      "input": "हिंजवडी, मुळशी, पुणे, महाराष्ट्र 411057",
+      "expected_status": "VERIFIED",
+      "expected_entities": {
+        "locality": "Hinjewadi",
+        "subdistrict": "Mulshi",
+        "district": "Pune",
+        "state": "Maharashtra",
+        "pincode": "411057"
+      },
+      "reason": "Devanagari free-form address with Hinjewadi in Mulshi taluka transliterates cleanly."
+    },
+    {
+      "id": "tc_mixed_01",
+      "category": "MIXED_LANGUAGE",
+      "input": "Kharadi, पुणे, Maharashtra 411014",
+      "expected_status": "VERIFIED",
+      "expected_entities": {
+        "locality": "Kharadi",
+        "district": "Pune",
+        "state": "Maharashtra",
+        "pincode": "411014"
+      },
+      "reason": "Mixed English and Devanagari terms ('Kharadi' English, 'पुणे' Devanagari) resolve consistently."
+    },
+    {
+      "id": "tc_mixed_02",
+      "category": "MIXED_LANGUAGE",
+      "input": "खराडी, Pune, MH 411014",
+      "expected_status": "VERIFIED",
+      "expected_entities": {
+        "locality": "Kharadi",
+        "district": "Pune",
+        "state": "Maharashtra",
+        "pincode": "411014"
+      },
+      "reason": "Devanagari locality 'खराडी' combined with English district and state code 'MH'."
+    },
+    {
+      "id": "tc_ambiguous_01",
+      "category": "AMBIGUOUS",
+      "input": "Rampur",
+      "expected_status": "AMBIGUOUS",
+      "expected_entities": {},
+      "reason": "'Rampur' is a common geographic name occurring in UP, Bihar, and MP without disambiguating state/district/PIN context."
+    },
+    {
+      "id": "tc_ambiguous_02",
+      "category": "AMBIGUOUS",
+      "input": "Bilaspur",
+      "expected_status": "AMBIGUOUS",
+      "expected_entities": {},
+      "reason": "'Bilaspur' exists in Chhattisgarh and Himachal Pradesh; insufficient context to determine single jurisdiction."
+    },
+    {
+      "id": "tc_district_mismatch_01",
+      "category": "DISTRICT_MISMATCH",
+      "input": "Kharadi, Kolhapur, Maharashtra 411014",
+      "expected_status": "INCONSISTENT",
+      "expected_entities": {
+        "locality": "Kharadi",
+        "district": "Kolhapur",
+        "state": "Maharashtra"
+      },
+      "reason": "Locality 'Kharadi' administratively belongs to Pune district, not Kolhapur."
+    },
+    {
+      "id": "tc_district_mismatch_02",
+      "category": "DISTRICT_MISMATCH",
+      "input": "Whitefield, Mysuru, Karnataka 560066",
+      "expected_status": "INCONSISTENT",
+      "expected_entities": {
+        "locality": "Whitefield",
+        "district": "Mysuru",
+        "state": "Karnataka"
+      },
+      "reason": "'Whitefield' belongs to Bengaluru Urban, conflicting with asserted 'Mysuru'."
+    },
+    {
+      "id": "tc_state_mismatch_01",
+      "category": "STATE_MISMATCH",
+      "input": "Pune, Karnataka 411001",
+      "expected_status": "INCONSISTENT",
+      "expected_entities": {
+        "district": "Pune",
+        "state": "Karnataka"
+      },
+      "reason": "District 'Pune' is in Maharashtra, not Karnataka."
+    },
+    {
+      "id": "tc_state_mismatch_02",
+      "category": "STATE_MISMATCH",
+      "input": "Bengaluru Urban, Maharashtra 560001",
+      "expected_status": "INCONSISTENT",
+      "expected_entities": {
+        "district": "Bengaluru Urban",
+        "state": "Maharashtra"
+      },
+      "reason": "District 'Bengaluru Urban' is in Karnataka, not Maharashtra."
+    },
+    {
+      "id": "tc_pin_mismatch_01",
+      "category": "PIN_MISMATCH",
+      "input": "Kharadi, Pune, Maharashtra 560066",
+      "expected_status": "NEEDS_REVIEW",
+      "expected_entities": {
+        "locality": "Kharadi",
+        "district": "Pune",
+        "state": "Maharashtra",
+        "pincode": "560066"
+      },
+      "reason": "PIN code 560066 is in Postal Circle 5 (Karnataka), conflicting with Maharashtra (Circle 4)."
+    },
+    {
+      "id": "tc_pin_mismatch_02",
+      "category": "PIN_MISMATCH",
+      "input": "Whitefield, Bengaluru Urban, Karnataka 411014",
+      "expected_status": "NEEDS_REVIEW",
+      "expected_entities": {
+        "locality": "Whitefield",
+        "district": "Bengaluru Urban",
+        "state": "Karnataka",
+        "pincode": "411014"
+      },
+      "reason": "PIN code 411014 (Maharashtra) provided for Bengaluru (Karnataka)."
+    },
+    {
+      "id": "tc_incomplete_01",
+      "category": "INCOMPLETE",
+      "input": "Near Metro Station, Ring Road",
+      "expected_status": "UNABLE_TO_VERIFY",
+      "expected_entities": {},
+      "reason": "Address lacks state, district, and recognizable locality tokens."
+    },
+    {
+      "id": "tc_incomplete_02",
+      "category": "INCOMPLETE",
+      "input": "Maharashtra",
+      "expected_status": "NEEDS_REVIEW",
+      "expected_entities": {
+        "state": "Maharashtra"
+      },
+      "reason": "State-only input has low completeness and partial score (<70) requiring review for missing district, locality, and PIN."
+    }
+  ]
+}

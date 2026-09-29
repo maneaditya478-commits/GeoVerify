@@ -10,6 +10,9 @@ import { NearbyPlacesTable } from '../components/NearbyPlacesTable';
 import { TransformationViewer } from '../components/TransformationViewer';
 import { WarningsList } from '../components/WarningsList';
 import { DataSourcesCard } from '../components/DataSourcesCard';
+import { AddressInterpretationCard } from '../components/AddressInterpretationCard';
+import { AmbiguityCard } from '../components/AmbiguityCard';
+import { EvidenceGraphView } from '../components/EvidenceGraphView';
 import { MapPin, Clock, Fingerprint } from 'lucide-react';
 
 interface VerifyPageProps {
@@ -58,15 +61,33 @@ export const VerifyPage: React.FC<VerifyPageProps> = ({ result, onVerify, isLoad
             )}
           </div>
 
+          {/* Ambiguity Card if ambiguous */}
+          {result.ambiguity && result.ambiguity.is_ambiguous && (
+            <AmbiguityCard ambiguity={result.ambiguity} candidates={result.candidate_matches} />
+          )}
+
           {/* Warnings Banner if any */}
           <WarningsList warnings={result.warnings} />
 
-          {/* Geographic Consistency Score Gauge */}
+          {/* Multi-Scores Gauge */}
           <ScoreGauge
             score={result.score}
             status={result.status}
             breakdown={result.score_breakdown}
+            scores={result.scores}
+            completeness={result.completeness}
           />
+
+          {/* Address Interpretation & Transliteration Card */}
+          <AddressInterpretationCard
+            parsed={result.parsed_address}
+            normalized={result.normalized_address}
+          />
+
+          {/* Directed Evidence Graph */}
+          {result.evidence_graph && (
+            <EvidenceGraphView graph={result.evidence_graph} />
+          )}
 
           {/* Main 2-Column GIS Dashboard Grid */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">

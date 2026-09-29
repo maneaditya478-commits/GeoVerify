@@ -29,6 +29,11 @@ PREMISE_PATTERNS = [
     r"(\b[0-9]{1,4}[a-zA-Z]?(?:/[0-9]{1,4})?\b)"
 ]
 
+# Common road / street / highway indicators
+ROAD_PATTERNS = [
+    r"\b(?:road|rd\.?|marg|street|st\.?|highway|nh\s*\d*|expressway|ring\s*road|bypass|lane|gali|path|avenue|rasta|chowk)\b"
+]
+
 # Known localities for direct detection
 KNOWN_LOCALITIES = [
     "Kharadi", "Viman Nagar", "Hinjewadi", "Hinjawadi", "Kothrud", "Baner", "Hadapsar",
@@ -50,16 +55,51 @@ KNOWN_SUBDISTRICTS = [
 
 
 class AddressParser:
-    """Parses free-form Indian address strings into structured administrative components."""
+    """Parses free-form and prefix-labeled Indian address strings into structured administrative components."""
 
     @classmethod
     def parse(cls, raw_address: str) -> ParsedAddress:
+        from app.services.transliteration import transliteration_service
         if not raw_address or not raw_address.strip():
             return ParsedAddress(parse_confidence=0.0)
 
-        # 1. Clean input text
+        detected_script = transliteration_service.detect_script(raw_address)
+
+        # 0. Check for explicit Indic/English field prefixes (e.g. 'गाव: खराडी, तालुका: हवेली, जिल्हा: पुणे')
+        prefixed = transliteration_service.extract_indic_prefixed_fields(raw_address)
+        if len(prefixed) >= 2:
+            norm_state, state_code, _ = AddressNormalizer.normalize_state(prefixed.get("state"))
+            norm_dist, _ = AddressNormalizer.normalize_district(prefixed.get("district"))
+            pincode = prefixed.get("pincode")
+            locality = prefixed.get("locality")
+            subdistrict = prefixed.get("subdistrict")
+            landmarks = [prefixed["landmark"]] if "landmark" in prefixed else []
+
+            conf = 0.0
+            if norm_state: conf += 0.25
+            if norm_dist: conf += 0.25
+            if locality: conf += 0.25
+            if pincode: conf += 0.25
+
+            return ParsedAddress(
+                premise=None,
+                locality=locality.title() if locality else None,
+                subdistrict=subdistrict.title() if subdistrict else None,
+                city=norm_dist,
+                district=norm_dist,
+                state=norm_state,
+                state_code=state_code,
+                pincode=pincode,
+                landmarks=landmarks,
+                unparsed_tokens=[],
+                detected_script=detected_script,
+                parse_confidence=round(conf, 2)
+            )
+
+        # 1. Clean input text & transliterate Indic script to Latin
         cleaned_text, _ = AddressNormalizer.clean_text(raw_address)
-        remaining_text = cleaned_text
+        transliterated_text, _ = transliteration_service.transliterate_to_latin(cleaned_text)
+        remaining_text = transliterated_text
 
         # 2. Extract PIN code
         pincode = None
@@ -91,7 +131,6 @@ class AddressParser:
         # 5. Extract State
         state = None
         state_code = None
-        # Collect all state aliases sorted by length descending
         all_state_aliases = []
         for canonical, data in STATE_MAPPINGS.items():
             for alias in [canonical.lower()] + data["aliases"]:
@@ -106,10 +145,13 @@ class AddressParser:
                 remaining_text = re.sub(pattern, "", remaining_text, flags=re.IGNORECASE).strip()
                 break
 
-        # If state is Delhi and district not found, set district to New Delhi
+        # If state is Delhi and district not found, set district to New Delhi (and vice-versa)
         if state == "Delhi" and not district:
             district = "New Delhi"
             city = "New Delhi"
+        elif (district == "New Delhi" or city == "New Delhi") and not state:
+            state = "Delhi"
+            state_code = "DL"
 
         # 6. Extract Sub-District / Taluka
         subdistrict = None
@@ -137,11 +179,12 @@ class AddressParser:
         unparsed = []
 
         for token in tokens:
-            # Check if token looks like a premise
+            # Check if token looks like a premise or road
             is_premise = any(re.search(p, token, re.IGNORECASE) for p in PREMISE_PATTERNS)
-            if is_premise and not premise:
+            is_road = any(re.search(p, token, re.IGNORECASE) for p in ROAD_PATTERNS)
+            if (is_premise or is_road) and not premise:
                 premise = token
-            elif not locality and len(token.split()) <= 3 and not is_premise:
+            elif not locality and len(token.split()) <= 3 and not is_premise and not is_road:
                 locality = token.title()
             else:
                 unparsed.append(token)
@@ -168,5 +211,6 @@ class AddressParser:
             pincode=pincode,
             landmarks=landmarks,
             unparsed_tokens=unparsed,
+            detected_script=detected_script,
             parse_confidence=round(confidence, 2)
         )

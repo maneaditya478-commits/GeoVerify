@@ -6,6 +6,7 @@ from pydantic import BaseModel, Field
 from app.schemas.address import NormalizedAddress, ParsedAddress, GeocodingResult, Coordinates
 from app.schemas.hierarchy import AdministrativeHierarchyResult
 from app.schemas.nearby import NearbyPlace
+from app.entity_resolution.models import CandidateEntity, EntityMatchResult, AmbiguityDetails, CompletenessResult
 
 
 class VerificationStatus(str, Enum):
@@ -17,11 +18,18 @@ class VerificationStatus(str, Enum):
     UNABLE_TO_VERIFY = "UNABLE_TO_VERIFY"
 
 
+class EvidenceSeverity(str, Enum):
+    INFO = "INFO"
+    WARNING = "WARNING"
+    CONFLICT = "CONFLICT"
+
+
 class EvidenceItem(BaseModel):
     code: str = Field(..., json_schema_extra={"example": "STATE_MATCH"})
     category: str = Field(..., json_schema_extra={"example": "hierarchy"})
     passed: bool = True
     status: str = Field(..., json_schema_extra={"example": "PASSED"})
+    severity: str = Field("INFO", description="INFO, WARNING, CONFLICT")
     weight: int = Field(..., json_schema_extra={"example": 10})
     score_contribution: float = Field(..., json_schema_extra={"example": 10.0})
     title: str = Field(..., json_schema_extra={"example": "State Verification"})
@@ -69,6 +77,20 @@ class ScoreBreakdown(BaseModel):
     total_score: float = 0.0
 
 
+class AddressScores(BaseModel):
+    geographic_consistency: int = Field(..., ge=0, le=100, description="Deterministic GIS and hierarchy score (0-100)")
+    address_completeness: int = Field(..., ge=0, le=100, description="Presence of required address components (0-100)")
+    entity_match: int = Field(..., ge=0, le=100, description="Weighted entity resolution match score (0-100)")
+
+
+class EvidenceGraphResponse(BaseModel):
+    nodes: List[Dict[str, Any]] = []
+    relationships: List[Dict[str, Any]] = []
+    summary: str = ""
+    conflicts_count: int = 0
+    warnings_count: int = 0
+
+
 class DataSourceAttribution(BaseModel):
     name: str
     source_url: str
@@ -82,6 +104,7 @@ class VerificationResponse(BaseModel):
     timestamp: str
     status: VerificationStatus
     score: int = Field(..., ge=0, le=100, description="Geographic Consistency Score (0-100)")
+    scores: Optional[AddressScores] = None
     summary: str
     explanation: List[str] = []
     warnings: List[str] = []
@@ -94,4 +117,8 @@ class VerificationResponse(BaseModel):
     pin_verification: PinVerificationResult
     score_breakdown: ScoreBreakdown
     nearby_places: List[NearbyPlace] = []
+    candidate_matches: List[EntityMatchResult] = []
+    ambiguity: Optional[AmbiguityDetails] = None
+    completeness: Optional[CompletenessResult] = None
+    evidence_graph: Optional[EvidenceGraphResponse] = None
     data_sources: List[DataSourceAttribution] = []

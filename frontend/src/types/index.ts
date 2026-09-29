@@ -36,6 +36,7 @@ export interface NormalizedAddress {
   state?: string;
   state_code?: string;
   pincode?: string;
+  detected_script?: string;
   transformations: TransformationStep[];
 }
 
@@ -50,7 +51,100 @@ export interface ParsedAddress {
   pincode?: string;
   landmarks: string[];
   unparsed_tokens: string[];
+  detected_script?: string;
   parse_confidence: number;
+}
+
+export interface AddressScores {
+  geographic_consistency: number;
+  address_completeness: number;
+  entity_match: number;
+}
+
+export interface CandidateEntity {
+  id: string;
+  name: string;
+  name_hi?: string;
+  name_mr?: string;
+  entity_type: string;
+  state?: string;
+  state_code?: string;
+  district?: string;
+  subdistrict?: string;
+  pincode?: string;
+  coordinates?: Coordinates;
+  similarity_score?: number;
+  match_source?: string;
+}
+
+export interface EntityMatchBreakdown {
+  name_similarity: number;
+  admin_context: number;
+  pin_compatibility: number;
+  geographic_proximity: number;
+  entity_type_weight: number;
+  total_score: number;
+}
+
+export interface EntityMatchResult {
+  candidate: CandidateEntity;
+  match_score: number;
+  breakdown: EntityMatchBreakdown;
+  match_confidence: 'HIGH' | 'MEDIUM' | 'LOW';
+}
+
+export interface AmbiguityDetails {
+  is_ambiguous: boolean;
+  top_candidates: EntityMatchResult[];
+  ambiguity_reason?: string;
+  suggested_disambiguations: string[];
+}
+
+export interface CompletenessCriteria {
+  has_premise: boolean;
+  has_road: boolean;
+  has_landmark: boolean;
+  has_locality: boolean;
+  has_subdistrict: boolean;
+  has_district: boolean;
+  has_state: boolean;
+  has_pincode: boolean;
+}
+
+export interface CompletenessResult {
+  score: number;
+  rating: 'COMPLETE' | 'ADEQUATE' | 'PARTIAL' | 'MINIMAL';
+  criteria: CompletenessCriteria;
+  missing_fields: string[];
+  breakdown: Record<string, number>;
+}
+
+export interface EvidenceNode {
+  id: string;
+  label: string;
+  node_type: string;
+  level: string;
+  status: 'VERIFIED' | 'WARNING' | 'CONFLICT' | 'UNVERIFIED';
+  properties?: Record<string, any>;
+}
+
+export interface EvidenceEdge {
+  id: string;
+  source: string;
+  target: string;
+  relationship: string;
+  label: string;
+  severity: 'INFO' | 'WARNING' | 'CONFLICT';
+  passed: boolean;
+  evidence_text?: string;
+}
+
+export interface EvidenceGraphResponse {
+  nodes: EvidenceNode[];
+  relationships: EvidenceEdge[];
+  summary: string;
+  conflicts_count: number;
+  warnings_count: number;
 }
 
 export interface HierarchyNode {
@@ -162,6 +256,11 @@ export interface VerificationResponse {
   score_breakdown: ScoreBreakdown;
   nearby_places: NearbyPlace[];
   data_sources?: DataSourceAttribution[];
+  scores?: AddressScores;
+  ambiguity?: AmbiguityDetails;
+  completeness?: CompletenessResult;
+  candidate_matches?: EntityMatchResult[];
+  evidence_graph?: EvidenceGraphResponse;
 }
 
 export interface StructuredAddressRequest {

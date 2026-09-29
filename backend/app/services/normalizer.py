@@ -98,7 +98,19 @@ DISTRICT_ALIASES = {
     "calcutta": "Kolkata",
     "ahmedabad": "Ahmedabad",
     "jaipur": "Jaipur",
-    "lucknow": "Lucknow"
+    "lucknow": "Lucknow",
+    "mysuru": "Mysuru",
+    "mysore": "Mysuru",
+    "thane": "Thane",
+    "nashik": "Nashik",
+    "nasik": "Nashik",
+    "surat": "Surat",
+    "patna": "Patna",
+    "chandigarh": "Chandigarh",
+    "indore": "Indore",
+    "bhopal": "Bhopal",
+    "visakhapatnam": "Visakhapatnam",
+    "vizag": "Visakhapatnam"
 }
 
 # Common Indian address abbreviations
@@ -285,12 +297,26 @@ class AddressNormalizer:
         pincode: Optional[str] = None
     ) -> NormalizedAddress:
         """Full normalization pipeline across all fields."""
+        from app.services.transliteration import transliteration_service
         all_transformations: List[TransformationStep] = []
-        original_input = address_text or f"{locality or ''} {city or ''} {district or ''} {state or ''} {pincode or ''}".strip()
+        original_input = address_text or f"{locality or ''} {subdistrict or ''} {city or ''} {district or ''} {state or ''} {pincode or ''}".strip()
+        detected_script = transliteration_service.detect_script(original_input)
 
         # 1. Clean full text
         normalized_text, text_transformations = cls.clean_text(original_input)
         all_transformations.extend(text_transformations)
+
+        # Transliterate Indic script if present
+        if detected_script in ["Devanagari", "Mixed"]:
+            transliterated, trans_steps = transliteration_service.transliterate_to_latin(normalized_text)
+            if transliterated != normalized_text:
+                all_transformations.append(TransformationStep(
+                    field="script",
+                    original_value=normalized_text,
+                    transformed_value=transliterated,
+                    rule_applied=f"Transliterated Indic script ({detected_script}) to Latin"
+                ))
+                normalized_text = transliterated
 
         # 2. Extract PIN code from text if not provided
         if not pincode and normalized_text:
@@ -311,16 +337,25 @@ class AddressNormalizer:
 
         # 5. Locality normalization
         norm_locality = locality.strip().title() if locality else None
+        if norm_locality:
+            trans_loc, _ = transliteration_service.transliterate_to_latin(norm_locality)
+            norm_locality = trans_loc.strip().title()
+
+        norm_subdist = subdistrict.strip().title() if subdistrict else None
+        if norm_subdist:
+            trans_sd, _ = transliteration_service.transliterate_to_latin(norm_subdist)
+            norm_subdist = trans_sd.strip().title()
 
         return NormalizedAddress(
             original_input=original_input,
             normalized_text=normalized_text,
             locality=norm_locality,
-            subdistrict=subdistrict.strip().title() if subdistrict else None,
+            subdistrict=norm_subdist,
             city=city.strip().title() if city else (norm_district if norm_district else None),
             district=norm_district,
             state=norm_state,
             state_code=state_code,
             pincode=norm_pincode,
+            detected_script=detected_script,
             transformations=all_transformations
         )

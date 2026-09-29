@@ -656,5 +656,65 @@
         28.8
       ]
     ]
+  },
+  {
+    "id": "loc_rampur_bihar",
+    "name": "Rampur",
+    "canonical_name": "Rampur",
+    "name_hi": "रामपुर",
+    "aliases": ["Rampur Block", "Rampur Bihar"],
+    "subdistrict_id": "subdist_rampur_bihar",
+    "subdistrict": "Rampur",
+    "district_id": "dist_kaimur",
+    "district": "Kaimur",
+    "state_id": 10,
+    "state": "Bihar",
+    "state_code": "BR",
+    "pincode": "821101",
+    "coordinates": {
+      "latitude": 24.9622,
+      "longitude": 83.6144
+    },
+    "bbox": [83.55, 24.90, 83.70, 25.02]
+  },
+  {
+    "id": "loc_bilaspur_cg",
+    "name": "Bilaspur",
+    "canonical_name": "Bilaspur",
+    "name_hi": "बिलासपुर",
+    "aliases": ["Bilaspur City", "Bilaspur CG"],
+    "subdistrict_id": "subdist_bilaspur",
+    "subdistrict": "Bilaspur",
+    "district_id": "dist_bilaspur",
+    "district": "Bilaspur",
+    "state_id": 22,
+    "state": "Chhattisgarh",
+    "state_code": "CG",
+    "pincode": "495001",
+    "coordinates": {
+      "latitude": 22.0797,
+      "longitude": 82.1409
+    },
+    "bbox": [82.10, 22.04, 82.20, 22.12]
+  },
+  {
+    "id": "loc_bilaspur_hp",
+    "name": "Bilaspur",
+    "canonical_name": "Bilaspur",
+    "name_hi": "बिलासपुर",
+    "aliases": ["Bilaspur Sadar", "Bilaspur HP"],
+    "subdistrict_id": "subdist_bilaspur_hp",
+    "subdistrict": "Sadar",
+    "district_id": "dist_bilaspur_hp",
+    "district": "Bilaspur",
+    "state_id": 2,
+    "state": "Himachal Pradesh",
+    "state_code": "HP",
+    "pincode": "174001",
+    "coordinates": {
+      "latitude": 31.3260,
+      "longitude": 76.7567
+    },
+    "bbox": [76.70, 31.28, 76.80, 31.36]
   }
 ]

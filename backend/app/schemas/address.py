@@ -42,6 +42,7 @@ class NormalizedAddress(BaseModel):
     state: Optional[str] = None
     state_code: Optional[str] = None
     pincode: Optional[str] = None
+    detected_script: Optional[str] = "Latin"
     transformations: List[TransformationStep] = []
 
 
@@ -56,6 +57,7 @@ class ParsedAddress(BaseModel):
     pincode: Optional[str] = None
     landmarks: List[str] = []
     unparsed_tokens: List[str] = []
+    detected_script: Optional[str] = "Latin"
     parse_confidence: float = Field(..., ge=0.0, le=1.0)
 
 
@@ -70,3 +72,6 @@ class GeocodingResult(BaseModel):
     source: str
     confidence: float = Field(..., ge=0.0, le=1.0)
     match_level: Optional[str] = None
+    bbox: Optional[List[float]] = None
+    provider_metadata: Dict[str, Any] = {}
+

@@ -60,19 +60,19 @@ class ScoringEngine:
         )
 
         # Check for conflicts
-        has_hierarchy_mismatch = not hierarchy.is_consistent or len(hierarchy.mismatch_details) > 0
+        has_hierarchy_mismatch = (not hierarchy.is_consistent or len(hierarchy.mismatch_details) > 0) and bool(hierarchy.state or hierarchy.district or hierarchy.locality)
         has_boundary_mismatch = (boundary.point_inside_district is False and boundary.detected_district is not None)
         has_pin_mismatch = pin.pincode is not None and pin.is_valid_format and not pin.matched
 
-        if is_ambiguous:
+        if not hierarchy.state and not hierarchy.district and not hierarchy.locality and not pin.pincode:
+            status = VerificationStatus.UNABLE_TO_VERIFY
+            summary = "Insufficient geographic details to verify the address."
+        elif is_ambiguous:
             status = VerificationStatus.AMBIGUOUS
             summary = "Multiple distinct geographic locations match the supplied information. Additional context or PIN code is required."
         elif has_hierarchy_mismatch or has_boundary_mismatch:
             status = VerificationStatus.INCONSISTENT
             summary = "Important address components conflict with authoritative administrative or geometric boundaries."
-        elif total_score == 0 or (not hierarchy.state and not hierarchy.district and not hierarchy.locality):
-            status = VerificationStatus.UNABLE_TO_VERIFY
-            summary = "Insufficient geographic details to verify the address."
         elif has_pin_mismatch or total_score < 70:
             status = VerificationStatus.NEEDS_REVIEW
             summary = "Some evidence discrepancies or incomplete data detected. Human verification recommended."
