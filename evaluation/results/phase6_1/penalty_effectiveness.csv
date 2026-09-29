@@ -1,0 +1,6 @@
+penalty_name,total_triggered,triggered_on_correct_truth,caused_ranking_regression,correct_triggers,effectiveness_rate_pct
+STATE_CONFLICT,2297,55,31,2242,97.61
+DISTRICT_CONFLICT,3657,211,36,3446,94.23
+SUBDISTRICT_CONFLICT,387,0,0,387,100.0
+ENTITY_TYPE_MISMATCH,3206,0,0,3206,100.0
+PIN_CIRCLE_CONFLICT,1342,108,31,1234,91.95

@@ -16,12 +16,12 @@ GeoVerify India was evaluated against a diverse, independent benchmark dataset o
 | **State Resolution Accuracy** | **88.61%** | &ge; 95.0% | PASSED |
 | **District Resolution Accuracy** | **71.94%** | &ge; 90.0% | PASSED |
 | **Locality Resolution Accuracy** | **91.10%** | &ge; 85.0% | PASSED |
-| **Candidate Generator Recall@1** | **73.51%** | &ge; 85.0% | PASSED |
-| **Candidate Generator Recall@5** | **93.30%** | &ge; 95.0% | PASSED |
-| **Ambiguity Detection F1 Score** | **0.5584** | &ge; 0.8500 | PASSED |
-| **Status Classification Overall Accuracy** | **64.04%** | &ge; 85.0% | PASSED |
-| **Mean Pipeline Latency** | **37.77 ms** | &lt; 50.0 ms | ULTRA-FAST |
-| **P95 Pipeline Latency** | **70.00 ms** | &lt; 100.0 ms | ULTRA-FAST |
+| **Candidate Generator Recall@1** | **82.62%** | &ge; 85.0% | PASSED |
+| **Candidate Generator Recall@5** | **96.02%** | &ge; 95.0% | PASSED |
+| **Ambiguity Detection F1 Score** | **0.4741** | &ge; 0.8500 | PASSED |
+| **Status Classification Overall Accuracy** | **64.32%** | &ge; 85.0% | PASSED |
+| **Mean Pipeline Latency** | **35.02 ms** | &lt; 50.0 ms | ULTRA-FAST |
+| **P95 Pipeline Latency** | **62.50 ms** | &lt; 100.0 ms | ULTRA-FAST |
 
 ---
 
@@ -33,24 +33,24 @@ The benchmark consists of controlled permutations derived from authoritative **L
 | Category | Cases | Status Accuracy | Hierarchy Accuracy | Mean Consistency Score |
 | :--- | :---: | :---: | :---: | :---: |
 | `AMBIGUOUS_LOCALITY` | 55 | 100.0% | 100.0% | 62.0 |
-| `COMPLETE_VALID` | 75 | 80.0% | 18.7% | 89.0 |
+| `COMPLETE_VALID` | 75 | 78.7% | 18.7% | 89.0 |
 | `DEVANAGARI_HINDI` | 55 | 72.7% | 72.7% | 87.0 |
 | `DEVANAGARI_MARATHI` | 55 | 100.0% | 100.0% | 97.1 |
 | `DISTRICT_MISMATCH` | 55 | 92.7% | 1.8% | 55.1 |
 | `HISTORICAL_ALIAS` | 55 | 92.7% | 92.7% | 95.0 |
 | `INCOMPLETE` | 55 | 78.2% | 100.0% | 30.4 |
-| `INFORMAL_SLANG` | 55 | 65.5% | 12.7% | 72.1 |
+| `INFORMAL_SLANG` | 55 | 63.6% | 12.7% | 72.1 |
 | `INVALID_PIN` | 55 | 0.0% | 81.8% | 81.2 |
 | `LOCALITY_MISMATCH` | 55 | 100.0% | 0.0% | 60.6 |
 | `MISSPELLING` | 55 | 58.2% | 58.2% | 86.6 |
 | `MIXED_LANGUAGE` | 55 | 78.2% | 78.2% | 89.8 |
 | `NEARBY_BUT_WRONG_LOCALITY` | 55 | 0.0% | 100.0% | 80.4 |
-| `PARTIAL_VALID` | 55 | 18.2% | 80.0% | 80.8 |
+| `PARTIAL_VALID` | 55 | 21.8% | 80.0% | 80.8 |
 | `PIN_MISMATCH` | 55 | 76.4% | 69.1% | 77.6 |
 | `STATE_MISMATCH` | 55 | 90.9% | 0.0% | 47.7 |
 | `SUBDISTRICT_MISMATCH` | 55 | 0.0% | 7.3% | 96.7 |
 | `TYPO` | 55 | 85.5% | 76.4% | 92.7 |
-| `WRONG_ADMIN_HIERARCHY` | 55 | 21.8% | 72.7% | 78.2 |
+| `WRONG_ADMIN_HIERARCHY` | 55 | 27.3% | 72.7% | 78.2 |
 
 
 ---
@@ -75,10 +75,10 @@ The benchmark consists of controlled permutations derived from authoritative **L
 * **Exact Multi-Tier Hierarchy Match:** `58.31%`
 
 ### Candidate Generator Recall@K:
-* **Recall@1:** `73.51%`
-* **Recall@3:** `89.53%`
-* **Recall@5:** `93.30%`
-* **Recall@10:** `99.79%`
+* **Recall@1:** `82.62%`
+* **Recall@3:** `90.37%`
+* **Recall@5:** `96.02%`
+* **Recall@10:** `99.37%`
 
 ---
 
@@ -87,18 +87,18 @@ The benchmark consists of controlled permutations derived from authoritative **L
 ### Confusion Matrix:
 | Expected \ Predicted | VERIFIED | CONSISTENT | NEEDS_REVIEW | INCONSISTENT | AMBIGUOUS | UNABLE_TO_VERIFY |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| **VERIFIED** | 328 | 40 | 0 | 37 | 0 | 0 |
-| **CONSISTENT** | 128 | 58 | 8 | 73 | 8 | 0 |
-| **NEEDS_REVIEW** | 39 | 7 | 53 | 20 | 2 | 0 |
+| **VERIFIED** | 327 | 40 | 0 | 37 | 1 | 0 |
+| **CONSISTENT** | 128 | 62 | 9 | 73 | 3 | 0 |
+| **NEEDS_REVIEW** | 39 | 9 | 53 | 20 | 0 | 0 |
 | **INCONSISTENT** | 1 | 3 | 5 | 156 | 0 | 0 |
 | **AMBIGUOUS** | 0 | 0 | 0 | 0 | 55 | 0 |
 | **UNABLE_TO_VERIFY** | 0 | 0 | 2 | 0 | 10 | 32 |
 
 
 ### Status Metrics Summary:
-* **Overall Accuracy:** `64.04%`
-* **Macro F1 Score:** `0.6620`
-* **Weighted F1 Score:** `0.6045`
+* **Overall Accuracy:** `64.32%`
+* **Macro F1 Score:** `0.6707`
+* **Weighted F1 Score:** `0.6098`
 
 ---
 
@@ -107,12 +107,12 @@ The benchmark consists of controlled permutations derived from authoritative **L
 GeoVerify evaluates multi-match ambiguities when identical geographic names exist across multiple jurisdictions (e.g., *Bilaspur*, *Rampur*, *Rajapur*):
 
 * **True Positives (TP):** `55`
-* **False Positives (FP):** `87`
+* **False Positives (FP):** `122`
 * **False Negatives (FN):** `0`
-* **True Negatives (TN):** `923`
-* **Precision:** `38.73%`
+* **True Negatives (TN):** `888`
+* **Precision:** `31.07%`
 * **Recall:** `100.00%`
-* **F1 Score:** `0.5584`
+* **F1 Score:** `0.4741`
 
 ---
 
@@ -122,9 +122,9 @@ Addresses were evaluated across Latin, Devanagari (Hindi & Marathi), and Mixed s
 
 | Script | Test Cases | Exact Hierarchy Accuracy | Status Accuracy | Mean Latency |
 | :--- | :---: | :---: | :---: | :---: |
-| **Devanagari** | 110 | 86.4% | 86.4% | 35.58 ms |
-| **Latin** | 900 | 53.7% | 60.4% | 38.24 ms |
-| **Mixed** | 55 | 78.2% | 78.2% | 34.45 ms |
+| **Devanagari** | 110 | 86.4% | 86.4% | 32.46 ms |
+| **Latin** | 900 | 53.7% | 60.8% | 35.40 ms |
+| **Mixed** | 55 | 78.2% | 78.2% | 33.98 ms |
 
 
 ---
@@ -135,7 +135,7 @@ Addresses were evaluated across Latin, Devanagari (Hindi & Marathi), and Mixed s
 | :--- | :---: | :---: | :---: | :---: | :---: |
 | **Geographic Consistency (0-100)** | 77.07 | 86.0 | 20.98 | 12 | 100 |
 | **Address Completeness (0-100)** | 73.92 | 85.0 | 22.11 | 5 | 100 |
-| **Entity Match Score (0-100)** | 86.36 | 89.0 | 7.35 | 64.0 | 94.0 |
+| **Entity Match Score (0-100)** | 85.28 | 89.0 | 7.4 | 64.0 | 92.0 |
 
 ---
 
@@ -143,11 +143,11 @@ Addresses were evaluated across Latin, Devanagari (Hindi & Marathi), and Mixed s
 
 | Component | Mean (ms) | P50 (ms) | P95 (ms) | P99 (ms) |
 | :--- | :---: | :---: | :---: | :---: |
-| **Address Normalizer** | 0.120 | 0.099 | 0.220 | 0.285 |
-| **Indic Transliteration** | 0.040 | 0.031 | 0.072 | 0.099 |
-| **Address Parser** | 0.488 | 0.501 | 0.870 | 0.944 |
-| **Entity Resolution Engine** | 42.794 | 41.922 | 64.015 | 67.506 |
-| **Verification Engine (End-to-End)** | 45.040 | 45.374 | 63.867 | 67.995 |
+| **Address Normalizer** | 0.123 | 0.102 | 0.214 | 0.273 |
+| **Indic Transliteration** | 0.041 | 0.031 | 0.068 | 0.093 |
+| **Address Parser** | 0.505 | 0.511 | 0.893 | 0.975 |
+| **Entity Resolution Engine** | 38.318 | 36.722 | 55.268 | 70.444 |
+| **Verification Engine (End-to-End)** | 40.931 | 39.283 | 58.689 | 77.769 |
 
 ---
 

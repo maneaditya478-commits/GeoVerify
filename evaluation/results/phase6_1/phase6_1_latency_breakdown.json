@@ -1,0 +1,132 @@
+[
+  {
+    "Component": "normalization",
+    "Mean (ms)": 0.107,
+    "Std (ms)": 0.119,
+    "P50 (ms)": 0.081,
+    "P95 (ms)": 0.179,
+    "P99 (ms)": 0.313,
+    "Min (ms)": 0.066,
+    "Max (ms)": 1.787
+  },
+  {
+    "Component": "parsing",
+    "Mean (ms)": 0.495,
+    "Std (ms)": 0.526,
+    "P50 (ms)": 0.437,
+    "P95 (ms)": 0.78,
+    "P99 (ms)": 1.227,
+    "Min (ms)": 0.122,
+    "Max (ms)": 7.345
+  },
+  {
+    "Component": "candidate_generation",
+    "Mean (ms)": 12.168,
+    "Std (ms)": 3.723,
+    "P50 (ms)": 11.601,
+    "P95 (ms)": 14.956,
+    "P99 (ms)": 17.18,
+    "Min (ms)": 9.725,
+    "Max (ms)": 65.003
+  },
+  {
+    "Component": "ranking",
+    "Mean (ms)": 0.351,
+    "Std (ms)": 0.177,
+    "P50 (ms)": 0.322,
+    "P95 (ms)": 0.675,
+    "P99 (ms)": 0.859,
+    "Min (ms)": 0.077,
+    "Max (ms)": 1.453
+  },
+  {
+    "Component": "hierarchy_validation",
+    "Mean (ms)": 0.047,
+    "Std (ms)": 0.02,
+    "P50 (ms)": 0.044,
+    "P95 (ms)": 0.086,
+    "P99 (ms)": 0.119,
+    "Min (ms)": 0.022,
+    "Max (ms)": 0.148
+  },
+  {
+    "Component": "boundary_pip",
+    "Mean (ms)": 0.79,
+    "Std (ms)": 0.199,
+    "P50 (ms)": 0.686,
+    "P95 (ms)": 1.185,
+    "P99 (ms)": 1.422,
+    "Min (ms)": 0.554,
+    "Max (ms)": 1.714
+  },
+  {
+    "Component": "pin_validation",
+    "Mean (ms)": 0.045,
+    "Std (ms)": 0.012,
+    "P50 (ms)": 0.041,
+    "P95 (ms)": 0.065,
+    "P99 (ms)": 0.09,
+    "Min (ms)": 0.03,
+    "Max (ms)": 0.149
+  },
+  {
+    "Component": "nearby_search",
+    "Mean (ms)": 0.065,
+    "Std (ms)": 0.024,
+    "P50 (ms)": 0.055,
+    "P95 (ms)": 0.099,
+    "P99 (ms)": 0.17,
+    "Min (ms)": 0.047,
+    "Max (ms)": 0.23
+  },
+  {
+    "Component": "ambiguity_detection",
+    "Mean (ms)": 0.023,
+    "Std (ms)": 0.008,
+    "P50 (ms)": 0.02,
+    "P95 (ms)": 0.033,
+    "P99 (ms)": 0.059,
+    "Min (ms)": 0.015,
+    "Max (ms)": 0.075
+  },
+  {
+    "Component": "evidence_generation",
+    "Mean (ms)": 0.045,
+    "Std (ms)": 0.017,
+    "P50 (ms)": 0.038,
+    "P95 (ms)": 0.075,
+    "P99 (ms)": 0.12,
+    "Min (ms)": 0.033,
+    "Max (ms)": 0.148
+  },
+  {
+    "Component": "evidence_graph",
+    "Mean (ms)": 0.119,
+    "Std (ms)": 0.039,
+    "P50 (ms)": 0.102,
+    "P95 (ms)": 0.205,
+    "P99 (ms)": 0.278,
+    "Min (ms)": 0.086,
+    "Max (ms)": 0.301
+  },
+  {
+    "Component": "decision_engine",
+    "Mean (ms)": 0.011,
+    "Std (ms)": 0.003,
+    "P50 (ms)": 0.01,
+    "P95 (ms)": 0.018,
+    "P99 (ms)": 0.021,
+    "Min (ms)": 0.008,
+    "Max (ms)": 0.023
+  },
+  {
+    "Component": "end_to_end",
+    "Mean (ms)": 35.559,
+    "Std (ms)": 11.55,
+    "P50 (ms)": 32.253,
+    "P95 (ms)": 52.64,
+    "P99 (ms)": 77.696,
+    "Min (ms)": 17.877,
+    "Max (ms)": 93.267
+  }
+]

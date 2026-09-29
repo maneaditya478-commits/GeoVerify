@@ -197,7 +197,7 @@ class AddressEntityResolver:
                     locality_candidates.append(c)
 
         # Rank locality candidates with full contextual scoring and penalty deductions
-        primary_loc_query = parsed.locality or (loc_queries[0] if loc_queries else address_text)
+        primary_loc_query = ", ".join(loc_queries) if loc_queries else (parsed.locality or address_text)
         locality_matches = entity_matcher.rank_candidates(
             candidates=locality_candidates,
             query_text=primary_loc_query,

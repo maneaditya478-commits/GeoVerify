@@ -1,0 +1,15 @@
+{
+  "dataset_version": "1.0.0",
+  "dataset_generated_at": "2026-09-29T13:09:24.723051+00:00",
+  "dataset_hash_sha256": "fbbc54840c66e4f2bd8cd9e20570409c6d5b22630b5acfc45326f896d30d3a61",
+  "random_seed": 42,
+  "total_cases": 1065,
+  "dev_cases_count": 639,
+  "val_cases_count": 213,
+  "held_out_cases_count": 213,
+  "split_ratios": {
+    "dev": 0.6,
+    "val": 0.2,
+    "held_out": 0.2
+  }
+}

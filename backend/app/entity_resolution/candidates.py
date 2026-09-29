@@ -64,6 +64,17 @@ class MultiStageCandidateGenerator:
             if key:
                 self.alias_map.setdefault(key, []).append(a)
 
+        # Exact and canonical name lookups
+        self.state_by_name: Dict[str, List[Dict[str, Any]]] = {}
+        self.state_by_alias: Dict[str, List[Dict[str, Any]]] = {}
+        self.district_by_name: Dict[str, List[Dict[str, Any]]] = {}
+        self.district_by_alias: Dict[str, List[Dict[str, Any]]] = {}
+        self.subdistrict_by_name: Dict[str, List[Dict[str, Any]]] = {}
+        self.locality_by_name: Dict[str, List[Dict[str, Any]]] = {}
+        self.locality_by_alias: Dict[str, List[Dict[str, Any]]] = {}
+        self.pincode_map: Dict[str, Dict[str, Any]] = {}
+        self.pincodes_by_prefix: Dict[str, List[Dict[str, Any]]] = {}
+
         # District to localities index
         self.district_to_localities: Dict[str, List[Dict[str, Any]]] = {}
         # State to districts / localities index
@@ -71,6 +82,32 @@ class MultiStageCandidateGenerator:
         self.state_to_localities: Dict[str, List[Dict[str, Any]]] = {}
         # PIN to localities index
         self.pin_to_localities: Dict[str, List[Dict[str, Any]]] = {}
+
+        for s in self.states:
+            for k in [self._canonical_key(s.get("name", "")), self._canonical_key(s.get("canonical_name", ""))]:
+                if k:
+                    self.state_by_name.setdefault(k, []).append(s)
+            for a in s.get("aliases", []):
+                ak = self._canonical_key(a)
+                if ak:
+                    self.state_by_alias.setdefault(ak, []).append(s)
+
+        for d in self.districts:
+            st = self._canonical_key(d.get("state_name", ""))
+            if st:
+                self.state_to_districts.setdefault(st, []).append(d)
+            for k in [self._canonical_key(d.get("name", "")), self._canonical_key(d.get("canonical_name", ""))]:
+                if k:
+                    self.district_by_name.setdefault(k, []).append(d)
+            for a in d.get("aliases", []):
+                ak = self._canonical_key(a)
+                if ak:
+                    self.district_by_alias.setdefault(ak, []).append(d)
+
+        for sd in self.subdistricts:
+            for k in [self._canonical_key(sd.get("name", "")), self._canonical_key(sd.get("canonical_name", ""))]:
+                if k:
+                    self.subdistrict_by_name.setdefault(k, []).append(sd)
 
         for loc in self.localities:
             st = self._canonical_key(loc.get("state", ""))
@@ -84,10 +121,19 @@ class MultiStageCandidateGenerator:
             if pin:
                 self.pin_to_localities.setdefault(pin, []).append(loc)
 
-        for d in self.districts:
-            st = self._canonical_key(d.get("state_name", ""))
-            if st:
-                self.state_to_districts.setdefault(st, []).append(d)
+            for k in [self._canonical_key(loc.get("name", "")), self._canonical_key(loc.get("canonical_name", ""))]:
+                if k:
+                    self.locality_by_name.setdefault(k, []).append(loc)
+            for a in loc.get("aliases", []):
+                ak = self._canonical_key(a)
+                if ak:
+                    self.locality_by_alias.setdefault(ak, []).append(loc)
+
+        for p in self.pincodes:
+            pin_str = str(p["pincode"])
+            self.pincode_map[pin_str] = p
+            prefix = pin_str[:2]
+            self.pincodes_by_prefix.setdefault(prefix, []).append(p)
 
     @staticmethod
     def _canonical_key(text: str) -> str:
@@ -190,35 +236,31 @@ class MultiStageCandidateGenerator:
         cands = []
         q_key = self._canonical_key(clean_query)
         r_key = self._canonical_key(raw_query)
+        seen_keys = {k for k in [q_key, r_key] if k}
 
         if EntityType.STATE in types:
-            for s in self.states:
-                names = [self._canonical_key(s["name"]), self._canonical_key(s.get("canonical_name", ""))]
-                if q_key in names or r_key in names:
+            for k in seen_keys:
+                for s in self.state_by_name.get(k, []):
                     cands.append(self._make_state_candidate(s, score=1.0, source="exact"))
 
         if any(t in types for t in [EntityType.DISTRICT, EntityType.CITY]):
-            for d in self.districts:
-                names = [self._canonical_key(d["name"]), self._canonical_key(d.get("canonical_name", ""))]
-                if q_key in names or r_key in names:
+            for k in seen_keys:
+                for d in self.district_by_name.get(k, []):
                     cands.append(self._make_district_candidate(d, score=1.0, source="exact"))
 
         if EntityType.SUBDISTRICT in types:
-            for sd in self.subdistricts:
-                names = [self._canonical_key(sd["name"]), self._canonical_key(sd.get("canonical_name", ""))]
-                if q_key in names or r_key in names:
+            for k in seen_keys:
+                for sd in self.subdistrict_by_name.get(k, []):
                     cands.append(self._make_subdistrict_candidate(sd, score=1.0, source="exact"))
 
         if any(t in types for t in [EntityType.LOCALITY, EntityType.VILLAGE, EntityType.TOWN]):
-            for loc in self.localities:
-                names = [self._canonical_key(loc["name"]), self._canonical_key(loc.get("canonical_name", ""))]
-                if q_key in names or r_key in names:
+            for k in seen_keys:
+                for loc in self.locality_by_name.get(k, []):
                     cands.append(self._make_locality_candidate(loc, score=1.0, source="exact"))
 
         if EntityType.PINCODE in types:
-            for p in self.pincodes:
-                if str(p["pincode"]) == clean_query:
-                    cands.append(self._make_pincode_candidate(p, score=1.0, source="exact"))
+            if clean_query in self.pincode_map:
+                cands.append(self._make_pincode_candidate(self.pincode_map[clean_query], score=1.0, source="exact"))
 
         return cands
 
@@ -226,36 +268,33 @@ class MultiStageCandidateGenerator:
         cands = []
         q_key = self._canonical_key(clean_query)
         r_key = self._canonical_key(raw_query)
+        seen_keys = {k for k in [q_key, r_key] if k}
 
-        # Check structured alias map
-        alias_entries = self.alias_map.get(q_key, []) + self.alias_map.get(r_key, [])
-        for entry in alias_entries:
-            canon = entry.get("canonical")
-            confidence = entry.get("confidence", 0.95)
-            # Find in catalog
-            matched = self._retrieve_exact(canon, canon, types)
-            for m in matched:
-                m.similarity_score = max(m.similarity_score, confidence)
-                m.match_source = "alias"
-                cands.append(m)
+        # Check structured external alias map
+        for k in seen_keys:
+            for entry in self.alias_map.get(k, []):
+                canon = entry.get("canonical")
+                confidence = entry.get("confidence", 0.95)
+                matched = self._retrieve_exact(canon, canon, types)
+                for m in matched:
+                    m.similarity_score = max(m.similarity_score, confidence)
+                    m.match_source = "alias"
+                    cands.append(m)
 
-        # Check in-catalog embedded aliases
+        # Check in-catalog embedded aliases via index
         if any(t in types for t in [EntityType.LOCALITY, EntityType.VILLAGE, EntityType.TOWN]):
-            for loc in self.localities:
-                aliases = [self._canonical_key(a) for a in loc.get("aliases", [])]
-                if q_key in aliases or r_key in aliases:
+            for k in seen_keys:
+                for loc in self.locality_by_alias.get(k, []):
                     cands.append(self._make_locality_candidate(loc, score=0.98, source="alias"))
 
         if any(t in types for t in [EntityType.DISTRICT, EntityType.CITY]):
-            for d in self.districts:
-                aliases = [self._canonical_key(a) for a in d.get("aliases", [])]
-                if q_key in aliases or r_key in aliases:
+            for k in seen_keys:
+                for d in self.district_by_alias.get(k, []):
                     cands.append(self._make_district_candidate(d, score=0.98, source="alias"))
 
         if EntityType.STATE in types:
-            for s in self.states:
-                aliases = [self._canonical_key(a) for a in s.get("aliases", [])]
-                if q_key in aliases or r_key in aliases:
+            for k in seen_keys:
+                for s in self.state_by_alias.get(k, []):
                     cands.append(self._make_state_candidate(s, score=0.98, source="alias"))
 
         return cands
@@ -378,22 +417,24 @@ class MultiStageCandidateGenerator:
             candidate_pool = self.state_to_localities[st_key]
 
         for loc in candidate_pool:
-            score = 0.85
             if clean_query:
                 names = [loc["name"].lower(), loc.get("canonical_name", "").lower()] + [a.lower() for a in loc.get("aliases", [])]
                 ratio = self._calc_fuzzy_ratio(clean_query, names)
-                score = max(score, ratio)
-            cands.append(self._make_locality_candidate(loc, score=score, source="admin_context"))
+                if ratio >= 0.4:
+                    cands.append(self._make_locality_candidate(loc, score=ratio, source="admin_context"))
+            else:
+                cands.append(self._make_locality_candidate(loc, score=0.85, source="admin_context"))
 
         # Retrieve districts in known state
         if st_key and st_key in self.state_to_districts and any(t in types for t in [EntityType.DISTRICT, EntityType.CITY]):
             for d in self.state_to_districts[st_key]:
-                score = 0.85
                 if clean_query:
                     names = [d["name"].lower(), d.get("canonical_name", "").lower()] + [a.lower() for a in d.get("aliases", [])]
                     ratio = self._calc_fuzzy_ratio(clean_query, names)
-                    score = max(score, ratio)
-                cands.append(self._make_district_candidate(d, score=score, source="admin_context"))
+                    if ratio >= 0.4:
+                        cands.append(self._make_district_candidate(d, score=ratio, source="admin_context"))
+                else:
+                    cands.append(self._make_district_candidate(d, score=0.85, source="admin_context"))
 
         return cands
 
@@ -402,13 +443,18 @@ class MultiStageCandidateGenerator:
         # Direct PIN match
         if target_pin in self.pin_to_localities:
             for loc in self.pin_to_localities[target_pin]:
-                cands.append(self._make_locality_candidate(loc, score=0.95, source="pin_constrained"))
+                if clean_query and not clean_query.isdigit():
+                    names = [loc["name"].lower(), loc.get("canonical_name", "").lower()] + [a.lower() for a in loc.get("aliases", [])]
+                    ratio = self._calc_fuzzy_ratio(clean_query, names)
+                    score = max(0.5, ratio)
+                else:
+                    score = 0.95
+                cands.append(self._make_locality_candidate(loc, score=score, source="pin_constrained"))
 
         # Postal circle prefix (first 2 digits)
         circle_prefix = target_pin[:2]
-        for p in self.pincodes:
-            if str(p["pincode"]).startswith(circle_prefix):
-                cands.append(self._make_pincode_candidate(p, score=0.90, source="pin_circle"))
+        for p in self.pincodes_by_prefix.get(circle_prefix, []):
+            cands.append(self._make_pincode_candidate(p, score=0.90, source="pin_circle"))
 
         return cands
 

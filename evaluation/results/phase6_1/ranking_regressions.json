@@ -1,0 +1,3113 @@
+{
+  "total_evaluated_cases": 955,
+  "phase5_recall_at_1": 0.933,
+  "phase6_recall_at_1": 0.9131,
+  "total_regressions": 36,
+  "classification_breakdown": {
+    "ADMIN_CONTEXT_OVERPENALTY": 36
+  },
+  "regressions": [
+    {
+      "case_id": "GV-000768",
+      "input_address": "Baner, Bengaluru Urban, Karnataka 560102",
+      "ground_truth": "Baner",
+      "category": "LOCALITY_MISMATCH",
+      "language": "en",
+      "script": "latin",
+      "regression_classification": "ADMIN_CONTEXT_OVERPENALTY",
+      "phase5_top_candidate": "Baner",
+      "phase5_top_score": 52.5,
+      "phase5_rank_of_truth": 1,
+      "phase6_top_candidate": "Indiranagar",
+      "phase6_top_score": 47.4,
+      "phase6_rank_of_truth": 9,
+      "phase6_truth_score": 0.0,
+      "truth_penalties": [
+        {
+          "name": "STATE_CONFLICT",
+          "deduction": -40.0,
+          "reason": "Candidate state 'Maharashtra' contradicts asserted state 'Karnataka'."
+        },
+        {
+          "name": "DISTRICT_CONFLICT",
+          "deduction": -25.0,
+          "reason": "Candidate district 'Pune' contradicts asserted district 'Bengaluru Urban'."
+        },
+        {
+          "name": "PIN_CIRCLE_CONFLICT",
+          "deduction": -20.0,
+          "reason": "Candidate PIN '411045' postal circle does not match queried PIN '560102'."
+        }
+      ],
+      "top_penalties": [
+        {
+          "name": "LOW_NAME_SIMILARITY",
+          "deduction": -25.0,
+          "reason": "Candidate name 'Indiranagar' has low lexical similarity (37.5%) to query token 'Baner'."
+        }
+      ],
+      "administrative_context": {
+        "state": "Karnataka",
+        "district": "Bengaluru Urban",
+        "subdistrict": null,
+        "locality": "Baner",
+        "pincode": "560102"
+      },
+      "truth_entity_type": "locality",
+      "top_entity_type": "locality",
+      "p5_candidate_list": [
+        "Baner",
+        "Indiranagar",
+        "HSR Layout",
+        "Whitefield",
+        "560102"
+      ],
+      "p6_candidate_list": [
+        "Indiranagar",
+        "HSR Layout",
+        "Whitefield",
+        "560102",
+        "560066"
+      ],
+      "p6_truth_breakdown": {
+        "name_similarity": 25.0,
+        "admin_context": 0.0,
+        "parent_child_compatibility": 15.0,
+        "pin_compatibility": 0.0,
+        "geographic_proximity": 5.0,
+        "transliteration_phonetic": 3.0,
+        "entity_type_weight": 5.0,
+        "retrieval_consensus": 3.0,
+        "data_quality": 2.0,
+        "penalty_deduction": -85.0,
+        "total_score": 0.0
+      },
+      "p6_top_breakdown": {
+        "name_similarity": 9.38,
+        "admin_context": 25.0,
+        "parent_child_compatibility": 15.0,
+        "pin_compatibility": 7.0,
+        "geographic_proximity": 5.0,
+        "transliteration_phonetic": 3.0,
+        "entity_type_weight": 5.0,
+        "retrieval_consensus": 0.99,
+        "data_quality": 2.0,
+        "penalty_deduction": -25.0,
+        "total_score": 47.4
+      }
+    },
+    {
+      "case_id": "GV-000744",
+      "input_address": "Kharadi, Bengaluru Urban, Karnataka 560102",
+      "ground_truth": "Kharadi",
+      "category": "LOCALITY_MISMATCH",
+      "language": "en",
+      "script": "latin",
+      "regression_classification": "ADMIN_CONTEXT_OVERPENALTY",
+      "phase5_top_candidate": "Kharadi",
+      "phase5_top_score": 52.5,
+      "phase5_rank_of_truth": 1,
+      "phase6_top_candidate": "HSR Layout",
+      "phase6_top_score": 50.8,
+      "phase6_rank_of_truth": 9,
+      "phase6_truth_score": 0.0,
+      "truth_penalties": [
+        {
+          "name": "STATE_CONFLICT",
+          "deduction": -40.0,
+          "reason": "Candidate state 'Maharashtra' contradicts asserted state 'Karnataka'."
+        },
+        {
+          "name": "DISTRICT_CONFLICT",
+          "deduction": -25.0,
+          "reason": "Candidate district 'Pune' contradicts asserted district 'Bengaluru Urban'."
+        },
+        {
+          "name": "PIN_CIRCLE_CONFLICT",
+          "deduction": -20.0,
+          "reason": "Candidate PIN '411014' postal circle does not match queried PIN '560102'."
+        }
+      ],
+      "top_penalties": [
+        {
+          "name": "LOW_NAME_SIMILARITY",
+          "deduction": -25.0,
+          "reason": "Candidate name 'HSR Layout' has low lexical similarity (35.3%) to query token 'Kharadi'."
+        }
+      ],
+      "administrative_context": {
+        "state": "Karnataka",
+        "district": "Bengaluru Urban",
+        "subdistrict": null,
+        "locality": "Kharadi",
+        "pincode": "560102"
+      },
+      "truth_entity_type": "locality",
+      "top_entity_type": "locality",
+      "p5_candidate_list": [
+        "Kharadi",
+        "HSR Layout",
+        "Koramangala",
+        "Indiranagar",
+        "560102"
+      ],
+      "p6_candidate_list": [
+        "HSR Layout",
+        "Koramangala",
+        "Indiranagar",
+        "560102",
+        "560066"
+      ],
+      "p6_truth_breakdown": {
+        "name_similarity": 25.0,
+        "admin_context": 0.0,
+        "parent_child_compatibility": 15.0,
+        "pin_compatibility": 0.0,
+        "geographic_proximity": 5.0,
+        "transliteration_phonetic": 3.0,
+        "entity_type_weight": 5.0,
+        "retrieval_consensus": 3.0,
+        "data_quality": 2.0,
+        "penalty_deduction": -85.0,
+        "total_score": 0.0
+      },
+      "p6_top_breakdown": {
+        "name_similarity": 8.82,
+        "admin_context": 25.0,
+        "parent_child_compatibility": 15.0,
+        "pin_compatibility": 10.0,
+        "geographic_proximity": 5.0,
+        "transliteration_phonetic": 3.0,
+        "entity_type_weight": 5.0,
+        "retrieval_consensus": 2.01,
+        "data_quality": 2.0,
+        "penalty_deduction": -25.0,
+        "total_score": 50.8
+      }
+    },
+    {
+      "case_id": "GV-000780",
+      "input_address": "Kharadi, Mysuru, Karnataka 570002",
+      "ground_truth": "Kharadi",
+      "category": "LOCALITY_MISMATCH",
+      "language": "en",
+      "script": "latin",
+      "regression_classification": "ADMIN_CONTEXT_OVERPENALTY",
+      "phase5_top_candidate": "Kharadi",
+      "phase5_top_score": 52.5,
+      "phase5_rank_of_truth": 1,
+      "phase6_top_candidate": "Gokulam",
+      "phase6_top_score": 48.1,
+      "phase6_rank_of_truth": 3,
+      "phase6_truth_score": 0.0,
+      "truth_penalties": [
+        {
+          "name": "STATE_CONFLICT",
+          "deduction": -40.0,
+          "reason": "Candidate state 'Maharashtra' contradicts asserted state 'Karnataka'."
+        },
+        {
+          "name": "DISTRICT_CONFLICT",
+          "deduction": -25.0,
+          "reason": "Candidate district 'Pune' contradicts asserted district 'Mysuru'."
+        },
+        {
+          "name": "PIN_CIRCLE_CONFLICT",
+          "deduction": -20.0,
+          "reason": "Candidate PIN '411014' postal circle does not match queried PIN '570002'."
+        }
+      ],
+      "top_penalties": [
+        {
+          "name": "LOW_NAME_SIMILARITY",
+          "deduction": -25.0,
+          "reason": "Candidate name 'Gokulam' has low lexical similarity (28.6%) to query token 'Kharadi'."
+        }
+      ],
+      "administrative_context": {
+        "state": "Karnataka",
+        "district": "Mysuru",
+        "subdistrict": null,
+        "locality": "Kharadi",
+        "pincode": "570002"
+      },
+      "truth_entity_type": "locality",
+      "top_entity_type": "locality",
+      "p5_candidate_list": [
+        "Kharadi",
+        "Gokulam",
+        "570002"
+      ],
+      "p6_candidate_list": [
+        "Gokulam",
+        "570002",
+        "Kharadi"
+      ],
+      "p6_truth_breakdown": {
+        "name_similarity": 25.0,
+        "admin_context": 0.0,
+        "parent_child_compatibility": 15.0,
+        "pin_compatibility": 0.0,
+        "geographic_proximity": 5.0,
+        "transliteration_phonetic": 3.0,
+        "entity_type_weight": 5.0,
+        "retrieval_consensus": 3.0,
+        "data_quality": 2.0,
+        "penalty_deduction": -85.0,
+        "total_score": 0.0
+      },
+      "p6_top_breakdown": {
+        "name_similarity": 7.14,
+        "admin_context": 25.0,
+        "parent_child_compatibility": 15.0,
+        "pin_compatibility": 10.0,
+        "geographic_proximity": 5.0,
+        "transliteration_phonetic": 3.0,
+        "entity_type_weight": 5.0,
+        "retrieval_consensus": 0.99,
+        "data_quality": 2.0,
+        "penalty_deduction": -25.0,
+        "total_score": 48.1
+      }
+    },
+    {
+      "case_id": "GV-000610",
+      "input_address": "Baner, Mumbai Suburban, Maharashtra 411045",
+      "ground_truth": "Baner",
+      "category": "DISTRICT_MISMATCH",
+      "language": "en",
+      "script": "latin",
+      "regression_classification": "ADMIN_CONTEXT_OVERPENALTY",
+      "phase5_top_candidate": "Baner",
+      "phase5_top_score": 65.0,
+      "phase5_rank_of_truth": 1,
+      "phase6_top_candidate": "Bandra West",
+      "phase6_top_score": 72.5,
+      "phase6_rank_of_truth": 3,
+      "phase6_truth_score": 65.5,
+      "truth_penalties": [
+        {
+          "name": "DISTRICT_CONFLICT",
+          "deduction": -15.0,
+          "reason": "Candidate district 'Pune' contradicts asserted district 'Mumbai Suburban'."
+        }
+      ],
+      "top_penalties": [],
+      "administrative_context": {
+        "state": "Maharashtra",
+        "district": "Mumbai Suburban",
+        "subdistrict": null,
+        "locality": "Baner",
+        "pincode": "411045"
+      },
+      "truth_entity_type": "locality",
+      "top_entity_type": "locality",
+      "p5_candidate_list": [
+        "Baner",
+        "Bandra West",
+        "Andheri East",
+        "Powai",
+        "411014"
+      ],
+      "p6_candidate_list": [
+        "Bandra West",
+        "Andheri East",
+        "Baner",
+        "Powai",
+        "411014"
+      ],
+      "p6_truth_breakdown": {
+        "name_similarity": 25.0,
+        "admin_context": 12.5,
+        "parent_child_compatibility": 15.0,
+        "pin_compatibility": 10.0,
+        "geographic_proximity": 5.0,
+        "transliteration_phonetic": 3.0,
+        "entity_type_weight": 5.0,
+        "retrieval_consensus": 3.0,
+        "data_quality": 2.0,
+        "penalty_deduction": -15.0,
+        "total_score": 65.5
+      },
+      "p6_top_breakdown": {
+        "name_similarity": 12.5,
+        "admin_context": 25.0,
+        "parent_child_compatibility": 15.0,
+        "pin_compatibility": 4.0,
+        "geographic_proximity": 5.0,
+        "transliteration_phonetic": 3.0,
+        "entity_type_weight": 5.0,
+        "retrieval_consensus": 0.99,
+        "data_quality": 2.0,
+        "penalty_deduction": 0.0,
+        "total_score": 72.5
+      }
+    },
+    {
+      "case_id": "GV-000748",
+      "input_address": "Kharadi, Bengaluru Urban, Karnataka 560102",
+      "ground_truth": "Kharadi",
+      "category": "LOCALITY_MISMATCH",
+      "language": "en",
+      "script": "latin",
+      "regression_classification": "ADMIN_CONTEXT_OVERPENALTY",
+      "phase5_top_candidate": "Kharadi",
+      "phase5_top_score": 52.5,
+      "phase5_rank_of_truth": 1,
+      "phase6_top_candidate": "HSR Layout",
+      "phase6_top_score": 50.8,
+      "phase6_rank_of_truth": 9,
+      "phase6_truth_score": 0.0,
+      "truth_penalties": [
+        {
+          "name": "STATE_CONFLICT",
+          "deduction": -40.0,
+          "reason": "Candidate state 'Maharashtra' contradicts asserted state 'Karnataka'."
+        },
+        {
+          "name": "DISTRICT_CONFLICT",
+          "deduction": -25.0,
+          "reason": "Candidate district 'Pune' contradicts asserted district 'Bengaluru Urban'."
+        },
+        {
+          "name": "PIN_CIRCLE_CONFLICT",
+          "deduction": -20.0,
+          "reason": "Candidate PIN '411014' postal circle does not match queried PIN '560102'."
+        }
+      ],
+      "top_penalties": [
+        {
+          "name": "LOW_NAME_SIMILARITY",
+          "deduction": -25.0,
+          "reason": "Candidate name 'HSR Layout' has low lexical similarity (35.3%) to query token 'Kharadi'."
+        }
+      ],
+      "administrative_context": {
+        "state": "Karnataka",
+        "district": "Bengaluru Urban",
+        "subdistrict": null,
+        "locality": "Kharadi",
+        "pincode": "560102"
+      },
+      "truth_entity_type": "locality",
+      "top_entity_type": "locality",
+      "p5_candidate_list": [
+        "Kharadi",
+        "HSR Layout",
+        "Koramangala",
+        "Indiranagar",
+        "560102"
+      ],
+      "p6_candidate_list": [
+        "HSR Layout",
+        "Koramangala",
+        "Indiranagar",
+        "560102",
+        "560066"
+      ],
+      "p6_truth_breakdown": {
+        "name_similarity": 25.0,
+        "admin_context": 0.0,
+        "parent_child_compatibility": 15.0,
+        "pin_compatibility": 0.0,
+        "geographic_proximity": 5.0,
+        "transliteration_phonetic": 3.0,
+        "entity_type_weight": 5.0,
+        "retrieval_consensus": 3.0,
+        "data_quality": 2.0,
+        "penalty_deduction": -85.0,
+        "total_score": 0.0
+      },
+      "p6_top_breakdown": {
+        "name_similarity": 8.82,
+        "admin_context": 25.0,
+        "parent_child_compatibility": 15.0,
+        "pin_compatibility": 10.0,
+        "geographic_proximity": 5.0,
+        "transliteration_phonetic": 3.0,
+        "entity_type_weight": 5.0,
+        "retrieval_consensus": 2.01,
+        "data_quality": 2.0,
+        "penalty_deduction": -25.0,
+        "total_score": 50.8
+      }
+    },
+    {
+      "case_id": "GV-000777",
+      "input_address": "Bandra West, Bengaluru Urban, Karnataka 560100",
+      "ground_truth": "Bandra West",
+      "category": "LOCALITY_MISMATCH",
+      "language": "en",
+      "script": "latin",
+      "regression_classification": "ADMIN_CONTEXT_OVERPENALTY",
+      "phase5_top_candidate": "Bandra West",
+      "phase5_top_score": 52.5,
+      "phase5_rank_of_truth": 1,
+      "phase6_top_candidate": "Electronic City",
+      "phase6_top_score": 47.8,
+      "phase6_rank_of_truth": 9,
+      "phase6_truth_score": 0.0,
+      "truth_penalties": [
+        {
+          "name": "STATE_CONFLICT",
+          "deduction": -40.0,
+          "reason": "Candidate state 'Maharashtra' contradicts asserted state 'Karnataka'."
+        },
+        {
+          "name": "DISTRICT_CONFLICT",
+          "deduction": -25.0,
+          "reason": "Candidate district 'Mumbai Suburban' contradicts asserted district 'Bengaluru Urban'."
+        },
+        {
+          "name": "PIN_CIRCLE_CONFLICT",
+          "deduction": -20.0,
+          "reason": "Candidate PIN '400050' postal circle does not match queried PIN '560100'."
+        }
+      ],
+      "top_penalties": [
+        {
+          "name": "LOW_NAME_SIMILARITY",
+          "deduction": -25.0,
+          "reason": "Candidate name 'Electronic City' has low lexical similarity (23.1%) to query token 'Bandra West'."
+        }
+      ],
+      "administrative_context": {
+        "state": "Karnataka",
+        "district": "Bengaluru Urban",
+        "subdistrict": null,
+        "locality": "Bandra West",
+        "pincode": "560100"
+      },
+      "truth_entity_type": "locality",
+      "top_entity_type": "locality",
+      "p5_candidate_list": [
+        "Bandra West",
+        "Baner",
+        "Andheri East",
+        "Thane West",
+        "Indiranagar"
+      ],
+      "p6_candidate_list": [
+        "Electronic City",
+        "Indiranagar",
+        "Koramangala",
+        "560100",
+        "560066"
+      ],
+      "p6_truth_breakdown": {
+        "name_similarity": 25.0,
+        "admin_context": 0.0,
+        "parent_child_compatibility": 15.0,
+        "pin_compatibility": 0.0,
+        "geographic_proximity": 5.0,
+        "transliteration_phonetic": 3.0,
+        "entity_type_weight": 5.0,
+        "retrieval_consensus": 3.0,
+        "data_quality": 2.0,
+        "penalty_deduction": -85.0,
+        "total_score": 0.0
+      },
+      "p6_top_breakdown": {
+        "name_similarity": 5.77,
+        "admin_context": 25.0,
+        "parent_child_compatibility": 15.0,
+        "pin_compatibility": 10.0,
+        "geographic_proximity": 5.0,
+        "transliteration_phonetic": 3.0,
+        "entity_type_weight": 5.0,
+        "retrieval_consensus": 2.01,
+        "data_quality": 2.0,
+        "penalty_deduction": -25.0,
+        "total_score": 47.8
+      }
+    },
+    {
+      "case_id": "GV-000785",
+      "input_address": "Hadapsar, Mysuru, Karnataka 570002",
+      "ground_truth": "Hadapsar",
+      "category": "LOCALITY_MISMATCH",
+      "language": "en",
+      "script": "latin",
+      "regression_classification": "ADMIN_CONTEXT_OVERPENALTY",
+      "phase5_top_candidate": "Hadapsar",
+      "phase5_top_score": 52.5,
+      "phase5_rank_of_truth": 1,
+      "phase6_top_candidate": "Gokulam",
+      "phase6_top_score": 44.3,
+      "phase6_rank_of_truth": 3,
+      "phase6_truth_score": 0.0,
+      "truth_penalties": [
+        {
+          "name": "STATE_CONFLICT",
+          "deduction": -40.0,
+          "reason": "Candidate state 'Maharashtra' contradicts asserted state 'Karnataka'."
+        },
+        {
+          "name": "DISTRICT_CONFLICT",
+          "deduction": -25.0,
+          "reason": "Candidate district 'Pune' contradicts asserted district 'Mysuru'."
+        },
+        {
+          "name": "PIN_CIRCLE_CONFLICT",
+          "deduction": -20.0,
+          "reason": "Candidate PIN '411028' postal circle does not match queried PIN '570002'."
+        }
+      ],
+      "top_penalties": [
+        {
+          "name": "LOW_NAME_SIMILARITY",
+          "deduction": -25.0,
+          "reason": "Candidate name 'Gokulam' has low lexical similarity (13.3%) to query token 'Hadapsar'."
+        }
+      ],
+      "administrative_context": {
+        "state": "Karnataka",
+        "district": "Mysuru",
+        "subdistrict": null,
+        "locality": "Hadapsar",
+        "pincode": "570002"
+      },
+      "truth_entity_type": "locality",
+      "top_entity_type": "locality",
+      "p5_candidate_list": [
+        "Hadapsar",
+        "Adyar",
+        "Gokulam",
+        "570002"
+      ],
+      "p6_candidate_list": [
+        "Gokulam",
+        "570002",
+        "Hadapsar",
+        "Adyar"
+      ],
+      "p6_truth_breakdown": {
+        "name_similarity": 25.0,
+        "admin_context": 0.0,
+        "parent_child_compatibility": 15.0,
+        "pin_compatibility": 0.0,
+        "geographic_proximity": 5.0,
+        "transliteration_phonetic": 3.0,
+        "entity_type_weight": 5.0,
+        "retrieval_consensus": 3.0,
+        "data_quality": 2.0,
+        "penalty_deduction": -85.0,
+        "total_score": 0.0
+      },
+      "p6_top_breakdown": {
+        "name_similarity": 3.33,
+        "admin_context": 25.0,
+        "parent_child_compatibility": 15.0,
+        "pin_compatibility": 10.0,
+        "geographic_proximity": 5.0,
+        "transliteration_phonetic": 3.0,
+        "entity_type_weight": 5.0,
+        "retrieval_consensus": 0.99,
+        "data_quality": 2.0,
+        "penalty_deduction": -25.0,
+        "total_score": 44.3
+      }
+    },
+    {
+      "case_id": "GV-000605",
+      "input_address": "Hadapsar, Mumbai Suburban, Maharashtra 411028",
+      "ground_truth": "Hadapsar",
+      "category": "DISTRICT_MISMATCH",
+      "language": "en",
+      "script": "latin",
+      "regression_classification": "ADMIN_CONTEXT_OVERPENALTY",
+      "phase5_top_candidate": "Hadapsar",
+      "phase5_top_score": 65.0,
+      "phase5_rank_of_truth": 1,
+      "phase6_top_candidate": "Bandra West",
+      "phase6_top_score": 70.5,
+      "phase6_rank_of_truth": 3,
+      "phase6_truth_score": 65.5,
+      "truth_penalties": [
+        {
+          "name": "DISTRICT_CONFLICT",
+          "deduction": -15.0,
+          "reason": "Candidate district 'Pune' contradicts asserted district 'Mumbai Suburban'."
+        }
+      ],
+      "top_penalties": [],
+      "administrative_context": {
+        "state": "Maharashtra",
+        "district": "Mumbai Suburban",
+        "subdistrict": null,
+        "locality": "Hadapsar",
+        "pincode": "411028"
+      },
+      "truth_entity_type": "locality",
+      "top_entity_type": "locality",
+      "p5_candidate_list": [
+        "Hadapsar",
+        "Bandra West",
+        "Andheri East",
+        "Adyar",
+        "Powai"
+      ],
+      "p6_candidate_list": [
+        "Bandra West",
+        "Andheri East",
+        "Hadapsar",
+        "Powai",
+        "Adyar"
+      ],
+      "p6_truth_breakdown": {
+        "name_similarity": 25.0,
+        "admin_context": 12.5,
+        "parent_child_compatibility": 15.0,
+        "pin_compatibility": 10.0,
+        "geographic_proximity": 5.0,
+        "transliteration_phonetic": 3.0,
+        "entity_type_weight": 5.0,
+        "retrieval_consensus": 3.0,
+        "data_quality": 2.0,
+        "penalty_deduction": -15.0,
+        "total_score": 65.5
+      },
+      "p6_top_breakdown": {
+        "name_similarity": 10.53,
+        "admin_context": 25.0,
+        "parent_child_compatibility": 15.0,
+        "pin_compatibility": 4.0,
+        "geographic_proximity": 5.0,
+        "transliteration_phonetic": 3.0,
+        "entity_type_weight": 5.0,
+        "retrieval_consensus": 0.99,
+        "data_quality": 2.0,
+        "penalty_deduction": 0.0,
+        "total_score": 70.5
+      }
+    },
+    {
+      "case_id": "GV-000770",
+      "input_address": "Thane West, Bengaluru Urban, Karnataka 560102",
+      "ground_truth": "Thane West",
+      "category": "LOCALITY_MISMATCH",
+      "language": "en",
+      "script": "latin",
+      "regression_classification": "ADMIN_CONTEXT_OVERPENALTY",
+      "phase5_top_candidate": "Thane West",
+      "phase5_top_score": 43.7,
+      "phase5_rank_of_truth": 1,
+      "phase6_top_candidate": "HSR Layout",
+      "phase6_top_score": 40.8,
+      "phase6_rank_of_truth": 5,
+      "phase6_truth_score": 0.0,
+      "truth_penalties": [
+        {
+          "name": "STATE_CONFLICT",
+          "deduction": -40.0,
+          "reason": "Candidate state 'Maharashtra' contradicts asserted state 'Karnataka'."
+        },
+        {
+          "name": "DISTRICT_CONFLICT",
+          "deduction": -25.0,
+          "reason": "Candidate district 'Thane' contradicts asserted district 'Bengaluru Urban'."
+        },
+        {
+          "name": "PIN_CIRCLE_CONFLICT",
+          "deduction": -20.0,
+          "reason": "Candidate PIN '400601' postal circle does not match queried PIN '560102'."
+        }
+      ],
+      "top_penalties": [
+        {
+          "name": "LOW_NAME_SIMILARITY",
+          "deduction": -25.0,
+          "reason": "Candidate name 'HSR Layout' has low lexical similarity (28.6%) to query token 'West'."
+        }
+      ],
+      "administrative_context": {
+        "state": "Karnataka",
+        "district": "Bengaluru Urban",
+        "subdistrict": "Thane",
+        "locality": "West",
+        "pincode": "560102"
+      },
+      "truth_entity_type": "locality",
+      "top_entity_type": "locality",
+      "p5_candidate_list": [
+        "Thane West",
+        "Bandra West",
+        "HSR Layout",
+        "Whitefield",
+        "Electronic City"
+      ],
+      "p6_candidate_list": [
+        "HSR Layout",
+        "Whitefield",
+        "Electronic City",
+        "Indiranagar",
+        "Thane West"
+      ],
+      "p6_truth_breakdown": {
+        "name_similarity": 14.29,
+        "admin_context": 8.33,
+        "parent_child_compatibility": 15.0,
+        "pin_compatibility": 0.0,
+        "geographic_proximity": 5.0,
+        "transliteration_phonetic": 5.0,
+        "entity_type_weight": 5.0,
+        "retrieval_consensus": 2.01,
+        "data_quality": 2.0,
+        "penalty_deduction": -85.0,
+        "total_score": 0.0
+      },
+      "p6_top_breakdown": {
+        "name_similarity": 7.14,
+        "admin_context": 16.67,
+        "parent_child_compatibility": 15.0,
+        "pin_compatibility": 10.0,
+        "geographic_proximity": 5.0,
+        "transliteration_phonetic": 3.0,
+        "entity_type_weight": 5.0,
+        "retrieval_consensus": 2.01,
+        "data_quality": 2.0,
+        "penalty_deduction": -25.0,
+        "total_score": 40.8
+      }
+    },
+    {
+      "case_id": "GV-000765",
+      "input_address": "Bandra West, Bengaluru Urban, Karnataka 560066",
+      "ground_truth": "Bandra West",
+      "category": "LOCALITY_MISMATCH",
+      "language": "en",
+      "script": "latin",
+      "regression_classification": "ADMIN_CONTEXT_OVERPENALTY",
+      "phase5_top_candidate": "Bandra West",
+      "phase5_top_score": 52.5,
+      "phase5_rank_of_truth": 1,
+      "phase6_top_candidate": "Indiranagar",
+      "phase6_top_score": 47.1,
+      "phase6_rank_of_truth": 10,
+      "phase6_truth_score": 0.0,
+      "truth_penalties": [
+        {
+          "name": "STATE_CONFLICT",
+          "deduction": -40.0,
+          "reason": "Candidate state 'Maharashtra' contradicts asserted state 'Karnataka'."
+        },
+        {
+          "name": "DISTRICT_CONFLICT",
+          "deduction": -25.0,
+          "reason": "Candidate district 'Mumbai Suburban' contradicts asserted district 'Bengaluru Urban'."
+        },
+        {
+          "name": "PIN_CIRCLE_CONFLICT",
+          "deduction": -20.0,
+          "reason": "Candidate PIN '400050' postal circle does not match queried PIN '560066'."
+        }
+      ],
+      "top_penalties": [
+        {
+          "name": "LOW_NAME_SIMILARITY",
+          "deduction": -25.0,
+          "reason": "Candidate name 'Indiranagar' has low lexical similarity (36.4%) to query token 'Bandra West'."
+        }
+      ],
+      "administrative_context": {
+        "state": "Karnataka",
+        "district": "Bengaluru Urban",
+        "subdistrict": null,
+        "locality": "Bandra West",
+        "pincode": "560066"
+      },
+      "truth_entity_type": "locality",
+      "top_entity_type": "locality",
+      "p5_candidate_list": [
+        "Bandra West",
+        "Baner",
+        "Andheri East",
+        "Thane West",
+        "Indiranagar"
+      ],
+      "p6_candidate_list": [
+        "Indiranagar",
+        "Whitefield",
+        "Koramangala",
+        "Electronic City",
+        "560066"
+      ],
+      "p6_truth_breakdown": {
+        "name_similarity": 25.0,
+        "admin_context": 0.0,
+        "parent_child_compatibility": 15.0,
+        "pin_compatibility": 0.0,
+        "geographic_proximity": 5.0,
+        "transliteration_phonetic": 3.0,
+        "entity_type_weight": 5.0,
+        "retrieval_consensus": 3.0,
+        "data_quality": 2.0,
+        "penalty_deduction": -85.0,
+        "total_score": 0.0
+      },
+      "p6_top_breakdown": {
+        "name_similarity": 9.09,
+        "admin_context": 25.0,
+        "parent_child_compatibility": 15.0,
+        "pin_compatibility": 7.0,
+        "geographic_proximity": 5.0,
+        "transliteration_phonetic": 3.0,
+        "entity_type_weight": 5.0,
+        "retrieval_consensus": 0.99,
+        "data_quality": 2.0,
+        "penalty_deduction": -25.0,
+        "total_score": 47.1
+      }
+    },
+    {
+      "case_id": "GV-000591",
+      "input_address": "Powai, Pune, Maharashtra 400076",
+      "ground_truth": "Powai",
+      "category": "DISTRICT_MISMATCH",
+      "language": "en",
+      "script": "latin",
+      "regression_classification": "ADMIN_CONTEXT_OVERPENALTY",
+      "phase5_top_candidate": "Powai",
+      "phase5_top_score": 65.0,
+      "phase5_rank_of_truth": 1,
+      "phase6_top_candidate": "Hinjewadi",
+      "phase6_top_score": 70.7,
+      "phase6_rank_of_truth": 2,
+      "phase6_truth_score": 65.5,
+      "truth_penalties": [
+        {
+          "name": "DISTRICT_CONFLICT",
+          "deduction": -15.0,
+          "reason": "Candidate district 'Mumbai Suburban' contradicts asserted district 'Pune'."
+        }
+      ],
+      "top_penalties": [],
+      "administrative_context": {
+        "state": "Maharashtra",
+        "district": "Pune",
+        "subdistrict": null,
+        "locality": "Powai",
+        "pincode": "400076"
+      },
+      "truth_entity_type": "locality",
+      "top_entity_type": "locality",
+      "p5_candidate_list": [
+        "Powai",
+        "Hinjewadi",
+        "Kharadi",
+        "Hadapsar",
+        "Baner"
+      ],
+      "p6_candidate_list": [
+        "Hinjewadi",
+        "Powai",
+        "Kharadi",
+        "Hadapsar",
+        "Baner"
+      ],
+      "p6_truth_breakdown": {
+        "name_similarity": 25.0,
+        "admin_context": 12.5,
+        "parent_child_compatibility": 15.0,
+        "pin_compatibility": 10.0,
+        "geographic_proximity": 5.0,
+        "transliteration_phonetic": 3.0,
+        "entity_type_weight": 5.0,
+        "retrieval_consensus": 3.0,
+        "data_quality": 2.0,
+        "penalty_deduction": -15.0,
+        "total_score": 65.5
+      },
+      "p6_top_breakdown": {
+        "name_similarity": 10.71,
+        "admin_context": 25.0,
+        "parent_child_compatibility": 15.0,
+        "pin_compatibility": 4.0,
+        "geographic_proximity": 5.0,
+        "transliteration_phonetic": 3.0,
+        "entity_type_weight": 5.0,
+        "retrieval_consensus": 0.99,
+        "data_quality": 2.0,
+        "penalty_deduction": 0.0,
+        "total_score": 70.7
+      }
+    },
+    {
+      "case_id": "GV-000751",
+      "input_address": "Powai, Bengaluru Urban, Karnataka 560038",
+      "ground_truth": "Powai",
+      "category": "LOCALITY_MISMATCH",
+      "language": "en",
+      "script": "latin",
+      "regression_classification": "ADMIN_CONTEXT_OVERPENALTY",
+      "phase5_top_candidate": "Powai",
+      "phase5_top_score": 52.5,
+      "phase5_rank_of_truth": 1,
+      "phase6_top_candidate": "Indiranagar",
+      "phase6_top_score": 45.1,
+      "phase6_rank_of_truth": 9,
+      "phase6_truth_score": 0.0,
+      "truth_penalties": [
+        {
+          "name": "STATE_CONFLICT",
+          "deduction": -40.0,
+          "reason": "Candidate state 'Maharashtra' contradicts asserted state 'Karnataka'."
+        },
+        {
+          "name": "DISTRICT_CONFLICT",
+          "deduction": -25.0,
+          "reason": "Candidate district 'Mumbai Suburban' contradicts asserted district 'Bengaluru Urban'."
+        },
+        {
+          "name": "PIN_CIRCLE_CONFLICT",
+          "deduction": -20.0,
+          "reason": "Candidate PIN '400076' postal circle does not match queried PIN '560038'."
+        }
+      ],
+      "top_penalties": [
+        {
+          "name": "LOW_NAME_SIMILARITY",
+          "deduction": -25.0,
+          "reason": "Candidate name 'Indiranagar' has low lexical similarity (12.5%) to query token 'Powai'."
+        }
+      ],
+      "administrative_context": {
+        "state": "Karnataka",
+        "district": "Bengaluru Urban",
+        "subdistrict": null,
+        "locality": "Powai",
+        "pincode": "560038"
+      },
+      "truth_entity_type": "locality",
+      "top_entity_type": "locality",
+      "p5_candidate_list": [
+        "Powai",
+        "Whitefield",
+        "Koramangala",
+        "Indiranagar",
+        "560038"
+      ],
+      "p6_candidate_list": [
+        "Indiranagar",
+        "Whitefield",
+        "Koramangala",
+        "560038",
+        "560066"
+      ],
+      "p6_truth_breakdown": {
+        "name_similarity": 25.0,
+        "admin_context": 0.0,
+        "parent_child_compatibility": 15.0,
+        "pin_compatibility": 0.0,
+        "geographic_proximity": 5.0,
+        "transliteration_phonetic": 3.0,
+        "entity_type_weight": 5.0,
+        "retrieval_consensus": 3.0,
+        "data_quality": 2.0,
+        "penalty_deduction": -85.0,
+        "total_score": 0.0
+      },
+      "p6_top_breakdown": {
+        "name_similarity": 3.12,
+        "admin_context": 25.0,
+        "parent_child_compatibility": 15.0,
+        "pin_compatibility": 10.0,
+        "geographic_proximity": 5.0,
+        "transliteration_phonetic": 3.0,
+        "entity_type_weight": 5.0,
+        "retrieval_consensus": 2.01,
+        "data_quality": 2.0,
+        "penalty_deduction": -25.0,
+        "total_score": 45.1
+      }
+    },
+    {
+      "case_id": "GV-000786",
+      "input_address": "Rajarampuri, Mysuru, Karnataka 570002",
+      "ground_truth": "Rajarampuri",
+      "category": "LOCALITY_MISMATCH",
+      "language": "en",
+      "script": "latin",
+      "regression_classification": "ADMIN_CONTEXT_OVERPENALTY",
+      "phase5_top_candidate": "Rajarampuri",
+      "phase5_top_score": 52.5,
+      "phase5_rank_of_truth": 1,
+      "phase6_top_candidate": "Gokulam",
+      "phase6_top_score": 46.5,
+      "phase6_rank_of_truth": 3,
+      "phase6_truth_score": 0.0,
+      "truth_penalties": [
+        {
+          "name": "STATE_CONFLICT",
+          "deduction": -40.0,
+          "reason": "Candidate state 'Maharashtra' contradicts asserted state 'Karnataka'."
+        },
+        {
+          "name": "DISTRICT_CONFLICT",
+          "deduction": -25.0,
+          "reason": "Candidate district 'Kolhapur' contradicts asserted district 'Mysuru'."
+        },
+        {
+          "name": "PIN_CIRCLE_CONFLICT",
+          "deduction": -20.0,
+          "reason": "Candidate PIN '416008' postal circle does not match queried PIN '570002'."
+        }
+      ],
+      "top_penalties": [
+        {
+          "name": "LOW_NAME_SIMILARITY",
+          "deduction": -25.0,
+          "reason": "Candidate name 'Gokulam' has low lexical similarity (22.2%) to query token 'Rajarampuri'."
+        }
+      ],
+      "administrative_context": {
+        "state": "Karnataka",
+        "district": "Mysuru",
+        "subdistrict": null,
+        "locality": "Rajarampuri",
+        "pincode": "570002"
+      },
+      "truth_entity_type": "locality",
+      "top_entity_type": "locality",
+      "p5_candidate_list": [
+        "Rajarampuri",
+        "Rajapur",
+        "Rajapur",
+        "Rajarhat",
+        "Rampur"
+      ],
+      "p6_candidate_list": [
+        "Gokulam",
+        "570002",
+        "Rajarampuri",
+        "Rajapur",
+        "Rajapur"
+      ],
+      "p6_truth_breakdown": {
+        "name_similarity": 25.0,
+        "admin_context": 0.0,
+        "parent_child_compatibility": 15.0,
+        "pin_compatibility": 0.0,
+        "geographic_proximity": 5.0,
+        "transliteration_phonetic": 3.0,
+        "entity_type_weight": 5.0,
+        "retrieval_consensus": 3.0,
+        "data_quality": 2.0,
+        "penalty_deduction": -85.0,
+        "total_score": 0.0
+      },
+      "p6_top_breakdown": {
+        "name_similarity": 5.56,
+        "admin_context": 25.0,
+        "parent_child_compatibility": 15.0,
+        "pin_compatibility": 10.0,
+        "geographic_proximity": 5.0,
+        "transliteration_phonetic": 3.0,
+        "entity_type_weight": 5.0,
+        "retrieval_consensus": 0.99,
+        "data_quality": 2.0,
+        "penalty_deduction": -25.0,
+        "total_score": 46.5
+      }
+    },
+    {
+      "case_id": "GV-000782",
+      "input_address": "Kothrud, Mysuru, Karnataka 570002",
+      "ground_truth": "Kothrud",
+      "category": "LOCALITY_MISMATCH",
+      "language": "en",
+      "script": "latin",
+      "regression_classification": "ADMIN_CONTEXT_OVERPENALTY",
+      "phase5_top_candidate": "Kothrud",
+      "phase5_top_score": 52.5,
+      "phase5_rank_of_truth": 1,
+      "phase6_top_candidate": "Gokulam",
+      "phase6_top_score": 48.1,
+      "phase6_rank_of_truth": 3,
+      "phase6_truth_score": 0.0,
+      "truth_penalties": [
+        {
+          "name": "STATE_CONFLICT",
+          "deduction": -40.0,
+          "reason": "Candidate state 'Maharashtra' contradicts asserted state 'Karnataka'."
+        },
+        {
+          "name": "DISTRICT_CONFLICT",
+          "deduction": -25.0,
+          "reason": "Candidate district 'Pune' contradicts asserted district 'Mysuru'."
+        },
+        {
+          "name": "PIN_CIRCLE_CONFLICT",
+          "deduction": -20.0,
+          "reason": "Candidate PIN '411038' postal circle does not match queried PIN '570002'."
+        }
+      ],
+      "top_penalties": [
+        {
+          "name": "LOW_NAME_SIMILARITY",
+          "deduction": -25.0,
+          "reason": "Candidate name 'Gokulam' has low lexical similarity (28.6%) to query token 'Kothrud'."
+        }
+      ],
+      "administrative_context": {
+        "state": "Karnataka",
+        "district": "Mysuru",
+        "subdistrict": null,
+        "locality": "Kothrud",
+        "pincode": "570002"
+      },
+      "truth_entity_type": "locality",
+      "top_entity_type": "locality",
+      "p5_candidate_list": [
+        "Kothrud",
+        "Gokulam",
+        "570002"
+      ],
+      "p6_candidate_list": [
+        "Gokulam",
+        "570002",
+        "Kothrud"
+      ],
+      "p6_truth_breakdown": {
+        "name_similarity": 25.0,
+        "admin_context": 0.0,
+        "parent_child_compatibility": 15.0,
+        "pin_compatibility": 0.0,
+        "geographic_proximity": 5.0,
+        "transliteration_phonetic": 3.0,
+        "entity_type_weight": 5.0,
+        "retrieval_consensus": 3.0,
+        "data_quality": 2.0,
+        "penalty_deduction": -85.0,
+        "total_score": 0.0
+      },
+      "p6_top_breakdown": {
+        "name_similarity": 7.14,
+        "admin_context": 25.0,
+        "parent_child_compatibility": 15.0,
+        "pin_compatibility": 10.0,
+        "geographic_proximity": 5.0,
+        "transliteration_phonetic": 3.0,
+        "entity_type_weight": 5.0,
+        "retrieval_consensus": 0.99,
+        "data_quality": 2.0,
+        "penalty_deduction": -25.0,
+        "total_score": 48.1
+      }
+    },
+    {
+      "case_id": "GV-000762",
+      "input_address": "Thane West, Bengaluru Urban, Karnataka 560038",
+      "ground_truth": "Thane West",
+      "category": "LOCALITY_MISMATCH",
+      "language": "en",
+      "script": "latin",
+      "regression_classification": "ADMIN_CONTEXT_OVERPENALTY",
+      "phase5_top_candidate": "Thane West",
+      "phase5_top_score": 43.7,
+      "phase5_rank_of_truth": 1,
+      "phase6_top_candidate": "Whitefield",
+      "phase6_top_score": 36.8,
+      "phase6_rank_of_truth": 5,
+      "phase6_truth_score": 0.0,
+      "truth_penalties": [
+        {
+          "name": "STATE_CONFLICT",
+          "deduction": -40.0,
+          "reason": "Candidate state 'Maharashtra' contradicts asserted state 'Karnataka'."
+        },
+        {
+          "name": "DISTRICT_CONFLICT",
+          "deduction": -25.0,
+          "reason": "Candidate district 'Thane' contradicts asserted district 'Bengaluru Urban'."
+        },
+        {
+          "name": "PIN_CIRCLE_CONFLICT",
+          "deduction": -20.0,
+          "reason": "Candidate PIN '400601' postal circle does not match queried PIN '560038'."
+        }
+      ],
+      "top_penalties": [
+        {
+          "name": "LOW_NAME_SIMILARITY",
+          "deduction": -25.0,
+          "reason": "Candidate name 'Whitefield' has low lexical similarity (28.6%) to query token 'West'."
+        }
+      ],
+      "administrative_context": {
+        "state": "Karnataka",
+        "district": "Bengaluru Urban",
+        "subdistrict": "Thane",
+        "locality": "West",
+        "pincode": "560038"
+      },
+      "truth_entity_type": "locality",
+      "top_entity_type": "locality",
+      "p5_candidate_list": [
+        "Thane West",
+        "Bandra West",
+        "Whitefield",
+        "HSR Layout",
+        "Electronic City"
+      ],
+      "p6_candidate_list": [
+        "Whitefield",
+        "HSR Layout",
+        "Electronic City",
+        "Indiranagar",
+        "Thane West"
+      ],
+      "p6_truth_breakdown": {
+        "name_similarity": 14.29,
+        "admin_context": 8.33,
+        "parent_child_compatibility": 15.0,
+        "pin_compatibility": 0.0,
+        "geographic_proximity": 5.0,
+        "transliteration_phonetic": 5.0,
+        "entity_type_weight": 5.0,
+        "retrieval_consensus": 2.01,
+        "data_quality": 2.0,
+        "penalty_deduction": -85.0,
+        "total_score": 0.0
+      },
+      "p6_top_breakdown": {
+        "name_similarity": 7.14,
+        "admin_context": 16.67,
+        "parent_child_compatibility": 15.0,
+        "pin_compatibility": 7.0,
+        "geographic_proximity": 5.0,
+        "transliteration_phonetic": 3.0,
+        "entity_type_weight": 5.0,
+        "retrieval_consensus": 0.99,
+        "data_quality": 2.0,
+        "penalty_deduction": -25.0,
+        "total_score": 36.8
+      }
+    },
+    {
+      "case_id": "GV-000783",
+      "input_address": "Kharadi, Bengaluru Urban, Karnataka 560102",
+      "ground_truth": "Kharadi",
+      "category": "LOCALITY_MISMATCH",
+      "language": "en",
+      "script": "latin",
+      "regression_classification": "ADMIN_CONTEXT_OVERPENALTY",
+      "phase5_top_candidate": "Kharadi",
+      "phase5_top_score": 52.5,
+      "phase5_rank_of_truth": 1,
+      "phase6_top_candidate": "HSR Layout",
+      "phase6_top_score": 50.8,
+      "phase6_rank_of_truth": 9,
+      "phase6_truth_score": 0.0,
+      "truth_penalties": [
+        {
+          "name": "STATE_CONFLICT",
+          "deduction": -40.0,
+          "reason": "Candidate state 'Maharashtra' contradicts asserted state 'Karnataka'."
+        },
+        {
+          "name": "DISTRICT_CONFLICT",
+          "deduction": -25.0,
+          "reason": "Candidate district 'Pune' contradicts asserted district 'Bengaluru Urban'."
+        },
+        {
+          "name": "PIN_CIRCLE_CONFLICT",
+          "deduction": -20.0,
+          "reason": "Candidate PIN '411014' postal circle does not match queried PIN '560102'."
+        }
+      ],
+      "top_penalties": [
+        {
+          "name": "LOW_NAME_SIMILARITY",
+          "deduction": -25.0,
+          "reason": "Candidate name 'HSR Layout' has low lexical similarity (35.3%) to query token 'Kharadi'."
+        }
+      ],
+      "administrative_context": {
+        "state": "Karnataka",
+        "district": "Bengaluru Urban",
+        "subdistrict": null,
+        "locality": "Kharadi",
+        "pincode": "560102"
+      },
+      "truth_entity_type": "locality",
+      "top_entity_type": "locality",
+      "p5_candidate_list": [
+        "Kharadi",
+        "HSR Layout",
+        "Koramangala",
+        "Indiranagar",
+        "560102"
+      ],
+      "p6_candidate_list": [
+        "HSR Layout",
+        "Koramangala",
+        "Indiranagar",
+        "560102",
+        "560066"
+      ],
+      "p6_truth_breakdown": {
+        "name_similarity": 25.0,
+        "admin_context": 0.0,
+        "parent_child_compatibility": 15.0,
+        "pin_compatibility": 0.0,
+        "geographic_proximity": 5.0,
+        "transliteration_phonetic": 3.0,
+        "entity_type_weight": 5.0,
+        "retrieval_consensus": 3.0,
+        "data_quality": 2.0,
+        "penalty_deduction": -85.0,
+        "total_score": 0.0
+      },
+      "p6_top_breakdown": {
+        "name_similarity": 8.82,
+        "admin_context": 25.0,
+        "parent_child_compatibility": 15.0,
+        "pin_compatibility": 10.0,
+        "geographic_proximity": 5.0,
+        "transliteration_phonetic": 3.0,
+        "entity_type_weight": 5.0,
+        "retrieval_consensus": 2.01,
+        "data_quality": 2.0,
+        "penalty_deduction": -25.0,
+        "total_score": 50.8
+      }
+    },
+    {
+      "case_id": "GV-000750",
+      "input_address": "Baner, Mysuru, Karnataka 570002",
+      "ground_truth": "Baner",
+      "category": "LOCALITY_MISMATCH",
+      "language": "en",
+      "script": "latin",
+      "regression_classification": "ADMIN_CONTEXT_OVERPENALTY",
+      "phase5_top_candidate": "Baner",
+      "phase5_top_score": 52.5,
+      "phase5_rank_of_truth": 1,
+      "phase6_top_candidate": "Gokulam",
+      "phase6_top_score": 46.2,
+      "phase6_rank_of_truth": 3,
+      "phase6_truth_score": 0.0,
+      "truth_penalties": [
+        {
+          "name": "STATE_CONFLICT",
+          "deduction": -40.0,
+          "reason": "Candidate state 'Maharashtra' contradicts asserted state 'Karnataka'."
+        },
+        {
+          "name": "DISTRICT_CONFLICT",
+          "deduction": -25.0,
+          "reason": "Candidate district 'Pune' contradicts asserted district 'Mysuru'."
+        },
+        {
+          "name": "PIN_CIRCLE_CONFLICT",
+          "deduction": -20.0,
+          "reason": "Candidate PIN '411045' postal circle does not match queried PIN '570002'."
+        }
+      ],
+      "top_penalties": [
+        {
+          "name": "LOW_NAME_SIMILARITY",
+          "deduction": -25.0,
+          "reason": "Candidate name 'Gokulam' has low lexical similarity (16.7%) to query token 'Baner'."
+        }
+      ],
+      "administrative_context": {
+        "state": "Karnataka",
+        "district": "Mysuru",
+        "subdistrict": null,
+        "locality": "Baner",
+        "pincode": "570002"
+      },
+      "truth_entity_type": "locality",
+      "top_entity_type": "locality",
+      "p5_candidate_list": [
+        "Baner",
+        "Gokulam",
+        "570002"
+      ],
+      "p6_candidate_list": [
+        "Gokulam",
+        "570002",
+        "Baner"
+      ],
+      "p6_truth_breakdown": {
+        "name_similarity": 25.0,
+        "admin_context": 0.0,
+        "parent_child_compatibility": 15.0,
+        "pin_compatibility": 0.0,
+        "geographic_proximity": 5.0,
+        "transliteration_phonetic": 3.0,
+        "entity_type_weight": 5.0,
+        "retrieval_consensus": 3.0,
+        "data_quality": 2.0,
+        "penalty_deduction": -85.0,
+        "total_score": 0.0
+      },
+      "p6_top_breakdown": {
+        "name_similarity": 4.17,
+        "admin_context": 25.0,
+        "parent_child_compatibility": 15.0,
+        "pin_compatibility": 10.0,
+        "geographic_proximity": 5.0,
+        "transliteration_phonetic": 3.0,
+        "entity_type_weight": 5.0,
+        "retrieval_consensus": 2.01,
+        "data_quality": 2.0,
+        "penalty_deduction": -25.0,
+        "total_score": 46.2
+      }
+    },
+    {
+      "case_id": "GV-000778",
+      "input_address": "Bandra West, Bengaluru Urban, Karnataka 560066",
+      "ground_truth": "Bandra West",
+      "category": "LOCALITY_MISMATCH",
+      "language": "en",
+      "script": "latin",
+      "regression_classification": "ADMIN_CONTEXT_OVERPENALTY",
+      "phase5_top_candidate": "Bandra West",
+      "phase5_top_score": 52.5,
+      "phase5_rank_of_truth": 1,
+      "phase6_top_candidate": "Indiranagar",
+      "phase6_top_score": 47.1,
+      "phase6_rank_of_truth": 10,
+      "phase6_truth_score": 0.0,
+      "truth_penalties": [
+        {
+          "name": "STATE_CONFLICT",
+          "deduction": -40.0,
+          "reason": "Candidate state 'Maharashtra' contradicts asserted state 'Karnataka'."
+        },
+        {
+          "name": "DISTRICT_CONFLICT",
+          "deduction": -25.0,
+          "reason": "Candidate district 'Mumbai Suburban' contradicts asserted district 'Bengaluru Urban'."
+        },
+        {
+          "name": "PIN_CIRCLE_CONFLICT",
+          "deduction": -20.0,
+          "reason": "Candidate PIN '400050' postal circle does not match queried PIN '560066'."
+        }
+      ],
+      "top_penalties": [
+        {
+          "name": "LOW_NAME_SIMILARITY",
+          "deduction": -25.0,
+          "reason": "Candidate name 'Indiranagar' has low lexical similarity (36.4%) to query token 'Bandra West'."
+        }
+      ],
+      "administrative_context": {
+        "state": "Karnataka",
+        "district": "Bengaluru Urban",
+        "subdistrict": null,
+        "locality": "Bandra West",
+        "pincode": "560066"
+      },
+      "truth_entity_type": "locality",
+      "top_entity_type": "locality",
+      "p5_candidate_list": [
+        "Bandra West",
+        "Baner",
+        "Andheri East",
+        "Thane West",
+        "Indiranagar"
+      ],
+      "p6_candidate_list": [
+        "Indiranagar",
+        "Whitefield",
+        "Koramangala",
+        "Electronic City",
+        "560066"
+      ],
+      "p6_truth_breakdown": {
+        "name_similarity": 25.0,
+        "admin_context": 0.0,
+        "parent_child_compatibility": 15.0,
+        "pin_compatibility": 0.0,
+        "geographic_proximity": 5.0,
+        "transliteration_phonetic": 3.0,
+        "entity_type_weight": 5.0,
+        "retrieval_consensus": 3.0,
+        "data_quality": 2.0,
+        "penalty_deduction": -85.0,
+        "total_score": 0.0
+      },
+      "p6_top_breakdown": {
+        "name_similarity": 9.09,
+        "admin_context": 25.0,
+        "parent_child_compatibility": 15.0,
+        "pin_compatibility": 7.0,
+        "geographic_proximity": 5.0,
+        "transliteration_phonetic": 3.0,
+        "entity_type_weight": 5.0,
+        "retrieval_consensus": 0.99,
+        "data_quality": 2.0,
+        "penalty_deduction": -25.0,
+        "total_score": 47.1
+      }
+    },
+    {
+      "case_id": "GV-000773",
+      "input_address": "Rajarampuri, Mysuru, Karnataka 570002",
+      "ground_truth": "Rajarampuri",
+      "category": "LOCALITY_MISMATCH",
+      "language": "en",
+      "script": "latin",
+      "regression_classification": "ADMIN_CONTEXT_OVERPENALTY",
+      "phase5_top_candidate": "Rajarampuri",
+      "phase5_top_score": 52.5,
+      "phase5_rank_of_truth": 1,
+      "phase6_top_candidate": "Gokulam",
+      "phase6_top_score": 46.5,
+      "phase6_rank_of_truth": 3,
+      "phase6_truth_score": 0.0,
+      "truth_penalties": [
+        {
+          "name": "STATE_CONFLICT",
+          "deduction": -40.0,
+          "reason": "Candidate state 'Maharashtra' contradicts asserted state 'Karnataka'."
+        },
+        {
+          "name": "DISTRICT_CONFLICT",
+          "deduction": -25.0,
+          "reason": "Candidate district 'Kolhapur' contradicts asserted district 'Mysuru'."
+        },
+        {
+          "name": "PIN_CIRCLE_CONFLICT",
+          "deduction": -20.0,
+          "reason": "Candidate PIN '416008' postal circle does not match queried PIN '570002'."
+        }
+      ],
+      "top_penalties": [
+        {
+          "name": "LOW_NAME_SIMILARITY",
+          "deduction": -25.0,
+          "reason": "Candidate name 'Gokulam' has low lexical similarity (22.2%) to query token 'Rajarampuri'."
+        }
+      ],
+      "administrative_context": {
+        "state": "Karnataka",
+        "district": "Mysuru",
+        "subdistrict": null,
+        "locality": "Rajarampuri",
+        "pincode": "570002"
+      },
+      "truth_entity_type": "locality",
+      "top_entity_type": "locality",
+      "p5_candidate_list": [
+        "Rajarampuri",
+        "Rajapur",
+        "Rajapur",
+        "Rajarhat",
+        "Rampur"
+      ],
+      "p6_candidate_list": [
+        "Gokulam",
+        "570002",
+        "Rajarampuri",
+        "Rajapur",
+        "Rajapur"
+      ],
+      "p6_truth_breakdown": {
+        "name_similarity": 25.0,
+        "admin_context": 0.0,
+        "parent_child_compatibility": 15.0,
+        "pin_compatibility": 0.0,
+        "geographic_proximity": 5.0,
+        "transliteration_phonetic": 3.0,
+        "entity_type_weight": 5.0,
+        "retrieval_consensus": 3.0,
+        "data_quality": 2.0,
+        "penalty_deduction": -85.0,
+        "total_score": 0.0
+      },
+      "p6_top_breakdown": {
+        "name_similarity": 5.56,
+        "admin_context": 25.0,
+        "parent_child_compatibility": 15.0,
+        "pin_compatibility": 10.0,
+        "geographic_proximity": 5.0,
+        "transliteration_phonetic": 3.0,
+        "entity_type_weight": 5.0,
+        "retrieval_consensus": 0.99,
+        "data_quality": 2.0,
+        "penalty_deduction": -25.0,
+        "total_score": 46.5
+      }
+    },
+    {
+      "case_id": "GV-000789",
+      "input_address": "Kharadi, Bengaluru Urban, Karnataka 560102",
+      "ground_truth": "Kharadi",
+      "category": "LOCALITY_MISMATCH",
+      "language": "en",
+      "script": "latin",
+      "regression_classification": "ADMIN_CONTEXT_OVERPENALTY",
+      "phase5_top_candidate": "Kharadi",
+      "phase5_top_score": 52.5,
+      "phase5_rank_of_truth": 1,
+      "phase6_top_candidate": "HSR Layout",
+      "phase6_top_score": 50.8,
+      "phase6_rank_of_truth": 9,
+      "phase6_truth_score": 0.0,
+      "truth_penalties": [
+        {
+          "name": "STATE_CONFLICT",
+          "deduction": -40.0,
+          "reason": "Candidate state 'Maharashtra' contradicts asserted state 'Karnataka'."
+        },
+        {
+          "name": "DISTRICT_CONFLICT",
+          "deduction": -25.0,
+          "reason": "Candidate district 'Pune' contradicts asserted district 'Bengaluru Urban'."
+        },
+        {
+          "name": "PIN_CIRCLE_CONFLICT",
+          "deduction": -20.0,
+          "reason": "Candidate PIN '411014' postal circle does not match queried PIN '560102'."
+        }
+      ],
+      "top_penalties": [
+        {
+          "name": "LOW_NAME_SIMILARITY",
+          "deduction": -25.0,
+          "reason": "Candidate name 'HSR Layout' has low lexical similarity (35.3%) to query token 'Kharadi'."
+        }
+      ],
+      "administrative_context": {
+        "state": "Karnataka",
+        "district": "Bengaluru Urban",
+        "subdistrict": null,
+        "locality": "Kharadi",
+        "pincode": "560102"
+      },
+      "truth_entity_type": "locality",
+      "top_entity_type": "locality",
+      "p5_candidate_list": [
+        "Kharadi",
+        "HSR Layout",
+        "Koramangala",
+        "Indiranagar",
+        "560102"
+      ],
+      "p6_candidate_list": [
+        "HSR Layout",
+        "Koramangala",
+        "Indiranagar",
+        "560102",
+        "560066"
+      ],
+      "p6_truth_breakdown": {
+        "name_similarity": 25.0,
+        "admin_context": 0.0,
+        "parent_child_compatibility": 15.0,
+        "pin_compatibility": 0.0,
+        "geographic_proximity": 5.0,
+        "transliteration_phonetic": 3.0,
+        "entity_type_weight": 5.0,
+        "retrieval_consensus": 3.0,
+        "data_quality": 2.0,
+        "penalty_deduction": -85.0,
+        "total_score": 0.0
+      },
+      "p6_top_breakdown": {
+        "name_similarity": 8.82,
+        "admin_context": 25.0,
+        "parent_child_compatibility": 15.0,
+        "pin_compatibility": 10.0,
+        "geographic_proximity": 5.0,
+        "transliteration_phonetic": 3.0,
+        "entity_type_weight": 5.0,
+        "retrieval_consensus": 2.01,
+        "data_quality": 2.0,
+        "penalty_deduction": -25.0,
+        "total_score": 50.8
+      }
+    },
+    {
+      "case_id": "GV-000752",
+      "input_address": "Thane West, Bengaluru Urban, Karnataka 560066",
+      "ground_truth": "Thane West",
+      "category": "LOCALITY_MISMATCH",
+      "language": "en",
+      "script": "latin",
+      "regression_classification": "ADMIN_CONTEXT_OVERPENALTY",
+      "phase5_top_candidate": "Thane West",
+      "phase5_top_score": 43.7,
+      "phase5_rank_of_truth": 1,
+      "phase6_top_candidate": "Whitefield",
+      "phase6_top_score": 40.8,
+      "phase6_rank_of_truth": 5,
+      "phase6_truth_score": 0.0,
+      "truth_penalties": [
+        {
+          "name": "STATE_CONFLICT",
+          "deduction": -40.0,
+          "reason": "Candidate state 'Maharashtra' contradicts asserted state 'Karnataka'."
+        },
+        {
+          "name": "DISTRICT_CONFLICT",
+          "deduction": -25.0,
+          "reason": "Candidate district 'Thane' contradicts asserted district 'Bengaluru Urban'."
+        },
+        {
+          "name": "PIN_CIRCLE_CONFLICT",
+          "deduction": -20.0,
+          "reason": "Candidate PIN '400601' postal circle does not match queried PIN '560066'."
+        }
+      ],
+      "top_penalties": [
+        {
+          "name": "LOW_NAME_SIMILARITY",
+          "deduction": -25.0,
+          "reason": "Candidate name 'Whitefield' has low lexical similarity (28.6%) to query token 'West'."
+        }
+      ],
+      "administrative_context": {
+        "state": "Karnataka",
+        "district": "Bengaluru Urban",
+        "subdistrict": "Thane",
+        "locality": "West",
+        "pincode": "560066"
+      },
+      "truth_entity_type": "locality",
+      "top_entity_type": "locality",
+      "p5_candidate_list": [
+        "Thane West",
+        "Bandra West",
+        "Whitefield",
+        "HSR Layout",
+        "Electronic City"
+      ],
+      "p6_candidate_list": [
+        "Whitefield",
+        "HSR Layout",
+        "Electronic City",
+        "Indiranagar",
+        "Thane West"
+      ],
+      "p6_truth_breakdown": {
+        "name_similarity": 14.29,
+        "admin_context": 8.33,
+        "parent_child_compatibility": 15.0,
+        "pin_compatibility": 0.0,
+        "geographic_proximity": 5.0,
+        "transliteration_phonetic": 5.0,
+        "entity_type_weight": 5.0,
+        "retrieval_consensus": 2.01,
+        "data_quality": 2.0,
+        "penalty_deduction": -85.0,
+        "total_score": 0.0
+      },
+      "p6_top_breakdown": {
+        "name_similarity": 7.14,
+        "admin_context": 16.67,
+        "parent_child_compatibility": 15.0,
+        "pin_compatibility": 10.0,
+        "geographic_proximity": 5.0,
+        "transliteration_phonetic": 3.0,
+        "entity_type_weight": 5.0,
+        "retrieval_consensus": 2.01,
+        "data_quality": 2.0,
+        "penalty_deduction": -25.0,
+        "total_score": 40.8
+      }
+    },
+    {
+      "case_id": "GV-000760",
+      "input_address": "Kharadi, Bengaluru Urban, Karnataka 560034",
+      "ground_truth": "Kharadi",
+      "category": "LOCALITY_MISMATCH",
+      "language": "en",
+      "script": "latin",
+      "regression_classification": "ADMIN_CONTEXT_OVERPENALTY",
+      "phase5_top_candidate": "Kharadi",
+      "phase5_top_score": 52.5,
+      "phase5_rank_of_truth": 1,
+      "phase6_top_candidate": "Koramangala",
+      "phase6_top_score": 50.3,
+      "phase6_rank_of_truth": 9,
+      "phase6_truth_score": 0.0,
+      "truth_penalties": [
+        {
+          "name": "STATE_CONFLICT",
+          "deduction": -40.0,
+          "reason": "Candidate state 'Maharashtra' contradicts asserted state 'Karnataka'."
+        },
+        {
+          "name": "DISTRICT_CONFLICT",
+          "deduction": -25.0,
+          "reason": "Candidate district 'Pune' contradicts asserted district 'Bengaluru Urban'."
+        },
+        {
+          "name": "PIN_CIRCLE_CONFLICT",
+          "deduction": -20.0,
+          "reason": "Candidate PIN '411014' postal circle does not match queried PIN '560034'."
+        }
+      ],
+      "top_penalties": [
+        {
+          "name": "LOW_NAME_SIMILARITY",
+          "deduction": -25.0,
+          "reason": "Candidate name 'Koramangala' has low lexical similarity (33.3%) to query token 'Kharadi'."
+        }
+      ],
+      "administrative_context": {
+        "state": "Karnataka",
+        "district": "Bengaluru Urban",
+        "subdistrict": null,
+        "locality": "Kharadi",
+        "pincode": "560034"
+      },
+      "truth_entity_type": "locality",
+      "top_entity_type": "locality",
+      "p5_candidate_list": [
+        "Kharadi",
+        "Koramangala",
+        "HSR Layout",
+        "Indiranagar",
+        "560034"
+      ],
+      "p6_candidate_list": [
+        "Koramangala",
+        "HSR Layout",
+        "Indiranagar",
+        "560034",
+        "560066"
+      ],
+      "p6_truth_breakdown": {
+        "name_similarity": 25.0,
+        "admin_context": 0.0,
+        "parent_child_compatibility": 15.0,
+        "pin_compatibility": 0.0,
+        "geographic_proximity": 5.0,
+        "transliteration_phonetic": 3.0,
+        "entity_type_weight": 5.0,
+        "retrieval_consensus": 3.0,
+        "data_quality": 2.0,
+        "penalty_deduction": -85.0,
+        "total_score": 0.0
+      },
+      "p6_top_breakdown": {
+        "name_similarity": 8.33,
+        "admin_context": 25.0,
+        "parent_child_compatibility": 15.0,
+        "pin_compatibility": 10.0,
+        "geographic_proximity": 5.0,
+        "transliteration_phonetic": 3.0,
+        "entity_type_weight": 5.0,
+        "retrieval_consensus": 2.01,
+        "data_quality": 2.0,
+        "penalty_deduction": -25.0,
+        "total_score": 50.3
+      }
+    },
+    {
+      "case_id": "GV-000758",
+      "input_address": "Kothrud, Bengaluru Urban, Karnataka 560034",
+      "ground_truth": "Kothrud",
+      "category": "LOCALITY_MISMATCH",
+      "language": "en",
+      "script": "latin",
+      "regression_classification": "ADMIN_CONTEXT_OVERPENALTY",
+      "phase5_top_candidate": "Kothrud",
+      "phase5_top_score": 52.5,
+      "phase5_rank_of_truth": 1,
+      "phase6_top_candidate": "Koramangala",
+      "phase6_top_score": 50.3,
+      "phase6_rank_of_truth": 9,
+      "phase6_truth_score": 0.0,
+      "truth_penalties": [
+        {
+          "name": "STATE_CONFLICT",
+          "deduction": -40.0,
+          "reason": "Candidate state 'Maharashtra' contradicts asserted state 'Karnataka'."
+        },
+        {
+          "name": "DISTRICT_CONFLICT",
+          "deduction": -25.0,
+          "reason": "Candidate district 'Pune' contradicts asserted district 'Bengaluru Urban'."
+        },
+        {
+          "name": "PIN_CIRCLE_CONFLICT",
+          "deduction": -20.0,
+          "reason": "Candidate PIN '411038' postal circle does not match queried PIN '560034'."
+        }
+      ],
+      "top_penalties": [
+        {
+          "name": "LOW_NAME_SIMILARITY",
+          "deduction": -25.0,
+          "reason": "Candidate name 'Koramangala' has low lexical similarity (33.3%) to query token 'Kothrud'."
+        }
+      ],
+      "administrative_context": {
+        "state": "Karnataka",
+        "district": "Bengaluru Urban",
+        "subdistrict": null,
+        "locality": "Kothrud",
+        "pincode": "560034"
+      },
+      "truth_entity_type": "locality",
+      "top_entity_type": "locality",
+      "p5_candidate_list": [
+        "Kothrud",
+        "Koramangala",
+        "HSR Layout",
+        "Whitefield",
+        "560034"
+      ],
+      "p6_candidate_list": [
+        "Koramangala",
+        "HSR Layout",
+        "Whitefield",
+        "560034",
+        "560066"
+      ],
+      "p6_truth_breakdown": {
+        "name_similarity": 25.0,
+        "admin_context": 0.0,
+        "parent_child_compatibility": 15.0,
+        "pin_compatibility": 0.0,
+        "geographic_proximity": 5.0,
+        "transliteration_phonetic": 3.0,
+        "entity_type_weight": 5.0,
+        "retrieval_consensus": 3.0,
+        "data_quality": 2.0,
+        "penalty_deduction": -85.0,
+        "total_score": 0.0
+      },
+      "p6_top_breakdown": {
+        "name_similarity": 8.33,
+        "admin_context": 25.0,
+        "parent_child_compatibility": 15.0,
+        "pin_compatibility": 10.0,
+        "geographic_proximity": 5.0,
+        "transliteration_phonetic": 3.0,
+        "entity_type_weight": 5.0,
+        "retrieval_consensus": 2.01,
+        "data_quality": 2.0,
+        "penalty_deduction": -25.0,
+        "total_score": 50.3
+      }
+    },
+    {
+      "case_id": "GV-000573",
+      "input_address": "Baner, Thane, Maharashtra 411045",
+      "ground_truth": "Baner",
+      "category": "DISTRICT_MISMATCH",
+      "language": "en",
+      "script": "latin",
+      "regression_classification": "ADMIN_CONTEXT_OVERPENALTY",
+      "phase5_top_candidate": "Baner",
+      "phase5_top_score": 65.0,
+      "phase5_rank_of_truth": 1,
+      "phase6_top_candidate": "Thane West",
+      "phase6_top_score": 70.0,
+      "phase6_rank_of_truth": 2,
+      "phase6_truth_score": 65.5,
+      "truth_penalties": [
+        {
+          "name": "DISTRICT_CONFLICT",
+          "deduction": -15.0,
+          "reason": "Candidate district 'Pune' contradicts asserted district 'Thane'."
+        }
+      ],
+      "top_penalties": [],
+      "administrative_context": {
+        "state": "Maharashtra",
+        "district": "Thane",
+        "subdistrict": null,
+        "locality": "Baner",
+        "pincode": "411045"
+      },
+      "truth_entity_type": "locality",
+      "top_entity_type": "locality",
+      "p5_candidate_list": [
+        "Baner",
+        "Thane West",
+        "411014",
+        "411057",
+        "411045"
+      ],
+      "p6_candidate_list": [
+        "Thane West",
+        "Baner",
+        "411014",
+        "411057",
+        "411045"
+      ],
+      "p6_truth_breakdown": {
+        "name_similarity": 25.0,
+        "admin_context": 12.5,
+        "parent_child_compatibility": 15.0,
+        "pin_compatibility": 10.0,
+        "geographic_proximity": 5.0,
+        "transliteration_phonetic": 3.0,
+        "entity_type_weight": 5.0,
+        "retrieval_consensus": 3.0,
+        "data_quality": 2.0,
+        "penalty_deduction": -15.0,
+        "total_score": 65.5
+      },
+      "p6_top_breakdown": {
+        "name_similarity": 10.0,
+        "admin_context": 25.0,
+        "parent_child_compatibility": 15.0,
+        "pin_compatibility": 4.0,
+        "geographic_proximity": 5.0,
+        "transliteration_phonetic": 3.0,
+        "entity_type_weight": 5.0,
+        "retrieval_consensus": 0.99,
+        "data_quality": 2.0,
+        "penalty_deduction": 0.0,
+        "total_score": 70.0
+      }
+    },
+    {
+      "case_id": "GV-000747",
+      "input_address": "Baner, Bengaluru Urban, Karnataka 560034",
+      "ground_truth": "Baner",
+      "category": "LOCALITY_MISMATCH",
+      "language": "en",
+      "script": "latin",
+      "regression_classification": "ADMIN_CONTEXT_OVERPENALTY",
+      "phase5_top_candidate": "Baner",
+      "phase5_top_score": 52.5,
+      "phase5_rank_of_truth": 1,
+      "phase6_top_candidate": "Indiranagar",
+      "phase6_top_score": 47.4,
+      "phase6_rank_of_truth": 10,
+      "phase6_truth_score": 0.0,
+      "truth_penalties": [
+        {
+          "name": "STATE_CONFLICT",
+          "deduction": -40.0,
+          "reason": "Candidate state 'Maharashtra' contradicts asserted state 'Karnataka'."
+        },
+        {
+          "name": "DISTRICT_CONFLICT",
+          "deduction": -25.0,
+          "reason": "Candidate district 'Pune' contradicts asserted district 'Bengaluru Urban'."
+        },
+        {
+          "name": "PIN_CIRCLE_CONFLICT",
+          "deduction": -20.0,
+          "reason": "Candidate PIN '411045' postal circle does not match queried PIN '560034'."
+        }
+      ],
+      "top_penalties": [
+        {
+          "name": "LOW_NAME_SIMILARITY",
+          "deduction": -25.0,
+          "reason": "Candidate name 'Indiranagar' has low lexical similarity (37.5%) to query token 'Baner'."
+        }
+      ],
+      "administrative_context": {
+        "state": "Karnataka",
+        "district": "Bengaluru Urban",
+        "subdistrict": null,
+        "locality": "Baner",
+        "pincode": "560034"
+      },
+      "truth_entity_type": "locality",
+      "top_entity_type": "locality",
+      "p5_candidate_list": [
+        "Baner",
+        "Indiranagar",
+        "Koramangala",
+        "Whitefield",
+        "HSR Layout"
+      ],
+      "p6_candidate_list": [
+        "Indiranagar",
+        "Koramangala",
+        "Whitefield",
+        "HSR Layout",
+        "560034"
+      ],
+      "p6_truth_breakdown": {
+        "name_similarity": 25.0,
+        "admin_context": 0.0,
+        "parent_child_compatibility": 15.0,
+        "pin_compatibility": 0.0,
+        "geographic_proximity": 5.0,
+        "transliteration_phonetic": 3.0,
+        "entity_type_weight": 5.0,
+        "retrieval_consensus": 3.0,
+        "data_quality": 2.0,
+        "penalty_deduction": -85.0,
+        "total_score": 0.0
+      },
+      "p6_top_breakdown": {
+        "name_similarity": 9.38,
+        "admin_context": 25.0,
+        "parent_child_compatibility": 15.0,
+        "pin_compatibility": 7.0,
+        "geographic_proximity": 5.0,
+        "transliteration_phonetic": 3.0,
+        "entity_type_weight": 5.0,
+        "retrieval_consensus": 0.99,
+        "data_quality": 2.0,
+        "penalty_deduction": -25.0,
+        "total_score": 47.4
+      }
+    },
+    {
+      "case_id": "GV-000764",
+      "input_address": "Powai, Bengaluru Urban, Karnataka 560100",
+      "ground_truth": "Powai",
+      "category": "LOCALITY_MISMATCH",
+      "language": "en",
+      "script": "latin",
+      "regression_classification": "ADMIN_CONTEXT_OVERPENALTY",
+      "phase5_top_candidate": "Powai",
+      "phase5_top_score": 52.5,
+      "phase5_rank_of_truth": 1,
+      "phase6_top_candidate": "Electronic City",
+      "phase6_top_score": 46.0,
+      "phase6_rank_of_truth": 10,
+      "phase6_truth_score": 0.0,
+      "truth_penalties": [
+        {
+          "name": "STATE_CONFLICT",
+          "deduction": -40.0,
+          "reason": "Candidate state 'Maharashtra' contradicts asserted state 'Karnataka'."
+        },
+        {
+          "name": "DISTRICT_CONFLICT",
+          "deduction": -25.0,
+          "reason": "Candidate district 'Mumbai Suburban' contradicts asserted district 'Bengaluru Urban'."
+        },
+        {
+          "name": "PIN_CIRCLE_CONFLICT",
+          "deduction": -20.0,
+          "reason": "Candidate PIN '400076' postal circle does not match queried PIN '560100'."
+        }
+      ],
+      "top_penalties": [
+        {
+          "name": "LOW_NAME_SIMILARITY",
+          "deduction": -25.0,
+          "reason": "Candidate name 'Electronic City' has low lexical similarity (20.0%) to query token 'Powai'."
+        }
+      ],
+      "administrative_context": {
+        "state": "Karnataka",
+        "district": "Bengaluru Urban",
+        "subdistrict": null,
+        "locality": "Powai",
+        "pincode": "560100"
+      },
+      "truth_entity_type": "locality",
+      "top_entity_type": "locality",
+      "p5_candidate_list": [
+        "Powai",
+        "Electronic City",
+        "Whitefield",
+        "Koramangala",
+        "Indiranagar"
+      ],
+      "p6_candidate_list": [
+        "Electronic City",
+        "Whitefield",
+        "Koramangala",
+        "Indiranagar",
+        "560100"
+      ],
+      "p6_truth_breakdown": {
+        "name_similarity": 25.0,
+        "admin_context": 0.0,
+        "parent_child_compatibility": 15.0,
+        "pin_compatibility": 0.0,
+        "geographic_proximity": 5.0,
+        "transliteration_phonetic": 3.0,
+        "entity_type_weight": 5.0,
+        "retrieval_consensus": 3.0,
+        "data_quality": 2.0,
+        "penalty_deduction": -85.0,
+        "total_score": 0.0
+      },
+      "p6_top_breakdown": {
+        "name_similarity": 5.0,
+        "admin_context": 25.0,
+        "parent_child_compatibility": 15.0,
+        "pin_compatibility": 10.0,
+        "geographic_proximity": 5.0,
+        "transliteration_phonetic": 3.0,
+        "entity_type_weight": 5.0,
+        "retrieval_consensus": 0.99,
+        "data_quality": 2.0,
+        "penalty_deduction": -25.0,
+        "total_score": 46.0
+      }
+    },
+    {
+      "case_id": "GV-000756",
+      "input_address": "Thane West, Bengaluru Urban, Karnataka 560100",
+      "ground_truth": "Thane West",
+      "category": "LOCALITY_MISMATCH",
+      "language": "en",
+      "script": "latin",
+      "regression_classification": "ADMIN_CONTEXT_OVERPENALTY",
+      "phase5_top_candidate": "Thane West",
+      "phase5_top_score": 43.7,
+      "phase5_rank_of_truth": 1,
+      "phase6_top_candidate": "Electronic City",
+      "phase6_top_score": 38.9,
+      "phase6_rank_of_truth": 5,
+      "phase6_truth_score": 0.0,
+      "truth_penalties": [
+        {
+          "name": "STATE_CONFLICT",
+          "deduction": -40.0,
+          "reason": "Candidate state 'Maharashtra' contradicts asserted state 'Karnataka'."
+        },
+        {
+          "name": "DISTRICT_CONFLICT",
+          "deduction": -25.0,
+          "reason": "Candidate district 'Thane' contradicts asserted district 'Bengaluru Urban'."
+        },
+        {
+          "name": "PIN_CIRCLE_CONFLICT",
+          "deduction": -20.0,
+          "reason": "Candidate PIN '400601' postal circle does not match queried PIN '560100'."
+        }
+      ],
+      "top_penalties": [
+        {
+          "name": "LOW_NAME_SIMILARITY",
+          "deduction": -25.0,
+          "reason": "Candidate name 'Electronic City' has low lexical similarity (21.1%) to query token 'West'."
+        }
+      ],
+      "administrative_context": {
+        "state": "Karnataka",
+        "district": "Bengaluru Urban",
+        "subdistrict": "Thane",
+        "locality": "West",
+        "pincode": "560100"
+      },
+      "truth_entity_type": "locality",
+      "top_entity_type": "locality",
+      "p5_candidate_list": [
+        "Thane West",
+        "Bandra West",
+        "Electronic City",
+        "Whitefield",
+        "HSR Layout"
+      ],
+      "p6_candidate_list": [
+        "Electronic City",
+        "Whitefield",
+        "HSR Layout",
+        "Indiranagar",
+        "Thane West"
+      ],
+      "p6_truth_breakdown": {
+        "name_similarity": 14.29,
+        "admin_context": 8.33,
+        "parent_child_compatibility": 15.0,
+        "pin_compatibility": 0.0,
+        "geographic_proximity": 5.0,
+        "transliteration_phonetic": 5.0,
+        "entity_type_weight": 5.0,
+        "retrieval_consensus": 2.01,
+        "data_quality": 2.0,
+        "penalty_deduction": -85.0,
+        "total_score": 0.0
+      },
+      "p6_top_breakdown": {
+        "name_similarity": 5.26,
+        "admin_context": 16.67,
+        "parent_child_compatibility": 15.0,
+        "pin_compatibility": 10.0,
+        "geographic_proximity": 5.0,
+        "transliteration_phonetic": 3.0,
+        "entity_type_weight": 5.0,
+        "retrieval_consensus": 2.01,
+        "data_quality": 2.0,
+        "penalty_deduction": -25.0,
+        "total_score": 38.9
+      }
+    },
+    {
+      "case_id": "GV-000776",
+      "input_address": "Bandra West, Bengaluru Urban, Karnataka 560100",
+      "ground_truth": "Bandra West",
+      "category": "LOCALITY_MISMATCH",
+      "language": "en",
+      "script": "latin",
+      "regression_classification": "ADMIN_CONTEXT_OVERPENALTY",
+      "phase5_top_candidate": "Bandra West",
+      "phase5_top_score": 52.5,
+      "phase5_rank_of_truth": 1,
+      "phase6_top_candidate": "Electronic City",
+      "phase6_top_score": 47.8,
+      "phase6_rank_of_truth": 9,
+      "phase6_truth_score": 0.0,
+      "truth_penalties": [
+        {
+          "name": "STATE_CONFLICT",
+          "deduction": -40.0,
+          "reason": "Candidate state 'Maharashtra' contradicts asserted state 'Karnataka'."
+        },
+        {
+          "name": "DISTRICT_CONFLICT",
+          "deduction": -25.0,
+          "reason": "Candidate district 'Mumbai Suburban' contradicts asserted district 'Bengaluru Urban'."
+        },
+        {
+          "name": "PIN_CIRCLE_CONFLICT",
+          "deduction": -20.0,
+          "reason": "Candidate PIN '400050' postal circle does not match queried PIN '560100'."
+        }
+      ],
+      "top_penalties": [
+        {
+          "name": "LOW_NAME_SIMILARITY",
+          "deduction": -25.0,
+          "reason": "Candidate name 'Electronic City' has low lexical similarity (23.1%) to query token 'Bandra West'."
+        }
+      ],
+      "administrative_context": {
+        "state": "Karnataka",
+        "district": "Bengaluru Urban",
+        "subdistrict": null,
+        "locality": "Bandra West",
+        "pincode": "560100"
+      },
+      "truth_entity_type": "locality",
+      "top_entity_type": "locality",
+      "p5_candidate_list": [
+        "Bandra West",
+        "Baner",
+        "Andheri East",
+        "Thane West",
+        "Indiranagar"
+      ],
+      "p6_candidate_list": [
+        "Electronic City",
+        "Indiranagar",
+        "Koramangala",
+        "560100",
+        "560066"
+      ],
+      "p6_truth_breakdown": {
+        "name_similarity": 25.0,
+        "admin_context": 0.0,
+        "parent_child_compatibility": 15.0,
+        "pin_compatibility": 0.0,
+        "geographic_proximity": 5.0,
+        "transliteration_phonetic": 3.0,
+        "entity_type_weight": 5.0,
+        "retrieval_consensus": 3.0,
+        "data_quality": 2.0,
+        "penalty_deduction": -85.0,
+        "total_score": 0.0
+      },
+      "p6_top_breakdown": {
+        "name_similarity": 5.77,
+        "admin_context": 25.0,
+        "parent_child_compatibility": 15.0,
+        "pin_compatibility": 10.0,
+        "geographic_proximity": 5.0,
+        "transliteration_phonetic": 3.0,
+        "entity_type_weight": 5.0,
+        "retrieval_consensus": 2.01,
+        "data_quality": 2.0,
+        "penalty_deduction": -25.0,
+        "total_score": 47.8
+      }
+    },
+    {
+      "case_id": "GV-000749",
+      "input_address": "Powai, Mysuru, Karnataka 570002",
+      "ground_truth": "Powai",
+      "category": "LOCALITY_MISMATCH",
+      "language": "en",
+      "script": "latin",
+      "regression_classification": "ADMIN_CONTEXT_OVERPENALTY",
+      "phase5_top_candidate": "Powai",
+      "phase5_top_score": 52.5,
+      "phase5_rank_of_truth": 1,
+      "phase6_top_candidate": "Gokulam",
+      "phase6_top_score": 49.3,
+      "phase6_rank_of_truth": 3,
+      "phase6_truth_score": 0.0,
+      "truth_penalties": [
+        {
+          "name": "STATE_CONFLICT",
+          "deduction": -40.0,
+          "reason": "Candidate state 'Maharashtra' contradicts asserted state 'Karnataka'."
+        },
+        {
+          "name": "DISTRICT_CONFLICT",
+          "deduction": -25.0,
+          "reason": "Candidate district 'Mumbai Suburban' contradicts asserted district 'Mysuru'."
+        },
+        {
+          "name": "PIN_CIRCLE_CONFLICT",
+          "deduction": -20.0,
+          "reason": "Candidate PIN '400076' postal circle does not match queried PIN '570002'."
+        }
+      ],
+      "top_penalties": [
+        {
+          "name": "LOW_NAME_SIMILARITY",
+          "deduction": -25.0,
+          "reason": "Candidate name 'Gokulam' has low lexical similarity (33.3%) to query token 'Powai'."
+        }
+      ],
+      "administrative_context": {
+        "state": "Karnataka",
+        "district": "Mysuru",
+        "subdistrict": null,
+        "locality": "Powai",
+        "pincode": "570002"
+      },
+      "truth_entity_type": "locality",
+      "top_entity_type": "locality",
+      "p5_candidate_list": [
+        "Powai",
+        "Gokulam",
+        "570002"
+      ],
+      "p6_candidate_list": [
+        "Gokulam",
+        "570002",
+        "Powai"
+      ],
+      "p6_truth_breakdown": {
+        "name_similarity": 25.0,
+        "admin_context": 0.0,
+        "parent_child_compatibility": 15.0,
+        "pin_compatibility": 0.0,
+        "geographic_proximity": 5.0,
+        "transliteration_phonetic": 3.0,
+        "entity_type_weight": 5.0,
+        "retrieval_consensus": 3.0,
+        "data_quality": 2.0,
+        "penalty_deduction": -85.0,
+        "total_score": 0.0
+      },
+      "p6_top_breakdown": {
+        "name_similarity": 8.33,
+        "admin_context": 25.0,
+        "parent_child_compatibility": 15.0,
+        "pin_compatibility": 10.0,
+        "geographic_proximity": 5.0,
+        "transliteration_phonetic": 3.0,
+        "entity_type_weight": 5.0,
+        "retrieval_consensus": 0.99,
+        "data_quality": 2.0,
+        "penalty_deduction": -25.0,
+        "total_score": 49.3
+      }
+    },
+    {
+      "case_id": "GV-000767",
+      "input_address": "Thane West, Bengaluru Urban, Karnataka 560034",
+      "ground_truth": "Thane West",
+      "category": "LOCALITY_MISMATCH",
+      "language": "en",
+      "script": "latin",
+      "regression_classification": "ADMIN_CONTEXT_OVERPENALTY",
+      "phase5_top_candidate": "Thane West",
+      "phase5_top_score": 43.7,
+      "phase5_rank_of_truth": 1,
+      "phase6_top_candidate": "Whitefield",
+      "phase6_top_score": 36.8,
+      "phase6_rank_of_truth": 6,
+      "phase6_truth_score": 0.0,
+      "truth_penalties": [
+        {
+          "name": "STATE_CONFLICT",
+          "deduction": -40.0,
+          "reason": "Candidate state 'Maharashtra' contradicts asserted state 'Karnataka'."
+        },
+        {
+          "name": "DISTRICT_CONFLICT",
+          "deduction": -25.0,
+          "reason": "Candidate district 'Thane' contradicts asserted district 'Bengaluru Urban'."
+        },
+        {
+          "name": "PIN_CIRCLE_CONFLICT",
+          "deduction": -20.0,
+          "reason": "Candidate PIN '400601' postal circle does not match queried PIN '560034'."
+        }
+      ],
+      "top_penalties": [
+        {
+          "name": "LOW_NAME_SIMILARITY",
+          "deduction": -25.0,
+          "reason": "Candidate name 'Whitefield' has low lexical similarity (28.6%) to query token 'West'."
+        }
+      ],
+      "administrative_context": {
+        "state": "Karnataka",
+        "district": "Bengaluru Urban",
+        "subdistrict": "Thane",
+        "locality": "West",
+        "pincode": "560034"
+      },
+      "truth_entity_type": "locality",
+      "top_entity_type": "locality",
+      "p5_candidate_list": [
+        "Thane West",
+        "Bandra West",
+        "Whitefield",
+        "HSR Layout",
+        "Electronic City"
+      ],
+      "p6_candidate_list": [
+        "Whitefield",
+        "HSR Layout",
+        "Electronic City",
+        "Koramangala",
+        "Indiranagar"
+      ],
+      "p6_truth_breakdown": {
+        "name_similarity": 14.29,
+        "admin_context": 8.33,
+        "parent_child_compatibility": 15.0,
+        "pin_compatibility": 0.0,
+        "geographic_proximity": 5.0,
+        "transliteration_phonetic": 5.0,
+        "entity_type_weight": 5.0,
+        "retrieval_consensus": 2.01,
+        "data_quality": 2.0,
+        "penalty_deduction": -85.0,
+        "total_score": 0.0
+      },
+      "p6_top_breakdown": {
+        "name_similarity": 7.14,
+        "admin_context": 16.67,
+        "parent_child_compatibility": 15.0,
+        "pin_compatibility": 7.0,
+        "geographic_proximity": 5.0,
+        "transliteration_phonetic": 3.0,
+        "entity_type_weight": 5.0,
+        "retrieval_consensus": 0.99,
+        "data_quality": 2.0,
+        "penalty_deduction": -25.0,
+        "total_score": 36.8
+      }
+    },
+    {
+      "case_id": "GV-000759",
+      "input_address": "Kothrud, Bengaluru Urban, Karnataka 560066",
+      "ground_truth": "Kothrud",
+      "category": "LOCALITY_MISMATCH",
+      "language": "en",
+      "script": "latin",
+      "regression_classification": "ADMIN_CONTEXT_OVERPENALTY",
+      "phase5_top_candidate": "Kothrud",
+      "phase5_top_score": 52.5,
+      "phase5_rank_of_truth": 1,
+      "phase6_top_candidate": "Whitefield",
+      "phase6_top_score": 47.9,
+      "phase6_rank_of_truth": 9,
+      "phase6_truth_score": 0.0,
+      "truth_penalties": [
+        {
+          "name": "STATE_CONFLICT",
+          "deduction": -40.0,
+          "reason": "Candidate state 'Maharashtra' contradicts asserted state 'Karnataka'."
+        },
+        {
+          "name": "DISTRICT_CONFLICT",
+          "deduction": -25.0,
+          "reason": "Candidate district 'Pune' contradicts asserted district 'Bengaluru Urban'."
+        },
+        {
+          "name": "PIN_CIRCLE_CONFLICT",
+          "deduction": -20.0,
+          "reason": "Candidate PIN '411038' postal circle does not match queried PIN '560066'."
+        }
+      ],
+      "top_penalties": [
+        {
+          "name": "LOW_NAME_SIMILARITY",
+          "deduction": -25.0,
+          "reason": "Candidate name 'Whitefield' has low lexical similarity (23.5%) to query token 'Kothrud'."
+        }
+      ],
+      "administrative_context": {
+        "state": "Karnataka",
+        "district": "Bengaluru Urban",
+        "subdistrict": null,
+        "locality": "Kothrud",
+        "pincode": "560066"
+      },
+      "truth_entity_type": "locality",
+      "top_entity_type": "locality",
+      "p5_candidate_list": [
+        "Kothrud",
+        "HSR Layout",
+        "Whitefield",
+        "Koramangala",
+        "560066"
+      ],
+      "p6_candidate_list": [
+        "Whitefield",
+        "HSR Layout",
+        "Koramangala",
+        "560066",
+        "560034"
+      ],
+      "p6_truth_breakdown": {
+        "name_similarity": 25.0,
+        "admin_context": 0.0,
+        "parent_child_compatibility": 15.0,
+        "pin_compatibility": 0.0,
+        "geographic_proximity": 5.0,
+        "transliteration_phonetic": 3.0,
+        "entity_type_weight": 5.0,
+        "retrieval_consensus": 3.0,
+        "data_quality": 2.0,
+        "penalty_deduction": -85.0,
+        "total_score": 0.0
+      },
+      "p6_top_breakdown": {
+        "name_similarity": 5.88,
+        "admin_context": 25.0,
+        "parent_child_compatibility": 15.0,
+        "pin_compatibility": 10.0,
+        "geographic_proximity": 5.0,
+        "transliteration_phonetic": 3.0,
+        "entity_type_weight": 5.0,
+        "retrieval_consensus": 2.01,
+        "data_quality": 2.0,
+        "penalty_deduction": -25.0,
+        "total_score": 47.9
+      }
+    },
+    {
+      "case_id": "GV-000574",
+      "input_address": "Hinjewadi, Thane, Maharashtra 411057",
+      "ground_truth": "Hinjewadi",
+      "category": "DISTRICT_MISMATCH",
+      "language": "en",
+      "script": "latin",
+      "regression_classification": "ADMIN_CONTEXT_OVERPENALTY",
+      "phase5_top_candidate": "Hinjewadi",
+      "phase5_top_score": 65.0,
+      "phase5_rank_of_truth": 1,
+      "phase6_top_candidate": "Thane West",
+      "phase6_top_score": 70.5,
+      "phase6_rank_of_truth": 2,
+      "phase6_truth_score": 65.5,
+      "truth_penalties": [
+        {
+          "name": "DISTRICT_CONFLICT",
+          "deduction": -15.0,
+          "reason": "Candidate district 'Pune' contradicts asserted district 'Thane'."
+        }
+      ],
+      "top_penalties": [],
+      "administrative_context": {
+        "state": "Maharashtra",
+        "district": "Thane",
+        "subdistrict": null,
+        "locality": "Hinjewadi",
+        "pincode": "411057"
+      },
+      "truth_entity_type": "locality",
+      "top_entity_type": "locality",
+      "p5_candidate_list": [
+        "Hinjewadi",
+        "Thane West",
+        "411014",
+        "411057",
+        "411045"
+      ],
+      "p6_candidate_list": [
+        "Thane West",
+        "Hinjewadi",
+        "411014",
+        "411057",
+        "411045"
+      ],
+      "p6_truth_breakdown": {
+        "name_similarity": 25.0,
+        "admin_context": 12.5,
+        "parent_child_compatibility": 15.0,
+        "pin_compatibility": 10.0,
+        "geographic_proximity": 5.0,
+        "transliteration_phonetic": 3.0,
+        "entity_type_weight": 5.0,
+        "retrieval_consensus": 3.0,
+        "data_quality": 2.0,
+        "penalty_deduction": -15.0,
+        "total_score": 65.5
+      },
+      "p6_top_breakdown": {
+        "name_similarity": 10.53,
+        "admin_context": 25.0,
+        "parent_child_compatibility": 15.0,
+        "pin_compatibility": 4.0,
+        "geographic_proximity": 5.0,
+        "transliteration_phonetic": 3.0,
+        "entity_type_weight": 5.0,
+        "retrieval_consensus": 0.99,
+        "data_quality": 2.0,
+        "penalty_deduction": 0.0,
+        "total_score": 70.5
+      }
+    },
+    {
+      "case_id": "GV-000790",
+      "input_address": "Bandra West, Bengaluru Urban, Karnataka 560102",
+      "ground_truth": "Bandra West",
+      "category": "LOCALITY_MISMATCH",
+      "language": "en",
+      "script": "latin",
+      "regression_classification": "ADMIN_CONTEXT_OVERPENALTY",
+      "phase5_top_candidate": "Bandra West",
+      "phase5_top_score": 52.5,
+      "phase5_rank_of_truth": 1,
+      "phase6_top_candidate": "HSR Layout",
+      "phase6_top_score": 48.1,
+      "phase6_rank_of_truth": 10,
+      "phase6_truth_score": 0.0,
+      "truth_penalties": [
+        {
+          "name": "STATE_CONFLICT",
+          "deduction": -40.0,
+          "reason": "Candidate state 'Maharashtra' contradicts asserted state 'Karnataka'."
+        },
+        {
+          "name": "DISTRICT_CONFLICT",
+          "deduction": -25.0,
+          "reason": "Candidate district 'Mumbai Suburban' contradicts asserted district 'Bengaluru Urban'."
+        },
+        {
+          "name": "PIN_CIRCLE_CONFLICT",
+          "deduction": -20.0,
+          "reason": "Candidate PIN '400050' postal circle does not match queried PIN '560102'."
+        }
+      ],
+      "top_penalties": [
+        {
+          "name": "LOW_NAME_SIMILARITY",
+          "deduction": -25.0,
+          "reason": "Candidate name 'HSR Layout' has low lexical similarity (28.6%) to query token 'Bandra West'."
+        }
+      ],
+      "administrative_context": {
+        "state": "Karnataka",
+        "district": "Bengaluru Urban",
+        "subdistrict": null,
+        "locality": "Bandra West",
+        "pincode": "560102"
+      },
+      "truth_entity_type": "locality",
+      "top_entity_type": "locality",
+      "p5_candidate_list": [
+        "Bandra West",
+        "Baner",
+        "Andheri East",
+        "Thane West",
+        "HSR Layout"
+      ],
+      "p6_candidate_list": [
+        "HSR Layout",
+        "Indiranagar",
+        "Koramangala",
+        "Electronic City",
+        "560102"
+      ],
+      "p6_truth_breakdown": {
+        "name_similarity": 25.0,
+        "admin_context": 0.0,
+        "parent_child_compatibility": 15.0,
+        "pin_compatibility": 0.0,
+        "geographic_proximity": 5.0,
+        "transliteration_phonetic": 3.0,
+        "entity_type_weight": 5.0,
+        "retrieval_consensus": 3.0,
+        "data_quality": 2.0,
+        "penalty_deduction": -85.0,
+        "total_score": 0.0
+      },
+      "p6_top_breakdown": {
+        "name_similarity": 7.14,
+        "admin_context": 25.0,
+        "parent_child_compatibility": 15.0,
+        "pin_compatibility": 10.0,
+        "geographic_proximity": 5.0,
+        "transliteration_phonetic": 3.0,
+        "entity_type_weight": 5.0,
+        "retrieval_consensus": 0.99,
+        "data_quality": 2.0,
+        "penalty_deduction": -25.0,
+        "total_score": 48.1
+      }
+    },
+    {
+      "case_id": "GV-000745",
+      "input_address": "Hinjewadi, Mysuru, Karnataka 570002",
+      "ground_truth": "Hinjewadi",
+      "category": "LOCALITY_MISMATCH",
+      "language": "en",
+      "script": "latin",
+      "regression_classification": "ADMIN_CONTEXT_OVERPENALTY",
+      "phase5_top_candidate": "Hinjewadi",
+      "phase5_top_score": 52.5,
+      "phase5_rank_of_truth": 1,
+      "phase6_top_candidate": "Gokulam",
+      "phase6_top_score": 44.1,
+      "phase6_rank_of_truth": 3,
+      "phase6_truth_score": 0.0,
+      "truth_penalties": [
+        {
+          "name": "STATE_CONFLICT",
+          "deduction": -40.0,
+          "reason": "Candidate state 'Maharashtra' contradicts asserted state 'Karnataka'."
+        },
+        {
+          "name": "DISTRICT_CONFLICT",
+          "deduction": -25.0,
+          "reason": "Candidate district 'Pune' contradicts asserted district 'Mysuru'."
+        },
+        {
+          "name": "PIN_CIRCLE_CONFLICT",
+          "deduction": -20.0,
+          "reason": "Candidate PIN '411057' postal circle does not match queried PIN '570002'."
+        }
+      ],
+      "top_penalties": [
+        {
+          "name": "LOW_NAME_SIMILARITY",
+          "deduction": -25.0,
+          "reason": "Candidate name 'Gokulam' has low lexical similarity (12.5%) to query token 'Hinjewadi'."
+        }
+      ],
+      "administrative_context": {
+        "state": "Karnataka",
+        "district": "Mysuru",
+        "subdistrict": null,
+        "locality": "Hinjewadi",
+        "pincode": "570002"
+      },
+      "truth_entity_type": "locality",
+      "top_entity_type": "locality",
+      "p5_candidate_list": [
+        "Hinjewadi",
+        "Gokulam",
+        "570002"
+      ],
+      "p6_candidate_list": [
+        "Gokulam",
+        "570002",
+        "Hinjewadi"
+      ],
+      "p6_truth_breakdown": {
+        "name_similarity": 25.0,
+        "admin_context": 0.0,
+        "parent_child_compatibility": 15.0,
+        "pin_compatibility": 0.0,
+        "geographic_proximity": 5.0,
+        "transliteration_phonetic": 3.0,
+        "entity_type_weight": 5.0,
+        "retrieval_consensus": 3.0,
+        "data_quality": 2.0,
+        "penalty_deduction": -85.0,
+        "total_score": 0.0
+      },
+      "p6_top_breakdown": {
+        "name_similarity": 3.12,
+        "admin_context": 25.0,
+        "parent_child_compatibility": 15.0,
+        "pin_compatibility": 10.0,
+        "geographic_proximity": 5.0,
+        "transliteration_phonetic": 3.0,
+        "entity_type_weight": 5.0,
+        "retrieval_consensus": 0.99,
+        "data_quality": 2.0,
+        "penalty_deduction": -25.0,
+        "total_score": 44.1
+      }
+    },
+    {
+      "case_id": "GV-000754",
+      "input_address": "Kothrud, Bengaluru Urban, Karnataka 560034",
+      "ground_truth": "Kothrud",
+      "category": "LOCALITY_MISMATCH",
+      "language": "en",
+      "script": "latin",
+      "regression_classification": "ADMIN_CONTEXT_OVERPENALTY",
+      "phase5_top_candidate": "Kothrud",
+      "phase5_top_score": 52.5,
+      "phase5_rank_of_truth": 1,
+      "phase6_top_candidate": "Koramangala",
+      "phase6_top_score": 50.3,
+      "phase6_rank_of_truth": 9,
+      "phase6_truth_score": 0.0,
+      "truth_penalties": [
+        {
+          "name": "STATE_CONFLICT",
+          "deduction": -40.0,
+          "reason": "Candidate state 'Maharashtra' contradicts asserted state 'Karnataka'."
+        },
+        {
+          "name": "DISTRICT_CONFLICT",
+          "deduction": -25.0,
+          "reason": "Candidate district 'Pune' contradicts asserted district 'Bengaluru Urban'."
+        },
+        {
+          "name": "PIN_CIRCLE_CONFLICT",
+          "deduction": -20.0,
+          "reason": "Candidate PIN '411038' postal circle does not match queried PIN '560034'."
+        }
+      ],
+      "top_penalties": [
+        {
+          "name": "LOW_NAME_SIMILARITY",
+          "deduction": -25.0,
+          "reason": "Candidate name 'Koramangala' has low lexical similarity (33.3%) to query token 'Kothrud'."
+        }
+      ],
+      "administrative_context": {
+        "state": "Karnataka",
+        "district": "Bengaluru Urban",
+        "subdistrict": null,
+        "locality": "Kothrud",
+        "pincode": "560034"
+      },
+      "truth_entity_type": "locality",
+      "top_entity_type": "locality",
+      "p5_candidate_list": [
+        "Kothrud",
+        "Koramangala",
+        "HSR Layout",
+        "Whitefield",
+        "560034"
+      ],
+      "p6_candidate_list": [
+        "Koramangala",
+        "HSR Layout",
+        "Whitefield",
+        "560034",
+        "560066"
+      ],
+      "p6_truth_breakdown": {
+        "name_similarity": 25.0,
+        "admin_context": 0.0,
+        "parent_child_compatibility": 15.0,
+        "pin_compatibility": 0.0,
+        "geographic_proximity": 5.0,
+        "transliteration_phonetic": 3.0,
+        "entity_type_weight": 5.0,
+        "retrieval_consensus": 3.0,
+        "data_quality": 2.0,
+        "penalty_deduction": -85.0,
+        "total_score": 0.0
+      },
+      "p6_top_breakdown": {
+        "name_similarity": 8.33,
+        "admin_context": 25.0,
+        "parent_child_compatibility": 15.0,
+        "pin_compatibility": 10.0,
+        "geographic_proximity": 5.0,
+        "transliteration_phonetic": 3.0,
+        "entity_type_weight": 5.0,
+        "retrieval_consensus": 2.01,
+        "data_quality": 2.0,
+        "penalty_deduction": -25.0,
+        "total_score": 50.3
+      }
+    },
+    {
+      "case_id": "GV-000755",
+      "input_address": "Baner, Bengaluru Urban, Karnataka 560100",
+      "ground_truth": "Baner",
+      "category": "LOCALITY_MISMATCH",
+      "language": "en",
+      "script": "latin",
+      "regression_classification": "ADMIN_CONTEXT_OVERPENALTY",
+      "phase5_top_candidate": "Baner",
+      "phase5_top_score": 52.5,
+      "phase5_rank_of_truth": 1,
+      "phase6_top_candidate": "Indiranagar",
+      "phase6_top_score": 47.4,
+      "phase6_rank_of_truth": 10,
+      "phase6_truth_score": 0.0,
+      "truth_penalties": [
+        {
+          "name": "STATE_CONFLICT",
+          "deduction": -40.0,
+          "reason": "Candidate state 'Maharashtra' contradicts asserted state 'Karnataka'."
+        },
+        {
+          "name": "DISTRICT_CONFLICT",
+          "deduction": -25.0,
+          "reason": "Candidate district 'Pune' contradicts asserted district 'Bengaluru Urban'."
+        },
+        {
+          "name": "PIN_CIRCLE_CONFLICT",
+          "deduction": -20.0,
+          "reason": "Candidate PIN '411045' postal circle does not match queried PIN '560100'."
+        }
+      ],
+      "top_penalties": [
+        {
+          "name": "LOW_NAME_SIMILARITY",
+          "deduction": -25.0,
+          "reason": "Candidate name 'Indiranagar' has low lexical similarity (37.5%) to query token 'Baner'."
+        }
+      ],
+      "administrative_context": {
+        "state": "Karnataka",
+        "district": "Bengaluru Urban",
+        "subdistrict": null,
+        "locality": "Baner",
+        "pincode": "560100"
+      },
+      "truth_entity_type": "locality",
+      "top_entity_type": "locality",
+      "p5_candidate_list": [
+        "Baner",
+        "Indiranagar",
+        "Electronic City",
+        "Whitefield",
+        "HSR Layout"
+      ],
+      "p6_candidate_list": [
+        "Indiranagar",
+        "Electronic City",
+        "Whitefield",
+        "HSR Layout",
+        "560100"
+      ],
+      "p6_truth_breakdown": {
+        "name_similarity": 25.0,
+        "admin_context": 0.0,
+        "parent_child_compatibility": 15.0,
+        "pin_compatibility": 0.0,
+        "geographic_proximity": 5.0,
+        "transliteration_phonetic": 3.0,
+        "entity_type_weight": 5.0,
+        "retrieval_consensus": 3.0,
+        "data_quality": 2.0,
+        "penalty_deduction": -85.0,
+        "total_score": 0.0
+      },
+      "p6_top_breakdown": {
+        "name_similarity": 9.38,
+        "admin_context": 25.0,
+        "parent_child_compatibility": 15.0,
+        "pin_compatibility": 7.0,
+        "geographic_proximity": 5.0,
+        "transliteration_phonetic": 3.0,
+        "entity_type_weight": 5.0,
+        "retrieval_consensus": 0.99,
+        "data_quality": 2.0,
+        "penalty_deduction": -25.0,
+        "total_score": 47.4
+      }
+    }
+  ]
+}

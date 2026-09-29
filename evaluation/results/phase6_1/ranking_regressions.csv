@@ -1,0 +1,37 @@
+case_id,address,ground_truth,category,classification,phase5_top,phase5_score,phase6_top,phase6_score,phase6_truth_score,phase6_truth_rank
+GV-000768,"Baner, Bengaluru Urban, Karnataka 560102",Baner,LOCALITY_MISMATCH,ADMIN_CONTEXT_OVERPENALTY,Baner,52.5,Indiranagar,47.4,0.0,9
+GV-000744,"Kharadi, Bengaluru Urban, Karnataka 560102",Kharadi,LOCALITY_MISMATCH,ADMIN_CONTEXT_OVERPENALTY,Kharadi,52.5,HSR Layout,50.8,0.0,9
+GV-000780,"Kharadi, Mysuru, Karnataka 570002",Kharadi,LOCALITY_MISMATCH,ADMIN_CONTEXT_OVERPENALTY,Kharadi,52.5,Gokulam,48.1,0.0,3
+GV-000610,"Baner, Mumbai Suburban, Maharashtra 411045",Baner,DISTRICT_MISMATCH,ADMIN_CONTEXT_OVERPENALTY,Baner,65.0,Bandra West,72.5,65.5,3
+GV-000748,"Kharadi, Bengaluru Urban, Karnataka 560102",Kharadi,LOCALITY_MISMATCH,ADMIN_CONTEXT_OVERPENALTY,Kharadi,52.5,HSR Layout,50.8,0.0,9
+GV-000777,"Bandra West, Bengaluru Urban, Karnataka 560100",Bandra West,LOCALITY_MISMATCH,ADMIN_CONTEXT_OVERPENALTY,Bandra West,52.5,Electronic City,47.8,0.0,9
+GV-000785,"Hadapsar, Mysuru, Karnataka 570002",Hadapsar,LOCALITY_MISMATCH,ADMIN_CONTEXT_OVERPENALTY,Hadapsar,52.5,Gokulam,44.3,0.0,3
+GV-000605,"Hadapsar, Mumbai Suburban, Maharashtra 411028",Hadapsar,DISTRICT_MISMATCH,ADMIN_CONTEXT_OVERPENALTY,Hadapsar,65.0,Bandra West,70.5,65.5,3
+GV-000770,"Thane West, Bengaluru Urban, Karnataka 560102",Thane West,LOCALITY_MISMATCH,ADMIN_CONTEXT_OVERPENALTY,Thane West,43.7,HSR Layout,40.8,0.0,5
+GV-000765,"Bandra West, Bengaluru Urban, Karnataka 560066",Bandra West,LOCALITY_MISMATCH,ADMIN_CONTEXT_OVERPENALTY,Bandra West,52.5,Indiranagar,47.1,0.0,10
+GV-000591,"Powai, Pune, Maharashtra 400076",Powai,DISTRICT_MISMATCH,ADMIN_CONTEXT_OVERPENALTY,Powai,65.0,Hinjewadi,70.7,65.5,2
+GV-000751,"Powai, Bengaluru Urban, Karnataka 560038",Powai,LOCALITY_MISMATCH,ADMIN_CONTEXT_OVERPENALTY,Powai,52.5,Indiranagar,45.1,0.0,9
+GV-000786,"Rajarampuri, Mysuru, Karnataka 570002",Rajarampuri,LOCALITY_MISMATCH,ADMIN_CONTEXT_OVERPENALTY,Rajarampuri,52.5,Gokulam,46.5,0.0,3
+GV-000782,"Kothrud, Mysuru, Karnataka 570002",Kothrud,LOCALITY_MISMATCH,ADMIN_CONTEXT_OVERPENALTY,Kothrud,52.5,Gokulam,48.1,0.0,3
+GV-000762,"Thane West, Bengaluru Urban, Karnataka 560038",Thane West,LOCALITY_MISMATCH,ADMIN_CONTEXT_OVERPENALTY,Thane West,43.7,Whitefield,36.8,0.0,5
+GV-000783,"Kharadi, Bengaluru Urban, Karnataka 560102",Kharadi,LOCALITY_MISMATCH,ADMIN_CONTEXT_OVERPENALTY,Kharadi,52.5,HSR Layout,50.8,0.0,9
+GV-000750,"Baner, Mysuru, Karnataka 570002",Baner,LOCALITY_MISMATCH,ADMIN_CONTEXT_OVERPENALTY,Baner,52.5,Gokulam,46.2,0.0,3
+GV-000778,"Bandra West, Bengaluru Urban, Karnataka 560066",Bandra West,LOCALITY_MISMATCH,ADMIN_CONTEXT_OVERPENALTY,Bandra West,52.5,Indiranagar,47.1,0.0,10
+GV-000773,"Rajarampuri, Mysuru, Karnataka 570002",Rajarampuri,LOCALITY_MISMATCH,ADMIN_CONTEXT_OVERPENALTY,Rajarampuri,52.5,Gokulam,46.5,0.0,3
+GV-000789,"Kharadi, Bengaluru Urban, Karnataka 560102",Kharadi,LOCALITY_MISMATCH,ADMIN_CONTEXT_OVERPENALTY,Kharadi,52.5,HSR Layout,50.8,0.0,9
+GV-000752,"Thane West, Bengaluru Urban, Karnataka 560066",Thane West,LOCALITY_MISMATCH,ADMIN_CONTEXT_OVERPENALTY,Thane West,43.7,Whitefield,40.8,0.0,5
+GV-000760,"Kharadi, Bengaluru Urban, Karnataka 560034",Kharadi,LOCALITY_MISMATCH,ADMIN_CONTEXT_OVERPENALTY,Kharadi,52.5,Koramangala,50.3,0.0,9
+GV-000758,"Kothrud, Bengaluru Urban, Karnataka 560034",Kothrud,LOCALITY_MISMATCH,ADMIN_CONTEXT_OVERPENALTY,Kothrud,52.5,Koramangala,50.3,0.0,9
+GV-000573,"Baner, Thane, Maharashtra 411045",Baner,DISTRICT_MISMATCH,ADMIN_CONTEXT_OVERPENALTY,Baner,65.0,Thane West,70.0,65.5,2
+GV-000747,"Baner, Bengaluru Urban, Karnataka 560034",Baner,LOCALITY_MISMATCH,ADMIN_CONTEXT_OVERPENALTY,Baner,52.5,Indiranagar,47.4,0.0,10
+GV-000764,"Powai, Bengaluru Urban, Karnataka 560100",Powai,LOCALITY_MISMATCH,ADMIN_CONTEXT_OVERPENALTY,Powai,52.5,Electronic City,46.0,0.0,10
+GV-000756,"Thane West, Bengaluru Urban, Karnataka 560100",Thane West,LOCALITY_MISMATCH,ADMIN_CONTEXT_OVERPENALTY,Thane West,43.7,Electronic City,38.9,0.0,5
+GV-000776,"Bandra West, Bengaluru Urban, Karnataka 560100",Bandra West,LOCALITY_MISMATCH,ADMIN_CONTEXT_OVERPENALTY,Bandra West,52.5,Electronic City,47.8,0.0,9
+GV-000749,"Powai, Mysuru, Karnataka 570002",Powai,LOCALITY_MISMATCH,ADMIN_CONTEXT_OVERPENALTY,Powai,52.5,Gokulam,49.3,0.0,3
+GV-000767,"Thane West, Bengaluru Urban, Karnataka 560034",Thane West,LOCALITY_MISMATCH,ADMIN_CONTEXT_OVERPENALTY,Thane West,43.7,Whitefield,36.8,0.0,6
+GV-000759,"Kothrud, Bengaluru Urban, Karnataka 560066",Kothrud,LOCALITY_MISMATCH,ADMIN_CONTEXT_OVERPENALTY,Kothrud,52.5,Whitefield,47.9,0.0,9
+GV-000574,"Hinjewadi, Thane, Maharashtra 411057",Hinjewadi,DISTRICT_MISMATCH,ADMIN_CONTEXT_OVERPENALTY,Hinjewadi,65.0,Thane West,70.5,65.5,2
+GV-000790,"Bandra West, Bengaluru Urban, Karnataka 560102",Bandra West,LOCALITY_MISMATCH,ADMIN_CONTEXT_OVERPENALTY,Bandra West,52.5,HSR Layout,48.1,0.0,10
+GV-000745,"Hinjewadi, Mysuru, Karnataka 570002",Hinjewadi,LOCALITY_MISMATCH,ADMIN_CONTEXT_OVERPENALTY,Hinjewadi,52.5,Gokulam,44.1,0.0,3
+GV-000754,"Kothrud, Bengaluru Urban, Karnataka 560034",Kothrud,LOCALITY_MISMATCH,ADMIN_CONTEXT_OVERPENALTY,Kothrud,52.5,Koramangala,50.3,0.0,9
+GV-000755,"Baner, Bengaluru Urban, Karnataka 560100",Baner,LOCALITY_MISMATCH,ADMIN_CONTEXT_OVERPENALTY,Baner,52.5,Indiranagar,47.4,0.0,10

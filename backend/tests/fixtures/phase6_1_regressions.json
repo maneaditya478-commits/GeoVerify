@@ -1,0 +1,42 @@
+[
+  {
+    "case_id": "REG-001",
+    "name": "Subdistrict mismatch does not overpenalize exact locality match",
+    "input_locality": "Bandra West",
+    "state": "Maharashtra",
+    "district": "Mumbai Suburban",
+    "subdistrict": "Mulshi",
+    "expected_top_locality": "Bandra West"
+  },
+  {
+    "case_id": "REG-002",
+    "name": "Low name similarity candidate cannot outrank exact name match via context alone",
+    "input_locality": "Kharadi",
+    "state": "Maharashtra",
+    "district": "Pune",
+    "subdistrict": "Haveli",
+    "expected_top_locality": "Kharadi"
+  },
+  {
+    "case_id": "REG-003",
+    "name": "PIN code candidate is penalized with ENTITY_TYPE_MISMATCH when resolving Locality",
+    "input_locality": "Dwarka",
+    "state": "Delhi",
+    "district": "South West Delhi",
+    "expected_top_locality": "Dwarka"
+  },
+  {
+    "case_id": "REG-004",
+    "name": "Hierarchical state and district fast lookup",
+    "state": "Karnataka",
+    "district": "Bengaluru Urban",
+    "expected_valid": true
+  },
+  {
+    "case_id": "REG-005",
+    "name": "District alias resolution in fast hierarchy index",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "expected_valid": true
+  }
+]

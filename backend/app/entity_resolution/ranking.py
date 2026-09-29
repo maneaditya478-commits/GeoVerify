@@ -6,7 +6,9 @@ and explainable ranking rationales.
 """
 
 import math
+import re
 from typing import List, Dict, Any, Optional, Tuple, Set
+from rapidfuzz import fuzz
 from app.entity_resolution.models import (
     CandidateEntity,
     EntityMatchResult,
@@ -64,7 +66,27 @@ class ContextAwareRanker:
         admin_differences: List[str] = []
 
         # 1. Name Similarity (25% -> 25 points max)
-        name_pts = round(candidate.similarity_score * (w.name_similarity * 100), 2)
+        name_sim = candidate.similarity_score
+        if query_text and len(query_text.strip()) >= 2:
+            q_clean = query_text.strip().lower()
+            query_tokens = [q_clean] + [t.strip().lower() for t in re.split(r"[,/ ]+", query_text) if len(t.strip()) >= 2]
+            cand_names = [candidate.name.lower()]
+            if candidate.name_hi:
+                cand_names.append(candidate.name_hi.lower())
+            if candidate.name_mr:
+                cand_names.append(candidate.name_mr.lower())
+            
+            best_text_sim = 0.0
+            for q_tok in query_tokens:
+                sim_tok = max(fuzz.ratio(q_tok, n) / 100.0 for n in cand_names)
+                if sim_tok > best_text_sim:
+                    best_text_sim = sim_tok
+
+            if candidate.match_source in ["exact", "alias", "transliteration", "phonetic", "fuzzy"]:
+                name_sim = max(name_sim, best_text_sim)
+            else:
+                name_sim = best_text_sim
+        name_pts = round(name_sim * (w.name_similarity * 100), 2)
 
         # 2. Administrative Context Agreement (25% -> 25 points max)
         admin_factors = 0
@@ -179,10 +201,14 @@ class ContextAwareRanker:
                 type_pts = w.entity_type_compatibility * 100
             elif expected_type == EntityType.LOCALITY and candidate.entity_type in locality_types:
                 type_pts = round((w.entity_type_compatibility * 100) * 0.9, 2)
-            elif expected_type == EntityType.LOCALITY and candidate.entity_type in {EntityType.DISTRICT, EntityType.STATE}:
+            elif expected_type == EntityType.LOCALITY and candidate.entity_type not in locality_types:
                 type_pts = 0.0
                 type_mismatch = True
                 admin_differences.append(f"Entity type mismatch: expected Locality, candidate is {candidate.entity_type.value.title()}")
+            elif candidate.entity_type != expected_type:
+                type_pts = 0.0
+                type_mismatch = True
+                admin_differences.append(f"Entity type mismatch: expected {expected_type.value.title()}, candidate is {candidate.entity_type.value.title()}")
             else:
                 type_pts = round((w.entity_type_compatibility * 100) * 0.5, 2)
         else:
@@ -235,6 +261,15 @@ class ContextAwareRanker:
                 name="SUBDISTRICT_CONFLICT",
                 deduction=ded,
                 reason=f"Candidate subdistrict '{candidate.subdistrict}' contradicts asserted taluka '{context_subdistrict}'."
+            ))
+
+        if query_text and len(query_text.strip()) >= 2 and name_sim < 0.40:
+            ded = -25.0
+            penalty_sum += ded
+            applied_penalties.append(AppliedPenalty(
+                name="LOW_NAME_SIMILARITY",
+                deduction=ded,
+                reason=f"Candidate name '{candidate.name}' has low lexical similarity ({round(name_sim*100, 1)}%) to query token '{query_text}'."
             ))
 
         if type_mismatch:
@@ -387,3 +422,4 @@ class ContextAwareRanker:
 
 
 context_aware_ranker = ContextAwareRanker()
+ContextAwareCandidateRanker = ContextAwareRanker

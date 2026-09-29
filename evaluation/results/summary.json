@@ -9,57 +9,57 @@
     "exact_hierarchy_accuracy": 0.5831
   },
   "candidate_recall": {
-    "recall_at_1": 0.7351,
-    "recall_at_3": 0.8953,
-    "recall_at_5": 0.933,
-    "recall_at_10": 0.9979
+    "recall_at_1": 0.8262,
+    "recall_at_3": 0.9037,
+    "recall_at_5": 0.9602,
+    "recall_at_10": 0.9937
   },
   "ambiguity": {
-    "accuracy": 0.9183,
-    "precision": 0.3873,
+    "accuracy": 0.8854,
+    "precision": 0.3107,
     "recall": 1.0,
-    "f1": 0.5584,
+    "f1": 0.4741,
     "tp": 55,
-    "fp": 87,
+    "fp": 122,
     "fn": 0,
-    "tn": 923
+    "tn": 888
   },
   "status_classification": {
-    "overall_accuracy": 0.6404,
-    "macro_f1": 0.662,
-    "weighted_f1": 0.6045,
+    "overall_accuracy": 0.6432,
+    "macro_f1": 0.6707,
+    "weighted_f1": 0.6098,
     "per_class": {
       "VERIFIED": {
-        "accuracy": 0.77,
-        "precision": 0.6613,
-        "recall": 0.8099,
-        "f1": 0.7281,
-        "tp": 328,
+        "accuracy": 0.769,
+        "precision": 0.6606,
+        "recall": 0.8074,
+        "f1": 0.7267,
+        "tp": 327,
         "fp": 168,
-        "fn": 77,
+        "fn": 78,
         "tn": 492,
         "support": 405
       },
       "CONSISTENT": {
-        "accuracy": 0.7493,
-        "precision": 0.537,
-        "recall": 0.2109,
-        "f1": 0.3029,
-        "tp": 58,
-        "fp": 50,
-        "fn": 217,
-        "tn": 740,
+        "accuracy": 0.7512,
+        "precision": 0.5439,
+        "recall": 0.2255,
+        "f1": 0.3188,
+        "tp": 62,
+        "fp": 52,
+        "fn": 213,
+        "tn": 738,
         "support": 275
       },
       "NEEDS_REVIEW": {
-        "accuracy": 0.9221,
-        "precision": 0.7794,
+        "accuracy": 0.9211,
+        "precision": 0.7681,
         "recall": 0.438,
-        "f1": 0.5608,
+        "f1": 0.5579,
         "tp": 53,
-        "fp": 15,
+        "fp": 16,
         "fn": 68,
-        "tn": 929,
+        "tn": 928,
         "support": 121
       },
       "INCONSISTENT": {
@@ -74,14 +74,14 @@
         "support": 165
       },
       "AMBIGUOUS": {
-        "accuracy": 0.9812,
-        "precision": 0.7333,
+        "accuracy": 0.9869,
+        "precision": 0.7971,
         "recall": 1.0,
-        "f1": 0.8462,
+        "f1": 0.8871,
         "tp": 55,
-        "fp": 20,
+        "fp": 14,
         "fn": 0,
-        "tn": 990,
+        "tn": 996,
         "support": 55
       },
       "UNABLE_TO_VERIFY": {
@@ -98,27 +98,27 @@
     },
     "confusion_matrix": {
       "VERIFIED": {
-        "VERIFIED": 328,
+        "VERIFIED": 327,
         "CONSISTENT": 40,
         "NEEDS_REVIEW": 0,
         "INCONSISTENT": 37,
-        "AMBIGUOUS": 0,
+        "AMBIGUOUS": 1,
         "UNABLE_TO_VERIFY": 0
       },
       "CONSISTENT": {
         "VERIFIED": 128,
-        "CONSISTENT": 58,
-        "NEEDS_REVIEW": 8,
+        "CONSISTENT": 62,
+        "NEEDS_REVIEW": 9,
         "INCONSISTENT": 73,
-        "AMBIGUOUS": 8,
+        "AMBIGUOUS": 3,
         "UNABLE_TO_VERIFY": 0
       },
       "NEEDS_REVIEW": {
         "VERIFIED": 39,
-        "CONSISTENT": 7,
+        "CONSISTENT": 9,
         "NEEDS_REVIEW": 53,
         "INCONSISTENT": 20,
-        "AMBIGUOUS": 2,
+        "AMBIGUOUS": 0,
         "UNABLE_TO_VERIFY": 0
       },
       "INCONSISTENT": {
@@ -163,11 +163,11 @@
       "max": 100
     },
     "entity_match_score": {
-      "mean": 86.36,
+      "mean": 85.28,
       "median": 89.0,
-      "std": 7.35,
+      "std": 7.4,
       "min": 64.0,
-      "max": 94.0
+      "max": 92.0
     }
   },
   "script_metrics": {
@@ -175,57 +175,33 @@
       "count": 110,
       "exact_hierarchy_acc": 0.8636,
       "status_acc": 0.8636,
-      "mean_latency_ms": 35.58
+      "mean_latency_ms": 32.46
     },
     "mixed": {
       "count": 55,
       "exact_hierarchy_acc": 0.7818,
       "status_acc": 0.7818,
-      "mean_latency_ms": 34.45
+      "mean_latency_ms": 33.98
     },
     "latin": {
       "count": 900,
       "exact_hierarchy_acc": 0.5367,
-      "status_acc": 0.6044,
-      "mean_latency_ms": 38.24
+      "status_acc": 0.6078,
+      "mean_latency_ms": 35.4
     }
   },
   "category_metrics": {
-    "PIN_MISMATCH": {
-      "count": 55,
-      "status_acc": 0.7636,
-      "exact_hierarchy_acc": 0.6909,
-      "mean_consistency_score": 77.56
-    },
-    "MIXED_LANGUAGE": {
+    "INCOMPLETE": {
       "count": 55,
       "status_acc": 0.7818,
-      "exact_hierarchy_acc": 0.7818,
-      "mean_consistency_score": 89.78
+      "exact_hierarchy_acc": 1.0,
+      "mean_consistency_score": 30.36
     },
-    "MISSPELLING": {
+    "INFORMAL_SLANG": {
       "count": 55,
-      "status_acc": 0.5818,
-      "exact_hierarchy_acc": 0.5818,
-      "mean_consistency_score": 86.58
-    },
-    "HISTORICAL_ALIAS": {
-      "count": 55,
-      "status_acc": 0.9273,
-      "exact_hierarchy_acc": 0.9273,
-      "mean_consistency_score": 94.98
-    },
-    "SUBDISTRICT_MISMATCH": {
-      "count": 55,
-      "status_acc": 0.0,
-      "exact_hierarchy_acc": 0.0727,
-      "mean_consistency_score": 96.73
-    },
-    "DEVANAGARI_HINDI": {
-      "count": 55,
-      "status_acc": 0.7273,
-      "exact_hierarchy_acc": 0.7273,
-      "mean_consistency_score": 86.98
+      "status_acc": 0.6364,
+      "exact_hierarchy_acc": 0.1273,
+      "mean_consistency_score": 72.07
     },
     "TYPO": {
       "count": 55,
@@ -233,59 +209,11 @@
       "exact_hierarchy_acc": 0.7636,
       "mean_consistency_score": 92.73
     },
-    "NEARBY_BUT_WRONG_LOCALITY": {
-      "count": 55,
-      "status_acc": 0.0,
-      "exact_hierarchy_acc": 1.0,
-      "mean_consistency_score": 80.36
-    },
-    "DEVANAGARI_MARATHI": {
-      "count": 55,
-      "status_acc": 1.0,
-      "exact_hierarchy_acc": 1.0,
-      "mean_consistency_score": 97.09
-    },
     "AMBIGUOUS_LOCALITY": {
       "count": 55,
       "status_acc": 1.0,
       "exact_hierarchy_acc": 1.0,
       "mean_consistency_score": 62.0
-    },
-    "STATE_MISMATCH": {
-      "count": 55,
-      "status_acc": 0.9091,
-      "exact_hierarchy_acc": 0.0,
-      "mean_consistency_score": 47.71
-    },
-    "INCOMPLETE": {
-      "count": 55,
-      "status_acc": 0.7818,
-      "exact_hierarchy_acc": 1.0,
-      "mean_consistency_score": 30.36
-    },
-    "DISTRICT_MISMATCH": {
-      "count": 55,
-      "status_acc": 0.9273,
-      "exact_hierarchy_acc": 0.0182,
-      "mean_consistency_score": 55.13
-    },
-    "PARTIAL_VALID": {
-      "count": 55,
-      "status_acc": 0.1818,
-      "exact_hierarchy_acc": 0.8,
-      "mean_consistency_score": 80.8
-    },
-    "COMPLETE_VALID": {
-      "count": 75,
-      "status_acc": 0.8,
-      "exact_hierarchy_acc": 0.1867,
-      "mean_consistency_score": 89.01
-    },
-    "WRONG_ADMIN_HIERARCHY": {
-      "count": 55,
-      "status_acc": 0.2182,
-      "exact_hierarchy_acc": 0.7273,
-      "mean_consistency_score": 78.22
     },
     "LOCALITY_MISMATCH": {
       "count": 55,
@@ -293,82 +221,154 @@
       "exact_hierarchy_acc": 0.0,
       "mean_consistency_score": 60.65
     },
-    "INFORMAL_SLANG": {
+    "HISTORICAL_ALIAS": {
       "count": 55,
-      "status_acc": 0.6545,
-      "exact_hierarchy_acc": 0.1273,
-      "mean_consistency_score": 72.07
+      "status_acc": 0.9273,
+      "exact_hierarchy_acc": 0.9273,
+      "mean_consistency_score": 94.98
+    },
+    "COMPLETE_VALID": {
+      "count": 75,
+      "status_acc": 0.7867,
+      "exact_hierarchy_acc": 0.1867,
+      "mean_consistency_score": 89.01
+    },
+    "PARTIAL_VALID": {
+      "count": 55,
+      "status_acc": 0.2182,
+      "exact_hierarchy_acc": 0.8,
+      "mean_consistency_score": 80.8
+    },
+    "SUBDISTRICT_MISMATCH": {
+      "count": 55,
+      "status_acc": 0.0,
+      "exact_hierarchy_acc": 0.0727,
+      "mean_consistency_score": 96.73
+    },
+    "MIXED_LANGUAGE": {
+      "count": 55,
+      "status_acc": 0.7818,
+      "exact_hierarchy_acc": 0.7818,
+      "mean_consistency_score": 89.78
     },
     "INVALID_PIN": {
       "count": 55,
       "status_acc": 0.0,
       "exact_hierarchy_acc": 0.8182,
       "mean_consistency_score": 81.24
+    },
+    "DEVANAGARI_HINDI": {
+      "count": 55,
+      "status_acc": 0.7273,
+      "exact_hierarchy_acc": 0.7273,
+      "mean_consistency_score": 86.98
+    },
+    "DISTRICT_MISMATCH": {
+      "count": 55,
+      "status_acc": 0.9273,
+      "exact_hierarchy_acc": 0.0182,
+      "mean_consistency_score": 55.13
+    },
+    "PIN_MISMATCH": {
+      "count": 55,
+      "status_acc": 0.7636,
+      "exact_hierarchy_acc": 0.6909,
+      "mean_consistency_score": 77.56
+    },
+    "DEVANAGARI_MARATHI": {
+      "count": 55,
+      "status_acc": 1.0,
+      "exact_hierarchy_acc": 1.0,
+      "mean_consistency_score": 97.09
+    },
+    "STATE_MISMATCH": {
+      "count": 55,
+      "status_acc": 0.9091,
+      "exact_hierarchy_acc": 0.0,
+      "mean_consistency_score": 47.71
+    },
+    "WRONG_ADMIN_HIERARCHY": {
+      "count": 55,
+      "status_acc": 0.2727,
+      "exact_hierarchy_acc": 0.7273,
+      "mean_consistency_score": 78.22
+    },
+    "NEARBY_BUT_WRONG_LOCALITY": {
+      "count": 55,
+      "status_acc": 0.0,
+      "exact_hierarchy_acc": 1.0,
+      "mean_consistency_score": 80.36
+    },
+    "MISSPELLING": {
+      "count": 55,
+      "status_acc": 0.5818,
+      "exact_hierarchy_acc": 0.5818,
+      "mean_consistency_score": 86.58
     }
   },
   "latency": {
-    "mean_ms": 37.77,
-    "median_ms": 34.77,
-    "p50_ms": 34.77,
-    "p90_ms": 54.74,
-    "p95_ms": 70.0,
-    "p99_ms": 89.17,
-    "min_ms": 10.99,
-    "max_ms": 116.44
+    "mean_ms": 35.02,
+    "median_ms": 32.44,
+    "p50_ms": 32.44,
+    "p90_ms": 50.45,
+    "p95_ms": 62.5,
+    "p99_ms": 82.54,
+    "min_ms": 9.97,
+    "max_ms": 111.58
   },
   "component_performance": {
     "repetitions_per_sample": 20,
     "total_runs_per_component": 100,
     "components": {
       "address_normalizer": {
-        "mean_ms": 0.12,
-        "median_ms": 0.099,
-        "p50_ms": 0.099,
-        "p90_ms": 0.186,
-        "p95_ms": 0.22,
-        "p99_ms": 0.285,
-        "min_ms": 0.073,
-        "max_ms": 0.297
+        "mean_ms": 0.123,
+        "median_ms": 0.102,
+        "p50_ms": 0.102,
+        "p90_ms": 0.191,
+        "p95_ms": 0.214,
+        "p99_ms": 0.273,
+        "min_ms": 0.075,
+        "max_ms": 0.359
       },
       "indic_transliteration": {
-        "mean_ms": 0.04,
+        "mean_ms": 0.041,
         "median_ms": 0.031,
         "p50_ms": 0.031,
         "p90_ms": 0.055,
-        "p95_ms": 0.072,
-        "p99_ms": 0.099,
-        "min_ms": 0.028,
-        "max_ms": 0.113
+        "p95_ms": 0.068,
+        "p99_ms": 0.093,
+        "min_ms": 0.027,
+        "max_ms": 0.188
       },
       "address_parser": {
-        "mean_ms": 0.488,
-        "median_ms": 0.501,
-        "p50_ms": 0.501,
-        "p90_ms": 0.723,
-        "p95_ms": 0.87,
-        "p99_ms": 0.944,
+        "mean_ms": 0.505,
+        "median_ms": 0.511,
+        "p50_ms": 0.511,
+        "p90_ms": 0.8,
+        "p95_ms": 0.893,
+        "p99_ms": 0.975,
         "min_ms": 0.162,
-        "max_ms": 0.957
+        "max_ms": 1.234
       },
       "entity_resolution": {
-        "mean_ms": 42.794,
-        "median_ms": 41.922,
-        "p50_ms": 41.922,
-        "p90_ms": 60.029,
-        "p95_ms": 64.015,
-        "p99_ms": 67.506,
-        "min_ms": 25.061,
-        "max_ms": 69.548
+        "mean_ms": 38.318,
+        "median_ms": 36.722,
+        "p50_ms": 36.722,
+        "p90_ms": 52.089,
+        "p95_ms": 55.268,
+        "p99_ms": 70.444,
+        "min_ms": 23.851,
+        "max_ms": 78.959
       },
       "verification_engine_pipeline": {
-        "mean_ms": 45.04,
-        "median_ms": 45.374,
-        "p50_ms": 45.374,
-        "p90_ms": 60.484,
-        "p95_ms": 63.867,
-        "p99_ms": 67.995,
-        "min_ms": 26.455,
-        "max_ms": 73.892
+        "mean_ms": 40.931,
+        "median_ms": 39.283,
+        "p50_ms": 39.283,
+        "p90_ms": 56.712,
+        "p95_ms": 58.689,
+        "p99_ms": 77.769,
+        "min_ms": 25.557,
+        "max_ms": 82.554
       }
     }
   }

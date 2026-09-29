@@ -32,43 +32,65 @@ class HierarchyValidator:
             with open(data_dir / "localities.json", "r", encoding="utf-8") as f:
                 self.localities = json.load(f)
 
+        self._build_indices()
+
+    def _build_indices(self):
+        """Builds in-memory dictionary indexes for O(1) state, district, and subdistrict resolution."""
+        self._state_index: Dict[str, dict] = {}
+        for s in self.states:
+            for key in [s["name"].lower(), s["canonical_name"].lower(), s["code"].lower()]:
+                self._state_index[key] = s
+            if s.get("name_hi"):
+                self._state_index[s["name_hi"].lower()] = s
+            if s.get("name_mr"):
+                self._state_index[s["name_mr"].lower()] = s
+            for a in s.get("aliases", []):
+                self._state_index[a.lower()] = s
+
+        self._district_index: Dict[str, dict] = {}
+        for d in self.districts:
+            for key in [d["name"].lower(), d["canonical_name"].lower()]:
+                self._district_index[key] = d
+            if d.get("name_hi"):
+                self._district_index[d["name_hi"].lower()] = d
+            if d.get("name_mr"):
+                self._district_index[d["name_mr"].lower()] = d
+            for a in d.get("aliases", []):
+                self._district_index[a.lower()] = d
+
+        self._subdistrict_index: Dict[str, dict] = {}
+        for sd in self.subdistricts:
+            for key in [sd["name"].lower(), sd["canonical_name"].lower()]:
+                self._subdistrict_index[key] = sd
+
     def _match_state_entity(self, name_to_check: str) -> Optional[dict]:
         """Match state by canonical name, code, multilingual names, or aliases."""
         target = name_to_check.strip().lower()
-        for s in self.states:
-            names = [s["name"].lower(), s["canonical_name"].lower(), s["code"].lower()]
-            if s.get("name_hi"):
-                names.append(s["name_hi"].lower())
-            if s.get("name_mr"):
-                names.append(s["name_mr"].lower())
-            names.extend([a.lower() for a in s.get("aliases", [])])
-
-            if target in names or target == s["code"].lower():
-                return s
+        if target in self._state_index:
+            return self._state_index[target]
+        for k, v in self._state_index.items():
+            if target in k or k in target:
+                return v
         return None
 
     def _match_district_entity(self, name_to_check: str) -> Optional[dict]:
         """Match district by canonical name, multilingual names, or aliases."""
         target = name_to_check.strip().lower()
-        for d in self.districts:
-            names = [d["name"].lower(), d["canonical_name"].lower()]
-            if d.get("name_hi"):
-                names.append(d["name_hi"].lower())
-            if d.get("name_mr"):
-                names.append(d["name_mr"].lower())
-            names.extend([a.lower() for a in d.get("aliases", [])])
-
-            if target in names:
-                return d
+        if target in self._district_index:
+            return self._district_index[target]
+        for k, v in self._district_index.items():
+            if target in k or k in target:
+                return v
         return None
 
     def _match_subdistrict_entity(self, name_to_check: str) -> Optional[dict]:
         """Match subdistrict by canonical name or aliases."""
         target = name_to_check.strip().lower()
-        for sd in self.subdistricts:
-            names = [sd["name"].lower(), sd["canonical_name"].lower()]
-            if target in names:
-                return sd
+        if target in self._subdistrict_index:
+            return self._subdistrict_index[target]
+        for k, v in self._subdistrict_index.items():
+            if target in k or k in target:
+                return v
         return None
 
     def validate_hierarchy(
