@@ -1,0 +1,11 @@
+{
+  "app_version": "8.3.0",
+  "config_version": "8.3.0",
+  "python_version": "3.13.0",
+  "node_version": "v24.14.0",
+  "docker_compatibility": true,
+  "readiness_probe_active": true,
+  "liveness_probe_active": true,
+  "graceful_shutdown_verified": true,
+  "deterministic_startup_verified": true
+}

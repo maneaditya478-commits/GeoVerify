@@ -1,0 +1,10 @@
+{
+  "start_rss_mb": 0.0,
+  "peak_rss_mb": 0.0,
+  "end_rss_mb": 0.0,
+  "absolute_growth_mb": 0.0,
+  "growth_pct": 0.0,
+  "verdict": "STABLE",
+  "total_requests_soaked": 324,
+  "duration_seconds": 10.03
+}

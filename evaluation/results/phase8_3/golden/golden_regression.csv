@@ -1,0 +1,14 @@
+id,category,raw_text,expected_status,predicted_status,status_correct,expected_ambiguous,predicted_ambiguous,ambiguity_correct,matched_state,matched_district,matched_locality,matched_pincode,latency_ms,passed
+gold_clean_01,standard_multitier,"Flat 402, Shanti Heights, Kothrud, Pune, Maharashtra 411038",VERIFIED,VERIFIED,True,False,False,True,maharashtra,pune,kothrud,411038,66.98,True
+gold_clean_02,standard_multitier,"Plot 12, Indiranagar 100ft Road, Bengaluru, Karnataka 560038",VERIFIED,VERIFIED,True,False,False,True,karnataka,bengaluru urban,indiranagar,560038,53.03,True
+gold_clean_03,standard_multitier,"Connaught Place, New Delhi, Delhi 110001",VERIFIED,VERIFIED,True,False,False,True,delhi,new delhi,connaught place,110001,33.89,True
+gold_lang_01,multilingual_marathi,"फ्लॅट ४०२, कोथरूड, पुणे, महाराष्ट्र ४११०३८",VERIFIED,VERIFIED,True,False,False,True,maharashtra,pune,kothrud,,43.47,True
+gold_lang_02,multilingual_hindi,"सेक्टर ६२, नोएडा, गौतम बुद्ध नगर, उत्तर प्रदेश २०१३०९",VERIFIED,VERIFIED,True,False,False,True,uttar pradesh,gautam buddha nagar,sektr,,33.96,True
+gold_pin_01,pin_supported,"Hinjawadi Phase 1, Pune, Maharashtra 411057",VERIFIED,VERIFIED,True,False,False,True,maharashtra,pune,hinjawadi,411057,32.1,True
+gold_pin_02,pin_conflict,"Kothrud, Pune, Maharashtra 110001",NEEDS_REVIEW,NEEDS_REVIEW,True,False,False,True,maharashtra,pune,kothrud,110001,30.8,True
+gold_conflict_01,state_conflict,"Kothrud, Pune, Karnataka 411038",INCONSISTENT,INCONSISTENT,True,False,False,True,karnataka,pune,kothrud,411038,32.81,True
+gold_homonym_01,homonym_context_up,"Civil Lines, Rampur, Uttar Pradesh 244901",NEEDS_REVIEW,NEEDS_REVIEW,True,False,False,True,uttar pradesh,,rampur,244901,42.17,True
+gold_homonym_02,homonym_context_bihar,"Main Road, Rampur, Gaya, Bihar 823001",NEEDS_REVIEW,NEEDS_REVIEW,True,False,False,True,bihar,,rampur,823001,40.84,True
+gold_homonym_03,isolated_homonym_ambiguous,Rampur Market,AMBIGUOUS,AMBIGUOUS,True,True,True,True,,,rampur,,29.64,True
+gold_dense_01,dense_retrieval_typo,Kothrood Puna Maharastra 411038,VERIFIED,VERIFIED,True,False,False,True,maharashtra,pune,kothrood,411038,42.25,True
+gold_partial_01,partial_address,"Somewhere near Hill View, Pune",CONSISTENT,CONSISTENT,True,False,False,True,,pune,somewhere,,36.93,True

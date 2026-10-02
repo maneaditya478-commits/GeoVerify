@@ -1,0 +1,26 @@
+{
+  "overall_recovery_passed": true,
+  "tests": {
+    "cache_recovery": {
+      "test": "cache_purge_and_warmup_recovery",
+      "passed": true,
+      "cache_size_after_purge": 0
+    },
+    "dense_reload": {
+      "test": "dense_index_reload_consistency",
+      "passed": true,
+      "top_candidates_reproduced": true,
+      "sample_candidates": [
+        "Kothrud",
+        "Pune City"
+      ]
+    },
+    "readiness_state": {
+      "test": "readiness_transition",
+      "passed": true,
+      "catalog_ready": true,
+      "index_ready": true,
+      "overall_ready": true
+    }
+  }
+}

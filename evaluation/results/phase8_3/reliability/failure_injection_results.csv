@@ -1,0 +1,6 @@
+test,passed,error_type,details,db_response,ocr_response,queries_tested,cases_evaluated
+path_traversal_sanitization,True,,"[{'raw_filename': '../../../../etc/passwd.png', 'sanitized_filename': 'passwd.png'}, {'raw_filename': '..\\..\\..\\windows\\system32\\cmd.exe.jpg', 'sanitized_filename': 'cmd.exe.jpg'}, {'raw_filename': 'foo/../../../bar.pdf', 'sanitized_filename': 'bar.pdf'}, {'raw_filename': 'test\x00malicious.png', 'sanitized_filename': 'test_malicious.png'}, {'raw_filename': '....//....//doc.png', 'sanitized_filename': 'doc.png'}]",,,,5
+oversized_file_rejection,True,DocumentValidationError,,,,,
+corrupted_file_rejection,True,,"[{'file': 'corrupt.png', 'status': 'SAFELY_REJECTED'}, {'file': 'corrupt.pdf', 'status': 'SAFELY_REJECTED'}, {'file': 'corrupt.jpg', 'status': 'SAFELY_REJECTED'}]",,,,
+structured_timeout_error_schemas,True,,,"{'error': {'code': 'DATABASE_TIMEOUT', 'message': 'Database connection timeout after 5.0s', 'request_id': 'req_1e947da1', 'details': {'path': '/api/verify'}}}","{'error': {'code': 'OCR_TIMEOUT', 'message': 'OCR processing exceeded deadline of 15.0s', 'request_id': 'req_42055efa', 'details': {'path': '/api/document/verify'}}}",,
+conservative_failure_semantics,True,,,,,3,

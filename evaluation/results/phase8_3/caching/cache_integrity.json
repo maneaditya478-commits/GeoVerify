@@ -1,0 +1,113 @@
+{
+  "overall_cache_integrity_passed": true,
+  "tests": {
+    "homonym_isolation": {
+      "test": "homonym_cryptographic_isolation",
+      "total_homonyms": 8,
+      "unique_keys_generated": 8,
+      "zero_collision": true,
+      "details": [
+        {
+          "entity": {
+            "query": "Rampur",
+            "state": "Uttar Pradesh",
+            "district": "Rampur",
+            "pincode": "244901"
+          },
+          "key": "41f17c2bb08f0ee08702c4977aef061919af8b4bd97e6b3148f6fe47b024b6f5"
+        },
+        {
+          "entity": {
+            "query": "Rampur",
+            "state": "Bihar",
+            "district": "Gaya",
+            "pincode": "823001"
+          },
+          "key": "956903a684af60a0b1f138ee1a2363a5219ac7e98b6c551151c155e4f378ff08"
+        },
+        {
+          "entity": {
+            "query": "Rampur",
+            "state": "Himachal Pradesh",
+            "district": "Shimla",
+            "pincode": "172001"
+          },
+          "key": "f519997a36c68452074b6b1cfa924f14254ac043fba80436dafb735b2dafba21"
+        },
+        {
+          "entity": {
+            "query": "Bilaspur",
+            "state": "Chhattisgarh",
+            "district": "Bilaspur",
+            "pincode": "495001"
+          },
+          "key": "758c92cd528ae69ec077cfc5ffef53a229494b2cab2ff06d77bac3cb567434a5"
+        },
+        {
+          "entity": {
+            "query": "Bilaspur",
+            "state": "Haryana",
+            "district": "Yamunanagar",
+            "pincode": "135102"
+          },
+          "key": "aba614630c954b50c269071a567c50b8546c2d462b44d0112a2c2c8434ff604f"
+        },
+        {
+          "entity": {
+            "query": "Bilaspur",
+            "state": "Himachal Pradesh",
+            "district": "Bilaspur",
+            "pincode": "174001"
+          },
+          "key": "4e956337270432f5617bc417a6d8f3054579860857ec9bc819c5441bbc758079"
+        },
+        {
+          "entity": {
+            "query": "Aurangabad",
+            "state": "Maharashtra",
+            "district": "Chhatrapati Sambhaji Nagar",
+            "pincode": "431001"
+          },
+          "key": "beaad012eb49d5b7e1e1e58e411262724a049250b4607f1dbb03c195612a0550"
+        },
+        {
+          "entity": {
+            "query": "Aurangabad",
+            "state": "Bihar",
+            "district": "Aurangabad",
+            "pincode": "824101"
+          },
+          "key": "6469587abc4fd33215e3c44557a5865021ed1154d2b13f46a48ce3f5e9eb3b00"
+        }
+      ]
+    },
+    "version_invalidation": {
+      "test": "version_invalidation_isolation",
+      "passed": true,
+      "key_v8_2": "e7aa9a37a57a6d0ef0e98a2114e3aeb1b27230c6245d6ba23f4bda24b29731de",
+      "key_v8_3": "ff458342490537819ca2f3d82a2fe1ff22e33316113c3ba1a14f14cbd27c9f67",
+      "key_data_v2": "be853dc5d3fa5b24bfb1b4fea8654e9cf6d20c652672661756420fcd6020f8cd"
+    },
+    "lru_ttl_eviction": {
+      "test": "bounded_lru_and_ttl_behavior",
+      "maxsize_configured": 5,
+      "evictions_count": 7,
+      "size_respected": true,
+      "expired_entry_purged": true,
+      "passed": true
+    },
+    "concurrency_contention": {
+      "test": "concurrent_cache_contention",
+      "concurrency_tested": 25,
+      "total_operations": 500,
+      "errors_observed": 0,
+      "passed": true
+    },
+    "poisoning_resistance": {
+      "test": "cache_poisoning_resistance",
+      "passed": true,
+      "legit_key": "3ef1f3b6bc51ea170b1124562e977d400ba2c7e20fd7b16bfc5fd68b2c199fe8",
+      "injected_key": "c96844d6e493db85bb1b4a11caa1626eaee45d01464dfa746c789a7f208af82f"
+    }
+  }
+}

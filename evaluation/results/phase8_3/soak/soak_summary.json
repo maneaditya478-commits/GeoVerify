@@ -1,0 +1,52 @@
+{
+  "duration_seconds": 10.03,
+  "concurrency": 10,
+  "total_requests": 324,
+  "successful_requests": 324,
+  "failed_requests": 0,
+  "error_rate_pct": 0.0,
+  "throughput_rps": 32.31,
+  "workload_breakdown": {
+    "clean_text": 140,
+    "ocr_document": 77,
+    "homonym_ambiguity": 50,
+    "spatial": 30,
+    "invalid_error": 27
+  },
+  "latencies": {
+    "mean_ms": 30.94,
+    "p50_ms": 32.79,
+    "p90_ms": 36.84,
+    "p95_ms": 39.0,
+    "p99_ms": 41.96,
+    "p99_9_ms": 112.39,
+    "min_ms": 0.31,
+    "max_ms": 138.18
+  },
+  "memory": {
+    "start_rss_mb": 0.0,
+    "peak_rss_mb": 0.0,
+    "end_rss_mb": 0.0,
+    "growth_mb": 0.0,
+    "growth_pct": 0.0,
+    "verdict": "STABLE"
+  },
+  "cache": {
+    "verification_cache": {
+      "size": 0,
+      "maxsize": 10000,
+      "hits": 0,
+      "misses": 0,
+      "evictions": 0,
+      "hit_rate_pct": 0.0
+    },
+    "ocr_cache": {
+      "size": 1,
+      "maxsize": 1000,
+      "hits": 76,
+      "misses": 1,
+      "evictions": 0,
+      "hit_rate_pct": 98.7
+    }
+  }
+}
