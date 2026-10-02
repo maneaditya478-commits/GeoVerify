@@ -1,0 +1,85 @@
+{
+  "phase": "10.2.0",
+  "status": "PASS",
+  "final_commit": "1155ee7",
+  "frozen_benchmark": {
+    "name": "GeoVerify Phase 10 Independent External Benchmark",
+    "total_cases": 5000,
+    "sha256": "f8753334a7d23bef8ab7cc1376d69a22c1c313e8199d5cea456f757781983829",
+    "isolation_status": "FROZEN_HELD_OUT_IMMUTABLE"
+  },
+  "four_commit_matrix_summary": {
+    "phase9_reproduced": true,
+    "phase10_reproduced": true,
+    "phase10_1_39e9ac8_reproduced": true,
+    "phase10_1_1155ee7_reproduced": true,
+    "evaluation_discrepancy_resolved": true
+  },
+  "candidate_universe": {
+    "total_cases": 5000,
+    "correct_retrieved_rank_1": 3910,
+    "correct_retrieved_rank_1_pct": 78.20,
+    "correct_retrieved_rank_2_5": 506,
+    "correct_retrieved_rank_2_5_pct": 10.12,
+    "correct_not_in_universe": 584,
+    "correct_not_in_universe_pct": 11.68,
+    "cumulative_top5_recall": 88.32
+  },
+  "final_test_metrics": {
+    "total_cases": 5000,
+    "recall_at_1": 49.16,
+    "recall_at_5": 80.48,
+    "recall_at_10": 82.68,
+    "mrr": 0.6391,
+    "locality_accuracy": 84.86,
+    "district_accuracy": 41.84,
+    "state_accuracy": 35.92,
+    "pin_accuracy": 65.54,
+    "status_accuracy": 84.36,
+    "ambiguity_f1": 0.4643,
+    "temporal_accuracy": 94.78,
+    "landmark_accuracy": 0.00,
+    "multilingual_accuracy": 69.61,
+    "brier_score": 0.1125,
+    "expected_calibration_error": 0.1808,
+    "false_high_confidence_count": 8,
+    "mean_latency_ms": 61.82,
+    "p50_latency_ms": 61.64,
+    "p95_latency_ms": 93.19,
+    "p99_latency_ms": 109.93,
+    "ci_95_recall_at_1": [47.77, 50.55],
+    "ci_95_status_accuracy": [83.35, 85.37]
+  },
+  "human_validation": {
+    "total_cases": 300,
+    "inter_annotator_agreement": 93.00,
+    "cohens_kappa": 0.8600,
+    "geoverify_vs_human_consensus": 93.67
+  },
+  "explanation_audit": {
+    "total_claims": 339,
+    "unsupported_claims": 0,
+    "faithfulness_rate": 100.0
+  },
+  "security_audit": {
+    "path_traversal": "PASS",
+    "graph_cycle_protection": "BOUNDED_BFS",
+    "memory_leaks": "PASS"
+  },
+  "leakage_audit": {
+    "benchmark_specific_rules": 0,
+    "hardcoded_case_ids": 0,
+    "status": "PASS"
+  },
+  "tests": {
+    "backend_tests": 240,
+    "evaluation_tests": 100,
+    "total_tests": 340,
+    "all_passed": true
+  },
+  "frontend": {
+    "build_status": "PASS",
+    "build_time_seconds": 4.36
+  },
+  "frozen_test_used_for_tuning": false
+}

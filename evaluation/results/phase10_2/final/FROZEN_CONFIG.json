@@ -1,0 +1,42 @@
+{
+  "phase": "10.2.0",
+  "status": "FROZEN_FOR_EVALUATION",
+  "git_commit": "1155ee7",
+  "benchmark_dataset": {
+    "name": "GeoVerify Phase 10 Independent External Benchmark",
+    "total_cases": 5000,
+    "sha256": "f8753334a7d23bef8ab7cc1376d69a22c1c313e8199d5cea456f757781983829"
+  },
+  "ranking_weights": {
+    "name_similarity": 0.25,
+    "admin_context": 0.25,
+    "parent_child_compatibility": 0.15,
+    "pin_compatibility": 0.10,
+    "geographic_proximity": 0.10,
+    "transliteration_phonetic": 0.05,
+    "entity_type_weight": 0.05,
+    "retrieval_consensus": 0.03,
+    "data_quality": 0.02
+  },
+  "penalties": {
+    "state_conflict": -40.0,
+    "district_conflict": -25.0,
+    "subdistrict_conflict": -15.0,
+    "pin_circle_conflict": -20.0
+  },
+  "calibration": {
+    "method": "isotonic_logistic_composite",
+    "bins": 10,
+    "confidence_floor": 0.05,
+    "confidence_ceiling": 0.98
+  },
+  "reference_data": {
+    "states": 36,
+    "districts": 82,
+    "subdistricts": 37,
+    "localities": 84,
+    "pincodes": 83,
+    "pois": 7
+  },
+  "random_seed": 42
+}
