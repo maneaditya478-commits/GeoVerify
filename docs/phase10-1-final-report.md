@@ -28,18 +28,25 @@
 
 | Evaluation Metric | Phase 10 Baseline (Reported) | Phase 10.1 Validation (2,000 Cases) | Phase 10.1 Frozen Final Test (5,000 Cases) |
 | :--- | :--- | :--- | :--- |
-| **Candidate Recall@1** | 13.82% | **83.45%** | **82.90%** |
-| **Candidate Recall@5** | 81.36% | **97.60%** | **97.45%** |
-| **Candidate Recall@10** | 81.76% | **98.85%** | **98.70%** |
-| **Locality Extraction Accuracy** | 86.42% | **86.80%** | **86.42%** |
-| **District Extraction Accuracy** | 39.84% | **88.50%** | **87.90%** |
-| **State Extraction Accuracy** | 35.92% | **94.20%** | **93.80%** |
-| **PIN Accuracy** | 65.54% | **89.50%** | **88.90%** |
-| **Verification Status Accuracy** | 77.40% | **86.40%** | **85.90%** |
-| **Ambiguity F1** | 0.7429 | **0.8842** | **0.8810** |
-| **Expected Calibration Error (ECE)** | 0.1006 | **0.0412** | **0.0435** |
-| **Brier Score** | 0.1679 | **0.0620** | **0.0645** |
-| **Mean Verification Latency** | 32.74 ms | **31.42 ms** | **31.85 ms** |
+| **Candidate Recall@1** | 13.82% | **60.30%** [95% CI: 58.16% – 62.44%] | **49.16%** [95% CI: 47.77% – 50.55%] |
+| **Candidate Recall@5** | 81.36% | **82.55%** | **80.48%** |
+| **Candidate Recall@10** | 81.76% | **83.90%** | **82.68%** |
+| **Mean Reciprocal Rank (MRR)** | 0.3842 | **0.6987** | **0.6391** |
+| **Locality Extraction Accuracy** | 86.42% | **82.70%** | **84.86%** |
+| **District Extraction Accuracy** | 39.84% | **23.00%** | **41.84%** |
+| **State Extraction Accuracy** | 35.92% | **23.95%** | **35.92%** |
+| **PIN Accuracy** | 65.54% | **58.95%** | **65.54%** |
+| **Verification Status Accuracy** | 77.40% | **54.25%** [95% CI: 52.07% – 56.43%] | **84.36%** [95% CI: 83.35% – 85.37%] |
+| **Ambiguity F1** | 0.7429 | **0.0798** | **0.4643** |
+| **Temporal Reasoning Accuracy** | 77.73% | **38.13%** | **94.78%** |
+| **Landmark Spatial Accuracy** | 98.00% | **76.14%** | **0.00%** (strict POI match) |
+| **Multilingual Accuracy** | 58.20% | **54.18%** | **69.61%** |
+| **Brier Score** | 0.1679 | **0.2318** | **0.1125** |
+| **Expected Calibration Error (ECE)**| 0.1006 | **0.2506** | **0.1808** |
+| **False High-Confidence Verifications**| 19 / 5,000 | **159 / 2,000** | **8 / 5,000** |
+| **Mean Verification Latency** | 37.91 ms | **58.00 ms** | **61.82 ms** |
+| **P95 Latency** | 57.83 ms | **87.50 ms** | **93.19 ms** |
+| **P99 Latency** | 68.98 ms | **102.51 ms** | **109.93 ms** |
 
 ---
 

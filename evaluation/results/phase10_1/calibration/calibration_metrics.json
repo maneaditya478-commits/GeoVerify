@@ -2,73 +2,81 @@
   {
     "bin_lower": 0.0,
     "bin_upper": 0.1,
-    "sample_count": 84,
+    "sample_count": 51,
     "mean_confidence": 0.0474,
-    "empirical_accuracy": 0.2976,
-    "calibration_error": 0.2502
+    "empirical_accuracy": 0.3529,
+    "calibration_error": 0.3055
+  },
+  {
+    "bin_lower": 0.1,
+    "bin_upper": 0.2,
+    "sample_count": 3,
+    "mean_confidence": 0.1231,
+    "empirical_accuracy": 0.0,
+    "calibration_error": 0.1231
   },
   {
     "bin_lower": 0.2,
     "bin_upper": 0.3,
-    "sample_count": 171,
+    "sample_count": 216,
     "mean_confidence": 0.2814,
-    "empirical_accuracy": 0.1111,
-    "calibration_error": 0.1703
+    "empirical_accuracy": 0.1157,
+    "calibration_error": 0.1657
   },
   {
     "bin_lower": 0.3,
     "bin_upper": 0.4,
-    "sample_count": 5,
-    "mean_confidence": 0.3577,
-    "empirical_accuracy": 0.0,
-    "calibration_error": 0.3577
+    "sample_count": 123,
+    "mean_confidence": 0.3529,
+    "empirical_accuracy": 0.0163,
+    "calibration_error": 0.3366
   },
   {
     "bin_lower": 0.4,
     "bin_upper": 0.5,
-    "sample_count": 90,
-    "mean_confidence": 0.4197,
-    "empirical_accuracy": 0.5444,
-    "calibration_error": 0.1247
+    "sample_count": 65,
+    "mean_confidence": 0.4141,
+    "empirical_accuracy": 0.8462,
+    "calibration_error": 0.4321
   },
   {
     "bin_lower": 0.5,
     "bin_upper": 0.6,
-    "sample_count": 312,
-    "mean_confidence": 0.5275,
-    "empirical_accuracy": 0.1763,
-    "calibration_error": 0.3512
+    "sample_count": 283,
+    "mean_confidence": 0.5498,
+    "empirical_accuracy": 0.3074,
+    "calibration_error": 0.2424
   },
   {
     "bin_lower": 0.6,
     "bin_upper": 0.7,
-    "sample_count": 565,
-    "mean_confidence": 0.6333,
-    "empirical_accuracy": 0.7912,
-    "calibration_error": 0.1579
+    "sample_count": 514,
+    "mean_confidence": 0.6458,
+    "empirical_accuracy": 0.8677,
+    "calibration_error": 0.2219
   },
   {
     "bin_lower": 0.7,
     "bin_upper": 0.8,
-    "sample_count": 318,
-    "mean_confidence": 0.745,
-    "empirical_accuracy": 0.5063,
-    "calibration_error": 0.2387
+    "sample_count": 353,
+    "mean_confidence": 0.7466,
+    "empirical_accuracy": 0.6204,
+    "calibration_error": 0.1262
   },
   {
     "bin_lower": 0.8,
     "bin_upper": 0.9,
-    "sample_count": 199,
-    "mean_confidence": 0.851,
-    "empirical_accuracy": 0.9347,
-    "calibration_error": 0.0837
+    "sample_count": 150,
+    "mean_confidence": 0.8559,
+    "empirical_accuracy": 0.98,
+    "calibration_error": 0.1241
   },
   {
     "bin_lower": 0.9,
     "bin_upper": 1.0,
-    "sample_count": 256,
-    "mean_confidence": 0.907,
-    "empirical_accuracy": 0.4336,
-    "calibration_error": 0.4734
+    "sample_count": 242,
+    "mean_confidence": 0.9096,
+    "empirical_accuracy": 0.3554,
+    "calibration_error": 0.5542
   }
 ]
