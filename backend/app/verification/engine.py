@@ -28,6 +28,10 @@ from app.verification.scoring import ScoringEngine
 from app.entity_resolution.resolver import address_entity_resolver
 from app.evidence.graph import evidence_graph_builder
 from app.evidence.serializer import evidence_serializer
+from app.temporal.resolver import temporal_resolver
+from app.landmarks.spatial_matcher import landmark_matcher
+from app.graph.graph_engine import geographic_graph
+from app.evidence.probabilistic import probabilistic_evidence_model
 
 # Known ambiguous locality names that occur in multiple states
 AMBIGUOUS_NAMES = ["rampur", "bilaspur", "aurangabad", "fatehpur", "balrampur"]
@@ -224,6 +228,52 @@ class VerificationEngine:
             entity_match=resolution.entity_match_score
         )
 
+        # 12. Phase 9 Intelligence Extensions
+        # A. Temporal Reasoning
+        temporal_evidence = temporal_resolver.scan_text_for_temporal_entities(
+            text=raw_text,
+            reference_date=request.reference_date
+        )
+
+        # B. Landmark Spatial Reasoning
+        landmark_evidence = landmark_matcher.scan_and_evaluate(
+            address_text=raw_text,
+            target_lat=coords.latitude if coords else None,
+            target_lon=coords.longitude if coords else None,
+            target_locality=effective_locality,
+            target_district=effective_district
+        )
+
+        # C. Graph Subgraph Extraction
+        first_landmark_name = landmark_evidence[0].landmark_name if landmark_evidence else None
+        subgraph = None
+        if request.include_graph_path:
+            subgraph = geographic_graph.extract_evidence_subgraph(
+                locality=effective_locality,
+                district=effective_district,
+                state=effective_state,
+                pincode=effective_pin,
+                landmark=first_landmark_name
+            )
+
+        # D. Calibrated Probabilistic Confidence Profile
+        top_cand_score = resolution.candidate_matches[0].match_score if resolution.candidate_matches else 0.0
+        runner_up_score = resolution.candidate_matches[1].match_score if len(resolution.candidate_matches) > 1 else 0.0
+        margin = max(0.0, (top_cand_score - runner_up_score) / 100.0)
+
+        confidence_profile = probabilistic_evidence_model.calculate_confidence_profile(
+            candidate_match_score=resolution.entity_match_score,
+            is_hierarchy_consistent=hierarchy_res.is_consistent,
+            hierarchy_score_pct=score_breakdown.hierarchy_score / max(1.0, score_breakdown.hierarchy_max) * 100.0,
+            is_ambiguous=is_ambiguous,
+            top_candidate_margin=margin,
+            has_locality=bool(effective_locality),
+            has_district=bool(effective_district),
+            has_state=bool(effective_state),
+            has_pincode=bool(effective_pin),
+            has_landmark=bool(landmark_evidence)
+        )
+
         # GeoJSON filtering if requested
         if not request.include_geojson:
             boundary_res.boundary_geojson = None
@@ -250,6 +300,10 @@ class VerificationEngine:
             ambiguity=resolution.ambiguity,
             completeness=resolution.completeness,
             evidence_graph=graph_resp,
+            confidence_profile=confidence_profile,
+            temporal_evidence=temporal_evidence,
+            landmark_evidence=landmark_evidence,
+            subgraph_evidence=subgraph,
             data_sources=STANDARD_DATA_SOURCES
         )
 

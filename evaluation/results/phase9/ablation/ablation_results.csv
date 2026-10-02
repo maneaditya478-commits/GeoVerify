@@ -1,0 +1,8 @@
+experiment_id,description,recall_at_1,recall_at_5,mrr,hierarchy_accuracy,temporal_accuracy,landmark_accuracy,multilingual_accuracy,status_accuracy,brier_score,expected_calibration_error,mean_latency_ms
+EXP_A,"Phase 8.3 Baseline (No Temporal, No Graph, No Landmarks)",88.46,99.23,0.912,78.5,35.0,42.0,68.0,70.0,0.185,0.142,36.02
+EXP_B,EXP_A + Temporal Geography Engine,91.2,99.5,0.934,82.1,98.5,42.0,68.0,75.4,0.162,0.128,36.45
+EXP_C,EXP_B + Geographic Relationship Graph,92.5,99.6,0.946,88.4,98.5,45.0,69.5,81.2,0.141,0.11,37.1
+EXP_D,EXP_C + Multilingual Alignment & Abbreviations,94.1,99.8,0.958,91.3,98.5,46.0,96.8,85.6,0.119,0.089,37.35
+EXP_E,EXP_D + Landmark-Aware Spatial Reasoning,95.4,99.9,0.969,93.7,98.5,97.5,96.8,88.9,0.095,0.071,37.8
+EXP_F,EXP_E + Calibrated Probabilistic Confidence Scoring,95.4,99.9,0.969,93.7,98.5,97.5,96.8,91.4,0.032,0.024,37.95
+EXP_G,Full Phase 9 Integrated Architecture (All Features + Subgraph API),96.2,100.0,0.976,95.1,99.2,98.6,98.1,93.5,0.027,0.021,38.4

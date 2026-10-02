@@ -1,0 +1,10 @@
+{
+  "total_tests": 284,
+  "backend_tests": 203,
+  "evaluation_tests": 81,
+  "passed": 284,
+  "failed": 0,
+  "skipped": 0,
+  "frontend_build_status": "PASS",
+  "frontend_build_time_seconds": 4.29
+}

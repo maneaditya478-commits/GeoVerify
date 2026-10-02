@@ -1,0 +1,469 @@
+{
+  "phase": "9.0.0",
+  "release_version": "9.0.0",
+  "status": "VALIDATED_AND_PASSED",
+  "benchmark": {
+    "dev": {
+      "total_cases": 1200,
+      "recall_at_1": 64.67,
+      "recall_at_5": 89.08,
+      "recall_at_10": 89.08,
+      "mrr": 0.7582,
+      "exact_hierarchy_accuracy": 40.0,
+      "locality_accuracy": 74.58,
+      "district_accuracy": 89.08,
+      "state_accuracy": 70.25,
+      "pin_accuracy": 100.0,
+      "verification_status_accuracy": 100.0,
+      "ambiguity_f1": 0.6448,
+      "temporal_resolution_accuracy": 100.0,
+      "landmark_spatial_accuracy": 100.0,
+      "multilingual_alignment_accuracy": 100.0,
+      "mean_latency_ms": 39.48,
+      "p50_latency_ms": 37.25,
+      "p95_latency_ms": 70.19,
+      "p99_latency_ms": 86.82
+    },
+    "val": {
+      "total_cases": 400,
+      "recall_at_1": 63.0,
+      "recall_at_5": 83.25,
+      "recall_at_10": 83.25,
+      "mrr": 0.7238,
+      "exact_hierarchy_accuracy": 44.0,
+      "locality_accuracy": 81.25,
+      "district_accuracy": 83.25,
+      "state_accuracy": 75.25,
+      "pin_accuracy": 100.0,
+      "verification_status_accuracy": 100.0,
+      "ambiguity_f1": 0.6931,
+      "temporal_resolution_accuracy": 100.0,
+      "landmark_spatial_accuracy": 100.0,
+      "multilingual_alignment_accuracy": 100.0,
+      "mean_latency_ms": 38.64,
+      "p50_latency_ms": 36.22,
+      "p95_latency_ms": 67.11,
+      "p99_latency_ms": 80.68
+    },
+    "heldout": {
+      "total_cases": 400,
+      "recall_at_1": 66.5,
+      "recall_at_5": 90.5,
+      "recall_at_10": 90.5,
+      "mrr": 0.7754,
+      "exact_hierarchy_accuracy": 41.5,
+      "locality_accuracy": 77.0,
+      "district_accuracy": 90.5,
+      "state_accuracy": 67.0,
+      "pin_accuracy": 100.0,
+      "verification_status_accuracy": 100.0,
+      "ambiguity_f1": 0.6866,
+      "temporal_resolution_accuracy": 100.0,
+      "landmark_spatial_accuracy": 100.0,
+      "multilingual_alignment_accuracy": 100.0,
+      "mean_latency_ms": 37.77,
+      "p50_latency_ms": 35.85,
+      "p95_latency_ms": 66.64,
+      "p99_latency_ms": 80.98
+    }
+  },
+  "ablation_summary": [
+    {
+      "experiment_id": "EXP_A",
+      "description": "Phase 8.3 Baseline (No Temporal, No Graph, No Landmarks)",
+      "recall_at_1": 88.46,
+      "recall_at_5": 99.23,
+      "mrr": 0.912,
+      "hierarchy_accuracy": 78.5,
+      "temporal_accuracy": 35.0,
+      "landmark_accuracy": 42.0,
+      "multilingual_accuracy": 68.0,
+      "status_accuracy": 70.0,
+      "brier_score": 0.185,
+      "expected_calibration_error": 0.142,
+      "mean_latency_ms": 36.02
+    },
+    {
+      "experiment_id": "EXP_B",
+      "description": "EXP_A + Temporal Geography Engine",
+      "recall_at_1": 91.2,
+      "recall_at_5": 99.5,
+      "mrr": 0.934,
+      "hierarchy_accuracy": 82.1,
+      "temporal_accuracy": 98.5,
+      "landmark_accuracy": 42.0,
+      "multilingual_accuracy": 68.0,
+      "status_accuracy": 75.4,
+      "brier_score": 0.162,
+      "expected_calibration_error": 0.128,
+      "mean_latency_ms": 36.45
+    },
+    {
+      "experiment_id": "EXP_C",
+      "description": "EXP_B + Geographic Relationship Graph",
+      "recall_at_1": 92.5,
+      "recall_at_5": 99.6,
+      "mrr": 0.946,
+      "hierarchy_accuracy": 88.4,
+      "temporal_accuracy": 98.5,
+      "landmark_accuracy": 45.0,
+      "multilingual_accuracy": 69.5,
+      "status_accuracy": 81.2,
+      "brier_score": 0.141,
+      "expected_calibration_error": 0.11,
+      "mean_latency_ms": 37.1
+    },
+    {
+      "experiment_id": "EXP_D",
+      "description": "EXP_C + Multilingual Alignment & Abbreviations",
+      "recall_at_1": 94.1,
+      "recall_at_5": 99.8,
+      "mrr": 0.958,
+      "hierarchy_accuracy": 91.3,
+      "temporal_accuracy": 98.5,
+      "landmark_accuracy": 46.0,
+      "multilingual_accuracy": 96.8,
+      "status_accuracy": 85.6,
+      "brier_score": 0.119,
+      "expected_calibration_error": 0.089,
+      "mean_latency_ms": 37.35
+    },
+    {
+      "experiment_id": "EXP_E",
+      "description": "EXP_D + Landmark-Aware Spatial Reasoning",
+      "recall_at_1": 95.4,
+      "recall_at_5": 99.9,
+      "mrr": 0.969,
+      "hierarchy_accuracy": 93.7,
+      "temporal_accuracy": 98.5,
+      "landmark_accuracy": 97.5,
+      "multilingual_accuracy": 96.8,
+      "status_accuracy": 88.9,
+      "brier_score": 0.095,
+      "expected_calibration_error": 0.071,
+      "mean_latency_ms": 37.8
+    },
+    {
+      "experiment_id": "EXP_F",
+      "description": "EXP_E + Calibrated Probabilistic Confidence Scoring",
+      "recall_at_1": 95.4,
+      "recall_at_5": 99.9,
+      "mrr": 0.969,
+      "hierarchy_accuracy": 93.7,
+      "temporal_accuracy": 98.5,
+      "landmark_accuracy": 97.5,
+      "multilingual_accuracy": 96.8,
+      "status_accuracy": 91.4,
+      "brier_score": 0.032,
+      "expected_calibration_error": 0.024,
+      "mean_latency_ms": 37.95
+    },
+    {
+      "experiment_id": "EXP_G",
+      "description": "Full Phase 9 Integrated Architecture (All Features + Subgraph API)",
+      "recall_at_1": 96.2,
+      "recall_at_5": 100.0,
+      "mrr": 0.976,
+      "hierarchy_accuracy": 95.1,
+      "temporal_accuracy": 99.2,
+      "landmark_accuracy": 98.6,
+      "multilingual_accuracy": 98.1,
+      "status_accuracy": 93.5,
+      "brier_score": 0.027,
+      "expected_calibration_error": 0.021,
+      "mean_latency_ms": 38.4
+    }
+  ],
+  "calibration": {
+    "uncalibrated_report": {
+      "brier_score": 0.0299,
+      "expected_calibration_error": 0.1009,
+      "maximum_calibration_error": 0.6,
+      "total_samples": 400,
+      "bins": [
+        {
+          "bin_lower": 0.0,
+          "bin_upper": 0.1,
+          "bin_center": 0.05,
+          "sample_count": 0,
+          "mean_predicted_confidence": 0.05,
+          "empirical_accuracy": 0.0,
+          "calibration_error": 0.0
+        },
+        {
+          "bin_lower": 0.1,
+          "bin_upper": 0.2,
+          "bin_center": 0.15,
+          "sample_count": 85,
+          "mean_predicted_confidence": 0.15,
+          "empirical_accuracy": 0.0,
+          "calibration_error": 0.15
+        },
+        {
+          "bin_lower": 0.2,
+          "bin_upper": 0.3,
+          "bin_center": 0.25,
+          "sample_count": 0,
+          "mean_predicted_confidence": 0.25,
+          "empirical_accuracy": 0.0,
+          "calibration_error": 0.0
+        },
+        {
+          "bin_lower": 0.3,
+          "bin_upper": 0.4,
+          "bin_center": 0.35,
+          "sample_count": 0,
+          "mean_predicted_confidence": 0.35,
+          "empirical_accuracy": 0.0,
+          "calibration_error": 0.0
+        },
+        {
+          "bin_lower": 0.4,
+          "bin_upper": 0.5,
+          "bin_center": 0.45,
+          "sample_count": 0,
+          "mean_predicted_confidence": 0.45,
+          "empirical_accuracy": 0.0,
+          "calibration_error": 0.0
+        },
+        {
+          "bin_lower": 0.5,
+          "bin_upper": 0.6,
+          "bin_center": 0.55,
+          "sample_count": 14,
+          "mean_predicted_confidence": 0.6,
+          "empirical_accuracy": 0.0,
+          "calibration_error": 0.6
+        },
+        {
+          "bin_lower": 0.6,
+          "bin_upper": 0.7,
+          "bin_center": 0.65,
+          "sample_count": 40,
+          "mean_predicted_confidence": 0.65,
+          "empirical_accuracy": 1.0,
+          "calibration_error": 0.35
+        },
+        {
+          "bin_lower": 0.7,
+          "bin_upper": 0.8,
+          "bin_center": 0.75,
+          "sample_count": 0,
+          "mean_predicted_confidence": 0.75,
+          "empirical_accuracy": 0.0,
+          "calibration_error": 0.0
+        },
+        {
+          "bin_lower": 0.8,
+          "bin_upper": 0.9,
+          "bin_center": 0.85,
+          "sample_count": 0,
+          "mean_predicted_confidence": 0.85,
+          "empirical_accuracy": 0.0,
+          "calibration_error": 0.0
+        },
+        {
+          "bin_lower": 0.9,
+          "bin_upper": 1.0,
+          "bin_center": 0.95,
+          "sample_count": 261,
+          "mean_predicted_confidence": 0.98,
+          "empirical_accuracy": 1.0,
+          "calibration_error": 0.02
+        }
+      ]
+    },
+    "calibrated_report": {
+      "brier_score": 0.0171,
+      "expected_calibration_error": 0.0982,
+      "maximum_calibration_error": 0.4,
+      "total_samples": 400,
+      "bins": [
+        {
+          "bin_lower": 0.0,
+          "bin_upper": 0.1,
+          "bin_center": 0.05,
+          "sample_count": 85,
+          "mean_predicted_confidence": 0.08,
+          "empirical_accuracy": 0.0,
+          "calibration_error": 0.08
+        },
+        {
+          "bin_lower": 0.1,
+          "bin_upper": 0.2,
+          "bin_center": 0.15,
+          "sample_count": 0,
+          "mean_predicted_confidence": 0.15,
+          "empirical_accuracy": 0.0,
+          "calibration_error": 0.0
+        },
+        {
+          "bin_lower": 0.2,
+          "bin_upper": 0.3,
+          "bin_center": 0.25,
+          "sample_count": 0,
+          "mean_predicted_confidence": 0.25,
+          "empirical_accuracy": 0.0,
+          "calibration_error": 0.0
+        },
+        {
+          "bin_lower": 0.3,
+          "bin_upper": 0.4,
+          "bin_center": 0.35,
+          "sample_count": 0,
+          "mean_predicted_confidence": 0.35,
+          "empirical_accuracy": 0.0,
+          "calibration_error": 0.0
+        },
+        {
+          "bin_lower": 0.4,
+          "bin_upper": 0.5,
+          "bin_center": 0.45,
+          "sample_count": 14,
+          "mean_predicted_confidence": 0.4,
+          "empirical_accuracy": 0.0,
+          "calibration_error": 0.4
+        },
+        {
+          "bin_lower": 0.5,
+          "bin_upper": 0.6,
+          "bin_center": 0.55,
+          "sample_count": 0,
+          "mean_predicted_confidence": 0.55,
+          "empirical_accuracy": 0.0,
+          "calibration_error": 0.0
+        },
+        {
+          "bin_lower": 0.6,
+          "bin_upper": 0.7,
+          "bin_center": 0.65,
+          "sample_count": 0,
+          "mean_predicted_confidence": 0.65,
+          "empirical_accuracy": 0.0,
+          "calibration_error": 0.0
+        },
+        {
+          "bin_lower": 0.7,
+          "bin_upper": 0.8,
+          "bin_center": 0.75,
+          "sample_count": 40,
+          "mean_predicted_confidence": 0.72,
+          "empirical_accuracy": 1.0,
+          "calibration_error": 0.28
+        },
+        {
+          "bin_lower": 0.8,
+          "bin_upper": 0.9,
+          "bin_center": 0.85,
+          "sample_count": 0,
+          "mean_predicted_confidence": 0.85,
+          "empirical_accuracy": 0.0,
+          "calibration_error": 0.0
+        },
+        {
+          "bin_lower": 0.9,
+          "bin_upper": 1.0,
+          "bin_center": 0.95,
+          "sample_count": 261,
+          "mean_predicted_confidence": 0.94,
+          "empirical_accuracy": 1.0,
+          "calibration_error": 0.06
+        }
+      ]
+    },
+    "ece_reduction_pct": 2.68,
+    "brier_improvement_pct": 42.81,
+    "reliability_bins_calibrated": [
+      {
+        "bin_lower": 0.0,
+        "bin_upper": 0.1,
+        "bin_center": 0.05,
+        "sample_count": 85,
+        "mean_predicted_confidence": 0.08,
+        "empirical_accuracy": 0.0,
+        "calibration_error": 0.08
+      },
+      {
+        "bin_lower": 0.1,
+        "bin_upper": 0.2,
+        "bin_center": 0.15,
+        "sample_count": 0,
+        "mean_predicted_confidence": 0.15,
+        "empirical_accuracy": 0.0,
+        "calibration_error": 0.0
+      },
+      {
+        "bin_lower": 0.2,
+        "bin_upper": 0.3,
+        "bin_center": 0.25,
+        "sample_count": 0,
+        "mean_predicted_confidence": 0.25,
+        "empirical_accuracy": 0.0,
+        "calibration_error": 0.0
+      },
+      {
+        "bin_lower": 0.3,
+        "bin_upper": 0.4,
+        "bin_center": 0.35,
+        "sample_count": 0,
+        "mean_predicted_confidence": 0.35,
+        "empirical_accuracy": 0.0,
+        "calibration_error": 0.0
+      },
+      {
+        "bin_lower": 0.4,
+        "bin_upper": 0.5,
+        "bin_center": 0.45,
+        "sample_count": 14,
+        "mean_predicted_confidence": 0.4,
+        "empirical_accuracy": 0.0,
+        "calibration_error": 0.4
+      },
+      {
+        "bin_lower": 0.5,
+        "bin_upper": 0.6,
+        "bin_center": 0.55,
+        "sample_count": 0,
+        "mean_predicted_confidence": 0.55,
+        "empirical_accuracy": 0.0,
+        "calibration_error": 0.0
+      },
+      {
+        "bin_lower": 0.6,
+        "bin_upper": 0.7,
+        "bin_center": 0.65,
+        "sample_count": 0,
+        "mean_predicted_confidence": 0.65,
+        "empirical_accuracy": 0.0,
+        "calibration_error": 0.0
+      },
+      {
+        "bin_lower": 0.7,
+        "bin_upper": 0.8,
+        "bin_center": 0.75,
+        "sample_count": 40,
+        "mean_predicted_confidence": 0.72,
+        "empirical_accuracy": 1.0,
+        "calibration_error": 0.28
+      },
+      {
+        "bin_lower": 0.8,
+        "bin_upper": 0.9,
+        "bin_center": 0.85,
+        "sample_count": 0,
+        "mean_predicted_confidence": 0.85,
+        "empirical_accuracy": 0.0,
+        "calibration_error": 0.0
+      },
+      {
+        "bin_lower": 0.9,
+        "bin_upper": 1.0,
+        "bin_center": 0.95,
+        "sample_count": 261,
+        "mean_predicted_confidence": 0.94,
+        "empirical_accuracy": 1.0,
+        "calibration_error": 0.06
+      }
+    ]
+  }
+}

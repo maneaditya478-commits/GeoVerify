@@ -28,6 +28,10 @@ class VerificationRequest(BaseModel):
     pincode: Optional[str] = None
     radius_km: Optional[float] = Field(5.0, ge=0.5, le=50.0, description="Nearby search radius in km")
     include_geojson: bool = Field(True, description="Whether to include GeoJSON boundaries in response")
+    reference_date: Optional[str] = Field(None, description="Optional ISO or year date for temporal validity reasoning (e.g., '1985-06-01' or '1995')")
+    historical_context: bool = Field(False, description="Enable historical alias and boundary evolution reasoning")
+    research_mode: bool = Field(False, description="Enable rich research diagnostics, calibrated confidence and graph paths")
+    include_graph_path: bool = Field(True, description="Whether to include traversal evidence path in response")
 
 
 class TransformationStep(BaseModel):

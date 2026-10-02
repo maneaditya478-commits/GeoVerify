@@ -107,6 +107,12 @@ class DataSourceAttribution(BaseModel):
     coverage: str = "National (India)"
 
 
+from app.evidence.probabilistic import ConfidenceProfile
+from app.temporal.models import TemporalEvidence
+from app.landmarks.models import LandmarkEvidence
+from app.graph.models import SubgraphEvidence
+
+
 class VerificationResponse(BaseModel):
     verification_id: str
     timestamp: str
@@ -129,4 +135,23 @@ class VerificationResponse(BaseModel):
     ambiguity: Optional[AmbiguityDetails] = None
     completeness: Optional[CompletenessResult] = None
     evidence_graph: Optional[EvidenceGraphResponse] = None
+    confidence_profile: Optional[ConfidenceProfile] = None
+    temporal_evidence: List[TemporalEvidence] = Field(default_factory=list)
+    landmark_evidence: List[LandmarkEvidence] = Field(default_factory=list)
+    subgraph_evidence: Optional[SubgraphEvidence] = None
     data_sources: List[DataSourceAttribution] = []
+
+
+class VerificationExplanationResponse(BaseModel):
+    verification_id: str
+    timestamp: str
+    status: VerificationStatus
+    score: int = Field(..., ge=0, le=100)
+    confidence_profile: ConfidenceProfile
+    temporal_evidence: List[TemporalEvidence] = Field(default_factory=list)
+    landmark_evidence: List[LandmarkEvidence] = Field(default_factory=list)
+    subgraph_evidence: Optional[SubgraphEvidence] = None
+    multilingual_breakdown: Optional[Dict[str, Any]] = None
+    explanation_narrative: List[str] = Field(default_factory=list)
+    verification_response: VerificationResponse
+

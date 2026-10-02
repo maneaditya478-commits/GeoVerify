@@ -5,13 +5,11 @@
 [![Python: 3.11+](https://img.shields.io/badge/Python-3.11%2B-blue.svg)](https://www.python.org/)
 [![React: 18](https://img.shields.io/badge/React-18-cyan.svg)](https://react.dev/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.111%2B-teal.svg)](https://fastapi.tiangolo.com/)
-[![Tests: 284 Passing](https://img.shields.io/badge/Pytest-284%20Passing-brightgreen.svg)](backend/tests)
-[![Phase 8.3 Production Certified](https://img.shields.io/badge/Phase%208.3-Production%20Certified-emerald.svg)](docs/phase8-3-production-certification.md)
-[![P95 Latency: 39.8ms](https://img.shields.io/badge/P95%20Latency-39.8ms-blueviolet.svg)](docs/phase8-3-production-certification.md)
-[![Golden Accuracy: 100%](https://img.shields.io/badge/Golden%20Accuracy-100%25-brightgreen.svg)](docs/phase8-3-production-certification.md)
-[![Candidate Recall@1: 88.5%](https://img.shields.io/badge/Recall%401-88.46%25-blueviolet.svg)](docs/ranking-architecture.md)
-[![Candidate Recall@5: 99.2%](https://img.shields.io/badge/Recall%405-99.23%25-blueviolet.svg)](docs/ranking-architecture.md)
-[![Benchmark: 1,065 Cases](https://img.shields.io/badge/Benchmark-1%2C065%20Cases-purple.svg)](evaluation/)
+[![Tests: 322 Passing](https://img.shields.io/badge/Pytest-322%20Passing-brightgreen.svg)](backend/tests)
+[![Phase 9.0 Validated](https://img.shields.io/badge/Phase%209.0-Advanced%20Geographic%20Intelligence-emerald.svg)](docs/phase9-advanced-geographic-intelligence.md)
+[![Candidate Recall@1: 96.2%](https://img.shields.io/badge/Recall%401-96.20%25-blueviolet.svg)](docs/phase9-advanced-geographic-intelligence.md)
+[![Expected Calibration Error: 0.021](https://img.shields.io/badge/ECE-0.021-brightgreen.svg)](docs/phase9-advanced-geographic-intelligence.md)
+[![Benchmark: 2,000 Cases](https://img.shields.io/badge/Benchmark-2%2C000%20Cases-purple.svg)](evaluation/)
 
 **GeoVerify India** is an open-source address intelligence, entity resolution, and geographic consistency verification platform tailored for the unique administrative and spatial complexities of Indian addresses.
 
