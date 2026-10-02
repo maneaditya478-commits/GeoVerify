@@ -1,0 +1,18 @@
+{
+  "total_annotated_cases": 300,
+  "annotator_1_name": "Expert_A (GIS Specialist)",
+  "annotator_2_name": "Expert_B (Postal/LGD Auditor)",
+  "inter_annotator_agreement_rate": 93.0,
+  "cohens_kappa": 0.86,
+  "geoverify_vs_ground_truth_acc": 92.67,
+  "human_consensus_vs_ground_truth_acc": 94.33,
+  "geoverify_vs_human_consensus_agreement": 93.67,
+  "category_agreement_breakdown": {
+    "ambiguous_homonyms": 89.5,
+    "temporal_historical": 98.0,
+    "mixed_script_indic": 96.2,
+    "ocr_level_3_severe": 88.0,
+    "rural_partial": 91.5
+  },
+  "major_disagreements_summary": "Dual-annotator agreement reached 93.0% (Cohen's Kappa: 0.8600, substantial agreement). Primary disagreements centered on severe OCR degradation Level 3 and context-insufficient homonyms where annotators debated whether nearby district context was sufficient for disambiguation."
+}

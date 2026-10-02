@@ -71,16 +71,14 @@ class MockGeocoder(GeocoderProvider):
         # 1. Match against known localities
         if locality or search_target:
             for loc in self.localities:
-                # Check locality name & aliases
                 names_to_check = [loc["name"].lower()] + [a.lower() for a in loc.get("aliases", [])]
                 for name in names_to_check:
                     if name in search_target.lower() or fuzz.ratio(name, search_target.lower()) >= 85:
+                        lat = loc.get("coordinates", {}).get("latitude", 18.5204)
+                        lon = loc.get("coordinates", {}).get("longitude", 73.8567)
                         return GeocodingResult(
-                            coordinates=Coordinates(
-                                latitude=loc["coordinates"]["latitude"],
-                                longitude=loc["coordinates"]["longitude"]
-                            ),
-                            display_name=f"{loc['name']}, {loc['district']}, {loc['state']}",
+                            coordinates=Coordinates(latitude=lat, longitude=lon),
+                            display_name=f"{loc['name']}, {loc.get('district', '')}, {loc.get('state_name', loc.get('state', ''))}",
                             source="Local Reference Catalog",
                             confidence=0.95,
                             match_level="locality"
@@ -107,13 +105,15 @@ class MockGeocoder(GeocoderProvider):
             names_to_check = [dist["name"].lower()] + [a.lower() for a in dist.get("aliases", [])]
             for name in names_to_check:
                 if name in target_dist.lower() or fuzz.ratio(name, target_dist.lower()) >= 85:
-                    # Calculate center from bbox
-                    bbox = dist["bbox"]
-                    center_lat = (bbox[1] + bbox[3]) / 2.0
-                    center_lon = (bbox[0] + bbox[2]) / 2.0
+                    bbox = dist.get("bbox")
+                    if bbox:
+                        center_lat = (bbox[1] + bbox[3]) / 2.0
+                        center_lon = (bbox[0] + bbox[2]) / 2.0
+                    else:
+                        center_lat, center_lon = 20.5937, 78.9629
                     return GeocodingResult(
                         coordinates=Coordinates(latitude=center_lat, longitude=center_lon),
-                        display_name=f"{dist['name']}, {dist['state_name']}",
+                        display_name=f"{dist['name']}, {dist.get('state_name', '')}",
                         source="District Administrative Database",
                         confidence=0.75,
                         match_level="district"
@@ -125,9 +125,12 @@ class MockGeocoder(GeocoderProvider):
             names_to_check = [st["name"].lower()] + [a.lower() for a in st.get("aliases", [])]
             for name in names_to_check:
                 if name in target_state.lower() or fuzz.ratio(name, target_state.lower()) >= 85:
-                    bbox = st["bbox"]
-                    center_lat = (bbox[1] + bbox[3]) / 2.0
-                    center_lon = (bbox[0] + bbox[2]) / 2.0
+                    bbox = st.get("bbox")
+                    if bbox:
+                        center_lat = (bbox[1] + bbox[3]) / 2.0
+                        center_lon = (bbox[0] + bbox[2]) / 2.0
+                    else:
+                        center_lat, center_lon = 20.5937, 78.9629
                     return GeocodingResult(
                         coordinates=Coordinates(latitude=center_lat, longitude=center_lon),
                         display_name=f"{st['name']}, India",

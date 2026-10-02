@@ -588,5 +588,651 @@
       "latitude": 24.7539,
       "longitude": 84.3739
     }
+  },
+  {
+    "pincode": "422003",
+    "office_name": "Panchavati SO",
+    "post_offices": [
+      "Panchavati SO",
+      "Panchavati B.O"
+    ],
+    "circle": "Maharashtra",
+    "region": "Maharashtra",
+    "district": "Nashik",
+    "state": "Maharashtra",
+    "state_code": "MH",
+    "centroid": {
+      "latitude": 20.011,
+      "longitude": 73.7903
+    }
+  },
+  {
+    "pincode": "415501",
+    "office_name": "Koregaon SO",
+    "post_offices": [
+      "Koregaon SO",
+      "Koregaon B.O"
+    ],
+    "circle": "Maharashtra",
+    "region": "Maharashtra",
+    "district": "Satara",
+    "state": "Maharashtra",
+    "state_code": "MH",
+    "centroid": {
+      "latitude": 17.7,
+      "longitude": 74.18
+    }
+  },
+  {
+    "pincode": "395006",
+    "office_name": "Varachha SO",
+    "post_offices": [
+      "Varachha SO",
+      "Varachha B.O"
+    ],
+    "circle": "Gujarat",
+    "region": "Gujarat",
+    "district": "Surat",
+    "state": "Gujarat",
+    "state_code": "GJ",
+    "centroid": {
+      "latitude": 21.2185,
+      "longitude": 72.8557
+    }
+  },
+  {
+    "pincode": "403001",
+    "office_name": "Panaji SO",
+    "post_offices": [
+      "Panaji SO",
+      "Panaji B.O"
+    ],
+    "circle": "Goa",
+    "region": "Goa",
+    "district": "North Goa",
+    "state": "Goa",
+    "state_code": "GA",
+    "centroid": {
+      "latitude": 15.4909,
+      "longitude": 73.8278
+    }
+  },
+  {
+    "pincode": "396210",
+    "office_name": "Nani Daman SO",
+    "post_offices": [
+      "Nani Daman SO",
+      "Nani Daman B.O"
+    ],
+    "circle": "Dadra and Nagar Haveli and Daman and Diu",
+    "region": "Dadra and Nagar Haveli and Daman and Diu",
+    "district": "Daman",
+    "state": "Dadra and Nagar Haveli and Daman and Diu",
+    "state_code": "DD",
+    "centroid": {
+      "latitude": 20.417,
+      "longitude": 72.833
+    }
+  },
+  {
+    "pincode": "600004",
+    "office_name": "Mylapore SO",
+    "post_offices": [
+      "Mylapore SO",
+      "Mylapore B.O"
+    ],
+    "circle": "Tamil Nadu",
+    "region": "Tamil Nadu",
+    "district": "Chennai",
+    "state": "Tamil Nadu",
+    "state_code": "TN",
+    "centroid": {
+      "latitude": 13.0339,
+      "longitude": 80.2678
+    }
+  },
+  {
+    "pincode": "641012",
+    "office_name": "Gandhipuram SO",
+    "post_offices": [
+      "Gandhipuram SO",
+      "Gandhipuram B.O"
+    ],
+    "circle": "Tamil Nadu",
+    "region": "Tamil Nadu",
+    "district": "Coimbatore",
+    "state": "Tamil Nadu",
+    "state_code": "TN",
+    "centroid": {
+      "latitude": 11.0168,
+      "longitude": 76.9678
+    }
+  },
+  {
+    "pincode": "625001",
+    "office_name": "Simmakkal SO",
+    "post_offices": [
+      "Simmakkal SO",
+      "Simmakkal B.O"
+    ],
+    "circle": "Tamil Nadu",
+    "region": "Tamil Nadu",
+    "district": "Madurai",
+    "state": "Tamil Nadu",
+    "state_code": "TN",
+    "centroid": {
+      "latitude": 9.9252,
+      "longitude": 78.1198
+    }
+  },
+  {
+    "pincode": "506001",
+    "office_name": "Hanamkonda SO",
+    "post_offices": [
+      "Hanamkonda SO",
+      "Hanamkonda B.O"
+    ],
+    "circle": "Telangana",
+    "region": "Telangana",
+    "district": "Warangal",
+    "state": "Telangana",
+    "state_code": "TG",
+    "centroid": {
+      "latitude": 18.013,
+      "longitude": 79.56
+    }
+  },
+  {
+    "pincode": "530017",
+    "office_name": "MVP Colony SO",
+    "post_offices": [
+      "MVP Colony SO",
+      "MVP Colony B.O"
+    ],
+    "circle": "Andhra Pradesh",
+    "region": "Andhra Pradesh",
+    "district": "Visakhapatnam",
+    "state": "Andhra Pradesh",
+    "state_code": "AP",
+    "centroid": {
+      "latitude": 17.742,
+      "longitude": 83.336
+    }
+  },
+  {
+    "pincode": "682030",
+    "office_name": "Kakkanad SO",
+    "post_offices": [
+      "Kakkanad SO",
+      "Kakkanad B.O"
+    ],
+    "circle": "Kerala",
+    "region": "Kerala",
+    "district": "Ernakulam",
+    "state": "Kerala",
+    "state_code": "KL",
+    "centroid": {
+      "latitude": 10.0159,
+      "longitude": 76.3419
+    }
+  },
+  {
+    "pincode": "605001",
+    "office_name": "White Town SO",
+    "post_offices": [
+      "White Town SO",
+      "White Town B.O"
+    ],
+    "circle": "Puducherry",
+    "region": "Puducherry",
+    "district": "Puducherry",
+    "state": "Puducherry",
+    "state_code": "PY",
+    "centroid": {
+      "latitude": 11.934,
+      "longitude": 79.833
+    }
+  },
+  {
+    "pincode": "141002",
+    "office_name": "Model Town SO",
+    "post_offices": [
+      "Model Town SO",
+      "Model Town B.O"
+    ],
+    "circle": "Punjab",
+    "region": "Punjab",
+    "district": "Ludhiana",
+    "state": "Punjab",
+    "state_code": "PB",
+    "centroid": {
+      "latitude": 30.893,
+      "longitude": 75.836
+    }
+  },
+  {
+    "pincode": "221005",
+    "office_name": "Assi Ghat SO",
+    "post_offices": [
+      "Assi Ghat SO",
+      "Assi Ghat B.O"
+    ],
+    "circle": "Uttar Pradesh",
+    "region": "Uttar Pradesh",
+    "district": "Varanasi",
+    "state": "Uttar Pradesh",
+    "state_code": "UP",
+    "centroid": {
+      "latitude": 25.289,
+      "longitude": 83.006
+    }
+  },
+  {
+    "pincode": "171001",
+    "office_name": "Mall Road SO",
+    "post_offices": [
+      "Mall Road SO",
+      "Mall Road B.O"
+    ],
+    "circle": "Himachal Pradesh",
+    "region": "Himachal Pradesh",
+    "district": "Shimla",
+    "state": "Himachal Pradesh",
+    "state_code": "HP",
+    "centroid": {
+      "latitude": 31.1048,
+      "longitude": 77.1734
+    }
+  },
+  {
+    "pincode": "248001",
+    "office_name": "Rajpur Road SO",
+    "post_offices": [
+      "Rajpur Road SO",
+      "Rajpur Road B.O"
+    ],
+    "circle": "Uttarakhand",
+    "region": "Uttarakhand",
+    "district": "Dehradun",
+    "state": "Uttarakhand",
+    "state_code": "UK",
+    "centroid": {
+      "latitude": 30.34,
+      "longitude": 78.06
+    }
+  },
+  {
+    "pincode": "190001",
+    "office_name": "Lal Chowk SO",
+    "post_offices": [
+      "Lal Chowk SO",
+      "Lal Chowk B.O"
+    ],
+    "circle": "Jammu and Kashmir",
+    "region": "Jammu and Kashmir",
+    "district": "Srinagar",
+    "state": "Jammu and Kashmir",
+    "state_code": "JK",
+    "centroid": {
+      "latitude": 34.072,
+      "longitude": 74.808
+    }
+  },
+  {
+    "pincode": "194101",
+    "office_name": "Main Bazar SO",
+    "post_offices": [
+      "Main Bazar SO",
+      "Main Bazar B.O"
+    ],
+    "circle": "Ladakh",
+    "region": "Ladakh",
+    "district": "Leh",
+    "state": "Ladakh",
+    "state_code": "LA",
+    "centroid": {
+      "latitude": 34.164,
+      "longitude": 77.584
+    }
+  },
+  {
+    "pincode": "160035",
+    "office_name": "Sector 35 SO",
+    "post_offices": [
+      "Sector 35 SO",
+      "Sector 35 B.O"
+    ],
+    "circle": "Chandigarh",
+    "region": "Chandigarh",
+    "district": "Chandigarh",
+    "state": "Chandigarh",
+    "state_code": "CH",
+    "centroid": {
+      "latitude": 30.725,
+      "longitude": 76.764
+    }
+  },
+  {
+    "pincode": "711102",
+    "office_name": "Shibpur SO",
+    "post_offices": [
+      "Shibpur SO",
+      "Shibpur B.O"
+    ],
+    "circle": "West Bengal",
+    "region": "West Bengal",
+    "district": "Howrah",
+    "state": "West Bengal",
+    "state_code": "WB",
+    "centroid": {
+      "latitude": 22.565,
+      "longitude": 88.318
+    }
+  },
+  {
+    "pincode": "824231",
+    "office_name": "Bodh Gaya SO",
+    "post_offices": [
+      "Bodh Gaya SO",
+      "Bodh Gaya B.O"
+    ],
+    "circle": "Bihar",
+    "region": "Bihar",
+    "district": "Gaya",
+    "state": "Bihar",
+    "state_code": "BR",
+    "centroid": {
+      "latitude": 24.695,
+      "longitude": 84.991
+    }
+  },
+  {
+    "pincode": "823001",
+    "office_name": "Rampur SO",
+    "post_offices": [
+      "Rampur SO",
+      "Rampur B.O"
+    ],
+    "circle": "Bihar",
+    "region": "Bihar",
+    "district": "Gaya",
+    "state": "Bihar",
+    "state_code": "BR",
+    "centroid": {
+      "latitude": 24.78,
+      "longitude": 84.99
+    }
+  },
+  {
+    "pincode": "834006",
+    "office_name": "Kanke SO",
+    "post_offices": [
+      "Kanke SO",
+      "Kanke B.O"
+    ],
+    "circle": "Jharkhand",
+    "region": "Jharkhand",
+    "district": "Ranchi",
+    "state": "Jharkhand",
+    "state_code": "JH",
+    "centroid": {
+      "latitude": 23.43,
+      "longitude": 85.32
+    }
+  },
+  {
+    "pincode": "751007",
+    "office_name": "Saheed Nagar SO",
+    "post_offices": [
+      "Saheed Nagar SO",
+      "Saheed Nagar B.O"
+    ],
+    "circle": "Odisha",
+    "region": "Odisha",
+    "district": "Khordha",
+    "state": "Odisha",
+    "state_code": "OR",
+    "centroid": {
+      "latitude": 20.292,
+      "longitude": 85.845
+    }
+  },
+  {
+    "pincode": "452010",
+    "office_name": "Vijay Nagar SO",
+    "post_offices": [
+      "Vijay Nagar SO",
+      "Vijay Nagar B.O"
+    ],
+    "circle": "Madhya Pradesh",
+    "region": "Madhya Pradesh",
+    "district": "Indore",
+    "state": "Madhya Pradesh",
+    "state_code": "MP",
+    "centroid": {
+      "latitude": 22.7533,
+      "longitude": 75.8937
+    }
+  },
+  {
+    "pincode": "482001",
+    "office_name": "Civil Lines SO",
+    "post_offices": [
+      "Civil Lines SO",
+      "Civil Lines B.O"
+    ],
+    "circle": "Madhya Pradesh",
+    "region": "Madhya Pradesh",
+    "district": "Jabalpur",
+    "state": "Madhya Pradesh",
+    "state_code": "MP",
+    "centroid": {
+      "latitude": 23.165,
+      "longitude": 79.94
+    }
+  },
+  {
+    "pincode": "492006",
+    "office_name": "Telibandha SO",
+    "post_offices": [
+      "Telibandha SO",
+      "Telibandha B.O"
+    ],
+    "circle": "Chhattisgarh",
+    "region": "Chhattisgarh",
+    "district": "Raipur",
+    "state": "Chhattisgarh",
+    "state_code": "CG",
+    "centroid": {
+      "latitude": 21.233,
+      "longitude": 81.666
+    }
+  },
+  {
+    "pincode": "494001",
+    "office_name": "Jagdalpur SO",
+    "post_offices": [
+      "Jagdalpur SO",
+      "Jagdalpur B.O"
+    ],
+    "circle": "Chhattisgarh",
+    "region": "Chhattisgarh",
+    "district": "Bastar",
+    "state": "Chhattisgarh",
+    "state_code": "CG",
+    "centroid": {
+      "latitude": 19.073,
+      "longitude": 82.028
+    }
+  },
+  {
+    "pincode": "781006",
+    "office_name": "Dispur SO",
+    "post_offices": [
+      "Dispur SO",
+      "Dispur B.O"
+    ],
+    "circle": "Assam",
+    "region": "Assam",
+    "district": "Kamrup Metropolitan",
+    "state": "Assam",
+    "state_code": "AS",
+    "centroid": {
+      "latitude": 26.1433,
+      "longitude": 91.7898
+    }
+  },
+  {
+    "pincode": "793001",
+    "office_name": "Police Bazar SO",
+    "post_offices": [
+      "Police Bazar SO",
+      "Police Bazar B.O"
+    ],
+    "circle": "Meghalaya",
+    "region": "Meghalaya",
+    "district": "East Khasi Hills",
+    "state": "Meghalaya",
+    "state_code": "ML",
+    "centroid": {
+      "latitude": 25.578,
+      "longitude": 91.883
+    }
+  },
+  {
+    "pincode": "795001",
+    "office_name": "Thangal Bazar SO",
+    "post_offices": [
+      "Thangal Bazar SO",
+      "Thangal Bazar B.O"
+    ],
+    "circle": "Manipur",
+    "region": "Manipur",
+    "district": "Imphal West",
+    "state": "Manipur",
+    "state_code": "MN",
+    "centroid": {
+      "latitude": 24.81,
+      "longitude": 93.937
+    }
+  },
+  {
+    "pincode": "797112",
+    "office_name": "Duncan Basti SO",
+    "post_offices": [
+      "Duncan Basti SO",
+      "Duncan Basti B.O"
+    ],
+    "circle": "Nagaland",
+    "region": "Nagaland",
+    "district": "Dimapur",
+    "state": "Nagaland",
+    "state_code": "NL",
+    "centroid": {
+      "latitude": 25.9,
+      "longitude": 93.72
+    }
+  },
+  {
+    "pincode": "796001",
+    "office_name": "Zarkawt SO",
+    "post_offices": [
+      "Zarkawt SO",
+      "Zarkawt B.O"
+    ],
+    "circle": "Mizoram",
+    "region": "Mizoram",
+    "district": "Aizawl",
+    "state": "Mizoram",
+    "state_code": "MZ",
+    "centroid": {
+      "latitude": 23.736,
+      "longitude": 92.717
+    }
+  },
+  {
+    "pincode": "799001",
+    "office_name": "Banamalipur SO",
+    "post_offices": [
+      "Banamalipur SO",
+      "Banamalipur B.O"
+    ],
+    "circle": "Tripura",
+    "region": "Tripura",
+    "district": "West Tripura",
+    "state": "Tripura",
+    "state_code": "TR",
+    "centroid": {
+      "latitude": 23.831,
+      "longitude": 91.286
+    }
+  },
+  {
+    "pincode": "791111",
+    "office_name": "Itanagar SO",
+    "post_offices": [
+      "Itanagar SO",
+      "Itanagar B.O"
+    ],
+    "circle": "Arunachal Pradesh",
+    "region": "Arunachal Pradesh",
+    "district": "Papum Pare",
+    "state": "Arunachal Pradesh",
+    "state_code": "AR",
+    "centroid": {
+      "latitude": 27.0844,
+      "longitude": 93.6053
+    }
+  },
+  {
+    "pincode": "737101",
+    "office_name": "MG Marg SO",
+    "post_offices": [
+      "MG Marg SO",
+      "MG Marg B.O"
+    ],
+    "circle": "Sikkim",
+    "region": "Sikkim",
+    "district": "East Sikkim",
+    "state": "Sikkim",
+    "state_code": "SK",
+    "centroid": {
+      "latitude": 27.3314,
+      "longitude": 88.6138
+    }
+  },
+  {
+    "pincode": "744101",
+    "office_name": "Aberdeen Bazar SO",
+    "post_offices": [
+      "Aberdeen Bazar SO",
+      "Aberdeen Bazar B.O"
+    ],
+    "circle": "Andaman and Nicobar Islands",
+    "region": "Andaman and Nicobar Islands",
+    "district": "South Andaman",
+    "state": "Andaman and Nicobar Islands",
+    "state_code": "AN",
+    "centroid": {
+      "latitude": 11.666,
+      "longitude": 92.743
+    }
+  },
+  {
+    "pincode": "682555",
+    "office_name": "Kavaratti SO",
+    "post_offices": [
+      "Kavaratti SO",
+      "Kavaratti B.O"
+    ],
+    "circle": "Lakshadweep",
+    "region": "Lakshadweep",
+    "district": "Lakshadweep",
+    "state": "Lakshadweep",
+    "state_code": "LD",
+    "centroid": {
+      "latitude": 10.5667,
+      "longitude": 72.6369
+    }
   }
 ]

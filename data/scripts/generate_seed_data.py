@@ -2,8 +2,13 @@
 Ensures full coverage of Indian States, Districts, Sub-Districts/Talukas, Localities, PIN Codes, and POIs.
 """
 
+import sys
 import json
 from pathlib import Path
+
+root_dir = Path(__file__).parent.parent.parent
+if str(root_dir) not in sys.path:
+    sys.path.insert(0, str(root_dir))
 
 PROCESSED_DIR = Path(__file__).parent.parent / "processed"
 PROCESSED_DIR.mkdir(parents=True, exist_ok=True)

@@ -1,0 +1,5 @@
+{
+  "security_status": "PASS",
+  "graph_cycle_protection": "BOUNDED_BFS",
+  "max_nodes": 100
+}

@@ -1,0 +1,74 @@
+[
+  {
+    "bin_lower": 0.0,
+    "bin_upper": 0.1,
+    "sample_count": 84,
+    "mean_confidence": 0.0474,
+    "empirical_accuracy": 0.2976,
+    "calibration_error": 0.2502
+  },
+  {
+    "bin_lower": 0.2,
+    "bin_upper": 0.3,
+    "sample_count": 171,
+    "mean_confidence": 0.2814,
+    "empirical_accuracy": 0.1111,
+    "calibration_error": 0.1703
+  },
+  {
+    "bin_lower": 0.3,
+    "bin_upper": 0.4,
+    "sample_count": 5,
+    "mean_confidence": 0.3577,
+    "empirical_accuracy": 0.0,
+    "calibration_error": 0.3577
+  },
+  {
+    "bin_lower": 0.4,
+    "bin_upper": 0.5,
+    "sample_count": 90,
+    "mean_confidence": 0.4197,
+    "empirical_accuracy": 0.5444,
+    "calibration_error": 0.1247
+  },
+  {
+    "bin_lower": 0.5,
+    "bin_upper": 0.6,
+    "sample_count": 312,
+    "mean_confidence": 0.5275,
+    "empirical_accuracy": 0.1763,
+    "calibration_error": 0.3512
+  },
+  {
+    "bin_lower": 0.6,
+    "bin_upper": 0.7,
+    "sample_count": 565,
+    "mean_confidence": 0.6333,
+    "empirical_accuracy": 0.7912,
+    "calibration_error": 0.1579
+  },
+  {
+    "bin_lower": 0.7,
+    "bin_upper": 0.8,
+    "sample_count": 318,
+    "mean_confidence": 0.745,
+    "empirical_accuracy": 0.5063,
+    "calibration_error": 0.2387
+  },
+  {
+    "bin_lower": 0.8,
+    "bin_upper": 0.9,
+    "sample_count": 199,
+    "mean_confidence": 0.851,
+    "empirical_accuracy": 0.9347,
+    "calibration_error": 0.0837
+  },
+  {
+    "bin_lower": 0.9,
+    "bin_upper": 1.0,
+    "sample_count": 256,
+    "mean_confidence": 0.907,
+    "empirical_accuracy": 0.4336,
+    "calibration_error": 0.4734
+  }
+]

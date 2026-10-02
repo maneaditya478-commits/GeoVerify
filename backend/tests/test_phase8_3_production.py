@@ -24,9 +24,9 @@ from app.verification.engine import VerificationEngine
 
 
 def test_phase8_3_version_and_config():
-    """Verifies that Phase 8.3/9.0 version metadata is correctly pinned."""
-    assert settings.APP_VERSION in ["8.3.0", "9.0.0"]
-    assert settings.GEOVERIFY_CONFIG_VERSION in ["8.3.0", "9.0.0"]
+    """Verifies that Phase 8.3/9.0/10.0/10.1 version metadata is correctly pinned."""
+    assert settings.APP_VERSION in ["8.3.0", "9.0.0", "10.0.0", "10.1.0"]
+    assert settings.GEOVERIFY_CONFIG_VERSION in ["8.3.0", "9.0.0", "10.0.0", "10.1.0"]
 
 
 def test_path_traversal_sanitization_security():

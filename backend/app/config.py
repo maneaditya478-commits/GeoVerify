@@ -13,7 +13,7 @@ class Settings(BaseSettings):
     )
 
     APP_NAME: str = "GeoVerify India"
-    APP_VERSION: str = "10.0.0"
+    APP_VERSION: str = "10.1.0"
     APP_ENV: str = "development"
     DEBUG: bool = True
     API_PREFIX: str = "/api"
@@ -88,8 +88,8 @@ class Settings(BaseSettings):
     ENABLE_GEOGRAPHIC_EMBEDDINGS: bool = True
     ENABLE_MULTILINGUAL_POSTCORRECTION: bool = True
 
-    # Phase 9/10 Advanced Geographic Intelligence, Temporal Reasoning & External Generalization
-    GEOVERIFY_CONFIG_VERSION: str = "10.0.0"
+    # Phase 9/10/10.1 Advanced Geographic Intelligence, Temporal Reasoning & External Generalization
+    GEOVERIFY_CONFIG_VERSION: str = "10.1.0"
     ENABLE_RESPONSE_CACHING: bool = True
     ENABLE_REQUEST_MEMOIZATION: bool = True
     CACHE_MAX_SIZE: int = 10000

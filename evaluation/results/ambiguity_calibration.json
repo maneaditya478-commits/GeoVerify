@@ -2,31 +2,31 @@
   {
     "threshold_delta": 8.0,
     "true_positives": 32,
-    "false_positives": 34,
+    "false_positives": 40,
     "false_negatives": 23,
-    "true_negatives": 976,
-    "precision": 0.4848,
+    "true_negatives": 970,
+    "precision": 0.4444,
     "recall": 0.5818,
-    "f1_score": 0.5289
+    "f1_score": 0.5039
   },
   {
     "threshold_delta": 12.0,
     "true_positives": 32,
-    "false_positives": 56,
+    "false_positives": 60,
     "false_negatives": 23,
-    "true_negatives": 954,
-    "precision": 0.3636,
+    "true_negatives": 950,
+    "precision": 0.3478,
     "recall": 0.5818,
-    "f1_score": 0.4475
+    "f1_score": 0.4353
   },
   {
     "threshold_delta": 15.0,
     "true_positives": 32,
-    "false_positives": 66,
+    "false_positives": 70,
     "false_negatives": 23,
-    "true_negatives": 944,
-    "precision": 0.3265,
+    "true_negatives": 940,
+    "precision": 0.3137,
     "recall": 0.5818,
-    "f1_score": 0.4183
+    "f1_score": 0.4076
   }
 ]

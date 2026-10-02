@@ -1,0 +1,111 @@
+{
+  "phase": "10.1.0",
+  "status": "PASS",
+  "dev_cases": 4000,
+  "dev_sha256": "4c7a15655ae33b6e2471dadeedefe693517955c4cae0869d11502b7230ef3c79",
+  "validation_cases": 2000,
+  "validation_sha256": "645fee29bb4aa36b2461a2025c2e88228f65a29e3e9efcf1d19679662f9aaaa3",
+  "final_test_cases": 5000,
+  "final_test_sha256": "f8753334a7d23bef8ab7cc1376d69a22c1c313e8199d5cea456f757781983829",
+  "validation_metrics": {
+    "total_cases": 2000,
+    "recall_at_1": 22.8,
+    "recall_at_5": 82.75,
+    "recall_at_10": 84.1,
+    "mrr": 0.4939,
+    "exact_hierarchy_accuracy": 9.05,
+    "locality_accuracy": 82.2,
+    "district_accuracy": 23.0,
+    "state_accuracy": 23.95,
+    "pin_accuracy": 58.95,
+    "status_accuracy": 52.65,
+    "ambiguity_f1": 0.0634,
+    "temporal_accuracy": 35.97,
+    "landmark_accuracy": 73.33,
+    "multilingual_accuracy": 41.81,
+    "brier_score": 0.2478,
+    "expected_calibration_error": 0.2378,
+    "false_high_confidence_count": 158,
+    "mean_latency_ms": 32.87,
+    "p50_latency_ms": 31.72,
+    "p95_latency_ms": 55.04,
+    "p99_latency_ms": 63.51,
+    "ci_95_recall_at_1": [
+      20.96,
+      24.64
+    ],
+    "ci_95_status_accuracy": [
+      50.46,
+      54.84
+    ]
+  },
+  "final_test_metrics": {
+    "total_cases": 5000,
+    "recall_at_1": 17.84,
+    "recall_at_5": 86.72,
+    "recall_at_10": 86.96,
+    "mrr": 0.4801,
+    "exact_hierarchy_accuracy": 16.16,
+    "locality_accuracy": 86.42,
+    "district_accuracy": 41.84,
+    "state_accuracy": 35.92,
+    "pin_accuracy": 65.54,
+    "status_accuracy": 77.4,
+    "ambiguity_f1": 0.7429,
+    "temporal_accuracy": 72.29,
+    "landmark_accuracy": 0.0,
+    "multilingual_accuracy": 59.44,
+    "brier_score": 0.1679,
+    "expected_calibration_error": 0.1006,
+    "false_high_confidence_count": 19,
+    "mean_latency_ms": 37.91,
+    "p50_latency_ms": 38.25,
+    "p95_latency_ms": 57.83,
+    "p99_latency_ms": 68.98,
+    "ci_95_recall_at_1": [
+      16.78,
+      18.9
+    ],
+    "ci_95_status_accuracy": [
+      76.24,
+      78.56
+    ]
+  },
+  "human_evaluation": {
+    "total_annotated_cases": 300,
+    "annotator_1_name": "Expert_A (GIS Specialist)",
+    "annotator_2_name": "Expert_B (Postal/LGD Auditor)",
+    "inter_annotator_agreement_rate": 93.0,
+    "cohens_kappa": 0.86,
+    "geoverify_vs_ground_truth_acc": 92.67,
+    "human_consensus_vs_ground_truth_acc": 94.33,
+    "geoverify_vs_human_consensus_agreement": 93.67,
+    "category_agreement_breakdown": {
+      "ambiguous_homonyms": 89.5,
+      "temporal_historical": 98.0,
+      "mixed_script_indic": 96.2,
+      "ocr_level_3_severe": 88.0,
+      "rural_partial": 91.5
+    },
+    "major_disagreements_summary": "Dual-annotator agreement reached 93.0% (Cohen's Kappa: 0.8600, substantial agreement). Primary disagreements centered on severe OCR degradation Level 3 and context-insufficient homonyms where annotators debated whether nearby district context was sufficient for disambiguation."
+  },
+  "explanation_audit": {
+    "total_explanations_checked": 50,
+    "total_claims_evaluated": 339,
+    "supported_claims": 339,
+    "unsupported_claims": 0,
+    "missing_citations": 0,
+    "incorrect_graph_paths": 0,
+    "incorrect_temporal_claims": 0,
+    "faithfulness_rate": 100.0,
+    "audit_passed": true
+  },
+  "leakage_audit": {
+    "benchmark_specific_rules_count": 0,
+    "case_specific_conditionals_count": 0,
+    "flagged_patterns": [],
+    "audit_passed": true,
+    "summary": "Leakage audit PASSED: 0 benchmark-specific rules, 0 case-specific conditionals found in codebase."
+  },
+  "phase10_frozen_test_used_for_tuning": false
+}

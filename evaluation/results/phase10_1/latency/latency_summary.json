@@ -1,0 +1,6 @@
+{
+  "mean_latency_ms": 37.91,
+  "p50_latency_ms": 38.25,
+  "p95_latency_ms": 57.83,
+  "p99_latency_ms": 68.98
+}

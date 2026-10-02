@@ -19,10 +19,10 @@
     "temporal_accuracy": 77.73,
     "landmark_accuracy": 98.0,
     "multilingual_accuracy": 13.79,
-    "mean_latency_ms": 43.03,
-    "p50_latency_ms": 43.26,
-    "p95_latency_ms": 66.09,
-    "p99_latency_ms": 77.49,
+    "mean_latency_ms": 44.53,
+    "p50_latency_ms": 44.08,
+    "p95_latency_ms": 69.51,
+    "p99_latency_ms": 84.92,
     "ci_95_recall_at_1": [
       14.78,
       16.76

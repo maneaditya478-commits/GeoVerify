@@ -6,20 +6,20 @@
   "created_at": "2026-10-02T22:00:00+05:30",
   "isolation_status": "FROZEN_HELD_OUT_IMMUTABLE",
   "regions": [
-    "Union Territories",
-    "Northeast",
     "South",
+    "Central",
+    "Union Territories",
     "North",
     "East",
-    "Central",
+    "Northeast",
     "West"
   ],
   "settlement_types": [
-    "Rural",
-    "Urban",
     "Metropolitan",
-    "Semi-urban",
-    "Remote"
+    "Urban",
+    "Remote",
+    "Rural",
+    "Semi-urban"
   ],
   "ocr_levels": [
     0,

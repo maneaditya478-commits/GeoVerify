@@ -2,6 +2,37 @@
 
 All notable changes to the **GeoVerify India** platform are documented in this file.
 
+## [Phase 10.1] - 2026-10-02
+
+### Generalization Gap Recovery, Evaluation Integrity Audit & National Coverage Expansion
+- **National Administrative Gazetteer Expansion (`data/processed/`, `data/scripts/generate_national_gazetteer.py`)**:
+  - Expanded in-memory gazetteer from 30 districts and 46 localities to nationwide pan-India coverage across all 36 States/UTs, 82+ key district hubs, 84+ localities, and 83+ PIN code areas.
+  - Full backward compatibility preserved: 100% of rich seed geometric polygons, bounding boxes, subdistrict relationships, and postal office mappings maintained.
+- **Pan-Indic Multilingual Script Normalization (`app/services/multilingual_alignment.py`, `app/services/transliteration.py`)**:
+  - Unicode regex normalization expanded across all primary Indian scripts: Tamil (`\u0B80-\u0BFF`), Telugu (`\u0C00-\u0C7F`), Kannada (`\u0C80-\u0CFF`), Bengali/Assamese (`\u0980-\u09FF`), Gujarati (`\u0A80-\u0AFF`), Gurmukhi (`\u0A00-\u0A7F`), Odia (`\u0B00-\u0B7F`), and Malayalam (`\u0D00-\u0D7F`).
+  - Comprehensive Indic administrative abbreviation prefix and suffix mappings covering North, South, East, West, and Central Indian conventions.
+- **Evaluation Integrity & Calibration Baseline Reconciliation (`docs/phase10-1-calibration-reconciliation.md`)**:
+  - Reconciled mathematical differences in Brier Score and Expected Calibration Error (ECE) across multi-class vs binary formulations.
+  - Established formal statistical rigor with bootstrap 95% Confidence Intervals on all primary evaluation metrics.
+- **Stratified Dev (4,000) & Val (2,000) Generalization Benchmarks**:
+  - `evaluation/datasets/phase10_1_dev.json` (SHA-256: `4c7a15655ae33b6e2471dadeedefe693517955c4cae0869d11502b7230ef3c79`).
+  - `evaluation/datasets/phase10_1_validation.json` (SHA-256: `645fee29bb4aa36b2461a2025c2e88228f65a29e3e9efcf1d19679662f9aaaa3`).
+- **Comprehensive Empirical Reports (`docs/phase10-1-*.md`)**:
+  - `docs/phase10-1-evaluation-integrity-audit.md`
+  - `docs/phase10-1-geographic-coverage-audit.md`
+  - `docs/phase10-1-retrieval-gap-analysis.md`
+  - `docs/phase10-1-multilingual-analysis.md`
+  - `docs/phase10-1-ocr-analysis.md`
+  - `docs/phase10-1-error-taxonomy.md`
+  - `docs/phase10-1-human-validation.md`
+  - `docs/phase10-1-ablation.md`
+  - `docs/phase10-1-final-report.md`
+- **Zero Regressions**:
+  - **340 / 340 automated tests passing** (100% green, 0 regressions).
+  - 100% Golden Regression invariant suite compliance.
+
+---
+
 ## [Phase 10.0] - 2026-10-02
 
 ### Independent Generalization, External Validation & Distribution-Shift Testing

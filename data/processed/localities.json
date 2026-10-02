@@ -1309,5 +1309,959 @@
       84.4,
       24.78
     ]
+  },
+  {
+    "name": "Panchavati",
+    "canonical_name": "Panchavati",
+    "name_hi": null,
+    "name_mr": null,
+    "aliases": [],
+    "subdistrict_id": null,
+    "subdistrict": null,
+    "district_id": "dist_nashik",
+    "district": "Nashik",
+    "state_id": null,
+    "state": "Maharashtra",
+    "state_code": "MH",
+    "pincode": "422003",
+    "coordinates": {
+      "latitude": 20.011,
+      "longitude": 73.7903
+    },
+    "bbox": [
+      73.7603,
+      19.981,
+      73.8203,
+      20.041
+    ]
+  },
+  {
+    "name": "Koregaon",
+    "canonical_name": "Koregaon",
+    "name_hi": null,
+    "name_mr": null,
+    "aliases": [],
+    "subdistrict_id": null,
+    "subdistrict": null,
+    "district_id": "dist_satara",
+    "district": "Satara",
+    "state_id": null,
+    "state": "Maharashtra",
+    "state_code": "MH",
+    "pincode": "415501",
+    "coordinates": {
+      "latitude": 17.7,
+      "longitude": 74.18
+    },
+    "bbox": [
+      74.15,
+      17.67,
+      74.21,
+      17.73
+    ]
+  },
+  {
+    "name": "Varachha",
+    "canonical_name": "Varachha",
+    "name_hi": null,
+    "name_mr": null,
+    "aliases": [],
+    "subdistrict_id": null,
+    "subdistrict": null,
+    "district_id": "dist_surat",
+    "district": "Surat",
+    "state_id": null,
+    "state": "Gujarat",
+    "state_code": "GJ",
+    "pincode": "395006",
+    "coordinates": {
+      "latitude": 21.2185,
+      "longitude": 72.8557
+    },
+    "bbox": [
+      72.8257,
+      21.1885,
+      72.8857,
+      21.2485
+    ]
+  },
+  {
+    "name": "Panaji",
+    "canonical_name": "Panaji",
+    "name_hi": null,
+    "name_mr": null,
+    "aliases": [
+      "Panjim"
+    ],
+    "subdistrict_id": null,
+    "subdistrict": null,
+    "district_id": "dist_north_goa",
+    "district": "North Goa",
+    "state_id": null,
+    "state": "Goa",
+    "state_code": "GA",
+    "pincode": "403001",
+    "coordinates": {
+      "latitude": 15.4909,
+      "longitude": 73.8278
+    },
+    "bbox": [
+      73.7978,
+      15.4609,
+      73.8578,
+      15.5209
+    ]
+  },
+  {
+    "name": "Nani Daman",
+    "canonical_name": "Nani Daman",
+    "name_hi": null,
+    "name_mr": null,
+    "aliases": [],
+    "subdistrict_id": null,
+    "subdistrict": null,
+    "district_id": "dist_daman",
+    "district": "Daman",
+    "state_id": null,
+    "state": "Dadra and Nagar Haveli and Daman and Diu",
+    "state_code": "DD",
+    "pincode": "396210",
+    "coordinates": {
+      "latitude": 20.417,
+      "longitude": 72.833
+    },
+    "bbox": [
+      72.803,
+      20.387,
+      72.863,
+      20.447
+    ]
+  },
+  {
+    "name": "Mylapore",
+    "canonical_name": "Mylapore",
+    "name_hi": null,
+    "name_mr": null,
+    "aliases": [],
+    "subdistrict_id": null,
+    "subdistrict": null,
+    "district_id": "dist_chennai",
+    "district": "Chennai",
+    "state_id": null,
+    "state": "Tamil Nadu",
+    "state_code": "TN",
+    "pincode": "600004",
+    "coordinates": {
+      "latitude": 13.0339,
+      "longitude": 80.2678
+    },
+    "bbox": [
+      80.2378,
+      13.0039,
+      80.2978,
+      13.0639
+    ]
+  },
+  {
+    "name": "Gandhipuram",
+    "canonical_name": "Gandhipuram",
+    "name_hi": null,
+    "name_mr": null,
+    "aliases": [],
+    "subdistrict_id": null,
+    "subdistrict": null,
+    "district_id": "dist_coimbatore",
+    "district": "Coimbatore",
+    "state_id": null,
+    "state": "Tamil Nadu",
+    "state_code": "TN",
+    "pincode": "641012",
+    "coordinates": {
+      "latitude": 11.0168,
+      "longitude": 76.9678
+    },
+    "bbox": [
+      76.9378,
+      10.9868,
+      76.9978,
+      11.0468
+    ]
+  },
+  {
+    "name": "Simmakkal",
+    "canonical_name": "Simmakkal",
+    "name_hi": null,
+    "name_mr": null,
+    "aliases": [],
+    "subdistrict_id": null,
+    "subdistrict": null,
+    "district_id": "dist_madurai",
+    "district": "Madurai",
+    "state_id": null,
+    "state": "Tamil Nadu",
+    "state_code": "TN",
+    "pincode": "625001",
+    "coordinates": {
+      "latitude": 9.9252,
+      "longitude": 78.1198
+    },
+    "bbox": [
+      78.0898,
+      9.8952,
+      78.1498,
+      9.9552
+    ]
+  },
+  {
+    "name": "Hanamkonda",
+    "canonical_name": "Hanamkonda",
+    "name_hi": null,
+    "name_mr": null,
+    "aliases": [],
+    "subdistrict_id": null,
+    "subdistrict": null,
+    "district_id": "dist_warangal",
+    "district": "Warangal",
+    "state_id": null,
+    "state": "Telangana",
+    "state_code": "TG",
+    "pincode": "506001",
+    "coordinates": {
+      "latitude": 18.013,
+      "longitude": 79.56
+    },
+    "bbox": [
+      79.53,
+      17.983,
+      79.59,
+      18.043
+    ]
+  },
+  {
+    "name": "MVP Colony",
+    "canonical_name": "MVP Colony",
+    "name_hi": null,
+    "name_mr": null,
+    "aliases": [],
+    "subdistrict_id": null,
+    "subdistrict": null,
+    "district_id": "dist_visakhapatnam",
+    "district": "Visakhapatnam",
+    "state_id": null,
+    "state": "Andhra Pradesh",
+    "state_code": "AP",
+    "pincode": "530017",
+    "coordinates": {
+      "latitude": 17.742,
+      "longitude": 83.336
+    },
+    "bbox": [
+      83.306,
+      17.712,
+      83.366,
+      17.772
+    ]
+  },
+  {
+    "name": "Kakkanad",
+    "canonical_name": "Kakkanad",
+    "name_hi": null,
+    "name_mr": null,
+    "aliases": [],
+    "subdistrict_id": null,
+    "subdistrict": null,
+    "district_id": "dist_ernakulam",
+    "district": "Ernakulam",
+    "state_id": null,
+    "state": "Kerala",
+    "state_code": "KL",
+    "pincode": "682030",
+    "coordinates": {
+      "latitude": 10.0159,
+      "longitude": 76.3419
+    },
+    "bbox": [
+      76.3119,
+      9.9859,
+      76.3719,
+      10.0459
+    ]
+  },
+  {
+    "name": "White Town",
+    "canonical_name": "White Town",
+    "name_hi": null,
+    "name_mr": null,
+    "aliases": [],
+    "subdistrict_id": null,
+    "subdistrict": null,
+    "district_id": "dist_puducherry",
+    "district": "Puducherry",
+    "state_id": null,
+    "state": "Puducherry",
+    "state_code": "PY",
+    "pincode": "605001",
+    "coordinates": {
+      "latitude": 11.934,
+      "longitude": 79.833
+    },
+    "bbox": [
+      79.803,
+      11.904,
+      79.863,
+      11.964
+    ]
+  },
+  {
+    "name": "Model Town",
+    "canonical_name": "Model Town",
+    "name_hi": null,
+    "name_mr": null,
+    "aliases": [],
+    "subdistrict_id": null,
+    "subdistrict": null,
+    "district_id": "dist_ludhiana",
+    "district": "Ludhiana",
+    "state_id": null,
+    "state": "Punjab",
+    "state_code": "PB",
+    "pincode": "141002",
+    "coordinates": {
+      "latitude": 30.893,
+      "longitude": 75.836
+    },
+    "bbox": [
+      75.806,
+      30.863,
+      75.866,
+      30.923
+    ]
+  },
+  {
+    "name": "Assi Ghat",
+    "canonical_name": "Assi Ghat",
+    "name_hi": null,
+    "name_mr": null,
+    "aliases": [],
+    "subdistrict_id": null,
+    "subdistrict": null,
+    "district_id": "dist_varanasi",
+    "district": "Varanasi",
+    "state_id": null,
+    "state": "Uttar Pradesh",
+    "state_code": "UP",
+    "pincode": "221005",
+    "coordinates": {
+      "latitude": 25.289,
+      "longitude": 83.006
+    },
+    "bbox": [
+      82.976,
+      25.259,
+      83.036,
+      25.319
+    ]
+  },
+  {
+    "name": "Mall Road",
+    "canonical_name": "Mall Road",
+    "name_hi": null,
+    "name_mr": null,
+    "aliases": [],
+    "subdistrict_id": null,
+    "subdistrict": null,
+    "district_id": "dist_shimla",
+    "district": "Shimla",
+    "state_id": null,
+    "state": "Himachal Pradesh",
+    "state_code": "HP",
+    "pincode": "171001",
+    "coordinates": {
+      "latitude": 31.1048,
+      "longitude": 77.1734
+    },
+    "bbox": [
+      77.1434,
+      31.0748,
+      77.2034,
+      31.1348
+    ]
+  },
+  {
+    "name": "Rajpur Road",
+    "canonical_name": "Rajpur Road",
+    "name_hi": null,
+    "name_mr": null,
+    "aliases": [],
+    "subdistrict_id": null,
+    "subdistrict": null,
+    "district_id": "dist_dehradun",
+    "district": "Dehradun",
+    "state_id": null,
+    "state": "Uttarakhand",
+    "state_code": "UK",
+    "pincode": "248001",
+    "coordinates": {
+      "latitude": 30.34,
+      "longitude": 78.06
+    },
+    "bbox": [
+      78.03,
+      30.31,
+      78.09,
+      30.37
+    ]
+  },
+  {
+    "name": "Lal Chowk",
+    "canonical_name": "Lal Chowk",
+    "name_hi": null,
+    "name_mr": null,
+    "aliases": [],
+    "subdistrict_id": null,
+    "subdistrict": null,
+    "district_id": "dist_srinagar",
+    "district": "Srinagar",
+    "state_id": null,
+    "state": "Jammu and Kashmir",
+    "state_code": "JK",
+    "pincode": "190001",
+    "coordinates": {
+      "latitude": 34.072,
+      "longitude": 74.808
+    },
+    "bbox": [
+      74.778,
+      34.042,
+      74.838,
+      34.102
+    ]
+  },
+  {
+    "name": "Main Bazar",
+    "canonical_name": "Main Bazar",
+    "name_hi": null,
+    "name_mr": null,
+    "aliases": [],
+    "subdistrict_id": null,
+    "subdistrict": null,
+    "district_id": "dist_leh",
+    "district": "Leh",
+    "state_id": null,
+    "state": "Ladakh",
+    "state_code": "LA",
+    "pincode": "194101",
+    "coordinates": {
+      "latitude": 34.164,
+      "longitude": 77.584
+    },
+    "bbox": [
+      77.554,
+      34.134,
+      77.614,
+      34.194
+    ]
+  },
+  {
+    "name": "Sector 35",
+    "canonical_name": "Sector 35",
+    "name_hi": null,
+    "name_mr": null,
+    "aliases": [],
+    "subdistrict_id": null,
+    "subdistrict": null,
+    "district_id": "dist_chandigarh",
+    "district": "Chandigarh",
+    "state_id": null,
+    "state": "Chandigarh",
+    "state_code": "CH",
+    "pincode": "160035",
+    "coordinates": {
+      "latitude": 30.725,
+      "longitude": 76.764
+    },
+    "bbox": [
+      76.734,
+      30.695,
+      76.794,
+      30.755
+    ]
+  },
+  {
+    "name": "Shibpur",
+    "canonical_name": "Shibpur",
+    "name_hi": null,
+    "name_mr": null,
+    "aliases": [],
+    "subdistrict_id": null,
+    "subdistrict": null,
+    "district_id": "dist_howrah",
+    "district": "Howrah",
+    "state_id": null,
+    "state": "West Bengal",
+    "state_code": "WB",
+    "pincode": "711102",
+    "coordinates": {
+      "latitude": 22.565,
+      "longitude": 88.318
+    },
+    "bbox": [
+      88.288,
+      22.535,
+      88.348,
+      22.595
+    ]
+  },
+  {
+    "name": "Bodh Gaya",
+    "canonical_name": "Bodh Gaya",
+    "name_hi": null,
+    "name_mr": null,
+    "aliases": [],
+    "subdistrict_id": null,
+    "subdistrict": null,
+    "district_id": "dist_gaya",
+    "district": "Gaya",
+    "state_id": null,
+    "state": "Bihar",
+    "state_code": "BR",
+    "pincode": "824231",
+    "coordinates": {
+      "latitude": 24.695,
+      "longitude": 84.991
+    },
+    "bbox": [
+      84.961,
+      24.665,
+      85.021,
+      24.725
+    ]
+  },
+  {
+    "name": "Rampur",
+    "canonical_name": "Rampur Gaya",
+    "name_hi": null,
+    "name_mr": null,
+    "aliases": [
+      "Rampur Gaya"
+    ],
+    "subdistrict_id": null,
+    "subdistrict": null,
+    "district_id": "dist_gaya",
+    "district": "Gaya",
+    "state_id": null,
+    "state": "Bihar",
+    "state_code": "BR",
+    "pincode": "823001",
+    "coordinates": {
+      "latitude": 24.78,
+      "longitude": 84.99
+    },
+    "bbox": [
+      84.96,
+      24.75,
+      85.02,
+      24.81
+    ]
+  },
+  {
+    "name": "Kanke",
+    "canonical_name": "Kanke",
+    "name_hi": null,
+    "name_mr": null,
+    "aliases": [],
+    "subdistrict_id": null,
+    "subdistrict": null,
+    "district_id": "dist_ranchi",
+    "district": "Ranchi",
+    "state_id": null,
+    "state": "Jharkhand",
+    "state_code": "JH",
+    "pincode": "834006",
+    "coordinates": {
+      "latitude": 23.43,
+      "longitude": 85.32
+    },
+    "bbox": [
+      85.29,
+      23.4,
+      85.35,
+      23.46
+    ]
+  },
+  {
+    "name": "Saheed Nagar",
+    "canonical_name": "Saheed Nagar",
+    "name_hi": null,
+    "name_mr": null,
+    "aliases": [],
+    "subdistrict_id": null,
+    "subdistrict": null,
+    "district_id": "dist_khordha",
+    "district": "Khordha",
+    "state_id": null,
+    "state": "Odisha",
+    "state_code": "OR",
+    "pincode": "751007",
+    "coordinates": {
+      "latitude": 20.292,
+      "longitude": 85.845
+    },
+    "bbox": [
+      85.815,
+      20.262,
+      85.875,
+      20.322
+    ]
+  },
+  {
+    "name": "Vijay Nagar",
+    "canonical_name": "Vijay Nagar",
+    "name_hi": null,
+    "name_mr": null,
+    "aliases": [],
+    "subdistrict_id": null,
+    "subdistrict": null,
+    "district_id": "dist_indore",
+    "district": "Indore",
+    "state_id": null,
+    "state": "Madhya Pradesh",
+    "state_code": "MP",
+    "pincode": "452010",
+    "coordinates": {
+      "latitude": 22.7533,
+      "longitude": 75.8937
+    },
+    "bbox": [
+      75.8637,
+      22.7233,
+      75.9237,
+      22.7833
+    ]
+  },
+  {
+    "name": "Civil Lines",
+    "canonical_name": "Civil Lines",
+    "name_hi": null,
+    "name_mr": null,
+    "aliases": [],
+    "subdistrict_id": null,
+    "subdistrict": null,
+    "district_id": "dist_jabalpur",
+    "district": "Jabalpur",
+    "state_id": null,
+    "state": "Madhya Pradesh",
+    "state_code": "MP",
+    "pincode": "482001",
+    "coordinates": {
+      "latitude": 23.165,
+      "longitude": 79.94
+    },
+    "bbox": [
+      79.91,
+      23.135,
+      79.97,
+      23.195
+    ]
+  },
+  {
+    "name": "Telibandha",
+    "canonical_name": "Telibandha",
+    "name_hi": null,
+    "name_mr": null,
+    "aliases": [],
+    "subdistrict_id": null,
+    "subdistrict": null,
+    "district_id": "dist_raipur",
+    "district": "Raipur",
+    "state_id": null,
+    "state": "Chhattisgarh",
+    "state_code": "CG",
+    "pincode": "492006",
+    "coordinates": {
+      "latitude": 21.233,
+      "longitude": 81.666
+    },
+    "bbox": [
+      81.636,
+      21.203,
+      81.696,
+      21.263
+    ]
+  },
+  {
+    "name": "Jagdalpur",
+    "canonical_name": "Jagdalpur",
+    "name_hi": null,
+    "name_mr": null,
+    "aliases": [],
+    "subdistrict_id": null,
+    "subdistrict": null,
+    "district_id": "dist_bastar",
+    "district": "Bastar",
+    "state_id": null,
+    "state": "Chhattisgarh",
+    "state_code": "CG",
+    "pincode": "494001",
+    "coordinates": {
+      "latitude": 19.073,
+      "longitude": 82.028
+    },
+    "bbox": [
+      81.998,
+      19.043,
+      82.058,
+      19.103
+    ]
+  },
+  {
+    "name": "Dispur",
+    "canonical_name": "Dispur",
+    "name_hi": null,
+    "name_mr": null,
+    "aliases": [],
+    "subdistrict_id": null,
+    "subdistrict": null,
+    "district_id": "dist_kamrup_metropolitan",
+    "district": "Kamrup Metropolitan",
+    "state_id": null,
+    "state": "Assam",
+    "state_code": "AS",
+    "pincode": "781006",
+    "coordinates": {
+      "latitude": 26.1433,
+      "longitude": 91.7898
+    },
+    "bbox": [
+      91.7598,
+      26.1133,
+      91.8198,
+      26.1733
+    ]
+  },
+  {
+    "name": "Police Bazar",
+    "canonical_name": "Police Bazar",
+    "name_hi": null,
+    "name_mr": null,
+    "aliases": [],
+    "subdistrict_id": null,
+    "subdistrict": null,
+    "district_id": "dist_east_khasi_hills",
+    "district": "East Khasi Hills",
+    "state_id": null,
+    "state": "Meghalaya",
+    "state_code": "ML",
+    "pincode": "793001",
+    "coordinates": {
+      "latitude": 25.578,
+      "longitude": 91.883
+    },
+    "bbox": [
+      91.853,
+      25.548,
+      91.913,
+      25.608
+    ]
+  },
+  {
+    "name": "Thangal Bazar",
+    "canonical_name": "Thangal Bazar",
+    "name_hi": null,
+    "name_mr": null,
+    "aliases": [],
+    "subdistrict_id": null,
+    "subdistrict": null,
+    "district_id": "dist_imphal_west",
+    "district": "Imphal West",
+    "state_id": null,
+    "state": "Manipur",
+    "state_code": "MN",
+    "pincode": "795001",
+    "coordinates": {
+      "latitude": 24.81,
+      "longitude": 93.937
+    },
+    "bbox": [
+      93.907,
+      24.78,
+      93.967,
+      24.84
+    ]
+  },
+  {
+    "name": "Duncan Basti",
+    "canonical_name": "Duncan Basti",
+    "name_hi": null,
+    "name_mr": null,
+    "aliases": [],
+    "subdistrict_id": null,
+    "subdistrict": null,
+    "district_id": "dist_dimapur",
+    "district": "Dimapur",
+    "state_id": null,
+    "state": "Nagaland",
+    "state_code": "NL",
+    "pincode": "797112",
+    "coordinates": {
+      "latitude": 25.9,
+      "longitude": 93.72
+    },
+    "bbox": [
+      93.69,
+      25.87,
+      93.75,
+      25.93
+    ]
+  },
+  {
+    "name": "Zarkawt",
+    "canonical_name": "Zarkawt",
+    "name_hi": null,
+    "name_mr": null,
+    "aliases": [],
+    "subdistrict_id": null,
+    "subdistrict": null,
+    "district_id": "dist_aizawl",
+    "district": "Aizawl",
+    "state_id": null,
+    "state": "Mizoram",
+    "state_code": "MZ",
+    "pincode": "796001",
+    "coordinates": {
+      "latitude": 23.736,
+      "longitude": 92.717
+    },
+    "bbox": [
+      92.687,
+      23.706,
+      92.747,
+      23.766
+    ]
+  },
+  {
+    "name": "Banamalipur",
+    "canonical_name": "Banamalipur",
+    "name_hi": null,
+    "name_mr": null,
+    "aliases": [],
+    "subdistrict_id": null,
+    "subdistrict": null,
+    "district_id": "dist_west_tripura",
+    "district": "West Tripura",
+    "state_id": null,
+    "state": "Tripura",
+    "state_code": "TR",
+    "pincode": "799001",
+    "coordinates": {
+      "latitude": 23.831,
+      "longitude": 91.286
+    },
+    "bbox": [
+      91.256,
+      23.801,
+      91.316,
+      23.861
+    ]
+  },
+  {
+    "name": "Itanagar",
+    "canonical_name": "Itanagar",
+    "name_hi": null,
+    "name_mr": null,
+    "aliases": [],
+    "subdistrict_id": null,
+    "subdistrict": null,
+    "district_id": "dist_papum_pare",
+    "district": "Papum Pare",
+    "state_id": null,
+    "state": "Arunachal Pradesh",
+    "state_code": "AR",
+    "pincode": "791111",
+    "coordinates": {
+      "latitude": 27.0844,
+      "longitude": 93.6053
+    },
+    "bbox": [
+      93.5753,
+      27.0544,
+      93.6353,
+      27.1144
+    ]
+  },
+  {
+    "name": "MG Marg",
+    "canonical_name": "MG Marg",
+    "name_hi": null,
+    "name_mr": null,
+    "aliases": [],
+    "subdistrict_id": null,
+    "subdistrict": null,
+    "district_id": "dist_east_sikkim",
+    "district": "East Sikkim",
+    "state_id": null,
+    "state": "Sikkim",
+    "state_code": "SK",
+    "pincode": "737101",
+    "coordinates": {
+      "latitude": 27.3314,
+      "longitude": 88.6138
+    },
+    "bbox": [
+      88.5838,
+      27.3014,
+      88.6438,
+      27.3614
+    ]
+  },
+  {
+    "name": "Aberdeen Bazar",
+    "canonical_name": "Aberdeen Bazar",
+    "name_hi": null,
+    "name_mr": null,
+    "aliases": [],
+    "subdistrict_id": null,
+    "subdistrict": null,
+    "district_id": "dist_south_andaman",
+    "district": "South Andaman",
+    "state_id": null,
+    "state": "Andaman and Nicobar Islands",
+    "state_code": "AN",
+    "pincode": "744101",
+    "coordinates": {
+      "latitude": 11.666,
+      "longitude": 92.743
+    },
+    "bbox": [
+      92.713,
+      11.636,
+      92.773,
+      11.696
+    ]
+  },
+  {
+    "name": "Kavaratti",
+    "canonical_name": "Kavaratti",
+    "name_hi": null,
+    "name_mr": null,
+    "aliases": [],
+    "subdistrict_id": null,
+    "subdistrict": null,
+    "district_id": "dist_lakshadweep",
+    "district": "Lakshadweep",
+    "state_id": null,
+    "state": "Lakshadweep",
+    "state_code": "LD",
+    "pincode": "682555",
+    "coordinates": {
+      "latitude": 10.5667,
+      "longitude": 72.6369
+    },
+    "bbox": [
+      72.6069,
+      10.5367,
+      72.6669,
+      10.5967
+    ]
   }
 ]

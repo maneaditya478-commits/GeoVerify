@@ -119,8 +119,8 @@ class MultiStageCandidateGenerator:
                     self.subdistrict_by_name.setdefault(k, []).append(sd)
 
         for loc in self.localities:
-            st = self._canonical_key(loc.get("state", ""))
-            dist = self._canonical_key(loc.get("district", ""))
+            st = self._canonical_key(loc.get("state_name") or loc.get("state", ""))
+            dist = self._canonical_key(loc.get("district_name") or loc.get("district", ""))
             pin = loc.get("pincode")
 
             if st:

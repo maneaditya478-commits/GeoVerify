@@ -229,7 +229,7 @@ class HierarchyValidator:
                         name=locality,
                         canonical_name=loc_found["name"],
                         matched=True,
-                        evidence=f"Locality situated in {loc_found.get('subdistrict', 'subdistrict')}, {loc_found['district']}, {loc_found['state']}"
+                        evidence=f"Locality situated in {loc_found.get('subdistrict', 'subdistrict')}, {loc_found.get('district', '')}, {loc_found.get('state_name', loc_found.get('state', ''))}"
                     ))
             else:
                 chain.append(HierarchyNode(
