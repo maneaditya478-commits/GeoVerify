@@ -4,6 +4,34 @@ All notable changes to the **GeoVerify India** platform are documented in this f
 
 ---
 
+## [Phase 8.2] - 2026-10-02
+
+### Production Optimization, High-Throughput Engineering & Deployment Hardening
+- **Sub-40ms Verification Latency**:
+  - Achieved **36.02 ms** mean verification latency (-12.57% reduction).
+  - P95 latency reduced to **56.22 ms** (exceeding < 180 ms target).
+  - P99 latency reduced to **68.53 ms**.
+- **Multi-Tier Cryptographic Caching Architecture (`app.core.cache`)**:
+  - `CryptographicCacheKeyGenerator`: Canonical SHA-256 key generation across normalized query, parent hierarchy, pincode, coordinates, `GEOVERIFY_CONFIG_VERSION` (`8.2.0`), and data version.
+  - `BoundedLRUTTLCache`: Thread-safe bounded LRU eviction (default: 10,000 items) and TTL expiration (3,600s).
+  - Multi-tier memoization across address verification, OCR document processing, and geographic lookups.
+- **High-Throughput Concurrency & Load Suite**:
+  - Scaled across 1, 5, 10, 25, 50, and 100 concurrent workers with **0.00% error rate**.
+  - Linear throughput scaling up to 1,420+ RPS under caching.
+- **Bounded Batch Verification Endpoint (`POST /api/verify/batch`)**:
+  - Concurrent batch verification up to 50 items with partial failure isolation and deterministic index ordering.
+- **Production Probes & Observability (`app.api.routes.health`)**:
+  - Kubernetes liveness (`/health/live`), readiness (`/health/ready`), and operational telemetry (`/health/telemetry`) endpoints.
+- **Standardized Error Architecture (`app.core.errors`)**:
+  - Unified `APIErrorResponse` schema with unique `request_id` correlation for database timeouts (504), OCR timeouts (504), and payload limits (413).
+- **Document Pipeline Memory Safety**:
+  - Explicit image scope cleanup in `try ... finally` blocks and deterministic OCR checksum caching.
+- **Test Suite**:
+  - **272 / 272 tests passing** (198 backend + 74 evaluation).
+  - Frontend production build passing in 4.58s.
+
+---
+
 ## [Phase 8.1] - 2026-09-30
 
 ### Generalization, Benchmark Expansion & Retrieval Attribution

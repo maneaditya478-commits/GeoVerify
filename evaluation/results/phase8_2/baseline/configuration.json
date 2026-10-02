@@ -1,0 +1,23 @@
+{
+  "GEOVERIFY_CONFIG_VERSION": "8.2.0",
+  "feature_flags": {
+    "ENABLE_DENSE_RETRIEVAL": true,
+    "ENABLE_OCR_ENSEMBLE": false,
+    "ENABLE_ADAPTIVE_PREPROCESSING": true,
+    "ENABLE_GEOGRAPHIC_EMBEDDINGS": true,
+    "ENABLE_MULTILINGUAL_POSTCORRECTION": true,
+    "ENABLE_RESPONSE_CACHING": true,
+    "ENABLE_REQUEST_MEMOIZATION": true
+  },
+  "cache_settings": {
+    "L1_REQUEST_MEMOIZATION": true,
+    "L2_MAX_SIZE": 10000,
+    "L2_TTL_SECONDS": 3600
+  },
+  "database_settings": {
+    "POOL_SIZE": 10,
+    "MAX_OVERFLOW": 20,
+    "POOL_TIMEOUT": 30.0,
+    "POOL_RECYCLE": 1800
+  }
+}

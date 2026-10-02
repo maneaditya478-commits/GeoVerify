@@ -1,0 +1,19 @@
+{
+  "datasets": [
+    {
+      "name": "Phase 4 Master Benchmark",
+      "path": "evaluation/data/benchmark_1065.json",
+      "sample_count": 1065
+    },
+    {
+      "name": "Phase 8.1 Partitioned Splits (DEV, VALIDATION, HELD-OUT)",
+      "path": "evaluation/phase8_1/splits.py",
+      "sample_count": 180
+    },
+    {
+      "name": "Phase 8 Controlled Stress Dataset",
+      "path": "evaluation/phase8/stress_dataset.py",
+      "sample_count": 120
+    }
+  ]
+}

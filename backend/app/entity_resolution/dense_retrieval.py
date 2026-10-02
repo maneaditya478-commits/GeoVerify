@@ -143,9 +143,11 @@ class DenseGeographicRetriever:
     ) -> float:
         if query_norm == 0.0 or target_norm == 0.0:
             return 0.0
-        # Dot product over intersection of n-grams
-        common_keys = query_vec.keys() & target_vec.keys()
-        dot = sum(query_vec[k] * target_vec[k] for k in common_keys)
+        # Iterate over smaller dictionary to minimize lookups and avoid set allocations
+        if len(query_vec) < len(target_vec):
+            dot = sum(v * target_vec[k] for k, v in query_vec.items() if k in target_vec)
+        else:
+            dot = sum(v * query_vec[k] for k, v in target_vec.items() if k in query_vec)
         return dot / (query_norm * target_norm)
 
     def retrieve(
@@ -166,7 +168,12 @@ class DenseGeographicRetriever:
 
         # Also extract token-level query vectors for multi-token resilience
         query_tokens = [t.strip() for t in query.split() if len(t.strip()) >= 2]
-        token_vecs = [(self._vectorize(t), self._norm(self._vectorize(t))) for t in query_tokens]
+        token_vecs = []
+        for t in query_tokens:
+            t_v = self._vectorize(t)
+            t_n = self._norm(t_v)
+            if t_n > 0.0:
+                token_vecs.append((t_v, t_n))
 
         scored: List[Tuple[float, Dict[str, Any]]] = []
 

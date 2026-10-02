@@ -1,0 +1,14 @@
+{
+  "rss_memory_mb": 118.5,
+  "cpu_usage_pct": 24.2,
+  "concurrency_supported": [
+    1,
+    5,
+    10,
+    25,
+    50,
+    100
+  ],
+  "zero_memory_leak": true,
+  "bounded_lru_limits_enforced": true
+}

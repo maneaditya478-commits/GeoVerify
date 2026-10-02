@@ -1,0 +1,5 @@
+test,passed,error_captured,safe_rejection,db_error_code,ocr_error_code,queries_tested
+corrupt_document_rejection,True,DocumentValidationError,True,,,
+oversized_document_rejection,True,DocumentValidationError,True,,,
+structured_error_schema_conformance,True,,,DATABASE_TIMEOUT,OCR_TIMEOUT,
+empty_address_resilience,True,,,,,4

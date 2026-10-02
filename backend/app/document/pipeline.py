@@ -109,43 +109,78 @@ class DocumentProcessingPipeline:
         # Select OCR Engine
         engine = get_ocr_engine(engine_override) if engine_override else self.ocr_engine
 
-        # Stage 3: Image Preprocessing, Quality Assessment & OCR per page
-        ocr_pages: List[OCRPage] = []
-        preprocessed_images: List[Image.Image] = []
-        quality_evaluations = []
+        # Check OCR Cache if enabled
+        from app.config import settings
+        from app.core.cache import ocr_cache, CryptographicCacheKeyGenerator
+
+        cache_key = None
+        cached_ocr_res = None
+        if settings.ENABLE_RESPONSE_CACHING and validation_res.sha256:
+            cache_key = CryptographicCacheKeyGenerator.generate_cache_key({
+                "stage": "ocr",
+                "sha256": validation_res.sha256,
+                "engine": engine.engine_name,
+                "page_count": len(raw_images),
+            })
+            cached_ocr_res = ocr_cache.get(cache_key)
 
         t_prep_total = 0.0
         t_ocr_total = 0.0
 
-        for page_idx, page_item in enumerate(raw_images, start=1):
-            img = page_item.image if hasattr(page_item, "image") else page_item
-            # Preprocessing
-            t_p0 = time.perf_counter()
-            prep_res = self.preprocessor.preprocess(img)
-            prep_img = prep_res.image
-            deskew_angle = prep_res.rotation_deg
-            t_prep_total += (time.perf_counter() - t_p0) * 1000.0
-            preprocessed_images.append(prep_img)
+        if cached_ocr_res is not None:
+            ocr_res = cached_ocr_res
+            ocr_pages = ocr_res.pages
+            full_text = ocr_res.full_text
+            mean_conf = ocr_res.mean_confidence
+            primary_lang = ocr_res.primary_language
+            overall_quality = ocr_res.quality_status
+            t_ocr_total = ocr_res.processing_time_ms
+            timings["preprocessing_ms"] = 0.0
+            timings["ocr_execution_ms"] = 0.0
+        else:
+            # Stage 3: Image Preprocessing, Quality Assessment & OCR per page
+            ocr_pages: List[OCRPage] = []
+            preprocessed_images: List[Image.Image] = []
+            quality_evaluations = []
 
-            # Quality Assessment
-            quality_report = self.quality_evaluator.evaluate(img)
-            quality_evaluations.append(quality_report)
+            try:
+                for page_idx, page_item in enumerate(raw_images, start=1):
+                    img = page_item.image if hasattr(page_item, "image") else page_item
+                    # Preprocessing
+                    t_p0 = time.perf_counter()
+                    prep_res = self.preprocessor.preprocess(img)
+                    prep_img = prep_res.image
+                    deskew_angle = prep_res.rotation_deg
+                    t_prep_total += (time.perf_counter() - t_p0) * 1000.0
+                    preprocessed_images.append(prep_img)
 
-            # OCR Execution
-            t_o0 = time.perf_counter()
-            ocr_page = engine.process_page(prep_img, page_num=page_idx)
-            t_ocr_total += (time.perf_counter() - t_o0) * 1000.0
-            ocr_pages.append(ocr_page)
+                    # Quality Assessment
+                    quality_report = self.quality_evaluator.evaluate(img)
+                    quality_evaluations.append(quality_report)
 
-        timings["preprocessing_ms"] = round(t_prep_total, 2)
-        timings["ocr_execution_ms"] = round(t_ocr_total, 2)
+                    # OCR Execution
+                    t_o0 = time.perf_counter()
+                    ocr_page = engine.process_page(prep_img, page_num=page_idx)
+                    t_ocr_total += (time.perf_counter() - t_o0) * 1000.0
+                    ocr_pages.append(ocr_page)
+            finally:
+                # Cleanup images safely to avoid memory retention under load
+                for p_img in preprocessed_images:
+                    if hasattr(p_img, "close"):
+                        try:
+                            p_img.close()
+                        except Exception:
+                            pass
 
-        # Merge OCR Results across pages
-        full_text = "\n\n".join(p.text for p in ocr_pages).strip()
-        mean_conf = sum(p.confidence for p in ocr_pages) / len(ocr_pages) if ocr_pages else 0.0
-        
-        # Overall quality status is min of pages
-        overall_quality = quality_evaluations[0].quality_status if quality_evaluations else OCRQualityStatus.HIGH
+            timings["preprocessing_ms"] = round(t_prep_total, 2)
+            timings["ocr_execution_ms"] = round(t_ocr_total, 2)
+
+            # Merge OCR Results across pages
+            full_text = "\n\n".join(p.text for p in ocr_pages).strip()
+            mean_conf = sum(p.confidence for p in ocr_pages) / len(ocr_pages) if ocr_pages else 0.0
+            
+            # Overall quality status is min of pages
+            overall_quality = quality_evaluations[0].quality_status if quality_evaluations else OCRQualityStatus.HIGH
         
         # Detected languages across all text
         detected_langs = detect_language_scripts(full_text)
@@ -161,6 +196,9 @@ class DocumentProcessingPipeline:
             quality_status=overall_quality,
             processing_time_ms=round(t_ocr_total, 2),
         )
+
+        if cached_ocr_res is None and cache_key is not None:
+            ocr_cache.put(cache_key, ocr_res)
 
         ocr_meta = OCRMetadata(
             status="SUCCESS" if full_text else "FAILED",

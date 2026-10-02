@@ -88,6 +88,20 @@ class Settings(BaseSettings):
     ENABLE_GEOGRAPHIC_EMBEDDINGS: bool = True
     ENABLE_MULTILINGUAL_POSTCORRECTION: bool = True
 
+    # Phase 8.2 Production Optimization & Caching
+    GEOVERIFY_CONFIG_VERSION: str = "8.2.0"
+    ENABLE_RESPONSE_CACHING: bool = True
+    ENABLE_REQUEST_MEMOIZATION: bool = True
+    CACHE_MAX_SIZE: int = 10000
+    CACHE_TTL_SECONDS: int = 3600
+    DB_POOL_SIZE: int = 10
+    DB_MAX_OVERFLOW: int = 20
+    DB_POOL_TIMEOUT: float = 30.0
+    DB_POOL_RECYCLE: int = 1800
+    OCR_TIMEOUT_SECONDS: float = 15.0
+    DB_QUERY_TIMEOUT_SECONDS: float = 5.0
+    BATCH_MAX_SIZE: int = 50
+
 
     @property
     def scoring_weights(self) -> Dict[str, int]:

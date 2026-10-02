@@ -1,0 +1,181 @@
+id,raw_text,expected_state,matched_state,state_match,expected_district,matched_district,district_match,expected_locality,matched_locality,locality_match,expected_pincode,matched_pincode,pincode_match,expected_status,predicted_status,status_match,latency_ms,score
+dev_01_r1,"Flat 402, Shanti Heights, Kothrud, Pune, Maharashtra 411038",maharashtra,maharashtra,True,pune,pune,True,kothrud,kothrud,True,411038,411038,True,VERIFIED,VERIFIED,True,42.16,96
+dev_02_r1,"Plot 12, Indiranagar 100ft Road, Bengaluru, Karnataka 560038",karnataka,karnataka,True,bengaluru,bengaluru urban,False,indiranagar,indiranagar,True,560038,560038,True,VERIFIED,VERIFIED,True,41.97,96
+dev_03_r1,"Sector 62, Noida, Gautam Buddha Nagar, Uttar Pradesh 201309",uttar pradesh,uttar pradesh,True,gautam buddha nagar,gautam buddha nagar,True,sector 62,sector 62,True,201309,201309,True,VERIFIED,VERIFIED,True,46.92,90
+dev_04_r1,"Andheri West, Link Road, Mumbai Suburban, Maharashtra 400053",maharashtra,maharashtra,True,mumbai suburban,mumbai suburban,True,andheri west,west,True,400053,400053,True,VERIFIED,VERIFIED,True,30.73,94
+dev_05_r1,"Banjara Hills Road 12, Hyderabad, Telangana 500034",telangana,telangana,True,hyderabad,hyderabad,True,banjara hills,,True,500034,500034,True,VERIFIED,CONSISTENT,False,17.68,74
+dev_06_r1,"Salt Lake Sector 5, Kolkata, North 24 Parganas, West Bengal 700091",west bengal,west bengal,True,north 24 parganas,kolkata,False,sector 5,salt lake,False,700091,700091,True,VERIFIED,VERIFIED,True,49.88,96
+dev_07_r1,"Anna Nagar West, Chennai, Tamil Nadu 600040",tamil nadu,tamil nadu,True,chennai,chennai,True,anna nagar,anna nagar,True,600040,600040,True,VERIFIED,VERIFIED,True,44.82,94
+dev_08_r1,"Aliganj, Lucknow, Uttar Pradesh 226024",uttar pradesh,uttar pradesh,True,lucknow,lucknow,True,aliganj,aliganj,True,226024,226024,True,VERIFIED,VERIFIED,True,31.18,94
+dev_09_r1,"C-Scheme, Ashok Nagar, Jaipur, Rajasthan 302001",rajasthan,rajasthan,True,jaipur,jaipur,True,ashok nagar,c-scheme,False,302001,302001,True,VERIFIED,VERIFIED,True,44.51,94
+dev_10_r1,"Navrangpura, Ahmedabad, Gujarat 380009",gujarat,gujarat,True,ahmedabad,ahmedabad,True,navrangpura,navrangpura,True,380009,380009,True,VERIFIED,VERIFIED,True,36.46,96
+dev_01_r2,"Flat 402, Shanti Heights, Kothrud, Pune, Maharashtra 411038",maharashtra,maharashtra,True,pune,pune,True,kothrud,kothrud,True,411038,411038,True,VERIFIED,VERIFIED,True,49.02,96
+dev_02_r2,"Plot 12, Indiranagar 100ft Road, Bengaluru, Karnataka 560038",karnataka,karnataka,True,bengaluru,bengaluru urban,False,indiranagar,indiranagar,True,560038,560038,True,VERIFIED,VERIFIED,True,48.78,96
+dev_03_r2,"Sector 62, Noida, Gautam Buddha Nagar, Uttar Pradesh 201309",uttar pradesh,uttar pradesh,True,gautam buddha nagar,gautam buddha nagar,True,sector 62,sector 62,True,201309,201309,True,VERIFIED,VERIFIED,True,46.56,90
+dev_04_r2,"Andheri West, Link Road, Mumbai Suburban, Maharashtra 400053",maharashtra,maharashtra,True,mumbai suburban,mumbai suburban,True,andheri west,west,True,400053,400053,True,VERIFIED,VERIFIED,True,33.3,94
+dev_05_r2,"Banjara Hills Road 12, Hyderabad, Telangana 500034",telangana,telangana,True,hyderabad,hyderabad,True,banjara hills,,True,500034,500034,True,VERIFIED,CONSISTENT,False,19.07,74
+dev_06_r2,"Salt Lake Sector 5, Kolkata, North 24 Parganas, West Bengal 700091",west bengal,west bengal,True,north 24 parganas,kolkata,False,sector 5,salt lake,False,700091,700091,True,VERIFIED,VERIFIED,True,43.89,96
+dev_07_r2,"Anna Nagar West, Chennai, Tamil Nadu 600040",tamil nadu,tamil nadu,True,chennai,chennai,True,anna nagar,anna nagar,True,600040,600040,True,VERIFIED,VERIFIED,True,41.99,94
+dev_08_r2,"Aliganj, Lucknow, Uttar Pradesh 226024",uttar pradesh,uttar pradesh,True,lucknow,lucknow,True,aliganj,aliganj,True,226024,226024,True,VERIFIED,VERIFIED,True,31.04,94
+dev_09_r2,"C-Scheme, Ashok Nagar, Jaipur, Rajasthan 302001",rajasthan,rajasthan,True,jaipur,jaipur,True,ashok nagar,c-scheme,False,302001,302001,True,VERIFIED,VERIFIED,True,45.08,94
+dev_10_r2,"Navrangpura, Ahmedabad, Gujarat 380009",gujarat,gujarat,True,ahmedabad,ahmedabad,True,navrangpura,navrangpura,True,380009,380009,True,VERIFIED,VERIFIED,True,34.43,96
+dev_01_r3,"Flat 402, Shanti Heights, Kothrud, Pune, Maharashtra 411038",maharashtra,maharashtra,True,pune,pune,True,kothrud,kothrud,True,411038,411038,True,VERIFIED,VERIFIED,True,46.3,96
+dev_02_r3,"Plot 12, Indiranagar 100ft Road, Bengaluru, Karnataka 560038",karnataka,karnataka,True,bengaluru,bengaluru urban,False,indiranagar,indiranagar,True,560038,560038,True,VERIFIED,VERIFIED,True,48.54,96
+dev_03_r3,"Sector 62, Noida, Gautam Buddha Nagar, Uttar Pradesh 201309",uttar pradesh,uttar pradesh,True,gautam buddha nagar,gautam buddha nagar,True,sector 62,sector 62,True,201309,201309,True,VERIFIED,VERIFIED,True,51.47,90
+dev_04_r3,"Andheri West, Link Road, Mumbai Suburban, Maharashtra 400053",maharashtra,maharashtra,True,mumbai suburban,mumbai suburban,True,andheri west,west,True,400053,400053,True,VERIFIED,VERIFIED,True,33.15,94
+dev_05_r3,"Banjara Hills Road 12, Hyderabad, Telangana 500034",telangana,telangana,True,hyderabad,hyderabad,True,banjara hills,,True,500034,500034,True,VERIFIED,CONSISTENT,False,17.21,74
+dev_06_r3,"Salt Lake Sector 5, Kolkata, North 24 Parganas, West Bengal 700091",west bengal,west bengal,True,north 24 parganas,kolkata,False,sector 5,salt lake,False,700091,700091,True,VERIFIED,VERIFIED,True,46.71,96
+dev_07_r3,"Anna Nagar West, Chennai, Tamil Nadu 600040",tamil nadu,tamil nadu,True,chennai,chennai,True,anna nagar,anna nagar,True,600040,600040,True,VERIFIED,VERIFIED,True,46.09,94
+dev_08_r3,"Aliganj, Lucknow, Uttar Pradesh 226024",uttar pradesh,uttar pradesh,True,lucknow,lucknow,True,aliganj,aliganj,True,226024,226024,True,VERIFIED,VERIFIED,True,32.71,94
+dev_09_r3,"C-Scheme, Ashok Nagar, Jaipur, Rajasthan 302001",rajasthan,rajasthan,True,jaipur,jaipur,True,ashok nagar,c-scheme,False,302001,302001,True,VERIFIED,VERIFIED,True,47.33,94
+dev_10_r3,"Navrangpura, Ahmedabad, Gujarat 380009",gujarat,gujarat,True,ahmedabad,ahmedabad,True,navrangpura,navrangpura,True,380009,380009,True,VERIFIED,VERIFIED,True,31.24,96
+dev_m01_r1,"फ्लॅट ४०२, कोथरूड, पुणे, महाराष्ट्र ४११०३८",maharashtra,maharashtra,True,pune,pune,True,kothrud,kothrud,True,411038,,False,VERIFIED,VERIFIED,True,42.16,88
+dev_m02_r1,"प्लॉट १२, हिंजवडी, पुणे, महाराष्ट्र ४११०५७",maharashtra,maharashtra,True,pune,pune,True,hinjawadi,hinjewadi,False,411057,,False,VERIFIED,VERIFIED,True,42.43,88
+dev_m03_r1,"सेक्टर ६२, नोएडा, उत्तर प्रदेश २०१३०९",uttar pradesh,uttar pradesh,True,gautam buddha nagar,gautam buddha nagar,True,sector 62,sektr,False,201309,,False,VERIFIED,VERIFIED,True,32.53,86
+dev_m04_r1,"दादर, मुंबई, महाराष्ट्र ४०००२८",maharashtra,maharashtra,True,mumbai city,mumbai suburban,False,dadar,dadr,False,400028,,False,VERIFIED,VERIFIED,True,28.09,86
+dev_m05_r1,"बेंगलुरु, इंदिरानगर, कर्नाटक ५६००३८",karnataka,karnataka,True,bengaluru,bengaluru urban,False,indiranagar,indiranagar,True,560038,,False,VERIFIED,VERIFIED,True,41.17,88
+dev_m01_r2,"फ्लॅट ४०२, कोथरूड, पुणे, महाराष्ट्र ४११०३८",maharashtra,maharashtra,True,pune,pune,True,kothrud,kothrud,True,411038,,False,VERIFIED,VERIFIED,True,43.25,88
+dev_m02_r2,"प्लॉट १२, हिंजवडी, पुणे, महाराष्ट्र ४११०५७",maharashtra,maharashtra,True,pune,pune,True,hinjawadi,hinjewadi,False,411057,,False,VERIFIED,VERIFIED,True,40.61,88
+dev_m03_r2,"सेक्टर ६२, नोएडा, उत्तर प्रदेश २०१३०९",uttar pradesh,uttar pradesh,True,gautam buddha nagar,gautam buddha nagar,True,sector 62,sektr,False,201309,,False,VERIFIED,VERIFIED,True,33.06,86
+dev_m04_r2,"दादर, मुंबई, महाराष्ट्र ४०००२८",maharashtra,maharashtra,True,mumbai city,mumbai suburban,False,dadar,dadr,False,400028,,False,VERIFIED,VERIFIED,True,33.23,86
+dev_m05_r2,"बेंगलुरु, इंदिरानगर, कर्नाटक ५६००३८",karnataka,karnataka,True,bengaluru,bengaluru urban,False,indiranagar,indiranagar,True,560038,,False,VERIFIED,VERIFIED,True,44.28,88
+dev_m01_r3,"फ्लॅट ४०२, कोथरूड, पुणे, महाराष्ट्र ४११०३८",maharashtra,maharashtra,True,pune,pune,True,kothrud,kothrud,True,411038,,False,VERIFIED,VERIFIED,True,42.32,88
+dev_m02_r3,"प्लॉट १२, हिंजवडी, पुणे, महाराष्ट्र ४११०५७",maharashtra,maharashtra,True,pune,pune,True,hinjawadi,hinjewadi,False,411057,,False,VERIFIED,VERIFIED,True,42.07,88
+dev_m03_r3,"सेक्टर ६२, नोएडा, उत्तर प्रदेश २०१३०९",uttar pradesh,uttar pradesh,True,gautam buddha nagar,gautam buddha nagar,True,sector 62,sektr,False,201309,,False,VERIFIED,VERIFIED,True,31.76,86
+dev_m04_r3,"दादर, मुंबई, महाराष्ट्र ४०००२८",maharashtra,maharashtra,True,mumbai city,mumbai suburban,False,dadar,dadr,False,400028,,False,VERIFIED,VERIFIED,True,30.3,86
+dev_m05_r3,"बेंगलुरु, इंदिरानगर, कर्नाटक ५६००३८",karnataka,karnataka,True,bengaluru,bengaluru urban,False,indiranagar,indiranagar,True,560038,,False,VERIFIED,VERIFIED,True,42.78,88
+dev_h01_r1,"Rampur, Rampur District, Uttar Pradesh 244901",uttar pradesh,uttar pradesh,True,rampur,,False,rampur,rampur,True,244901,244901,True,VERIFIED,NEEDS_REVIEW,False,39.17,74
+dev_h02_r1,"Rampur Bushahr, Shimla, Himachal Pradesh 172001",himachal pradesh,,False,shimla,,False,rampur,rampur,True,172001,172001,True,VERIFIED,CONSISTENT,False,61.53,78
+dev_h03_r1,Rampur Town,,,True,,,True,rampur,rampur,True,,,True,AMBIGUOUS,AMBIGUOUS,True,29.55,70
+dev_h04_r1,"Bilaspur, Chhattisgarh 495001",chhattisgarh,,False,bilaspur,,False,bilaspur,bilaspur,True,495001,495001,True,VERIFIED,CONSISTENT,False,31.35,78
+dev_h05_r1,Bilaspur Town,,,True,,,True,bilaspur,bilaspur town,True,,,True,AMBIGUOUS,AMBIGUOUS,True,18.43,70
+dev_h01_r2,"Rampur, Rampur District, Uttar Pradesh 244901",uttar pradesh,uttar pradesh,True,rampur,,False,rampur,rampur,True,244901,244901,True,VERIFIED,NEEDS_REVIEW,False,42.01,74
+dev_h02_r2,"Rampur Bushahr, Shimla, Himachal Pradesh 172001",himachal pradesh,,False,shimla,,False,rampur,rampur,True,172001,172001,True,VERIFIED,CONSISTENT,False,52.59,78
+dev_h03_r2,Rampur Town,,,True,,,True,rampur,rampur,True,,,True,AMBIGUOUS,AMBIGUOUS,True,26.71,70
+dev_h04_r2,"Bilaspur, Chhattisgarh 495001",chhattisgarh,,False,bilaspur,,False,bilaspur,bilaspur,True,495001,495001,True,VERIFIED,CONSISTENT,False,30.05,78
+dev_h05_r2,Bilaspur Town,,,True,,,True,bilaspur,bilaspur town,True,,,True,AMBIGUOUS,AMBIGUOUS,True,17.29,70
+dev_h01_r3,"Rampur, Rampur District, Uttar Pradesh 244901",uttar pradesh,uttar pradesh,True,rampur,,False,rampur,rampur,True,244901,244901,True,VERIFIED,NEEDS_REVIEW,False,43.26,74
+dev_h02_r3,"Rampur Bushahr, Shimla, Himachal Pradesh 172001",himachal pradesh,,False,shimla,,False,rampur,rampur,True,172001,172001,True,VERIFIED,CONSISTENT,False,56.05,78
+dev_h03_r3,Rampur Town,,,True,,,True,rampur,rampur,True,,,True,AMBIGUOUS,AMBIGUOUS,True,27.75,70
+dev_h04_r3,"Bilaspur, Chhattisgarh 495001",chhattisgarh,,False,bilaspur,,False,bilaspur,bilaspur,True,495001,495001,True,VERIFIED,CONSISTENT,False,35.53,78
+dev_h05_r3,Bilaspur Town,,,True,,,True,bilaspur,bilaspur town,True,,,True,AMBIGUOUS,AMBIGUOUS,True,18.38,70
+val_01_r1,"Koramangala 4th Block, Bengaluru, Karnataka 560034",karnataka,karnataka,True,bengaluru,bengaluru urban,False,koramangala,koramangala,True,560034,560034,True,VERIFIED,VERIFIED,True,44.22,96
+val_02_r1,"Hinjewadi Phase 1, Pune, Maharashtra 411057",maharashtra,maharashtra,True,pune,pune,True,hinjawadi,hinjewadi,False,411057,411057,True,VERIFIED,VERIFIED,True,30.08,96
+val_03_r1,"Whitefield Main Road, Bengaluru, Karnataka 560066",karnataka,karnataka,True,bengaluru,bengaluru urban,False,whitefield,whitefield,True,560066,560066,True,VERIFIED,VERIFIED,True,31.3,96
+val_04_r1,"Viman Nagar, Pune, Maharashtra 411014",maharashtra,maharashtra,True,pune,pune,True,viman nagar,viman nagar,True,411014,411014,True,VERIFIED,VERIFIED,True,29.65,100
+val_05_r1,"Bandra East, Mumbai Suburban, Maharashtra 400051",maharashtra,maharashtra,True,mumbai suburban,mumbai suburban,True,bandra east,bandra east,True,400051,400051,True,VERIFIED,VERIFIED,True,32.77,96
+val_06_r1,"Sector 18, Gurugram, Haryana 122015",haryana,haryana,True,gurugram,gurugram,True,sector 18,,True,122015,122015,True,VERIFIED,INCONSISTENT,False,23.01,51
+val_07_r1,"T Nagar, Chennai, Tamil Nadu 600017",tamil nadu,tamil nadu,True,chennai,chennai,True,t nagar,t nagar,True,600017,600017,True,VERIFIED,VERIFIED,True,33.94,96
+val_08_r1,"Park Street, Kolkata, West Bengal 700016",west bengal,west bengal,True,kolkata,kolkata,True,park street,,True,700016,700016,True,VERIFIED,VERIFIED,True,18.0,82
+val_09_r1,"Malviya Nagar, Jaipur, Rajasthan 302017",rajasthan,rajasthan,True,jaipur,jaipur,True,malviya nagar,malviya nagar,True,302017,302017,True,VERIFIED,VERIFIED,True,33.17,96
+val_10_r1,"Gachibowli, Hyderabad, Telangana 500032",telangana,telangana,True,hyderabad,hyderabad,True,gachibowli,gachibowli,True,500032,500032,True,VERIFIED,VERIFIED,True,32.85,84
+val_01_r2,"Koramangala 4th Block, Bengaluru, Karnataka 560034",karnataka,karnataka,True,bengaluru,bengaluru urban,False,koramangala,koramangala,True,560034,560034,True,VERIFIED,VERIFIED,True,44.63,96
+val_02_r2,"Hinjewadi Phase 1, Pune, Maharashtra 411057",maharashtra,maharashtra,True,pune,pune,True,hinjawadi,hinjewadi,False,411057,411057,True,VERIFIED,VERIFIED,True,31.14,96
+val_03_r2,"Whitefield Main Road, Bengaluru, Karnataka 560066",karnataka,karnataka,True,bengaluru,bengaluru urban,False,whitefield,whitefield,True,560066,560066,True,VERIFIED,VERIFIED,True,32.33,96
+val_04_r2,"Viman Nagar, Pune, Maharashtra 411014",maharashtra,maharashtra,True,pune,pune,True,viman nagar,viman nagar,True,411014,411014,True,VERIFIED,VERIFIED,True,32.43,100
+val_05_r2,"Bandra East, Mumbai Suburban, Maharashtra 400051",maharashtra,maharashtra,True,mumbai suburban,mumbai suburban,True,bandra east,bandra east,True,400051,400051,True,VERIFIED,VERIFIED,True,41.79,96
+val_06_r2,"Sector 18, Gurugram, Haryana 122015",haryana,haryana,True,gurugram,gurugram,True,sector 18,,True,122015,122015,True,VERIFIED,INCONSISTENT,False,25.55,51
+val_07_r2,"T Nagar, Chennai, Tamil Nadu 600017",tamil nadu,tamil nadu,True,chennai,chennai,True,t nagar,t nagar,True,600017,600017,True,VERIFIED,VERIFIED,True,31.73,96
+val_08_r2,"Park Street, Kolkata, West Bengal 700016",west bengal,west bengal,True,kolkata,kolkata,True,park street,,True,700016,700016,True,VERIFIED,VERIFIED,True,18.26,82
+val_09_r2,"Malviya Nagar, Jaipur, Rajasthan 302017",rajasthan,rajasthan,True,jaipur,jaipur,True,malviya nagar,malviya nagar,True,302017,302017,True,VERIFIED,VERIFIED,True,33.7,96
+val_10_r2,"Gachibowli, Hyderabad, Telangana 500032",telangana,telangana,True,hyderabad,hyderabad,True,gachibowli,gachibowli,True,500032,500032,True,VERIFIED,VERIFIED,True,28.84,84
+val_01_r3,"Koramangala 4th Block, Bengaluru, Karnataka 560034",karnataka,karnataka,True,bengaluru,bengaluru urban,False,koramangala,koramangala,True,560034,560034,True,VERIFIED,VERIFIED,True,42.26,96
+val_02_r3,"Hinjewadi Phase 1, Pune, Maharashtra 411057",maharashtra,maharashtra,True,pune,pune,True,hinjawadi,hinjewadi,False,411057,411057,True,VERIFIED,VERIFIED,True,31.72,96
+val_03_r3,"Whitefield Main Road, Bengaluru, Karnataka 560066",karnataka,karnataka,True,bengaluru,bengaluru urban,False,whitefield,whitefield,True,560066,560066,True,VERIFIED,VERIFIED,True,31.04,96
+val_04_r3,"Viman Nagar, Pune, Maharashtra 411014",maharashtra,maharashtra,True,pune,pune,True,viman nagar,viman nagar,True,411014,411014,True,VERIFIED,VERIFIED,True,31.2,100
+val_05_r3,"Bandra East, Mumbai Suburban, Maharashtra 400051",maharashtra,maharashtra,True,mumbai suburban,mumbai suburban,True,bandra east,bandra east,True,400051,400051,True,VERIFIED,VERIFIED,True,30.61,96
+val_06_r3,"Sector 18, Gurugram, Haryana 122015",haryana,haryana,True,gurugram,gurugram,True,sector 18,,True,122015,122015,True,VERIFIED,INCONSISTENT,False,19.31,51
+val_07_r3,"T Nagar, Chennai, Tamil Nadu 600017",tamil nadu,tamil nadu,True,chennai,chennai,True,t nagar,t nagar,True,600017,600017,True,VERIFIED,VERIFIED,True,34.84,96
+val_08_r3,"Park Street, Kolkata, West Bengal 700016",west bengal,west bengal,True,kolkata,kolkata,True,park street,,True,700016,700016,True,VERIFIED,VERIFIED,True,18.52,82
+val_09_r3,"Malviya Nagar, Jaipur, Rajasthan 302017",rajasthan,rajasthan,True,jaipur,jaipur,True,malviya nagar,malviya nagar,True,302017,302017,True,VERIFIED,VERIFIED,True,32.06,96
+val_10_r3,"Gachibowli, Hyderabad, Telangana 500032",telangana,telangana,True,hyderabad,hyderabad,True,gachibowli,gachibowli,True,500032,500032,True,VERIFIED,VERIFIED,True,31.34,84
+val_h01_r1,"Shivaji Nagar, FC Road, Pune, Maharashtra 411005",maharashtra,maharashtra,True,pune,pune,True,shivajinagar,shivaji nagar,False,411005,411005,True,VERIFIED,VERIFIED,True,32.71,94
+val_h02_r1,"Shivaji Nagar, Govandi, Mumbai Suburban, Maharashtra 400043",maharashtra,maharashtra,True,mumbai suburban,mumbai suburban,True,shivaji nagar,shivaji nagar,True,400043,400043,True,VERIFIED,VERIFIED,True,88.28,94
+val_h03_r1,Shivaji Nagar Bus Stop,,,True,,,True,shivaji nagar,,True,,,True,AMBIGUOUS,UNABLE_TO_VERIFY,False,23.15,39
+val_h04_r1,"Gandhi Nagar, East Delhi, Delhi 110031",delhi,delhi,True,east delhi,new delhi,False,gandhi nagar,gandhi nagar,True,110031,110031,True,VERIFIED,INCONSISTENT,False,38.09,80
+val_h05_r1,"Gandhi Nagar Sector 11, Gandhinagar, Gujarat 382011",gujarat,gujarat,True,gandhinagar,,False,gandhinagar,gandhinagar,True,382011,382011,True,VERIFIED,CONSISTENT,False,24.21,67
+val_h01_r2,"Shivaji Nagar, FC Road, Pune, Maharashtra 411005",maharashtra,maharashtra,True,pune,pune,True,shivajinagar,shivaji nagar,False,411005,411005,True,VERIFIED,VERIFIED,True,30.2,94
+val_h02_r2,"Shivaji Nagar, Govandi, Mumbai Suburban, Maharashtra 400043",maharashtra,maharashtra,True,mumbai suburban,mumbai suburban,True,shivaji nagar,shivaji nagar,True,400043,400043,True,VERIFIED,VERIFIED,True,40.0,94
+val_h03_r2,Shivaji Nagar Bus Stop,,,True,,,True,shivaji nagar,,True,,,True,AMBIGUOUS,UNABLE_TO_VERIFY,False,16.99,39
+val_h04_r2,"Gandhi Nagar, East Delhi, Delhi 110031",delhi,delhi,True,east delhi,new delhi,False,gandhi nagar,gandhi nagar,True,110031,110031,True,VERIFIED,INCONSISTENT,False,28.1,80
+val_h05_r2,"Gandhi Nagar Sector 11, Gandhinagar, Gujarat 382011",gujarat,gujarat,True,gandhinagar,,False,gandhinagar,gandhinagar,True,382011,382011,True,VERIFIED,CONSISTENT,False,23.08,67
+val_h01_r3,"Shivaji Nagar, FC Road, Pune, Maharashtra 411005",maharashtra,maharashtra,True,pune,pune,True,shivajinagar,shivaji nagar,False,411005,411005,True,VERIFIED,VERIFIED,True,29.26,94
+val_h02_r3,"Shivaji Nagar, Govandi, Mumbai Suburban, Maharashtra 400043",maharashtra,maharashtra,True,mumbai suburban,mumbai suburban,True,shivaji nagar,shivaji nagar,True,400043,400043,True,VERIFIED,VERIFIED,True,43.32,94
+val_h03_r3,Shivaji Nagar Bus Stop,,,True,,,True,shivaji nagar,,True,,,True,AMBIGUOUS,UNABLE_TO_VERIFY,False,19.84,39
+val_h04_r3,"Gandhi Nagar, East Delhi, Delhi 110031",delhi,delhi,True,east delhi,new delhi,False,gandhi nagar,gandhi nagar,True,110031,110031,True,VERIFIED,INCONSISTENT,False,32.81,80
+val_h05_r3,"Gandhi Nagar Sector 11, Gandhinagar, Gujarat 382011",gujarat,gujarat,True,gandhinagar,,False,gandhinagar,gandhinagar,True,382011,382011,True,VERIFIED,CONSISTENT,False,27.49,67
+val_h01_r4,"Shivaji Nagar, FC Road, Pune, Maharashtra 411005",maharashtra,maharashtra,True,pune,pune,True,shivajinagar,shivaji nagar,False,411005,411005,True,VERIFIED,VERIFIED,True,33.26,94
+val_h02_r4,"Shivaji Nagar, Govandi, Mumbai Suburban, Maharashtra 400043",maharashtra,maharashtra,True,mumbai suburban,mumbai suburban,True,shivaji nagar,shivaji nagar,True,400043,400043,True,VERIFIED,VERIFIED,True,47.52,94
+val_h03_r4,Shivaji Nagar Bus Stop,,,True,,,True,shivaji nagar,,True,,,True,AMBIGUOUS,UNABLE_TO_VERIFY,False,23.07,39
+val_h04_r4,"Gandhi Nagar, East Delhi, Delhi 110031",delhi,delhi,True,east delhi,new delhi,False,gandhi nagar,gandhi nagar,True,110031,110031,True,VERIFIED,INCONSISTENT,False,35.71,80
+val_h05_r4,"Gandhi Nagar Sector 11, Gandhinagar, Gujarat 382011",gujarat,gujarat,True,gandhinagar,,False,gandhinagar,gandhinagar,True,382011,382011,True,VERIFIED,CONSISTENT,False,29.02,67
+val_h01_r5,"Shivaji Nagar, FC Road, Pune, Maharashtra 411005",maharashtra,maharashtra,True,pune,pune,True,shivajinagar,shivaji nagar,False,411005,411005,True,VERIFIED,VERIFIED,True,32.66,94
+val_h02_r5,"Shivaji Nagar, Govandi, Mumbai Suburban, Maharashtra 400043",maharashtra,maharashtra,True,mumbai suburban,mumbai suburban,True,shivaji nagar,shivaji nagar,True,400043,400043,True,VERIFIED,VERIFIED,True,45.83,94
+val_h03_r5,Shivaji Nagar Bus Stop,,,True,,,True,shivaji nagar,,True,,,True,AMBIGUOUS,UNABLE_TO_VERIFY,False,21.85,39
+val_h04_r5,"Gandhi Nagar, East Delhi, Delhi 110031",delhi,delhi,True,east delhi,new delhi,False,gandhi nagar,gandhi nagar,True,110031,110031,True,VERIFIED,INCONSISTENT,False,37.38,80
+val_h05_r5,"Gandhi Nagar Sector 11, Gandhinagar, Gujarat 382011",gujarat,gujarat,True,gandhinagar,,False,gandhinagar,gandhinagar,True,382011,382011,True,VERIFIED,CONSISTENT,False,28.45,67
+val_h01_r6,"Shivaji Nagar, FC Road, Pune, Maharashtra 411005",maharashtra,maharashtra,True,pune,pune,True,shivajinagar,shivaji nagar,False,411005,411005,True,VERIFIED,VERIFIED,True,33.6,94
+val_h02_r6,"Shivaji Nagar, Govandi, Mumbai Suburban, Maharashtra 400043",maharashtra,maharashtra,True,mumbai suburban,mumbai suburban,True,shivaji nagar,shivaji nagar,True,400043,400043,True,VERIFIED,VERIFIED,True,44.48,94
+val_h03_r6,Shivaji Nagar Bus Stop,,,True,,,True,shivaji nagar,,True,,,True,AMBIGUOUS,UNABLE_TO_VERIFY,False,19.61,39
+val_h04_r6,"Gandhi Nagar, East Delhi, Delhi 110031",delhi,delhi,True,east delhi,new delhi,False,gandhi nagar,gandhi nagar,True,110031,110031,True,VERIFIED,INCONSISTENT,False,31.68,80
+val_h05_r6,"Gandhi Nagar Sector 11, Gandhinagar, Gujarat 382011",gujarat,gujarat,True,gandhinagar,,False,gandhinagar,gandhinagar,True,382011,382011,True,VERIFIED,CONSISTENT,False,25.28,67
+heldout_01_r1,"Village Daund, Taluka Daund, District Pune, Maharashtra 412260",maharashtra,maharashtra,True,pune,pune,True,daund,village daund,True,412260,412260,True,VERIFIED,VERIFIED,True,68.14,94
+heldout_02_r1,"Near Bus Stand, Baramati, District Pune, Maharashtra 413102",maharashtra,maharashtra,True,pune,pune,True,baramati,district,False,413102,413102,True,VERIFIED,VERIFIED,True,46.88,94
+heldout_03_r1,"Yelahanka New Town, Bengaluru Urban, Karnataka 560064",karnataka,karnataka,True,bengaluru urban,bengaluru urban,True,yelahanka,new town,False,560064,560064,True,VERIFIED,INCONSISTENT,False,56.03,56
+heldout_04_r1,"Manipal University Road, Udupi, Karnataka 576104",karnataka,karnataka,True,udupi,,False,manipal,udupi,False,576104,576104,True,VERIFIED,CONSISTENT,False,23.35,67
+heldout_05_r1,"Malleswaram 8th Cross, Bengaluru, Karnataka 560003",karnataka,karnataka,True,bengaluru,bengaluru urban,False,malleswaram,malleswaram 8th cross,True,560003,560003,True,VERIFIED,VERIFIED,True,31.5,94
+heldout_06_r1,"Kalyani Nagar, Pune, Maharashtra 411006",maharashtra,maharashtra,True,pune,pune,True,kalyani nagar,kalyani nagar,True,411006,411006,True,VERIFIED,VERIFIED,True,32.33,94
+heldout_07_r1,"Wakad Bridge, Pimpri Chinchwad, Pune 411057",maharashtra,,False,pune,pune,True,wakad,wakad,True,411057,411057,True,VERIFIED,VERIFIED,True,46.47,88
+heldout_08_r1,"Baner Road, Pune, Maharashtra 411045",maharashtra,maharashtra,True,pune,pune,True,baner,baner,True,411045,411045,True,VERIFIED,VERIFIED,True,31.39,96
+heldout_09_r1,"Bavdhan Khurd, Taluka Mulshi, Pune, Maharashtra 411021",maharashtra,maharashtra,True,pune,pune,True,bavdhan,bavdhan,True,411021,411021,True,VERIFIED,VERIFIED,True,55.42,94
+heldout_10_r1,"Kondhwa Budruk, Pune, Maharashtra 411048",maharashtra,maharashtra,True,pune,pune,True,kondhwa,kondhwa budruk,True,411048,411048,True,VERIFIED,VERIFIED,True,34.19,94
+heldout_01_r2,"Village Daund, Taluka Daund, District Pune, Maharashtra 412260",maharashtra,maharashtra,True,pune,pune,True,daund,village daund,True,412260,412260,True,VERIFIED,VERIFIED,True,65.68,94
+heldout_02_r2,"Near Bus Stand, Baramati, District Pune, Maharashtra 413102",maharashtra,maharashtra,True,pune,pune,True,baramati,district,False,413102,413102,True,VERIFIED,VERIFIED,True,44.95,94
+heldout_03_r2,"Yelahanka New Town, Bengaluru Urban, Karnataka 560064",karnataka,karnataka,True,bengaluru urban,bengaluru urban,True,yelahanka,new town,False,560064,560064,True,VERIFIED,INCONSISTENT,False,61.47,56
+heldout_04_r2,"Manipal University Road, Udupi, Karnataka 576104",karnataka,karnataka,True,udupi,,False,manipal,udupi,False,576104,576104,True,VERIFIED,CONSISTENT,False,22.24,67
+heldout_05_r2,"Malleswaram 8th Cross, Bengaluru, Karnataka 560003",karnataka,karnataka,True,bengaluru,bengaluru urban,False,malleswaram,malleswaram 8th cross,True,560003,560003,True,VERIFIED,VERIFIED,True,33.72,94
+heldout_06_r2,"Kalyani Nagar, Pune, Maharashtra 411006",maharashtra,maharashtra,True,pune,pune,True,kalyani nagar,kalyani nagar,True,411006,411006,True,VERIFIED,VERIFIED,True,30.82,94
+heldout_07_r2,"Wakad Bridge, Pimpri Chinchwad, Pune 411057",maharashtra,,False,pune,pune,True,wakad,wakad,True,411057,411057,True,VERIFIED,VERIFIED,True,49.48,88
+heldout_08_r2,"Baner Road, Pune, Maharashtra 411045",maharashtra,maharashtra,True,pune,pune,True,baner,baner,True,411045,411045,True,VERIFIED,VERIFIED,True,37.09,96
+heldout_09_r2,"Bavdhan Khurd, Taluka Mulshi, Pune, Maharashtra 411021",maharashtra,maharashtra,True,pune,pune,True,bavdhan,bavdhan,True,411021,411021,True,VERIFIED,VERIFIED,True,69.99,94
+heldout_10_r2,"Kondhwa Budruk, Pune, Maharashtra 411048",maharashtra,maharashtra,True,pune,pune,True,kondhwa,kondhwa budruk,True,411048,411048,True,VERIFIED,VERIFIED,True,34.13,94
+heldout_01_r3,"Village Daund, Taluka Daund, District Pune, Maharashtra 412260",maharashtra,maharashtra,True,pune,pune,True,daund,village daund,True,412260,412260,True,VERIFIED,VERIFIED,True,65.09,94
+heldout_02_r3,"Near Bus Stand, Baramati, District Pune, Maharashtra 413102",maharashtra,maharashtra,True,pune,pune,True,baramati,district,False,413102,413102,True,VERIFIED,VERIFIED,True,46.58,94
+heldout_03_r3,"Yelahanka New Town, Bengaluru Urban, Karnataka 560064",karnataka,karnataka,True,bengaluru urban,bengaluru urban,True,yelahanka,new town,False,560064,560064,True,VERIFIED,INCONSISTENT,False,63.92,56
+heldout_04_r3,"Manipal University Road, Udupi, Karnataka 576104",karnataka,karnataka,True,udupi,,False,manipal,udupi,False,576104,576104,True,VERIFIED,CONSISTENT,False,27.8,67
+heldout_05_r3,"Malleswaram 8th Cross, Bengaluru, Karnataka 560003",karnataka,karnataka,True,bengaluru,bengaluru urban,False,malleswaram,malleswaram 8th cross,True,560003,560003,True,VERIFIED,VERIFIED,True,36.91,94
+heldout_06_r3,"Kalyani Nagar, Pune, Maharashtra 411006",maharashtra,maharashtra,True,pune,pune,True,kalyani nagar,kalyani nagar,True,411006,411006,True,VERIFIED,VERIFIED,True,32.5,94
+heldout_07_r3,"Wakad Bridge, Pimpri Chinchwad, Pune 411057",maharashtra,,False,pune,pune,True,wakad,wakad,True,411057,411057,True,VERIFIED,VERIFIED,True,47.15,88
+heldout_08_r3,"Baner Road, Pune, Maharashtra 411045",maharashtra,maharashtra,True,pune,pune,True,baner,baner,True,411045,411045,True,VERIFIED,VERIFIED,True,31.52,96
+heldout_09_r3,"Bavdhan Khurd, Taluka Mulshi, Pune, Maharashtra 411021",maharashtra,maharashtra,True,pune,pune,True,bavdhan,bavdhan,True,411021,411021,True,VERIFIED,VERIFIED,True,59.48,94
+heldout_10_r3,"Kondhwa Budruk, Pune, Maharashtra 411048",maharashtra,maharashtra,True,pune,pune,True,kondhwa,kondhwa budruk,True,411048,411048,True,VERIFIED,VERIFIED,True,31.16,94
+heldout_m01_r1,"बाणेर, पुणे, महाराष्ट्र ४११०४५",maharashtra,maharashtra,True,pune,pune,True,baner,baner,True,411045,,False,VERIFIED,VERIFIED,True,32.37,88
+heldout_m02_r1,"कल्याणी नगर, पुणे ४११००६",maharashtra,,False,pune,pune,True,kalyani nagar,klyani ngr,False,411006,,False,VERIFIED,CONSISTENT,False,25.7,78
+heldout_m03_r1,"मल्लेश्वरम, बेंगलुरु, कर्नाटक ५६०००३",karnataka,karnataka,True,bengaluru,bengaluru urban,False,malleswaram,mlleshvrm,False,560003,,False,VERIFIED,VERIFIED,True,48.1,86
+heldout_m04_r1,"अशोक नगर, जयपूर, राजस्थान ३०२००१",rajasthan,rajasthan,True,jaipur,jaipur,True,ashok nagar,ashok ngr,False,302001,,False,VERIFIED,VERIFIED,True,37.58,86
+heldout_m05_r1,"नवरंगपुरा, अहमदाबाद, गुजरात ३८०००९",gujarat,gujarat,True,ahmedabad,ahmedabad,True,navrangpura,navrangpura,True,380009,,False,VERIFIED,VERIFIED,True,40.41,88
+heldout_m01_r2,"बाणेर, पुणे, महाराष्ट्र ४११०४५",maharashtra,maharashtra,True,pune,pune,True,baner,baner,True,411045,,False,VERIFIED,VERIFIED,True,39.94,88
+heldout_m02_r2,"कल्याणी नगर, पुणे ४११००६",maharashtra,,False,pune,pune,True,kalyani nagar,klyani ngr,False,411006,,False,VERIFIED,CONSISTENT,False,28.5,78
+heldout_m03_r2,"मल्लेश्वरम, बेंगलुरु, कर्नाटक ५६०००३",karnataka,karnataka,True,bengaluru,bengaluru urban,False,malleswaram,mlleshvrm,False,560003,,False,VERIFIED,VERIFIED,True,55.73,86
+heldout_m04_r2,"अशोक नगर, जयपूर, राजस्थान ३०२००१",rajasthan,rajasthan,True,jaipur,jaipur,True,ashok nagar,ashok ngr,False,302001,,False,VERIFIED,VERIFIED,True,36.89,86
+heldout_m05_r2,"नवरंगपुरा, अहमदाबाद, गुजरात ३८०००९",gujarat,gujarat,True,ahmedabad,ahmedabad,True,navrangpura,navrangpura,True,380009,,False,VERIFIED,VERIFIED,True,32.97,88
+heldout_m01_r3,"बाणेर, पुणे, महाराष्ट्र ४११०४५",maharashtra,maharashtra,True,pune,pune,True,baner,baner,True,411045,,False,VERIFIED,VERIFIED,True,30.33,88
+heldout_m02_r3,"कल्याणी नगर, पुणे ४११००६",maharashtra,,False,pune,pune,True,kalyani nagar,klyani ngr,False,411006,,False,VERIFIED,CONSISTENT,False,21.05,78
+heldout_m03_r3,"मल्लेश्वरम, बेंगलुरु, कर्नाटक ५६०००३",karnataka,karnataka,True,bengaluru,bengaluru urban,False,malleswaram,mlleshvrm,False,560003,,False,VERIFIED,VERIFIED,True,41.89,86
+heldout_m04_r3,"अशोक नगर, जयपूर, राजस्थान ३०२००१",rajasthan,rajasthan,True,jaipur,jaipur,True,ashok nagar,ashok ngr,False,302001,,False,VERIFIED,VERIFIED,True,28.75,86
+heldout_m05_r3,"नवरंगपुरा, अहमदाबाद, गुजरात ३८०००९",gujarat,gujarat,True,ahmedabad,ahmedabad,True,navrangpura,navrangpura,True,380009,,False,VERIFIED,VERIFIED,True,30.07,88
+heldout_h01_r1,"Rampur Bushahr Main Bazaar, Shimla 172001",himachal pradesh,,False,shimla,,False,rampur,rampur,True,172001,172001,True,VERIFIED,CONSISTENT,False,41.55,78
+heldout_h02_r1,"Bilaspur Railway Station, Bilaspur, Chhattisgarh 495004",chhattisgarh,,False,bilaspur,,False,bilaspur,bilaspur railway station,True,495004,495004,True,VERIFIED,CONSISTENT,False,40.6,78
+heldout_h03_r1,Gandhi Nagar Main Market,,,True,,,True,gandhi nagar,,True,,,True,AMBIGUOUS,UNABLE_TO_VERIFY,False,18.06,39
+heldout_h04_r1,Rampur Chowk,,,True,,,True,rampur,rampur,True,,,True,AMBIGUOUS,AMBIGUOUS,True,16.19,70
+heldout_h05_r1,"Sector 11, Gandhinagar, Gujarat 382011",gujarat,gujarat,True,gandhinagar,,False,gandhinagar,gandhinagar,True,382011,382011,True,VERIFIED,CONSISTENT,False,25.65,67
+heldout_h01_r2,"Rampur Bushahr Main Bazaar, Shimla 172001",himachal pradesh,,False,shimla,,False,rampur,rampur,True,172001,172001,True,VERIFIED,CONSISTENT,False,50.09,78
+heldout_h02_r2,"Bilaspur Railway Station, Bilaspur, Chhattisgarh 495004",chhattisgarh,,False,bilaspur,,False,bilaspur,bilaspur railway station,True,495004,495004,True,VERIFIED,CONSISTENT,False,45.18,78
+heldout_h03_r2,Gandhi Nagar Main Market,,,True,,,True,gandhi nagar,,True,,,True,AMBIGUOUS,UNABLE_TO_VERIFY,False,18.72,39
+heldout_h04_r2,Rampur Chowk,,,True,,,True,rampur,rampur,True,,,True,AMBIGUOUS,AMBIGUOUS,True,16.32,70
+heldout_h05_r2,"Sector 11, Gandhinagar, Gujarat 382011",gujarat,gujarat,True,gandhinagar,,False,gandhinagar,gandhinagar,True,382011,382011,True,VERIFIED,CONSISTENT,False,25.39,67
+heldout_h01_r3,"Rampur Bushahr Main Bazaar, Shimla 172001",himachal pradesh,,False,shimla,,False,rampur,rampur,True,172001,172001,True,VERIFIED,CONSISTENT,False,39.4,78
+heldout_h02_r3,"Bilaspur Railway Station, Bilaspur, Chhattisgarh 495004",chhattisgarh,,False,bilaspur,,False,bilaspur,bilaspur railway station,True,495004,495004,True,VERIFIED,CONSISTENT,False,41.2,78
+heldout_h03_r3,Gandhi Nagar Main Market,,,True,,,True,gandhi nagar,,True,,,True,AMBIGUOUS,UNABLE_TO_VERIFY,False,17.83,39
+heldout_h04_r3,Rampur Chowk,,,True,,,True,rampur,rampur,True,,,True,AMBIGUOUS,AMBIGUOUS,True,17.14,70
+heldout_h05_r3,"Sector 11, Gandhinagar, Gujarat 382011",gujarat,gujarat,True,gandhinagar,,False,gandhinagar,gandhinagar,True,382011,382011,True,VERIFIED,CONSISTENT,False,24.36,67

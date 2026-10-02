@@ -1,0 +1,14 @@
+pipeline,stage,count,mean_ms,p50_ms,p90_ms,p95_ms,p99_ms,min_ms,max_ms
+address_verification,normalization,60,0.08,0.06,0.1,0.1,0.43,0.04,0.79
+address_verification,candidate_generation,60,33.41,33.0,37.8,40.07,43.96,25.86,44.18
+address_verification,dense_retrieval,60,1.74,1.85,2.34,2.63,3.25,0.79,3.49
+address_verification,verification_decision,60,39.87,40.71,53.08,55.02,60.98,16.82,64.7
+address_verification,total_end_to_end,60,75.11,74.03,92.23,97.41,102.68,43.69,105.46
+document_ocr,validation,15,0.22,0.2,0.27,0.36,0.48,0.18,0.51
+document_ocr,document_loading,15,0.04,0.04,0.05,0.06,0.08,0.03,0.09
+document_ocr,preprocessing,15,7.07,0.0,0.0,31.83,91.25,0.0,106.1
+document_ocr,ocr_execution,15,0.03,0.0,0.0,0.15,0.42,0.0,0.49
+document_ocr,region_detection,15,0.12,0.09,0.12,0.25,0.5,0.08,0.56
+document_ocr,field_extraction,15,1.87,1.66,2.4,2.76,3.26,1.51,3.39
+document_ocr,geographic_verification,15,33.33,32.85,37.9,40.63,42.36,29.5,42.79
+document_ocr,total_pipeline,30,42.7,34.9,45.43,99.64,143.99,31.31,143.99

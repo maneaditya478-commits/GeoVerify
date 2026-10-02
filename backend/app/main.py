@@ -46,6 +46,7 @@ app.add_middleware(
 )
 
 # API Routers
+app.include_router(health.router)  # Mounted at /health, /health/live, /health/ready, /health/telemetry
 app.include_router(health.router, prefix=settings.API_PREFIX)
 app.include_router(addresses.router, prefix=settings.API_PREFIX)
 app.include_router(verification.router, prefix=settings.API_PREFIX)

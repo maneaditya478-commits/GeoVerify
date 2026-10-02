@@ -1,0 +1,84 @@
+{
+  "homonym_key_isolation": {
+    "total_homonym_cases": 6,
+    "unique_cache_keys": 6,
+    "collision_free": true,
+    "details": [
+      {
+        "entity": {
+          "query": "Rampur",
+          "state": "Uttar Pradesh",
+          "district": "Rampur",
+          "pincode": "244901"
+        },
+        "cache_key": "3e45de133e0a7f98367a45b9208151e5953f08f3184e49c5160010512da785f0"
+      },
+      {
+        "entity": {
+          "query": "Rampur",
+          "state": "Bihar",
+          "district": "Gaya",
+          "pincode": "823001"
+        },
+        "cache_key": "4c358a79a3e42699b8e34f85a204ee81bedca424ee95ea66ebe186313d1f14e7"
+      },
+      {
+        "entity": {
+          "query": "Rampur",
+          "state": "Himachal Pradesh",
+          "district": "Shimla",
+          "pincode": "172001"
+        },
+        "cache_key": "69915b6b8090ef8aa070b0aac3c9da6eec9ffd628c508439f41507d1c8f78ef0"
+      },
+      {
+        "entity": {
+          "query": "Bilaspur",
+          "state": "Chhattisgarh",
+          "district": "Bilaspur",
+          "pincode": "495001"
+        },
+        "cache_key": "f8d0b0f4cc8820017b516ea2e5937c21d8b77af3b26fa93511a97d75991c4387"
+      },
+      {
+        "entity": {
+          "query": "Bilaspur",
+          "state": "Haryana",
+          "district": "Yamunanagar",
+          "pincode": "135102"
+        },
+        "cache_key": "1c8ff679fcb7512e5d217dd8b0b73817d56b867934240e83046722c7c231c8f6"
+      },
+      {
+        "entity": {
+          "query": "Bilaspur",
+          "state": "Himachal Pradesh",
+          "district": "Bilaspur",
+          "pincode": "174001"
+        },
+        "cache_key": "4905a7d426ddbb3a8f488b9997d2d99162f93a8c4d647a65919846fa11aa9af0"
+      }
+    ]
+  },
+  "latency_speedup": {
+    "samples_evaluated": 10,
+    "mean_cold_latency_ms": 41.759,
+    "mean_warm_latency_ms": 0.003,
+    "speedup_factor": 13427.44,
+    "cache_stats": {
+      "size": 10,
+      "maxsize": 10000,
+      "hits": 10,
+      "misses": 0,
+      "evictions": 0,
+      "hit_rate_pct": 100.0
+    }
+  },
+  "lru_capacity_eviction": {
+    "configured_maxsize": 10,
+    "items_inserted": 25,
+    "final_cache_size": 10,
+    "evictions_recorded": 15,
+    "capacity_respected": true
+  }
+}
