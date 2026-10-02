@@ -1,0 +1,19 @@
+{
+  "app_name": "GeoVerify India",
+  "app_version": "9.0.0",
+  "geoverify_config_version": "9.0.0",
+  "enable_response_caching": true,
+  "enable_request_memoization": true,
+  "enable_dense_retrieval": true,
+  "enable_adaptive_preprocessing": true,
+  "enable_geographic_embeddings": true,
+  "enable_multilingual_postcorrection": true,
+  "scoring_weights": {
+    "hierarchy": 25,
+    "boundary": 25,
+    "locality": 20,
+    "pincode": 15,
+    "geocoding": 10,
+    "nearby": 5
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "total_explanations_checked": 50,
+  "total_claims_evaluated": 295,
+  "supported_claims": 295,
+  "unsupported_claims": 0,
+  "missing_citations": 0,
+  "incorrect_graph_paths": 0,
+  "incorrect_temporal_claims": 0,
+  "faithfulness_rate": 100.0,
+  "audit_passed": true
+}

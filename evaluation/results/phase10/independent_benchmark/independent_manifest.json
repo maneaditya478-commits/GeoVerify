@@ -1,0 +1,31 @@
+{
+  "name": "GeoVerify Phase 10 Independent External Benchmark",
+  "total_cases": 5000,
+  "sha256": "f8753334a7d23bef8ab7cc1376d69a22c1c313e8199d5cea456f757781983829",
+  "version": "10.0.0",
+  "created_at": "2026-10-02T22:00:00+05:30",
+  "isolation_status": "FROZEN_HELD_OUT_IMMUTABLE",
+  "regions": [
+    "Union Territories",
+    "Northeast",
+    "South",
+    "North",
+    "East",
+    "Central",
+    "West"
+  ],
+  "settlement_types": [
+    "Rural",
+    "Urban",
+    "Metropolitan",
+    "Semi-urban",
+    "Remote"
+  ],
+  "ocr_levels": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ]
+}

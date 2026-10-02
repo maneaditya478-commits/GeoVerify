@@ -1,0 +1,70 @@
+{
+  "classes": [
+    "VERIFIED",
+    "CONSISTENT",
+    "NEEDS_REVIEW",
+    "INCONSISTENT",
+    "AMBIGUOUS",
+    "UNABLE_TO_VERIFY"
+  ],
+  "matrix": [
+    [
+      3950,
+      80,
+      20,
+      10,
+      0,
+      0
+    ],
+    [
+      30,
+      420,
+      10,
+      5,
+      0,
+      0
+    ],
+    [
+      15,
+      10,
+      120,
+      10,
+      5,
+      0
+    ],
+    [
+      0,
+      0,
+      5,
+      140,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      170,
+      5
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "precision": {
+    "VERIFIED": 0.9887,
+    "INCONSISTENT": 0.8485,
+    "AMBIGUOUS": 0.9714
+  },
+  "recall": {
+    "VERIFIED": 0.9729,
+    "INCONSISTENT": 0.9655,
+    "AMBIGUOUS": 0.9714
+  }
+}

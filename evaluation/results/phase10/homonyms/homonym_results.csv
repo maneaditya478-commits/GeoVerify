@@ -1,0 +1,6 @@
+locality_name,context,expected_verdict,accuracy,false_confidence_rate
+Rampur,None (Ambiguous),AMBIGUOUS,100.0,0.0
+Rampur,"District Rampur, UP",VERIFIED,98.2,0.0
+Bilaspur,None (Ambiguous),AMBIGUOUS,100.0,0.0
+Bilaspur,Chhattisgarh 495001,VERIFIED,99.0,0.0
+Aurangabad,None (Ambiguous),AMBIGUOUS,100.0,0.0

@@ -1,0 +1,139 @@
+{
+  "metric_definitions": {
+    "candidate_recall_at_1": {
+      "definition": "Proportion of queries where the true matching geographic entity is the top ranked candidate (Rank #1)",
+      "formula": "sum(I(rank(true_entity) == 1)) / N",
+      "population": "All queries with an authoritative target entity in gazetteer",
+      "split": "Evaluation set (Dev / Val / Heldout / Independent)",
+      "aggregation": "Micro-average across all eligible cases",
+      "confidence_intervals": "95% Wilson score interval or bootstrap"
+    },
+    "candidate_recall_at_5": {
+      "definition": "Proportion of queries where the true matching geographic entity appears within the top 5 candidates",
+      "formula": "sum(I(rank(true_entity) <= 5)) / N",
+      "population": "All queries with an authoritative target entity in gazetteer",
+      "split": "Evaluation set",
+      "aggregation": "Micro-average",
+      "confidence_intervals": "95% Wilson score interval"
+    },
+    "candidate_recall_at_10": {
+      "definition": "Proportion of queries where the true matching geographic entity appears within the top 10 candidates",
+      "formula": "sum(I(rank(true_entity) <= 10)) / N",
+      "population": "All queries with an authoritative target entity in gazetteer",
+      "split": "Evaluation set",
+      "aggregation": "Micro-average",
+      "confidence_intervals": "95% Wilson score interval"
+    },
+    "mean_reciprocal_rank": {
+      "definition": "Mean reciprocal of the rank of the first relevant entity match",
+      "formula": "(1 / N) * sum(1 / rank(true_entity))",
+      "population": "All queries with an authoritative target entity",
+      "split": "Evaluation set",
+      "aggregation": "Arithmetic mean",
+      "confidence_intervals": "95% Bootstrap interval"
+    },
+    "exact_hierarchy_accuracy": {
+      "definition": "Proportion of cases where Locality, District, State, and PIN all match authoritative LGD records simultaneously",
+      "formula": "sum(I(locality_match & district_match & state_match & pin_match)) / N",
+      "population": "All non-ambiguous address queries",
+      "split": "Evaluation set",
+      "aggregation": "Micro-average",
+      "confidence_intervals": "95% Wilson score interval"
+    },
+    "locality_accuracy": {
+      "definition": "Proportion of cases where the resolved locality matches the ground truth locality",
+      "formula": "sum(I(resolved_locality == true_locality)) / N",
+      "population": "Queries with asserted locality",
+      "split": "Evaluation set",
+      "aggregation": "Micro-average"
+    },
+    "district_accuracy": {
+      "definition": "Proportion of cases where the resolved district matches the ground truth district",
+      "formula": "sum(I(resolved_district == true_district)) / N",
+      "population": "Queries with asserted or implied district",
+      "split": "Evaluation set",
+      "aggregation": "Micro-average"
+    },
+    "state_accuracy": {
+      "definition": "Proportion of cases where the resolved state matches the ground truth state",
+      "formula": "sum(I(resolved_state == true_state)) / N",
+      "population": "Queries with asserted or implied state",
+      "split": "Evaluation set",
+      "aggregation": "Micro-average"
+    },
+    "pin_accuracy": {
+      "definition": "Proportion of cases where the resolved 6-digit postal code matches the ground truth PIN",
+      "formula": "sum(I(resolved_pin == true_pin)) / N",
+      "population": "Queries with postal code reference",
+      "split": "Evaluation set",
+      "aggregation": "Micro-average"
+    },
+    "verification_status_accuracy": {
+      "definition": "Proportion of address verification decisions matching ground truth categorical verdict (VERIFIED/CONSISTENT, NEEDS_REVIEW, INCONSISTENT, AMBIGUOUS, UNABLE_TO_VERIFY)",
+      "formula": "sum(I(predicted_status == ground_truth_status)) / N",
+      "population": "All benchmark queries",
+      "split": "Evaluation set",
+      "aggregation": "Micro-average and Macro-F1 across classes"
+    },
+    "ambiguity_f1": {
+      "definition": "Harmonic mean of precision and recall for ambiguous vs non-ambiguous locality classification",
+      "formula": "2 * (Precision_amb * Recall_amb) / (Precision_amb + Recall_amb)",
+      "population": "Queries containing homonymous or insufficient-context entities",
+      "split": "Evaluation set",
+      "aggregation": "Binary F1 with AMBIGUOUS as positive class"
+    },
+    "temporal_resolution_accuracy": {
+      "definition": "Accuracy of historical entity identification and date-sensitive validity assignment (VALID_FOR_DATE, HISTORICAL, CURRENT, OUTSIDE_DATE_RANGE)",
+      "formula": "sum(I(predicted_temporal_status == true_temporal_status & canonical_name == true_canonical)) / N_temporal",
+      "population": "Queries with historical aliases, prior names, or reference dates",
+      "split": "Temporal benchmark subset",
+      "aggregation": "Micro-average"
+    },
+    "landmark_spatial_accuracy": {
+      "definition": "Proportion of landmark mentions correctly identified, mapped to spatial coordinates, and bucketed into proper distance ranges",
+      "formula": "sum(I(landmark_id_match & distance_bucket_match)) / N_landmark",
+      "population": "Queries with landmark references",
+      "split": "Landmark benchmark subset",
+      "aggregation": "Micro-average"
+    },
+    "multilingual_alignment_accuracy": {
+      "definition": "Proportion of mixed-script tokens and administrative abbreviations correctly recognized, expanded, and mapped",
+      "formula": "sum(I(expansion_correct & script_aligned)) / N_multilingual",
+      "population": "Queries with Indic scripts, mixed scripts, or administrative abbreviations",
+      "split": "Multilingual benchmark subset",
+      "aggregation": "Micro-average"
+    },
+    "expected_calibration_error": {
+      "definition": "Weighted average of difference between confidence and empirical accuracy across 10 equal-width probability bins",
+      "formula": "sum_{b=1}^B (|B_b| / N) * |acc(B_b) - conf(B_b)|",
+      "population": "All probabilistic predictions",
+      "split": "Validation / Heldout / Independent set",
+      "aggregation": "Weighted bin summation (B=10)"
+    },
+    "brier_score": {
+      "definition": "Mean squared difference between predicted verification confidence probabilities and true binary outcome (1=Valid/Verified, 0=Invalid/Conflicting)",
+      "formula": "(1 / N) * sum((p_i - y_i)^2)",
+      "population": "All probabilistic predictions",
+      "split": "Validation / Heldout / Independent set",
+      "aggregation": "Mean squared error"
+    }
+  },
+  "calibration_reconciliation_audit": {
+    "ablation_validation_brier": {
+      "metric": "Brier Score (EXP_G on validation split)",
+      "value": 0.0270,
+      "dataset": "Phase 9 Validation Set (400 cases)",
+      "model": "EXP_G Multi-Component Model",
+      "calibration_state": "Calibrated with multi-feature composite sigmoid"
+    },
+    "full_heldout_brier": {
+      "metric": "Brier Score (Held-out isotonic calibration evaluation)",
+      "uncalibrated_value": 0.0299,
+      "calibrated_value": 0.0171,
+      "dataset": "Phase 9 Held-out Set (400 cases)",
+      "model": "Production Verifier + Probabilistic Calibration Model",
+      "calibration_state": "Post-isotonic logistic blend evaluation"
+    },
+    "reconciliation_finding": "The two reported numbers reflect distinct datasets and calibration pipelines: 0.0270 is the validation-set metric during the 7-stage ablation progression, while 0.0171 is the calibrated score on the held-out partition in the dedicated calibration evaluation module. Both are mathematically sound within their respective evaluation contexts."
+  }
+}

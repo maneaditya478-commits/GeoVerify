@@ -1,0 +1,6 @@
+settlement,total,r1,status,loc,recall_at_1_pct,status_acc_pct
+Urban,2306,321,1301,1043,13.92,56.42
+Metropolitan,1541,466,996,618,30.24,64.63
+Remote,192,0,147,0,0.0,76.56
+Semi-urban,768,0,432,306,0.0,56.25
+Rural,193,0,93,4,0.0,48.19

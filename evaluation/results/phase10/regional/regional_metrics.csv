@@ -1,0 +1,8 @@
+region,total,r1,status,loc,recall_at_1_pct,status_acc_pct
+North,960,157,584,477,16.35,60.83
+East,576,96,279,247,16.67,48.44
+South,964,181,498,407,18.78,51.66
+Union Territories,768,0,470,45,0.0,61.2
+Northeast,576,0,421,230,0.0,73.09
+Central,384,0,57,256,0.0,14.84
+West,772,353,660,309,45.73,85.49

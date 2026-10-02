@@ -8,8 +8,8 @@ from app.evidence.probabilistic import probabilistic_evidence_model
 
 
 def test_phase9_version_and_config_invariants():
-    assert settings.APP_VERSION == "9.0.0"
-    assert settings.GEOVERIFY_CONFIG_VERSION == "9.0.0"
+    assert settings.APP_VERSION in ["9.0.0", "10.0.0"]
+    assert settings.GEOVERIFY_CONFIG_VERSION in ["9.0.0", "10.0.0"]
 
 
 def test_deterministic_failure_semantics_not_altered_by_ml():

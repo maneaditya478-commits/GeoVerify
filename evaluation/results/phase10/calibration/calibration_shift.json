@@ -1,0 +1,98 @@
+{
+  "uncalibrated_brier": 0.1857,
+  "uncalibrated_ece": 0.1,
+  "calibrated_brier": 0.1547,
+  "calibrated_ece": 0.1794,
+  "calibrated_bins": [
+    {
+      "bin_lower": 0.0,
+      "bin_upper": 0.1,
+      "bin_center": 0.05,
+      "sample_count": 176,
+      "mean_predicted_confidence": 0.0477,
+      "empirical_accuracy": 0.0341,
+      "calibration_error": 0.0136
+    },
+    {
+      "bin_lower": 0.1,
+      "bin_upper": 0.2,
+      "bin_center": 0.15,
+      "sample_count": 557,
+      "mean_predicted_confidence": 0.141,
+      "empirical_accuracy": 0.0,
+      "calibration_error": 0.141
+    },
+    {
+      "bin_lower": 0.2,
+      "bin_upper": 0.3,
+      "bin_center": 0.25,
+      "sample_count": 296,
+      "mean_predicted_confidence": 0.287,
+      "empirical_accuracy": 0.2196,
+      "calibration_error": 0.0674
+    },
+    {
+      "bin_lower": 0.3,
+      "bin_upper": 0.4,
+      "bin_center": 0.35,
+      "sample_count": 831,
+      "mean_predicted_confidence": 0.3489,
+      "empirical_accuracy": 0.2238,
+      "calibration_error": 0.1251
+    },
+    {
+      "bin_lower": 0.4,
+      "bin_upper": 0.5,
+      "bin_center": 0.45,
+      "sample_count": 543,
+      "mean_predicted_confidence": 0.4399,
+      "empirical_accuracy": 0.9024,
+      "calibration_error": 0.4625
+    },
+    {
+      "bin_lower": 0.5,
+      "bin_upper": 0.6,
+      "bin_center": 0.55,
+      "sample_count": 863,
+      "mean_predicted_confidence": 0.5347,
+      "empirical_accuracy": 0.8088,
+      "calibration_error": 0.2742
+    },
+    {
+      "bin_lower": 0.6,
+      "bin_upper": 0.7,
+      "bin_center": 0.65,
+      "sample_count": 534,
+      "mean_predicted_confidence": 0.6728,
+      "empirical_accuracy": 0.6255,
+      "calibration_error": 0.0473
+    },
+    {
+      "bin_lower": 0.7,
+      "bin_upper": 0.8,
+      "bin_center": 0.75,
+      "sample_count": 327,
+      "mean_predicted_confidence": 0.7513,
+      "empirical_accuracy": 0.9817,
+      "calibration_error": 0.2303
+    },
+    {
+      "bin_lower": 0.8,
+      "bin_upper": 0.9,
+      "bin_center": 0.85,
+      "sample_count": 494,
+      "mean_predicted_confidence": 0.8462,
+      "empirical_accuracy": 0.9939,
+      "calibration_error": 0.1477
+    },
+    {
+      "bin_lower": 0.9,
+      "bin_upper": 1.0,
+      "bin_center": 0.95,
+      "sample_count": 379,
+      "mean_predicted_confidence": 0.916,
+      "empirical_accuracy": 0.9974,
+      "calibration_error": 0.0813
+    }
+  ]
+}

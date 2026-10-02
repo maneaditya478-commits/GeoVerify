@@ -1,0 +1,29 @@
+{
+  "total_cases": 5000,
+  "recall_at_1": 15.74,
+  "recall_at_5": 25.0,
+  "recall_at_10": 25.0,
+  "mrr": 0.1889,
+  "exact_hierarchy_accuracy": 10.42,
+  "locality_accuracy": 39.42,
+  "district_accuracy": 37.42,
+  "state_accuracy": 34.84,
+  "pin_accuracy": 65.54,
+  "status_accuracy": 59.38,
+  "ambiguity_f1": 0.3628,
+  "temporal_accuracy": 77.73,
+  "landmark_accuracy": 98.0,
+  "multilingual_accuracy": 13.79,
+  "mean_latency_ms": 43.03,
+  "p50_latency_ms": 43.26,
+  "p95_latency_ms": 66.09,
+  "p99_latency_ms": 77.49,
+  "ci_95_recall_at_1": [
+    14.78,
+    16.76
+  ],
+  "ci_95_status_accuracy": [
+    57.88,
+    60.72
+  ]
+}

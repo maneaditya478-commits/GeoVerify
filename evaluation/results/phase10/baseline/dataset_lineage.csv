@@ -1,0 +1,5 @@
+dataset_id,name,total_cases,purpose,is_independent,can_be_used_for_phase10,influence_on_rules
+DS_PHASE9_DEV,Phase 9 Dev Set,1200,Internal development,false,false,Model design and threshold tuning
+DS_PHASE9_VAL,Phase 9 Val Set,400,Ablation experiments,false,false,Ablation analysis
+DS_PHASE9_HELDOUT,Phase 9 Held-Out Set,400,Phase 9 benchmark reporting,false,false,Benchmark reporting
+DS_PHASE10_INDEPENDENT_5K,Phase 10 Independent Benchmark,5000,Independent external generalization & stress testing,true,true,Zero influence (Strictly held-out)

@@ -1,0 +1,5 @@
+{
+  "security_status": "PASS",
+  "graph_cycle_protection": "BOUNDED_BFS",
+  "unbounded_request_dos_blocked": true
+}

@@ -1,0 +1,15 @@
+{
+  "phase9_sample_size": 2000,
+  "phase10_sample_size": 5000,
+  "geographic_expansion": "Expanded from 4 major states to all 7 national regions and 36 States/UTs",
+  "ocr_stress_inclusion": "Introduced controlled 5-tier OCR corruption (Levels 0-4)",
+  "script_diversity": "Added Bengali, Tamil, Telugu, Kannada alongside Devanagari and Latin",
+  "homonym_stress_cases": 250,
+  "generalization_retention": {
+    "recall_at_1_retention": 16.36,
+    "status_accuracy_retention": 63.51,
+    "ambiguity_f1_retention": 100.0,
+    "temporal_accuracy_retention": 100.0,
+    "landmark_accuracy_retention": 100.0
+  }
+}

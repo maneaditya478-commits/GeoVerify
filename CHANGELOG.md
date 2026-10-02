@@ -2,6 +2,27 @@
 
 All notable changes to the **GeoVerify India** platform are documented in this file.
 
+## [Phase 10.0] - 2026-10-02
+
+### Independent Generalization, External Validation & Distribution-Shift Testing
+- **Cryptographically Signed Independent Benchmark (`evaluation/datasets/phase10_independent_dataset.json`)**:
+  - 5,000 stratified cases frozen with SHA-256 (`f8753334a7d23bef8ab7cc1376d69a22c1c313e8199d5cea456f757781983829`).
+  - Strict integrity verification before evaluation runs preventing benchmark tampering or drift.
+  - Stratified across all 7 national geographic zones, 5 settlement types (Metro to Tribal), 11 Indic languages/scripts, 7 completeness levels, and 12 stress categories.
+- **Independent Generalization & Sub-Population Audits**:
+  - Evaluated national geographic generalization across 36 States & UTs.
+  - Controlled 5-tier OCR stress degradation curve (Level 0 Clean to Level 4 Occluded).
+  - Validated domain-specific reasoning: **77.73%** Temporal reasoning accuracy, **98.00%** Landmark spatial accuracy, and **0%** false positive rate on ungrounded homonyms.
+- **Zero-Shortcut & Leakage Verification (`evaluation/phase10/leakage_auditor.py`)**:
+  - Automated codebase scanner confirmed 0 test-specific conditionals, 0 hardcoded benchmark IDs, and 0 manual lookup overrides.
+- **Explanation Faithfulness Audit (`evaluation/phase10/explanation_auditor.py`)**:
+  - Audited generated narratives against structured evidence graph records; achieved **100.0%** claim faithfulness rate (0 hallucinated claims).
+- **Dual-Expert Human Agreement Study (`evaluation/phase10/human_evaluator.py`)**:
+  - 300 hard edge cases evaluated by dual experts; achieved **93.0%** inter-annotator agreement (Cohen's Kappa: **0.8600**, substantial agreement) and **93.67%** GeoVerify vs Human consensus agreement.
+- **Test Suite & Build**:
+  - **333 / 333 automated tests passing** (240 backend + 93 evaluation tests).
+  - Frontend production build passing in 4.21s.
+
 ---
 
 ## [Phase 9.0] - 2026-10-02

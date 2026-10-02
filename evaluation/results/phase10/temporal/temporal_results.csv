@@ -1,0 +1,6 @@
+entity,ref_date,expected_status,accuracy
+Bombay -> Mumbai,1980-05-15,VALID_FOR_DATE,100.0
+Poona -> Pune,1975-01-01,VALID_FOR_DATE,100.0
+Madras -> Chennai,1990-12-01,VALID_FOR_DATE,100.0
+Allahabad -> Prayagraj,2010-06-15,VALID_FOR_DATE,100.0
+Bangalore -> Bengaluru,2024-01-01,HISTORICAL,98.4

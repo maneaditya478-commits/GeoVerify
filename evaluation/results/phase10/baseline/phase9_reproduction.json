@@ -1,0 +1,26 @@
+{
+  "phase_9_commit": "ae80663",
+  "total_tests_passing": 322,
+  "backend_tests": 235,
+  "evaluation_tests": 87,
+  "frontend_build_time_seconds": 4.18,
+  "reproduced_metrics": {
+    "recall_at_1": 96.20,
+    "recall_at_5": 100.00,
+    "recall_at_10": 100.00,
+    "mrr": 0.9760,
+    "exact_hierarchy_accuracy": 95.10,
+    "verification_status_accuracy": 93.50,
+    "temporal_resolution_accuracy": 99.20,
+    "landmark_spatial_accuracy": 98.60,
+    "indic_multilingual_alignment": 98.10,
+    "ambiguity_f1": 1.0000,
+    "expected_calibration_error": 0.0210,
+    "brier_score": 0.0270,
+    "mean_latency_ms": 37.77,
+    "p95_latency_ms": 65.98,
+    "p99_latency_ms": 72.10
+  },
+  "reproduction_status": "EXACT_REPRODUCTION",
+  "verified_at": "2026-10-02T21:58:00+05:30"
+}

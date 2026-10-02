@@ -1,0 +1,6 @@
+error_category,count,pct,severity,description
+OCR_CORRUPTION_LEVEL_3,142,2.84,4,Severe token corruption causing extraction failure
+HOMONYMOUS_CONTEXT_INSUFFICIENT,78,1.56,1,Expected conservative AMBIGUOUS flag due to lack of parent district
+ADVERSARIAL_JURISDICTION_CONFLICT,45,0.9,1,Expected INCONSISTENT detection on deliberate state/district mismatches
+TRANSLITERATION_UNRESOLVED,32,0.64,3,Uncommon phonetic rendering not covered by phonetics map
+FALSE_CONFIDENCE_ERROR,0,0.0,5,Zero false confident assertions

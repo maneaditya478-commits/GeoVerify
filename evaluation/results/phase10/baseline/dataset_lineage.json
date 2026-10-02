@@ -1,0 +1,37 @@
+{
+  "datasets": [
+    {
+      "dataset_id": "DS_PHASE9_DEV",
+      "name": "Phase 9 Development Benchmark Split",
+      "total_cases": 1200,
+      "purpose": "Internal development, prompt engineering, threshold calibration",
+      "is_independent": false,
+      "can_be_used_for_phase10": false
+    },
+    {
+      "dataset_id": "DS_PHASE9_VAL",
+      "name": "Phase 9 Validation Benchmark Split",
+      "total_cases": 400,
+      "purpose": "Ablation study (EXP_A through EXP_G) and hyperparameter selection",
+      "is_independent": false,
+      "can_be_used_for_phase10": false
+    },
+    {
+      "dataset_id": "DS_PHASE9_HELDOUT",
+      "name": "Phase 9 Held-Out Benchmark Split",
+      "total_cases": 400,
+      "purpose": "Phase 9 reported benchmark held-out evaluation",
+      "is_independent": false,
+      "can_be_used_for_phase10": false
+    },
+    {
+      "dataset_id": "DS_PHASE10_INDEPENDENT_5K",
+      "name": "Phase 10 Independent External Generalization Benchmark",
+      "total_cases": 5000,
+      "purpose": "Strictly independent, unseen multi-regional, multi-script, OCR-stressed, temporal, landmark, and homonym evaluation",
+      "is_independent": true,
+      "can_be_used_for_phase10": true,
+      "isolation_rule": "Genuinely new entities, unseen combinations, zero influence on model weights, thresholds, or code."
+    }
+  ]
+}

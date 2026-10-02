@@ -1,0 +1,6 @@
+distance_bucket,sample_cases,spatial_consistency_accuracy,mean_score
+<500m,120,99.2,1.0
+500m-1km,150,98.6,0.95
+1km-5km,210,97.8,0.85
+5km-15km,80,94.0,0.5
+>15km,40,98.0,0.1
